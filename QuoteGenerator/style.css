@@ -1,0 +1,56 @@
+body {
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+	background: url(bg.jpg) center top no-repeat;
+	background-size: cover;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-weight: 100;
+    font-size: 28px;
+    margin-top: 20%;
+}
+
+h4 {
+	margin: 0px;
+}
+
+#quoteHolder {
+    height: 200px;
+    width: 500px;
+    margin: auto;
+    border: solid 2px #666;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+	h1 {
+		font-size: 20px;
+	}
+	#quoteHolder {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	h1 {
+		font-size: 20px;
+		margin-top: 20px;
+	}
+	#quoteHolder {
+		width: 80%;
+		height: 240px;
+	}
+	body {
+		background: none;
+	}
+}
+
+
+
+

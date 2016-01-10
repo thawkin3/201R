@@ -1,0 +1,53 @@
+body {
+	margin: 10px;
+	text-align: center;
+	font-family: "Lato";
+}
+
+h1 {
+	font-family: "Poiret One";
+}
+
+h2 {
+	font-family: "Lato";
+	font-weight: 300;
+}
+
+p {
+	margin: 5px 0px 0px 0px;
+}
+
+#container {
+	margin: auto;
+	margin-top: 30px;
+	max-width: 960px;
+}
+
+.story {
+	width: 200px;
+	display: inline-block;
+	padding: 5px;
+	margin: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	background: #ccc;
+}
+
+a {
+    color: #000;
+    font-weight: bold;
+}
+
+a:visited {
+	color: #30a;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.profile {
+	width: 200px;
+    border-radius: 5px;
+}
+
