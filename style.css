@@ -119,18 +119,20 @@ p {
 
 
 /* Skills */
-#skills .row {
-  text-align: center;
+#skills p {
+  margin: 20px 0px;
 }
 
-#skills p {
-  display: inline-block;
-  font-size: 18px;
-  border: solid 2px #AAA;
-  border-radius: 5px;
-  width: 250px;
-  padding: 10px 20px;
-  margin: 0px 5px;
+#skills p span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#skills .row {
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
 }
 
 #skills h4 {
@@ -168,10 +170,6 @@ p {
 @media (max-width: 992px) {
   .col-md-4 {
     width: 32.95%;
-  }
-  #skills p {
-    font-size: 12px;
-    width: 180px;
   }
 }
 
