@@ -135,6 +135,10 @@ p {
   text-align: left;
 }
 
+#skills #softRow {
+  max-width: 200px;
+}
+
 #skills h4 {
   margin-top: 30px;
 }
