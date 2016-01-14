@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 	$("#searchForm").submit(function(){
 		
-		$(body).style.background = "green";
+		$("body").style.background = "green";
 
 		if ($("#query").val() != "") {
 
