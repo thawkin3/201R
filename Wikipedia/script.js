@@ -2,9 +2,20 @@ $(document).ready(function(){
 
 	var endpoint = "https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=";
 
+	var bgArray = ["linear-gradient(#895F8E, #353FA0) no-repeat",
+					"linear-gradient(#895F8E, #EA0C0C) no-repeat",
+					"linear-gradient(#0CEA5B, #fff) no-repeat",
+					"linear-gradient(#EAE30C, #fff) no-repeat",
+					"linear-gradient(#895F8E, #fff) no-repeat"];
+	var bgCounter = 0;
+
 	$("#searchForm").submit(function(){
 		
-		$("body").style.background = "green";
+		$("body").css("background", bgArray[bgCounter]);
+		bgCounter++;
+		if (bgCounter == 4) {
+			bgCounter == 0;
+		}
 
 		if ($("#query").val() != "") {
 
