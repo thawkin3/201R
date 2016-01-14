@@ -267,6 +267,20 @@
 
 		function showHints(str) {
 			console.log("test");
+			var list = "<ul>";
+			for (var i = 0; i < cities.length; i++) {
+				if (cities[i].indexOf(str) == 0) {
+					list += "<li>" + cities[i] + "</li>";
+				}
+			}
+			list += "</ul>";
+			console.log(list);
+			document.getElementById("sug").innerHTML = list;
+			/*
+			sugCities = cities.filter(function(val) {
+			  return val.indexOf(str) == 0);
+			});
+			*/
 		}
 		</script>
 
