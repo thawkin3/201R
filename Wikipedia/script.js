@@ -12,11 +12,12 @@ $(document).ready(function(){
 	$("#searchForm").submit(function(){
 		console.log(bgCounter);
 		$("body").css("background", bgArray[bgCounter]);
-		bgCounter++;
-
-		if (bgCounter > bgArray.length - 1) {
-			bgCounter == 0;
+		if (bgCounter < bgArray.length - 1) {
+			bgCounter++;
+		} else {
+			bgCounter = 0;
 		}
+
 
 		if ($("#query").val() != "") {
 
