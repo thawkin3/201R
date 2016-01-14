@@ -37,7 +37,7 @@ $(document).ready(function(){
 
 		setTimeout(function(){
 			$("h1").css("animation-name", "");
-		}, 2000);
+		}, 1000);
         
 
 
