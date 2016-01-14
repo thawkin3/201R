@@ -28,6 +28,15 @@ body {
     color: #666;
 }
 
+input#query {
+	transition: width 2s, font-size 2s;
+}
+
+input#query:hover {
+	width: 200px;
+    font-size: 30px;
+}
+
 a {
 	color: #000;
 }
