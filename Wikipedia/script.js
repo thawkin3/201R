@@ -56,6 +56,8 @@ $(document).ready(function(){
 			$("#container").html("<h3>Search to find a list of Wikipedia entries related to your topic</h3>");
 		}
 
+		$("h1").css("animation-name", "");
+
 	});
 
 	$("#random").click(function(){
