@@ -10,11 +10,11 @@ $(document).ready(function(){
 	var bgCounter = 0;
 
 	$("#searchForm").submit(function(){
-		
+		console.log(bgCounter);
 		$("body").css("background", bgArray[bgCounter]);
 		bgCounter++;
-		console.log(bgCounter);
-		if (bgCounter == 4) {
+
+		if (bgCounter > bgArray.length - 1) {
 			bgCounter == 0;
 		}
 
