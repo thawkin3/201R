@@ -4,6 +4,8 @@ $(document).ready(function(){
 
 	$("#searchForm").submit(function(){
 		
+		$(body).style.background = "green";
+
 		if ($("#query").val() != "") {
 
 			var queryText = $("#query").val();
