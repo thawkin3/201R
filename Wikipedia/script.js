@@ -19,6 +19,22 @@ $(document).ready(function(){
 			bgCounter = 0;
 		}
 
+		$('h1').css({
+
+	        //for firefox
+	        "-moz-animation-name":"rotatebox",
+	        "-moz-animation-duration":"0.8s",
+	        "-moz-animation-iteration-count":"1",
+	            "-moz-animation-fill-mode":"forwards",
+
+	        //for safari & chrome
+	        "-webkit-animation-name":"rotatebox",
+	        "-webkit-animation-duration":"0.8s",
+	        "-webkit-animation-iteration-count":"1",
+	        "-webkit-animation-fill-mode" : "forwards",
+
+        });
+
 
 		if ($("#query").val() != "") {
 
