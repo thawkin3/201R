@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	margin: 30px;
+	margin: 30px 0px;
 	text-align: center;
 	font-family: "Lato";
 	background: #895F8E;
@@ -32,7 +32,7 @@ a {
 
 @media screen and (max-width: 770px) {
 	.article {
-		width: 90%;
+		width: 85%;
 	}
 	body {
 		margin: 10px 0px;
