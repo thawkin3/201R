@@ -35,6 +35,11 @@ $(document).ready(function(){
 
         });
 
+		setTimeout(function(){
+			$("h1").css("animation-name", "");
+		}, 2000);
+        
+
 
 		if ($("#query").val() != "") {
 
@@ -55,8 +60,6 @@ $(document).ready(function(){
 		} else {
 			$("#container").html("<h3>Search to find a list of Wikipedia entries related to your topic</h3>");
 		}
-
-		$("h1").css("animation-name", "");
 
 	});
 
