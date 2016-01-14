@@ -13,6 +13,7 @@ $(document).ready(function(){
 		
 		$("body").css("background", bgArray[bgCounter]);
 		bgCounter++;
+		console.log(bgCounter);
 		if (bgCounter == 4) {
 			bgCounter == 0;
 		}
