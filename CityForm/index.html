@@ -2,16 +2,28 @@
 <html>
 	<head>
 		<title>Utah Cities Search</title>
+		<style>
+		body {
+			text-align: center;
+		}
+		div {
+			margin: auto;
+		}
+
+		div p {
+			margin: 0px;
+		}
+		</style>
 	</head>
 	<body>
 		<h1>Utah Cities</h1>
-		<p>Enter a city</p>
-		<input type="text" id="box" onkeyup="showHints(this.value)" />
+		Enter a city: <input type="text" id="box" onkeyup="showHints(this.value)" />
 		<br/>
-		<p>Suggestions</p>
-		<p id="sug"></p>
+		<h4>Suggestions:</h4>
+		<div id="sug"></div>
 
 		<script>
+		
 		var cities = ["Alpine",
 					"Altamont",
 					"Alton",
@@ -265,23 +277,24 @@
 					"Woodruff",
 					"Woods Cross"];
 
+		var list;
+
 		function showHints(str) {
-			console.log("test");
-			var list = "<ul>";
-			for (var i = 0; i < cities.length; i++) {
-				if (cities[i].indexOf(str) == 0) {
-					list += "<li>" + cities[i] + "</li>";
+			if (str != "") {
+				str = str.toLowerCase();
+				str = str[0].toUpperCase() + str.substr(1);
+				list = "";
+				for (var i = 0; i < cities.length; i++) {
+					if (cities[i].indexOf(str) == 0) {
+						list += "<p>" + cities[i] + "</p>";
+					}
 				}
+				document.getElementById("sug").innerHTML = list;
+			} else {
+				document.getElementById("sug").innerHTML = "";
 			}
-			list += "</ul>";
-			console.log(list);
-			document.getElementById("sug").innerHTML = list;
-			/*
-			sugCities = cities.filter(function(val) {
-			  return val.indexOf(str) == 0);
-			});
-			*/
 		}
+
 		</script>
 
 	</body>
