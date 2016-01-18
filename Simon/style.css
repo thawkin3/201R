@@ -1,0 +1,130 @@
+body {
+	margin: 20px;
+	padding: 0px;
+	text-align: center;
+	font-family: "Shadows Into Light", cursive;
+	background: #fff; /* For browsers that do not support gradients */
+	background: -webkit-radial-gradient(#fff, #999, #000); /* Safari 5.1 to 6.0 */
+	background: -o-radial-gradient(#fff, #999, #000); /* For Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(#fff, #999, #000); /* For Firefox 3.6 to 15 */
+	background: radial-gradient(#fff, #999, #000); /* Standard syntax */
+}
+
+h1 {
+	display: none;
+}
+
+#simon {
+	height: 500px;
+	width: 500px;
+	border-radius: 265px;
+    background: #000;
+    border: 15px solid #000;
+    margin: auto;
+    position: relative;
+}
+
+#center {
+	position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background: #000;
+    color: #fff;
+    top: 150px;
+    left: 150px;
+}
+
+#name {
+	font-size: 70px;
+}
+
+#startOrCount {
+	font-size: 40px;
+	cursor: pointer;
+}
+
+.color {
+	height: 246px;
+	width: 246px;
+	display: inline-block;
+	position: relative;
+}
+
+#green {
+	background: green;
+	background: rgba(30, 204, 30, 0.6);
+	border-top-left-radius: 246px;
+}
+
+#red {
+	background: red;
+	background: rgba(255,0,0,0.6);
+	border-top-right-radius: 246px;
+}
+
+#yellow {
+	background: yellow;
+	background: rgba(255,255,0,0.6);
+	border-bottom-left-radius: 246px;
+}
+
+#blue {
+	background: blue;
+	background: rgba(0,0,255,0.6);
+	border-bottom-right-radius: 246px;
+}
+
+@media screen and (max-width: 500px) {
+	body {
+		margin-top: 60px;
+	}
+
+	#simon {
+		height: 250px;
+		width: 250px;
+		border-radius: 135px;
+	    background: #000;
+	    border: 10px solid #000;
+	}
+
+	#center {
+		position: absolute;
+	    height: 100px;
+	    width: 100px;
+	    border-radius: 50px;
+	    background: #000;
+	    color: #fff;
+	    top: 75px;
+	    left: 75px;
+	}
+
+	#name {
+		font-size: 40px;
+	}
+
+	#startOrCount {
+		font-size: 20px;
+	}
+
+	.color {
+		height: 121px;
+		width: 121px;
+	}
+
+	#green {
+		border-top-left-radius: 121px;
+	}
+
+	#red {
+		border-top-right-radius: 121px;
+	}
+
+	#yellow {
+		border-bottom-left-radius: 121px;
+	}
+
+	#blue {
+		border-bottom-right-radius: 121px;
+	}
+}

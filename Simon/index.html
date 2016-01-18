@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simon Says</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link href='//fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css' />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+		<h1>Simon Says</h1>
+		
+		<div id="simon">
+			<div id="green" class="color"></div>
+			<div id="red" class="color"></div>
+			<div id="yellow" class="color"></div>
+			<div id="blue" class="color"></div>
+			<div id="center">
+				<span id="name">simon</span><br/>
+				<span id="startOrCount">start</span>
+			</div>
+		</div>
+
+		<audio id="greenAudio" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" preload="auto"></audio>
+		<audio id="redAudio" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" preload="auto"></audio>
+		<audio id="yellowAudio" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" preload="auto"></audio>
+		<audio id="blueAudio" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" preload="auto"></audio>
+	</body>
+</html>

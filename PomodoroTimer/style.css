@@ -3,6 +3,8 @@ body {
 	padding: 10px;
 	text-align: center;
 	font-family: monospace;
+	background: #88FF86;
+	background: linear-gradient(#88FF86, #fff) no-repeat;
 }
 
 #theTime {

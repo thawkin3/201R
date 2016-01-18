@@ -1,6 +1,23 @@
 body {
 	text-align: center;
 	font-family: "Montserrat";
+	background-color: silver;
+	background-image: linear-gradient(335deg, #b00 23px, transparent 23px),
+	linear-gradient(155deg, #d00 23px, transparent 23px),
+	linear-gradient(335deg, #b00 23px, transparent 23px),
+	linear-gradient(155deg, #d00 23px, transparent 23px);
+	background-size: 58px 58px;	
+	background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+}
+
+h1 {
+	display: block;
+    background: blue;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -10px;
+    padding-bottom: 32px;
+    padding-top: 20px;
 }
 
 table {
@@ -40,4 +57,5 @@ button[name="plus"] {
     padding-top: 7px;
     border-radius: 5px;
     box-shadow: 2px 2px #666;
+    margin-top: 30px;
 }

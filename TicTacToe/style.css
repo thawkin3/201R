@@ -1,0 +1,61 @@
+body {
+	margin: 30px;
+	text-align: center;
+	font-family: "Lato";
+	background-color: #fff;
+    background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#ADB3FF .1em, transparent .1em);
+    background-size: 100% 2em;
+}
+
+h3 {
+	margin-top: 38px;
+}
+
+.buttons {
+	display: inline-block;
+	width: 160px;
+	padding: 10px 0px;
+	margin: 20px;
+	border: 3px solid #000;
+    border-radius: 10px;
+}
+
+.buttons:hover {
+	background: #000;
+	color: #fff;
+	border-color: #fff;
+	cursor: pointer;
+}
+
+#gameBoard {
+	width: 300px;
+	height: 300px;
+	background: #000;
+	margin: auto;
+}
+
+#gameBoard .cell {
+	width: 96px;
+    height: 96px;
+    display: inline-block;
+    border: 1px solid #000;
+    border-collapse: separate;
+    margin: 1px;
+    margin-bottom: -2px;
+    padding: 0px;
+    background: #eee;
+}
+
+#gameBoard .cell p {
+    padding: 0px;
+    position: absolute;
+    font-size: 80px;
+}
+
+#gameBoard .cell p.X {
+	margin: -3px 0px 0px 21px;
+}
+
+#gameBoard .cell p.O {
+	margin: -3px 0px 0px 16px;
+}

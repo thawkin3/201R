@@ -1,21 +1,29 @@
 body {
 	text-align: center;
 	font-family: Verdana, Geneva, sans-serif;
-	background: url(bg.jpg) center top no-repeat;
-	background-size: cover;
 	margin: 0px;
 	padding: 0px;
+	background:
+	linear-gradient(45deg, #92baac 45px, transparent 45px)64px 64px,
+	linear-gradient(45deg, #92baac 45px, transparent 45px,transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px),
+	linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px,#92baac 68px,#92baac 113px,transparent 113px,transparent 158px,#92baac 158px);
+	background-color:#e1ebbd;
+	background-size: 128px 128px;
 }
 
 h1 {
 	text-transform: uppercase;
 	font-weight: 100;
     font-size: 28px;
-    margin-top: 20%;
+    margin-top: 20px;
 }
 
 h4 {
 	margin: 0px;
+}
+
+button {
+	margin-botto: 30px;
 }
 
 #quoteHolder {
@@ -26,6 +34,7 @@ h4 {
 	border-radius: 10px;
 	margin-bottom: 20px;
 	padding: 20px;
+	background: #fff;
 }
 
 @media screen and (max-width: 1000px) {
