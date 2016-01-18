@@ -1,4 +1,6 @@
-// some global variables I'll need
+$(document).ready(function(){
+
+	// some global variables I'll need
 	var piecePlayer;
 	var pieceComp;
 	var board;
@@ -6,8 +8,7 @@
 	var nMoves;
 	var playerMoves;
 	var compMoves;
-
-$(document).ready(function(){
+	var compCell;
 
 	// function to check for a winner
 	function checkWinner() {
@@ -31,6 +32,174 @@ $(document).ready(function(){
 			}
 		}
 		return false;
+	}
+
+	// function to check if the computer can win on the next move
+	// if so, it will go there
+	function compWinMove() {
+		// top row
+		if (board[0][0] == pieceComp && board[0][1] == pieceComp && board[0][2] == "u") {
+			return 2;
+		} else if (board[0][0] == pieceComp && board[0][2] == pieceComp && board[0][1] == "u") {
+			return 1;
+		} else if (board[0][1] == pieceComp && board[0][2] == pieceComp && board[0][0] == "u") {
+			return 0;
+		// middle row
+		} else if (board[1][0] == pieceComp && board[1][1] == pieceComp && board[1][2] == "u") {
+			return 5;
+		} else if (board[1][0] == pieceComp && board[1][2] == pieceComp && board[1][1] == "u") {
+			return 4;
+		} else if (board[1][1] == pieceComp && board[1][2] == pieceComp && board[1][0] == "u") {
+			return 3;
+		// bottom row
+		} else if (board[2][0] == pieceComp && board[2][1] == pieceComp && board[2][2] == "u") {
+			return 8;
+		} else if (board[2][0] == pieceComp && board[2][2] == pieceComp && board[2][1] == "u") {
+			return 7;
+		} else if (board[2][1] == pieceComp && board[2][2] == pieceComp && board[2][0] == "u") {
+			return 6;
+		// left column
+		} else if (board[0][0] == pieceComp && board[1][0] == pieceComp && board[2][0] == "u") {
+			return 6;
+		} else if (board[0][0] == pieceComp && board[2][0] == pieceComp && board[1][0] == "u") {
+			return 3;
+		} else if (board[1][0] == pieceComp && board[2][0] == pieceComp && board[0][0] == "u") {
+			return 0;
+		// middle column
+		} else if (board[0][1] == pieceComp && board[1][1] == pieceComp && board[2][1] == "u") {
+			return 7;
+		} else if (board[0][1] == pieceComp && board[2][1] == pieceComp && board[1][1] == "u") {
+			return 4;
+		} else if (board[1][1] == pieceComp && board[2][1] == pieceComp && board[0][1] == "u") {
+			return 1;
+		// right column
+		} else if (board[0][2] == pieceComp && board[1][2] == pieceComp && board[2][2] == "u") {
+			return 8;
+		} else if (board[0][2] == pieceComp && board[2][2] == pieceComp && board[1][2] == "u") {
+			return 5;
+		} else if (board[1][2] == pieceComp && board[2][2] == pieceComp && board[0][2] == "u") {
+			return 2;
+		// top left to bottom right
+		} else if (board[0][0] == pieceComp && board[1][1] == pieceComp && board[2][2] == "u") {
+			return 8;
+		} else if (board[0][0] == pieceComp && board[2][2] == pieceComp && board[1][1] == "u") {
+			return 4;
+		} else if (board[1][1] == pieceComp && board[2][2] == pieceComp && board[0][0] == "u") {
+			return 0;
+		// top right to bottom left
+		} else if (board[0][2] == pieceComp && board[1][1] == pieceComp && board[2][0] == "u") {
+			return 6;
+		} else if (board[0][2] == pieceComp && board[2][0] == pieceComp && board[1][1] == "u") {
+			return 4;
+		} else if (board[1][1] == pieceComp && board[2][0] == pieceComp && board[0][2] == "u") {
+			return 2;
+		} else {
+			return null;
+		}
+	}
+
+	// function to check if the player is about to win on the next move
+	// if so, the computer will block the player
+	function blockPlayerWinMove() {
+		// top row
+		if (board[0][0] == piecePlayer && board[0][1] == piecePlayer && board[0][2] == "u") {
+			return 2;
+		} else if (board[0][0] == piecePlayer && board[0][2] == piecePlayer && board[0][1] == "u") {
+			return 1;
+		} else if (board[0][1] == piecePlayer && board[0][2] == piecePlayer && board[0][0] == "u") {
+			return 0;
+		// middle row
+		} else if (board[1][0] == piecePlayer && board[1][1] == piecePlayer && board[1][2] == "u") {
+			return 5;
+		} else if (board[1][0] == piecePlayer && board[1][2] == piecePlayer && board[1][1] == "u") {
+			return 4;
+		} else if (board[1][1] == piecePlayer && board[1][2] == piecePlayer && board[1][0] == "u") {
+			return 3;
+		// bottom row
+		} else if (board[2][0] == piecePlayer && board[2][1] == piecePlayer && board[2][2] == "u") {
+			return 8;
+		} else if (board[2][0] == piecePlayer && board[2][2] == piecePlayer && board[2][1] == "u") {
+			return 7;
+		} else if (board[2][1] == piecePlayer && board[2][2] == piecePlayer && board[2][0] == "u") {
+			return 6;
+		// left column
+		} else if (board[0][0] == piecePlayer && board[1][0] == piecePlayer && board[2][0] == "u") {
+			return 6;
+		} else if (board[0][0] == piecePlayer && board[2][0] == piecePlayer && board[1][0] == "u") {
+			return 3;
+		} else if (board[1][0] == piecePlayer && board[2][0] == piecePlayer && board[0][0] == "u") {
+			return 0;
+		// middle column
+		} else if (board[0][1] == piecePlayer && board[1][1] == piecePlayer && board[2][1] == "u") {
+			return 7;
+		} else if (board[0][1] == piecePlayer && board[2][1] == piecePlayer && board[1][1] == "u") {
+			return 4;
+		} else if (board[1][1] == piecePlayer && board[2][1] == piecePlayer && board[0][1] == "u") {
+			return 1;
+		// right column
+		} else if (board[0][2] == piecePlayer && board[1][2] == piecePlayer && board[2][2] == "u") {
+			return 8;
+		} else if (board[0][2] == piecePlayer && board[2][2] == piecePlayer && board[1][2] == "u") {
+			return 5;
+		} else if (board[1][2] == piecePlayer && board[2][2] == piecePlayer && board[0][2] == "u") {
+			return 2;
+		// top left to bottom right
+		} else if (board[0][0] == piecePlayer && board[1][1] == piecePlayer && board[2][2] == "u") {
+			return 8;
+		} else if (board[0][0] == piecePlayer && board[2][2] == piecePlayer && board[1][1] == "u") {
+			return 4;
+		} else if (board[1][1] == piecePlayer && board[2][2] == piecePlayer && board[0][0] == "u") {
+			return 0;
+		// top right to bottom left
+		} else if (board[0][2] == piecePlayer && board[1][1] == piecePlayer && board[2][0] == "u") {
+			return 6;
+		} else if (board[0][2] == piecePlayer && board[2][0] == piecePlayer && board[1][1] == "u") {
+			return 4;
+		} else if (board[1][1] == piecePlayer && board[2][0] == piecePlayer && board[0][2] == "u") {
+			return 2;
+		} else {
+			return null;
+		}
+	}
+
+	// set computer up for a move with two options to win if possible
+	function setUpWin() {
+		if (board[0][0] == "u" && board[0][1] == "u" && board[1][0] == "u") {
+			return 0;
+		} else if (board[0][2] == "u" && board[0][1] == "u" && board[1][2] == "u") {
+			return 2;
+		} else if (board[2][0] == "u" && board[1][0] == "u" && board[2][1] == "u") {
+			return 6;
+		} else if (board[2][2] == "u" && board[1][2] == "u" && board[2][1] == "u") {
+			return 8;
+		} else {
+			return null;
+		}
+	}
+
+	// last computer's move, pick the last remaining spot
+	function lastSpot() {
+		if (board[0][0] == "u") {
+			return 0;
+		} else if (board[0][1] == "u") {
+			return 1;
+		} else if (board[0][2] == "u") {
+			return 2;
+		} else if (board[1][0] == "u") {
+			return 3;
+		} else if (board[1][1] == "u") {
+			return 4;
+		} else if (board[1][2] == "u") {
+			return 5;
+		} else if (board[2][0] == "u") {
+			return 6;
+		} else if (board[2][1] == "u") {
+			return 7;
+		} else if (board[2][2] == "u") {
+			return 8;
+		} else {
+			return "error";
+		}
 	}
 
 	// start a new game
@@ -64,7 +233,7 @@ $(document).ready(function(){
 		}
 		// computer's first move, corners or middle only
 		var possibleMoves = [0, 2, 4, 6, 8];
-		var compCell = possibleMoves[Math.floor(Math.random()*5)];
+		compCell = possibleMoves[Math.floor(Math.random()*5)];
 		compMoves.push(compCell);
 		console.log("Computer moves: " + compMoves);
 		// update the game board backend
@@ -168,10 +337,10 @@ $(document).ready(function(){
 			}
 
 			// computer's turn
+			compCell = null;
 			switch (nMoves) {
 				// second computer move
 				case 2:
-					var compCell;
 					if (board[1][1] == pieceComp) {		// if computer's first move was in the center
 						var possibleMoves = [0, 2, 6, 8];
 						compCell = possibleMoves[Math.floor(Math.random()*4)];
@@ -222,81 +391,45 @@ $(document).ready(function(){
 					break;
 				// third computer move
 				case 4:
-					var compCell = Math.floor(Math.random()*9);
-					while ( $("#cell"+compCell).html() != "" ) {
-						compCell = Math.floor(Math.random()*9);
-					}
-				
-					/*	
-					var compCell;
-					var compFirstMove = compMoves[0];
-					var compSecondMove = compMoves[1];
-					switch (compFirstMove) {
-						case 0:
-							if (compSecondMove == 2 && board[0][1] == "u") {
-								board[0][1] = pieceComp;
-							} else if (compSecondMove == 5 && board[2][2] == "u") {
-								board[2][2] = pieceComp;
+					compCell = compWinMove();
+					console.log("nMoves = 4, comp can win: " + compCell);
+					if (compCell == null) {
+						compCell = blockPlayerWinMove();
+						console.log("nMoves = 4, player can win: " + compCell);
+						if (compCell == null) {
+							compCell = setUpWin();
+							if (compCell == null) {
+								var possibleMoves = [0, 2, 6, 8];
+								compCell = possibleMoves[Math.floor(Math.random()*4)];
+								while ( $("#cell"+compCell).html() != "" ) {
+									compCell = possibleMoves[Math.floor(Math.random()*4)];
+								}
 							}
-							
-							break;
-						case 1:
-							board[0][1] = pieceComp;
-							break;
-						case 2:
-							board[0][2] = pieceComp;
-							break;
-						case 3:
-							board[1][0] = pieceComp;
-							break;
-						case 4:
-							board[1][1] = pieceComp;
-							break;
-						case 5:
-							board[1][2] = pieceComp;
-							break;
-						case 6:
-							board[2][0] = pieceComp;
-							break;
-						case 7:
-							board[2][1] = pieceComp;
-							break;
-						case 8:
-							board[2][2] = pieceComp;
-							break;
-						default:
-							console.log("error in choice");
-					}
-					*/
-					
-					/*
-					if (playerMoves.indexOf(2) != -1 || playerMoves.indexOf(4) != -1 || playerMoves.indexOf(6) != -1 || playerMoves.indexOf(8) != -1) {
-						var possibleMoves = [0, 2, 6, 8];
-						compCell = possibleMoves[Math.floor(Math.random()*4)];
-						while ( $("#cell"+compCell).html() != "" ) {
-							compCell = possibleMoves[Math.floor(Math.random()*4)];
-						}
-					} else {
-						compCell = Math.floor(Math.random()*9);
-						while ( $("#cell"+compCell).html() != "" ) {
-							compCell = Math.floor(Math.random()*9);
 						}
 					}
-					*/
 					break;
 				// fourth computer move
 				case 6:
-					var compCell = Math.floor(Math.random()*9);
-					while ( $("#cell"+compCell).html() != "" ) {
-						compCell = Math.floor(Math.random()*9);
+					compCell = compWinMove();
+					console.log("nMoves = 6, comp can win: " + compCell);
+					if (compCell == null) {
+						compCell = blockPlayerWinMove();
+						console.log("nMoves = 6, player can win: " + compCell);
+						if (compCell == null) {
+							compCell = setUpWin();
+							if (compCell == null) {
+								var possibleMoves = [0, 2, 6, 8];
+								compCell = possibleMoves[Math.floor(Math.random()*4)];
+								while ( $("#cell"+compCell).html() != "" ) {
+									compCell = possibleMoves[Math.floor(Math.random()*4)];
+								}
+							}
+						}
 					}
 					break;
 				// fifth computer move, just the last spot on the board
 				case 8:
-					var compCell = Math.floor(Math.random()*9);
-					while ( $("#cell"+compCell).html() != "" ) {
-						compCell = Math.floor(Math.random()*9);
-					}
+					compCell = lastSpot();
 					break;
 				default:
 					console.log("no moves left");
