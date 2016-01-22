@@ -1,0 +1,66 @@
+body {
+	text-align: center;
+	font-family: 'Slabo 27px';
+}
+
+body::after {
+  content: "";
+  background: url(bg.jpg);
+  background-size: cover;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+h1 {
+	letter-spacing: 8px;
+	margin-bottom: 0px;
+}
+
+h1 span#utah {
+	color: #0000FF;
+}
+
+h1 span#l {
+	letter-spacing: 0px;
+}
+
+h1 sup#ast {
+	font-size: 22px;
+}
+
+h6 {
+	margin-top: 0px;
+}
+
+div {
+	margin: auto;
+}
+
+p {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+p#instructions {
+	display: inline;
+}
+
+li {
+	list-style: none;
+    text-indent: -40px;
+}
+
+#txthint li {
+	cursor: pointer;
+}
+
+#dispcity {
+	text-align: center;
+    height: 20px;
+    width: 260px;
+}

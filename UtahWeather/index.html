@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Utah Weather</title>
+		<link href='//fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<h1>Current Bea<span id="utah">UTAH</span>fu<span id="l">l</span><sup id="ast">*</sup> Weather</h1>
+		<h6>*Results may vary</h6>
+		<form>
+			<p id="instructions">Enter A Utah City: </p><input type="text" id="cityfield" value="">
+			<input id="button" type="submit" value="Submit">
+			<br>
+			<br>
+			<p>Suggestions:</p> <span id="txtHint">Empty</span>
+			
+		</form>
+		<p>City:</p>
+		<textarea id="dispcity">No City</textarea>
+		<p>Current Weather:</p>
+		<div id="weather">No weather</div>
+	</body>
+</html>
