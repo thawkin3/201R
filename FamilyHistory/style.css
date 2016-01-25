@@ -42,4 +42,5 @@ input.ng-dirty {
 	margin: auto;
 	text-align: left;
 	width: 420px;
+	white-space: nowrap;
 }
