@@ -1,0 +1,45 @@
+body {
+	text-align: center;
+	font-family: cursive;
+}
+
+body::after {
+  content: "";
+  background: url(bg.jpg) center top no-repeat;
+  opacity: 0.15;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+h1 {
+	font-family: Lobster, cursive;
+	font-size: 46px;
+}
+
+input {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+input[type="text"] {
+	width: 200px;
+	font-family: cursive;
+}
+
+input.ng-pristine {
+	background: #D9F6FF;
+}
+
+input.ng-dirty {
+	background: #DAFFDA;
+}
+
+#listDiv {
+	margin: auto;
+	text-align: left;
+	width: 420px;
+}

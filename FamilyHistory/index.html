@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Family History To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="listCtrl.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="listCtrl">
+
+    <h1>My Family History List</h1>
+
+    <form ng-submit="add()">
+        <input id="father" type="text" ng-model="father" size="20" placeholder="Father Name">
+        <input type="text" ng-model="mother" size="20" placeholder="Mother Name">
+        <br/>
+        <input type="text" ng-model="child" size="20" placeholder="Child Name">
+        <br/>
+        <input type="submit" value="Add New Entry">
+    </form>
+
+    <br>
+    <div id="listDiv">
+    <div ng-repeat="x in namesList">
+        <input type="checkbox" ng-model="x.done"> <span ng-bind="x.listText"></span>
+    </div>
+    </div>
+
+    <p><button ng-click="remove()">Remove checked names</button></p>
+
+</body>
+
+</html>
