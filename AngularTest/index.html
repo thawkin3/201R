@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="firstApp">
+  <head>
+    <title>First AngularJS App</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div ng-controller="FirstController">
+      <form ng-submit="uppercaser()">
+        <span>Name:</span>
+        <input type="text" ng-model="first">
+        <input type="text" ng-model="last">
+        <input type="submit" value="Shout it!">
+      </form>
+      <hr>
+      <h1>{{heading}}</h1>
+      <h1 id="theName">{{message | uppercase}}</h1>
+    </div>
+  </body>
+</html>

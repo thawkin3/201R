@@ -1,0 +1,7 @@
+body, div, .ng-scope {
+	text-align: center;
+}
+
+#theName {
+	font-size: 100px;
+}
