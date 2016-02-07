@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app="theApp" ng-cloak>
+    <head>
+        <title>Routes</title>
+        <link type="text/css" rel="stylesheet" href="style.css" />
+        <script src="scripts/angular.js"></script>
+        <script src="scripts/angular-route.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/controllers/view1Ctrl.js"></script>
+        <script src="app/controllers/view2Ctrl.js"></script>
+    </head>
+    <body>
+
+    	<h1>Routes Testing</h1>
+    	<ul>
+	    	<li><a href="#/view1">View 1</a></li>
+	    	<li><a href="#/view2">View 2</a></li>
+	    	<li><a href="#/view3">View 3</a></li>
+    	</ul>
+
+    	<div ng-view></div>
+
+    </body>
+</html>

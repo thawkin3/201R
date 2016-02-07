@@ -1,0 +1,32 @@
+body {
+	text-align: center;
+}
+
+table {
+	margin: auto;
+	border: 2px solid #eee;
+}
+
+td, th {
+	padding: 10px;
+}
+
+table thead tr {
+	background-color: #ddd;
+}
+
+table tbody tr:nth-child(odd) {
+	background-color: #f1f1f1;
+}
+table tbody tr:nth-child(even) {
+	background-color: #ddd;
+}
+
+p {
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 5px;
+	background-color: #ADD8E6;
+	border-radius: 8px;
+	transition: 0.5s linear all;
+}

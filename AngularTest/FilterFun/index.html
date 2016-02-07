@@ -1,0 +1,116 @@
+<!doctype html>
+<html ng-app="theApp">
+    <head>
+        <title>Filter Fun</title>
+        <link type="text/css" rel="stylesheet" href="style.css" />
+        <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+
+        <h1>AngularJS Practice</h1>
+
+        <hr>
+
+        <div ng-controller="filterCtrl">
+            <h2>Filter Fun</h2>
+
+            <form>
+                <span>Text:</span>
+                <input type="text" ng-model="theText">
+            </form>
+            <br/>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Filter Name</th>
+                        <th>Output</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>uppercase</td>
+                        <td>{{ theText | uppercase }}</td>
+                    </tr>
+                    <tr>
+                        <td>lowercase</td>
+                        <td>{{ theText | lowercase }}</td>
+                    </tr>
+                    <tr>
+                        <td>currency</td>
+                        <td>{{ theText | currency }}</td>
+                    </tr>
+                    <tr>
+                        <td>date</td>
+                        <td>{{ theText | date }}</td>
+                    </tr>
+                    <tr>
+                        <td>json</td>
+                        <td>{{ theText | json }}</td>
+                    </tr>
+                    <tr>
+                        <td>limitTo : 5</td>
+                        <td>{{ theText | limitTo : 5 }}</td>
+                    </tr>
+                    <tr>
+                        <td>number</td>
+                        <td>{{ theText | currency }}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <h2>Using the "filter" filter and the "orderBy" filter</h2>
+            Filter By: <input type="text" placeholder="some criteria" ng-model="filterCriteria">
+            <br/>
+            <br/>
+            <input type="radio" ng-model="ord" value="alpha" ng-click="theOrder(true, false)">Order alphabetically
+            <input type="radio" ng-model="ord" value="alphaRev" ng-click="theOrder(true, true)">Order reverse alphabetically
+            <input type="radio" ng-model="ord" value="none" ng-click="theOrder(false, false)">No order
+            <br/>
+            <br/>
+            <p ng-repeat="x in theArray | filter : filterCriteria | orderBy : proxy : reverse">{{ x }}</p>
+
+        </div>
+
+        <hr>
+
+        <div ng-controller="repeatCtrl">
+
+            <h2>Using ng-repeat</h2>
+
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr ng-repeat="person in people">
+                    <td>{{ person.name }}</td>
+                    <td>{{ person.age }}</td>
+                </tr>
+            </table>
+        </div>
+
+        <hr>
+
+        <div ng-controller="httpCtrl">
+
+            <h2>Using the $http Service to get a JSON file from the server</h2>
+
+            <table>
+                <tr>
+                    <th>State Name</th>
+                    <th>Abbreviation</th>
+                </tr>
+                <tr ng-repeat="state in states">
+                    <td>{{ state.name }}</td>
+                    <td>{{ state.abbreviation }}</td>
+                </tr>
+            </table>
+        </div>
+
+    </body>
+</html>
