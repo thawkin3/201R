@@ -3,7 +3,7 @@
 	var gameController = function ($scope, $routeParams, $rootScope, $location, $timeout) {
 
 		// Array to hold some pipe limits in
-		$scope.topBottom = [];
+		$scope.topBottom;
 
 		// Variable for the game start
 		$scope.gameStart = true;
@@ -16,14 +16,18 @@
 			for(var i = 0; i < ourArray.length; i++) {
 				if(parseInt(ourArray[i].style.left) >= 75 & parseInt(ourArray[i].style.left) <= 140) {
 					$rootScope.$apply(function(){
-						$rootScope.currentScore = i;
+						$rootScope.currentScore = i + 1;
 					});
 					var birdPos = parseInt(document.getElementById("bird").style.top);
 					if (birdPos > $scope.topBottom[i][0] | birdPos < $scope.topBottom[i][1]) {
 						document.getElementById("theme").pause();
 						var gameEnd = true;
 						var yourScore = i;
-						sessionStorage.setItem("thisScore", yourScore);
+						if ($rootScope.currentScore > $rootScope.highscore) {
+							$rootScope.$apply(function(){
+								$rootScope.highscore = $rootScope.currentScore;
+							});
+						}
 						$timeout(function() {
 							$location.url("/score");
 						}, 2000);
@@ -56,16 +60,16 @@
 		$scope.runGame = function() {
 
 			// Clear out the previous game's score
-			sessionStorage.removeItem("thisScore");
-			sessionStorage.setItem("thisScore", 0);
+			$rootScope.currentScore = 0;
 
 			// Checking if a High Score exists
-			if (sessionStorage.getItem("highScore") == null) {
-				sessionStorage.setItem("highScore", 0);	
-			}
+			// if ($rootScope.highscore == null) {
+			// 	$rootScope.highscore = 0;
+			// }
 			
 			// Set up our pipes so that there's a different game every time
 			var theLeft = 350;
+			$scope.topBottom = [];
 			
 			for (var i = 0; i < 150; i++) {
 				if (i % 2 == 0) {
@@ -100,8 +104,8 @@
 						// FIRST TIME "F" IS PRESSED
 						if ($scope.gameStart) {
 							// Hides the title and instructions
-							$('.title').hide();
-							$('.instructions').hide();
+							$('#title').hide();
+							$('#instructions').hide();
 
 							// Moves all the pipes continuously
 							$('.pipeBottom').animate({left:'-=10000px'},60000);

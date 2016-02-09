@@ -1,7 +1,6 @@
 (function() {
 
 	var scoreController = function ($scope, $routeParams, $rootScope) {
-
 		
 	};
 

@@ -20,7 +20,7 @@ app.config(function ($routeProvider){
 });
 
 app.run(function($rootScope) {
-    $rootScope.currentScore;
-    $rootScope.highScore;
+    $rootScope.currentScore = 0;
+    $rootScope.highscore = 0;
     $rootScope.scores = [];
 })

@@ -1,7 +1,25 @@
+/* General */
+@font-face {
+    font-family: "flappyFont";
+    src: url("flappyFont.TTF");
+}
+
+p, a {
+  font-family: "flappyFont", Arial, sans-serif;
+  color: #000;
+}
+
+a:hover {
+    color: #000;
+    text-shadow: 0px 0px 1px #fff;
+    text-decoration: none;
+}
+
 #game {
     height: 383px;
     width: 770px;
     background-color: #4CD5E0;
+    background-color: #70C4CE;
     overflow: hidden;
     border-radius: 10px;
     margin: auto;
@@ -10,6 +28,16 @@
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+
+/* Game */
+#game p#score {
+    text-align: right;
+    font-size: 40px;
+    z-index: 5;
+    position: absolute;
+    right: 10px;
 }
 
 #bird {
@@ -44,7 +72,7 @@
     transform: rotate(100deg) scaleX(-1) !important;
 }
 
-.title {
+#title {
     width: 600px;
     left: 83px;
     top: 50px;
@@ -53,7 +81,7 @@
     z-index: 2;
 }
 
-.instructions {
+#instructions {
     width: 600px;
     left: 83px;
     top: 200px;
@@ -81,322 +109,53 @@
     transform: rotate(180deg) scaleX(-1);
 }
 
-#p1a {
-   top: 250px;
-   left: 350px;
+
+/* Score Board */
+#scoreboard {
+    margin: auto;
+    display: block;
+    max-width: 100%; 
+    max-height: 100%;
 }
 
-#p1b {
-   top: -100px;
-   left: 350px;
+#medal {
+    position: absolute;
+    top: 220px;
+    left: 200px;
+    height: 100px;
 }
 
-#p2a {
-   top: 290px;
-   left: 500px;
+#thisScore {
+    position: absolute;
+    top: 188px;
+    right: 200px;
+    font-size: 56px;
 }
 
-#p2b {
-   top: -60px;
-   left: 500px;
+#highscore {
+    position: absolute;
+    top: 270px;
+    right: 200px;
+    font-size: 58px;
 }
 
-#p3a {
-   top: 300px;
-   left: 650px;
+#again {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 26px;
 }
 
-#p3b {
-   top: -50px;
-   left: 650px;
+#topScores {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 26px;
 }
 
-#p4a {
-   top: 280px;
-   left: 800px;
-}
 
-#p4b {
-   top: -70px;
-   left: 800px;
-}
+/* High Scores */
 
-#p5a {
-   top: 320px;
-   left: 950px;
-}
 
-#p5b {
-   top: -30px;
-   left: 950px;
-}
 
-#p6a {
-   top: 250px;
-   left: 1100px;
-}
 
-#p6b {
-   top: -100px;
-   left: 1100px;
-}
-
-#p7a {
-   top: 170px;
-   left: 1250px;
-}
-
-#p7b {
-   top: -180px;
-   left: 1250px;
-}
-
-#p8a {
-   top: 240px;
-   left: 1400px;
-}
-
-#p8b {
-   top: -110px;
-   left: 1400px;
-}
-
-#p9a {
-   top: 250px;
-   left: 1550px;
-}
-
-#p9b {
-   top: -100px;
-   left: 1550px;
-}
-
-#p10a {
-   top: 290px;
-   left: 1700px;
-}
-
-#p10b {
-   top: -60px;
-   left: 1700px;
-}
-
-#p11a {
-   top: 300px;
-   left: 1850px;
-}
-
-#p11b {
-   top: -50px;
-   left: 1850px;
-}
-
-#p12a {
-   top: 280px;
-   left: 2000px;
-}
-
-#p12b {
-   top: -70px;
-   left: 2000px;
-}
-
-#p13a {
-   top: 320px;
-   left: 2150px;
-}
-
-#p13b {
-   top: -30px;
-   left: 2150px;
-}
-
-#p14a {
-   top: 250px;
-   left: 2300px;
-}
-
-#p14b {
-   top: -100px;
-   left: 2300px;
-}
-
-#p15a {
-   top: 170px;
-   left: 2450px;
-}
-
-#p15b {
-   top: -180px;
-   left: 2450px;
-}
-
-#p16a {
-   top: 240px;
-   left: 2600px;
-}
-
-#p16b {
-   top: -110px;
-   left: 2600px;
-}
-
-#p17a {
-   top: 250px;
-   left: 2750px;
-}
-
-#p17b {
-   top: -100px;
-   left: 2750px;
-}
-
-#p18a {
-   top: 290px;
-   left: 2900px;
-}
-
-#p18b {
-   top: -60px;
-   left: 2900px;
-}
-
-#p19a {
-   top: 300px;
-   left: 3050px;
-}
-
-#p19b {
-   top: -50px;
-   left: 3050px;
-}
-
-#p20a {
-   top: 280px;
-   left: 3200px;
-}
-
-#p20b {
-   top: -70px;
-   left: 3200px;
-}
-
-#p21a {
-   top: 320px;
-   left: 3350px;
-}
-
-#p21b {
-   top: -30px;
-   left: 3350px;
-}
-
-#p22a {
-   top: 250px;
-   left: 3500px;
-}
-
-#p22b {
-   top: -100px;
-   left: 3500px;
-}
-
-#p23a {
-   top: 170px;
-   left: 3650px;
-}
-
-#p23b {
-   top: -180px;
-   left: 3650px;
-}
-
-#p24a {
-   top: 240px;
-   left: 3800px;
-}
-
-#p24b {
-   top: -110px;
-   left: 3800px;
-}
-
-#p25a {
-   top: 250px;
-   left: 3950px;
-}
-
-#p25b {
-   top: -100px;
-   left: 3950px;
-}
-
-#p26a {
-   top: 290px;
-   left: 4100px;
-}
-
-#p26b {
-   top: -60px;
-   left: 4100px;
-}
-
-#p27a {
-   top: 300px;
-   left: 4250px;
-}
-
-#p27b {
-   top: -50px;
-   left: 4250px;
-}
-
-#p28a {
-   top: 280px;
-   left: 4400px;
-}
-
-#p28b {
-   top: -70px;
-   left: 4400px;
-}
-
-#p29a {
-   top: 320px;
-   left: 4550px;
-}
-
-#p29b {
-   top: -30px;
-   left: 4550px;
-}
-
-#p30a {
-   top: 250px;
-   left: 4700px;
-}
-
-#p30b {
-   top: -100px;
-   left: 4700px;
-}
-
-#p31a {
-   top: 170px;
-   left: 4850px;
-}
-
-#p31b {
-   top: -180px;
-   left: 4850px;
-}
-
-#p32a {
-   top: 240px;
-   left: 5000px;
-}
-
-#p32b {
-   top: -10px;
-   left: 5000px;
-}
