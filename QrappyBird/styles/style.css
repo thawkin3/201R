@@ -1,7 +1,7 @@
 /* General */
 @font-face {
     font-family: "flappyFont";
-    src: url("flappyFont.TTF");
+    src: url("flappyFont.ttf");
 }
 
 body {
