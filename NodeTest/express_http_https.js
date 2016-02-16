@@ -4,7 +4,7 @@ var http = require('http');
 var fs = require('fs');
 var app = express();
 var options = {
-    host: '127.0.0.1',
+    host: '54.200.192.157',
     key: fs.readFileSync('../ssl/server.key'),
     cert: fs.readFileSync('../ssl/server.crt')
   };
