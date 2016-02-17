@@ -73,7 +73,7 @@
 			$rootScope.currentScore = 0;
 			
 			// Set up our pipes so that there's a different game every time
-			var theLeft = 350;
+			var theLeft = 700;
 			$scope.topBottom = [];
 			
 			for (var i = 0; i < 150; i++) {
@@ -132,8 +132,8 @@
 							$('#instructions').hide();
 
 							// Moves all the pipes continuously
-							$('.pipeBottom').animate({left:'-=10000px'},60000);
-							$('.pipeTop').animate({left:'-=10000px'},60000);
+							$('.pipeBottom').animate({left:'-=10000px'}, 80000, 'linear');
+							$('.pipeTop').animate({left:'-=10000px'}, 80000, 'linear');
 
 							// Immediately falling
 							$('#bird').animate({top:'+=400px'},2000);
