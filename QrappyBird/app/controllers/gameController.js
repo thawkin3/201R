@@ -2,6 +2,12 @@
 
 	var gameController = function ($scope, $routeParams, $rootScope, $location, $timeout) {
 
+		$scope.changeBg = function() {
+			$("#game").css("background", "#71C5D0 url('Images/bg.jpg') repeat-x center 60px");
+			$("#game").css("backgroundSize", "contain");
+		}
+		$scope.changeBg();
+
 		// Array to hold some pipe limits in
 		$scope.topBottom;
 
@@ -16,9 +22,6 @@
 
 			for(var i = 0; i < ourArray.length; i++) {
 				if(parseInt(ourArray[i].style.left) >= 75 & parseInt(ourArray[i].style.left) <= 140) {
-					// $rootScope.$apply(function(){
-					// 	$rootScope.currentScore = i + 1;
-					// });
 					var birdPos = parseInt(document.getElementById("bird").style.top);
 					if (birdPos > $scope.topBottom[i][0] | birdPos < $scope.topBottom[i][1]) {
 						// document.getElementById("theme").pause();
@@ -93,7 +96,28 @@
 			window.requestAnimationFrame($scope.mainLoop);
 			
 			// Theme Song!
-			// document.getElementById("theme").play();
+			if($rootScope.themeSong) {
+				$("#playTheme").html("Pause Theme Song");
+				if (document.getElementById("theme").currentTime > 140) {
+					document.getElementById("theme").currentTime = 0;
+					document.getElementById("theme").play();
+				}
+			} else {
+				$("#playTheme").html("Play Theme Song");
+			}
+
+			$("#playTheme").click(function(){
+				if (!$rootScope.themeSong) {
+					document.getElementById("theme").play();
+					$("#playTheme").html("Pause Theme Song");
+				} else {
+					document.getElementById("theme").pause();
+					$("#playTheme").html("Play Theme Song");
+				}
+				$rootScope.$apply(function(){
+					$rootScope.themeSong = !$rootScope.themeSong;
+				});
+			});
 
 			// Keydown to jump/fly
 			$(document).keydown(function(key) {
@@ -137,6 +161,8 @@
 				};
 			});
 
+			/*
+
 			// Computer clicks and iPad taps to jump/fly
 			$(document).bind("mousedown click touchstart", function(){
 				
@@ -178,7 +204,7 @@
 
 			});
 
-			
+			*/
 
 		};
 
