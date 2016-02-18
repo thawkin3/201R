@@ -12,7 +12,7 @@ $(document).ready(function(){
 			str = strArr.join(" ");
 		}
 
-        $.getJSON("https://students.cs.byu.edu/~clement/CS360/ajax/getcity.cgi?q="+str, function(data) {
+        $.getJSON("../getcity?q="+str, function(data) {
 	    	var everything;
 	    	everything = "<ul>";
 	    	$.each(data, function(i, item) {
