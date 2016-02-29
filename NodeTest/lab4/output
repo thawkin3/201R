@@ -48,3 +48,46 @@ Providence
 Provo
 [ { city: 'Providence' }, { city: 'Provo' } ]
 [0mGET /getcity?q=Pro [32m200 [0m1.041 ms - 40[0m
+[0mGET / [36m304 [0m0.644 ms - -[0m
+[0mGET /style.css [36m304 [0m0.332 ms - -[0m
+[0mGET /script.js [36m304 [0m0.201 ms - -[0m
+In getcity route
+/^undefined/
+[]
+[0mGET /getcity [32m200 [0m2.694 ms - 2[0m
+In getcity route
+/^P/
+Panguitch
+Paradise
+Paragonah
+Park City
+Park Valley
+Parowan
+Payson
+Peoa
+Pine Valley
+Pleasant Grove
+Plymouth
+Portage
+Price
+Providence
+Provo
+[ { city: 'Panguitch' },
+  { city: 'Paradise' },
+  { city: 'Paragonah' },
+  { city: 'Park City' },
+  { city: 'Park Valley' },
+  { city: 'Parowan' },
+  { city: 'Payson' },
+  { city: 'Peoa' },
+  { city: 'Pine Valley' },
+  { city: 'Pleasant Grove' },
+  { city: 'Plymouth' },
+  { city: 'Portage' },
+  { city: 'Price' },
+  { city: 'Providence' },
+  { city: 'Provo' } ]
+[0mGET /getcity?q=P [36m304 [0m2.276 ms - -[0m
+[0mGET /test2.txt [32m200 [0m3.255 ms - 83[0m
+[0mGET /test1.html [32m200 [0m1.305 ms - 328[0m
+[0mGET /favicon.ico [33m404 [0m8.312 ms - 1156[0m
