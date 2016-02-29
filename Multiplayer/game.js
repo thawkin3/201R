@@ -61,13 +61,13 @@ function onSocketConnection(client) {
 
 // Socket client has disconnected
 function onClientDisconnect() {
-	util.log("Player has disconnected: "+this.id);
+	util.log("Player has disconnected: " + this.id);
 
 	var removePlayer = playerById(this.id);
 
 	// Player not found
 	if (!removePlayer) {
-		util.log("Player not found: "+this.id);
+		util.log("Player not found: " + this.id);
 		return;
 	};
 
@@ -105,7 +105,7 @@ function onMovePlayer(data) {
 
 	// Player not found
 	if (!movePlayer) {
-		util.log("Player not found: "+this.id);
+		util.log("Player not found: " + this.id);
 		return;
 	};
 

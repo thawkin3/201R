@@ -7,18 +7,22 @@ var Player = function(startX, startY) {
 		id;
 
 	// Getters and setters
+	// gets your X position
 	var getX = function() {
 		return x;
 	};
 
+	// gets your Y position
 	var getY = function() {
 		return y;
 	};
 
+	// sets your X position
 	var setX = function(newX) {
 		x = newX;
 	};
 
+	// sets your Y position
 	var setY = function(newY) {
 		y = newY;
 	};

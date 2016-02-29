@@ -2,15 +2,15 @@
 ** GAME KEYBOARD CLASS
 **************************************************/
 var Keys = function(up, left, right, down) {
-	var up = up || false,
-		left = left || false,
-		right = right || false,
-		down = down || false;
+	var up = up || false;
+	var left = left || false;
+	var right = right || false;
+	var down = down || false;
 		
 	var onKeyDown = function(e) {
 		var that = this,
-			c = e.keyCode;
-		switch (c) {
+			theKey = e.keyCode;
+		switch (theKey) {
 			// Controls
 			case 37: // Left
 				that.left = true;
@@ -29,8 +29,8 @@ var Keys = function(up, left, right, down) {
 	
 	var onKeyUp = function(e) {
 		var that = this,
-			c = e.keyCode;
-		switch (c) {
+			theKey = e.keyCode;
+		switch (theKey) {
 			case 37: // Left
 				that.left = false;
 				break;
