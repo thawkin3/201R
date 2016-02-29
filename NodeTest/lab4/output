@@ -99,3 +99,7 @@ Provo
 [0mGET /script.js [32m200 [0m0.327 ms - 2608[0m
 [0mGET /bg.jpg [32m200 [0m0.757 ms - 505273[0m
 [0mGET /favicon.ico [33m404 [0m1.852 ms - 1156[0m
+[0mGET / [36m304 [0m0.560 ms - -[0m
+[0mGET /style.css [36m304 [0m1.381 ms - -[0m
+[0mGET /script.js [36m304 [0m0.209 ms - -[0m
+[0mGET /bg.jpg [36m304 [0m0.666 ms - -[0m
