@@ -17,24 +17,26 @@ function init() {
 	canvas = document.getElementById("gameCanvas");
 	ctx = canvas.getContext("2d");
 
-	// Maximise the canvas
-	canvas.width = window.innerWidth;
-	canvas.height = window.innerHeight;
+	// Maximize the canvas
+	//canvas.width = window.innerWidth;
+	//canvas.height = window.innerHeight;
+	canvas.width = 700;
+	canvas.height = 500;
 
-	// Initialise keyboard controls
+	// Initialize keyboard controls
 	keys = new Keys();
 
 	// Calculate a random start position for the local player
 	// The minus 5 (half a player size) stops the player being
-	// placed right on the egde of the screen
-	var startX = Math.round(Math.random()*(canvas.width-5)),
-		startY = Math.round(Math.random()*(canvas.height-5));
+	// placed right on the egde of the screen outside of the canvas
+	var startX = Math.round( Math.random() * (canvas.width-5) );
+	var startY = Math.round( Math.random() * (canvas.height-5) );
 
-	// Initialise the local player
+	// Initialize the local player
 	localPlayer = new Player(startX, startY);
 
-	// Initialise socket connection
-	socket = io.connect("http://localhost", {port: 8000, transports: ["websocket"]});
+	// Initialize socket connection
+	socket = io.connect("http://54.200.192.157", {port: 8000, transports: ["websocket"]});
 
 	// Initialise remote players array
 	remotePlayers = [];
@@ -48,12 +50,15 @@ function init() {
 ** GAME EVENT HANDLERS
 **************************************************/
 var setEventHandlers = function() {
+	
 	// Keyboard
 	window.addEventListener("keydown", onKeydown, false);
 	window.addEventListener("keyup", onKeyup, false);
 
+	/*
 	// Window resize
 	window.addEventListener("resize", onResize, false);
+	*/
 
 	// Socket connection successful
 	socket.on("connect", onSocketConnected);
@@ -69,6 +74,7 @@ var setEventHandlers = function() {
 
 	// Player removed message received
 	socket.on("remove player", onRemovePlayer);
+
 };
 
 // Keyboard key down
@@ -85,12 +91,14 @@ function onKeyup(e) {
 	};
 };
 
+/*
 // Browser window resize
 function onResize(e) {
 	// Maximise the canvas
 	canvas.width = window.innerWidth;
 	canvas.height = window.innerHeight;
 };
+*/
 
 // Socket connected
 function onSocketConnected() {
@@ -107,7 +115,7 @@ function onSocketDisconnect() {
 
 // New player
 function onNewPlayer(data) {
-	console.log("New player connected: "+data.id);
+	console.log("New player connected: " + data.id);
 
 	// Initialise the new player
 	var newPlayer = new Player(data.x, data.y);
@@ -123,7 +131,7 @@ function onMovePlayer(data) {
 
 	// Player not found
 	if (!movePlayer) {
-		console.log("Player not found: "+data.id);
+		console.log("Player not found: " + data.id);
 		return;
 	};
 
@@ -138,7 +146,7 @@ function onRemovePlayer(data) {
 
 	// Player not found
 	if (!removePlayer) {
-		console.log("Player not found: "+data.id);
+		console.log("Player not found: " + data.id);
 		return;
 	};
 
@@ -182,8 +190,7 @@ function draw() {
 	localPlayer.draw(ctx);
 
 	// Draw the remote players
-	var i;
-	for (i = 0; i < remotePlayers.length; i++) {
+	for (var i = 0; i < remotePlayers.length; i++) {
 		remotePlayers[i].draw(ctx);
 	};
 };
@@ -194,8 +201,7 @@ function draw() {
 **************************************************/
 // Find player by ID
 function playerById(id) {
-	var i;
-	for (i = 0; i < remotePlayers.length; i++) {
+	for (var i = 0; i < remotePlayers.length; i++) {
 		if (remotePlayers[i].id == id)
 			return remotePlayers[i];
 	};

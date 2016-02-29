@@ -2,24 +2,28 @@
 ** GAME PLAYER CLASS
 **************************************************/
 var Player = function(startX, startY) {
-	var x = startX,
-		y = startY,
-		id,
-		moveAmount = 2;
+	var x = startX;
+	var y = startY;
+	var id;
+	var moveAmount = 2;
 	
 	// Getters and setters
+	// gets your X position
 	var getX = function() {
 		return x;
 	};
 
+	// gets your Y position
 	var getY = function() {
 		return y;
 	};
 
+	// sets your X position
 	var setX = function(newX) {
 		x = newX;
 	};
 
+	// sets your Y position
 	var setY = function(newY) {
 		y = newY;
 	};
@@ -27,8 +31,8 @@ var Player = function(startX, startY) {
 	// Update player position
 	var update = function(keys) {
 		// Previous position
-		var prevX = x,
-			prevY = y;
+		var prevX = x;
+		var prevY = y;
 
 		// Up key takes priority over down
 		if (keys.up) {
