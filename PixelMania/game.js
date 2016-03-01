@@ -2,20 +2,8 @@
 ** NODE.JS REQUIREMENTS
 **************************************************/
 var util = require("util"),					// Utility resources (logging, object inspection, etc)
-	//io = require("socket.io"),				// Socket.IO
+	io = require("socket.io"),				// Socket.IO
 	Player = require("./Player").Player;	// Player class
-
-
-var express = require('express');
-var app = express();
-var server = require('http').createServer(app);
-var io = require("socket.io").listen(server);
-
-server.listen(4001);
-
-app.get('/', function(req, res) {
-	res.sendfile(__dirname + '/index.html');
-});
 
 
 /**************************************************
@@ -33,7 +21,7 @@ function init() {
 	players = [];
 
 	// Set up Socket.IO to listen on port 8000
-	//socket = io.listen(4001);
+	socket = io.listen(8000);
 
 	// Configure Socket.IO
 	socket.configure(function() {
