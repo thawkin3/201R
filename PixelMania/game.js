@@ -2,49 +2,20 @@
 ** NODE.JS REQUIREMENTS
 **************************************************/
 var util = require("util"),					// Utility resources (logging, object inspection, etc)
-	io = require("socket.io"),				// Socket.IO
+	//io = require("socket.io"),				// Socket.IO
 	Player = require("./Player").Player;	// Player class
 
 
-/* NEW STUFF */
-var http = require("http");
-var url = require('url');
-var fs = require('fs');
+var express = require('express');
+var app = express();
+var server = require('http').createServer(app);
+var io = require("socket.io").listen(server);
 
-var server = http.createServer(function(request, response){
-    var path = url.parse(request.url).pathname;
+server.listen(4001);
 
-    switch(path){
-        case '/':
-            response.writeHead(200, {'Content-Type': 'text/html'});
-            response.write('hello world');
-            response.end();
-            break;
-        case '/socket.html':
-            fs.readFile(__dirname + path, function(error, data){
-                if (error){
-                    response.writeHead(404);
-                    response.write("opps this doesn't exist - 404");
-                    response.end();
-                }
-                else{
-                    response.writeHead(200, {"Content-Type": "text/html"});
-                    response.write(data, "utf8");
-                    response.end();
-                }
-            });
-            break;
-        default:
-            response.writeHead(404);
-            response.write("opps this doesn't exist - 404");
-            response.end();
-            break;
-    }
+app.get('/', function(req, res) {
+	res.sendfile(__dirname + '/index.html');
 });
-
-//server.listen(4000);
-
-//io.listen(server);
 
 
 /**************************************************
@@ -61,8 +32,8 @@ function init() {
 	// Create an empty array to store players
 	players = [];
 
-	// Set up Socket.IO to listen on port 80
-	socket = io.listen(4000);
+	// Set up Socket.IO to listen on port 8000
+	socket = io.listen(4001);
 
 	// Configure Socket.IO
 	socket.configure(function() {
