@@ -33,7 +33,7 @@ function init() {
 	players = [];
 
 	// Set up Socket.IO to listen on port 8000
-	socket = io.listen(4001);
+	//socket = io.listen(4001);
 
 	// Configure Socket.IO
 	socket.configure(function() {
