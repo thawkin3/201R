@@ -103,3 +103,99 @@ Provo
 [0mGET /style.css [36m304 [0m1.381 ms - -[0m
 [0mGET /script.js [36m304 [0m0.209 ms - -[0m
 [0mGET /bg.jpg [36m304 [0m0.666 ms - -[0m
+[0mGET / [32m200 [0m2.772 ms - 867[0m
+[0mGET /style.css [32m200 [0m0.765 ms - 692[0m
+[0mGET /script.js [32m200 [0m0.785 ms - 2608[0m
+[0mGET /bg.jpg [32m200 [0m0.458 ms - 505273[0m
+[0mGET /favicon.ico [33m404 [0m1.868 ms - 1156[0m
+[0mGET /style.css [36m304 [0m0.343 ms - -[0m
+In getcity route
+/^P/
+Panguitch
+Paradise
+Paragonah
+Park City
+Park Valley
+Parowan
+Payson
+Peoa
+Pine Valley
+Pleasant Grove
+Plymouth
+Portage
+Price
+Providence
+Provo
+[ { city: 'Panguitch' },
+  { city: 'Paradise' },
+  { city: 'Paragonah' },
+  { city: 'Park City' },
+  { city: 'Park Valley' },
+  { city: 'Parowan' },
+  { city: 'Payson' },
+  { city: 'Peoa' },
+  { city: 'Pine Valley' },
+  { city: 'Pleasant Grove' },
+  { city: 'Plymouth' },
+  { city: 'Portage' },
+  { city: 'Price' },
+  { city: 'Providence' },
+  { city: 'Provo' } ]
+[0mGET /getcity?q=P [32m200 [0m3.752 ms - 304[0m
+In getcity route
+/^P/
+Panguitch
+Paradise
+Paragonah
+Park City
+Park Valley
+Parowan
+Payson
+Peoa
+Pine Valley
+Pleasant Grove
+Plymouth
+Portage
+Price
+Providence
+Provo
+[ { city: 'Panguitch' },
+  { city: 'Paradise' },
+  { city: 'Paragonah' },
+  { city: 'Park City' },
+  { city: 'Park Valley' },
+  { city: 'Parowan' },
+  { city: 'Payson' },
+  { city: 'Peoa' },
+  { city: 'Pine Valley' },
+  { city: 'Pleasant Grove' },
+  { city: 'Plymouth' },
+  { city: 'Portage' },
+  { city: 'Price' },
+  { city: 'Providence' },
+  { city: 'Provo' } ]
+[0mGET /getcity?q=P [32m200 [0m3.016 ms - 304[0m
+In getcity route
+/^Pr/
+Price
+Providence
+Provo
+[ { city: 'Price' }, { city: 'Providence' }, { city: 'Provo' } ]
+[0mGET /getcity?q=Pr [32m200 [0m1.065 ms - 57[0m
+In getcity route
+/^Pro/
+Providence
+Provo
+[ { city: 'Providence' }, { city: 'Provo' } ]
+[0mGET /getcity?q=Pro [32m200 [0m6.006 ms - 40[0m
+In getcity route
+/^Prov/
+Providence
+Provo
+[ { city: 'Providence' }, { city: 'Provo' } ]
+[0mGET /getcity?q=Prov [32m200 [0m0.866 ms - 40[0m
+In getcity route
+/^Provo/
+Provo
+[ { city: 'Provo' } ]
+[0mGET /getcity?q=Provo [32m200 [0m0.860 ms - 18[0m
