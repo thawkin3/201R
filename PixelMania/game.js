@@ -42,9 +42,9 @@ var server = http.createServer(function(request, response){
     }
 });
 
-server.listen(4000);
+//server.listen(4000);
 
-io.listen(server);
+//io.listen(server);
 
 
 /**************************************************
