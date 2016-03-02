@@ -137,3 +137,5 @@ function playerById(id) {
 ** RUN THE GAME
 **************************************************/
 init();
+
+exports.gameInit = init;
