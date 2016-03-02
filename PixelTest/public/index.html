@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<title>Pixel Mania</title>
+		<meta charset="utf-8">
+		
+		<link rel="stylesheet" href="stylesheets/reset.css">
+		<link rel="stylesheet" href="stylesheets/game.css">
+	</head>
+	
+	<body>
+		<canvas id="gameCanvas" height=500 width=700></canvas>
+		<script src="javascripts/socket.io.js"></script>
+		<script src="javascripts/requestAnimationFrame.js"></script>
+		<script src="javascripts/Keys.js"></script>
+		<script src="javascripts/Player.js"></script>
+		<script src="javascripts/game.js"></script>
+		<script>
+			// Initialize the game
+			init();
+			animate();
+		</script>
+	</body>
+</html>
