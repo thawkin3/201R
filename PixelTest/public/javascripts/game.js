@@ -29,8 +29,8 @@ function init() {
 	// Calculate a random start position for the local player
 	// The minus 5 (half a player size) stops the player being
 	// placed right on the egde of the screen outside of the canvas
-	var startX = Math.round( Math.random() * (canvas.width-5) );
-	var startY = Math.round( Math.random() * (canvas.height-5) );
+	var startX = Math.round( Math.random() * (canvas.width - 20) + 5 );
+	var startY = Math.round( Math.random() * (canvas.height - 20) + 5 );
 
 	// Initialize the local player
 	localPlayer = new Player(startX, startY);
