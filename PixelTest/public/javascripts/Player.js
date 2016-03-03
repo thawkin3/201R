@@ -35,16 +35,16 @@ var Player = function(startX, startY) {
 		var prevY = y;
 
 		// Up key takes priority over down
-		if (keys.up) {
+		if (keys.up && y > 5) {
 			y -= moveAmount;
-		} else if (keys.down) {
+		} else if (keys.down && y < 495) {
 			y += moveAmount;
 		};
 
 		// Left key takes priority over right
-		if (keys.left) {
+		if (keys.left && x > 5) {
 			x -= moveAmount;
-		} else if (keys.right) {
+		} else if (keys.right && x < 695) {
 			x += moveAmount;
 		};
 
