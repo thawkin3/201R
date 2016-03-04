@@ -207,6 +207,7 @@ function draw() {
 
 	// Sort order of all players by size
 	allPlayers = allPlayers.sort(sortPlayers);
+	console.log(allPlayers);
 
 	// Draw all the players
 	for (var i = 0; i < allPlayers.length; i++) {
