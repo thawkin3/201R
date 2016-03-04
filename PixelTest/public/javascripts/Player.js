@@ -48,19 +48,26 @@ var Player = function(startX, startY, startSize) {
 		// Up key takes priority over down
 		if (keys.up && y > 5) {
 			y -= moveAmount;
-			size += 1;		// Updates the size that is shown on your own screen
+			if (size < 100) {
+				size += 1;		// Updates the size that is shown on your own screen
+			}
 		} else if (keys.down && y < 505 - size) {
 			y += moveAmount;
-			size += 1;		// Updates the size that is shown on your own screen
-		};
+			if (size < 100) {
+				size += 1;		// Updates the size that is shown on your own screen
+			}		};
 
 		// Left key takes priority over right
 		if (keys.left && x > 5) {
 			x -= moveAmount;
-			size += 1;		// Updates the size that is shown on your own screen
+			if (size < 100) {
+				size += 1;		// Updates the size that is shown on your own screen
+			}
 		} else if (keys.right && x < 705 - size) {
 			x += moveAmount;
-			size += 1;		// Updates the size that is shown on your own screen
+			if (size < 100) {
+				size += 1;		// Updates the size that is shown on your own screen
+			}
 		};
 
 		return (prevX != x || prevY != y) ? true : false;

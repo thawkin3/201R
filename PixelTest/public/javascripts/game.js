@@ -140,7 +140,7 @@ function onMovePlayer(data) {
 	movePlayer.setX(data.x);
 	movePlayer.setY(data.y);
 	movePlayer.setSize(data.size);	// Updates the size that is shown to the other players
-	console.log(data);
+	console.log("movingPlayer: " + data);
 };
 
 // Remove player
