@@ -112,7 +112,7 @@ function onMovePlayer(data) {
 	// Update player position
 	movePlayer.setX(data.x);
 	movePlayer.setY(data.y);
-	movePlayer.setSize(movePlayer.getSize() + 1);	// TESTING!
+	movePlayer.setSize(data.size + 1);	// TESTING!
 
 	// Broadcast updated position to connected socket clients
 	this.broadcast.emit("move player", { id: movePlayer.id, x: movePlayer.getX(), y: movePlayer.getY(), size: movePlayer.getSize() });
