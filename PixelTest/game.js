@@ -1,9 +1,9 @@
 /**************************************************
 ** NODE.JS REQUIREMENTS
 **************************************************/
-var util = require("util"),					// Utility resources (logging, object inspection, etc)
-	io = require("socket.io"),				// Socket.IO
-	Player = require("./Player").Player;	// Player class
+var util = require("util");					// Utility resources (logging, object inspection, etc)
+var io = require("socket.io");				// Socket.IO
+var Player = require("./Player").Player;	// Player class
 
 
 /**************************************************
@@ -11,7 +11,9 @@ var util = require("util"),					// Utility resources (logging, object inspection
 **************************************************/
 var socket;		// Socket controller
 var players;	// Array of connected players
-var colors;		// Array of colors for players
+
+// Array of colors for players
+var colors = ["green", "blue", "yellow", "pink", "limegreen", "orange", "purple", "coral", "darkkhaki", "gold", "palevioletred"];
 
 
 /**************************************************
@@ -20,9 +22,6 @@ var colors;		// Array of colors for players
 function init() {
 	// Create an empty array to store players
 	players = [];
-
-	// Create an array of possible color choices for players
-	colors = ["green", "blue", "yellow", "pink", "limegreen", "orange", "purple", "aqua", "coral", "darkkhaki", "gold", "palevioletred"];
 
 	// Set up Socket.IO to listen on port 8000
 	socket = io.listen(3005);
@@ -89,7 +88,6 @@ function onClientDisconnect() {
 function onNewPlayer(data) {
 	// Create a new player
 	var newPlayer = new Player(data.x, data.y, data.size, data.color);	// TESTING!
-	console.log("new player size: " + data.size);
 	newPlayer.id = this.id;
 
 	// Broadcast new player to connected socket clients
@@ -124,7 +122,6 @@ function onMovePlayer(data) {
 	movePlayer.setX(data.x);
 	movePlayer.setY(data.y);
 	movePlayer.setSize(data.size);	// Updates the size that is shown to the other players
-	console.log("movingPlayer: " + data);
 
 	// Broadcast updated position to connected socket clients
 	this.broadcast.emit("move player", { id: movePlayer.id, x: movePlayer.getX(), y: movePlayer.getY(), size: movePlayer.getSize(), color: movePlayer.getColor() });

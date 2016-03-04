@@ -8,7 +8,7 @@ var canvas,			// Canvas DOM element
 	remotePlayers,	// Remote players
 	socket;			// Socket connection
 
-var colors = ["green", "blue", "yellow", "pink", "limegreen", "orange", "purple", "aqua", "coral", "darkkhaki", "gold", "palevioletred"];
+var colors = ["green", "blue", "yellow", "pink", "limegreen", "orange", "purple", "coral", "darkkhaki", "gold", "palevioletred"];
 
 
 /**************************************************
