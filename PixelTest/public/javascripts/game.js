@@ -31,10 +31,10 @@ function init() {
 	// placed right on the egde of the screen outside of the canvas
 	var startX = Math.round( Math.random() * (canvas.width - 20) + 5 );
 	var startY = Math.round( Math.random() * (canvas.height - 20) + 5 );
-	var size = 10;
+	var startSize = 10;
 
 	// Initialize the local player
-	localPlayer = new Player(startX, startY);
+	localPlayer = new Player(startX, startY, startSize);
 
 	// Initialize socket connection
 	socket = io.connect("http://54.200.192.157", {port: 3005, transports: ["websocket"]});
@@ -118,7 +118,7 @@ function onSocketDisconnect() {
 function onNewPlayer(data) {
 	console.log("New player connected: " + data.id);
 
-	// Initialise the new player
+	// Initialize the new player
 	var newPlayer = new Player(data.x, data.y);
 	newPlayer.id = data.id;
 

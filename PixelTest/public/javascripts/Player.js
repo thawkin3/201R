@@ -1,12 +1,12 @@
 /**************************************************
 ** GAME PLAYER CLASS
 **************************************************/
-var Player = function(startX, startY) {
+var Player = function(startX, startY, startSize) {
 	var x = startX;
 	var y = startY;
 	var id;
 	var moveAmount = 2;
-	var size = 10;
+	var size = startSize;
 	
 	// Getters and setters
 	// gets your X position
