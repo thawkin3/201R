@@ -140,6 +140,7 @@ function onMovePlayer(data) {
 	movePlayer.setX(data.x);
 	movePlayer.setY(data.y);
 	movePlayer.setSize(data.size + 1);	// TESTING!
+	console.log(data);
 };
 
 // Remove player
