@@ -1,12 +1,13 @@
 /**************************************************
 ** GAME PLAYER CLASS
 **************************************************/
-var Player = function(startX, startY, startSize) {
+var Player = function(startX, startY, startSize, startColor) {
 	var x = startX;
 	var y = startY;
+	var size = startSize;
+	var color = startColor;
 	var id;
 	var moveAmount = 2;
-	var size = startSize;
 	
 	// Getters and setters
 	// gets your X position
@@ -22,6 +23,11 @@ var Player = function(startX, startY, startSize) {
 	// gets your size
 	var getSize = function() {
 		return size;
+	}
+
+	// gets your color
+	var getColor = function() {
+		return color;
 	}
 
 	// sets your X position
@@ -48,24 +54,24 @@ var Player = function(startX, startY, startSize) {
 		// Up key takes priority over down
 		if (keys.up && y > 5) {
 			y -= moveAmount;
-			if (size < 100) {
+			if (size < 300) {
 				size += 1;		// Updates the size that is shown on your own screen
 			}
 		} else if (keys.down && y < 505 - size) {
 			y += moveAmount;
-			if (size < 100) {
+			if (size < 300) {
 				size += 1;		// Updates the size that is shown on your own screen
 			}		};
 
 		// Left key takes priority over right
 		if (keys.left && x > 5) {
 			x -= moveAmount;
-			if (size < 100) {
+			if (size < 300) {
 				size += 1;		// Updates the size that is shown on your own screen
 			}
 		} else if (keys.right && x < 705 - size) {
 			x += moveAmount;
-			if (size < 100) {
+			if (size < 300) {
 				size += 1;		// Updates the size that is shown on your own screen
 			}
 		};
@@ -75,6 +81,7 @@ var Player = function(startX, startY, startSize) {
 
 	// Draw player
 	var draw = function(ctx) {
+		ctx.fillStyle = color;
 		ctx.fillRect(x - 5, y - 5, size, size);
 	};
 
@@ -83,6 +90,7 @@ var Player = function(startX, startY, startSize) {
 		getX: getX,
 		getY: getY,
 		getSize: getSize,
+		getColor: getColor,
 		setX: setX,
 		setY: setY,
 		setSize: setSize,

@@ -1,11 +1,12 @@
 /**************************************************
 ** GAME PLAYER CLASS
 **************************************************/
-var Player = function(startX, startY, startSize) {
-	var x = startX,
-		y = startY,
-		size = startSize,
-		id;
+var Player = function(startX, startY, startSize, startColor) {
+	var x = startX;
+	var y = startY;
+	var size = startSize;
+	var color = startColor;
+	var id;
 
 	// Getters and setters
 	// gets your X position
@@ -21,6 +22,11 @@ var Player = function(startX, startY, startSize) {
 	// gets your size
 	var getSize = function() {
 		return size;
+	}
+
+	// gets your color
+	var getColor = function() {
+		return color;
 	}
 
 	// sets your X position
@@ -43,6 +49,7 @@ var Player = function(startX, startY, startSize) {
 		getX: getX,
 		getY: getY,
 		getSize: getSize,
+		getColor: getColor,
 		setX: setX,
 		setY: setY,
 		setSize: setSize,

@@ -8,9 +8,11 @@ var canvas,			// Canvas DOM element
 	remotePlayers,	// Remote players
 	socket;			// Socket connection
 
+var colors = ["green", "blue", "yellow", "pink", "limegreen", "orange", "purple", "aqua", "coral", "darkkhaki", "gold", "palevioletred"];
+
 
 /**************************************************
-** GAME INITIALISATION
+** GAME INITIALIZATION
 **************************************************/
 function init() {
 	// Declare the canvas and rendering context
@@ -27,19 +29,21 @@ function init() {
 	keys = new Keys();
 
 	// Calculate a random start position for the local player
-	// The minus 5 (half a player size) stops the player being
-	// placed right on the egde of the screen outside of the canvas
-	var startX = Math.round( Math.random() * (canvas.width - 20) + 5 );
-	var startY = Math.round( Math.random() * (canvas.height - 20) + 5 );
+	// and make sure it's not outside of the canvas bounds
+	var startX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
+	var startY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
+
+	// Create a start size and color
 	var startSize = 10;
+	var startColor = colors[Math.floor( Math.random() * colors.length )];
 
 	// Initialize the local player
-	localPlayer = new Player(startX, startY, startSize);	// TESTING!
+	localPlayer = new Player(startX, startY, startSize, startColor);	// TESTING!
 
 	// Initialize socket connection
 	socket = io.connect("http://54.200.192.157", {port: 3005, transports: ["websocket"]});
 
-	// Initialise remote players array
+	// Initialize remote players array
 	remotePlayers = [];
 
 	// Start listening for events
@@ -106,7 +110,7 @@ function onSocketConnected() {
 	console.log("Connected to socket server");
 
 	// Send local player data to the game server
-	socket.emit("new player", { x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize() });
+	socket.emit("new player", { x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
 };
 
 // Socket disconnected
@@ -119,11 +123,14 @@ function onNewPlayer(data) {
 	console.log("New player connected: " + data.id);
 
 	// Initialize the new player
-	var newPlayer = new Player(data.x, data.y, data.size);	// TESTING!
+	var newPlayer = new Player(data.x, data.y, data.size, data.color);	// TESTING!
 	newPlayer.id = data.id;
 
 	// Add new player to the remote players array
 	remotePlayers.push(newPlayer);
+
+	// Remove the color from the colors array
+	colors.splice(colors.indexOf(data.color), 1);
 };
 
 // Move player
@@ -153,8 +160,12 @@ function onRemovePlayer(data) {
 		return;
 	};
 
+	// Add the color back into the array of possible colors
+	colors.push(data.color);
+
 	// Remove player from array
 	remotePlayers.splice(remotePlayers.indexOf(removePlayer), 1);
+
 };
 
 
@@ -177,7 +188,7 @@ function update() {
 	// Update local player and check for change
 	if (localPlayer.update(keys)) {
 		// Send local player data to the game server
-		socket.emit("move player", { x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize() });
+		socket.emit("move player", { x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
 	};
 };
 

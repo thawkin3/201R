@@ -9,8 +9,9 @@ var util = require("util"),					// Utility resources (logging, object inspection
 /**************************************************
 ** GAME VARIABLES
 **************************************************/
-var socket,		// Socket controller
-	players;	// Array of connected players
+var socket;		// Socket controller
+var players;	// Array of connected players
+var colors;		// Array of colors for players
 
 
 /**************************************************
@@ -19,6 +20,9 @@ var socket,		// Socket controller
 function init() {
 	// Create an empty array to store players
 	players = [];
+
+	// Create an array of possible color choices for players
+	colors = ["green", "blue", "yellow", "pink", "limegreen", "orange", "purple", "aqua", "coral", "darkkhaki", "gold", "palevioletred"];
 
 	// Set up Socket.IO to listen on port 8000
 	socket = io.listen(3005);
@@ -81,18 +85,18 @@ function onClientDisconnect() {
 // New player has joined
 function onNewPlayer(data) {
 	// Create a new player
-	var newPlayer = new Player(data.x, data.y, data.size);	// TESTING!
+	var newPlayer = new Player(data.x, data.y, data.size, data.color);	// TESTING!
 	console.log("new player size: " + data.size);
 	newPlayer.id = this.id;
 
 	// Broadcast new player to connected socket clients
-	this.broadcast.emit("new player", { id: newPlayer.id, x: newPlayer.getX(), y: newPlayer.getY(), size: newPlayer.getSize() });
+	this.broadcast.emit("new player", { id: newPlayer.id, x: newPlayer.getX(), y: newPlayer.getY(), size: newPlayer.getSize(), color: newPlayer.getColor() });
 
 	// Send existing players to the new player
 	var i, existingPlayer;
 	for (i = 0; i < players.length; i++) {
 		existingPlayer = players[i];
-		this.emit("new player", { id: existingPlayer.id, x: existingPlayer.getX(), y: existingPlayer.getY(), size: existingPlayer.getSize() });
+		this.emit("new player", { id: existingPlayer.id, x: existingPlayer.getX(), y: existingPlayer.getY(), size: existingPlayer.getSize(), color: existingPlayer.getColor() });
 	};
 		
 	// Add new player to the players array
@@ -117,7 +121,7 @@ function onMovePlayer(data) {
 	console.log("movingPlayer: " + data);
 
 	// Broadcast updated position to connected socket clients
-	this.broadcast.emit("move player", { id: movePlayer.id, x: movePlayer.getX(), y: movePlayer.getY(), size: movePlayer.getSize() });
+	this.broadcast.emit("move player", { id: movePlayer.id, x: movePlayer.getX(), y: movePlayer.getY(), size: movePlayer.getSize(), color: movePlayer.getColor() });
 };
 
 
