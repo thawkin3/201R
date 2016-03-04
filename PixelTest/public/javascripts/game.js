@@ -223,7 +223,7 @@ function draw() {
 	// Draw some food
 	for (var i = 0; i < food.length; i++) {
 		ctx.fillStyle = "#000";
-		ctx.fillRect(food[i][foodX], food[i][foodY], 5, 5);
+		ctx.fillRect(food[i].foodX, food[i].foodY, 5, 5);
 	}
 };
 
