@@ -81,7 +81,7 @@ function onClientDisconnect() {
 // New player has joined
 function onNewPlayer(data) {
 	// Create a new player
-	var newPlayer = new Player(data.x, data.y);
+	var newPlayer = new Player(data.x, data.y, data.size);
 	newPlayer.id = this.id;
 
 	// Broadcast new player to connected socket clients

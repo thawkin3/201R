@@ -34,7 +34,7 @@ function init() {
 	var startSize = 10;
 
 	// Initialize the local player
-	localPlayer = new Player(startX, startY, startSize);
+	localPlayer = new Player(startX, startY, startSize);	// TESTING!
 
 	// Initialize socket connection
 	socket = io.connect("http://54.200.192.157", {port: 3005, transports: ["websocket"]});
@@ -119,7 +119,7 @@ function onNewPlayer(data) {
 	console.log("New player connected: " + data.id);
 
 	// Initialize the new player
-	var newPlayer = new Player(data.x, data.y);
+	var newPlayer = new Player(data.x, data.y, data.size);	// TESTING!
 	newPlayer.id = data.id;
 
 	// Add new player to the remote players array
