@@ -46,16 +46,16 @@ var Player = function(startX, startY) {
 		var prevY = y;
 
 		// Up key takes priority over down
-		if (keys.up && y > 5) {
+		if (keys.up && y > 0 + size/2) {
 			y -= moveAmount;
-		} else if (keys.down && y < 495) {
+		} else if (keys.down && y < 500 - size/2) {
 			y += moveAmount;
 		};
 
 		// Left key takes priority over right
-		if (keys.left && x > 5) {
+		if (keys.left && x > 0 + size/2) {
 			x -= moveAmount;
-		} else if (keys.right && x < 695) {
+		} else if (keys.right && x < 700 - size/2) {
 			x += moveAmount;
 		};
 
@@ -64,7 +64,7 @@ var Player = function(startX, startY) {
 
 	// Draw player
 	var draw = function(ctx) {
-		ctx.fillRect(x-5, y-5, size, size);
+		ctx.fillRect(x - 5, y - 5, size, size);
 	};
 
 	// Define which variables and methods can be accessed
