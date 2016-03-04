@@ -19,6 +19,7 @@ function init() {
 	canvas = document.getElementById("gameCanvas");
 	ctx = canvas.getContext("2d");
 
+	// TESTING!
 	// Draw some food
 	for (var i = 0; i < 10; i++) {
 		var foodX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
@@ -217,6 +218,15 @@ function draw() {
 	for (var i = 0; i < allPlayers.length; i++) {
 		allPlayers[i].draw(ctx);
 	};
+
+	// TESTING!
+	// Draw some food
+	for (var i = 0; i < 10; i++) {
+		var foodX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
+		var foodY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
+		ctx.fillStyle = "#000";
+		ctx.fillRect(foodX, foodY, 5, 5);
+	}
 };
 
 
