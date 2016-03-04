@@ -139,7 +139,7 @@ function onMovePlayer(data) {
 	// Update player position
 	movePlayer.setX(data.x);
 	movePlayer.setY(data.y);
-	movePlayer.setSize(movePlayer.getSize() + 1);	// TESTING!
+	movePlayer.setSize(movePlayer.getSize() + 10);	// TESTING!
 	console.log(data);
 };
 
