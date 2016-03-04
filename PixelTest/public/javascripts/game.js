@@ -199,15 +199,11 @@ function draw() {
 	// Wipe the canvas clean
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-	// Draw the local player
-	localPlayer.draw(ctx);
-
 	// Put the local and the remote players together
 	var allPlayers = remotePlayers.concat(localPlayer);
 
 	// Sort order of all players by size
 	allPlayers = allPlayers.sort(sortPlayers);
-	console.log(allPlayers);
 
 	// Draw all the players
 	for (var i = 0; i < allPlayers.length; i++) {
