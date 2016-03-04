@@ -49,7 +49,7 @@ var Player = function(startX, startY, startSize) {
 		if (keys.up && y > 5) {
 			y -= moveAmount;
 			size += 1;		// Updates the size that is shown on your own screen
-		} else if (keys.down && y < 495) {
+		} else if (keys.down && y < 495 - size) {
 			y += moveAmount;
 			size += 1;		// Updates the size that is shown on your own screen
 		};
@@ -58,7 +58,7 @@ var Player = function(startX, startY, startSize) {
 		if (keys.left && x > 5) {
 			x -= moveAmount;
 			size += 1;		// Updates the size that is shown on your own screen
-		} else if (keys.right && x < 695) {
+		} else if (keys.right && x < 695 - size) {
 			x += moveAmount;
 			size += 1;		// Updates the size that is shown on your own screen
 		};
