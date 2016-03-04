@@ -113,7 +113,7 @@ function onMovePlayer(data) {
 	// Update player position
 	movePlayer.setX(data.x);
 	movePlayer.setY(data.y);
-	movePlayer.setSize(data.size + 20);	// TESTING!
+	movePlayer.setSize(data.size);	// Updates the size that is shown to the other players
 	console.log(data);
 
 	// Broadcast updated position to connected socket clients
