@@ -106,7 +106,7 @@ function onSocketConnected() {
 	console.log("Connected to socket server");
 
 	// Send local player data to the game server
-	socket.emit("new player", { x: localPlayer.getX(), y: localPlayer.getY(), size: newPlayer.getSize() });
+	socket.emit("new player", { x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize() });
 };
 
 // Socket disconnected
@@ -175,7 +175,7 @@ function update() {
 	// Update local player and check for change
 	if (localPlayer.update(keys)) {
 		// Send local player data to the game server
-		socket.emit("move player", { x: localPlayer.getX(), y: localPlayer.getY(), , size: newPlayer.getSize() });
+		socket.emit("move player", { x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize() });
 	};
 };
 

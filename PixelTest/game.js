@@ -91,7 +91,7 @@ function onNewPlayer(data) {
 	var i, existingPlayer;
 	for (i = 0; i < players.length; i++) {
 		existingPlayer = players[i];
-		this.emit("new player", { id: existingPlayer.id, x: existingPlayer.getX(), y: existingPlayer.getY(), existingPlayer.getSize() });
+		this.emit("new player", { id: existingPlayer.id, x: existingPlayer.getX(), y: existingPlayer.getY(), size: existingPlayer.getSize() });
 	};
 		
 	// Add new player to the players array
@@ -114,7 +114,7 @@ function onMovePlayer(data) {
 	movePlayer.setY(data.y);
 
 	// Broadcast updated position to connected socket clients
-	this.broadcast.emit("move player", { id: movePlayer.id, x: movePlayer.getX(), y: movePlayer.getY(), , size: newPlayer.getSize() });
+	this.broadcast.emit("move player", { id: movePlayer.id, x: movePlayer.getX(), y: movePlayer.getY(), size: movePlayer.getSize() });
 };
 
 
