@@ -4,6 +4,7 @@
 var Player = function(startX, startY) {
 	var x = startX,
 		y = startY,
+		size = 10,
 		id;
 
 	// Getters and setters
@@ -17,6 +18,11 @@ var Player = function(startX, startY) {
 		return y;
 	};
 
+	// gets your size
+	var getSize = function() {
+		return size;
+	}
+
 	// sets your X position
 	var setX = function(newX) {
 		x = newX;
@@ -27,12 +33,19 @@ var Player = function(startX, startY) {
 		y = newY;
 	};
 
+	// sets your size
+	var setSize = function(newSize) {
+		size = newSize;
+	}
+
 	// Define which variables and methods can be accessed
 	return {
 		getX: getX,
 		getY: getY,
+		getSize: getSize,
 		setX: setX,
 		setY: setY,
+		setSize: setSize,
 		id: id
 	}
 };

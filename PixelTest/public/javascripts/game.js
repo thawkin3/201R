@@ -31,6 +31,7 @@ function init() {
 	// placed right on the egde of the screen outside of the canvas
 	var startX = Math.round( Math.random() * (canvas.width - 20) + 5 );
 	var startY = Math.round( Math.random() * (canvas.height - 20) + 5 );
+	var size = 10;
 
 	// Initialize the local player
 	localPlayer = new Player(startX, startY);
@@ -105,7 +106,7 @@ function onSocketConnected() {
 	console.log("Connected to socket server");
 
 	// Send local player data to the game server
-	socket.emit("new player", {x: localPlayer.getX(), y: localPlayer.getY()});
+	socket.emit("new player", { x: localPlayer.getX(), y: localPlayer.getY(), size: newPlayer.getSize() });
 };
 
 // Socket disconnected
@@ -174,7 +175,7 @@ function update() {
 	// Update local player and check for change
 	if (localPlayer.update(keys)) {
 		// Send local player data to the game server
-		socket.emit("move player", {x: localPlayer.getX(), y: localPlayer.getY()});
+		socket.emit("move player", { x: localPlayer.getX(), y: localPlayer.getY(), , size: newPlayer.getSize() });
 	};
 };
 

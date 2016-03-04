@@ -6,6 +6,7 @@ var Player = function(startX, startY) {
 	var y = startY;
 	var id;
 	var moveAmount = 2;
+	var size = 10;
 	
 	// Getters and setters
 	// gets your X position
@@ -18,6 +19,11 @@ var Player = function(startX, startY) {
 		return y;
 	};
 
+	// gets your size
+	var getSize = function() {
+		return size;
+	}
+
 	// sets your X position
 	var setX = function(newX) {
 		x = newX;
@@ -27,6 +33,11 @@ var Player = function(startX, startY) {
 	var setY = function(newY) {
 		y = newY;
 	};
+
+	// sets your size
+	var setSize = function(newSize) {
+		size = newSize;
+	}
 
 	// Update player position
 	var update = function(keys) {
@@ -53,15 +64,17 @@ var Player = function(startX, startY) {
 
 	// Draw player
 	var draw = function(ctx) {
-		ctx.fillRect(x-5, y-5, 10, 10);
+		ctx.fillRect(x-5, y-5, size, size);
 	};
 
 	// Define which variables and methods can be accessed
 	return {
 		getX: getX,
 		getY: getY,
+		getSize: getSize,
 		setX: setX,
 		setY: setY,
+		setSize: setSize,
 		update: update,
 		draw: draw
 	}
