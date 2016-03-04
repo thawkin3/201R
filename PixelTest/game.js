@@ -76,7 +76,7 @@ function onClientDisconnect() {
 	};
 
 	// Add the color back into the array of possible colors
-	colors.push(data.color);
+	colors.push(this.color);
 
 	// Remove player from players array
 	players.splice(players.indexOf(removePlayer), 1);
