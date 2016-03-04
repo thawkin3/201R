@@ -19,6 +19,14 @@ function init() {
 	canvas = document.getElementById("gameCanvas");
 	ctx = canvas.getContext("2d");
 
+	// Draw some food
+	for (var i = 0; i < 10; i++) {
+		var foodX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
+		var foodY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
+		ctx.fillStyle = "#000";
+		ctx.fillRect(foodX, foodY, 5, 5);
+	}
+
 	// Maximize the canvas
 	//canvas.width = window.innerWidth;
 	//canvas.height = window.innerHeight;
