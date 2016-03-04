@@ -10,6 +10,7 @@ var canvas,			// Canvas DOM element
 
 var colors = ["green", "blue", "yellow", "pink", "limegreen", "orange", "purple", "coral", "darkkhaki", "gold", "palevioletred"];
 
+var food = [];
 
 /**************************************************
 ** GAME INITIALIZATION
@@ -21,7 +22,6 @@ function init() {
 
 	// TESTING!
 	// Generate some food, but don't draw it until later
-	var food = [];
 	for (var i = 0; i < 10; i++) {
 		var foodX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
 		var foodY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
