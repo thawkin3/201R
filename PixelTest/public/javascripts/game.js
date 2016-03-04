@@ -202,9 +202,15 @@ function draw() {
 	// Draw the local player
 	localPlayer.draw(ctx);
 
-	// Draw the remote players
-	for (var i = 0; i < remotePlayers.length; i++) {
-		remotePlayers[i].draw(ctx);
+	// Put the local and the remote players together
+	var allPlayers = remotePlayers.concat(localPlayer);
+
+	// Sort order of all players by size
+	allPlayers = allPlayers.sort(sortPlayers);
+
+	// Draw all the players
+	for (var i = 0; i < allPlayers.length; i++) {
+		allPlayers[i].draw(ctx);
 	};
 };
 
@@ -221,3 +227,8 @@ function playerById(id) {
 	
 	return false;
 };
+
+// Sort order of players by size
+function sortPlayers(a, b) {
+	return a.size - b.size;
+}
