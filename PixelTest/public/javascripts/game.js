@@ -231,5 +231,5 @@ function playerById(id) {
 
 // Sort order of players by size
 function sortPlayers(a, b) {
-	return a.size - b.size;
+	return a.getSize() - b.getSize();
 }
