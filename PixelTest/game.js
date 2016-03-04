@@ -82,6 +82,7 @@ function onClientDisconnect() {
 function onNewPlayer(data) {
 	// Create a new player
 	var newPlayer = new Player(data.x, data.y, data.size);	// TESTING!
+	console.log("new player size: " + data.size);
 	newPlayer.id = this.id;
 
 	// Broadcast new player to connected socket clients
