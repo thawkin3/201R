@@ -52,24 +52,25 @@ var Player = function(startX, startY, startSize, startColor) {
 		var prevY = y;
 
 		// Up key takes priority over down
-		if (keys.up && y > 5) {
+		if (keys.up && y > 0 + size/2) {
 			y -= moveAmount;
 			if (size < 300) {
 				size += 1;		// Updates the size that is shown on your own screen
 			}
-		} else if (keys.down && y < 505 - size) {
+		} else if (keys.down && y < 500 - size/2) {
 			y += moveAmount;
 			if (size < 300) {
 				size += 1;		// Updates the size that is shown on your own screen
-			}		};
+			}		
+		};
 
 		// Left key takes priority over right
-		if (keys.left && x > 5) {
+		if (keys.left && x > 0 + size/2) {
 			x -= moveAmount;
 			if (size < 300) {
 				size += 1;		// Updates the size that is shown on your own screen
 			}
-		} else if (keys.right && x < 705 - size) {
+		} else if (keys.right && x < 700 - size/2) {
 			x += moveAmount;
 			if (size < 300) {
 				size += 1;		// Updates the size that is shown on your own screen
@@ -82,7 +83,7 @@ var Player = function(startX, startY, startSize, startColor) {
 	// Draw player
 	var draw = function(ctx) {
 		ctx.fillStyle = color;
-		ctx.fillRect(x - 5, y - 5, size, size);
+		ctx.fillRect(x - size/2, y - size/2, size, size);
 	};
 
 	// Define which variables and methods can be accessed
