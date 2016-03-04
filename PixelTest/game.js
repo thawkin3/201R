@@ -75,6 +75,9 @@ function onClientDisconnect() {
 		return;
 	};
 
+	// Add the color back into the array of possible colors
+	colors.push(data.color);
+
 	// Remove player from players array
 	players.splice(players.indexOf(removePlayer), 1);
 
@@ -101,6 +104,9 @@ function onNewPlayer(data) {
 		
 	// Add new player to the players array
 	players.push(newPlayer);
+
+	// Remove the color from the colors array
+	colors.splice(colors.indexOf(data.color), 1);
 };
 
 // Player has moved
