@@ -1,10 +1,10 @@
 /**************************************************
 ** GAME PLAYER CLASS
 **************************************************/
-var Player = function(startX, startY) {
+var Player = function(startX, startY, startSize) {
 	var x = startX,
 		y = startY,
-		size = 10,
+		size = startSize,
 		id;
 
 	// Getters and setters

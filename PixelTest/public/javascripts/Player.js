@@ -45,13 +45,12 @@ var Player = function(startX, startY, startSize) {
 		var prevX = x;
 		var prevY = y;
 
-		size = size + 10;	// TESTING!
-
 		// Up key takes priority over down
 		if (keys.up && y > 0 + size/2) {
 			y -= moveAmount;
 		} else if (keys.down && y < 500 - size/2) {
 			y += moveAmount;
+			size += 10;		// TESTING!
 		};
 
 		// Left key takes priority over right
