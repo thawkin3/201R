@@ -81,7 +81,7 @@ function onClientDisconnect() {
 // New player has joined
 function onNewPlayer(data) {
 	// Create a new player
-	var newPlayer = new Player(data.x, data.y, data.size);
+	var newPlayer = new Player(data.x, data.y, data.size);	// TESTING!
 	newPlayer.id = this.id;
 
 	// Broadcast new player to connected socket clients
@@ -112,7 +112,7 @@ function onMovePlayer(data) {
 	// Update player position
 	movePlayer.setX(data.x);
 	movePlayer.setY(data.y);
-	movePlayer.setSize(data.size + 1);	// TESTING!
+	movePlayer.setSize(movePlayer.getSize() + 1);	// TESTING!
 	console.log(data);
 
 	// Broadcast updated position to connected socket clients
