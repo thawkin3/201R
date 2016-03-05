@@ -225,6 +225,10 @@ function draw() {
 		ctx.fillStyle = "#000";
 		ctx.fillRect(food[i].foodX, food[i].foodY, 5, 5);
 	}
+
+	// TESTING!
+	// Draw the ball
+	ball.draw(ctx);
 };
 
 

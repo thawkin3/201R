@@ -4,6 +4,7 @@
 var util = require("util");					// Utility resources (logging, object inspection, etc)
 var io = require("socket.io");				// Socket.IO
 var Player = require("./Player").Player;	// Player class
+var Ball = require("./Ball").Ball;			// Ball class
 
 
 /**************************************************
@@ -22,6 +23,11 @@ var colors = ["green", "blue", "yellow", "pink", "limegreen", "orange", "purple"
 function init() {
 	// Create an empty array to store players
 	players = [];
+
+	// Create the red ball
+	var ballX = ;
+	var ballY = ;
+	ball = new Ball(ballX, ballY);
 
 	// Set up Socket.IO to listen on port 8000
 	socket = io.listen(3005);
