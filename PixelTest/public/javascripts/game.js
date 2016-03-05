@@ -28,6 +28,12 @@ function init() {
 		food.push({ "foodX": foodX, "foodY": foodY });
 	}
 
+	// TESTING!
+	// Create the red ball
+	var ballX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
+	var ballY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
+	ball = new Ball(ballX, ballY);
+
 	// Maximize the canvas
 	//canvas.width = window.innerWidth;
 	//canvas.height = window.innerHeight;

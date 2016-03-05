@@ -24,10 +24,11 @@ function init() {
 	// Create an empty array to store players
 	players = [];
 
+	// TESTING!
 	// Create the red ball
-	var ballX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
-	var ballY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
-	ball = new Ball(ballX, ballY);
+	// var ballX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
+	// var ballY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
+	// ball = new Ball(ballX, ballY);
 
 	// Set up Socket.IO to listen on port 8000
 	socket = io.listen(3005);
