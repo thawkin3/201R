@@ -178,6 +178,7 @@ function onNewBall(data) {
 // Ball has moved
 function onMoveBall(data) {
 	// Find ball in array
+	console.log(JSON.stringify(this));
 	var moveBall = ballById(this.id);
 	console.log("ball data: " + JSON.stringify(data));
 	console.log("moveBall: " + JSON.stringify(moveBall));
