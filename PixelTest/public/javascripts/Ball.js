@@ -82,7 +82,7 @@ var Ball = function(startX, startY) {
 	// Draw ball
 	var draw = function(ctx) {
 		ctx.beginPath();  // Starts a new shape.
-	    ctx.fillStyle = ball.fillColor;  // Sets the fill color.
+	    ctx.fillStyle = ball.getColor();  // Sets the fill color.
 	    ctx.arc(x, y, radius, 0, Math.PI*2);  // Draws a full 2 pi arc (circle).
 	    ctx.lineWidth = 1;  // Small line width.
 	    ctx.fill();  // Fills the circle with the specified fill color.

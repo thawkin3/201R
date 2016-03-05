@@ -143,7 +143,7 @@ function onSocketConnected() {
 	socket.emit("new player", { x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
 
 	// Send local ball data to the game server
-	socket.emit("new ball", { x: ball.getX(), y: ball.getY(), dx: ball.getDX(), dy: ball.getDY() });
+	socket.emit("new ball", { x: ball.getX(), y: ball.getY(), dx: ball.getDX(), dy: ball.getDY(), color: ball.getColor() });
 };
 
 // Socket disconnected
@@ -256,8 +256,9 @@ function update() {
 	};
 	// TESTING!
 	// need to emit an event here that the ball is moving. maybe?
-	ball.update();
-	socket.emit("move ball", { x: ball.getX(), y: ball.getY(), dx: ball.getDX(), dy: ball.getDY() });
+	if (ball.update()) {
+		socket.emit("move ball", { x: ball.getX(), y: ball.getY(), dx: ball.getDX(), dy: ball.getDY(), color: ball.getColor() });
+	}
 };
 
 
