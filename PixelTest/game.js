@@ -171,6 +171,7 @@ function onNewBall(data) {
 function onMoveBall(data) {
 	// Find player in array
 	var moveBall = ballById(this.id);
+	console.log(moveBall);
 
 	// Update ball position
 	moveBall.setX(data.x);
