@@ -152,7 +152,7 @@ function onMovePlayer(data) {
 // New ball has joined
 function onNewBall(data) {
 	// Create a new ball
-	var newBall = new Ball(data.x, data.y, data.dx, data.dy);	// TESTING!
+	var newBall = new Ball(data.x, data.y);	// TESTING!
 	newBall.id = this.id;
 
 	// Broadcast new ball to connected socket clients
@@ -175,9 +175,9 @@ function onNewBall(data) {
 	console.log(balls);
 };
 
-// Player has moved
+// Ball has moved
 function onMoveBall(data) {
-	// Find player in array
+	// Find ball in array
 	var moveBall = ballById(this.id);
 	console.log("ball data: " + data);
 	console.log("moveBall: " + moveBall);

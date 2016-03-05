@@ -76,7 +76,7 @@ var Ball = function(startX, startY) {
 	    	dy = -dy; 
 	    }
 
-		return (prevX != x || prevY != y) ? true : false;
+		return true;
 	};
 
 	// Draw ball
