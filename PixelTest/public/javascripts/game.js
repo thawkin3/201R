@@ -142,12 +142,8 @@ function onSocketConnected() {
 	// Send local player data to the game server
 	socket.emit("new player", { x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
 
-	console.log("new player emitted");
-
 	// Send local ball data to the game server
 	socket.emit("new ball", { x: ball.getX(), y: ball.getY(), dx: ball.getDX(), dy: ball.getDY(), color: ball.getColor() });
-
-	console.log("new ball emitted");
 };
 
 // Socket disconnected

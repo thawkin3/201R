@@ -106,6 +106,9 @@ function onClientDisconnect() {
 
 // New player has joined
 function onNewPlayer(data) {
+
+	console.log("inside the onNewPlayer function in the game.js server script");
+
 	// Create a new player
 	var newPlayer = new Player(data.x, data.y, data.size, data.color);	// TESTING!
 	newPlayer.id = this.id;
