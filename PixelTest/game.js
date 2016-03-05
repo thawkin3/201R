@@ -155,6 +155,8 @@ function onNewBall(data) {
 	var newBall = new Ball(data.x, data.y);	// TESTING!
 	newBall.id = this.id;
 
+	console.log("inside OnNewBall in game.js server script");
+
 	// Broadcast new ball to connected socket clients
 	this.broadcast.emit("new ball", { id: newBall.id, x: newBall.getX(), y: newBall.getY(), dx: newBall.getDX(), dy: newBall.getDY() });
 
