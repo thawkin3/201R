@@ -67,7 +67,10 @@ function onSocketConnection(client) {
 	client.on("disconnect", onClientDisconnect);
 
 	// Listen for new player message
-	client.on("new player", onNewPlayer);
+	client.on("new player", function(){
+		onNewPlayer();
+		onNewBall();
+	});
 
 	// Listen for move player message
 	client.on("move player", onMovePlayer);
