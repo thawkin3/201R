@@ -46,6 +46,16 @@ var Ball = function(startX, startY) {
 		y = newY;
 	};
 
+	// sets ball X speed
+	var setDX = function(newDX) {
+		dx = newDX;
+	};
+
+	// sets ball Y speed
+	var setDY = function(newDY) {
+		dy = newDY;
+	};
+
 	// Define which variables and methods can be accessed
 	return {
 		getX: getX,
@@ -55,10 +65,12 @@ var Ball = function(startX, startY) {
 		getColor: getColor,
 		setX: setX,
 		setY: setY,
+		setDX: setDX,
+		setDY: setDY,
 		id: id
 	}
 };
 
-// Export the Player class so you can use it in
-// other files by using require("Player").Player
+// Export the Ball class so you can use it in
+// other files by using require("Ball").Ball
 exports.Ball = Ball;

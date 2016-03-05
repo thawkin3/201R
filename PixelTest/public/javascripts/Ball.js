@@ -46,6 +46,16 @@ var Ball = function(startX, startY) {
 		y = newY;
 	};
 
+	// sets ball X speed
+	var setDX = function(newDX) {
+		dx = newDX;
+	};
+
+	// sets ball Y speed
+	var setDY = function(newDY) {
+		dy = newDY;
+	};
+
 	// Update ball position
 	var update = function() {
 		// Previous position
@@ -88,6 +98,8 @@ var Ball = function(startX, startY) {
 		getColor: getColor,
 		setX: setX,
 		setY: setY,
+		setDX: setDX,
+		setDY: setDY,
 		update: update,
 		draw: draw
 	}

@@ -12,6 +12,7 @@ var Ball = require("./Ball").Ball;			// Ball class
 **************************************************/
 var socket;		// Socket controller
 var players;	// Array of connected players
+var balls;		// Array of connected balls
 
 // Array of colors for players
 var colors = ["green", "blue", "yellow", "pink", "limegreen", "orange", "purple", "coral", "darkkhaki", "gold", "palevioletred"];
@@ -23,6 +24,9 @@ var colors = ["green", "blue", "yellow", "pink", "limegreen", "orange", "purple"
 function init() {
 	// Create an empty array to store players
 	players = [];
+
+	// Create an empty array to store balls
+	balls = [];
 
 	// TESTING!
 	// Create the red ball
@@ -67,6 +71,12 @@ function onSocketConnection(client) {
 
 	// Listen for move player message
 	client.on("move player", onMovePlayer);
+
+	// Listen for new ball message
+	client.on("new ball", onNewBall);
+
+	// Listen for move ball message
+	client.on("move ball", onMoveBall);
 };
 
 // Socket client has disconnected
@@ -89,6 +99,9 @@ function onClientDisconnect() {
 
 	// Broadcast removed player to connected socket clients
 	this.broadcast.emit("remove player", {id: this.id});
+
+	// Broadcast removed player to connected socket clients
+	this.broadcast.emit("remove ball", {id: this.id});
 };
 
 // New player has joined
@@ -134,16 +147,60 @@ function onMovePlayer(data) {
 	this.broadcast.emit("move player", { id: movePlayer.id, x: movePlayer.getX(), y: movePlayer.getY(), size: movePlayer.getSize(), color: movePlayer.getColor() });
 };
 
+// New ball has joined
+function onNewBall(data) {
+	// Create a new ball
+	var newBall = new Ball(data.x, data.y, data.dx, data.dy);	// TESTING!
+	newBall.id = this.id;
+
+	// Broadcast new ball to connected socket clients
+	this.broadcast.emit("new ball", { id: newBall.id, x: newBall.getX(), y: newBall.getY(), dx: newBall.getDX(), dy: newBall.getDY() });
+
+	// Send existing balls to the new ball
+	var i, existingBall;
+	for (i = 0; i < balls.length; i++) {
+		existingBall = balls[i];
+		this.emit("new ball", { id: existingBall.id, x: existingBall.getX(), y: existingBall.getY(), dx: existingBall.getDX(), dy: existingBall.getDY() });
+	};
+		
+	// Add new ball to the balls array
+	balls.push(newBall);
+};
+
+// Player has moved
+function onMoveBall(data) {
+	// Find player in array
+	var moveBall = ballById(this.id);
+
+	// Update ball position
+	moveBall.setX(data.x);
+	moveBall.setY(data.y);
+	moveBall.setDX(data.dx);	// Updates the speed that is shown to the other players
+	moveBall.setDY(data.dy);	// Updates the speed that is shown to the other players
+
+	// Broadcast updated position to connected socket clients
+	this.broadcast.emit("move ball", { id: moveBall.id, x: moveBall.getX(), y: moveBall.getY(), dx: moveBall.getDX(), dy: moveBall.getDY() });
+};
+
 
 /**************************************************
 ** GAME HELPER FUNCTIONS
 **************************************************/
 // Find player by ID
 function playerById(id) {
-	var i;
-	for (i = 0; i < players.length; i++) {
+	for (var i = 0; i < players.length; i++) {
 		if (players[i].id == id)
 			return players[i];
+	};
+	
+	return false;
+};
+
+// Find ball by ID
+function ballById(id) {
+	for (var i = 0; i < balls.length; i++) {
+		if (balls[i].id == id)
+			return balls[i];
 	};
 	
 	return false;
