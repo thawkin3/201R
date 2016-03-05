@@ -109,6 +109,8 @@ function onNewPlayer(data) {
 	// Create a new player
 	var newPlayer = new Player(data.x, data.y, data.size, data.color);	// TESTING!
 	newPlayer.id = this.id;
+	console.log("player data: " + data);
+	console.log("player id: " + this.id);
 
 	// Broadcast new player to connected socket clients
 	this.broadcast.emit("new player", { id: newPlayer.id, x: newPlayer.getX(), y: newPlayer.getY(), size: newPlayer.getSize(), color: newPlayer.getColor() });
@@ -177,7 +179,7 @@ function onNewBall(data) {
 function onMoveBall(data) {
 	// Find player in array
 	var moveBall = ballById(this.id);
-	console.log(data);
+	console.log("ball data: " + data);
 	console.log("moveBall: " + moveBall);
 
 	// Update ball position
