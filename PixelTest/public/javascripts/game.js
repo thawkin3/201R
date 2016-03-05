@@ -93,7 +93,10 @@ var setEventHandlers = function() {
 	socket.on("disconnect", onSocketDisconnect);
 
 	// New player message received
-	socket.on("new player", onNewPlayer);
+	socket.on("new player", function(){
+		onNewPlayer();
+		onNewBall();
+	});
 
 	// Player move message received
 	socket.on("move player", onMovePlayer);
