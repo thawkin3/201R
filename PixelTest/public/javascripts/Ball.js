@@ -11,42 +11,42 @@ var Ball = function(startX, startY) {
 	var id;
 	
 	// Getters and setters
-	// gets your X position
+	// gets ball X position
 	var getX = function() {
 		return x;
 	};
 
-	// gets your Y position
+	// gets ball Y position
 	var getY = function() {
 		return y;
 	};
 
-	// gets your X speed
+	// gets ball X speed
 	var getDX = function() {
 		return dx;
 	};
 
-	// gets your Y speed
+	// gets ball Y speed
 	var getDY = function() {
 		return dy;
 	};
 
-	// gets your color
+	// gets ball color
 	var getColor = function() {
 		return color;
 	}
 
-	// sets your X position
+	// sets ball X position
 	var setX = function(newX) {
 		x = newX;
 	};
 
-	// sets your Y position
+	// sets ball Y position
 	var setY = function(newY) {
 		y = newY;
 	};
 
-	// Update player position
+	// Update ball position
 	var update = function() {
 		// Previous position
 		var prevX = x;

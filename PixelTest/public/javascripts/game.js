@@ -11,6 +11,7 @@ var canvas,			// Canvas DOM element
 var colors = ["green", "blue", "yellow", "pink", "limegreen", "orange", "purple", "coral", "darkkhaki", "gold", "palevioletred"];
 
 var food = [];
+var ball;
 
 /**************************************************
 ** GAME INITIALIZATION
@@ -33,6 +34,7 @@ function init() {
 	var ballX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
 	var ballY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
 	ball = new Ball(ballX, ballY);
+	console.log(ball);
 
 	// Maximize the canvas
 	//canvas.width = window.innerWidth;
@@ -204,6 +206,10 @@ function update() {
 		// Send local player data to the game server
 		socket.emit("move player", { x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
 	};
+	// TESTING!
+	// need to emit an event here that the ball is moving. maybe?
+	ball.update();
+	socket.emit("move ball", {x: ball.getX(), y: ball.getY(), dx: ball.getDX(), dy: ball.getDY() });
 };
 
 
@@ -234,6 +240,7 @@ function draw() {
 
 	// TESTING!
 	// Draw the ball
+	// worked, but it's not moving yet
 	ball.draw(ctx);
 };
 
