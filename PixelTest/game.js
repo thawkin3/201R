@@ -162,16 +162,23 @@ function onNewBall(data) {
 		existingBall = balls[i];
 		this.emit("new ball", { id: existingBall.id, x: existingBall.getX(), y: existingBall.getY(), dx: existingBall.getDX(), dy: existingBall.getDY() });
 	};
+
+	// TEST
+	console.log("new Ball:" + newBall);
 		
 	// Add new ball to the balls array
 	balls.push(newBall);
+
+	// TEST
+	console.log(balls);
 };
 
 // Player has moved
 function onMoveBall(data) {
 	// Find player in array
 	var moveBall = ballById(this.id);
-	console.log(moveBall);
+	console.log(data);
+	console.log("moveBall: " + moveBall);
 
 	// Update ball position
 	moveBall.setX(data.x);
