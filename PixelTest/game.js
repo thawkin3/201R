@@ -25,8 +25,8 @@ function init() {
 	players = [];
 
 	// Create the red ball
-	var ballX = ;
-	var ballY = ;
+	var ballX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
+	var ballY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
 	ball = new Ball(ballX, ballY);
 
 	// Set up Socket.IO to listen on port 8000
