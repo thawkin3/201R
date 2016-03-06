@@ -1,11 +1,17 @@
 body {
-  padding: 50px;
+  padding: 10px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   text-align: center;
+  background: lightcyan;
+  background: rgba(224,255,255,0.3);
 }
 
 a {
   color: #00B7FF;
+}
+
+h1 {
+	margin-bottom: 40px;
 }
 
 #commentForm {
@@ -27,12 +33,22 @@ a {
 
 #comments {
 	margin: 20px auto;
+	width: 80%;
 }
 
 .singleComment {
 	background: pink;
 	padding: 10px;
     margin: 10px auto;
-    display: inline-block;
+    display: block;
     border-radius: 5px;
+}
+
+.comComment {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.comName {
+	font-style: italic;
 }

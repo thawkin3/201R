@@ -23,7 +23,7 @@ $(document).ready(function(){
             $("#comments").html("");
             for(var comment in data) {
               var com = data[comment];
-              var output = "<div class='singleComment'>Name: " + com.Name + "<br/>Comment: " + com.Comment + "</div>";
+              var output = "<div class='singleComment'><span class='comComment'>\"" + com.Comment + "\"</span><br/><span class='comName'>- " + com.Name + "</span></div>";
               $("#comments").append(output);
             }
         });
