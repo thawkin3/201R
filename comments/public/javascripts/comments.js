@@ -1,7 +1,17 @@
 $(document).ready(function(){
 
-    $("#serialize").click(function(){
-        var myobj = {Name:$("#name").val(),Comment:$("#comment").val()};
+    $("#commentForm").submit(function(){
+        var theName = $("#name").val();
+        if (theName == undefined) {
+            theName = "Anonymous";
+        }
+
+        var theComment = $("#comment").val();
+        if (theComment == undefined) {
+            theComment = "No Comment";
+        }
+
+        var myobj = {Name: theName, Comment: theComment};
         jobj = JSON.stringify(myobj);
         $("#json").text("Your JSON stringified comment: " + jobj);
     
@@ -24,7 +34,7 @@ $(document).ready(function(){
             for(var comment in data) {
               var com = data[comment];
               var output = "<div class='singleComment'><span class='comComment'>\"" + com.Comment + "\"</span><br/><span class='comName'>- " + com.Name + "</span></div>";
-              $("#comments").append(output);
+              $("#comments").prepend(output);
             }
         });
     });
