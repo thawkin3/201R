@@ -1,0 +1,49 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.people {
+  height: 270px;
+}
+
+.peopleFinal {
+  height: 308px;
+}
+
+.bubbles {
+  height: 250px;
+  display: block;
+  margin: auto;
+}
+
+#exciting {
+  background: url('exciting.png') center center no-repeat;
+  background-size: contain;
+  height: 200px;
+}
+
+#exciting h2 {
+  font-size: 40px;
+  padding-top: 75px;
+}
+
+#cartoonContainer {
+  display: inline-block;
+}
+
+#firstPageForm {
+  margin-top: 200px;
+  text-align: center;
+}
+
+#firstPageForm input {
+  text-align: center;
+  width: 200px;
+}
+
+#secondPage, #thirdPage, #fourthPage {
+  display: none;
+}
