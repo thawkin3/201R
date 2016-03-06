@@ -41,7 +41,7 @@ $(document).ready(function(){
 	    })
 	    .done(function() { 
 	    	$("#text1page2").html("Hey " + name + ", what do you think about " + words.nouns[0] + "?");
-	    	$("#text2page2").html("I think we should " + words.adverbs[0] + " " + words.verbs[0] + " " + words.nouns[0] + " by " + words.adverbs[1] + " " + words.verbs[1] + " " words.nouns[1] + ".");
+	    	$("#text2page2").html("I think we should " + words.adverbs[0] + " " + words.verbs[0] + " " + words.nouns[0] + " by " + words.adverbs[1] + " " + words.verbs[1] + " " + words.nouns[1] + ".");
 	    	$("#text1page3").html("Of course! I knew I liked you " + name + ". With that idea, we'll be sure to " + words.adverbs[2] + " " + words.verbs[2] + " " + words.nouns[2] + " in no time.");
 	    	$("#text2page3").html("Whatever you say, boss.");
 	    	console.log('generated your BS!'); 
