@@ -3,35 +3,40 @@
 	<head>
   		<title>Comments!</title>
   		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
 		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 		<script src="javascripts/comments.js"></script>
-		<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
 	</head>
 
 	<body>
+
+		<h1>Comment Board</h1>
 
 		<form id="commentForm" class="form-horizontal" action="">
 			<div class="form-group">
 	  			<label for="name" class="col-sm-2 control-label">Name: </label>
 	  			<div class="col-sm-10">
-	  				<input type="text" id="Name" class="form-control" placeholder="Name"><br>
+	  				<input type="text" id="name" class="form-control" placeholder="Name"><br>
 	  			</div>
 	  		</div>
 	  		<div class="form-group">
-	  			<label for="comment" class="col-sm-2 control-label">comment: </label>
+	  			<label for="comment" class="col-sm-2 control-label">Comment: </label>
 	  			<div class="col-sm-10">
-	  				<input type="text" id="Comment" class="form-control" placeholder="Comment"><br>
+	  				<input type="text" id="comment" class="form-control" placeholder="Comment"><br>
 	  			</div>
 	  		</div>
 		</form>
 
 		<div id="someButtons">
-			<button id="serialize" class="btn btn-default">Serialize form values</button>
+			<button id="serialize" class="btn btn-default">Submit Comment</button>
 			<button id="getThem" class="btn btn-default">Get Comments</button>
 		</div>
 
-		<div id="json"></div>
-		<div id="done"></div>
+		<div id="afterSubmit">
+			<div id="json"></div>
+			<div id="done"></div>
+		</div>
+		
 		<div id="comments"></div>
 
 	</body>
