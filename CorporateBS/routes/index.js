@@ -18,7 +18,7 @@ router.get('/getwords',function(req, res, next) {
         var adverbs = data.toString().split("\n");
         while (jsonResult.length < 3) {
         	var index = Math.floor * (Math.random() * adverbs.length);
-        	if jsonResult.indexOf(adverbs[index] == -1) {
+        	if (jsonResult.indexOf(adverbs[index] == -1)) {
         		jsonResult.push(adverbs[index]);
         	}
         }
