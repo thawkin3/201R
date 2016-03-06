@@ -1,0 +1,18 @@
+nohup: ignoring input
+Connected
+[0mGET / [36m304 [0m6.714 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.821 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.767 ms - -[0m
+[0mGET / [36m304 [0m0.433 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.483 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.207 ms - -[0m
+In the GET route
+[ { __v: 0,
+    Comment: 'comment board is finished!',
+    Name: 'Tyler Hawkins',
+    _id: 56dbd7bd5a513a993d7aac15 },
+  { __v: 0,
+    Comment: 'this is pretty cool',
+    Name: 'everyone, probably',
+    _id: 56dbd7d95a513a993d7aac16 } ]
+[0mGET /comments [36m304 [0m23.679 ms - -[0m
