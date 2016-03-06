@@ -12,43 +12,68 @@
 
     <body>
         <h1>Corporate BS Generator</h1>
-        <p>At a boring work meeting? Need something to say to impress your boss?<br/>Look no further!</p>
-        
-        <div id="firstPage">
-            <img class="people" src="man1.gif" />
-            <img class="people" src="man2.gif" />
-            <form id="firstPageForm" action="javascript:void(0);">
-                <input type="text" placeholder="Your Name Here" /><br/><br/>
-                <input type="submit" value="Start Conversation" />
-            </form>
+
+        <div id="header">
+            <p>At a boring work meeting? Need something to say to impress your boss?<br/>Look no further!</p>
         </div>
 
-        <div id="secondPage">
-            <img class="bubbles" src="bubbles.png" />
-            <img class="people" src="man1.gif" />
-            <img class="people" src="man2.gif" />
-            <form id="secondPageForm" action="javascript:void(0);">
-                <input type="submit" value="Next" />
-            </form>
-        </div>
+        <div id="mainContent">
 
-        <div id="thirdPage">
-            <img class="bubbles" src="bubbles.png" />
-            <img class="people" src="man1.gif" />
-            <img class="people" src="man2.gif" />
-            <form id="thirdPageForm" action="javascript:void(0);">
-                <input type="submit" value="Next" />
-            </form>
-        </div>
-
-        <div id="fourthPage">
-            <div id="exciting">
-                <h2>SYNERGY!</h2>
+            <div id="firstPage" class="page">
+                <img class="people" src="man1.gif" />
+                <img class="people" src="man2.gif" />
+                <form id="firstPageForm" action="javascript:void(0);">
+                    <input type="text" placeholder="Your Name Here" autofocus /><br/><br/>
+                    <input type="submit" value="Start Conversation" />
+                </form>
             </div>
-            <img class="peopleFinal" src="synergy.gif" />
-            <form id="fourthPageForm" action="javascript:void(0);">
-                <input type="submit" value="Start A New Conversation" />
-            </form>
+
+            <div id="secondPage" class="page">
+                <img class="bubbles" src="bubbles.png" />
+                <div id="text1page2" class="text">
+                    This is some nice text.
+                </div>
+                <div id="text2page2" class="text">
+                    This is some nice text.
+                </div>
+                <img class="people" src="man1.gif" />
+                <img class="people" src="man2.gif" />
+                <form id="secondPageForm" action="javascript:void(0);">
+                    <input type="submit" value="Next" />
+                </form>
+            </div>
+
+            <div id="thirdPage" class="page">
+                <img class="bubbles" src="bubbles.png" />
+                <div id="text1page3" class="text">
+                    This is some nice text.
+                </div>
+                <div id="text2page3" class="text">
+                    This is some nice text.
+                </div>
+                <img class="people" src="man1.gif" />
+                <img class="people" src="man2.gif" />
+                <form id="thirdPageForm" action="javascript:void(0);">
+                    <input type="submit" value="Next" />
+                </form>
+            </div>
+
+            <div id="fourthPage" class="page">
+                <div id="exciting">
+                    <h2>SYNERGY!</h2>
+                </div>
+                <img class="peopleFinal" src="synergy.gif" />
+                <form id="fourthPageForm" action="javascript:void(0);">
+                    <input type="submit" value="Start A New Conversation" />
+                </form>
+            </div>
+
+        </div>
+
+        <div id="mobileUsers">
+            <img id="hedgehog" src="hedgehog.jpg" />
+            <p>"Take your mobile BS elsewhere, peasant."
+            <br/>- Grumpy hedgehog, probably</p> 
         </div>
 
 

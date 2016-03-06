@@ -5,6 +5,16 @@ html, body {
   text-align: center;
 }
 
+#header, #mainContent {
+  margin: auto;
+}
+
+.page {
+  position: relative;
+  width: 588px;
+  margin: auto;
+}
+
 .people {
   height: 270px;
 }
@@ -19,6 +29,25 @@ html, body {
   margin: auto;
 }
 
+.text {
+  position: absolute;
+  width: 328px;
+  height: 102px;
+  text-align: left;
+  padding: 5px;
+  overflow: scroll;
+}
+
+#text1page2, #text1page3 {
+  top: 5px;
+  left: 8px;
+}
+
+#text2page2, #text2page3 {
+  top: 114px;
+  left: 251px;
+}
+
 #exciting {
   background: url('exciting.png') center center no-repeat;
   background-size: contain;
@@ -28,10 +57,6 @@ html, body {
 #exciting h2 {
   font-size: 40px;
   padding-top: 75px;
-}
-
-#cartoonContainer {
-  display: inline-block;
 }
 
 #firstPageForm {
@@ -44,6 +69,22 @@ html, body {
   width: 200px;
 }
 
-#secondPage, #thirdPage, #fourthPage {
+#secondPage, #thirdPage, #fourthPage, #mobileUsers {
   display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #header, #firstPage, #secondPage, #thirdPage, #fourthPage {
+    display: none;
+  }
+
+  #mobileUsers {
+    display: block;
+    margin: auto;
+  }
+
+  #hedgehog {
+    width: 75%;
+    border-radius: 10px;
+  }
 }

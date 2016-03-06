@@ -20,4 +20,12 @@ $(document).ready(function(){
 		$("#secondPage").show();
 	});
 
+	$(window).resize(function() {
+		if ($(window).innerWidth() < 600) {
+			$("#mainContent").hide();
+		} else {
+			$("#mainContent").show();
+		}
+	});
+
 });
