@@ -50,6 +50,6 @@ $(document).ready(function(){
 	    	console.log('failed to generate BS!' + textStatus); 
 	    	console.log("incoming " + jqXHR.responseText);
 	    });
-	});
+	}
 
 });
