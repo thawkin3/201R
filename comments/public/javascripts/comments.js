@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
     $("#serialize").click(function(){
-        var myobj = {Name:$("#Name").val(),Comment:$("#Comment").val()};
+        var myobj = {Name:$("#name").val(),Comment:$("#comment").val()};
         jobj = JSON.stringify(myobj);
-        $("#json").text("Your JSON stringified comment:" + jobj.toString());
+        $("#json").text("Your JSON stringified comment:" + jobj);
     
     	var url = "comment";
 		$.ajax({
