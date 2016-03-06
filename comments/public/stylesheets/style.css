@@ -20,9 +20,13 @@ a {
 #afterSubmit {
 	background: lightblue;
     padding: 10px;
-    margin: 10px auto;
+    margin: 20px auto;
     display: inline-block;
     border-radius: 5px;
+}
+
+#comments {
+	margin: 20px auto;
 }
 
 .singleComment {

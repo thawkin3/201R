@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("#serialize").click(function(){
         var myobj = {Name:$("#name").val(),Comment:$("#comment").val()};
         jobj = JSON.stringify(myobj);
-        $("#json").text("Your JSON stringified comment:" + jobj);
+        $("#json").text("Your JSON stringified comment: " + jobj);
     
     	var url = "comment";
 		$.ajax({
@@ -24,7 +24,7 @@ $(document).ready(function(){
             for(var comment in data) {
               var com = data[comment];
               var output = "<div class='singleComment'>Name: " + com.Name + "<br/>Comment: " + com.Comment + "</div>";
-              $("#comments").append(everything);
+              $("#comments").append(output);
             }
         });
     });
