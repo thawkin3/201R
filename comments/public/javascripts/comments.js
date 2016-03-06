@@ -15,19 +15,17 @@ $(document).ready(function(){
       				$("#done").html("Submitting your comment: " + textStatus + "!");
   			}
 		});
-
 	});
 
     $("#getThem").click(function() {
         $.getJSON('comments', function(data) {
             console.log(data);
-            var everything = "<ul>";
+            $("#comments").html("");
             for(var comment in data) {
-              com = data[comment];
-              everything += "<li>Name: " + com.Name + " -- Comment: " + com.Comment + "</li>";
+              var com = data[comment];
+              var output = "<div class='singleComment'>Name: " + com.Name + "<br/>Comment: " + com.Comment + "</div>";
+              $("#comments").append(everything);
             }
-            everything += "</ul>";
-            $("#comments").html(everything);
         });
     });
 
