@@ -25,6 +25,10 @@ $(document).ready(function(){
       				$("#done").html("Submitting your comment: " + textStatus + "!");
   			}
 		});
+
+        $("#name").val("");
+        $("#comment").val("");
+
 	});
 
     $("#getThem").click(function() {
