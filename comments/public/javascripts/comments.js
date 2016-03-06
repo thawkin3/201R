@@ -2,12 +2,12 @@ $(document).ready(function(){
 
     $("#commentForm").submit(function(){
         var theName = $("#name").val();
-        if (theName == undefined) {
+        if (theName == "") {
             theName = "Anonymous";
         }
 
         var theComment = $("#comment").val();
-        if (theComment == undefined) {
+        if (theComment == "") {
             theComment = "No Comment";
         }
 
