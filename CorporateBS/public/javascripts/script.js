@@ -8,7 +8,7 @@ $(document).ready(function(){
 		$("#secondPage").show();
 		name = $("#name").val();
 		if (name == "") {
-			name == "valued employee";
+			name = "valued employee";
 		}
 		generateBS();
 	});
