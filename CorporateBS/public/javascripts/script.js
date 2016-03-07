@@ -23,12 +23,16 @@ $(document).ready(function(){
 	$("#thirdPageForm").submit(function(){
 		$("#thirdPage").hide();
 		$("#fourthPage").show();
+		$("#text1page2").html("");
+		$("#text2page2").html("");
 		$("#submitPage4").focus();
 	});
 
 	$("#fourthPageForm").submit(function(){
 		$("#fourthPage").hide();
 		$("#secondPage").show();
+		$("#text1page3").html("");
+		$("#text2page3").html("");
 		$("#submitPage2").focus();
 		generateBS();
 	});
