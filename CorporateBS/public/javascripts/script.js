@@ -10,22 +10,26 @@ $(document).ready(function(){
 		if (name == "") {
 			name = "valued employee";
 		}
+		$("#submitPage2").focus();
 		generateBS();
 	});
 
 	$("#secondPageForm").submit(function(){
 		$("#secondPage").hide();
 		$("#thirdPage").show();
+		$("#submitPage3").focus();
 	});
 
 	$("#thirdPageForm").submit(function(){
 		$("#thirdPage").hide();
 		$("#fourthPage").show();
+		$("#submitPage4").focus();
 	});
 
 	$("#fourthPageForm").submit(function(){
 		$("#fourthPage").hide();
 		$("#secondPage").show();
+		$("#submitPage2").focus();
 		generateBS();
 	});
 
