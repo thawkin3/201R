@@ -24,9 +24,6 @@
 		var canvas = document.getElementById("gameCanvas");
 		var ctx = canvas.getContext("2d");
 
-		// Initialize keyboard controls
-		var keys = new Keys();
-
 		// Locator function in a loop
 		$scope.mainLoop = function() {
 			
@@ -56,12 +53,12 @@
 		    ball_x += ball_dx;
 		    ball_y += ball_dy;
 
-		    // If the ball has hit the side, bounce it.
+		    // If the ball has hit the left or right side, bounce it.
 		    if ((ball_x + (ball_size/2) > canvas.width) || (ball_x - (ball_size/2) < 0)) {
 		    	ball_dx = -ball_dx;
 		    }
 
-		    // If the ball has hit the bottom, bounce it.
+		    // If the ball has hit the top or bottom, bounce it.
 		    if ((ball_y + (ball_size/2) > canvas.height) || (ball_y - (ball_size/2) < 0)) { 
 		    	ball_dy = -ball_dy; 
 		    }
@@ -80,8 +77,7 @@
 		};
 
 		document.onkeydown = function(e) {
-			var that = this,
-				theKey = e.keyCode;
+			var theKey = e.keyCode;
 			switch (theKey) {
 				// Controls
 				case 37: // Left
@@ -94,8 +90,7 @@
 		};
 
 		document.onkeyup = function(e) {
-			var that = this,
-				theKey = e.keyCode;
+			var theKey = e.keyCode;
 			switch (theKey) {
 				// Controls
 				case 37: // Left
@@ -108,12 +103,7 @@
 		};
 
 		// Start the game
-		// $scope.initialize = function() {
-			
-		 	$scope.mainLoop();
-		// }
-
-		// $scope.initialize();
+		 $scope.mainLoop();
 
 	};
 
