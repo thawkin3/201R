@@ -16,3 +16,9 @@ In the GET route
 [0mGET / [36m304 [0m0.413 ms - -[0m
 [0mGET /stylesheets/style.css [36m304 [0m0.304 ms - -[0m
 [0mGET /javascripts/comments.js [36m304 [0m0.233 ms - -[0m
+[0mGET / [36m304 [0m0.479 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.386 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.700 ms - -[0m
+[0mGET / [36m304 [0m0.460 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.332 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m1.035 ms - -[0m
