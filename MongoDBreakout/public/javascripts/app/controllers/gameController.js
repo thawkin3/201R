@@ -7,6 +7,8 @@
 			
 			// draw our canvas here
 			// have logic for the game to end or not
+
+			var gameEnd = false;
 			
 			if (!gameEnd) {
 				// Recursively call our loop
