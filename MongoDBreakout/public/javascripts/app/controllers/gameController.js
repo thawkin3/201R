@@ -2,13 +2,26 @@
 
 	var gameController = function ($scope, $routeParams, $rootScope, $location, $timeout) {
 
+		var gameEnd = false;
+
+		// variables for the ball
+		var ballSize = 10;
+		var x = 200;
+		var y = 200;
+		var dx = 2;
+		var dy = 2;
+
+		// set up the canvas
+		var canvas = document.getElementById("gameCanvas");
+		var ctx = canvas.getContext("2d");
+
 		// Locator function in a loop
 		$scope.mainLoop = function () {
 			
 			// draw our canvas here
+			$scope.update();
+			$scope.draw();
 			// have logic for the game to end or not
-
-			var gameEnd = false;
 			
 			if (!gameEnd) {
 				// Recursively call our loop
@@ -18,14 +31,38 @@
 			}
 		};
 
-		$scope.runGame = function() {
+		// Update ball position
+		$scope.update = function() {
+			// Move the ball to its new position.
+		    x += dx;
+		    y += dy;
 
-			// Run our loop for the first time
-			window.requestAnimationFrame($scope.mainLoop);
-			
+		    // If the ball has hit the side, bounce it.
+		    if ((x + radius > canvas.width) || (x - radius < 0)) {
+		    	dx = -dx;
+		    }
+
+		    // If the ball has hit the bottom, bounce it.
+		    if ((y + radius > canvas.height) || (y - radius < 0)) { 
+		    	dy = -dy; 
+		    }
+
+			return true;
 		};
 
-		$scope.runGame();
+		// Draw ball
+		$scope.draw = function(ctx) {
+			ctx.fillStyle = #f1f1f1;
+			ctx.fillRect(x - ballSize/2, y - ballSize/2, ballSize, ballSize);
+		};
+
+		// Start the game
+		$scope.initialize = function() {
+			
+			$scope.mainLoop();
+		}
+
+		$scope.initialize();
 
 	};
 
