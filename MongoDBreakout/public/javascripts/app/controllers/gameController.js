@@ -15,6 +15,9 @@
 		var canvas = document.getElementById("gameCanvas");
 		var ctx = canvas.getContext("2d");
 
+		console.log(canvas);
+		console.log(ctx);
+
 		// Locator function in a loop
 		$scope.mainLoop = function () {
 			
@@ -51,7 +54,7 @@
 		};
 
 		// Draw ball
-		$scope.draw = function(ctx) {
+		$scope.draw = function() {
 			ctx.fillStyle = "#f1f1f1";
 			ctx.fillRect(x - ballSize/2, y - ballSize/2, ballSize, ballSize);
 		};
