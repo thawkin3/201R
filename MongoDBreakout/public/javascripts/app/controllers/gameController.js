@@ -38,12 +38,12 @@
 		    y += dy;
 
 		    // If the ball has hit the side, bounce it.
-		    if ((x + radius > canvas.width) || (x - radius < 0)) {
+		    if ((x + (ballSize/2) > canvas.width) || (x - (ballSize/2) < 0)) {
 		    	dx = -dx;
 		    }
 
 		    // If the ball has hit the bottom, bounce it.
-		    if ((y + radius > canvas.height) || (y - radius < 0)) { 
+		    if ((y + (ballSize/2) > canvas.height) || (y - (ballSize/2) < 0)) { 
 		    	dy = -dy; 
 		    }
 
