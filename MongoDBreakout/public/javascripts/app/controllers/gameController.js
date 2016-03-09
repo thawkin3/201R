@@ -74,6 +74,10 @@
 		    	}, 2000);
 		    }
 
+		    if (ball_y - (ball_size/2) <= 0) {
+		    	console.log("game over");
+		    }
+
 		    // console.log(ctx.getImageData(ball_x, ball_y + (ball_size/2), 1, 1).data);
 
 			return true;
