@@ -66,7 +66,7 @@
 		    }
 
 		    // If the ball has hit the paddle, bounce it.
-		    if (ctx.getImageData(ball_x, ball_y - ball_size + 1, 1, 1).data[0] == 241 && hitReset) {
+		    if (ctx.getImageData(ball_x, ball_y - ball_size - 10, 1, 1).data[0] == 241 && hitReset) {
 		    	hitReset = false;
 		    	ball_dy = -ball_dy;
 		    	setTimeout(function(){
