@@ -24,6 +24,7 @@
 
 		// Initialize keyboard controls
 		var keys = new Keys();
+		console.log(keys);
 
 		// Locator function in a loop
 		$scope.mainLoop = function () {
@@ -49,6 +50,9 @@
 			} else if (keys.right && paddle_x < 400 - paddle_width/2) {
 				paddle_x += paddle_dx;
 			};
+
+			console.log(keys.left);
+			console.log(keys.right);
 
 
 			// Move the ball to its new position.
