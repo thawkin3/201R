@@ -82,6 +82,16 @@
 			ctx.fillRect(ball_x - ball_size/2, ball_y - ball_size/2, ball_size, ball_size);
 		};
 
+		// Keyboard key down
+		function onKeydown(e) {
+			keys.onKeyDown(e);
+		};
+
+		// Keyboard key up
+		function onKeyup(e) {
+			keys.onKeyUp(e);
+		};
+
 		// Start the game
 		// $scope.initialize = function() {
 			
