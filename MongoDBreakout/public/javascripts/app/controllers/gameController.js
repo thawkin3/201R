@@ -52,7 +52,7 @@
 
 		// Draw ball
 		$scope.draw = function(ctx) {
-			ctx.fillStyle = #f1f1f1;
+			ctx.fillStyle = "#f1f1f1";
 			ctx.fillRect(x - ballSize/2, y - ballSize/2, ballSize, ballSize);
 		};
 
