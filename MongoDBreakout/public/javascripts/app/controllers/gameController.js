@@ -26,7 +26,7 @@
 		var keys = new Keys();
 
 		// Locator function in a loop
-		$scope.mainLoop = function () {
+		$scope.mainLoop = function() {
 			
 			// draw our canvas here
 			$scope.update();
@@ -95,6 +95,7 @@
 				case 40: // Down
 					that.down = true;
 					break;
+			};
 		};
 
 		document.onkeyup = function(e) {
@@ -115,6 +116,7 @@
 				case 40: // Down
 					that.down = false;
 					break;
+			};
 		};
 
 		// Start the game
