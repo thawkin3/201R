@@ -4,15 +4,15 @@ app.config(function ($routeProvider){
 	$routeProvider
 		.when('/', {
 			controller: 'authenticateController',
-			templateUrl:'app/views/authenticateView.html'
+			templateUrl:'public/javascripts/app/views/authenticateView.html'
 		})
 		.when('/game', {
 			controller: 'gameController',
-			templateUrl:'app/views/gameView.html'
+			templateUrl:'public/javascripts/app/views/gameView.html'
 		})
 		.when('/highscores', {
 			controller: 'highscoresController',
-			templateUrl:'app/views/highscoresView.html'
+			templateUrl:'public/javascripts/app/views/highscoresView.html'
 		})
 		.otherwise({ 
 			redirectTo: '/' 
