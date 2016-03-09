@@ -62,9 +62,10 @@
 		    // If the ball has hit the top or bottom, bounce it.
 		    if ((ball_y + (ball_size/2) >= canvas.height) || (ball_y - (ball_size/2) <= 0)) { 
 		    	ball_dy = -ball_dy; 
+		    	console.log(ctx.getImageData(ball_x, ball_y - (ball_size/2), 1, 1).data[0]);
 		    }
 
-		    if (ctx.getImageData(ball_x, ball_y + (ball_size/2), 1, 1).data[0] == 241 && hitReset) {
+		    if (ctx.getImageData(ball_x, ball_y - (ball_size/2), 1, 1).data[0] == 241 && hitReset) {
 		    	hitReset = false;
 		    	ball_dy = -ball_dy;
 		    	setTimeout(function(){
@@ -72,7 +73,7 @@
 		    	}, 2000);
 		    }
 
-		    console.log(ctx.getImageData(ball_x, ball_y + (ball_size/2), 1, 1).data);
+		    // console.log(ctx.getImageData(ball_x, ball_y + (ball_size/2), 1, 1).data);
 
 			return true;
 		};
