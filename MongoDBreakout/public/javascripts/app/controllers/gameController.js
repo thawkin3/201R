@@ -8,14 +8,14 @@
 		var ball_size = 10;
 		var ball_x = 200;
 		var ball_y = 200;
-		var ball_dx = 2;
-		var ball_dy = 2;
+		var ball_dx = 3;
+		var ball_dy = 3;
 
 		// variables for the paddle
-		var paddle_width = 50;
+		var paddle_width = 100;
 		var paddle_height = 10;
 		var paddle_x = 100;
-		var paddle_y = 100;
+		var paddle_y = 650;
 		var paddle_dx = 4;
 
 		// set up the canvas
