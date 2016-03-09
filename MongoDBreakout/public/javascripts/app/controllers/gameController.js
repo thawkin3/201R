@@ -5,18 +5,25 @@
 		var gameEnd = false;
 
 		// variables for the ball
-		var ballSize = 10;
-		var x = 200;
-		var y = 200;
-		var dx = 2;
-		var dy = 2;
+		var ball_size = 10;
+		var ball_x = 200;
+		var ball_y = 200;
+		var ball_dx = 2;
+		var ball_dy = 2;
+
+		// variables for the paddle
+		var paddle_width = 50;
+		var paddle_height = 10;
+		var paddle_x = 100;
+		var paddle_y = 100;
+		var paddle_dx = 4;
 
 		// set up the canvas
 		var canvas = document.getElementById("gameCanvas");
 		var ctx = canvas.getContext("2d");
 
-		console.log(canvas);
-		console.log(ctx);
+		// Initialize keyboard controls
+		var keys = new Keys();
 
 		// Locator function in a loop
 		$scope.mainLoop = function () {
@@ -36,18 +43,26 @@
 
 		// Update ball position
 		$scope.update = function() {
+			// Move the paddle, left key takes priority over right
+			if (keys.left && paddle_x > 0 + paddle_width/2) {
+				paddle_x -= paddle_dx;
+			} else if (keys.right && paddle_x < 400 - paddle_width/2) {
+				paddle_x += paddle_dx;
+			};
+
+
 			// Move the ball to its new position.
-		    x += dx;
-		    y += dy;
+		    ball_x += ball_dx;
+		    ball_y += ball_dy;
 
 		    // If the ball has hit the side, bounce it.
-		    if ((x + (ballSize/2) > canvas.width) || (x - (ballSize/2) < 0)) {
-		    	dx = -dx;
+		    if ((ball_x + (ball_size/2) > canvas.width) || (ball_x - (ball_size/2) < 0)) {
+		    	ball_dx = -ball_dx;
 		    }
 
 		    // If the ball has hit the bottom, bounce it.
-		    if ((y + (ballSize/2) > canvas.height) || (y - (ballSize/2) < 0)) { 
-		    	dy = -dy; 
+		    if ((ball_y + (ball_size/2) > canvas.height) || (ball_y - (ball_size/2) < 0)) { 
+		    	ball_dy = -ball_dy; 
 		    }
 
 			return true;
@@ -58,16 +73,18 @@
 			ctx.fillStyle="#050505";
 			ctx.fillRect(0, 0, canvas.width, canvas.height);
 			ctx.fillStyle = "#f1f1f1";
-			ctx.fillRect(x - ballSize/2, y - ballSize/2, ballSize, ballSize);
+			ctx.fillRect(paddle_x - paddle_width/2, paddle_y - paddle_width/2, paddle_width, paddle_height);
+			ctx.fillStyle = "#f1f1f1";
+			ctx.fillRect(ball_x - ball_size/2, ball_y - ball_size/2, ball_size, ball_size);
 		};
 
 		// Start the game
-		$scope.initialize = function() {
+		// $scope.initialize = function() {
 			
-			$scope.mainLoop();
-		}
+		 	$scope.mainLoop();
+		// }
 
-		$scope.initialize();
+		// $scope.initialize();
 
 	};
 
