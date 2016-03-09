@@ -46,9 +46,9 @@
 		// Update ball position
 		$scope.update = function() {
 			// Move the paddle, left key takes priority over right
-			if (keys.left && paddle_x > 0 + paddle_width/2) {
+			if (left && paddle_x > 0 + paddle_width/2) {
 				paddle_x -= paddle_dx;
-			} else if (keys.right && paddle_x < 400 - paddle_width/2) {
+			} else if (right && paddle_x < 400 - paddle_width/2) {
 				paddle_x += paddle_dx;
 			};
 
@@ -82,7 +82,6 @@
 		document.onkeydown = function(e) {
 			var that = this,
 				theKey = e.keyCode;
-				console.log(that);
 			switch (theKey) {
 				// Controls
 				case 37: // Left
@@ -97,7 +96,6 @@
 		document.onkeyup = function(e) {
 			var that = this,
 				theKey = e.keyCode;
-				console.log(that);
 			switch (theKey) {
 				// Controls
 				case 37: // Left
