@@ -14,7 +14,7 @@
 		// variables for the paddle
 		var paddle_width = 100;
 		var paddle_height = 10;
-		var paddle_x = 100;
+		var paddle_x = 300;
 		var paddle_y = 450;
 		var paddle_dx = 4;
 		var left = false;
@@ -62,20 +62,20 @@
 		    // If the ball has hit the top, bounce it.
 		    if (ball_y - (ball_size/2) <= 0) { 
 		    	ball_dy = -ball_dy; 
-		    	console.log(ctx.getImageData(ball_x, ball_y - ball_size, 1, 1).data[0]);
 		    }
 
 		    // If the ball has hit the paddle, bounce it.
 		    if (ctx.getImageData(ball_x, ball_y + ball_size/2, 1, 1).data[0] == 241 && hitReset) {
-		    	hitReset = false;
+		    	// hitReset = false;
 		    	ball_dy = -ball_dy;
-		    	setTimeout(function(){
-		    		hitReset = true;
-		    	}, 2000);
+		    	// setTimeout(function(){
+		    	// 	hitReset = true;
+		    	// }, 2000);
 		    }
 
 		    if (ball_y + (ball_size/2) >= canvas.height) {
 		    	console.log("game over");
+		    	gameEnd = true;
 		    }
 
 		    // console.log(ctx.getImageData(ball_x, ball_y + (ball_size/2), 1, 1).data);
