@@ -24,7 +24,6 @@
 
 		// Initialize keyboard controls
 		var keys = new Keys();
-		console.log(keys);
 
 		// Locator function in a loop
 		$scope.mainLoop = function () {
@@ -50,10 +49,6 @@
 			} else if (keys.right && paddle_x < 400 - paddle_width/2) {
 				paddle_x += paddle_dx;
 			};
-
-			console.log(keys.left);
-			console.log(keys.right);
-
 
 			// Move the ball to its new position.
 		    ball_x += ball_dx;
@@ -82,8 +77,44 @@
 			ctx.fillRect(ball_x - ball_size/2, ball_y - ball_size/2, ball_size, ball_size);
 		};
 
-		document.onkeydown = function(){
-		  alert("hey!");
+		document.onkeydown = function(e) {
+			var that = this,
+				theKey = e.keyCode;
+				console.log(that);
+			switch (theKey) {
+				// Controls
+				case 37: // Left
+					that.left = true;
+					break;
+				case 38: // Up
+					that.up = true;
+					break;
+				case 39: // Right
+					that.right = true; // Will take priority over the left key
+					break;
+				case 40: // Down
+					that.down = true;
+					break;
+		};
+
+		document.onkeyup = function(e) {
+			var that = this,
+				theKey = e.keyCode;
+				console.log(that);
+			switch (theKey) {
+				// Controls
+				case 37: // Left
+					that.left = false;
+					break;
+				case 38: // Up
+					that.up = false;
+					break;
+				case 39: // Right
+					that.right = false; // Will take priority over the left key
+					break;
+				case 40: // Down
+					that.down = false;
+					break;
 		};
 
 		// Start the game
