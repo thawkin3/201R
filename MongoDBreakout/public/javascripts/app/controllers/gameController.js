@@ -77,19 +77,13 @@
 			ctx.fillStyle="#050505";
 			ctx.fillRect(0, 0, canvas.width, canvas.height);
 			ctx.fillStyle = "#f1f1f1";
-			ctx.fillRect(paddle_x - paddle_width/2, paddle_y - paddle_width/2, paddle_width, paddle_height);
+			ctx.fillRect(paddle_x - paddle_width/2, paddle_y - paddle_height/2, paddle_width, paddle_height);
 			ctx.fillStyle = "#f1f1f1";
 			ctx.fillRect(ball_x - ball_size/2, ball_y - ball_size/2, ball_size, ball_size);
 		};
 
-		// Keyboard key down
-		function onKeydown(e) {
-			keys.onKeyDown(e);
-		};
-
-		// Keyboard key up
-		function onKeyup(e) {
-			keys.onKeyUp(e);
+		document.onkeydown = function(){
+		  alert("hey!");
 		};
 
 		// Start the game
