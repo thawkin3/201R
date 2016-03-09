@@ -19,6 +19,7 @@
 		var paddle_dx = 4;
 		var left = false;
 		var right = false;
+		var hitReset = true;
 
 		// set up the canvas
 		var canvas = document.getElementById("gameCanvas");
@@ -59,8 +60,16 @@
 		    }
 
 		    // If the ball has hit the top or bottom, bounce it.
-		    if ((ball_y + (ball_size/2) >= canvas.height) || (ball_y - (ball_size/2) <= 0) || ctx.getImageData(ball_x, ball_y + (ball_size/2), 1, 1).data[0] == 241) { 
+		    if ((ball_y + (ball_size/2) >= canvas.height) || (ball_y - (ball_size/2) <= 0)) { 
 		    	ball_dy = -ball_dy; 
+		    }
+
+		    if (ctx.getImageData(ball_x, ball_y + (ball_size/2), 1, 1).data[0] == 241 && hitReset) {
+		    	hitReset = false;
+		    	ball_dy = -ball_dy;
+		    	setTimeout(function(){
+		    		hitReset = true;
+		    	}, 2000);
 		    }
 
 		    console.log(ctx.getImageData(ball_x, ball_y + (ball_size/2), 1, 1).data);
