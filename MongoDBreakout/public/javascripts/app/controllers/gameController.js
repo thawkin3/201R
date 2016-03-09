@@ -15,7 +15,7 @@
 		var paddle_width = 100;
 		var paddle_height = 10;
 		var paddle_x = 100;
-		var paddle_y = 650;
+		var paddle_y = 450;
 		var paddle_dx = 4;
 
 		// set up the canvas
