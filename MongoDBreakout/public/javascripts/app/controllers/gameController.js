@@ -54,14 +54,16 @@
 		    ball_y += ball_dy;
 
 		    // If the ball has hit the left or right side, bounce it.
-		    if ((ball_x + (ball_size/2) > canvas.width) || (ball_x - (ball_size/2) < 0)) {
+		    if ((ball_x + (ball_size/2) >= canvas.width) || (ball_x - (ball_size/2) <= 0)) {
 		    	ball_dx = -ball_dx;
 		    }
 
 		    // If the ball has hit the top or bottom, bounce it.
-		    if ((ball_y + (ball_size/2) > canvas.height) || (ball_y - (ball_size/2) < 0)) { 
+		    if ((ball_y + (ball_size/2) >= canvas.height) || (ball_y - (ball_size/2) <= 0)) { 
 		    	ball_dy = -ball_dy; 
 		    }
+
+		    console.log(ctx.getImageData(ball_x, ball_y - (ball_size/2), 1, 1).data);
 
 			return true;
 		};
