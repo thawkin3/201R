@@ -17,6 +17,8 @@
 		var paddle_x = 100;
 		var paddle_y = 450;
 		var paddle_dx = 4;
+		var left = false;
+		var right = false;
 
 		// set up the canvas
 		var canvas = document.getElementById("gameCanvas");
@@ -84,16 +86,10 @@
 			switch (theKey) {
 				// Controls
 				case 37: // Left
-					that.left = true;
-					break;
-				case 38: // Up
-					that.up = true;
+					left = true;
 					break;
 				case 39: // Right
-					that.right = true; // Will take priority over the left key
-					break;
-				case 40: // Down
-					that.down = true;
+					right = true; // Will take priority over the left key
 					break;
 			};
 		};
@@ -105,16 +101,10 @@
 			switch (theKey) {
 				// Controls
 				case 37: // Left
-					that.left = false;
-					break;
-				case 38: // Up
-					that.up = false;
+					left = false;
 					break;
 				case 39: // Right
-					that.right = false; // Will take priority over the left key
-					break;
-				case 40: // Down
-					that.down = false;
+					right = false; // Will take priority over the left key
 					break;
 			};
 		};
