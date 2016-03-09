@@ -1,8 +1,24 @@
+@font-face {
+    font-family: zig;
+    src: url('zig.ttf');
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 10px;
+  font-family: zig, "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  background: #777;
+  color: #f1f1f1;
 }
 
 a {
-  color: #00B7FF;
+  color: #ccc;
+}
+
+#theGameCanvas {
+	height: 700px;
+	width: 500px;
+	background: #050505;
+	border: 5px solid #f1f1f1;
+	margin: auto;
 }
