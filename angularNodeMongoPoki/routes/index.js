@@ -1,6 +1,31 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
+var mongodb = require('mongodb');
+
+// We need to work with "MongoClient" interface in order to connect to a mongodb server.
+var MongoClient = mongodb.MongoClient;
+
+// Connection URL. This is where your mongodb server is running.
+var dbUrl = 'mongodb://localhost:27017/pokemon';
+
+// we will use this variable later to insert and retrieve a "collection" of data
+var collection;
+
+// Use connect method to connect to the Server
+MongoClient.connect(dbUrl, function (err, db) {
+  if (err) {
+    console.log('Unable to connect to the mongoDB server. Error:', err);
+  } else {
+    // HOORAY!! We are connected. :)
+    console.log('Connection established to', dbUrl);
+
+    /**
+     * TODO: insert data here, once we've successfully connected
+     */
+  }
+});
+
 
 /* GET home page. */
 router.get('/', function(req, res) {
