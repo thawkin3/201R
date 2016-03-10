@@ -26,8 +26,8 @@
 		var brick_height = 20;
 		var brick_width = 40;
 		var brick_top = 10;
-		var brick_left = 5;
-		for (var i = 0; i <= 32; i++) {
+		var brick_left = 10;
+		for (var i = 0; i < 32; i++) {
 			if (i != 0) {
 				brick_left += (brick_width + 10);
 			}
