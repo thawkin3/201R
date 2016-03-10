@@ -33,7 +33,7 @@
 			}
 			if (i == 8 || i == 16 || i == 24) {
 				brick_top += 30;
-				brick_left = 5;
+				brick_left = 10;
 			}
 			brickArray.push({ h: brick_height, w: brick_width, t: brick_top, l: brick_left });
 		}
