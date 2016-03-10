@@ -13,17 +13,33 @@ function pokemonFetcher ($http) {
         .then(function (resp) {
           return resp.data
         })
-    }
+    },
+
+    post: function (formData) {
+      return $http
+         .post(API_ROOT,formData)
+         .then(function (resp) {
+           console.log("Post worked");
+         })
+    } 
+
   }
 }
 
 function mainCtrl ($scope, pokemonFetcher) {
 
-  $scope.pokemon = []
+  $scope.pokemon = [];
 
   pokemonFetcher.get()
     .then(function (data) {
       $scope.pokemon = data
-    })
+    });
+
+  $scope.addPoki = function() {
+      var formData = {name:$scope.Name,avatarUrl:$scope.Url};
+      console.log(formData);
+      pokemonFetcher.post(formData); // Send the data to the back end
+      $scope.pokemon.push(formData); // Update the model
+    }
 
 }
