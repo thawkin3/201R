@@ -25,11 +25,15 @@
 		var brickArray = [];
 		var brick_height = 20;
 		var brick_width = 40;
-		var brick_top = 20;
-		var brick_left = 10;
-		for (var i = 0; i <= 5; i++) {
+		var brick_top = 10;
+		var brick_left = 5;
+		for (var i = 0; i <= 32; i++) {
 			if (i != 0) {
 				brick_left += (brick_width + 10);
+			}
+			if (i == 8 || i == 16 || i == 24) {
+				brick_top += 30;
+				brick_left = 5;
 			}
 			brickArray.push({ h: brick_height, w: brick_width, t: brick_top, l: brick_left });
 		}
@@ -59,7 +63,7 @@
 			// Move the paddle, left key takes priority over right
 			if (left && paddle_x > 0 + paddle_width/2) {
 				paddle_x -= paddle_dx;
-			} else if (right && paddle_x < 400 - paddle_width/2) {
+			} else if (right && paddle_x < canvas.width - paddle_width/2) {
 				paddle_x += paddle_dx;
 			};
 
