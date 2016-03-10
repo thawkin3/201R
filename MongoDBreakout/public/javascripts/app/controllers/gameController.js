@@ -21,6 +21,19 @@
 		var right = false;
 		var hitReset = true;
 
+		// variables for the bricks
+		var brickArray = [];
+		var brick_height = 20;
+		var brick_width = 40;
+		var brick_top = 20;
+		var brick_left = 10;
+		for (var i = 0; i <= 5; i++) {
+			if (i != 0) {
+				brick_left += (brick_width + 10);
+			}
+			brickArray.push({ h: brick_height, w: brick_width, t: brick_top, l: brick_left });
+		}
+
 		// set up the canvas
 		var canvas = document.getElementById("gameCanvas");
 		var ctx = canvas.getContext("2d");
@@ -91,6 +104,11 @@
 			ctx.fillRect(paddle_x - paddle_width/2, paddle_y - paddle_height/2, paddle_width, paddle_height);
 			ctx.fillStyle = "#f1f1f1";
 			ctx.fillRect(ball_x - ball_size/2, ball_y - ball_size/2, ball_size, ball_size);
+
+			for (var i = 0; i < brickArray.length; i++) {
+				ctx.fillStyle = "#f1f1f1";
+				ctx.fillRect(brickArray[i].l, brickArray[i].t, brickArray[i].w, brickArray[i].h);
+			}
 		};
 
 		document.onkeydown = function(e) {
