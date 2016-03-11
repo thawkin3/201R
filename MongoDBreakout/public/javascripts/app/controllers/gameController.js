@@ -28,6 +28,7 @@
 		var brick_width = 40;
 		var brick_top = 10;
 		var brick_left = 10;
+		
 		for (var i = 0; i < 32; i++) {
 			if (i != 0) {
 				brick_left += (brick_width + 10);
@@ -37,6 +38,14 @@
 				brick_left = 10;
 			}
 			brickArray.push({ h: brick_height, w: brick_width, t: brick_top, l: brick_left });
+		}
+
+		var filterBricksHitFromBelow = function(brick) {
+			return ((ball_y - brick.t > 35) || (ball_x - brick.l < 0 || ball_x - brick.l > 40));
+		}
+
+		var filterBricksHitFromAbove = function(brick) {
+			return ((brick.t - ball_y > 35) || (ball_x - brick.l < 0 || ball_x - brick.l > 40));
 		}
 
 		// set up the canvas
@@ -70,27 +79,21 @@
 			};
 
 			// If the ball has hit the paddle, bounce it.
-		    if (ctx.getImageData(ball_x, ball_y + 1 + ball_size/2, 1, 1).data[0] == 241) {
+		    if (ctx.getImageData(ball_x, ball_y + 1 + ball_size/2, 1, 1).data[0] == 242) {
 		    	console.log(ctx.getImageData(ball_x, ball_y + (ball_size/2), 1, 1).data[0]);
-		    	// if (hitReset) {
-		    		ball_dy = -ball_dy;
-		    	// }
-		    	// hitReset = false;
-		    	// theCount++;
-		    	// ball_y -= 10;
-		    	// setTimeout(function(){
-		    	// 	hitReset = true;
-		    	// }, 1000);
+		    	ball_dy = -ball_dy;
 		    }
 
 		    // If the ball has hit a brick from below, bounce it.
 		    if (ctx.getImageData(ball_x, ball_y - 3 - ball_size/2, 1, 1).data[0] == 241) {
-		    	// hitReset = false;
 		    	ball_dy = -ball_dy;
-		    	brickArray = brickArray.filter(filterBricks);
-		    	// setTimeout(function(){
-		    	// 	hitReset = true;
-		    	// }, 500);
+		    	brickArray = brickArray.filter(filterBricksHitFromBelow);
+		    }
+
+		    // If the ball has hit a brick from above, bounce it.
+		    if (ctx.getImageData(ball_x, ball_y + 1 + ball_size/2, 1, 1).data[0] == 241) {
+		    	ball_dy = -ball_dy;
+		    	brickArray = brickArray.filter(filterBricksHitFromAbove);
 		    }
 
 			// Move the ball to its new position.
@@ -120,13 +123,13 @@
 		$scope.draw = function() {
 			ctx.fillStyle="#050505";
 			ctx.fillRect(0, 0, canvas.width, canvas.height);
-			ctx.fillStyle = "#f1f1f1";
+			ctx.fillStyle = "#f2f2f2";
 			ctx.fillRect(paddle_x - paddle_width/2, paddle_y - paddle_height/2, paddle_width, paddle_height);
 			ctx.fillStyle = "#f1f1f1";
 			ctx.fillRect(ball_x - ball_size/2, ball_y - ball_size/2, ball_size, ball_size);
 
+			ctx.fillStyle = "#f1f1f1";
 			for (var i = 0; i < brickArray.length; i++) {
-				ctx.fillStyle = "#f1f1f1";
 				ctx.fillRect(brickArray[i].l, brickArray[i].t, brickArray[i].w, brickArray[i].h);
 			}
 		};
@@ -156,10 +159,6 @@
 					break;
 			};
 		};
-
-		var filterBricks = function(brick) {
-			return ((ball_y - brick.t > 35) || (ball_x - brick.l < 0 || ball_x - brick.l > 40));
-		}
 
 		// Start the game
 		 $scope.mainLoop();
