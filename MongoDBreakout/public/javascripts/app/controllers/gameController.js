@@ -83,12 +83,12 @@
 
 		    // If the ball has hit the paddle, bounce it.
 		    if (ctx.getImageData(ball_x, ball_y + ball_size/2, 1, 1).data[0] == 241 && hitReset) {
-		    	// hitReset = false;
+		    	hitReset = false;
 		    	ball_dy = -ball_dy;
-		    	ball_y -= 10;
-		    	// setTimeout(function(){
-		    	// 	hitReset = true;
-		    	// }, 500);
+		    	// ball_y -= 10;
+		    	setTimeout(function(){
+		    		hitReset = true;
+		    	}, 3000);
 		    }
 
 		    // If the ball has hit a brick from below, bounce it.
