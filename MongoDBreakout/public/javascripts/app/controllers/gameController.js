@@ -20,6 +20,7 @@
 		var left = false;
 		var right = false;
 		var hitReset = true;
+		var theCount = 0;
 
 		// variables for the bricks
 		var brickArray = [];
@@ -85,9 +86,12 @@
 		    // If the ball has hit the paddle, bounce it.
 		    if (ctx.getImageData(ball_x, ball_y + 1 + ball_size/2, 1, 1).data[0] == 241) {
 		    	console.log(ctx.getImageData(ball_x, ball_y + (ball_size/2), 1, 1).data[0]);
+		    	
 		    	hitReset = false;
-		    	ball_dy = -ball_dy;
-		    	ball_y -= 10;
+		    	if ((count + 4) % 4 == 0) {
+		    		ball_dy = -ball_dy;
+		    	}
+		    	// ball_y -= 10;
 		    	setTimeout(function(){
 		    		hitReset = true;
 		    	}, 1000);
