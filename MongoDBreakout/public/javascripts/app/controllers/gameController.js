@@ -74,15 +74,15 @@
 		    	console.log(ctx.getImageData(ball_x, ball_y + (ball_size/2), 1, 1).data[0]);
 		    	
 		    	
-		    	if (hitReset) {
+		    	// if (hitReset) {
 		    		ball_dy = -ball_dy;
-		    	}
-		    	hitReset = false;
+		    	// }
+		    	// hitReset = false;
 		    	// theCount++;
 		    	// ball_y -= 10;
-		    	setTimeout(function(){
-		    		hitReset = true;
-		    	}, 1000);
+		    	// setTimeout(function(){
+		    	// 	hitReset = true;
+		    	// }, 1000);
 		    }
 
 			// Move the ball to its new position.
