@@ -91,6 +91,7 @@
 		    	if ((theCount + 4) % 4 == 0) {
 		    		ball_dy = -ball_dy;
 		    	}
+		    	theCount++;
 		    	// ball_y -= 10;
 		    	setTimeout(function(){
 		    		hitReset = true;
