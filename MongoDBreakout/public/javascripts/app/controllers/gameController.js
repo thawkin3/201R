@@ -87,7 +87,7 @@
 		    	ball_dy = -ball_dy;
 		    	setTimeout(function(){
 		    		hitReset = true;
-		    	}, 3000);
+		    	}, 500);
 		    }
 
 		    // If the ball has hit a brick from below, bounce it.
@@ -96,7 +96,7 @@
 		    	ball_dy = -ball_dy;
 		    	setTimeout(function(){
 		    		hitReset = true;
-		    	}, 3000);
+		    	}, 500);
 		    }
 
 		    // If the ball has hit the canvas's bottom wall, game over.
