@@ -45,7 +45,7 @@
 		}
 
 		var filterBricksHitFromAbove = function(brick) {
-			return ((brick.t - ball_y > 35) || (ball_x - brick.l < 0 || ball_x - brick.l > 40));
+			return ((brick.t - ball_y > 10) || (ball_x - brick.l < 0 || ball_x - brick.l > 40));
 		}
 
 		// set up the canvas
