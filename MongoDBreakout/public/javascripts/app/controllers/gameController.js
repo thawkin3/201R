@@ -50,8 +50,8 @@
 		}
 
 		// keep score
-		$scope.previousRoundScore = 0;
-		$scope.score = 32 + $scope.previousRoundScore - $scope.brickArray.length;
+		$scope.scoreHelper = 0;
+		$scope.score = 32 + $scope.scoreHelper - $scope.brickArray.length;
 
 		// set up the canvas
 		var canvas = document.getElementById("gameCanvas");
@@ -93,10 +93,10 @@
 		    	ball_dy = -ball_dy;
 		    	$scope.$apply(function() {
 		    		$scope.brickArray = $scope.brickArray.filter(filterBricksHitFromBelow);
-					$scope.score = 32 + $scope.previousRoundScore - $scope.brickArray.length;		    		
+					$scope.score = 32 + $scope.scoreHelper - $scope.brickArray.length;		    		
 					if ($scope.score == 32) {
 			    		$timeout(function(){	
-			    			$scope.previousRoundScore = 32;
+			    			$scope.scoreHelper = 48;
 			    			$scope.brickArray = [];
 							var brick_height = 20;
 							var brick_width = 40;
@@ -117,7 +117,7 @@
 		    		}
 		    		if ($scope.score == 80) {
 		    			$timeout(function(){
-			    			$scope.previousRoundScore = 80;
+			    			$scope.scoreHelper = 112;
 			    			$scope.brickArray = [];
 							var brick_height = 20;
 							var brick_width = 40;
@@ -144,10 +144,10 @@
 		    	ball_dy = -ball_dy;
 		    	$scope.$apply(function() {
 		    		$scope.brickArray = $scope.brickArray.filter(filterBricksHitFromAbove);
-		    		$scope.score = 32 + $scope.previousRoundScore - $scope.brickArray.length;
+		    		$scope.score = 32 + $scope.scoreHelper - $scope.brickArray.length;
 		    		if ($scope.score == 32) {
 			    		$timeout(function(){	
-			    			$scope.previousRoundScore = 32;
+			    			$scope.scoreHelper = 48;
 			    			$scope.brickArray = [];
 							var brick_height = 20;
 							var brick_width = 40;
@@ -168,7 +168,7 @@
 		    		}
 		    		if ($scope.score == 80) {
 		    			$timeout(function(){
-			    			$scope.previousRoundScore = 80;
+			    			$scope.scoreHelper = 112;
 			    			$scope.brickArray = [];
 							var brick_height = 20;
 							var brick_width = 40;
