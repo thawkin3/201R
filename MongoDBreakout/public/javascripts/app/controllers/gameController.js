@@ -158,7 +158,7 @@
 		};
 
 		var filterBricks = function(brick) {
-			return (brick.t - ball_y > 25 && (ball_x - brick.l < 0 || ball_x - brick.l > 40));
+			return (ball_y - brick.t > 15 && (ball_x - brick.l < 0 || ball_x - brick.l > 40));
 		}
 
 		// Start the game
