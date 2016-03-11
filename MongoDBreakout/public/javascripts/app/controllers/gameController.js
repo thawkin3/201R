@@ -14,7 +14,7 @@
 		// variables for the paddle
 		var paddle_width = 100;
 		var paddle_height = 10;
-		var paddle_x = 300;
+		var paddle_x = 330;
 		var paddle_y = 450;
 		var paddle_dx = 4;
 		var left = false;
@@ -158,7 +158,7 @@
 		};
 
 		var filterBricks = function(brick) {
-			return ((ball_y - brick.t > 100) && (ball_x - brick.l < 0 || ball_x - brick.l > 40));
+			return ((ball_y - brick.t > 10) && (ball_x - brick.l < 0 || ball_x - brick.l > 40));
 		}
 
 		// Start the game
