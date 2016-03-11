@@ -26,3 +26,7 @@ a {
 h1 {
 	letter-spacing: 12px;
 }
+
+#yourScore {
+	font-size: 30px;
+}

@@ -69,7 +69,14 @@
 				// Recursively call our loop
 				window.requestAnimationFrame($scope.mainLoop);
 			} else {
-				// end the game and go to a new view	
+				// end the game and go to a new view
+				if (gameWin) {
+					ctx.font="20px zig";
+					ctx.fillText("YOU WIN",145,200);
+				} else {
+					ctx.font="20px zig";
+					ctx.fillText("GAME OVER",130,200);
+				}
 			}
 		};
 
@@ -136,6 +143,10 @@
 							}
 						}, 3000);
 		    		}
+		    		if ($scope.score == 144) {
+		    			gameEnd = true;
+		    			gameWin = true;
+		    		}
 		    	});
 		    }
 
@@ -186,6 +197,10 @@
 								$scope.brickArray.push({ h: brick_height, w: brick_width, t: brick_top, l: brick_left });
 							}
 						}, 3000);
+		    		}
+		    		if ($scope.score == 144) {
+		    			gameEnd = true;
+		    			gameWin = true;
 		    		}
 		    	});
 		    }
