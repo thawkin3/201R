@@ -90,8 +90,10 @@
 		    // If the ball has hit a brick from below, bounce it.
 		    if (ctx.getImageData(ball_x, ball_y - 3 - ball_size/2, 1, 1).data[0] == 241) {
 		    	ball_dy = -ball_dy;
-		    	$scope.brickArray = $scope.brickArray.filter(filterBricksHitFromBelow);
-		    	$scope.score = 32 - $scope.brickArray.length;
+		    	$scope.$apply(function() {
+		    		$scope.brickArray = $scope.brickArray.filter(filterBricksHitFromBelow);
+		    		$scope.score = 32 - $scope.brickArray.length;
+		    	});
 		    	console.log($scope.brickArray.length);
 		    	console.log($scope.score);
 		    }
@@ -99,8 +101,10 @@
 		    // If the ball has hit a brick from above, bounce it.
 		    if (ctx.getImageData(ball_x, ball_y + 1 + ball_size/2, 1, 1).data[0] == 241) {
 		    	ball_dy = -ball_dy;
-		    	$scope.brickArray = $scope.brickArray.filter(filterBricksHitFromAbove);
-		    	$scope.score = 32 - $scope.brickArray.length;
+		    	$scope.$apply(function() {
+		    		$scope.brickArray = $scope.brickArray.filter(filterBricksHitFromAbove);
+		    		$scope.score = 32 - $scope.brickArray.length;
+		    	});
 		    }
 
 			// Move the ball to its new position.
