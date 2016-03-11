@@ -88,7 +88,7 @@
 		    	console.log(ctx.getImageData(ball_x, ball_y + (ball_size/2), 1, 1).data[0]);
 		    	
 		    	hitReset = false;
-		    	if ((theCount + 4) % 4 == 0) {
+		    	if ((theCount + 8) % 8 == 0) {
 		    		ball_dy = -ball_dy;
 		    	}
 		    	theCount++;
