@@ -1548,3 +1548,12 @@ In getwords route
      'scenarios',
      'benefits' ] }
 [0mGET /getwords [32m200 [0m4.878 ms - 279[0m
+[0mGET / [32m200 [0m0.682 ms - 3367[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.513 ms - 1212[0m
+[0mGET /javascripts/script.js [32m200 [0m0.375 ms - 2043[0m
+[0mGET /images/man1.gif [32m200 [0m0.378 ms - 8506[0m
+[0mGET /images/man2.gif [32m200 [0m0.441 ms - 5006[0m
+[0mGET /images/bubbles.png [32m200 [0m0.950 ms - 16661[0m
+[0mGET /images/synergy.gif [32m200 [0m0.987 ms - 10411[0m
+[0mGET /images/hedgehog.jpg [32m200 [0m0.815 ms - 365787[0m
+[0mGET /favicon.ico [33m404 [0m1.663 ms - 1226[0m
