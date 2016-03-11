@@ -75,7 +75,7 @@
 					ctx.fillText("YOU WIN",145,200);
 				} else {
 					ctx.font="20px zig";
-					ctx.fillText("GAME OVER",130,200);
+					ctx.fillText("GAME OVER",130,280);
 				}
 			}
 		};
@@ -93,6 +93,20 @@
 		    if (ctx.getImageData(ball_x, ball_y + 1 + ball_size/2, 1, 1).data[0] == 242) {
 		    	console.log(ctx.getImageData(ball_x, ball_y + (ball_size/2), 1, 1).data[0]);
 		    	ball_dy = -ball_dy;
+		    	if (left) {
+		    		if (ball_dx > 0) {
+		    			ball_dx += 1;
+		    		} else {
+		    			ball_dx = -ball_dx;
+		    		}
+		    	}
+		    	if (right) {
+		    		if (ball_dx < 0) {
+		    			ball_dx -= 1;
+		    		} else {
+		    			ball_dx = -ball_dx;
+		    		}
+		    	}
 		    }
 
 		    // If the ball has hit a brick from below, bounce it.
