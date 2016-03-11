@@ -42,11 +42,11 @@
 		}
 
 		var filterBricksHitFromBelow = function(brick) {
-			return ((ball_y - brick.t > 35) || (ball_x - brick.l < 0 || ball_x - brick.l > 40));
+			return ((ball_y - brick.t > 35 || ball_y - brick.t < 10) || (ball_x - brick.l < 0 || ball_x - brick.l > 40));
 		}
 
 		var filterBricksHitFromAbove = function(brick) {
-			return ((brick.t - ball_y > 10) || (ball_x - brick.l < 0 || ball_x - brick.l > 40));
+			return ((brick.t - ball_y > 10 || brick.t - ball_y < -15) || (ball_x - brick.l < 0 || ball_x - brick.l > 40));
 		}
 
 		// keep score
@@ -95,42 +95,46 @@
 		    		$scope.brickArray = $scope.brickArray.filter(filterBricksHitFromBelow);
 					$scope.score = 32 + $scope.previousRoundScore - $scope.brickArray.length;		    		
 					if ($scope.score == 32) {
-		    			$scope.previousRoundScore = $scope.score;
-		    			$scope.brickArray = [];
-						var brick_height = 20;
-						var brick_width = 40;
-						var brick_top = 10;
-						var brick_left = 10;
-						
-						for (var i = 0; i < 48; i++) {
-							if (i != 0) {
-								brick_left += (brick_width + 10);
+			    		$timeout(function(){	
+			    			$scope.previousRoundScore = 32;
+			    			$scope.brickArray = [];
+							var brick_height = 20;
+							var brick_width = 40;
+							var brick_top = 10;
+							var brick_left = 10;
+							
+							for (var i = 0; i < 48; i++) {
+								if (i != 0) {
+									brick_left += (brick_width + 10);
+								}
+								if (i == 8 || i == 16 || i == 24 || i == 32 || i == 40) {
+									brick_top += 30;
+									brick_left = 10;
+								}
+								$scope.brickArray.push({ h: brick_height, w: brick_width, t: brick_top, l: brick_left });
 							}
-							if (i == 8 || i == 16 || i == 24 || i == 32 || i == 40) {
-								brick_top += 30;
-								brick_left = 10;
-							}
-							$scope.brickArray.push({ h: brick_height, w: brick_width, t: brick_top, l: brick_left });
-						}
+						}, 3000);
 		    		}
 		    		if ($scope.score == 80) {
-		    			$scope.previousRoundScore = $scope.score;
-		    			$scope.brickArray = [];
-						var brick_height = 20;
-						var brick_width = 40;
-						var brick_top = 10;
-						var brick_left = 10;
-						
-						for (var i = 0; i < 64; i++) {
-							if (i != 0) {
-								brick_left += (brick_width + 10);
+		    			$timeout(function(){
+			    			$scope.previousRoundScore = 80;
+			    			$scope.brickArray = [];
+							var brick_height = 20;
+							var brick_width = 40;
+							var brick_top = 10;
+							var brick_left = 10;
+							
+							for (var i = 0; i < 64; i++) {
+								if (i != 0) {
+									brick_left += (brick_width + 10);
+								}
+								if (i == 8 || i == 16 || i == 24 || i == 32 || i == 40 || i == 48 || i == 56) {
+									brick_top += 30;
+									brick_left = 10;
+								}
+								$scope.brickArray.push({ h: brick_height, w: brick_width, t: brick_top, l: brick_left });
 							}
-							if (i == 8 || i == 16 || i == 24 || i == 32 || i == 40 || i == 48 || i == 56) {
-								brick_top += 30;
-								brick_left = 10;
-							}
-							$scope.brickArray.push({ h: brick_height, w: brick_width, t: brick_top, l: brick_left });
-						}
+						}, 3000);
 		    		}
 		    	});
 		    }
@@ -142,42 +146,46 @@
 		    		$scope.brickArray = $scope.brickArray.filter(filterBricksHitFromAbove);
 		    		$scope.score = 32 + $scope.previousRoundScore - $scope.brickArray.length;
 		    		if ($scope.score == 32) {
-		    			$scope.previousRoundScore = $scope.score;
-		    			$scope.brickArray = [];
-						var brick_height = 20;
-						var brick_width = 40;
-						var brick_top = 10;
-						var brick_left = 10;
-						
-						for (var i = 0; i < 48; i++) {
-							if (i != 0) {
-								brick_left += (brick_width + 10);
+			    		$timeout(function(){	
+			    			$scope.previousRoundScore = 32;
+			    			$scope.brickArray = [];
+							var brick_height = 20;
+							var brick_width = 40;
+							var brick_top = 10;
+							var brick_left = 10;
+							
+							for (var i = 0; i < 48; i++) {
+								if (i != 0) {
+									brick_left += (brick_width + 10);
+								}
+								if (i == 8 || i == 16 || i == 24 || i == 32 || i == 40) {
+									brick_top += 30;
+									brick_left = 10;
+								}
+								$scope.brickArray.push({ h: brick_height, w: brick_width, t: brick_top, l: brick_left });
 							}
-							if (i == 8 || i == 16 || i == 24 || i == 32 || i == 40) {
-								brick_top += 30;
-								brick_left = 10;
-							}
-							$scope.brickArray.push({ h: brick_height, w: brick_width, t: brick_top, l: brick_left });
-						}
+						}, 3000);
 		    		}
 		    		if ($scope.score == 80) {
-		    			$scope.previousRoundScore = $scope.score;
-		    			$scope.brickArray = [];
-						var brick_height = 20;
-						var brick_width = 40;
-						var brick_top = 10;
-						var brick_left = 10;
-						
-						for (var i = 0; i < 64; i++) {
-							if (i != 0) {
-								brick_left += (brick_width + 10);
+		    			$timeout(function(){
+			    			$scope.previousRoundScore = 80;
+			    			$scope.brickArray = [];
+							var brick_height = 20;
+							var brick_width = 40;
+							var brick_top = 10;
+							var brick_left = 10;
+							
+							for (var i = 0; i < 64; i++) {
+								if (i != 0) {
+									brick_left += (brick_width + 10);
+								}
+								if (i == 8 || i == 16 || i == 24 || i == 32 || i == 40 || i == 48 || i == 56) {
+									brick_top += 30;
+									brick_left = 10;
+								}
+								$scope.brickArray.push({ h: brick_height, w: brick_width, t: brick_top, l: brick_left });
 							}
-							if (i == 8 || i == 16 || i == 24 || i == 32 || i == 40 || i == 48 || i == 56) {
-								brick_top += 30;
-								brick_left = 10;
-							}
-							$scope.brickArray.push({ h: brick_height, w: brick_width, t: brick_top, l: brick_left });
-						}
+						}, 3000);
 		    		}
 		    	});
 		    }
