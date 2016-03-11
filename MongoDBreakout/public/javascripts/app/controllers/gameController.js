@@ -92,6 +92,8 @@
 		    	ball_dy = -ball_dy;
 		    	$scope.brickArray = $scope.brickArray.filter(filterBricksHitFromBelow);
 		    	$scope.score = 32 - $scope.brickArray.length;
+		    	console.log($scope.brickArray.length);
+		    	console.log($scope.score);
 		    }
 
 		    // If the ball has hit a brick from above, bounce it.
