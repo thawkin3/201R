@@ -87,6 +87,7 @@
 		    if (ctx.getImageData(ball_x, ball_y - 3 - ball_size/2, 1, 1).data[0] == 241) {
 		    	// hitReset = false;
 		    	ball_dy = -ball_dy;
+		    	brickArray.pop();
 		    	// setTimeout(function(){
 		    	// 	hitReset = true;
 		    	// }, 500);
