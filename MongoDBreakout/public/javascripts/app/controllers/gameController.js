@@ -2,8 +2,6 @@
 
 	var gameController = function ($scope, $routeParams, $rootScope, $location, $timeout) {
 
-		$scope.score = 32 - $scope.brickArray.length;
-
 		var gameEnd = false;
 		var gameWin = false;
 
@@ -50,6 +48,9 @@
 		var filterBricksHitFromAbove = function(brick) {
 			return ((brick.t - ball_y > 10) || (ball_x - brick.l < 0 || ball_x - brick.l > 40));
 		}
+
+		// keep score
+		$scope.score = 32 - $scope.brickArray.length;
 
 		// set up the canvas
 		var canvas = document.getElementById("gameCanvas");
