@@ -2,7 +2,10 @@
 
 	var gameController = function ($scope, $routeParams, $rootScope, $location, $timeout) {
 
+		$scope.score = 32 - $scope.brickArray.length;
+
 		var gameEnd = false;
+		var gameWin = false;
 
 		// variables for the ball
 		var ball_size = 10;
@@ -23,7 +26,7 @@
 		var theCount = 0;
 
 		// variables for the bricks
-		var brickArray = [];
+		$scope.brickArray = [];
 		var brick_height = 20;
 		var brick_width = 40;
 		var brick_top = 10;
@@ -37,7 +40,7 @@
 				brick_top += 30;
 				brick_left = 10;
 			}
-			brickArray.push({ h: brick_height, w: brick_width, t: brick_top, l: brick_left });
+			$scope.brickArray.push({ h: brick_height, w: brick_width, t: brick_top, l: brick_left });
 		}
 
 		var filterBricksHitFromBelow = function(brick) {
@@ -56,7 +59,6 @@
 		$scope.mainLoop = function() {
 			
 			// draw our canvas here
-			
 			$scope.draw();
 			$scope.update();
 			// have logic for the game to end or not
@@ -87,13 +89,13 @@
 		    // If the ball has hit a brick from below, bounce it.
 		    if (ctx.getImageData(ball_x, ball_y - 3 - ball_size/2, 1, 1).data[0] == 241) {
 		    	ball_dy = -ball_dy;
-		    	brickArray = brickArray.filter(filterBricksHitFromBelow);
+		    	$scope.brickArray = $scope.brickArray.filter(filterBricksHitFromBelow);
 		    }
 
 		    // If the ball has hit a brick from above, bounce it.
 		    if (ctx.getImageData(ball_x, ball_y + 1 + ball_size/2, 1, 1).data[0] == 241) {
 		    	ball_dy = -ball_dy;
-		    	brickArray = brickArray.filter(filterBricksHitFromAbove);
+		    	$scope.brickArray = $scope.brickArray.filter(filterBricksHitFromAbove);
 		    }
 
 			// Move the ball to its new position.
@@ -129,8 +131,8 @@
 			ctx.fillRect(ball_x - ball_size/2, ball_y - ball_size/2, ball_size, ball_size);
 
 			ctx.fillStyle = "#f1f1f1";
-			for (var i = 0; i < brickArray.length; i++) {
-				ctx.fillRect(brickArray[i].l, brickArray[i].t, brickArray[i].w, brickArray[i].h);
+			for (var i = 0; i < $scope.brickArray.length; i++) {
+				ctx.fillRect($scope.brickArray[i].l, $scope.brickArray[i].t, $scope.brickArray[i].w, $scope.brickArray[i].h);
 			}
 		};
 
