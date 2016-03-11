@@ -87,11 +87,12 @@
 		    if (ctx.getImageData(ball_x, ball_y + 1 + ball_size/2, 1, 1).data[0] == 241) {
 		    	console.log(ctx.getImageData(ball_x, ball_y + (ball_size/2), 1, 1).data[0]);
 		    	
-		    	hitReset = false;
-		    	if ((theCount + 16) % 16 == 0) {
+		    	
+		    	if (hitReset) {
 		    		ball_dy = -ball_dy;
 		    	}
-		    	theCount++;
+		    	hitReset = false;
+		    	// theCount++;
 		    	// ball_y -= 10;
 		    	setTimeout(function(){
 		    		hitReset = true;
