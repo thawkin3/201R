@@ -69,21 +69,7 @@
 				paddle_x += paddle_dx;
 			};
 
-			// Move the ball to its new position.
-		    ball_x += ball_dx;
-		    ball_y += ball_dy;
-
-		    // If the ball has hit the left or right side, bounce it.
-		    if ((ball_x + (ball_size/2) >= canvas.width) || (ball_x - (ball_size/2) <= 0)) {
-		    	ball_dx = -ball_dx;
-		    }
-
-		    // If the ball has hit the top, bounce it.
-		    if (ball_y - (ball_size/2) <= 0) { 
-		    	ball_dy = -ball_dy; 
-		    }
-
-		    // If the ball has hit the paddle, bounce it.
+			// If the ball has hit the paddle, bounce it.
 		    if (ctx.getImageData(ball_x, ball_y + 1 + ball_size/2, 1, 1).data[0] == 241) {
 		    	console.log(ctx.getImageData(ball_x, ball_y + (ball_size/2), 1, 1).data[0]);
 		    	
@@ -98,6 +84,22 @@
 		    		hitReset = true;
 		    	}, 1000);
 		    }
+
+			// Move the ball to its new position.
+		    ball_x += ball_dx;
+		    ball_y += ball_dy;
+
+		    // If the ball has hit the left or right side, bounce it.
+		    if ((ball_x + (ball_size/2) >= canvas.width) || (ball_x - (ball_size/2) <= 0)) {
+		    	ball_dx = -ball_dx;
+		    }
+
+		    // If the ball has hit the top, bounce it.
+		    if (ball_y - (ball_size/2) <= 0) { 
+		    	ball_dy = -ball_dy; 
+		    }
+
+		    
 
 		    /*
 		    // If the ball has hit a brick from below, bounce it.
