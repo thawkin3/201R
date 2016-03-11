@@ -84,7 +84,7 @@
 		    }
 
 		    // If the ball has hit a brick from below, bounce it.
-		    if (ctx.getImageData(ball_x, ball_y - 1 - ball_size/2, 1, 1).data[0] == 241) {
+		    if (ctx.getImageData(ball_x, ball_y - 3 - ball_size/2, 1, 1).data[0] == 241) {
 		    	// hitReset = false;
 		    	ball_dy = -ball_dy;
 		    	// setTimeout(function(){
@@ -106,19 +106,11 @@
 		    	ball_dy = -ball_dy; 
 		    }
 
-		    
-
-		    
-		    
-		    
-
 		    // If the ball has hit the canvas's bottom wall, game over.
 		    if (ball_y + (ball_size/2) >= canvas.height) {
 		    	console.log("game over");
 		    	gameEnd = true;
 		    }
-
-		    
 
 			return true;
 		};
