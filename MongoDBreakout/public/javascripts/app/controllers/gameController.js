@@ -94,15 +94,15 @@
 		    	console.log(ctx.getImageData(ball_x, ball_y + (ball_size/2), 1, 1).data[0]);
 		    	ball_dy = -ball_dy;
 		    	if (left) {
-		    		if (ball_dx > 0) {
-		    			ball_dx += 1;
+		    		if (ball_dx < 0) {
+		    			ball_dx -= 1;
 		    		} else {
 		    			ball_dx = -ball_dx;
 		    		}
 		    	}
 		    	if (right) {
-		    		if (ball_dx < 0) {
-		    			ball_dx -= 1;
+		    		if (ball_dx > 0) {
+		    			ball_dx += 1;
 		    		} else {
 		    			ball_dx = -ball_dx;
 		    		}
