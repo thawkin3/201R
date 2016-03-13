@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
-<script src="./javascripts/app.js"></script>
-<link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
-  <meta charset="utf-8">
-  <title>Pokemon</title>
-</head>
-<body>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <script src="./javascripts/app.js"></script>
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <meta charset="utf-8">
+    <title>Pokemon</title>
+  </head>
+  
+  <body>
 
   <div id='app' ng-app='app' ng-controller='mainCtrl'>
 
-    <h1> Enter A New Poki</h1>
-    <form id="newPoki" ng-submit="addPoki()">
-      Name: <input type="text" ng-model="Name" value=""><br>
-      Url: <input type="url" ng-model="Url" value=""><br>
-      <input type="submit" value="Submit">
+    <h1> Enter A New Pokemon</h1>
+    <form id="newPoki" class="form-group form-horizontal" ng-submit="addPoki()">
+      <label class="col-sm-2 control-label">Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" ng-model="Name" value=""><br>
+      </div>
+      <label class="col-sm-2 control-label">Url:</label>
+      <div class="col-sm-10">
+        <input type="url" class="form-control" ng-model="Url" value=""><br>
+      </div>
+      <input class="btn btn-default" type="submit" value="Submit">
     </form>
 
     <div ng-if='!pokemon.length' class='no-pokemon center stretch'>
@@ -33,5 +41,5 @@
 
   </div>
 
-</body>
+  </body>
 </html>

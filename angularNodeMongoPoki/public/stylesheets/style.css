@@ -5,11 +5,19 @@ html, body, #app {
   padding: 0;
   margin: 0;
   font-family: helvetica;
+  text-align: center;
+  background-color: #4FC1E9;
+  color: black;
 }
 
 div, ul {
   margin: 0;
   padding: 0;
+}
+
+#newPoki {
+  margin: 20px auto;
+  width: 32%;
 }
 
 .stretch {
