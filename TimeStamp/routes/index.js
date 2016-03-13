@@ -24,7 +24,6 @@ router.get('/gettime',function(req, res, next) {
 
     res.status(200).json(jsonResult);
 
-    });
 });
 
 
