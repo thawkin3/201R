@@ -3,9 +3,9 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.sendFile('index.html', { root:  'public' });
   console.log("On the home page");
   console.log(req.query.q);
+  res.sendFile('index.html', { root:  'public' });
 });
 
 
