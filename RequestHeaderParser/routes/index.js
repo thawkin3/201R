@@ -9,6 +9,12 @@ router.get('/', function(req, res, next) {
     var test = {
     	theKey: "theValue"
     }
+
+    test.theKey = req.headers['x-forwarded-for'] || 
+     req.connection.remoteAddress || 
+     req.socket.remoteAddress ||
+     req.connection.socket.remoteAddress;
+
   	res.status(200).json(test);
 });
 
