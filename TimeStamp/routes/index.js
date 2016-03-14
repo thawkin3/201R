@@ -3,8 +3,6 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  console.log("On the home page");
-  console.log(req.query.q);
   res.sendFile('index.html', { root:  'public' });
 });
 
@@ -12,13 +10,19 @@ router.get('/', function(req, res, next) {
 /* TimeStamp MicroService */
 
 router.get('/gettime',function(req, res, next) {
-	console.log("In gettime route");
-	console.log(req.query.q);
 
-    var jsonResult = {
+	theQuery = req.query.q;
+
+	var jsonResult = {
     	unix: null,
     	normal: null
     };
+
+	if (typeof theQuery == "number") {
+		var date = new Date(theQuery * 1000);
+		jsonResult.normal = date.toDateString();
+		jsonResult.unix = theQuery;
+	}
 
     console.log(jsonResult);
 
