@@ -11,20 +11,24 @@
   
     <body>
         <h1>TimeStamp MicroService</h1>
-        <h3>Provide either a UNIX TimeStamp or a normal date as a parameter in the query string, and JSON will be returned.</h3>
+        <h3>Provide either a UNIX timestamp or a normal date in the input box, and the date and timestamp will populate below.</h3>
         
-        <form id="dateForm" action="javascript:void(0);">
-            <input type="text" name="theDate" id="theDate" placeholder="Enter text here" value="" />
-            <input type="submit" value="Submit" />
-        </form>
+        <div id="option1">
+            <form id="dateForm" action="javascript:void(0);">
+                <input type="text" name="theDate" id="theDate" placeholder="Enter text here" value="" />
+                <input type="submit" value="Submit" />
+            </form>
 
+            <div>
+                <h4>UNIX: <span id="unix"></span></h4>
+            </div>
+            <div>
+                <h4>Date: <span id="normal"></span></h4>
+            </div>
+        </div>
 
-        <div>
-            <h4>UNIX: <span id="unix"></span></h4>
-        </div>
-        <div>
-            <h4>Date: <span id="normal"></span></h4>
-        </div>
+        <h3>OR</h3>
+        <h3>Navigate to http://54.200.192.157:3500/gettime/?q=<br/> and provide either a UNIX timestamp or a normal date as a parameter in the query string, and JSON will be returned.</h3>
     </body>
 
 <hmtl>
