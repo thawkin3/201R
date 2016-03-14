@@ -20,11 +20,11 @@ router.get('/gettime',function(req, res, next) {
 
 	if (parseInt(theQuery) == theQuery) {
 		var date = new Date(theQuery * 1000);
-		jsonResult.normal = date.toDateString();
 		jsonResult.unix = theQuery;
+		jsonResult.normal = date.toDateString();
 	} else {
-		jsonResult.normal = theQuery;
 		jsonResult.unix = Date.parse(theQuery);
+		jsonResult.normal = Date.parse(theQuery).toDateString();
 	}
 
     console.log(jsonResult);
