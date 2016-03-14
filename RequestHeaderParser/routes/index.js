@@ -7,14 +7,17 @@ router.get('/', function(req, res, next) {
   // res.render('index', { title: 'Express' });
     console.log("on the home page");
     console.log(req.connection);
+    console.log(req.connection.remoteAddress);
+    console.log(req.socket.remoteAddress);
+    console.log(req.connection.socket.remoteAddress);
     var jsonResult = {
     	ip: null,
-    	language: null,
+    	lang: null,
     	useragent: null
     }
 
     jsonResult.ip = req.connection.remoteAddress || req.socket.remoteAddress || req.connection.socket.remoteAddress;
-    jsonResult.language = req.acceptedLanguages;
+    jsonResult["lang"] = req.acceptedLanguages;
     jsonResult.useragent = req.headers['user-agent'];
 
   	res.status(200).json(jsonResult);
