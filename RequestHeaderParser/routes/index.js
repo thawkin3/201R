@@ -6,7 +6,10 @@ var http = require('http');
 router.get('/', function(req, res, next) {
   // res.render('index', { title: 'Express' });
     console.log("on the home page");
-  	res.status(200).json("hey":"there");
+    var test = {
+    	theKey: "theValue"
+    }
+  	res.status(200).json(test);
 });
 
 module.exports = router;
