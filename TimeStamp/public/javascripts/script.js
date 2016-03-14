@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 		$.getJSON("../gettime?q="+str, function(data) {
 	    	$("#unix").html(data.unix);
-	    	$("normal").html(data.normal);
+	    	$("#normal").html(data.normal);
 	    })
 	    .done(function() { 
 	    	console.log('getJSON request succeeded!'); 
