@@ -13,7 +13,9 @@ router.get('/', function(req, res, next) {
     	useragent: null
     }
 
-    test.ip = req.connection.remoteAddress || req.socket.remoteAddress || req.connection.socket.remoteAddress;
+    jsonResult.ip = req.connection.remoteAddress || req.socket.remoteAddress || req.connection.socket.remoteAddress;
+    jsonResult.language = req.acceptedLanguages;
+    jsonResult.useragent = req.headers['user-agent'];
 
   	res.status(200).json(jsonResult);
 });
