@@ -9,6 +9,10 @@ $(document).ready(function(){
 		$.getJSON("../gettime?q="+str, function(data) {
 	    	$("#unix").html(data.unix);
 	    	$("#normal").html(data.normal);
+	    	if ($("#normal").html() == "") {
+	    		$("#unix").html("Invalid Date");
+	    		$("#normal").html("Invalid Date");
+	    	}
 	    })
 	    .done(function() { 
 	    	console.log('getJSON request succeeded!'); 
