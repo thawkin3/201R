@@ -16,7 +16,12 @@ router.get('/', function(req, res, next) {
     }
 
     jsonResult.ip = req.connection.remoteAddress || req.socket.remoteAddress;
+    ipArray = jsonResult.ip.split(":");
+    jsonResult.ip = ipArray[ipArray.length - 1];
+
     jsonResult.language = req.headers["accept-language"];
+    jsonResult.language = jsonResult.language.split(",")[0];
+
     jsonResult.useragent = req.headers['user-agent'];
 
   	res.status(200).json(jsonResult);
