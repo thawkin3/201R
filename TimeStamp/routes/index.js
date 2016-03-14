@@ -25,6 +25,9 @@ router.get('/gettime',function(req, res, next) {
 	} else {
 		jsonResult.unix = Date.parse(theQuery);
 		jsonResult.normal = new Date( Date.parse(theQuery) ).toDateString();
+		if (jsonResult.normal == "Invalid Date") {
+			jsonResult.normal = null;
+		}
 	}
 
     console.log(jsonResult);
