@@ -2,7 +2,7 @@ console.log("script.js loaded");
 
 $(document).ready(function(){
 
-	$("dateForm").submit(function(){
+	$("#dateForm").submit(function(){
 
 		var str = $("#theDate").val();
 
@@ -17,7 +17,7 @@ $(document).ready(function(){
 	    	console.log('getJSON request failed!' + textStatus); 
 	    	console.log("incoming " + jqXHR.responseText);
 	    });
-	    
+
 	});
 
 });
