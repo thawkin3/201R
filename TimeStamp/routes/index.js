@@ -24,7 +24,7 @@ router.get('/gettime',function(req, res, next) {
 		jsonResult.normal = date.toDateString();
 	} else {
 		jsonResult.unix = Date.parse(theQuery);
-		jsonResult.normal = Date.parse(theQuery).toDateString();
+		jsonResult.normal = new Date( Date.parse(theQuery) ).toDateString();
 	}
 
     console.log(jsonResult);
