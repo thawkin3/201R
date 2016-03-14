@@ -11,12 +11,12 @@ router.get('/', function(req, res, next) {
     console.log(req.socket.remoteAddress);
     var jsonResult = {
     	ip: null,
-    	lang: null,
+    	language: null,
     	useragent: null
     }
 
     jsonResult.ip = req.connection.remoteAddress || req.socket.remoteAddress;
-    jsonResult["lang"] = req.acceptedLanguages;
+    jsonResult.language = req.headers["accept-language"];
     jsonResult.useragent = req.headers['user-agent'];
 
   	res.status(200).json(jsonResult);
