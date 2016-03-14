@@ -6,16 +6,16 @@ var http = require('http');
 router.get('/', function(req, res, next) {
   // res.render('index', { title: 'Express' });
     console.log("on the home page");
-    var test = {
-    	theKey: "theValue"
+    console.log(req.connection);
+    var jsonResult = {
+    	ip: null,
+    	language: null,
+    	useragent: null
     }
 
-    test.theKey = req.headers['x-forwarded-for'] || 
-     req.connection.remoteAddress || 
-     req.socket.remoteAddress ||
-     req.connection.socket.remoteAddress;
+    test.ip = req.connection.remoteAddress || req.socket.remoteAddress || req.connection.socket.remoteAddress;
 
-  	res.status(200).json(test);
+  	res.status(200).json(jsonResult);
 });
 
 module.exports = router;
