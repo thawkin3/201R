@@ -12,8 +12,19 @@
     <body>
         <h1>TimeStamp MicroService</h1>
         <h3>Provide either a UNIX TimeStamp or a normal date as a parameter in the query string, and JSON will be returned.</h3>
-        <div id="unix"></div>
-        <div id="normal"></div>
+        
+        <form id="dateForm" action="javascript:void(0);">
+            <input type="text" name="theDate" id="theDate" placeholder="Enter text here" value="" />
+            <input type="submit" value="Submit" />
+        </form>
+
+
+        <div>
+            <h4>UNIX: <span id="unix"></span></h4>
+        </div>
+        <div>
+            <h4>Date: <span id="normal"></span></h4>
+        </div>
     </body>
 
 <hmtl>
