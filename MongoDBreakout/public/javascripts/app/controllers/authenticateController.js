@@ -10,6 +10,7 @@
 		        var thePassword = $("#inputPassword1").val();
 
 		        var myobj = { "Name": theName, "Email": theEmail, "Password": thePassword };
+		        console.log(myobj);
 		        jobj = JSON.stringify(myobj);
 		        console.log(jobj);
 		    
