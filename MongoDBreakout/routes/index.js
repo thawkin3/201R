@@ -6,11 +6,6 @@ router.get('/', function(req, res, next) {
   res.sendFile('index.html', { root:  'public' });
 });
 
-module.exports = router;
-
-
-
-
 /* Set up mongoose in order to connect to mongo database */
 var mongoose = require('mongoose'); //Adds mongoose as a usable dependency
 
