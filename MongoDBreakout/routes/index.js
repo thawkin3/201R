@@ -32,7 +32,7 @@ router.post('/adduser', function(req, res, next) {
 
   User.findOne({ Email: req.body.Email }, function(err, user) {
 	  console.log(user);
-	  if (user == null || user == undefined || user == "") {
+	  if (user == null) {
 		  var newUser = new User(req.body); //[3]
   	      console.log(newUser);
   	  	  console.log(req.body.Email);
@@ -55,7 +55,7 @@ router.post('/getuser', function(req, res, next) {
 
   User.findOne({ Email: req.body.Email, Password: req.body.Password }, function(err, user) {
 	  console.log(user);
-	  if (user !== null || user !== undefined || user !== "") {
+	  if (user !== null) {
 		    console.log("found you!");
 		    res.sendStatus(200);
 	  } else {
