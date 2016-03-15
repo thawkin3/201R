@@ -9,9 +9,9 @@
 		        var theName = $("#inputName1").val();
 		        var thePassword = $("#inputPassword1").val();
 
-		        var myobj = {Name: theName, Email: theEmail, Password: thePassword};
+		        var myobj = { "Name": theName, "Email": theEmail, "Password": thePassword };
 		        jobj = JSON.stringify(myobj);
-		        $("#json").text("Your JSON stringified user: " + jobj);
+		        console.log(jobj);
 		    
 		    	var url = "user";
 				$.ajax({
@@ -20,7 +20,7 @@
 		  			data: jobj,
 		  			contentType: "application/json; charset=utf-8",
 		  			success: function(data,textStatus) {
-		      				$("#done").html("Adding your user: " + textStatus + "!");
+		      				console.log("done");
 		  			}
 				});
 
