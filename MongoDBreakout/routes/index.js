@@ -53,7 +53,8 @@ router.post('/getuser', function(req, res, next) {
   console.log("POST getuser route"); //[1]
   console.log(req.body); //[2]
 
-  User.find({ Email: req.body.Email, Password: req.body.Password }, function(err, user) {
+  // User.find({ Email: req.body.Email, Password: req.body.Password }, function(err, user) {
+  User.find({ $and: [ { Email: req.body.Email }, { Password: req.body.Password } ] }, function(err, user) {
 	  console.log(user);
 	  if (user !== null) {
 		    console.log("found you!");
