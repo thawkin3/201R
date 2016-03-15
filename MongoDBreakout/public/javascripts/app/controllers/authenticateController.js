@@ -4,7 +4,7 @@
 
 		$(document).ready(function(){
 
-		    $("#authetication").submit(function(){
+		    $("#createForm").submit(function(){
 		        var theEmail = $("#inputEmail1").val();
 		        var theName = $("#inputName1").val();
 		        var thePassword = $("#inputPassword1").val();
