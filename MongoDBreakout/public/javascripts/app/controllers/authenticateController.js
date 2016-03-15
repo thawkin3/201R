@@ -25,9 +25,9 @@
 		  			}
 				});
 
-		        $("#inputEmail1").val("");
-		        $("#inputName1").val("");
-		        $("#inputPassword1").val("");
+		        $("#InputEmail1").val("");
+		        $("#InputName1").val("");
+		        $("#InputPassword1").val("");
 
 			});
 

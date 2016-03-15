@@ -17,7 +17,7 @@ var userSchema = mongoose.Schema({ //Defines the Schema for this database
   Password: String
 });
 
-var user = mongoose.model('User', userSchema); //Makes an object from that schema as a model
+var User = mongoose.model('User', userSchema); //Makes an object from that schema as a model
 
 var db = mongoose.connection; //Saves the connection as a variable to use
 db.on('error', console.error.bind(console, 'connection error:')); //Checks for connection errors
@@ -30,6 +30,7 @@ router.post('/user', function(req, res, next) {
   console.log("POST user route"); //[1]
   console.log(req.body); //[2]
   var newUser = new User(req.body); //[3]
+  console.log(newUser);
   newUser.save(function(err, post) { //[4]
     if (err) return console.error(err);
     console.log(post);
