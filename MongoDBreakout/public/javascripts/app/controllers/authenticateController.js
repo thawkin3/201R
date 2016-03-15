@@ -5,9 +5,9 @@
 		$(document).ready(function(){
 
 		    $("#createForm").submit(function(){
-		        var theEmail = $("#inputEmail1").val();
-		        var theName = $("#inputName1").val();
-		        var thePassword = $("#inputPassword1").val();
+		        var theEmail = $("#InputEmail1").val();
+		        var theName = $("#InputName1").val();
+		        var thePassword = $("#InputPassword1").val();
 
 		        var myobj = { "Name": theName, "Email": theEmail, "Password": thePassword };
 		        console.log(myobj);
