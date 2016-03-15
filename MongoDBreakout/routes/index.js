@@ -58,7 +58,6 @@ router.get('/getuser', function(req, res, next) {
 	  if (user !== null || user !== undefined || user !== "") {
 		    console.log("found you!");
 		    res.sendStatus(200);
-		  });
 	  } else {
 	  	res.sendStatus(500);
 	  }
