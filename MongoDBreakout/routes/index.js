@@ -54,7 +54,7 @@ router.post('/getuser', function(req, res, next) {
   console.log(req.body); //[2]
 
   // User.find({ Email: req.body.Email, Password: req.body.Password }, function(err, user) {
-  User.findOne({ Email: req.body.Email}, function(err, user) {
+  User.findOne({ Email: req.body.Email }, function(err, user) {
 	  console.log(user);
 
 		if (user.Password == req.body.Password) {
