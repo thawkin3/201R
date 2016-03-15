@@ -25,9 +25,11 @@
 		  			}
 				});
 
+				/*
 		        $("#InputEmail1").val("");
 		        $("#InputName1").val("");
 		        $("#InputPassword1").val("");
+		        */
 
 			});
 

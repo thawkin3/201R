@@ -29,12 +29,13 @@ db.once('open', function() { //Lets us know when we're connected
 router.post('/user', function(req, res, next) {
   console.log("POST user route"); //[1]
   console.log(req.body); //[2]
-  var newUser = new User(req.body); //[3]
-  console.log(newUser);
-  console.log(req.body.Email);
+
   User.findOne({ email: req.body.Email }, function(err, user) {
 	  console.log(user);
 	  if (user == null || user == undefined || user == "") {
+		  var newUser = new User(req.body); //[3]
+  	      console.log(newUser);
+  	  	  console.log(req.body.Email);
 		  newUser.save(function(err, post) { //[4]
 		    if (err) return console.error(err);
 		    console.log(post);
