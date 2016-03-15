@@ -14,7 +14,7 @@
 		        jobj = JSON.stringify(myobj);
 		        console.log(jobj);
 		    
-		    	var url = "user";
+		    	var url = "adduser";
 				$.ajax({
 		  			url:url,
 		  			type: "POST",
@@ -26,15 +26,35 @@
 		  			}
 				})
 				.fail(function(){
-					alert("error!");
 					$("#createSubmit").addClass("btn-danger");
 				});
 
-				/*
-		        $("#InputEmail1").val("");
-		        $("#InputName1").val("");
-		        $("#InputPassword1").val("");
-		        */
+			});
+
+			$("#signInForm").submit(function(){
+		        var theEmail = $("#inputEmail3").val();
+		        var thePassword = $("#inputPassword3").val();
+
+		        var myobj = {"Email": theEmail, "Password": thePassword };
+		        console.log(myobj);
+		        jobj = JSON.stringify(myobj);
+		        console.log(jobj);
+		    
+		    	var url = "getuser";
+				$.ajax({
+		  			url:url,
+		  			type: "GET",
+		  			data: jobj,
+		  			contentType: "application/json; charset=utf-8",
+		  			success: function(data,textStatus) {
+		      				console.log("done");
+		      				$("#signInSubmit").removeClass("btn-danger");
+		      				alert("found you!");
+		  			}
+				})
+				.fail(function(){
+					$("#signInSubmit").addClass("btn-danger");
+				});
 
 			});
 

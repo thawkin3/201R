@@ -26,8 +26,8 @@ db.once('open', function() { //Lets us know when we're connected
 });
 
 /* POST a user */
-router.post('/user', function(req, res, next) {
-  console.log("POST user route"); //[1]
+router.post('/adduser', function(req, res, next) {
+  console.log("POST adduser route"); //[1]
   console.log(req.body); //[2]
 
   User.findOne({ Email: req.body.Email }, function(err, user) {
@@ -39,6 +39,24 @@ router.post('/user', function(req, res, next) {
 		  newUser.save(function(err, post) { //[4]
 		    if (err) return console.error(err);
 		    console.log(post);
+		    res.sendStatus(200);
+		  });
+	  } else {
+	  	res.sendStatus(500);
+	  }
+
+  });
+});
+
+/* GET a user */
+router.get('/getuser', function(req, res, next) {
+  console.log("GET getuser route"); //[1]
+  console.log(req.body); //[2]
+
+  User.findOne({ Email: req.body.Email, Password: req.body.Password }, function(err, user) {
+	  console.log(user);
+	  if (user !== null || user !== undefined || user !== "") {
+		    console.log("found you!");
 		    res.sendStatus(200);
 		  });
 	  } else {
