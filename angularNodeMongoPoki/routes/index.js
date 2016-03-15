@@ -7,7 +7,7 @@ var mongodb = require('mongodb');
 var MongoClient = mongodb.MongoClient;
 
 // Connection URL. This is where your mongodb server is running.
-var dbUrl = 'mongodb://localhost:27017/pokemon';
+var dbUrl = 'mongodb://localhost:27017/pokemonDB';
 
 // we will use this variable later to insert and retrieve a "collection" of data
 var collection;
@@ -17,12 +17,22 @@ MongoClient.connect(dbUrl, function (err, db) {
   if (err) {
     console.log('Unable to connect to the mongoDB server. Error:', err);
   } else {
-    // HOORAY!! We are connected. :)
+    // HURRAY!! We are connected. :)
     console.log('Connection established to', dbUrl);
 
-    /**
-     * TODO: insert data here, once we've successfully connected
-     */
+    // do some work here with the database.
+    collection = db.collection('pokemon');
+    collection.remove(); // Remove anything that was there before
+    collection.insert(pokemon, function (err, result) {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log('Inserted %d documents into the "pokemon" collection. The documents inserted with "_id" are:', result.length, result);
+      }
+
+      // Dont Close the connection, so we can use it in other routes
+      // db.close();
+    })
   }
 });
 
@@ -34,21 +44,37 @@ router.get('/', function(req, res) {
 
 router.get('/pokemon', function(req, res) {
   console.log("In Pokemon");
-  res.send(pokemon);
+  collection.find().toArray(function(err, result) {
+    if(err) {
+      console.log(err);
+    } else if (result.length) {
+      console.log("Query Worked");
+      console.log(result);
+      res.send(result);
+    } else {
+      console.log("No Documents found");
+    }
+  });
 });
 
 router.post('/pokemon', function(req, res) {
     console.log("In Pokemon Post");
     console.log(req.body);
-    pokemon.push(req.body);
-    res.end('{"success" : "Updated Successfully", "status" : 200}');
-}); 
+    collection.insert(req.body, function (err, result) {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log('Inserted %d documents into the "pokemon" collection. The documents inserted with "_id" are:', result.length, result);
+        res.end('{"success" : "Updated Successfully", "status" : 200}');
+      }
+    });
+});
 
 module.exports = router;
 
-/**
- * This array of pokemon will represent a piece of data in our 'database'
- */
+
+// This array of pokemon will represent a piece of data in our 'database'
+ 
 var pokemon = [
   {
     name: 'Pikachu',
