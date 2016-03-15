@@ -38,15 +38,15 @@ router.post('/user', function(req, res, next) {
 });
 
 /* GET comments from database */
-router.get('/user', function(req, res, next) {
-  console.log("In the GET route");
-  Comment.find(function(err,commentList) { //Calls the find() method on your database
-    if (err) return console.error(err); //If there's an error, print it out
-    else {
-      console.log(commentList); //Otherwise console log the comments you found
-      res.json(commentList); //Then send them
-    }
-  })
-});
+// router.get('/user', function(req, res, next) {
+//   console.log("In the GET route");
+//   Comment.find(function(err,commentList) { //Calls the find() method on your database
+//     if (err) return console.error(err); //If there's an error, print it out
+//     else {
+//       console.log(commentList); //Otherwise console log the comments you found
+//       res.json(commentList); //Then send them
+//     }
+//   })
+// });
 
 module.exports = router;
