@@ -43,7 +43,7 @@
 		    	var url = "getuser";
 				$.ajax({
 		  			url:url,
-		  			type: "GET",
+		  			type: "POST",
 		  			data: jobj,
 		  			contentType: "application/json; charset=utf-8",
 		  			success: function(data,textStatus) {

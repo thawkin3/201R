@@ -48,9 +48,9 @@ router.post('/adduser', function(req, res, next) {
   });
 });
 
-/* GET a user */
-router.get('/getuser', function(req, res, next) {
-  console.log("GET getuser route"); //[1]
+/* GET (fake POST) a user */
+router.post('/getuser', function(req, res, next) {
+  console.log("POST getuser route"); //[1]
   console.log(req.body); //[2]
 
   User.findOne({ Email: req.body.Email, Password: req.body.Password }, function(err, user) {
