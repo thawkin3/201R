@@ -30,7 +30,7 @@ router.post('/user', function(req, res, next) {
   console.log("POST user route"); //[1]
   console.log(req.body); //[2]
 
-  User.findOne({ email: req.body.Email }, function(err, user) {
+  User.findOne({ email: "AWALLERA@GMAIL.COM" }, function(err, user) {
 	  console.log(user);
 	  if (user == null || user == undefined || user == "") {
 		  var newUser = new User(req.body); //[3]
