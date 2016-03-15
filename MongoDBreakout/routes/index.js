@@ -56,7 +56,7 @@ router.post('/getuser', function(req, res, next) {
   // User.find({ Email: req.body.Email, Password: req.body.Password }, function(err, user) {
   User.findOne({ Email: req.body.Email }, function(err, user) {
 	  console.log(user);
-
+	  if (user !== null) {
 		if (user.Password == req.body.Password) {
 			console.log("found you!");
 		    res.sendStatus(200);
@@ -64,8 +64,10 @@ router.post('/getuser', function(req, res, next) {
 		else
 		{
 			res.sendStatus(500);
-
 		}
+	} else {
+		res.sendStatus(400);
+	}
   });
 });
 
