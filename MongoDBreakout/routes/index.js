@@ -31,10 +31,14 @@ router.post('/user', function(req, res, next) {
   console.log(req.body); //[2]
   var newUser = new User(req.body); //[3]
   console.log(newUser);
-  newUser.save(function(err, post) { //[4]
-    if (err) return console.error(err);
-    console.log(post);
-    res.sendStatus(200);
+  User.findOne({ email: req.body.Email }, function(err, user) {
+	  if (user == null || user == undefined || user == "") {
+		  newUser.save(function(err, post) { //[4]
+		    if (err) return console.error(err);
+		    console.log(post);
+		    res.sendStatus(200);
+		  });
+	  }
   });
 });
 
