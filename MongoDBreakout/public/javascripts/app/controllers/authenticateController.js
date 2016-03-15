@@ -15,6 +15,7 @@
 		        console.log(jobj);
 		    
 		    	var url = "user";
+		    	var success = false;
 				$.ajax({
 		  			url:url,
 		  			type: "POST",
@@ -22,7 +23,11 @@
 		  			contentType: "application/json; charset=utf-8",
 		  			success: function(data,textStatus) {
 		      				console.log("done");
+		      				success = true;
 		  			}
+				})
+				.fail(function(){
+					alert("error!");
 				});
 
 				/*

@@ -41,7 +41,10 @@ router.post('/user', function(req, res, next) {
 		    console.log(post);
 		    res.sendStatus(200);
 		  });
+	  } else {
+	  	res.sendStatus(500);
 	  }
+
   });
 });
 
