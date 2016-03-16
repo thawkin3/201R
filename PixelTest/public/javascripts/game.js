@@ -32,10 +32,10 @@ function init() {
 
 	// TESTING!
 	// Create the red ball
-	var ballX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
-	var ballY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
-	ball = new Ball(ballX, ballY);
-	console.log(ball);
+	// var ballX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
+	// var ballY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
+	// ball = new Ball(ballX, ballY);
+	// console.log(ball);
 
 	// Maximize the canvas
 	//canvas.width = window.innerWidth;
