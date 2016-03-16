@@ -105,13 +105,13 @@ var setEventHandlers = function() {
 	socket.on("remove player", onRemovePlayer);
 
 	// New ball message received
-	socket.on("new ball", onNewBall);
+	// socket.on("new ball", onNewBall);
 
 	// Ball move message received
-	socket.on("move ball", onMoveBall);
+	// socket.on("move ball", onMoveBall);
 
 	// Ball removed message received
-	socket.on("remove ball", onRemoveBall);
+	// socket.on("remove ball", onRemoveBall);
 
 };
 
@@ -203,6 +203,7 @@ function onRemovePlayer(data) {
 
 };
 
+/*
 // New ball
 function onNewBall(data) {
 	console.log("New ball connected: " + data.id);
@@ -234,6 +235,7 @@ function onRemoveBall(data) {
 	remoteBalls.splice(remoteBalls.indexOf(removeBall), 1);
 
 };
+*/
 
 
 /**************************************************
@@ -259,9 +261,9 @@ function update() {
 	};
 	// TESTING!
 	// need to emit an event here that the ball is moving. maybe?
-	if (ball.update()) {
-		socket.emit("move ball", { x: ball.getX(), y: ball.getY(), dx: ball.getDX(), dy: ball.getDY(), color: ball.getColor() });
-	}
+	// if (ball.update()) {
+	// 	socket.emit("move ball", { x: ball.getX(), y: ball.getY(), dx: ball.getDX(), dy: ball.getDY(), color: ball.getColor() });
+	// }
 };
 
 
@@ -292,12 +294,12 @@ function draw() {
 
 	// TESTING!
 	// Put the local and the remote balls together
-	var allBalls = remoteBalls.concat(ball);
+	// var allBalls = remoteBalls.concat(ball);
 
 	// Draw all the balls
-	for (var i = 0; i < allBalls.length; i++) {
-		allBalls[i].draw(ctx);
-	};
+	// for (var i = 0; i < allBalls.length; i++) {
+	// 	allBalls[i].draw(ctx);
+	// };
 };
 
 
@@ -314,6 +316,7 @@ function playerById(id) {
 	return false;
 };
 
+/*
 // Find ball by ID
 function ballById(id) {
 	for (var i = 0; i < remoteBalls.length; i++) {
@@ -323,6 +326,7 @@ function ballById(id) {
 	
 	return false;
 };
+*/
 
 // Sort order of players by size
 function sortPlayers(a, b) {

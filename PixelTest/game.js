@@ -4,7 +4,7 @@
 var util = require("util");					// Utility resources (logging, object inspection, etc)
 var io = require("socket.io");				// Socket.IO
 var Player = require("./Player").Player;	// Player class
-var Ball = require("./Ball").Ball;			// Ball class
+// var Ball = require("./Ball").Ball;			// Ball class
 
 
 /**************************************************
@@ -76,10 +76,10 @@ function onSocketConnection(client) {
 	client.on("move player", onMovePlayer);
 
 	// Listen for new ball message
-	client.on("new ball", onNewBall);
+	// client.on("new ball", onNewBall);
 
 	// Listen for move ball message
-	client.on("move ball", onMoveBall);
+	// client.on("move ball", onMoveBall);
 };
 
 // Socket client has disconnected
@@ -104,7 +104,7 @@ function onClientDisconnect() {
 	this.broadcast.emit("remove player", {id: this.id});
 
 	// Broadcast removed player to connected socket clients
-	this.broadcast.emit("remove ball", {id: this.id});
+	// this.broadcast.emit("remove ball", {id: this.id});
 };
 
 // New player has joined
@@ -155,6 +155,7 @@ function onMovePlayer(data) {
 	this.broadcast.emit("move player", { id: movePlayer.id, x: movePlayer.getX(), y: movePlayer.getY(), size: movePlayer.getSize(), color: movePlayer.getColor() });
 };
 
+/*
 // New ball has joined
 function onNewBall(data) {
 	// Create a new ball
@@ -200,6 +201,7 @@ function onMoveBall(data) {
 	// Broadcast updated position to connected socket clients
 	this.broadcast.emit("move ball", { id: moveBall.id, x: moveBall.getX(), y: moveBall.getY(), dx: moveBall.getDX(), dy: moveBall.getDY() });
 };
+*/
 
 
 /**************************************************
@@ -215,6 +217,7 @@ function playerById(id) {
 	return false;
 };
 
+/*
 // Find ball by ID
 function ballById(id) {
 	console.log(balls);
@@ -226,6 +229,7 @@ function ballById(id) {
 	
 	return false;
 };
+*/
 
 
 /**************************************************
