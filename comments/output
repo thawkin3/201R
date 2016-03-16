@@ -22,3 +22,55 @@ In the GET route
 [0mGET / [36m304 [0m0.460 ms - -[0m
 [0mGET /stylesheets/style.css [36m304 [0m0.332 ms - -[0m
 [0mGET /javascripts/comments.js [36m304 [0m1.035 ms - -[0m
+[0mGET / [32m200 [0m3.213 ms - 1357[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.572 ms - 702[0m
+[0mGET /javascripts/comments.js [32m200 [0m1.921 ms - 1306[0m
+[0mGET /favicon.ico [33m404 [0m493.963 ms - 1898[0m
+In the GET route
+[ { __v: 0,
+    Comment: 'comment board is finished!',
+    Name: 'Tyler Hawkins',
+    _id: 56dbd7bd5a513a993d7aac15 },
+  { __v: 0,
+    Comment: 'this is pretty cool',
+    Name: 'everyone, probably',
+    _id: 56dbd7d95a513a993d7aac16 } ]
+[0mGET /comments [32m200 [0m8.419 ms - 209[0m
+POST comment route
+{ Name: 'Silly Rabbit', Comment: 'Tricks are for kids' }
+{ _id: 56e9a9896265a42b4b5205c7,
+  Comment: 'Tricks are for kids',
+  Name: 'Silly Rabbit',
+  __v: 0 }
+[0mPOST /comment [32m200 [0m35.581 ms - 2[0m
+In the GET route
+[ { __v: 0,
+    Comment: 'comment board is finished!',
+    Name: 'Tyler Hawkins',
+    _id: 56dbd7bd5a513a993d7aac15 },
+  { __v: 0,
+    Comment: 'this is pretty cool',
+    Name: 'everyone, probably',
+    _id: 56dbd7d95a513a993d7aac16 },
+  { __v: 0,
+    Comment: 'Tricks are for kids',
+    Name: 'Silly Rabbit',
+    _id: 56e9a9896265a42b4b5205c7 } ]
+[0mGET /comments [32m200 [0m4.123 ms - 306[0m
+[0mGET / [36m304 [0m0.752 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.705 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.618 ms - -[0m
+In the GET route
+[ { __v: 0,
+    Comment: 'comment board is finished!',
+    Name: 'Tyler Hawkins',
+    _id: 56dbd7bd5a513a993d7aac15 },
+  { __v: 0,
+    Comment: 'this is pretty cool',
+    Name: 'everyone, probably',
+    _id: 56dbd7d95a513a993d7aac16 },
+  { __v: 0,
+    Comment: 'Tricks are for kids',
+    Name: 'Silly Rabbit',
+    _id: 56e9a9896265a42b4b5205c7 } ]
+[0mGET /comments [36m304 [0m2.372 ms - -[0m
