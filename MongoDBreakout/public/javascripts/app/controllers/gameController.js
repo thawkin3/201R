@@ -267,6 +267,7 @@
 
 		    // If the ball has hit the canvas's bottom wall, game over.
 		    if (ball_y + (ball_size/2) >= canvas.height) {
+		    	console.log(ball_y + (ball_size/2));
 		    	console.log("game over");
 		    	gameEnd = true;
 		    }
