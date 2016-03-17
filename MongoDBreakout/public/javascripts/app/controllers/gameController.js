@@ -79,7 +79,7 @@
 					ctx.fillText("GAME OVER",130,280);
 				}
 				// set our new score into the database
-				$scope.submitScore();
+				// $scope.submitScore();
 			}
 		};
 
