@@ -89,7 +89,7 @@ router.post('/addscore', function(req, res, next) {
     if (err) return console.error(err);
     console.log(post);
     res.sendStatus(200);
-  }
+  });
 });
 
 
