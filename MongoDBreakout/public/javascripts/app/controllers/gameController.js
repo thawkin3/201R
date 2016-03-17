@@ -283,6 +283,10 @@
 		$scope.draw = function() {
 			ctx.fillStyle="#050505";
 			ctx.fillRect(0, 0, canvas.width, canvas.height);
+			// TEST
+			ctx.fillStyle="#777";
+			ctx.fillRect(0, canvas.height - 5, canvas.width, canvas.height);
+			// END TEST
 			ctx.fillStyle = "#f2f2f2";
 			ctx.fillRect(paddle_x - paddle_width/2, paddle_y - paddle_height/2, paddle_width, paddle_height);
 			ctx.fillStyle = "#f1f1f1";
