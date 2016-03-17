@@ -2,7 +2,7 @@
 
 	var gameController = function ($scope, $routeParams, $rootScope, $location, $timeout) {
 
-		// variables for game playsss
+		// variables for game play
 		var gameEnd = false;
 		var gameWin = false;
 
@@ -84,6 +84,7 @@
 		// set up the canvas
 		var canvas = document.getElementById("gameCanvas");
 		var ctx = canvas.getContext("2d");
+		console.log(canvas.height);
 
 		// Locator function in a loop
 		$scope.mainLoop = function() {
