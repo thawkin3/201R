@@ -9,7 +9,7 @@
 		// variables for the ball
 		var ball_size = 10;
 		var ball_x = 220;
-		ball_y = 220;
+		var ball_y = 220;
 		var ball_dx = 3;
 		var ball_dy = 3;
 
@@ -103,12 +103,15 @@
 				if (gameWin) {
 					ctx.font="20px zig";
 					ctx.fillText("YOU WIN",145,200);
+					// set our new score into the database
+					submitScore();
 				} else {
 					ctx.font="20px zig";
 					ctx.fillText("GAME OVER",130,280);
+					// set our new score into the database
+					submitScore();
 				}
-				// set our new score into the database
-				submitScore();
+				
 			}
 		};
 
