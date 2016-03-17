@@ -286,7 +286,22 @@
 			};
 		};
 
-		// Submit your score
+		
+
+		// Start the game
+		 $scope.mainLoop();
+
+	};
+
+	gameController.$inject = ['$scope', '$routeParams', '$rootScope', '$location', '$timeout'];
+
+	angular.module('MongoDBreakout')
+	    .controller('gameController', gameController);
+
+}());
+
+
+// Submit your score
 		var submitScore = function(){
 			var myobj = { "Name": $rootScope.user, "Score": $scope.score };
 	        console.log(myobj);
@@ -310,15 +325,3 @@
 				$location.url("/highscores");
 			}, 2000);
 		};
-
-		// Start the game
-		 $scope.mainLoop();
-
-	};
-
-	gameController.$inject = ['$scope', '$routeParams', '$rootScope', '$location', '$timeout'];
-
-	angular.module('MongoDBreakout')
-	    .controller('gameController', gameController);
-
-}());
