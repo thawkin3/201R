@@ -79,27 +79,7 @@
 					ctx.fillText("GAME OVER",130,280);
 				}
 				// set our new score into the database
-				var myobj = { "Name": $rootScope.user, "Score": $scope.score };
-		        console.log(myobj);
-		        var jobj = JSON.stringify(myobj);
-		        console.log(jobj);
-				var url = "addscore";
-				$.ajax({
-		  			url:url,
-		  			type: "POST",
-		  			data: jobj,
-		  			contentType: "application/json; charset=utf-8",
-		  			success: function(data,textStatus) {
-		      				console.log("done");
-		      				alert("score submitted!");
-		  			}
-				})
-				.fail(function(){
-				});
-				// go to the highscores view
-				$timeout(function() {
-					$location.url("/highscores");
-				}, 2000);
+				$scope.submitScore();
 			}
 		};
 
@@ -304,6 +284,31 @@
 					right = false; // Will take priority over the left key
 					break;
 			};
+		};
+
+		// Submit your score
+		$scope.submitScore = function(){
+			var myobj = { "Name": $rootScope.user, "Score": $scope.score };
+	        console.log(myobj);
+	        var jobj = JSON.stringify(myobj);
+	        console.log(jobj);
+			var url = "addscore";
+			$.ajax({
+	  			url:url,
+	  			type: "POST",
+	  			data: jobj,
+	  			contentType: "application/json; charset=utf-8",
+	  			success: function(data,textStatus) {
+	      				console.log("done");
+	      				alert("score submitted!");
+	  			}
+			})
+			.fail(function(){
+			});
+			// go to the highscores view
+			$timeout(function() {
+				$location.url("/highscores");
+			}, 2000);
 		};
 
 		// Start the game
