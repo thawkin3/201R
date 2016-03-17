@@ -92,7 +92,6 @@
 			// draw our canvas here
 			$scope.draw();
 			$scope.update();
-			console.log(ball_y);
 			// have logic for the game to end or not
 			
 			if (!gameEnd) {
@@ -267,7 +266,7 @@
 		    }
 
 		    // If the ball has hit the canvas's bottom wall, game over.
-		    if (ball_y + (ball_size/2) >= canvas.height + 40) {
+		    if (ball_y + (ball_size/2) >= canvas.height + 400) {
 		    	console.log(ball_y + (ball_size/2));
 		    	console.log("game over");
 		    	gameEnd = true;
