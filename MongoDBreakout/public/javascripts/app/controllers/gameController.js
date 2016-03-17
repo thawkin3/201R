@@ -2,6 +2,7 @@
 
 	var gameController = function ($scope, $routeParams, $rootScope, $location, $timeout) {
 
+		// variables for game play
 		var gameEnd = false;
 		var gameWin = false;
 
@@ -51,15 +52,15 @@
 
 		// Submit your score
 		var submitScore = function(){
-			var myobj = { "Name": $rootScope.user, "Score": $scope.score };
-	        console.log(myobj);
-	        var jobj = JSON.stringify(myobj);
-	        console.log(jobj);
-			var url = "addscore";
+			var scoreObj = { "Name": $rootScope.user, "Score": $scope.score };
+	        console.log(scoreObj);
+	        var JSONscoreObj = JSON.stringify(scoreObj);
+	        console.log(JSONscoreObj);
+			var scoreUrl = "addscore";
 			$.ajax({
-	  			url:url,
+	  			url: scoreUrl,
 	  			type: "POST",
-	  			data: jobj,
+	  			data: JSONscoreObj,
 	  			contentType: "application/json; charset=utf-8",
 	  			success: function(data,textStatus) {
 	      				console.log("done");
