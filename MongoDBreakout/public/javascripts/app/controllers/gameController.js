@@ -70,9 +70,9 @@
 			.fail(function(){
 			});
 			// go to the highscores view
-			$timeout(function() {
-				$location.url("/highscores");
-			}, 2000);
+			//$timeout(function() {
+				//$location.url("/highscores");
+			//}, 2000);
 		};
 
 		// keep score
