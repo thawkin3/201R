@@ -2,7 +2,7 @@
 
 	var gameController = function ($scope, $routeParams, $rootScope, $location, $timeout) {
 
-		// variables for game play
+		// variables for game playsss
 		var gameEnd = false;
 		var gameWin = false;
 
