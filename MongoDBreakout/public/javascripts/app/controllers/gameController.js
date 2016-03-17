@@ -79,7 +79,7 @@
 					ctx.fillText("GAME OVER",130,280);
 				}
 				// set our new score into the database
-				// $scope.submitScore();
+				submitScore();
 			}
 		};
 
@@ -287,7 +287,7 @@
 		};
 
 		// Submit your score
-		$scope.submitScore = function(){
+		var submitScore = function(){
 			var myobj = { "Name": $rootScope.user, "Score": $scope.score };
 	        console.log(myobj);
 	        var jobj = JSON.stringify(myobj);
