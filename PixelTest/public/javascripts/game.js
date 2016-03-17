@@ -24,11 +24,11 @@ function init() {
 
 	// TESTING!
 	// Generate some food, but don't draw it until later
-	for (var i = 0; i < 10; i++) {
-		var foodX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
-		var foodY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
-		food.push({ "foodX": foodX, "foodY": foodY });
-	}
+	// for (var i = 0; i < 10; i++) {
+	// 	var foodX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
+	// 	var foodY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
+	// 	food.push({ "foodX": foodX, "foodY": foodY });
+	// }
 
 	// TESTING!
 	// Create the red ball
@@ -93,10 +93,7 @@ var setEventHandlers = function() {
 	socket.on("disconnect", onSocketDisconnect);
 
 	// New player message received
-	socket.on("new player", function(){
-		onNewPlayer();
-		onNewBall();
-	});
+	socket.on("new player", onNewPlayer);
 
 	// Player move message received
 	socket.on("move player", onMovePlayer);
@@ -287,10 +284,10 @@ function draw() {
 
 	// TESTING!
 	// Draw some food
-	for (var i = 0; i < food.length; i++) {
-		ctx.fillStyle = "#000";
-		ctx.fillRect(food[i].foodX, food[i].foodY, 5, 5);
-	}
+	// for (var i = 0; i < food.length; i++) {
+	// 	ctx.fillStyle = "#000";
+	// 	ctx.fillRect(food[i].foodX, food[i].foodY, 5, 5);
+	// }
 
 	// TESTING!
 	// Put the local and the remote balls together
