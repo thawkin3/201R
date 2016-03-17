@@ -50,6 +50,7 @@
 			return ((brick.t - ball_y > 10 || brick.t - ball_y < -15) || (ball_x - brick.l < 0 || ball_x - brick.l > 40));
 		}
 
+		/*
 		// Submit your score
 		var submitScore = function(){
 			var scoreObj = { "Name": $rootScope.user, "Score": $scope.score };
@@ -74,6 +75,7 @@
 				//$location.url("/highscores");
 			//}, 2000);
 		};
+		*/
 
 		// keep score
 		$scope.scoreHelper = 0;
