@@ -69,7 +69,8 @@
 				// Recursively call our loop
 				window.requestAnimationFrame($scope.mainLoop);
 			} else {
-				// end the game and go to a new view
+				// end the game
+				// set the text that displays on the canvas
 				if (gameWin) {
 					ctx.font="20px zig";
 					ctx.fillText("YOU WIN",145,200);
@@ -77,6 +78,28 @@
 					ctx.font="20px zig";
 					ctx.fillText("GAME OVER",130,280);
 				}
+				// set our new score into the database
+				var myobj = { "Name": $rootScope.user, "Score": $scope.score };
+		        console.log(myobj);
+		        var jobj = JSON.stringify(myobj);
+		        console.log(jobj);
+				var url = "addscore";
+				$.ajax({
+		  			url:url,
+		  			type: "POST",
+		  			data: jobj,
+		  			contentType: "application/json; charset=utf-8",
+		  			success: function(data,textStatus) {
+		      				console.log("done");
+		      				alert("score submitted!");
+		  			}
+				})
+				.fail(function(){
+				});
+				// go to the highscores view
+				$timeout(function() {
+					$location.url("/highscores");
+				}, 2000);
 			}
 		};
 

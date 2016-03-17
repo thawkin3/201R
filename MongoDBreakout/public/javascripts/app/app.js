@@ -21,4 +21,5 @@ app.config(function ($routeProvider){
 
 app.run(function($rootScope) {
 	// root scope variables go here, if needed
+	$rootScope.user = "Guest";
 })

@@ -9,15 +9,22 @@ router.get('/', function(req, res, next) {
 /* Set up mongoose in order to connect to mongo database */
 var mongoose = require('mongoose'); //Adds mongoose as a usable dependency
 
-mongoose.connect('mongodb://localhost/breakoutDB'); //Connects to a mongo database called "commentDB"
+mongoose.connect('mongodb://localhost/breakoutDB'); //Connects to a mongo database called "breakoutDB"
 
-var userSchema = mongoose.Schema({ //Defines the Schema for this database
+var userSchema = mongoose.Schema({ //Defines the User Schema for this database
   Name: String,
   Email: String,
   Password: String
 });
 
 var User = mongoose.model('User', userSchema); //Makes an object from that schema as a model
+
+var scoreSchema = mongoose.Schema({ //Defines the Score Schema for this database
+  Name: String,
+  Score: Number
+});
+
+var Score = mongoose.model('Score', scoreSchema); //Makes an object from that schema as a model
 
 var db = mongoose.connection; //Saves the connection as a variable to use
 db.on('error', console.error.bind(console, 'connection error:')); //Checks for connection errors
@@ -54,34 +61,35 @@ router.post('/getuser', function(req, res, next) {
   console.log(req.body); //[2]
   console.log(req.body.Email);
 
-  // User.find({ Email: req.body.Email, Password: req.body.Password }, function(err, user) {
   User.findOne({ Email: req.body.Email }, function(err, user) {
 	  console.log(user);
 	  if (user !== null) {
 		if (user.Password == req.body.Password) {
 			console.log("found you!");
 		    res.sendStatus(200);
-		}		
-		else
-		{
+		} else {
 			res.sendStatus(500);
 		}
-	} else {
+	  } else {
 		res.sendStatus(400);
-	}
+	  }
   });
 });
 
-/* GET comments from database */
-// router.get('/user', function(req, res, next) {
-//   console.log("In the GET route");
-//   Comment.find(function(err,commentList) { //Calls the find() method on your database
-//     if (err) return console.error(err); //If there's an error, print it out
-//     else {
-//       console.log(commentList); //Otherwise console log the comments you found
-//       res.json(commentList); //Then send them
-//     }
-//   })
-// });
+/* POST a score */
+router.post('/addscore', function(req, res, next) {
+  console.log("POST addscore route"); //[1]
+  console.log(req.body); //[2]
+
+  var newScore = new Score(req.body); //[3]
+  console.log(newScore);
+  console.log(req.body.Score);
+  newScore.save(function(err, post) { //[4]
+    if (err) return console.error(err);
+    console.log(post);
+    res.sendStatus(200);
+});
+
+
 
 module.exports = router;
