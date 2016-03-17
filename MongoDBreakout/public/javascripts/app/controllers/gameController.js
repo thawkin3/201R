@@ -9,7 +9,7 @@
 		// variables for the ball
 		var ball_size = 10;
 		var ball_x = 220;
-		var ball_y = 220;
+		ball_y = 220;
 		var ball_dx = 3;
 		var ball_dy = 3;
 
@@ -92,6 +92,7 @@
 			// draw our canvas here
 			$scope.draw();
 			$scope.update();
+			console.log(ball_y);
 			// have logic for the game to end or not
 			
 			if (!gameEnd) {
