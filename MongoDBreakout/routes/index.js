@@ -66,15 +66,16 @@ router.get('/getHighScores', function(req,res,next) {
 	        Score: -1
 	    }
 	},
-	function(err,scores){
-	 if (err) return console.error(err); //If there's an error, print it out
-	 else {
-	      console.log(scores); //Otherwise console log the comments you found
-	      res.json(scores).sendStatus(200); //Then send them
-	    }
-	}
+		function(err,scores){
+			if (err) return console.error(err); //If there's an error, print it out
+			else {
+			    console.log(scores); //Otherwise console log the comments you found
+			    res.json(scores).sendStatus(200); //Then send them
+			}
+		}
+	);
 
-})
+});
 
 
 /* GET (fake POST) a user */
