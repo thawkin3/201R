@@ -9,9 +9,7 @@
 		        var thePassword = $("#InputPassword1").val();
 
 		        var myobj = { "Username": theUsername, "Password": thePassword };
-		        console.log(myobj);
 		        jobj = JSON.stringify(myobj);
-		        console.log(jobj);
 		    
 		    	var url = "adduser";
 				$.ajax({
@@ -21,8 +19,8 @@
 		  			contentType: "application/json; charset=utf-8",
 		  			success: function(data,textStatus) {
 	      				$timeout(function(){
-		      				console.log("done");
-		      				$rootScope.user = jobj.Username;
+		      				console.log("Done adding user");
+		      				$rootScope.user = myobj.Username;
 		      				$("#createSubmit").removeClass("btn-danger");
 		      				$location.url("/game");
 		      			},100);
@@ -39,9 +37,7 @@
 		        var thePassword = $("#inputPassword3").val();
 
 		        var myobj = {"Username": theUsername, "Password": thePassword };
-		        console.log(myobj);
 		        jobj = JSON.stringify(myobj);
-		        console.log(jobj);
 		    
 		    	var url = "getuser";
 				$.ajax({
@@ -51,11 +47,6 @@
 		  			contentType: "application/json; charset=utf-8",
 		  			success: function(data,textStatus) {
 		      			$timeout(function(){	
-		      				console.log(data);
-		      				console.log("done");
-		      				console.log($rootScope.user);
-		      				console.log(myobj);
-		      				console.log(myobj.Username);
 		      				$rootScope.user = myobj.Username;
 		      				$("#signInSubmit").removeClass("btn-danger");
 		      				$location.url("/game");
