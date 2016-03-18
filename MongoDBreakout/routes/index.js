@@ -57,7 +57,7 @@ router.post('/adduser', function(req, res, next) {
 
 /* GET high scores */
 router.get('/getHighScores', function(req,res,next) {
-	console.log("In high score DB");
+	console.log("In high score route");
 	var query = Score.find().limit(10).select({Name:1,Score:1}).sort({Score:-1});
 	query.exec(function(err,scores) {
 			if (err) return console.error(err); //If there's an error, print it out

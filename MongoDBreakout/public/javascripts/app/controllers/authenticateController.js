@@ -21,10 +21,12 @@
 		  			data: jobj,
 		  			contentType: "application/json; charset=utf-8",
 		  			success: function(data,textStatus) {
+	      				$timeout(function(){
 		      				console.log("done");
 		      				$rootScope.user = jobj.Name;
 		      				$("#createSubmit").removeClass("btn-danger");
 		      				$location.url("/game");
+		      			},100);
 		  			}
 				})
 				.fail(function(){
@@ -49,6 +51,7 @@
 		  			data: jobj,
 		  			contentType: "application/json; charset=utf-8",
 		  			success: function(data,textStatus) {
+		      			$timeout(function(){	
 		      				console.log(data);
 		      				console.log("done");
 		      				console.log($rootScope.user);
@@ -58,6 +61,7 @@
 		      				$("#signInSubmit").removeClass("btn-danger");
 		      				alert("found you!");
 		      				$location.url("/game");
+		      			},100);
 		  			}
 				})
 				.fail(function(){
