@@ -1,6 +1,6 @@
 (function() {
 
-	var authenticateController = function ($scope, $routeParams, $rootScope, $location) {
+	var authenticateController = function ($scope, $routeParams, $rootScope, $location, $timeout) {
 
 		$(document).ready(function(){
 
@@ -77,7 +77,7 @@
 
 	};
 
-	authenticateController.$inject = ['$scope', '$routeParams', '$rootScope', '$location'];
+	authenticateController.$inject = ['$scope', '$routeParams', '$rootScope', '$location', '$timeout'];
 
 	angular.module('MongoDBreakout')
 	    .controller('authenticateController', authenticateController);
