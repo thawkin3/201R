@@ -55,6 +55,28 @@ router.post('/adduser', function(req, res, next) {
   });
 });
 
+router.get('/getHighScores', function(req,res,next) {
+	console.log("In high score DB");
+	Score.find({},
+	['Name','Score'],
+	{
+	    skip:0, // Starting Row
+	    limit:10, // Ending Row
+	    sort:{
+	        Score: -1
+	    }
+	},
+	function(err,scores){
+	 if (err) return console.error(err); //If there's an error, print it out
+	 else {
+	      console.log(scores); //Otherwise console log the comments you found
+	      res.json(scores).sendStatus(200); //Then send them
+	    }
+	}
+
+})
+
+
 /* GET (fake POST) a user */
 router.post('/getuser', function(req, res, next) {
   console.log("POST getuser route"); //[1]
