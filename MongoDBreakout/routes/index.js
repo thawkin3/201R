@@ -57,6 +57,17 @@ router.post('/adduser', function(req, res, next) {
 
 router.get('/getHighScores', function(req,res,next) {
 	console.log("In high score DB");
+	var query = Score.find().limit(10).select({Name:1,Score:1}).sort({Score:-1});
+	query.exec(function(err,scores) {
+			if (err) return console.error(err); //If there's an error, print it out
+			else {
+			    console.log(scores); //Otherwise console log the comments you found
+			    res.json(scores).sendStatus(200); //Then send them
+			}
+
+	});
+});
+/*
 	Score.find({},
 	//['Name','Score'],
 	{
@@ -71,9 +82,10 @@ router.get('/getHighScores', function(req,res,next) {
 			    res.json(scores).sendStatus(200); //Then send them
 			}
 		}
-	);
+	)
+	*/
 
-});
+
 
 
 /* GET (fake POST) a user */
