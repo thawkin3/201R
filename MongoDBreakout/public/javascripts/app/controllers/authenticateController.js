@@ -49,6 +49,7 @@
 		  			data: jobj,
 		  			contentType: "application/json; charset=utf-8",
 		  			success: function(data,textStatus) {
+		      				console.log(data);
 		      				console.log("done");
 		      				console.log($rootScope.user);
 		      				console.log(myobj);
