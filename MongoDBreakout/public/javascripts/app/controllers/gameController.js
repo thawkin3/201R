@@ -58,22 +58,22 @@
 	        var JSONscoreObj = JSON.stringify(scoreObj);
 	        console.log(JSONscoreObj);
 			var scoreUrl = "addscore";
-			// $.ajax({
-	  // 			url: scoreUrl,
-	  // 			type: "POST",
-	  // 			data: JSONscoreObj,
-	  // 			contentType: "application/json; charset=utf-8",
-	  // 			success: function(data,textStatus) {
-	  //     				console.log("done");
-	  //     				alert("score submitted!");
-	  // 			}
-			// })
-			// .fail(function(){
-			// });
+			$.ajax({
+	  			url: scoreUrl,
+	  			type: "POST",
+	  			data: JSONscoreObj,
+	  			contentType: "application/json; charset=utf-8",
+	  			success: function(data,textStatus) {
+	      				console.log("done");
+	      				alert("score submitted!");
+	  			}
+			})
+			.fail(function(){
+			});
 			// go to the highscores view
-			//$timeout(function() {
-				//$location.url("/highscores");
-			//}, 2000);
+			$timeout(function() {
+				$location.url("/highscores");
+			}, 2000);
 		};
 		
 
