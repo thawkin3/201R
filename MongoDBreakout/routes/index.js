@@ -58,7 +58,7 @@ router.post('/adduser', function(req, res, next) {
 router.get('/getHighScores', function(req,res,next) {
 	console.log("In high score DB");
 	Score.find({},
-	['Name','Score'],
+	//['Name','Score'],
 	{
 	    skip:0, // Starting Row
 	    limit:10, // Ending Row
