@@ -12,8 +12,8 @@
 		</thead>
 		<tbody>
 			<tr ng-repeat="score in highscores | orderBy: score : reverse track by $index" ng-show="$index < 10">
-				<td>#{{ $index + 1 }}</td>
-				<td>{{ score }}</td>
+				<td>{{ score.Name }}</td>
+				<td>{{ score.Score }}</td>
 			</tr>
 		</tbody>
 	</table>
