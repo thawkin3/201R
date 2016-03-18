@@ -12,15 +12,14 @@ var mongoose = require('mongoose'); //Adds mongoose as a usable dependency
 mongoose.connect('mongodb://localhost/breakoutDB'); //Connects to a mongo database called "breakoutDB"
 
 var userSchema = mongoose.Schema({ //Defines the User Schema for this database
-  Name: String,
-  Email: String,
+  Username: String,
   Password: String
 });
 
 var User = mongoose.model('User', userSchema); //Makes an object from that schema as a model
 
 var scoreSchema = mongoose.Schema({ //Defines the Score Schema for this database
-  Name: String,
+  Username: String,
   Score: Number
 });
 
@@ -37,12 +36,12 @@ router.post('/adduser', function(req, res, next) {
   console.log("POST adduser route"); //[1]
   console.log(req.body); //[2]
 
-  User.findOne({ Email: req.body.Email }, function(err, user) {
+  User.findOne({ Username: req.body.Username }, function(err, user) {
 	  console.log(user);
 	  if (user == null) {
 		  var newUser = new User(req.body); //[3]
   	      console.log(newUser);
-  	  	  console.log(req.body.Email);
+  	  	  console.log(req.body.Username);
 		  newUser.save(true, function(err, post) { //[4]
 		    if (err) return console.error(err);
 		    console.log(post);
@@ -58,7 +57,7 @@ router.post('/adduser', function(req, res, next) {
 /* GET high scores */
 router.get('/getHighScores', function(req,res,next) {
 	console.log("In high score route");
-	var query = Score.find().limit(10).select({Name:1,Score:1}).sort({Score:-1});
+	var query = Score.find().limit(10).select({Username:1,Score:1}).sort({Score:-1});
 	query.exec(function(err,scores) {
 			if (err) return console.error(err); //If there's an error, print it out
 			else {
@@ -74,9 +73,9 @@ router.get('/getHighScores', function(req,res,next) {
 router.post('/getuser', function(req, res, next) {
   console.log("POST getuser route"); //[1]
   console.log(req.body); //[2]
-  console.log(req.body.Email);
+  console.log(req.body.Username);
 
-  User.findOne({ Email: req.body.Email }, function(err, user) {
+  User.findOne({ Username: req.body.Username }, function(err, user) {
 	  console.log(user);
 	  if (user !== null) {
 		if (user.Password == req.body.Password) {

@@ -5,11 +5,10 @@
 		$(document).ready(function(){
 
 		    $("#createForm").submit(function(e){
-		        var theEmail = $("#InputEmail1").val();
-		        var theName = $("#InputName1").val();
+		        var theUsername = $("#InputName1").val();
 		        var thePassword = $("#InputPassword1").val();
 
-		        var myobj = { "Name": theName, "Email": theEmail, "Password": thePassword };
+		        var myobj = { "Username": theUsername, "Password": thePassword };
 		        console.log(myobj);
 		        jobj = JSON.stringify(myobj);
 		        console.log(jobj);
@@ -23,7 +22,7 @@
 		  			success: function(data,textStatus) {
 	      				$timeout(function(){
 		      				console.log("done");
-		      				$rootScope.user = jobj.Name;
+		      				$rootScope.user = jobj.Username;
 		      				$("#createSubmit").removeClass("btn-danger");
 		      				$location.url("/game");
 		      			},100);
@@ -36,10 +35,10 @@
 			});
 
 			$("#signInForm").submit(function(e){
-		        var theEmail = $("#inputEmail3").val();
+		        var theUsername = $("#inputEmail3").val(); // FIX THIS!!!
 		        var thePassword = $("#inputPassword3").val();
 
-		        var myobj = {"Email": theEmail, "Password": thePassword };
+		        var myobj = {"Username": theUsername, "Password": thePassword };
 		        console.log(myobj);
 		        jobj = JSON.stringify(myobj);
 		        console.log(jobj);
@@ -56,10 +55,9 @@
 		      				console.log("done");
 		      				console.log($rootScope.user);
 		      				console.log(myobj);
-		      				console.log(myobj.Email);
-		      				$rootScope.user = myobj.Email;
+		      				console.log(myobj.Username);
+		      				$rootScope.user = myobj.Username;
 		      				$("#signInSubmit").removeClass("btn-danger");
-		      				alert("found you!");
 		      				$location.url("/game");
 		      			},100);
 		  			}

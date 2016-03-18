@@ -53,7 +53,7 @@
 		
 		// Submit your score
 		var submitScore = function(){
-			var scoreObj = { "Name": $rootScope.user, "Score": $scope.score };
+			var scoreObj = { "Username": $rootScope.user, "Score": $scope.score };
 	        console.log(scoreObj);
 	        var JSONscoreObj = JSON.stringify(scoreObj);
 	        console.log(JSONscoreObj);
@@ -64,8 +64,10 @@
 	  			data: JSONscoreObj,
 	  			contentType: "application/json; charset=utf-8",
 	  			success: function(data,textStatus) {
+	      			$timeout(function(){	
 	      				console.log("done");
-	      				alert("score submitted!");
+	      				//alert("score submitted!");
+	      			}, 100);
 	  			}
 			})
 			.fail(function(){
