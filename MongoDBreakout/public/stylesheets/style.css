@@ -30,3 +30,12 @@ h1 {
 #yourScore {
 	font-size: 30px;
 }
+
+#highScoresTable {
+	margin: auto;
+	text-align: center;
+}
+
+#highScoresTable th {
+	border-bottom: 1px solid #000;
+}
