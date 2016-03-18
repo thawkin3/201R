@@ -60,11 +60,9 @@ router.get('/getHighScores', function(req,res,next) {
 	Score.find({},
 	//['Name','Score'],
 	{
-	    skip:0, // Starting Row
-	    limit:10, // Ending Row
-	    sort:{
-	        Score: -1
-	    }
+	    limit: 10, // Ending Row
+	    sort: { Score: -1 },
+	    fields: {Name: 1, Score: 1}
 	},
 		function(err,scores){
 			if (err) return console.error(err); //If there's an error, print it out
