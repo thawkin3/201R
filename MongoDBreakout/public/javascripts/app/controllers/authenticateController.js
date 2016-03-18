@@ -4,7 +4,8 @@
 
 		$(document).ready(function(){
 
-		    $("#createForm").submit(function(){
+		    $("#createForm").submit(function(e){
+		        e.preventDefault();
 		        var theEmail = $("#InputEmail1").val();
 		        var theName = $("#InputName1").val();
 		        var thePassword = $("#InputPassword1").val();
@@ -31,7 +32,8 @@
 
 			});
 
-			$("#signInForm").submit(function(){
+			$("#signInForm").submit(function(e){
+		        e.preventDefault();
 		        var theEmail = $("#inputEmail3").val();
 		        var thePassword = $("#inputPassword3").val();
 
