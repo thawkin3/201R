@@ -1,11 +1,10 @@
 (function() {
 
-	var authenticateController = function ($scope, $routeParams, $rootScope) {
+	var authenticateController = function ($scope, $routeParams, $rootScope, $location) {
 
 		$(document).ready(function(){
 
 		    $("#createForm").submit(function(e){
-		        e.preventDefault();
 		        var theEmail = $("#InputEmail1").val();
 		        var theName = $("#InputName1").val();
 		        var thePassword = $("#InputPassword1").val();
@@ -23,7 +22,9 @@
 		  			contentType: "application/json; charset=utf-8",
 		  			success: function(data,textStatus) {
 		      				console.log("done");
+		      				$rootScope.user = jobj.Name;
 		      				$("#createSubmit").removeClass("btn-danger");
+		      				$location.url("/game");
 		  			}
 				})
 				.fail(function(){
@@ -33,7 +34,6 @@
 			});
 
 			$("#signInForm").submit(function(e){
-		        e.preventDefault();
 		        var theEmail = $("#inputEmail3").val();
 		        var thePassword = $("#inputPassword3").val();
 
@@ -50,8 +50,10 @@
 		  			contentType: "application/json; charset=utf-8",
 		  			success: function(data,textStatus) {
 		      				console.log("done");
+		      				$rootScope.user = jobj.Name;
 		      				$("#signInSubmit").removeClass("btn-danger");
-		      				alert("found you!");
+		      				//alert("found you!");
+		      				$location.url("/game");
 		  			}
 				})
 				.fail(function(){
@@ -67,7 +69,7 @@
 
 	};
 
-	authenticateController.$inject = ['$scope', '$routeParams', '$rootScope'];
+	authenticateController.$inject = ['$scope', '$routeParams', '$rootScope', '$location'];
 
 	angular.module('MongoDBreakout')
 	    .controller('authenticateController', authenticateController);
