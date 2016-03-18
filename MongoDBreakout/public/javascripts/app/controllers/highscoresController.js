@@ -11,7 +11,9 @@
   			success: function(data,textStatus) {
       				console.log("done in front end");
       				console.log(data);
-      				$scope.highscores = data;
+					$scope.$apply(function() {
+      					$scope.highscores = data;
+      				});
   			}
 		});
 
