@@ -117,10 +117,6 @@
 
 		// Update ball position
 		$scope.update = function() {
-			// Move the ball to its new position.
-		    ball_x += ball_dx;
-		    ball_y += ball_dy;
-
 			// Move the paddle, left key takes priority over right
 			if (left && paddle_x > 0 + paddle_width/2) {
 				paddle_x -= paddle_dx;
@@ -258,9 +254,9 @@
 		    	//});
 		    }
 
-		    /////
-			// OLD SPOT TO UPDATE THE BALL POSITION
-			/////
+		    // Move the ball to its new position.
+		    ball_x += ball_dx;
+		    ball_y += ball_dy;
 
 		    // If the ball has hit the left or right side, bounce it.
 		    if ((ball_x + (ball_size/2) >= canvas.width) || (ball_x - (ball_size/2) <= 0)) {
