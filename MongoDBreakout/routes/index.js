@@ -85,7 +85,7 @@ router.post('/addscore', function(req, res, next) {
   console.log(newScore);
   console.log(req.body.Score);
   
-  newScore.save(function(err, post) { //[4]
+  newScore.save(true, function(err, post) { //[4]
     if (err) return console.error(err);
     console.log(post);
     res.sendStatus(200);
