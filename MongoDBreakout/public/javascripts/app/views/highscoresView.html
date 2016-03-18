@@ -3,22 +3,20 @@
 
 	<p>This is the high scores page</p>
 
-	<!--
-
 	<table>
 		<thead>
 			<tr>
-				<th>Position</th>
+				<th>Name</th>
 				<th>Score</th>
 			</tr>
 		</thead>
 		<tbody>
-			<tr ng-repeat="score in scores | orderBy: score : reverse track by $index" ng-show="$index < 5">
+			<tr ng-repeat="score in highscores | orderBy: score : reverse track by $index" ng-show="$index < 10">
 				<td>#{{ $index + 1 }}</td>
 				<td>{{ score }}</td>
 			</tr>
 		</tbody>
 	</table>
 
-	-->
+
 </div>
