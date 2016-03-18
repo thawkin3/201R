@@ -52,7 +52,7 @@
 		      				console.log("done");
 		      				$rootScope.user = jobj.Name;
 		      				$("#signInSubmit").removeClass("btn-danger");
-		      				//alert("found you!");
+		      				alert("found you!");
 		      				$location.url("/game");
 		  			}
 				})
