@@ -43,7 +43,7 @@ router.post('/adduser', function(req, res, next) {
 		  var newUser = new User(req.body); //[3]
   	      console.log(newUser);
   	  	  console.log(req.body.Email);
-		  newUser.save(function(err, post) { //[4]
+		  newUser.save(true, function(err, post) { //[4]
 		    if (err) return console.error(err);
 		    console.log(post);
 		    res.sendStatus(200);
