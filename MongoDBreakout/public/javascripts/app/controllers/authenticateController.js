@@ -50,7 +50,10 @@
 		  			contentType: "application/json; charset=utf-8",
 		  			success: function(data,textStatus) {
 		      				console.log("done");
-		      				$rootScope.user = jobj.Email;
+		      				console.log($rootScope.user);
+		      				console.log(myobj);
+		      				console.log(myobj.Email);
+		      				$rootScope.user = myobj.Email;
 		      				$("#signInSubmit").removeClass("btn-danger");
 		      				alert("found you!");
 		      				$location.url("/game");
