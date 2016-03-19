@@ -81,7 +81,8 @@
 
 		// keep score
 		$scope.scoreHelper = 0;
-		$scope.score = 32 + $scope.scoreHelper - $scope.brickArray.length;
+		// $scope.score = 32 + $scope.scoreHelper - $scope.brickArray.length;
+		$scope.score = 0;
 
 		// set up the canvas
 		var canvas = document.getElementById("gameCanvas");
@@ -276,6 +277,7 @@
 		    	console.log(ball_y + (ball_size/2));
 		    	console.log("game over");
 		    	// TESTING
+		    	// gameEnd = true;
 		    	if (fakeGameEnd) {
 		    		gameEnd = true;
 		    	}
