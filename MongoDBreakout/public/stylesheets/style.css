@@ -15,15 +15,18 @@ a {
   color: #ccc;
 }
 
+#tabs {
+	text-align: left;
+}
+
 .loginTab {
-	display: inline-block;
+	display: inline;
     margin: 20px 0px -10px 0px;
-    padding: 10px 0px;
+    padding: 10px 20px;
     background: #6DB4F3;
     background: rgba(111,182,243,0.35);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    width: 50%;
 }
 
 .activeTab {
