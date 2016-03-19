@@ -19,6 +19,7 @@ a:hover {
 	text-decoration: none;
 }
 
+
 /* AUTHENTICATION */
 #tabs {
 	text-align: left;
@@ -47,6 +48,7 @@ a:hover {
 	}
 }
 
+
 /* GAME */
 #theGameCanvas {
 	height: 500px;
@@ -64,6 +66,7 @@ h1 {
 	font-size: 30px;
 }
 
+
 /* HIGH SCORES */
 #highScoresTable {
 	margin: auto;
@@ -79,4 +82,12 @@ h1 {
 #highScoresTable th, td {
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 500px) {
+	h1 {
+		font-size: 20px;
+	}
 }
