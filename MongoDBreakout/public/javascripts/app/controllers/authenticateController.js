@@ -24,8 +24,8 @@
 		    });
 
 		    $("#createForm").submit(function(e){
-		        var theUsername = $("#InputName1").val();
-		        var thePassword = $("#InputPassword1").val();
+		        var theUsername = $("#InputName1").val().toUpperCase();
+		        var thePassword = $("#InputPassword1").val().toUpperCase();
 
 		        var myobj = { "Username": theUsername, "Password": thePassword };
 		        jobj = JSON.stringify(myobj);
@@ -52,8 +52,8 @@
 			});
 
 			$("#signInForm").submit(function(e){
-		        var theUsername = $("#inputEmail3").val(); // FIX THIS!!!
-		        var thePassword = $("#inputPassword3").val();
+		        var theUsername = $("#inputEmail3").val().toUpperCase();
+		        var thePassword = $("#inputPassword3").val().toUpperCase();
 
 		        var myobj = {"Username": theUsername, "Password": thePassword };
 		        jobj = JSON.stringify(myobj);
