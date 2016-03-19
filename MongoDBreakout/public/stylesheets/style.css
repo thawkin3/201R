@@ -41,6 +41,12 @@ a:hover {
 	background: #337AB7;
 }
 
+@media (min-width: 992px) {
+	.container {
+	    width: 70%;
+	}
+}
+
 /* GAME */
 #theGameCanvas {
 	height: 500px;
