@@ -3,6 +3,7 @@
 	var gameController = function ($scope, $routeParams, $rootScope, $location, $timeout) {
 
 		// variables for game play
+		var fakeGameEnd = false;
 		var gameEnd = false;
 		var gameWin = false;
 
@@ -70,8 +71,7 @@
 	      			}, 100);
 	  			}
 			})
-			.fail(function(){
-			});
+			.fail(function(){});
 			// go to the highscores view
 			$timeout(function() {
 				$location.url("/highscores");
@@ -275,7 +275,11 @@
 		    //if (ball_y + (ball_size/2) >= canvas.height) {
 		    	console.log(ball_y + (ball_size/2));
 		    	console.log("game over");
-		    	gameEnd = true;
+		    	// TESTING
+		    	if (fakeGameEnd) {
+		    		gameEnd = true;
+		    	}
+		    	fakeGameEnd = true;
 		    }
 
 			return true;
