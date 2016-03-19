@@ -2,11 +2,21 @@
 
 	var authenticateController = function ($scope, $routeParams, $rootScope, $location, $timeout) {
 
+		$scope.showSignIn = false;
+		$scope.showCreate = true;
+
 		$(document).ready(function(){
 
 		    $(".loginTab").click(function(){
 		    	$(".loginTab").removeClass("activeTab");
 		    	$(this).addClass("activeTab");
+		    	if ($(this).attr("id") == "createTab") {
+		    		$scope.showSignIn = false;
+					$scope.showCreate = true;
+		    	} else {
+		    		$scope.showSignIn = true;
+					$scope.showCreate = false;
+		    	}
 		    });
 
 		    $("#createForm").submit(function(e){

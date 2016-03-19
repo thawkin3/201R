@@ -9,15 +9,15 @@
         <div class="row">
           <div class="col-md-12 text-center">
             <div id="tabs">
-              <div class="loginTab activeTab">Create Account</div>
-              <div class="loginTab">Sign in</div>
+              <div id="createTab" class="loginTab activeTab">Create Account</div>
+              <div id="signInTab" class="loginTab">Sign in</div>
             </div>
           </div>
         </div>
 
         <hr>
 
-        <div class="row">
+        <div class="row" ng-show="showSignIn">
           <div class="col-md-12 text-center">
             <form id ="signInForm" class="form-horizontal" role="form">
               
@@ -48,7 +48,7 @@
           </div>
         </div>
       
-        <div class="row">
+        <div class="row" ng-show="showCreate">
           <div class="col-md-12">
           <!--
             <form id="createForm" role="form" action="javascript:void(0);">
