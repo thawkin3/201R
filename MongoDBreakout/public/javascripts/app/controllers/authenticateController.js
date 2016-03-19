@@ -4,6 +4,11 @@
 
 		$(document).ready(function(){
 
+		    $(".loginTab").click(function(){
+		    	$(".loginTab").removeClass("activeTab");
+		    	$(this).addClass("activeTab");
+		    });
+
 		    $("#createForm").submit(function(e){
 		        var theUsername = $("#InputName1").val();
 		        var thePassword = $("#InputPassword1").val();
