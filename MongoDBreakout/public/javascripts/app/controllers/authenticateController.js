@@ -11,11 +11,15 @@
 		    	$(".loginTab").removeClass("activeTab");
 		    	$(this).addClass("activeTab");
 		    	if ($(this).attr("id") == "createTab") {
-		    		$scope.showSignIn = false;
-					$scope.showCreate = true;
+		    		$scope.$apply(function(){
+		    			$scope.showSignIn = false;
+						$scope.showCreate = true;
+					});
 		    	} else {
-		    		$scope.showSignIn = true;
-					$scope.showCreate = false;
+		    		$scope.$apply(function(){
+		    			$scope.showSignIn = true;
+						$scope.showCreate = false;
+					});
 		    	}
 		    });
 
