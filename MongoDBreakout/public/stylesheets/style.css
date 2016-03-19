@@ -15,6 +15,11 @@ a {
   color: #ccc;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
+/* AUTHENTICATION */
 #tabs {
 	text-align: left;
 	margin-bottom: -13px;
@@ -36,6 +41,7 @@ a {
 	background: #337AB7;
 }
 
+/* GAME */
 #theGameCanvas {
 	height: 500px;
 	width: 410px;
@@ -52,14 +58,16 @@ h1 {
 	font-size: 30px;
 }
 
+/* HIGH SCORES */
 #highScoresTable {
 	margin: auto;
 	text-align: center;
+	margin-top: 30px;
 }
 
 #highScoresTable th {
-	border-bottom: 1px solid #000;
 	text-align: center;
+	font-size: 18px;
 }
 
 #highScoresTable th, td {
