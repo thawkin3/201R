@@ -54,20 +54,6 @@ router.post('/adduser', function(req, res, next) {
   });
 });
 
-/* GET high scores */
-router.get('/getHighScores', function(req,res,next) {
-	console.log("In high score route");
-	var query = Score.find().limit(10).select({Username:1,Score:1}).sort({Score:-1});
-	query.exec(function(err,scores) {
-			if (err) return console.error(err); //If there's an error, print it out
-			else {
-			    console.log(scores); //Otherwise console log the comments you found
-			    res.json(scores); //Then send them
-			}
-
-	});
-});
-
 
 /* GET (fake POST) a user */
 router.post('/getuser', function(req, res, next) {
@@ -106,6 +92,19 @@ router.post('/addscore', function(req, res, next) {
   });
 });
 
+/* GET high scores */
+router.get('/getHighScores', function(req,res,next) {
+	console.log("In high score route");
+	var query = Score.find().limit(10).select({Username:1,Score:1}).sort({Score:-1});
+	query.exec(function(err,scores) {
+			if (err) return console.error(err); //If there's an error, print it out
+			else {
+			    console.log(scores); //Otherwise console log the comments you found
+			    res.json(scores); //Then send them
+			}
+
+	});
+});
 
 
 module.exports = router;

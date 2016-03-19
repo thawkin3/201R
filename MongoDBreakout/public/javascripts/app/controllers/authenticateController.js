@@ -52,7 +52,7 @@
 			});
 
 			$("#signInForm").submit(function(e){
-		        var theUsername = $("#inputEmail3").val().toUpperCase();
+		        var theUsername = $("#inputName3").val().toUpperCase();
 		        var thePassword = $("#inputPassword3").val().toUpperCase();
 
 		        var myobj = {"Username": theUsername, "Password": thePassword };
