@@ -256,9 +256,9 @@
 		    	});
 		    }
 
-		    // Move the ball to its new position.
-		    ball_x += ball_dx;
-		    ball_y += ball_dy;
+		    // TESTING
+		    // PUT BALL MOVEMENT BACK HERE IF NEEDED
+		    // END TEST
 
 		    // If the ball has hit the left or right side, bounce it.
 		    if ((ball_x + (ball_size/2) >= canvas.width) || (ball_x - (ball_size/2) <= 0)) {
@@ -293,6 +293,10 @@
 				}		    
 		    	
 		    //}
+
+		    // Move the ball to its new position.
+		    ball_x += ball_dx;
+		    ball_y += ball_dy;
 
 			return true;
 		};
