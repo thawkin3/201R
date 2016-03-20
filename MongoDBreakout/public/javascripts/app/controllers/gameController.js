@@ -126,6 +126,7 @@
 			$scope.draw();
 			ball_y_tracker.push(ball_y);
 			$scope.update();
+			ball_y_tracker.push(ball_y);
 			// have logic for the game to end or not
 			
 			if (!gameEnd) {
