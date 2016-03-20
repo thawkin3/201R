@@ -8,10 +8,10 @@
 
 		// variables for the ball
 		var ball_size = 10;
-		// var ball_x = 220;
-		// var ball_y = 220;
-		var ball_x = 340;
-		var ball_y = 440;
+		var ball_x = 220;
+		var ball_y = 220;
+		// var ball_x = 340;
+		// var ball_y = 440;
 		var ball_dx = 3;
 		var ball_dy = 3;
 
@@ -82,7 +82,6 @@
 
 		// keep score
 		$scope.scoreHelper = 0;
-		// $scope.score = 32 + $scope.scoreHelper - $scope.brickArray.length;
 		$scope.score = 0;
 
 		// set up the canvas
@@ -92,6 +91,11 @@
 		// Locator function in a loop
 		$scope.mainLoop = function() {
 			
+			console.log(ball_y);
+			if (ball_y > 1000) {
+				alert("greater than 1000");
+			}
+
 			// draw our canvas here
 			$scope.draw();
 			$scope.update();
