@@ -8,8 +8,10 @@
 
 		// variables for the ball
 		var ball_size = 10;
-		var ball_x = 220;
-		var ball_y = 220;
+		// var ball_x = 220;
+		// var ball_y = 220;
+		var ball_x = 380;
+		var ball_y = 440;
 		var ball_dx = 3;
 		var ball_dy = 3;
 
@@ -256,9 +258,9 @@
 		    	});
 		    }
 
-		    // TESTING
-		    // PUT BALL MOVEMENT BACK HERE IF NEEDED
-		    // END TEST
+		    // Move the ball to its new position.
+		    ball_x += ball_dx;
+		    ball_y += ball_dy;
 
 		    // If the ball has hit the left or right side, bounce it.
 		    if ((ball_x + (ball_size/2) >= canvas.width) || (ball_x - (ball_size/2) <= 0)) {
@@ -293,10 +295,6 @@
 				}		    
 		    	
 		    //}
-
-		    // Move the ball to its new position.
-		    ball_x += ball_dx;
-		    ball_y += ball_dy;
 
 			return true;
 		};
