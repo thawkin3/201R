@@ -124,6 +124,7 @@
 
 			// draw our canvas here
 			$scope.draw();
+			ball_y_tracker.push(ball_y);
 			$scope.update();
 			// have logic for the game to end or not
 			
