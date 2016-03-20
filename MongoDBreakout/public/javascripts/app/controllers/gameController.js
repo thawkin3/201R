@@ -124,9 +124,7 @@
 
 			// draw our canvas here
 			$scope.draw();
-			ball_y_tracker.push(ball_y);
 			$scope.update();
-			ball_y_tracker.push(ball_y);
 			// have logic for the game to end or not
 			
 			if (!gameEnd) {
@@ -188,10 +186,6 @@
 		    		}
 		    	}
 		    }
-
-		    // TESTING
-		    ball_y_tracker.push(ball_y);
-		    // END TEST
 
 		    // If the ball has hit a brick from below, bounce it.
 		    if (ctx.getImageData(ball_x, ball_y - 3 - ball_size/2, 1, 1).data[0] == 241) {
@@ -307,10 +301,6 @@
 		    ball_x += ball_dx;
 		    ball_y += ball_dy;
 
-		    // TESTING
-		    ball_y_tracker.push(ball_y);
-		    // END TEST
-
 		    // If the ball has hit the left or right side, bounce it.
 		    if ((ball_x + (ball_size/2) >= canvas.width) || (ball_x - (ball_size/2) <= 0)) {
 		    	ball_dx = -ball_dx;
@@ -352,18 +342,17 @@
 		$scope.draw = function() {
 			ctx.fillStyle="#050505";
 			ctx.fillRect(0, 0, canvas.width, canvas.height);
+
 			// TEST
 			ctx.fillStyle="#777";
 			ctx.fillRect(0, canvas.height - 5, canvas.width, canvas.height);
 			// END TEST
+
 			ctx.fillStyle = "#f2f2f2";
 			ctx.fillRect(paddle_x - paddle_width/2, paddle_y - paddle_height/2, paddle_width, paddle_height);
+
 			ctx.fillStyle = "#f1f1f1";
 			ctx.fillRect(ball_x - ball_size/2, ball_y - ball_size/2, ball_size, ball_size);
-
-			// TESTING
-			ball_y_tracker.push(ball_y);
-			// END TEST
 
 			ctx.fillStyle = "#f1f1f1";
 			for (var i = 0; i < $scope.brickArray.length; i++) {
