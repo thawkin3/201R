@@ -94,10 +94,11 @@
 		// Locator function in a loop
 		$scope.mainLoop = function() {
 		
-			console.log("ball_y: " + ball_y);
-			console.log("ball_prev_y: " + ball_prev_y);
 			ball_y_tracker.push(ball_y);
 			ball_y_tracker.push(ball_prev_y);
+			console.log("ball_y: " + ball_y);
+			console.log("ball_prev_y: " + ball_prev_y);
+
 			// console.log("ball_prev_prev_y: " + ball_prev_prev_y);
 			// if (ball_y > 1000 && ball_prev_y > 1000 && ball_prev_prev_y > 1000) {
 			if (ball_y_tracker[ball_y_tracker.length - 1] > 1000 && ball_y_tracker[ball_y_tracker.length - 2] > 1000 && ball_y_tracker[ball_y_tracker.length - 3] > 1000) {
