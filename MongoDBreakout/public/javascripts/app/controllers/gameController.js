@@ -278,7 +278,7 @@
 
 		    // If the ball has hit the canvas's bottom wall, game over.
 		    // if (ctx.getImageData(ball_x, ball_y + 5 + ball_size/2, 1, 1).data[0] == 119 && ball_dy > 0) {
-		    if (ball_y + (ball_size/2) >= canvas.height) {
+		    //if (ball_y + (ball_size/2) >= canvas.height) {
 				var pixels = ctx.getImageData(0, 490, canvas.width, 1).data;
 				for (var i = 0; i < pixels.length; i += 4) {
 					console.log(pixels[i]);
@@ -291,7 +291,7 @@
 					}
 				}		    
 		    	
-		    }
+		    //}
 
 			return true;
 		};
