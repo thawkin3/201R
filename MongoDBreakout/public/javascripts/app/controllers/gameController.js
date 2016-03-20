@@ -94,20 +94,22 @@
 			console.log(ball_y);
 			if (ball_y > 1000) {
 				alert("greater than 1000");
+				console.log("game over");
+			    gameEnd = true;
 			}
 
 			// TESTING
-			var pixels = ctx.getImageData(ball_x - 5, 490, 10, 1).data;
-			for (var i = 0; i < pixels.length; i += 4) {
-				console.log(pixels[i]);
-				if (pixels[i] == 241) {
-					console.log(ball_y + (ball_size/2));
-			    	console.log("dy: " + ball_dy);
-			    	console.log("x: " + ball_x);
-			    	console.log("game over");
-			    	gameEnd = true;
-				}
-			}	
+			// var pixels = ctx.getImageData(ball_x - 5, 490, 10, 1).data;
+			// for (var i = 0; i < pixels.length; i += 4) {
+			// 	console.log(pixels[i]);
+			// 	if (pixels[i] == 241) {
+			// 		console.log(ball_y + (ball_size/2));
+			//     	console.log("dy: " + ball_dy);
+			//     	console.log("x: " + ball_x);
+			//     	console.log("game over");
+			//     	gameEnd = true;
+			// 	}
+			// }	
 			// END TEST
 
 			// draw our canvas here
