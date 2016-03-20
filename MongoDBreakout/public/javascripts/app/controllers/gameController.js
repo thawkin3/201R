@@ -273,6 +273,7 @@
 		    // If the ball has hit the bottom, bounce it.
 		    if (ball_y + (ball_size/2) >= canvas.height) { 
 		    	ball_dy = -ball_dy; 
+		    	console.log("hit bottom!");
 		    }
 
 		    // If the ball has hit the canvas's bottom wall, game over.
