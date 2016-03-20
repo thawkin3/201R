@@ -270,6 +270,11 @@
 		    	ball_dy = -ball_dy; 
 		    }
 
+		    // If the ball has hit the bottom, bounce it.
+		    if (ball_y + (ball_size/2) >= canvas.height) { 
+		    	ball_dy = -ball_dy; 
+		    }
+
 		    // If the ball has hit the canvas's bottom wall, game over.
 		    // if (ctx.getImageData(ball_x, ball_y + 5 + ball_size/2, 1, 1).data[0] == 119 && ball_dy > 0) {
 		    if (ball_y + (ball_size/2) >= canvas.height && ball_dy < 0) {
