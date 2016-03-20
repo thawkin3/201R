@@ -189,6 +189,10 @@
 		    	}
 		    }
 
+		    // TESTING
+		    ball_y_tracker.push(ball_y);
+		    // END TEST
+
 		    // If the ball has hit a brick from below, bounce it.
 		    if (ctx.getImageData(ball_x, ball_y - 3 - ball_size/2, 1, 1).data[0] == 241) {
 		    	ball_dy = -ball_dy;
@@ -302,6 +306,10 @@
 		    // Move the ball to its new position.
 		    ball_x += ball_dx;
 		    ball_y += ball_dy;
+
+		    // TESTING
+		    ball_y_tracker.push(ball_y);
+		    // END TEST
 
 		    // If the ball has hit the left or right side, bounce it.
 		    if ((ball_x + (ball_size/2) >= canvas.width) || (ball_x - (ball_size/2) <= 0)) {
