@@ -96,6 +96,20 @@
 				alert("greater than 1000");
 			}
 
+			// TESTING
+			var pixels = ctx.getImageData(ball_x - 5, 490, 10, 1).data;
+			for (var i = 0; i < pixels.length; i += 4) {
+				console.log(pixels[i]);
+				if (pixels[i] == 241) {
+					console.log(ball_y + (ball_size/2));
+			    	console.log("dy: " + ball_dy);
+			    	console.log("x: " + ball_x);
+			    	console.log("game over");
+			    	gameEnd = true;
+				}
+			}	
+			// END TEST
+
 			// draw our canvas here
 			$scope.draw();
 			$scope.update();
@@ -134,21 +148,6 @@
 			} else if (right && paddle_x < canvas.width - paddle_width/2) {
 				paddle_x += paddle_dx;
 			};
-
-			// TESTING
-			var pixels = ctx.getImageData(ball_x - 5, 490, 10, 1).data;
-			for (var i = 0; i < pixels.length; i += 4) {
-				console.log(pixels[i]);
-				if (pixels[i] == 241) {
-					console.log(ball_y + (ball_size/2));
-			    	console.log("dy: " + ball_dy);
-			    	console.log("x: " + ball_x);
-			    	console.log("game over");
-			    	gameEnd = true;
-				}
-			}	
-			// END TEST
-
 
 			// If the ball has hit the paddle, bounce it.
 		    if (ctx.getImageData(ball_x, ball_y + 1 + ball_size/2, 1, 1).data[0] == 242) {
