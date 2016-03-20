@@ -11,6 +11,7 @@
 		var ball_x = 220;
 		var ball_y = 220;
 		var ball_prev_y = 220;
+		var ball_prev_prev_y = 220;
 		// var ball_x = 340;
 		// var ball_y = 440;
 		var ball_dx = 3;
@@ -94,7 +95,8 @@
 			
 			console.log("ball_y: " + ball_y);
 			console.log("ball_prev_y: " + ball_prev_y);
-			if (ball_y > 1000 && ball_prev_y > 1000) {
+			console.log("ball_prev_prev_y: " + ball_prev_prev_y);
+			if (ball_y > 1000 && ball_prev_y > 1000 && ball_prev_prev_y > 1000) {
 				alert("greater than 1000");
 				console.log("game over");
 			    gameEnd = true;
@@ -146,7 +148,9 @@
 
 		// Update ball position
 		$scope.update = function() {
+			ball_prev_prev_y = ball_prev_y;
 			ball_prev_y = ball_y;
+
 
 			// Move the paddle, left key takes priority over right
 			if (left && paddle_x > 0 + paddle_width/2) {
