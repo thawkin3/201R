@@ -88,7 +88,6 @@
 		// set up the canvas
 		var canvas = document.getElementById("gameCanvas");
 		var ctx = canvas.getContext("2d");
-		console.log(canvas.height);
 
 		// Locator function in a loop
 		$scope.mainLoop = function() {
@@ -107,13 +106,17 @@
 				if (gameWin) {
 					ctx.font="20px zig";
 					ctx.fillText("YOU WIN",145,200);
-					// set our new score into the database
-					submitScore();
+					if (gameEnd) {
+						// set our new score into the database
+						submitScore();
+					}
 				} else {
 					ctx.font="20px zig";
 					ctx.fillText("GAME OVER",130,280);
-					// set our new score into the database
-					submitScore();
+					if (gameEnd) {
+						// set our new score into the database
+						submitScore();
+					}
 				}
 				
 			}
