@@ -282,12 +282,15 @@
 				var pixels = ctx.getImageData(0, 490, canvas.width, 1).data;
 				for (var i = 0; i < pixels.length; i += 4) {
 					console.log(pixels[i]);
+					if (pixels[i] == 241) {
+						console.log(ball_y + (ball_size/2));
+				    	console.log("dy: " + ball_dy);
+				    	console.log("x: " + ball_x);
+				    	console.log("game over");
+				    	gameEnd = true;
+					}
 				}		    
-		    	console.log(ball_y + (ball_size/2));
-		    	console.log("dy: " + ball_dy);
-		    	console.log("dx: " + ball_dx);
-		    	console.log("game over");
-		    	gameEnd = true;
+		    	
 		    }
 
 			return true;
