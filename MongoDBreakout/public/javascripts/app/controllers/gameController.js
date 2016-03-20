@@ -301,6 +301,11 @@
 		    ball_x += ball_dx;
 		    ball_y += ball_dy;
 
+		    // TESTING
+		    console.log("ball_y: " + ball_y);
+		    console.log("ball_prev_y: " + ball_prev_y);
+		    // END TEST
+
 		    // If the ball has hit the left or right side, bounce it.
 		    if ((ball_x + (ball_size/2) >= canvas.width) || (ball_x - (ball_size/2) <= 0)) {
 		    	ball_dx = -ball_dx;
