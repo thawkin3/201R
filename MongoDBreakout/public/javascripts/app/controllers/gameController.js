@@ -361,6 +361,10 @@
 			ctx.fillStyle = "#f1f1f1";
 			ctx.fillRect(ball_x - ball_size/2, ball_y - ball_size/2, ball_size, ball_size);
 
+			// TESTING
+			ball_y_tracker.push(ball_y);
+			// END TEST
+
 			ctx.fillStyle = "#f1f1f1";
 			for (var i = 0; i < $scope.brickArray.length; i++) {
 				ctx.fillRect($scope.brickArray[i].l, $scope.brickArray[i].t, $scope.brickArray[i].w, $scope.brickArray[i].h);
