@@ -108,14 +108,14 @@
 					ctx.fillText("YOU WIN",145,200);
 					if (gameEnd) {
 						// set our new score into the database
-						submitScore();
+						//submitScore();
 					}
 				} else {
 					ctx.font="20px zig";
 					ctx.fillText("GAME OVER",130,280);
 					if (gameEnd) {
 						// set our new score into the database
-						submitScore();
+						//submitScore();
 					}
 				}
 				
