@@ -10,6 +10,7 @@
 		var ball_size = 10;
 		var ball_x = 220;
 		var ball_y = 220;
+		var ball_prev_y = 220;
 		// var ball_x = 340;
 		// var ball_y = 440;
 		var ball_dx = 3;
@@ -91,8 +92,9 @@
 		// Locator function in a loop
 		$scope.mainLoop = function() {
 			
-			console.log(ball_y);
-			if (ball_y > 1000) {
+			console.log("ball_y: " + ball_y);
+			console.log("ball_prev_y: " + ball_prev_y);
+			if (ball_y > 1000 && ball_prev_y > 1000) {
 				alert("greater than 1000");
 				console.log("game over");
 			    gameEnd = true;
@@ -144,6 +146,8 @@
 
 		// Update ball position
 		$scope.update = function() {
+			ball_prev_y = ball_y;
+
 			// Move the paddle, left key takes priority over right
 			if (left && paddle_x > 0 + paddle_width/2) {
 				paddle_x -= paddle_dx;
@@ -154,7 +158,7 @@
 			// If the ball has hit the paddle, bounce it.
 		    if (ctx.getImageData(ball_x, ball_y + 1 + ball_size/2, 1, 1).data[0] == 242) {
 		    	console.log(ctx.getImageData(ball_x, ball_y + (ball_size/2), 1, 1).data[0]);
-		    	// ball_dy = -ball_dy;
+		    	ball_dy = -ball_dy;
 		    	if (left) {
 		    		if (ball_dx < 0) {
 		    			ball_dx -= 1;
