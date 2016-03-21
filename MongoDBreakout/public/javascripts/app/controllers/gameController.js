@@ -309,6 +309,8 @@
 				// console.log(ball_y_tracker);
 				console.log("game over");
 			    gameEnd = true;
+			    ball_dy = 0;
+			    ball_dx = 0;
 			}
 
 		    // If the ball has hit the bottom, bounce it.
