@@ -5,6 +5,11 @@
 		// variables for game play
 		var gameEnd = false;
 		var gameWin = false;
+		var initialTimer = false;
+
+		$timeout(function(){
+			initialTimer = true;
+		}, 5000);
 
 		// variables for the ball
 		var ball_size = 10;
@@ -102,7 +107,7 @@
 			// console.log("ball_prev_prev_y: " + ball_prev_prev_y);
 			// if (ball_y > 1000 && ball_prev_y > 1000 && ball_prev_prev_y > 1000) {
 			// if (ball_y_tracker[ball_y_tracker.length - 1] > 1000 && ball_y_tracker[ball_y_tracker.length - 2] > 1000 && ball_y_tracker[ball_y_tracker.length - 3] > 1000) {
-			if (ball_y > 1000) {
+			if (ball_y > 1000 && initialTimer) {
 				console.log(ball_y_tracker);
 				alert("greater than 1000");
 				console.log("game over");
