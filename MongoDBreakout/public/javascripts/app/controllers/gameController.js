@@ -130,26 +130,27 @@
 			}
 			// have logic for the game to end or not
 			
-			if (!gameEnd) {
-				// Recursively call our loop
-				window.requestAnimationFrame($scope.mainLoop);
-			} else {
-				// end the game
-				ball_dy = 0;
-			    ball_dx = 0;
-			    ball_y = ball_y;
-			    ball_x = ball_x;
-				// set the text that displays on the canvas
-				if (gameWin) {
-					ctx.font="20px zig";
-					ctx.fillText("YOU WIN",145,200);
-				} else {
-					ctx.font="20px zig";
-					ctx.fillText("GAME OVER",130,280);
-				}
-				// set our new score into the database
-				submitScore();
-			}
+			// ORIGINAL LOCATION
+			// if (!gameEnd) {
+			// 	// Recursively call our loop
+			// 	window.requestAnimationFrame($scope.mainLoop);
+			// } else {
+			// 	// end the game
+			// 	ball_dy = 0;
+			//     ball_dx = 0;
+			//     ball_y = ball_y;
+			//     ball_x = ball_x;
+			// 	// set the text that displays on the canvas
+			// 	if (gameWin) {
+			// 		ctx.font="20px zig";
+			// 		ctx.fillText("YOU WIN",145,200);
+			// 	} else {
+			// 		ctx.font="20px zig";
+			// 		ctx.fillText("GAME OVER",130,280);
+			// 	}
+			// 	// set our new score into the database
+			// 	submitScore();
+			// }
 		};
 
 		// Update ball position
@@ -342,6 +343,29 @@
 				// }		    
 		    	
 		    //}
+
+		    // TESTING
+		    if (!gameEnd) {
+				// Recursively call our loop
+				window.requestAnimationFrame($scope.mainLoop);
+			} else {
+				// end the game
+				ball_dy = 0;
+			    ball_dx = 0;
+			    ball_y = ball_y;
+			    ball_x = ball_x;
+				// set the text that displays on the canvas
+				if (gameWin) {
+					ctx.font="20px zig";
+					ctx.fillText("YOU WIN",145,200);
+				} else {
+					ctx.font="20px zig";
+					ctx.fillText("GAME OVER",130,280);
+				}
+				// set our new score into the database
+				submitScore();
+			}
+			// END TEST
 
 			return true;
 		};
