@@ -124,8 +124,10 @@
 			// END TEST
 
 			// draw our canvas here
-			$scope.draw();
-			$scope.update();
+			if (!gameEnd) {
+				$scope.draw();
+				$scope.update();
+			}
 			// have logic for the game to end or not
 			
 			if (!gameEnd) {
