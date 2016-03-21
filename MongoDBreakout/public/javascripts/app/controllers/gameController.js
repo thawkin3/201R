@@ -88,7 +88,7 @@
 			// go to the highscores view
 			$timeout(function() {
 				$location.url("/highscores");
-			}, 1000);
+			}, 10);
 		};
 		
 
