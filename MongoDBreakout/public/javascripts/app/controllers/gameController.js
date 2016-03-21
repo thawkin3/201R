@@ -107,11 +107,7 @@
 			// console.log("ball_prev_prev_y: " + ball_prev_prev_y);
 			// if (ball_y > 1000 && ball_prev_y > 1000 && ball_prev_prev_y > 1000) {
 			// if (ball_y_tracker[ball_y_tracker.length - 1] > 1000 && ball_y_tracker[ball_y_tracker.length - 2] > 1000 && ball_y_tracker[ball_y_tracker.length - 3] > 1000) {
-			if (ball_y >= canvas.height - 10 && ball_y < canvas.height && initialTimer) {
-				// console.log(ball_y_tracker);
-				console.log("game over");
-			    gameEnd = true;
-			}
+			
 
 			// TESTING
 			// var pixels = ctx.getImageData(ball_x - 5, 490, 10, 1).data;
@@ -308,6 +304,12 @@
 		    if (ball_y - (ball_size/2) <= 0) { 
 		    	ball_dy = -ball_dy; 
 		    }
+
+		    if (ball_y >= canvas.height - 10 && ball_y < canvas.height && initialTimer) {
+				// console.log(ball_y_tracker);
+				console.log("game over");
+			    gameEnd = true;
+			}
 
 		    // If the ball has hit the bottom, bounce it.
 		    // if (ball_y + (ball_size/2) >= canvas.height) { 
