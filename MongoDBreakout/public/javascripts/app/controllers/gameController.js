@@ -9,7 +9,7 @@
 
 		$timeout(function(){
 			initialTimer = false;
-		}, 6000);
+		}, 5500);
 
 		$timeout(function(){
 			initialTimer = true;
