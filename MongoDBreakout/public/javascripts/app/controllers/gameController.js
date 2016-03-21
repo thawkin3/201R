@@ -7,11 +7,11 @@
 		var gameWin = false;
 		var initialTimer = true;
 
-		$timeout(function(){
+		var setToFalse = $timeout(function(){
 			initialTimer = false;
 		}, 4650);
 
-		$timeout(function(){
+		var setToTrue = $timeout(function(){
 			initialTimer = true;
 		}, 5100);
 
@@ -67,6 +67,10 @@
 		
 		// Submit your score
 		var submitScore = function(){
+			
+			$timeout.cancel(setToFalse);
+			$timeout.cancel(setToTrue);
+
 			var scoreObj = { "Username": $rootScope.user, "Score": $scope.score };
 	        console.log(scoreObj);
 	        var JSONscoreObj = JSON.stringify(scoreObj);
