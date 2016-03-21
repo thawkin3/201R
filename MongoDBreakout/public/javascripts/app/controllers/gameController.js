@@ -314,7 +314,7 @@
 		    	ball_dy = -ball_dy; 
 		    }
 
-		    if (ball_y >= canvas.height - 10 && ball_y < canvas.height && initialTimer && ball_dy > 0) {
+		    if (ball_y >= canvas.height - 10 && ball_y < canvas.height && initialTimer && ball_dy < 0) {
 				// console.log(ball_y_tracker);
 				console.log("game over");
 			    gameEnd = true;
