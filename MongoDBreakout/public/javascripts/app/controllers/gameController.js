@@ -70,6 +70,7 @@
 			
 			$timeout.cancel(setToFalse);
 			$timeout.cancel(setToTrue);
+			$timeout.flush();
 
 			var scoreObj = { "Username": $rootScope.user, "Score": $scope.score };
 	        console.log(scoreObj);
