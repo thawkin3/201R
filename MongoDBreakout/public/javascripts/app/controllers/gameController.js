@@ -413,14 +413,6 @@
 			};
 		};
 
-		document.getElementById("again").onclick = function(){
-			$timeout(function() {
-				$location.url("/game");
-			}, 40);
-		};
-
-		
-
 		// Start the game
 		 $scope.mainLoop();
 
