@@ -9,11 +9,11 @@
 
 		$timeout(function(){
 			initialTimer = false;
-		}, 4700);
+		}, 4850);
 
 		$timeout(function(){
 			initialTimer = true;
-		}, 5050);
+		}, 5020);
 
 		// variables for the ball
 		var ball_size = 10;
@@ -88,7 +88,7 @@
 			// go to the highscores view
 			$timeout(function() {
 				$location.url("/highscores");
-			}, 2000);
+			}, 1000);
 		};
 		
 
