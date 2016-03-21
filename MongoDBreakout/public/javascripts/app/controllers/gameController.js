@@ -312,13 +312,13 @@
 		    	ball_dy = -ball_dy; 
 		    }
 
-		    if (ball_y >= canvas.height - 10 && ball_y < canvas.height && initialTimer) {
-				// console.log(ball_y_tracker);
-				console.log("game over");
-			    gameEnd = true;
-			    ball_dy = 0;
-			    ball_dx = 0;
-			}
+		 //    if (ball_y >= canvas.height - 10 && ball_y < canvas.height && initialTimer) {
+			// 	// console.log(ball_y_tracker);
+			// 	console.log("game over");
+			//     gameEnd = true;
+			//     ball_dy = 0;
+			//     ball_dx = 0;
+			// }
 
 		    // If the ball has hit the bottom, bounce it.
 		    // if (ball_y + (ball_size/2) >= canvas.height) { 
@@ -327,22 +327,22 @@
 		    // }
 
 		    // If the ball has hit the canvas's bottom wall, game over.
-		    // if (ctx.getImageData(ball_x, ball_y + 5 + ball_size/2, 1, 1).data[0] == 119 && ball_dy > 0) {
+		    if (ctx.getImageData(ball_x, ball_y + 5 + ball_size/2, 1, 1).data[0] == 119 && ball_dy > 0 && initialTimer) {
 		    // if (ball_y + (ball_size/2) >= canvas.height) {
-				// var pixels = ctx.getImageData(0, 490, canvas.width, 1).data;
-				// var pixels = ctx.getImageData(ball_x - 5, 490, 10, 1).data;
-				// for (var i = 0; i < pixels.length; i += 4) {
-				// 	console.log(pixels[i]);
-				// 	if (pixels[i] == 241) {
-				// 		console.log(ball_y + (ball_size/2));
-				//     	console.log("dy: " + ball_dy);
-				//     	console.log("x: " + ball_x);
-				//     	console.log("game over");
-				//     	gameEnd = true;
-				// 	}
-				// }		    
+				var pixels = ctx.getImageData(0, 490, canvas.width, 1).data;
+				var pixels = ctx.getImageData(ball_x - 5, 490, 10, 1).data;
+				for (var i = 0; i < pixels.length; i += 4) {
+					console.log(pixels[i]);
+					if (pixels[i] == 241) {
+						console.log(ball_y + (ball_size/2));
+				    	console.log("dy: " + ball_dy);
+				    	console.log("x: " + ball_x);
+				    	console.log("game over");
+				    	gameEnd = true;
+					}
+				}		    
 		    	
-		    //}
+		    }
 
 		    // TESTING
 		    if (!gameEnd) {
