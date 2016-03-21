@@ -177,6 +177,7 @@
 			// If the ball has hit the paddle, bounce it.
 		    if (ctx.getImageData(ball_x, ball_y + 1 + ball_size/2, 1, 1).data[0] == 242) {
 		    	$scope.numBounce++;
+		    	console.log($scope.numBounce);
 		    	console.log(ctx.getImageData(ball_x, ball_y + (ball_size/2), 1, 1).data[0]);
 		    	ball_dy = -ball_dy;
 		    	if (left) {
