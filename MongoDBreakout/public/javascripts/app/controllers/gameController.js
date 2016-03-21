@@ -137,6 +137,8 @@
 				// end the game
 				ball_dy = 0;
 			    ball_dx = 0;
+			    ball_y = ball_y;
+			    ball_x = ball_x;
 				// set the text that displays on the canvas
 				if (gameWin) {
 					ctx.font="20px zig";
