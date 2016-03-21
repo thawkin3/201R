@@ -70,7 +70,6 @@
 			
 			$timeout.cancel(setToFalse);
 			$timeout.cancel(setToTrue);
-			$timeout.flush();
 
 			var scoreObj = { "Username": $rootScope.user, "Score": $scope.score };
 	        console.log(scoreObj);
@@ -135,9 +134,8 @@
 			// draw our canvas here
 			$scope.draw();
 			$scope.update();
-			// have logic for the game to end or not
 			
-			// ORIGINAL LOCATION
+			// logic for the game to end or not
 			if (!gameEnd) {
 				// Recursively call our loop
 				window.requestAnimationFrame($scope.mainLoop);
@@ -145,8 +143,8 @@
 				// end the game
 				ball_dy = 0;
 			    ball_dx = 0;
-			    ball_y = ball_y;
-			    ball_x = ball_x;
+			    ball_y = 220;
+			    ball_x = 220;
 				// set the text that displays on the canvas
 				if (gameWin) {
 					ctx.font="20px zig";
