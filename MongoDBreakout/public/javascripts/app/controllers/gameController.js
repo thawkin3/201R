@@ -9,11 +9,11 @@
 
 		$timeout(function(){
 			initialTimer = false;
-		}, 4500);
+		}, 4700);
 
 		$timeout(function(){
 			initialTimer = true;
-		}, 5100);
+		}, 5050);
 
 		// variables for the ball
 		var ball_size = 10;
