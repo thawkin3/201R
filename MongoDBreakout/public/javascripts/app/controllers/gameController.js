@@ -322,7 +322,7 @@
 		    	ball_dy = -ball_dy; 
 		    }
 
-		    if (ball_y >= canvas.height - 10 && ball_y < canvas.height && (initialTimer || $scope.numBounce == 1)) {
+		    if (ball_y >= canvas.height - 10 && ball_y < canvas.height && (initialTimer || ctx.getImageData(ball_x, ball_y + 5 + ball_size/2, 1, 1).data[0] == 119)) {
 				// console.log(ball_y_tracker);
 				console.log("game over");
 			    gameEnd = true;
