@@ -81,14 +81,14 @@
 	      			$timeout(function(){	
 	      				console.log("done");
 	      				//alert("score submitted!");
-	      			}, 100);
+	      			}, 10);
 	  			}
 			})
 			.fail(function(){});
 			// go to the highscores view
 			$timeout(function() {
 				$location.url("/highscores");
-			}, 10);
+			}, 80);
 		};
 		
 
