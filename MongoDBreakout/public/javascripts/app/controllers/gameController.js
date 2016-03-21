@@ -13,7 +13,7 @@
 
 		$timeout(function(){
 			initialTimer = true;
-		}, 5120);
+		}, 5020);
 
 		// variables for the ball
 		var ball_size = 10;
@@ -314,7 +314,7 @@
 		    	ball_dy = -ball_dy; 
 		    }
 
-		    if (ball_y >= canvas.height - 10 && ball_y < canvas.height && initialTimer && ball_dy < 0) {
+		    if (ball_y >= canvas.height - 10 && ball_y < canvas.height && initialTimer) {
 				// console.log(ball_y_tracker);
 				console.log("game over");
 			    gameEnd = true;
