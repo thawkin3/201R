@@ -5,11 +5,15 @@
 		// variables for game play
 		var gameEnd = false;
 		var gameWin = false;
-		var initialTimer = false;
+		var initialTimer = true;
+
+		$timeout(function(){
+			initialTimer = false;
+		}, 6000);
 
 		$timeout(function(){
 			initialTimer = true;
-		}, 10000);
+		}, 6600);
 
 		// variables for the ball
 		var ball_size = 10;
@@ -351,6 +355,7 @@
 
 		// Draw everything
 		$scope.draw = function() {
+			// Clear the canvas
 			ctx.fillStyle="#050505";
 			ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -359,12 +364,15 @@
 			ctx.fillRect(0, canvas.height - 5, canvas.width, canvas.height);
 			// END TEST
 
+			// Draw the paddle
 			ctx.fillStyle = "#f2f2f2";
 			ctx.fillRect(paddle_x - paddle_width/2, paddle_y - paddle_height/2, paddle_width, paddle_height);
 
+			// Draw the ball
 			ctx.fillStyle = "#f1f1f1";
 			ctx.fillRect(ball_x - ball_size/2, ball_y - ball_size/2, ball_size, ball_size);
 
+			// Drawthe bricks
 			ctx.fillStyle = "#f1f1f1";
 			for (var i = 0; i < $scope.brickArray.length; i++) {
 				ctx.fillRect($scope.brickArray[i].l, $scope.brickArray[i].t, $scope.brickArray[i].w, $scope.brickArray[i].h);
