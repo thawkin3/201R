@@ -303,7 +303,7 @@
 
 		    // TESTING
 		    console.log("ball_y: " + ball_y);
-		    console.log("ball_prev_y: " + ball_prev_y);
+		    // console.log("ball_prev_y: " + ball_prev_y);
 		    ball_y_tracker.push(ball_y);
 			ball_y_tracker.push(ball_prev_y);
 		    // END TEST
