@@ -94,14 +94,15 @@
 		// Locator function in a loop
 		$scope.mainLoop = function() {
 		
-			ball_y_tracker.push(ball_y);
-			ball_y_tracker.push(ball_prev_y);
+			// ball_y_tracker.push(ball_y);
+			// ball_y_tracker.push(ball_prev_y);
 			console.log("ball_y: " + ball_y);
-			console.log("ball_prev_y: " + ball_prev_y);
+			// console.log("ball_prev_y: " + ball_prev_y);
 
 			// console.log("ball_prev_prev_y: " + ball_prev_prev_y);
 			// if (ball_y > 1000 && ball_prev_y > 1000 && ball_prev_prev_y > 1000) {
-			if (ball_y_tracker[ball_y_tracker.length - 1] > 1000 && ball_y_tracker[ball_y_tracker.length - 2] > 1000 && ball_y_tracker[ball_y_tracker.length - 3] > 1000) {
+			// if (ball_y_tracker[ball_y_tracker.length - 1] > 1000 && ball_y_tracker[ball_y_tracker.length - 2] > 1000 && ball_y_tracker[ball_y_tracker.length - 3] > 1000) {
+			if (ball_y > 1000) {
 				console.log(ball_y_tracker);
 				alert("greater than 1000");
 				console.log("game over");
@@ -300,13 +301,6 @@
 		    // Move the ball to its new position.
 		    ball_x += ball_dx;
 		    ball_y += ball_dy;
-
-		    // TESTING
-		    console.log("ball_y: " + ball_y);
-		    // console.log("ball_prev_y: " + ball_prev_y);
-		    ball_y_tracker.push(ball_y);
-			ball_y_tracker.push(ball_prev_y);
-		    // END TEST
 
 		    // If the ball has hit the left or right side, bounce it.
 		    if ((ball_x + (ball_size/2) >= canvas.width) || (ball_x - (ball_size/2) <= 0)) {
