@@ -9,7 +9,7 @@
 
 		$timeout(function(){
 			initialTimer = true;
-		}, 5000);
+		}, 10000);
 
 		// variables for the ball
 		var ball_size = 10;
