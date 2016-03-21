@@ -133,6 +133,8 @@
 				window.requestAnimationFrame($scope.mainLoop);
 			} else {
 				// end the game
+				ball_dy = 0;
+			    ball_dx = 0;
 				// set the text that displays on the canvas
 				if (gameWin) {
 					ctx.font="20px zig";
