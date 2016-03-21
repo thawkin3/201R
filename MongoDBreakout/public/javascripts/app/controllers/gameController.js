@@ -322,7 +322,7 @@
 		    	ball_dy = -ball_dy; 
 		    }
 
-		    if (ball_y >= canvas.height - 10 && ball_y < canvas.height && (initialTimer || ctx.getImageData(ball_x, ball_y + 5 + ball_size/2, 1, 1).data[0] == 119)) {
+		    if (ball_y >= canvas.height - 10 && ball_y < canvas.height && initialTimer) {
 				// console.log(ball_y_tracker);
 				console.log("game over");
 			    gameEnd = true;
@@ -411,6 +411,12 @@
 					right = false; // Will take priority over the left key
 					break;
 			};
+		};
+
+		document.getElementById("again").onclick = function(){
+			$timeout(function() {
+				$location.url("/game");
+			}, 40);
 		};
 
 		
