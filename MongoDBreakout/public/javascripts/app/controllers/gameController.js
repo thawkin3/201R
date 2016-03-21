@@ -321,7 +321,7 @@
 		    	ball_dy = -ball_dy; 
 		    }
 
-		    if (ball_y >= canvas.height - 10 && ball_y < canvas.height && (initialTimer || $scope.numBounce == 1) {
+		    if (ball_y >= canvas.height - 10 && ball_y < canvas.height && (initialTimer || $scope.numBounce == 1)) {
 				// console.log(ball_y_tracker);
 				console.log("game over");
 			    gameEnd = true;
