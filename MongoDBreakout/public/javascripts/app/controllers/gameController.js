@@ -30,7 +30,7 @@
 		// variables for the paddle
 		var paddle_width = 120;
 		var paddle_height = 10;
-		var paddle_x = 310;
+		var paddle_x = 315;
 		var paddle_y = 450;
 		var paddle_dx = 4;
 		var left = false;
