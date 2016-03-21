@@ -108,8 +108,7 @@
 			// if (ball_y > 1000 && ball_prev_y > 1000 && ball_prev_prev_y > 1000) {
 			// if (ball_y_tracker[ball_y_tracker.length - 1] > 1000 && ball_y_tracker[ball_y_tracker.length - 2] > 1000 && ball_y_tracker[ball_y_tracker.length - 3] > 1000) {
 			if (ball_y >= canvas.height - 10 && ball_y < canvas.height && initialTimer) {
-				console.log(ball_y_tracker);
-				alert("you lose!");
+				// console.log(ball_y_tracker);
 				console.log("game over");
 			    gameEnd = true;
 			}
@@ -142,19 +141,12 @@
 				if (gameWin) {
 					ctx.font="20px zig";
 					ctx.fillText("YOU WIN",145,200);
-					if (gameEnd) {
-						// set our new score into the database
-						//submitScore();
-					}
 				} else {
 					ctx.font="20px zig";
 					ctx.fillText("GAME OVER",130,280);
-					if (gameEnd) {
-						// set our new score into the database
-						//submitScore();
-					}
 				}
-				
+				// set our new score into the database
+				submitScore();
 			}
 		};
 
