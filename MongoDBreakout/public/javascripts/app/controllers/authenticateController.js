@@ -33,6 +33,7 @@
 		    });
 
 		    $("input").on("keyup", function(){
+		    	$("#signInSubmit").removeClass("btn-danger");
 		    	$(".errorMsg").hide();
 		    	$(".missingUsername").hide();
 		    	$(".missingPassword").hide();
@@ -70,9 +71,11 @@
 				} else {
 					if (theUsername == "") {
 						$(".missingUsername").show();
+						$("#createSubmit").addClass("btn-danger");
 					}
 					if (thePassword == "") {
 						$(".missingPassword").show();
+						$("#createSubmit").addClass("btn-danger");
 					}
 				}
 
@@ -109,9 +112,11 @@
 				} else {
 					if (theUsername == "") {
 						$(".missingUsername").show();
+						$("#signInSubmit").addClass("btn-danger");
 					}
 					if (thePassword == "") {
 						$(".missingPassword").show();
+						$("#signInSubmit").addClass("btn-danger");
 					}
 				}
 
