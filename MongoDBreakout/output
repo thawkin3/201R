@@ -1,113 +1,151 @@
 nohup: ignoring input
 Connected
-[0mGET / [36m304 [0m7.441 ms - -[0m
-[0mGET /stylesheets/bootstrap.min.css [36m304 [0m2.176 ms - -[0m
-[0mGET /stylesheets/style.css [32m200 [0m5.491 ms - 1243[0m
-[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.482 ms - -[0m
-[0mGET /javascripts/angular.js [36m304 [0m0.283 ms - -[0m
-[0mGET /javascripts/angular-route.js [36m304 [0m0.528 ms - -[0m
-[0mGET /javascripts/app/app.js [32m200 [0m1.405 ms - 625[0m
-[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m0.634 ms - 2488[0m
-[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m1.295 ms - 11815[0m
-[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m0.686 ms - 580[0m
-[0mGET /stylesheets/zig.ttf [36m304 [0m0.574 ms - -[0m
-[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.848 ms - 2676[0m
-[0mGET /favicon.ico [33m404 [0m10.428 ms - 1875[0m
-[0mGET /stylesheets/bootstrap.min.css.map [33m404 [0m2.265 ms - 1875[0m
+[0mGET / [32m200 [0m8.108 ms - 1270[0m
+[0mGET /stylesheets/style.css [32m200 [0m5.861 ms - 1339[0m
+[0mGET /javascripts/angular-route.js [32m200 [0m1.118 ms - 36921[0m
+[0mGET /javascripts/app/app.js [32m200 [0m0.370 ms - 625[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m1.007 ms - 97362[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m6.145 ms - 121260[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m0.519 ms - 3853[0m
+[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m0.463 ms - 11815[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m0.645 ms - 580[0m
+[0mGET /javascripts/angular.js [32m200 [0m0.694 ms - 1065760[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.582 ms - 51916[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.692 ms - 3072[0m
+[0mGET /favicon.ico [33m404 [0m10.385 ms - 1875[0m
+[0mGET / [32m200 [0m0.747 ms - 1270[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.372 ms - 1339[0m
+[0mGET /javascripts/app/app.js [32m200 [0m2.738 ms - 625[0m
+[0mGET /javascripts/angular-route.js [32m200 [0m2.239 ms - 36921[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m0.552 ms - 121260[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m0.702 ms - 3853[0m
+[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m0.612 ms - 11815[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m1.105 ms - 580[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m3.021 ms - 97362[0m
+[0mGET /javascripts/angular.js [32m200 [0m2.996 ms - 1065760[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.560 ms - 51916[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m1.788 ms - 3072[0m
+[0mGET /favicon.ico [33m404 [0m2.989 ms - 1875[0m
 POST adduser route
-{ Username: 'TYLERH', Password: '1234' }
+{ Username: 'NAME', Password: 'PASSWORD' }
 POST adduser route
-{ Username: 'TYLERH', Password: '1234' }
-{ __v: 0,
-  Password: '1234',
-  Username: 'TYLERH',
-  _id: 56ee332f656bd3de12263c10 }
-[0mPOST /adduser [31m500 [0m40.944 ms - 21[0m
-{ __v: 0,
-  Password: '1234',
-  Username: 'TYLERH',
-  _id: 56ee332f656bd3de12263c10 }
-[0mPOST /adduser [31m500 [0m13.738 ms - 21[0m
-POST adduser route
-{ Username: 'TYLERH', Password: '1234' }
-POST adduser route
-{ Username: 'TYLERH', Password: '1234' }
-{ __v: 0,
-  Password: '1234',
-  Username: 'TYLERH',
-  _id: 56ee332f656bd3de12263c10 }
-{ __v: 0,
-  Password: '1234',
-  Username: 'TYLERH',
-  _id: 56ee332f656bd3de12263c10 }
-[0mPOST /adduser [31m500 [0m4.272 ms - 21[0m
-[0mPOST /adduser [31m500 [0m2.564 ms - 21[0m
-POST getuser route
-{ Username: 'BLAH', Password: '1234' }
-BLAH
-POST getuser route
-{ Username: 'BLAH', Password: '1234' }
-BLAH
+{ Username: 'NAME', Password: 'PASSWORD' }
 null
+{ _id: 56f0d476b950949e40a57af1,
+  Password: 'PASSWORD',
+  Username: 'NAME' }
+NAME
 null
-[0mPOST /getuser [33m400 [0m3.292 ms - 11[0m
-[0mPOST /getuser [33m400 [0m2.207 ms - 11[0m
-[0mGET / [36m304 [0m0.502 ms - -[0m
-[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.474 ms - -[0m
-[0mGET /stylesheets/style.css [36m304 [0m1.087 ms - -[0m
-[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.954 ms - -[0m
-[0mGET /javascripts/angular.js [36m304 [0m1.136 ms - -[0m
-[0mGET /javascripts/angular-route.js [36m304 [0m0.607 ms - -[0m
-[0mGET /javascripts/app/app.js [36m304 [0m0.223 ms - -[0m
-[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m1.691 ms - -[0m
-[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.936 ms - -[0m
-[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.476 ms - -[0m
-[0mGET /javascripts/angular.js [36m304 [0m0.450 ms - -[0m
-[0mGET /stylesheets/zig.ttf [36m304 [0m0.412 ms - -[0m
-[0mGET /javascripts/app/views/authenticateView.html [36m304 [0m1.865 ms - -[0m
-[0mGET / [36m304 [0m0.387 ms - -[0m
-[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.397 ms - -[0m
-[0mGET /stylesheets/style.css [32m200 [0m2.020 ms - 1243[0m
-[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m1.907 ms - -[0m
-[0mGET /javascripts/angular.js [36m304 [0m0.272 ms - -[0m
-[0mGET /javascripts/angular-route.js [36m304 [0m0.350 ms - -[0m
-[0mGET /javascripts/app/app.js [36m304 [0m0.280 ms - -[0m
-[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m0.829 ms - 2488[0m
-[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m0.604 ms - 11815[0m
-[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m0.395 ms - 580[0m
-[0mGET /stylesheets/zig.ttf [32m200 [0m1.045 ms - 51916[0m
-[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.559 ms - 2676[0m
-[0mGET /favicon.ico [33m404 [0m1.064 ms - 1875[0m
-POST adduser route
-{ Username: 'WALLER0', Password: 'CATS' }
-null
-{ _id: 56f01617346c9333340d106a,
-  Password: 'CATS',
-  Username: 'WALLER0' }
-WALLER0
-{ _id: 56f01617346c9333340d106a,
-  Password: 'CATS',
-  Username: 'WALLER0',
+{ _id: 56f0d476b950949e40a57af2,
+  Password: 'PASSWORD',
+  Username: 'NAME' }
+NAME
+{ _id: 56f0d476b950949e40a57af1,
+  Password: 'PASSWORD',
+  Username: 'NAME',
   __v: 0 }
-[0mPOST /adduser [32m200 [0m16.778 ms - 2[0m
-POST adduser route
-{ Username: 'WALLER0', Password: 'CATS' }
-{ __v: 0,
-  Password: 'CATS',
-  Username: 'WALLER0',
-  _id: 56f01617346c9333340d106a }
-[0mPOST /adduser [31m500 [0m1.722 ms - 21[0m
-[0mGET /javascripts/app/views/gameView.html [32m200 [0m0.611 ms - 259[0m
+[0mPOST /adduser [32m200 [0m62.072 ms - 2[0m
+{ _id: 56f0d476b950949e40a57af2,
+  Password: 'PASSWORD',
+  Username: 'NAME',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m28.947 ms - 2[0m
+[0mGET /javascripts/app/views/gameView.html [32m200 [0m1.553 ms - 259[0m
 POST addscore route
-{ Username: 'WALLER0', Score: 1 }
-{ _id: 56f0161c346c9333340d106b, Score: 1, Username: 'WALLER0' }
+{ Username: 'NAME', Score: 5 }
+{ _id: 56f0d489b950949e40a57af3, Score: 5, Username: 'NAME' }
+5
+{ _id: 56f0d489b950949e40a57af3,
+  Score: 5,
+  Username: 'NAME',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m5.504 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [32m200 [0m0.537 ms - 569[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
+  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [32m200 [0m12.324 ms - 658[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
+  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [36m304 [0m8.234 ms - -[0m
+[0mGET / [32m200 [0m2.509 ms - 1270[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.438 ms - 1339[0m
+[0mGET /javascripts/angular-route.js [32m200 [0m1.615 ms - 36921[0m
+[0mGET /javascripts/app/app.js [32m200 [0m0.442 ms - 625[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m0.816 ms - 121260[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m0.553 ms - 3853[0m
+[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m0.930 ms - 11815[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m1.933 ms - 97362[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m0.560 ms - 580[0m
+[0mGET /javascripts/angular.js [32m200 [0m1.504 ms - 1065760[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.691 ms - 51916[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.544 ms - 3072[0m
+[0mGET /favicon.ico [33m404 [0m1.261 ms - 1875[0m
+[0mGET / [32m200 [0m0.589 ms - 1270[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.889 ms - 1339[0m
+[0mGET /javascripts/angular-route.js [32m200 [0m1.271 ms - 36921[0m
+[0mGET /javascripts/app/app.js [32m200 [0m1.875 ms - 625[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m1.188 ms - 121260[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m2.256 ms - 3853[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m0.404 ms - 97362[0m
+[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m1.519 ms - 11815[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m0.505 ms - 580[0m
+[0mGET /javascripts/angular.js [32m200 [0m1.598 ms - 1065760[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.605 ms - 51916[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.555 ms - 3072[0m
+[0mGET /favicon.ico [33m404 [0m2.384 ms - 1875[0m
+POST adduser route
+{ Username: 'CWPITTS', Password: 'BLAH' }
+POST adduser route
+{ Username: 'CWPITTS', Password: 'BLAH' }
+null
+{ _id: 56f0e8e6b950949e40a57af4,
+  Password: 'BLAH',
+  Username: 'CWPITTS' }
+CWPITTS
+null
+{ _id: 56f0e8e6b950949e40a57af5,
+  Password: 'BLAH',
+  Username: 'CWPITTS' }
+CWPITTS
+{ _id: 56f0e8e6b950949e40a57af5,
+  Password: 'BLAH',
+  Username: 'CWPITTS',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m6.185 ms - 2[0m
+{ _id: 56f0e8e6b950949e40a57af4,
+  Password: 'BLAH',
+  Username: 'CWPITTS',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m8.940 ms - 2[0m
+[0mGET /javascripts/app/views/gameView.html [32m200 [0m0.566 ms - 259[0m
+POST addscore route
+{ Username: 'CWPITTS', Score: 1 }
+{ _id: 56f0e8ebb950949e40a57af6, Score: 1, Username: 'CWPITTS' }
 1
-{ _id: 56f0161c346c9333340d106b,
+{ _id: 56f0e8ebb950949e40a57af6,
   Score: 1,
-  Username: 'WALLER0',
+  Username: 'CWPITTS',
   __v: 0 }
-[0mPOST /addscore [32m200 [0m9.408 ms - 2[0m
-[0mGET /javascripts/app/views/highscoresView.html [32m200 [0m1.156 ms - 569[0m
+[0mPOST /addscore [32m200 [0m3.424 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [32m200 [0m0.504 ms - 569[0m
 In high score route
 [ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
   { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
@@ -115,11 +153,11 @@ In high score route
   { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
   { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
   { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
   { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 },
-  { Score: 9, Username: 'Guest', _id: 56ef4ba05c1c50222432c327 } ]
-[0mGET /getHighScores [32m200 [0m12.283 ms - 655[0m
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [32m200 [0m7.190 ms - 658[0m
 In high score route
 [ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
   { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
@@ -127,53 +165,180 @@ In high score route
   { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
   { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
   { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
   { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 },
-  { Score: 9, Username: 'Guest', _id: 56ef4ba05c1c50222432c327 } ]
-[0mGET /getHighScores [36m304 [0m7.394 ms - -[0m
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [36m304 [0m9.244 ms - -[0m
 POST addscore route
-{ Username: 'WALLER0', Score: 1 }
-{ _id: 56f0163a346c9333340d106c, Score: 1, Username: 'WALLER0' }
+{ Username: 'CWPITTS', Score: 1 }
+{ _id: 56f0e8efb950949e40a57af7, Score: 1, Username: 'CWPITTS' }
 1
-{ _id: 56f0163a346c9333340d106c,
+{ _id: 56f0e8efb950949e40a57af7,
   Score: 1,
-  Username: 'WALLER0',
+  Username: 'CWPITTS',
   __v: 0 }
-[0mPOST /addscore [32m200 [0m3.994 ms - 2[0m
-In high score route
-[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
-  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
-  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
-  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
-  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
-  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
-  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 },
-  { Score: 9, Username: 'Guest', _id: 56ef4ba05c1c50222432c327 } ]
-[0mGET /getHighScores [36m304 [0m9.623 ms - -[0m
-In high score route
-[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
-  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
-  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
-  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
-  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
-  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
-  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 },
-  { Score: 9, Username: 'Guest', _id: 56ef4ba05c1c50222432c327 } ]
-[0mGET /getHighScores [36m304 [0m9.538 ms - -[0m
+[0mPOST /addscore [32m200 [0m2.656 ms - 2[0m
+[0mGET / [32m200 [0m0.767 ms - 1270[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.832 ms - 1339[0m
+[0mGET /javascripts/angular-route.js [32m200 [0m2.649 ms - 36921[0m
+[0mGET /javascripts/app/app.js [32m200 [0m2.718 ms - 625[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m1.145 ms - 121260[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m3.199 ms - 97362[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m0.644 ms - 3853[0m
+[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m0.373 ms - 11815[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m0.509 ms - 580[0m
+[0mGET /javascripts/angular.js [32m200 [0m2.903 ms - 1065760[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.543 ms - 51916[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.479 ms - 3072[0m
+[0mGET /favicon.ico [33m404 [0m1.572 ms - 1875[0m
+POST adduser route
+{ Username: 'AIRHOP', Password: '123456' }
+POST adduser route
+{ Username: 'AIRHOP', Password: '123456' }
+null
+{ _id: 56f1033eb950949e40a57af8,
+  Password: '123456',
+  Username: 'AIRHOP' }
+AIRHOP
+null
+{ _id: 56f1033eb950949e40a57af9,
+  Password: '123456',
+  Username: 'AIRHOP' }
+AIRHOP
+{ _id: 56f1033eb950949e40a57af9,
+  Password: '123456',
+  Username: 'AIRHOP',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m7.391 ms - 2[0m
+{ _id: 56f1033eb950949e40a57af8,
+  Password: '123456',
+  Username: 'AIRHOP',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m9.883 ms - 2[0m
+[0mGET /javascripts/app/views/gameView.html [32m200 [0m0.661 ms - 259[0m
 POST addscore route
-{ Username: 'WALLER0', Score: 10 }
-{ _id: 56f0163d346c9333340d106d, Score: 10, Username: 'WALLER0' }
-10
-{ _id: 56f0163d346c9333340d106d,
-  Score: 10,
-  Username: 'WALLER0',
+{ Username: 'AIRHOP', Score: 1 }
+{ _id: 56f10343b950949e40a57afa, Score: 1, Username: 'AIRHOP' }
+1
+{ _id: 56f10343b950949e40a57afa,
+  Score: 1,
+  Username: 'AIRHOP',
   __v: 0 }
-[0mPOST /addscore [32m200 [0m3.025 ms - 2[0m
+[0mPOST /addscore [32m200 [0m3.497 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [32m200 [0m0.547 ms - 569[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
+  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [32m200 [0m7.410 ms - 658[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
+  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [36m304 [0m4.589 ms - -[0m
+POST addscore route
+{ Username: 'AIRHOP', Score: 1 }
+{ _id: 56f10347b950949e40a57afb, Score: 1, Username: 'AIRHOP' }
+1
+{ _id: 56f10347b950949e40a57afb,
+  Score: 1,
+  Username: 'AIRHOP',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.989 ms - 2[0m
+POST addscore route
+{ Username: 'AIRHOP', Score: 1 }
+{ _id: 56f1034db950949e40a57afc, Score: 1, Username: 'AIRHOP' }
+1
+{ _id: 56f1034db950949e40a57afc,
+  Score: 1,
+  Username: 'AIRHOP',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.553 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
+  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [36m304 [0m5.025 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
+  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [36m304 [0m11.896 ms - -[0m
+POST addscore route
+{ Username: 'AIRHOP', Score: 1 }
+{ _id: 56f10358b950949e40a57afd, Score: 1, Username: 'AIRHOP' }
+1
+{ _id: 56f10358b950949e40a57afd,
+  Score: 1,
+  Username: 'AIRHOP',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m5.544 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
+  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [36m304 [0m6.761 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
+  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [36m304 [0m9.086 ms - -[0m
+[0mGET / [32m200 [0m1.775 ms - 1270[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.375 ms - 1339[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m3.911 ms - 97362[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m0.622 ms - 121260[0m
+[0mGET /javascripts/app/app.js [32m200 [0m0.494 ms - 625[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m0.447 ms - 3853[0m
+[0mGET /javascripts/angular-route.js [32m200 [0m0.510 ms - 36921[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m2.050 ms - 580[0m
+[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m0.829 ms - 11815[0m
+[0mGET /javascripts/angular.js [32m200 [0m0.484 ms - 1065760[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.611 ms - 51916[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.658 ms - 3072[0m
+[0mGET /favicon.ico [33m404 [0m3.254 ms - 1875[0m
 POST getuser route
 { Username: 'WALLER0', Password: 'CATS' }
 WALLER0
@@ -190,124 +355,85 @@ found you!
   Username: 'WALLER0',
   _id: 56f01617346c9333340d106a }
 found you!
-[0mPOST /getuser [32m200 [0m5.989 ms - 2[0m
-[0mPOST /getuser [32m200 [0m4.840 ms - 2[0m
+[0mPOST /getuser [32m200 [0m5.296 ms - 2[0m
+[0mPOST /getuser [32m200 [0m3.685 ms - 2[0m
+[0mGET /javascripts/app/views/gameView.html [32m200 [0m0.781 ms - 259[0m
+POST addscore route
+{ Username: 'WALLER0', Score: 1 }
+{ _id: 56f1642eb950949e40a57afe, Score: 1, Username: 'WALLER0' }
+1
+{ _id: 56f1642eb950949e40a57afe,
+  Score: 1,
+  Username: 'WALLER0',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m4.472 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [32m200 [0m0.546 ms - 569[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
+  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [32m200 [0m6.306 ms - 658[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
+  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [32m200 [0m15.599 ms - 658[0m
+POST addscore route
+{ Username: 'WALLER0', Score: 1 }
+{ _id: 56f16432b950949e40a57aff, Score: 1, Username: 'WALLER0' }
+1
+{ _id: 56f16432b950949e40a57aff,
+  Score: 1,
+  Username: 'WALLER0',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.189 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
+  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [36m304 [0m9.225 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
+  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [36m304 [0m5.734 ms - -[0m
 POST addscore route
 { Username: 'WALLER0', Score: 0 }
-{ _id: 56f01648346c9333340d106e, Score: 0, Username: 'WALLER0' }
+{ _id: 56f16437b950949e40a57b00, Score: 0, Username: 'WALLER0' }
 0
-{ _id: 56f01648346c9333340d106e,
+{ _id: 56f16437b950949e40a57b00,
   Score: 0,
   Username: 'WALLER0',
   __v: 0 }
-[0mPOST /addscore [32m200 [0m8.803 ms - 2[0m
-In high score route
-[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
-  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
-  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
-  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
-  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
-  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
-  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 },
-  { Score: 10, Username: 'WALLER0', _id: 56f0163d346c9333340d106d } ]
-[0mGET /getHighScores [32m200 [0m6.159 ms - 658[0m
-In high score route
-[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
-  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
-  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
-  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
-  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
-  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
-  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 },
-  { Score: 10, Username: 'WALLER0', _id: 56f0163d346c9333340d106d } ]
-[0mGET /getHighScores [36m304 [0m10.630 ms - -[0m
-[0mGET / [36m304 [0m0.463 ms - -[0m
-[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.448 ms - -[0m
-[0mGET /stylesheets/style.css [36m304 [0m1.151 ms - -[0m
-[0mGET /javascripts/angular.js [36m304 [0m1.323 ms - -[0m
-[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.592 ms - -[0m
-[0mGET /javascripts/angular-route.js [36m304 [0m0.718 ms - -[0m
-[0mGET /javascripts/app/app.js [36m304 [0m1.138 ms - -[0m
-[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.268 ms - -[0m
-[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.287 ms - -[0m
-[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.386 ms - -[0m
-[0mGET /stylesheets/zig.ttf [36m304 [0m0.400 ms - -[0m
-[0mGET /javascripts/app/views/authenticateView.html [36m304 [0m0.408 ms - -[0m
-POST getuser route
-{ Username: 'TYLERH', Password: '1234' }
-TYLERH
-{ __v: 0,
-  Password: '1234',
-  Username: 'TYLERH',
-  _id: 56ee332f656bd3de12263c10 }
-found you!
-[0mPOST /getuser [32m200 [0m2.007 ms - 2[0m
-POST getuser route
-{ Username: 'TYLERH', Password: '1234' }
-TYLERH
-{ __v: 0,
-  Password: '1234',
-  Username: 'TYLERH',
-  _id: 56ee332f656bd3de12263c10 }
-found you!
-[0mPOST /getuser [32m200 [0m1.262 ms - 2[0m
-[0mGET /javascripts/app/views/gameView.html [32m200 [0m0.660 ms - 259[0m
-POST addscore route
-{ Username: 'TYLERH', Score: 1 }
-{ _id: 56f01a80346c9333340d106f, Score: 1, Username: 'TYLERH' }
-1
-{ _id: 56f01a80346c9333340d106f,
-  Score: 1,
-  Username: 'TYLERH',
-  __v: 0 }
-[0mPOST /addscore [32m200 [0m2.609 ms - 2[0m
-[0mGET /javascripts/app/views/highscoresView.html [32m200 [0m0.782 ms - 569[0m
-In high score route
-[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
-  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
-  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
-  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
-  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
-  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
-  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 },
-  { Score: 10, Username: 'WALLER0', _id: 56f0163d346c9333340d106d } ]
-[0mGET /getHighScores [32m200 [0m4.827 ms - 658[0m
-In high score route
-[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
-  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
-  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
-  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
-  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
-  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
-  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 },
-  { Score: 10, Username: 'WALLER0', _id: 56f0163d346c9333340d106d } ]
-[0mGET /getHighScores [36m304 [0m7.984 ms - -[0m
-POST addscore route
-{ Username: 'TYLERH', Score: 1 }
-{ _id: 56f01a83346c9333340d1070, Score: 1, Username: 'TYLERH' }
-1
-{ _id: 56f01a83346c9333340d1070,
-  Score: 1,
-  Username: 'TYLERH',
-  __v: 0 }
-[0mPOST /addscore [32m200 [0m3.132 ms - 2[0m
-POST addscore route
-{ Username: 'TYLERH', Score: 16 }
-{ _id: 56f01aa1346c9333340d1071, Score: 16, Username: 'TYLERH' }
-16
-{ _id: 56f01aa1346c9333340d1071,
-  Score: 16,
-  Username: 'TYLERH',
-  __v: 0 }
-[0mPOST /addscore [32m200 [0m4.489 ms - 2[0m
+[0mPOST /addscore [32m200 [0m2.426 ms - 2[0m
 In high score route
 [ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
   { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
@@ -316,10 +442,10 @@ In high score route
   { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
   { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
   { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
   { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 } ]
-[0mGET /getHighScores [32m200 [0m4.696 ms - 657[0m
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [36m304 [0m6.162 ms - -[0m
 In high score route
 [ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
   { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
@@ -328,258 +454,2813 @@ In high score route
   { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
   { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
   { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
   { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 } ]
-[0mGET /getHighScores [36m304 [0m6.001 ms - -[0m
-[0mGET / [36m304 [0m0.571 ms - -[0m
-[0mGET /stylesheets/bootstrap.min.css [36m304 [0m2.516 ms - -[0m
-[0mGET /stylesheets/style.css [36m304 [0m2.479 ms - -[0m
-[0mGET /javascripts/angular.js [36m304 [0m2.495 ms - -[0m
-[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m2.404 ms - -[0m
-[0mGET /javascripts/app/app.js [36m304 [0m1.985 ms - -[0m
-[0mGET /javascripts/angular-route.js [36m304 [0m2.841 ms - -[0m
-[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.881 ms - -[0m
-[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m7.003 ms - -[0m
-[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m7.101 ms - -[0m
-[0mGET /stylesheets/zig.ttf [36m304 [0m1.139 ms - -[0m
-[0mGET /javascripts/app/views/gameView.html [36m304 [0m0.781 ms - -[0m
-[0mGET /javascripts/app/views/authenticateView.html [36m304 [0m0.788 ms - -[0m
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [36m304 [0m10.400 ms - -[0m
+[0mGET / [36m304 [0m1.454 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.489 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.806 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m0.731 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.737 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m0.554 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.456 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.326 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.231 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.213 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.437 ms - -[0m
+[0mGET /javascripts/app/views/highscoresView.html [36m304 [0m4.602 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
+  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [36m304 [0m4.550 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
+  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [36m304 [0m8.407 ms - -[0m
+[0mGET /javascripts/app/views/gameView.html [36m304 [0m0.377 ms - -[0m
+[0mGET / [36m304 [0m1.735 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m1.554 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.284 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.898 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m0.357 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m0.260 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.259 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.495 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.360 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.405 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css.map [33m404 [0m2.060 ms - 1875[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.505 ms - -[0m
+[0mGET /javascripts/app/views/authenticateView.html [36m304 [0m0.492 ms - -[0m
+POST getuser route
+{ Username: 'TYLERH', Password: '1234' }
+TYLERH
+{ __v: 0,
+  Password: '1234',
+  Username: 'TYLERH',
+  _id: 56ee332f656bd3de12263c10 }
+found you!
+[0mPOST /getuser [32m200 [0m2.322 ms - 2[0m
+POST getuser route
+{ Username: 'TYLERH', Password: '1234' }
+TYLERH
+{ __v: 0,
+  Password: '1234',
+  Username: 'TYLERH',
+  _id: 56ee332f656bd3de12263c10 }
+found you!
+[0mPOST /getuser [32m200 [0m1.261 ms - 2[0m
+[0mGET /javascripts/app/views/gameView.html [36m304 [0m0.789 ms - -[0m
 POST addscore route
-{ Username: 'Guest', Score: 4 }
-{ _id: 56f01ac4346c9333340d1072, Score: 4, Username: 'Guest' }
+{ Username: 'TYLERH', Score: 4 }
+{ _id: 56f16461b950949e40a57b01, Score: 4, Username: 'TYLERH' }
 4
-{ _id: 56f01ac4346c9333340d1072,
+{ _id: 56f16461b950949e40a57b01,
   Score: 4,
+  Username: 'TYLERH',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.803 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [36m304 [0m2.368 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
+  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [36m304 [0m4.820 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
+  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
+  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 } ]
+[0mGET /getHighScores [36m304 [0m4.814 ms - -[0m
+POST addscore route
+{ Username: 'Guest', Score: 30 }
+{ _id: 56f1647cb950949e40a57b02, Score: 30, Username: 'Guest' }
+30
+{ _id: 56f1647cb950949e40a57b02,
+  Score: 30,
   Username: 'Guest',
   __v: 0 }
-[0mPOST /addscore [32m200 [0m4.910 ms - 2[0m
-[0mGET /javascripts/app/views/highscoresView.html [36m304 [0m0.736 ms - -[0m
+[0mPOST /addscore [32m200 [0m2.356 ms - 2[0m
 In high score route
 [ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
   { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
   { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
   { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
   { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
   { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
   { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
-  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 } ]
-[0mGET /getHighScores [36m304 [0m7.979 ms - -[0m
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
+  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 } ]
+[0mGET /getHighScores [32m200 [0m6.471 ms - 658[0m
 In high score route
 [ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
   { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
   { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
   { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
   { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
   { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
   { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
-  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 } ]
-[0mGET /getHighScores [36m304 [0m12.445 ms - -[0m
-[0mGET / [36m304 [0m0.449 ms - -[0m
-[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.531 ms - -[0m
-[0mGET /stylesheets/style.css [36m304 [0m0.263 ms - -[0m
-[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.285 ms - -[0m
-[0mGET /javascripts/angular.js [36m304 [0m0.353 ms - -[0m
-[0mGET /javascripts/angular-route.js [36m304 [0m0.284 ms - -[0m
-[0mGET /javascripts/app/app.js [36m304 [0m0.337 ms - -[0m
-[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.345 ms - -[0m
-[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.378 ms - -[0m
-[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.275 ms - -[0m
-[0mGET /stylesheets/zig.ttf [36m304 [0m0.631 ms - -[0m
-[0mGET /javascripts/app/views/authenticateView.html [36m304 [0m1.815 ms - -[0m
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 },
+  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 } ]
+[0mGET /getHighScores [36m304 [0m5.274 ms - -[0m
+POST addscore route
+{ Username: 'TYLERH', Score: 49 }
+{ _id: 56f164b7b950949e40a57b03, Score: 49, Username: 'TYLERH' }
+49
+{ _id: 56f164b7b950949e40a57b03,
+  Score: 49,
+  Username: 'TYLERH',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.791 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [32m200 [0m5.084 ms - 658[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m4.673 ms - -[0m
+POST addscore route
+{ Username: 'TYLERH', Score: 1 }
+{ _id: 56f164c3b950949e40a57b04, Score: 1, Username: 'TYLERH' }
+1
+{ _id: 56f164c3b950949e40a57b04,
+  Score: 1,
+  Username: 'TYLERH',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.281 ms - 2[0m
+POST addscore route
+{ Username: 'TYLERH', Score: 1 }
+{ _id: 56f164c3b950949e40a57b05, Score: 1, Username: 'TYLERH' }
+1
+{ _id: 56f164c3b950949e40a57b05,
+  Score: 1,
+  Username: 'TYLERH',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m1.835 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m4.195 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m5.733 ms - -[0m
 POST adduser route
-{ Username: 'TEST3', Password: '1234' }
-POST adduser route
-{ Username: 'TEST3', Password: '1234' }
-{ __v: 0,
-  Password: '1234',
-  Username: 'TEST3',
-  _id: 56ecee7af18eea3b08b56e84 }
-{ __v: 0,
-  Password: '1234',
-  Username: 'TEST3',
-  _id: 56ecee7af18eea3b08b56e84 }
-[0mPOST /adduser [31m500 [0m4.767 ms - 21[0m
-[0mPOST /adduser [31m500 [0m3.431 ms - 21[0m
-POST adduser route
-{ Username: 'TEST4', Password: '1234' }
-POST adduser route
-{ Username: 'TEST4', Password: '1234' }
+{ Username: 'JESSE', Password: 'HJ' }
 null
-{ _id: 56f01ae7346c9333340d1073,
-  Password: '1234',
-  Username: 'TEST4' }
-TEST4
+{ _id: 56f16576b950949e40a57b06,
+  Password: 'HJ',
+  Username: 'JESSE' }
+JESSE
+{ _id: 56f16576b950949e40a57b06,
+  Password: 'HJ',
+  Username: 'JESSE',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m4.988 ms - 2[0m
+POST adduser route
+{ Username: 'JESSE', Password: 'HJ' }
+{ __v: 0,
+  Password: 'HJ',
+  Username: 'JESSE',
+  _id: 56f16576b950949e40a57b06 }
+[0mPOST /adduser [31m500 [0m1.453 ms - 21[0m
+POST addscore route
+{ Username: 'JESSE', Score: 6 }
+{ _id: 56f1658ab950949e40a57b07, Score: 6, Username: 'JESSE' }
+6
+{ _id: 56f1658ab950949e40a57b07,
+  Score: 6,
+  Username: 'JESSE',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m3.168 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m4.246 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m3.852 ms - -[0m
+POST addscore route
+{ Username: 'JESSE', Score: 3 }
+{ _id: 56f165a2b950949e40a57b08, Score: 3, Username: 'JESSE' }
+3
+{ _id: 56f165a2b950949e40a57b08,
+  Score: 3,
+  Username: 'JESSE',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.808 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m5.580 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m7.059 ms - -[0m
+[0mGET / [32m200 [0m0.711 ms - 1270[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.045 ms - 1339[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m1.191 ms - 121260[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m1.135 ms - 97362[0m
+[0mGET /javascripts/angular-route.js [32m200 [0m0.448 ms - 36921[0m
+[0mGET /javascripts/app/app.js [32m200 [0m0.637 ms - 625[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m0.450 ms - 3853[0m
+[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m0.730 ms - 11815[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m0.552 ms - 580[0m
+[0mGET /javascripts/angular.js [32m200 [0m2.544 ms - 1065760[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.540 ms - 51916[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.523 ms - 3072[0m
+[0mGET /favicon.ico [33m404 [0m1.345 ms - 1875[0m
+[0mGET / [32m200 [0m0.583 ms - 1270[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.464 ms - 1339[0m
+[0mGET /javascripts/app/app.js [32m200 [0m0.631 ms - 625[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m1.900 ms - 121260[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m0.371 ms - 3853[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m0.475 ms - 97362[0m
+[0mGET /javascripts/angular-route.js [32m200 [0m1.720 ms - 36921[0m
+[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m0.378 ms - 11815[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m0.343 ms - 580[0m
+[0mGET /javascripts/angular.js [32m200 [0m0.385 ms - 1065760[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.913 ms - 51916[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.576 ms - 3072[0m
+[0mGET /favicon.ico [33m404 [0m1.256 ms - 1875[0m
+POST adduser route
+{ Username: 'MATTHEWB', Password: 'ASDFJKL;1' }
+POST adduser route
+{ Username: 'MATTHEWB', Password: 'ASDFJKL;1' }
 null
-{ _id: 56f01ae7346c9333340d1074,
-  Password: '1234',
-  Username: 'TEST4' }
-TEST4
-{ _id: 56f01ae7346c9333340d1074,
-  Password: '1234',
-  Username: 'TEST4',
+{ _id: 56f16698b950949e40a57b09,
+  Password: 'ASDFJKL;1',
+  Username: 'MATTHEWB' }
+MATTHEWB
+{ _id: 56f16698b950949e40a57b09,
+  Password: 'ASDFJKL;1',
+  Username: 'MATTHEWB',
   __v: 0 }
-[0mPOST /adduser [32m200 [0m5.075 ms - 2[0m
-{ _id: 56f01ae7346c9333340d1073,
-  Password: '1234',
-  Username: 'TEST4',
+[0mPOST /adduser [32m200 [0m13.671 ms - 2[0m
+null
+{ _id: 56f16698b950949e40a57b0a,
+  Password: 'ASDFJKL;1',
+  Username: 'MATTHEWB' }
+MATTHEWB
+{ _id: 56f16698b950949e40a57b0a,
+  Password: 'ASDFJKL;1',
+  Username: 'MATTHEWB',
   __v: 0 }
-[0mPOST /adduser [32m200 [0m7.049 ms - 2[0m
-[0mGET /javascripts/app/views/gameView.html [36m304 [0m0.529 ms - -[0m
+[0mPOST /adduser [32m200 [0m6.698 ms - 2[0m
+[0mGET /javascripts/app/views/gameView.html [32m200 [0m1.901 ms - 259[0m
 POST addscore route
-{ Username: 'TEST4', Score: 5 }
-{ _id: 56f01afa346c9333340d1075, Score: 5, Username: 'TEST4' }
+{ Username: 'MATTHEWB', Score: 1 }
+{ _id: 56f1669db950949e40a57b0b, Score: 1, Username: 'MATTHEWB' }
+1
+{ _id: 56f1669db950949e40a57b0b,
+  Score: 1,
+  Username: 'MATTHEWB',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m3.800 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [32m200 [0m0.704 ms - 569[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [32m200 [0m5.609 ms - 658[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m3.747 ms - -[0m
+POST addscore route
+{ Username: 'MATTHEWB', Score: 1 }
+{ _id: 56f166a1b950949e40a57b0c, Score: 1, Username: 'MATTHEWB' }
+1
+{ _id: 56f166a1b950949e40a57b0c,
+  Score: 1,
+  Username: 'MATTHEWB',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.264 ms - 2[0m
+POST addscore route
+{ Username: 'MATTHEWB', Score: 1 }
+{ _id: 56f166aab950949e40a57b0d, Score: 1, Username: 'MATTHEWB' }
+1
+{ _id: 56f166aab950949e40a57b0d,
+  Score: 1,
+  Username: 'MATTHEWB',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.438 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m7.495 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m5.438 ms - -[0m
+POST addscore route
+{ Username: 'MATTHEWB', Score: 1 }
+{ _id: 56f166adb950949e40a57b0e, Score: 1, Username: 'MATTHEWB' }
+1
+{ _id: 56f166adb950949e40a57b0e,
+  Score: 1,
+  Username: 'MATTHEWB',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.426 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m5.728 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m6.997 ms - -[0m
+POST addscore route
+{ Username: 'MATTHEWB', Score: 0 }
+{ _id: 56f166b2b950949e40a57b0f, Score: 0, Username: 'MATTHEWB' }
+0
+{ _id: 56f166b2b950949e40a57b0f,
+  Score: 0,
+  Username: 'MATTHEWB',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.187 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m4.752 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m5.782 ms - -[0m
+[0mGET / [36m304 [0m0.487 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.439 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m0.442 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.296 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.334 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m0.302 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.256 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.872 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.764 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.423 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.526 ms - -[0m
+[0mGET /javascripts/app/views/authenticateView.html [36m304 [0m0.477 ms - -[0m
+POST addscore route
+{ Username: 'MATTHEWB', Score: 0 }
+{ _id: 56f166b5b950949e40a57b10, Score: 0, Username: 'MATTHEWB' }
+0
+{ _id: 56f166b5b950949e40a57b10,
+  Score: 0,
+  Username: 'MATTHEWB',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m3.341 ms - 2[0m
+POST addscore route
+{ Username: 'MATTHEWB', Score: 0 }
+{ _id: 56f166b6b950949e40a57b11, Score: 0, Username: 'MATTHEWB' }
+0
+{ _id: 56f166b6b950949e40a57b11,
+  Score: 0,
+  Username: 'MATTHEWB',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.604 ms - 2[0m
+[0mGET / [36m304 [0m0.553 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.426 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.391 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.237 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m0.317 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m0.226 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.363 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.263 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.210 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.215 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.437 ms - -[0m
+[0mGET /javascripts/app/views/highscoresView.html [36m304 [0m0.328 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m4.938 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m4.228 ms - -[0m
+[0mGET /javascripts/app/views/authenticateView.html [36m304 [0m0.351 ms - -[0m
+POST getuser route
+{ Username: 'MATTHEWB', Password: 'ASDFJKL;1' }
+MATTHEWB
+{ __v: 0,
+  Password: 'ASDFJKL;1',
+  Username: 'MATTHEWB',
+  _id: 56f16698b950949e40a57b09 }
+found you!
+[0mPOST /getuser [32m200 [0m1.778 ms - 2[0m
+POST getuser route
+{ Username: 'MATTHEWB', Password: 'ASDFJKL;1' }
+MATTHEWB
+{ __v: 0,
+  Password: 'ASDFJKL;1',
+  Username: 'MATTHEWB',
+  _id: 56f16698b950949e40a57b09 }
+found you!
+[0mPOST /getuser [32m200 [0m2.853 ms - 2[0m
+[0mGET /javascripts/app/views/gameView.html [36m304 [0m0.411 ms - -[0m
+POST addscore route
+{ Username: 'MATTHEWB', Score: 1 }
+{ _id: 56f166c5b950949e40a57b12, Score: 1, Username: 'MATTHEWB' }
+1
+{ _id: 56f166c5b950949e40a57b12,
+  Score: 1,
+  Username: 'MATTHEWB',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.369 ms - 2[0m
+POST adduser route
+{ Username: 'JOE', Password: 'FIRE' }
+POST adduser route
+{ Username: 'JOE', Password: 'FIRE' }
+null
+{ _id: 56f166c5b950949e40a57b13,
+  Password: 'FIRE',
+  Username: 'JOE' }
+JOE
+{ _id: 56f166c5b950949e40a57b13,
+  Password: 'FIRE',
+  Username: 'JOE',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m6.930 ms - 2[0m
+null
+{ _id: 56f166c5b950949e40a57b14,
+  Password: 'FIRE',
+  Username: 'JOE' }
+JOE
+{ _id: 56f166c5b950949e40a57b14,
+  Password: 'FIRE',
+  Username: 'JOE',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m5.459 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m5.266 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m4.359 ms - -[0m
+[0mGET /javascripts/app/views/gameView.html [36m304 [0m0.671 ms - -[0m
+POST addscore route
+{ Username: 'JOE', Score: 2 }
+{ _id: 56f166ceb950949e40a57b15, Score: 2, Username: 'JOE' }
+2
+{ _id: 56f166ceb950949e40a57b15,
+  Score: 2,
+  Username: 'JOE',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.314 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [36m304 [0m0.404 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m5.239 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
+  { Score: 15, Username: 'TYLERH', _id: 56f0c06dcf9e074f40bc2581 } ]
+[0mGET /getHighScores [36m304 [0m5.075 ms - -[0m
+POST addscore route
+{ Username: 'MATTHEWB', Score: 1 }
+{ _id: 56f166d3b950949e40a57b16, Score: 1, Username: 'MATTHEWB' }
+1
+{ _id: 56f166d3b950949e40a57b16,
+  Score: 1,
+  Username: 'MATTHEWB',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.397 ms - 2[0m
+POST addscore route
+{ Username: 'JOE', Score: 26 }
+{ _id: 56f16705b950949e40a57b17, Score: 26, Username: 'JOE' }
+26
+{ _id: 56f16705b950949e40a57b17,
+  Score: 26,
+  Username: 'JOE',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.355 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [32m200 [0m4.314 ms - 655[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [36m304 [0m4.594 ms - -[0m
+[0mGET / [32m200 [0m0.734 ms - 1270[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.384 ms - 1339[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m0.545 ms - 121260[0m
+[0mGET /javascripts/app/app.js [32m200 [0m0.375 ms - 625[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m9.605 ms - 97362[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m0.353 ms - 3853[0m
+[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m0.524 ms - 11815[0m
+[0mGET /javascripts/angular-route.js [32m200 [0m0.430 ms - 36921[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m0.355 ms - 580[0m
+[0mGET /javascripts/angular.js [32m200 [0m1.521 ms - 1065760[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.559 ms - 51916[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.636 ms - 3072[0m
+[0mGET /favicon.ico [33m404 [0m2.173 ms - 1875[0m
+POST adduser route
+{ Username: 'SCOTT', Password: 'SCOTT' }
+null
+{ _id: 56f16786b950949e40a57b18,
+  Password: 'SCOTT',
+  Username: 'SCOTT' }
+SCOTT
+{ _id: 56f16786b950949e40a57b18,
+  Password: 'SCOTT',
+  Username: 'SCOTT',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m6.789 ms - 2[0m
+POST adduser route
+{ Username: 'SCOTT', Password: 'SCOTT' }
+{ __v: 0,
+  Password: 'SCOTT',
+  Username: 'SCOTT',
+  _id: 56f16786b950949e40a57b18 }
+[0mPOST /adduser [31m500 [0m1.419 ms - 21[0m
+[0mGET /javascripts/app/views/gameView.html [32m200 [0m0.537 ms - 259[0m
+POST addscore route
+{ Username: 'SCOTT', Score: 1 }
+{ _id: 56f1678cb950949e40a57b19, Score: 1, Username: 'SCOTT' }
+1
+{ _id: 56f1678cb950949e40a57b19,
+  Score: 1,
+  Username: 'SCOTT',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.932 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [32m200 [0m1.272 ms - 569[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [32m200 [0m5.976 ms - 655[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [36m304 [0m4.488 ms - -[0m
+POST addscore route
+{ Username: 'SCOTT', Score: 1 }
+{ _id: 56f16790b950949e40a57b1a, Score: 1, Username: 'SCOTT' }
+1
+{ _id: 56f16790b950949e40a57b1a,
+  Score: 1,
+  Username: 'SCOTT',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.549 ms - 2[0m
+POST addscore route
+{ Username: 'SCOTT', Score: 1 }
+{ _id: 56f16796b950949e40a57b1b, Score: 1, Username: 'SCOTT' }
+1
+{ _id: 56f16796b950949e40a57b1b,
+  Score: 1,
+  Username: 'SCOTT',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.708 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [36m304 [0m5.195 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [36m304 [0m4.339 ms - -[0m
+POST addscore route
+{ Username: 'SCOTT', Score: 1 }
+{ _id: 56f167a1b950949e40a57b1c, Score: 1, Username: 'SCOTT' }
+1
+{ _id: 56f167a1b950949e40a57b1c,
+  Score: 1,
+  Username: 'SCOTT',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m3.480 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [36m304 [0m4.524 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [36m304 [0m4.111 ms - -[0m
+POST addscore route
+{ Username: 'SCOTT', Score: 1 }
+{ _id: 56f167a6b950949e40a57b1d, Score: 1, Username: 'SCOTT' }
+1
+{ _id: 56f167a6b950949e40a57b1d,
+  Score: 1,
+  Username: 'SCOTT',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m5.270 ms - 2[0m
+[0mGET / [32m200 [0m0.581 ms - 1270[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.613 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m0.439 ms - -[0m
+[0mGET /javascripts/app/app.js [32m200 [0m1.047 ms - 625[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.653 ms - 1339[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m0.206 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.312 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m2.011 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m1.823 ms - 121260[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m0.457 ms - 580[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.591 ms - 51916[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.429 ms - 3072[0m
+POST adduser route
+{ Username: 'JJAY', Password: 'JAY' }
+null
+{ _id: 56f167ddb950949e40a57b1e,
+  Password: 'JAY',
+  Username: 'JJAY' }
+JJAY
+POST adduser route
+{ Username: 'JJAY', Password: 'JAY' }
+{ _id: 56f167ddb950949e40a57b1e,
+  Password: 'JAY',
+  Username: 'JJAY',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m3.706 ms - 2[0m
+null
+{ _id: 56f167ddb950949e40a57b1f,
+  Password: 'JAY',
+  Username: 'JJAY' }
+JJAY
+{ _id: 56f167ddb950949e40a57b1f,
+  Password: 'JAY',
+  Username: 'JJAY',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m2.875 ms - 2[0m
+[0mGET /javascripts/app/views/gameView.html [32m200 [0m1.026 ms - 259[0m
+POST addscore route
+{ Username: 'JJAY', Score: 1 }
+{ _id: 56f167e4b950949e40a57b20, Score: 1, Username: 'JJAY' }
+1
+{ _id: 56f167e4b950949e40a57b20,
+  Score: 1,
+  Username: 'JJAY',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.222 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [32m200 [0m1.264 ms - 569[0m
+In high score route
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [32m200 [0m7.121 ms - 655[0m
+[0mGET /getHighScores [32m200 [0m8.075 ms - 655[0m
+POST addscore route
+{ Username: 'JJAY', Score: 1 }
+{ _id: 56f167e8b950949e40a57b21, Score: 1, Username: 'JJAY' }
+1
+{ _id: 56f167e8b950949e40a57b21,
+  Score: 1,
+  Username: 'JJAY',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.364 ms - 2[0m
+POST addscore route
+{ Username: 'JJAY', Score: 1 }
+{ _id: 56f167efb950949e40a57b22, Score: 1, Username: 'JJAY' }
+1
+{ _id: 56f167efb950949e40a57b22,
+  Score: 1,
+  Username: 'JJAY',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.744 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [36m304 [0m4.156 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [36m304 [0m5.068 ms - -[0m
+POST addscore route
+{ Username: 'JJAY', Score: 1 }
+{ _id: 56f167f3b950949e40a57b23, Score: 1, Username: 'JJAY' }
+1
+{ _id: 56f167f3b950949e40a57b23,
+  Score: 1,
+  Username: 'JJAY',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.993 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [36m304 [0m4.441 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [36m304 [0m5.024 ms - -[0m
+POST addscore route
+{ Username: 'JJAY', Score: 0 }
+{ _id: 56f167f7b950949e40a57b24, Score: 0, Username: 'JJAY' }
+0
+{ _id: 56f167f7b950949e40a57b24,
+  Score: 0,
+  Username: 'JJAY',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.586 ms - 2[0m
+POST addscore route
+{ Username: 'JJAY', Score: 0 }
+{ _id: 56f167fbb950949e40a57b25, Score: 0, Username: 'JJAY' }
+0
+{ _id: 56f167fbb950949e40a57b25,
+  Score: 0,
+  Username: 'JJAY',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.812 ms - 2[0m
+POST getuser route
+{ Username: 'JJAY', Password: 'JAY' }
+JJAY
+{ __v: 0,
+  Password: 'JAY',
+  Username: 'JJAY',
+  _id: 56f167ddb950949e40a57b1e }
+found you!
+[0mPOST /getuser [32m200 [0m2.176 ms - 2[0m
+POST getuser route
+{ Username: 'JJAY', Password: 'JAY' }
+JJAY
+{ __v: 0,
+  Password: 'JAY',
+  Username: 'JJAY',
+  _id: 56f167ddb950949e40a57b1e }
+found you!
+[0mPOST /getuser [32m200 [0m1.155 ms - 2[0m
+[0mGET / [32m200 [0m0.628 ms - 1270[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.875 ms - 1339[0m
+[0mGET /javascripts/app/app.js [32m200 [0m0.358 ms - 625[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m0.763 ms - 121260[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m1.526 ms - 97362[0m
+[0mGET /javascripts/angular-route.js [32m200 [0m1.367 ms - 36921[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m0.579 ms - 3853[0m
+[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m0.798 ms - 11815[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m0.627 ms - 580[0m
+[0mGET /javascripts/angular.js [32m200 [0m1.212 ms - 1065760[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.922 ms - 3072[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m1.134 ms - 51916[0m
+[0mGET /favicon.ico [33m404 [0m6.338 ms - 1875[0m
+POST addscore route
+{ Username: 'JJAY', Score: 5 }
+{ _id: 56f16815b950949e40a57b26, Score: 5, Username: 'JJAY' }
 5
-{ _id: 56f01afa346c9333340d1075,
+{ _id: 56f16815b950949e40a57b26,
   Score: 5,
-  Username: 'TEST4',
+  Username: 'JJAY',
   __v: 0 }
-[0mPOST /addscore [32m200 [0m2.969 ms - 2[0m
-[0mGET /javascripts/app/views/highscoresView.html [36m304 [0m0.320 ms - -[0m
+[0mPOST /addscore [32m200 [0m2.349 ms - 2[0m
 In high score route
 [ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
   { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
   { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
   { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
   { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
   { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
-  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
-  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 } ]
-[0mGET /getHighScores [36m304 [0m5.002 ms - -[0m
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [36m304 [0m4.380 ms - -[0m
 In high score route
 [ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
   { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
   { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
   { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
   { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
   { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
-  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
-  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 } ]
-[0mGET /getHighScores [36m304 [0m5.069 ms - -[0m
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [36m304 [0m4.512 ms - -[0m
+POST adduser route
+{ Username: 'MORGAN', Password: 'MORGANHUNT' }
+POST adduser route
+{ Username: 'MORGAN', Password: 'MORGANHUNT' }
+null
+{ _id: 56f1681db950949e40a57b27,
+  Password: 'MORGANHUNT',
+  Username: 'MORGAN' }
+MORGAN
+null
+{ _id: 56f1681db950949e40a57b28,
+  Password: 'MORGANHUNT',
+  Username: 'MORGAN' }
+MORGAN
+{ _id: 56f1681db950949e40a57b28,
+  Password: 'MORGANHUNT',
+  Username: 'MORGAN',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m3.928 ms - 2[0m
+{ _id: 56f1681db950949e40a57b27,
+  Password: 'MORGANHUNT',
+  Username: 'MORGAN',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m5.801 ms - 2[0m
+[0mGET /javascripts/app/views/gameView.html [32m200 [0m0.541 ms - 259[0m
 POST addscore route
-{ Username: 'TEST4', Score: 4 }
-{ _id: 56f01b10346c9333340d1076, Score: 4, Username: 'TEST4' }
-4
-{ _id: 56f01b10346c9333340d1076,
-  Score: 4,
-  Username: 'TEST4',
+{ Username: 'MORGAN', Score: 1 }
+{ _id: 56f16824b950949e40a57b29, Score: 1, Username: 'MORGAN' }
+1
+{ _id: 56f16824b950949e40a57b29,
+  Score: 1,
+  Username: 'MORGAN',
   __v: 0 }
-[0mPOST /addscore [32m200 [0m4.649 ms - 2[0m
-In high score route
-[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
-  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
-  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
-  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
-  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
-  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
-  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
-  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 } ]
-[0mGET /getHighScores [36m304 [0m4.498 ms - -[0m
-In high score route
-[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
-  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
-  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
-  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
-  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
-  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
-  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
-  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 } ]
-[0mGET /getHighScores [36m304 [0m5.188 ms - -[0m
-In high score route
-[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
-  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
-  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
-  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
-  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
-  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
-  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
-  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 } ]
-[0mGET /getHighScores [36m304 [0m6.264 ms - -[0m
-In high score route
-[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
-  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
-  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
-  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
-  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
-  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
-  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
-  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 } ]
-[0mGET /getHighScores [36m304 [0m4.283 ms - -[0m
+[0mPOST /addscore [32m200 [0m3.131 ms - 2[0m
 POST addscore route
-{ Username: 'TEST4', Score: 5 }
-{ _id: 56f01b27346c9333340d1077, Score: 5, Username: 'TEST4' }
-5
-{ _id: 56f01b27346c9333340d1077,
-  Score: 5,
-  Username: 'TEST4',
+{ Username: 'MORGAN', Score: 1 }
+{ _id: 56f16824b950949e40a57b2a, Score: 1, Username: 'MORGAN' }
+1
+{ _id: 56f16824b950949e40a57b2a,
+  Score: 1,
+  Username: 'MORGAN',
   __v: 0 }
-[0mPOST /addscore [32m200 [0m3.426 ms - 2[0m
+[0mPOST /addscore [32m200 [0m1.640 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [32m200 [0m0.621 ms - 569[0m
 In high score route
 [ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
   { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
   { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
   { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
   { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
   { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
-  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
-  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 } ]
-[0mGET /getHighScores [36m304 [0m6.218 ms - -[0m
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [32m200 [0m4.536 ms - 655[0m
 In high score route
 [ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
   { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
   { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
   { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
   { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
   { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
-  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 },
-  { Score: 14, Username: 'TYLERH', _id: 56ef7eb00606af7d33f98763 },
-  { Score: 13, Username: 'Guest', _id: 56ef627e745b96ed2a7f1d19 },
-  { Score: 12, Username: 'Guest', _id: 56ef64632363f29d2b672b99 } ]
-[0mGET /getHighScores [36m304 [0m5.240 ms - -[0m
-[0mGET / [36m304 [0m4.860 ms - -[0m
-[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.387 ms - -[0m
-[0mGET /stylesheets/style.css [36m304 [0m0.379 ms - -[0m
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [36m304 [0m4.748 ms - -[0m
+POST addscore route
+{ Username: 'MORGAN', Score: 0 }
+{ _id: 56f16828b950949e40a57b2b, Score: 0, Username: 'MORGAN' }
+0
+{ _id: 56f16828b950949e40a57b2b,
+  Score: 0,
+  Username: 'MORGAN',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.128 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [36m304 [0m4.628 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [36m304 [0m4.754 ms - -[0m
+[0mGET / [36m304 [0m0.430 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.367 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.685 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.535 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m0.287 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.857 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m0.347 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.239 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.344 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.233 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.337 ms - -[0m
+[0mGET /javascripts/app/views/highscoresView.html [36m304 [0m0.281 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [36m304 [0m4.504 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 16, Username: 'TYLERH', _id: 56f01aa1346c9333340d1071 } ]
+[0mGET /getHighScores [36m304 [0m4.586 ms - -[0m
+POST addscore route
+{ Username: 'JJAY', Score: 23 }
+{ _id: 56f1683eb950949e40a57b2c, Score: 23, Username: 'JJAY' }
+23
+{ _id: 56f1683eb950949e40a57b2c,
+  Score: 23,
+  Username: 'JJAY',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.385 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [32m200 [0m4.448 ms - 653[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m4.359 ms - -[0m
+POST addscore route
+{ Username: 'MORGAN', Score: 12 }
+{ _id: 56f16847b950949e40a57b2d, Score: 12, Username: 'MORGAN' }
+12
+{ _id: 56f16847b950949e40a57b2d,
+  Score: 12,
+  Username: 'MORGAN',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.567 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [32m200 [0m4.779 ms - 653[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m5.988 ms - -[0m
+POST addscore route
+{ Username: 'MORGAN', Score: 8 }
+{ _id: 56f1685cb950949e40a57b2e, Score: 8, Username: 'MORGAN' }
+8
+{ _id: 56f1685cb950949e40a57b2e,
+  Score: 8,
+  Username: 'MORGAN',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.201 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m4.449 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m4.400 ms - -[0m
+[0mGET / [32m200 [0m1.401 ms - 1270[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.394 ms - 1339[0m
+[0mGET /javascripts/app/app.js [32m200 [0m0.477 ms - 625[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m0.667 ms - 121260[0m
+[0mGET /javascripts/angular-route.js [32m200 [0m0.406 ms - 36921[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m1.140 ms - 3853[0m
+[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m0.902 ms - 11815[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m0.882 ms - 97362[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m0.371 ms - 580[0m
+[0mGET /javascripts/angular.js [32m200 [0m0.490 ms - 1065760[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.558 ms - 51916[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.561 ms - 3072[0m
+[0mGET /favicon.ico [33m404 [0m1.296 ms - 1875[0m
+[0mGET / [36m304 [0m0.361 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.395 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.234 ms - -[0m
 [0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.239 ms - -[0m
-[0mGET /javascripts/angular.js [36m304 [0m0.408 ms - -[0m
-[0mGET /javascripts/angular-route.js [36m304 [0m0.331 ms - -[0m
-[0mGET /javascripts/app/app.js [36m304 [0m0.299 ms - -[0m
-[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.273 ms - -[0m
-[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.256 ms - -[0m
-[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.353 ms - -[0m
-[0mGET /stylesheets/zig.ttf [36m304 [0m0.332 ms - -[0m
-[0mGET /javascripts/app/views/authenticateView.html [36m304 [0m1.112 ms - -[0m
-[0mGET /stylesheets/bootstrap.min.css [36m304 [0m1.013 ms - -[0m
-[0mGET /stylesheets/style.css [36m304 [0m1.241 ms - -[0m
-[0mGET /stylesheets/bootstrap.min.css.map [33m404 [0m2.321 ms - 1875[0m
+[0mGET /javascripts/angular.js [36m304 [0m0.205 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m0.211 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m1.036 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.401 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.663 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.274 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m5.951 ms - -[0m
+[0mGET /javascripts/app/views/highscoresView.html [36m304 [0m0.360 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [32m200 [0m4.337 ms - 653[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m3.897 ms - -[0m
 POST adduser route
-{ Username: 'TEST2', Password: '1234' }
+{ Username: 'JORDAN', Password: '1234' }
 POST adduser route
-{ Username: 'TEST2', Password: '1234' }
+{ Username: 'JORDAN', Password: '1234' }
+null
+{ _id: 56f168e1b950949e40a57b2f,
+  Password: '1234',
+  Username: 'JORDAN' }
+JORDAN
+null
+{ _id: 56f168e1b950949e40a57b30,
+  Password: '1234',
+  Username: 'JORDAN' }
+JORDAN
+{ _id: 56f168e1b950949e40a57b30,
+  Password: '1234',
+  Username: 'JORDAN',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m5.025 ms - 2[0m
+{ _id: 56f168e1b950949e40a57b2f,
+  Password: '1234',
+  Username: 'JORDAN',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m6.793 ms - 2[0m
+[0mGET /javascripts/app/views/gameView.html [32m200 [0m0.648 ms - 259[0m
+[0mGET / [36m304 [0m0.538 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.849 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.709 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.598 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m0.537 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.795 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m1.179 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m1.057 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.984 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.904 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.406 ms - -[0m
+[0mGET /javascripts/app/views/authenticateView.html [36m304 [0m0.509 ms - -[0m
+POST addscore route
+{ Username: 'JORDAN', Score: 1 }
+{ _id: 56f168e6b950949e40a57b31, Score: 1, Username: 'JORDAN' }
+1
+{ _id: 56f168e6b950949e40a57b31,
+  Score: 1,
+  Username: 'JORDAN',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.649 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [32m200 [0m0.936 ms - 569[0m
+In high score route
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [32m200 [0m7.982 ms - 653[0m
+[0mGET /getHighScores [32m200 [0m9.061 ms - 653[0m
+POST addscore route
+{ Username: 'JORDAN', Score: 1 }
+{ _id: 56f168eab950949e40a57b32, Score: 1, Username: 'JORDAN' }
+1
+{ _id: 56f168eab950949e40a57b32,
+  Score: 1,
+  Username: 'JORDAN',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m5.856 ms - 2[0m
+POST getuser route
+{ Username: 'JJAY', Password: 'JAY' }
+JJAY
+{ __v: 0,
+  Password: 'JAY',
+  Username: 'JJAY',
+  _id: 56f167ddb950949e40a57b1e }
+found you!
+[0mPOST /getuser [32m200 [0m1.945 ms - 2[0m
+POST getuser route
+{ Username: 'JJAY', Password: 'JAY' }
+JJAY
+{ __v: 0,
+  Password: 'JAY',
+  Username: 'JJAY',
+  _id: 56f167ddb950949e40a57b1e }
+found you!
+[0mPOST /getuser [32m200 [0m2.480 ms - 2[0m
+[0mGET /javascripts/app/views/gameView.html [36m304 [0m0.434 ms - -[0m
+POST addscore route
+{ Username: 'JJAY', Score: 1 }
+{ _id: 56f168f3b950949e40a57b33, Score: 1, Username: 'JJAY' }
+1
+{ _id: 56f168f3b950949e40a57b33,
+  Score: 1,
+  Username: 'JJAY',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.260 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [36m304 [0m0.392 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m5.854 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m4.682 ms - -[0m
+[0mGET / [32m200 [0m2.755 ms - 1270[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.370 ms - 1339[0m
+[0mGET /javascripts/app/app.js [32m200 [0m0.563 ms - 625[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m0.447 ms - 97362[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m0.571 ms - 121260[0m
+[0mGET /javascripts/angular-route.js [32m200 [0m0.689 ms - 36921[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m0.526 ms - 3853[0m
+[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m0.379 ms - 11815[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m0.406 ms - 580[0m
+[0mGET /javascripts/angular.js [32m200 [0m0.373 ms - 1065760[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.656 ms - 51916[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.461 ms - 3072[0m
+[0mGET /favicon.ico [33m404 [0m1.072 ms - 1875[0m
+POST adduser route
+{ Username: 'COAL', Password: 'FOCKS' }
+null
+{ _id: 56f16911b950949e40a57b34,
+  Password: 'FOCKS',
+  Username: 'COAL' }
+COAL
+POST adduser route
+{ Username: 'COAL', Password: 'FOCKS' }
+{ _id: 56f16911b950949e40a57b34,
+  Password: 'FOCKS',
+  Username: 'COAL',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m4.386 ms - 2[0m
+{ __v: 0,
+  Password: 'FOCKS',
+  Username: 'COAL',
+  _id: 56f16911b950949e40a57b34 }
+[0mPOST /adduser [31m500 [0m2.683 ms - 21[0m
+[0mGET /javascripts/app/views/gameView.html [32m200 [0m0.752 ms - 259[0m
+POST addscore route
+{ Username: 'COAL', Score: 1 }
+{ _id: 56f16916b950949e40a57b35, Score: 1, Username: 'COAL' }
+1
+{ _id: 56f16916b950949e40a57b35,
+  Score: 1,
+  Username: 'COAL',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.190 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [32m200 [0m0.546 ms - 569[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [32m200 [0m4.478 ms - 653[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m3.869 ms - -[0m
+POST addscore route
+{ Username: 'COAL', Score: 1 }
+{ _id: 56f1691ab950949e40a57b36, Score: 1, Username: 'COAL' }
+1
+{ _id: 56f1691ab950949e40a57b36,
+  Score: 1,
+  Username: 'COAL',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.388 ms - 2[0m
+POST addscore route
+{ Username: 'COAL', Score: 15 }
+{ _id: 56f16948b950949e40a57b37, Score: 15, Username: 'COAL' }
+15
+{ _id: 56f16948b950949e40a57b37,
+  Score: 15,
+  Username: 'COAL',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.194 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m4.907 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m4.287 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.516 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.262 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css.map [33m404 [0m1.564 ms - 1875[0m
+POST addscore route
+{ Username: 'COAL', Score: 1 }
+{ _id: 56f16953b950949e40a57b38, Score: 1, Username: 'COAL' }
+1
+POST addscore route
+{ Username: 'COAL', Score: 1 }
+{ _id: 56f16953b950949e40a57b39, Score: 1, Username: 'COAL' }
+1
+{ _id: 56f16953b950949e40a57b38,
+  Score: 1,
+  Username: 'COAL',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m4.200 ms - 2[0m
+{ _id: 56f16953b950949e40a57b39,
+  Score: 1,
+  Username: 'COAL',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.166 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m5.408 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m4.276 ms - -[0m
+[0mGET / [36m304 [0m0.395 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m9.063 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m1.584 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.431 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m1.365 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m1.315 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m1.263 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.580 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.527 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.243 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.343 ms - -[0m
+[0mGET /javascripts/app/views/authenticateView.html [36m304 [0m0.334 ms - -[0m
+POST getuser route
+{ Username: 'JJAY', Password: 'JAY' }
+JJAY
+{ __v: 0,
+  Password: 'JAY',
+  Username: 'JJAY',
+  _id: 56f167ddb950949e40a57b1e }
+found you!
+[0mPOST /getuser [32m200 [0m2.989 ms - 2[0m
+POST getuser route
+{ Username: 'JJAY', Password: 'JAY' }
+JJAY
+{ __v: 0,
+  Password: 'JAY',
+  Username: 'JJAY',
+  _id: 56f167ddb950949e40a57b1e }
+found you!
+[0mPOST /getuser [32m200 [0m1.250 ms - 2[0m
+[0mGET /javascripts/app/views/gameView.html [36m304 [0m0.490 ms - -[0m
+POST addscore route
+{ Username: 'JJAY', Score: 1 }
+{ _id: 56f16982b950949e40a57b3a, Score: 1, Username: 'JJAY' }
+1
+{ _id: 56f16982b950949e40a57b3a,
+  Score: 1,
+  Username: 'JJAY',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m3.206 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [36m304 [0m0.388 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m5.654 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m4.154 ms - -[0m
+POST addscore route
+{ Username: 'JJAY', Score: 1 }
+{ _id: 56f16986b950949e40a57b3b, Score: 1, Username: 'JJAY' }
+1
+{ _id: 56f16986b950949e40a57b3b,
+  Score: 1,
+  Username: 'JJAY',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.308 ms - 2[0m
+POST addscore route
+{ Username: 'JJAY', Score: 1 }
+{ _id: 56f1698cb950949e40a57b3c, Score: 1, Username: 'JJAY' }
+1
+{ _id: 56f1698cb950949e40a57b3c,
+  Score: 1,
+  Username: 'JJAY',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.237 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m4.880 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m3.846 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m5.423 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m4.677 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css.map [33m404 [0m1.754 ms - 1875[0m
+POST addscore route
+{ Username: 'COAL', Score: 1 }
+{ _id: 56f16996b950949e40a57b3d, Score: 1, Username: 'COAL' }
+1
+{ _id: 56f16996b950949e40a57b3d,
+  Score: 1,
+  Username: 'COAL',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.179 ms - 2[0m
+POST addscore route
+{ Username: 'COAL', Score: 1 }
+{ _id: 56f16997b950949e40a57b3e, Score: 1, Username: 'COAL' }
+1
+{ _id: 56f16997b950949e40a57b3e,
+  Score: 1,
+  Username: 'COAL',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m1.615 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m5.141 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m3.893 ms - -[0m
+POST addscore route
+{ Username: 'MORGAN', Score: 5 }
+{ _id: 56f169a7b950949e40a57b3f, Score: 5, Username: 'MORGAN' }
+5
+In high score route
+{ _id: 56f169a7b950949e40a57b3f,
+  Score: 5,
+  Username: 'MORGAN',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m3.836 ms - 2[0m
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m6.793 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m13.766 ms - -[0m
+[0mGET / [32m200 [0m0.849 ms - 1270[0m
+[0mGET / [32m200 [0m0.657 ms - 1270[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.467 ms - 1339[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m0.663 ms - 121260[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m0.464 ms - 97362[0m
+[0mGET /javascripts/angular-route.js [32m200 [0m0.489 ms - 36921[0m
+[0mGET /javascripts/app/app.js [32m200 [0m0.611 ms - 625[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m0.343 ms - 3853[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m0.354 ms - 580[0m
+[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m0.426 ms - 11815[0m
+[0mGET /javascripts/angular.js [32m200 [0m0.330 ms - 1065760[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.599 ms - 51916[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.610 ms - 3072[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.499 ms - 3072[0m
+[0mGET /favicon.ico [33m404 [0m1.142 ms - 1875[0m
+[0mGET / [36m304 [0m0.483 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.378 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.343 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.234 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m0.267 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m1.297 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.407 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.352 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.229 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m1.717 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.348 ms - -[0m
+[0mGET /javascripts/app/views/authenticateView.html [36m304 [0m0.364 ms - -[0m
+[0mGET / [36m304 [0m0.480 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.400 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.308 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.199 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m0.277 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m1.787 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.282 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.233 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.234 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m3.118 ms - -[0m
+[0mGET /adduser [33m404 [0m1.207 ms - 1875[0m
+POST adduser route
+{ Username: ';ALSDFJK A', Password: 'ASDL;FJKA' }
+POST adduser route
+{ Username: ';ALSDFJK A', Password: 'ASDL;FJKA' }
+null
+{ _id: 56f16a28b950949e40a57b40,
+  Password: 'ASDL;FJKA',
+  Username: ';ALSDFJK A' }
+;ALSDFJK A
+{ _id: 56f16a28b950949e40a57b40,
+  Password: 'ASDL;FJKA',
+  Username: ';ALSDFJK A',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m3.707 ms - 2[0m
+null
+{ _id: 56f16a28b950949e40a57b41,
+  Password: 'ASDL;FJKA',
+  Username: ';ALSDFJK A' }
+;ALSDFJK A
+{ _id: 56f16a28b950949e40a57b41,
+  Password: 'ASDL;FJKA',
+  Username: ';ALSDFJK A',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m4.510 ms - 2[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.393 ms - -[0m
+[0mGET /javascripts/app/views/gameView.html [32m200 [0m0.451 ms - 259[0m
+[0mGET /javascripts/app/views/authenticateView.html [36m304 [0m0.524 ms - -[0m
+[0mGET /addscore [33m404 [0m1.247 ms - 1875[0m
+POST addscore route
+{ Username: ';ALSDFJK A', Score: 1 }
+{ _id: 56f16a2eb950949e40a57b42,
+  Score: 1,
+  Username: ';ALSDFJK A' }
+1
+{ _id: 56f16a2eb950949e40a57b42,
+  Score: 1,
+  Username: ';ALSDFJK A',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.149 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [32m200 [0m0.442 ms - 569[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [32m200 [0m4.752 ms - 653[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [32m200 [0m9.258 ms - 653[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m4.547 ms - -[0m
+POST addscore route
+{ Username: ';ALSDFJK A', Score: 1 }
+{ _id: 56f16a31b950949e40a57b43,
+  Score: 1,
+  Username: ';ALSDFJK A' }
+1
+{ _id: 56f16a31b950949e40a57b43,
+  Score: 1,
+  Username: ';ALSDFJK A',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.218 ms - 2[0m
+POST getuser route
+{ Username: 'SCOTT', Password: 'SCOTT' }
+SCOTT
+{ __v: 0,
+  Password: 'SCOTT',
+  Username: 'SCOTT',
+  _id: 56f16786b950949e40a57b18 }
+found you!
+[0mPOST /getuser [32m200 [0m1.812 ms - 2[0m
+POST getuser route
+{ Username: 'SCOTT', Password: 'SCOTT' }
+SCOTT
+{ __v: 0,
+  Password: 'SCOTT',
+  Username: 'SCOTT',
+  _id: 56f16786b950949e40a57b18 }
+found you!
+[0mPOST /getuser [32m200 [0m2.463 ms - 2[0m
+[0mGET /javascripts/app/views/gameView.html [36m304 [0m0.467 ms - -[0m
+POST addscore route
+{ Username: 'SCOTT', Score: 1 }
+{ _id: 56f16a3db950949e40a57b44, Score: 1, Username: 'SCOTT' }
+1
+{ _id: 56f16a3db950949e40a57b44,
+  Score: 1,
+  Username: 'SCOTT',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.767 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [36m304 [0m0.343 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [32m200 [0m4.843 ms - 653[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m5.512 ms - -[0m
+[0mGET / [36m304 [0m0.425 ms - -[0m
+POST addscore route
+{ Username: 'SCOTT', Score: 1 }
+{ _id: 56f16a52b950949e40a57b45, Score: 1, Username: 'SCOTT' }
+1
+{ _id: 56f16a52b950949e40a57b45,
+  Score: 1,
+  Username: 'SCOTT',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.051 ms - 2[0m
+POST getuser route
+{ Username: 'SCOTT', Password: 'SCOTT' }
+SCOTT
+{ __v: 0,
+  Password: 'SCOTT',
+  Username: 'SCOTT',
+  _id: 56f16786b950949e40a57b18 }
+found you!
+[0mPOST /getuser [32m200 [0m2.377 ms - 2[0m
+POST getuser route
+{ Username: 'SCOTT', Password: 'SCOTT' }
+SCOTT
+{ __v: 0,
+  Password: 'SCOTT',
+  Username: 'SCOTT',
+  _id: 56f16786b950949e40a57b18 }
+found you!
+[0mPOST /getuser [32m200 [0m1.220 ms - 2[0m
+POST addscore route
+{ Username: 'SCOTT', Score: 0 }
+{ _id: 56f16a5db950949e40a57b46, Score: 0, Username: 'SCOTT' }
+0
+{ _id: 56f16a5db950949e40a57b46,
+  Score: 0,
+  Username: 'SCOTT',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.103 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m4.639 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m5.903 ms - -[0m
+POST addscore route
+{ Username: ';ALSDFJK A', Score: 6 }
+{ _id: 56f16a8ab950949e40a57b47,
+  Score: 6,
+  Username: ';ALSDFJK A' }
+6
+{ _id: 56f16a8ab950949e40a57b47,
+  Score: 6,
+  Username: ';ALSDFJK A',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.135 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m4.379 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m4.255 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m3.683 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m4.981 ms - -[0m
+[0mGET / [36m304 [0m0.359 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.366 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.210 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.223 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m0.237 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m0.318 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.225 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.358 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.236 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.245 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.436 ms - -[0m
+[0mGET /javascripts/app/views/authenticateView.html [36m304 [0m0.370 ms - -[0m
+[0mGET / [36m304 [0m0.553 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.859 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.720 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m0.867 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m1.168 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m1.073 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.845 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.232 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.260 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.321 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m0.305 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.944 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.246 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.241 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.245 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.373 ms - -[0m
+[0mGET /javascripts/app/views/authenticateView.html [36m304 [0m0.486 ms - -[0m
+[0mGET / [36m304 [0m0.419 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.699 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.920 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m1.285 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m1.045 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.982 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m0.868 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.230 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.254 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.285 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.323 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m0.362 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m0.496 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.285 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.326 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.232 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.267 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.269 ms - -[0m
+[0mGET /javascripts/app/views/authenticateView.html [36m304 [0m0.217 ms - -[0m
+POST addscore route
+{ Username: ';ALSDFJK A', Score: 1 }
+{ _id: 56f16aa1b950949e40a57b48,
+  Score: 1,
+  Username: ';ALSDFJK A' }
+1
+{ _id: 56f16aa1b950949e40a57b48,
+  Score: 1,
+  Username: ';ALSDFJK A',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.834 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m4.176 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m3.662 ms - -[0m
+POST getuser route
+{ Username: 'TYLERH', Password: '1234' }
+TYLERH
 { __v: 0,
   Password: '1234',
-  Username: 'TEST2',
-  _id: 56ece68e0f8cf25907883a25 }
+  Username: 'TYLERH',
+  _id: 56ee332f656bd3de12263c10 }
+found you!
+[0mPOST /getuser [32m200 [0m1.755 ms - 2[0m
+POST getuser route
+{ Username: 'TYLERH', Password: '1234' }
+TYLERH
 { __v: 0,
   Password: '1234',
-  Username: 'TEST2',
-  _id: 56ece68e0f8cf25907883a25 }
-[0mPOST /adduser [31m500 [0m3.043 ms - 21[0m
-[0mPOST /adduser [31m500 [0m2.313 ms - 21[0m
+  Username: 'TYLERH',
+  _id: 56ee332f656bd3de12263c10 }
+found you!
+[0mPOST /getuser [32m200 [0m1.230 ms - 2[0m
+[0mGET /javascripts/app/views/gameView.html [36m304 [0m0.470 ms - -[0m
+POST addscore route
+{ Username: ';ALSDFJK A', Score: 2 }
+{ _id: 56f16aabb950949e40a57b49,
+  Score: 2,
+  Username: ';ALSDFJK A' }
+2
+{ _id: 56f16aabb950949e40a57b49,
+  Score: 2,
+  Username: ';ALSDFJK A',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.302 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m5.134 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m5.086 ms - -[0m
+POST addscore route
+{ Username: 'TYLERH', Score: 2 }
+{ _id: 56f16aaeb950949e40a57b4a, Score: 2, Username: 'TYLERH' }
+2
+{ _id: 56f16aaeb950949e40a57b4a,
+  Score: 2,
+  Username: 'TYLERH',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.280 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [36m304 [0m0.325 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m4.621 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m4.138 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m4.667 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m3.587 ms - -[0m
+[0mGET / [36m304 [0m0.381 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.281 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.204 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.551 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m0.190 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m0.868 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.261 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.200 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.225 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.254 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.353 ms - -[0m
+[0mGET /javascripts/app/views/authenticateView.html [36m304 [0m0.248 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m2.243 ms - 1875[0m
+POST adduser route
+{ Username: 'J', Password: 'M' }
+POST adduser route
+{ Username: 'J', Password: 'M' }
+null
+{ _id: 56f16b0bb950949e40a57b4b, Password: 'M', Username: 'J' }
+J
+null
+{ _id: 56f16b0bb950949e40a57b4c, Password: 'M', Username: 'J' }
+J
+{ _id: 56f16b0bb950949e40a57b4b,
+  Password: 'M',
+  Username: 'J',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m5.002 ms - 2[0m
+{ _id: 56f16b0bb950949e40a57b4c,
+  Password: 'M',
+  Username: 'J',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m5.366 ms - 2[0m
+[0mGET /javascripts/app/views/gameView.html [32m200 [0m0.525 ms - 259[0m
+POST addscore route
+{ Username: 'J', Score: 1 }
+{ _id: 56f16b10b950949e40a57b4d, Score: 1, Username: 'J' }
+1
+{ _id: 56f16b10b950949e40a57b4d, Score: 1, Username: 'J', __v: 0 }
+[0mPOST /addscore [32m200 [0m3.010 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [32m200 [0m0.598 ms - 569[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [32m200 [0m4.428 ms - 653[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m3.749 ms - -[0m
+POST addscore route
+{ Username: 'J', Score: 1 }
+{ _id: 56f16b14b950949e40a57b4e, Score: 1, Username: 'J' }
+1
+{ _id: 56f16b14b950949e40a57b4e, Score: 1, Username: 'J', __v: 0 }
+[0mPOST /addscore [32m200 [0m2.242 ms - 2[0m
+[0mGET / [32m200 [0m1.263 ms - 1270[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m4.789 ms - 121260[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.453 ms - 1339[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m1.311 ms - 97362[0m
+[0mGET /javascripts/app/app.js [32m200 [0m0.503 ms - 625[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m0.438 ms - 3853[0m
+[0mGET /javascripts/angular-route.js [32m200 [0m0.377 ms - 36921[0m
+[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m0.429 ms - 11815[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m0.367 ms - 580[0m
+[0mGET /javascripts/angular.js [32m200 [0m1.117 ms - 1065760[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.559 ms - 51916[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.526 ms - 3072[0m
+[0mGET /favicon.ico [33m404 [0m1.898 ms - 1875[0m
+[0mGET / [36m304 [0m0.362 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.423 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.205 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.279 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m0.201 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m0.196 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.206 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m1.104 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.230 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.338 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m0.209 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.490 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.254 ms - -[0m
+[0mGET /javascripts/app/views/authenticateView.html [36m304 [0m0.247 ms - -[0m
+[0mGET / [32m200 [0m0.627 ms - 1270[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.360 ms - 1339[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m0.536 ms - 121260[0m
+[0mGET /javascripts/app/app.js [32m200 [0m0.443 ms - 625[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m0.362 ms - 3853[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m0.422 ms - 97362[0m
+[0mGET /javascripts/angular-route.js [32m200 [0m0.556 ms - 36921[0m
+[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m0.440 ms - 11815[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m0.354 ms - 580[0m
+[0mGET /javascripts/angular.js [32m200 [0m0.311 ms - 1065760[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.508 ms - 51916[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.530 ms - 3072[0m
+[0mGET /favicon.ico [33m404 [0m1.545 ms - 1875[0m
+[0mGET / [32m200 [0m0.491 ms - 1270[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.321 ms - 1339[0m
+[0mGET /javascripts/app/app.js [32m200 [0m0.604 ms - 625[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m0.501 ms - 121260[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m0.448 ms - 3853[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m0.411 ms - 97362[0m
+[0mGET /javascripts/angular-route.js [32m200 [0m0.685 ms - 36921[0m
+[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m0.366 ms - 11815[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m0.350 ms - 580[0m
+[0mGET /javascripts/angular.js [32m200 [0m0.415 ms - 1065760[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.508 ms - 51916[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.517 ms - 3072[0m
+[0mGET /favicon.ico [33m404 [0m1.027 ms - 1875[0m
+POST adduser route
+{ Username: 'STEPH', Password: 'CHICKENJOE' }
+POST adduser route
+{ Username: 'STEPH', Password: 'CHICKENJOE' }
+null
+{ _id: 56f16c1fb950949e40a57b4f,
+  Password: 'CHICKENJOE',
+  Username: 'STEPH' }
+STEPH
+null
+{ _id: 56f16c1fb950949e40a57b50,
+  Password: 'CHICKENJOE',
+  Username: 'STEPH' }
+STEPH
+{ _id: 56f16c1fb950949e40a57b50,
+  Password: 'CHICKENJOE',
+  Username: 'STEPH',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m4.172 ms - 2[0m
+{ _id: 56f16c1fb950949e40a57b4f,
+  Password: 'CHICKENJOE',
+  Username: 'STEPH',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m6.435 ms - 2[0m
+[0mGET /javascripts/app/views/gameView.html [32m200 [0m0.493 ms - 259[0m
+POST addscore route
+{ Username: 'STEPH', Score: 1 }
+{ _id: 56f16c24b950949e40a57b51, Score: 1, Username: 'STEPH' }
+1
+{ _id: 56f16c24b950949e40a57b51,
+  Score: 1,
+  Username: 'STEPH',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.289 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [32m200 [0m0.479 ms - 569[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [32m200 [0m4.123 ms - 653[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 },
+  { Score: 23, Username: 'JJAY', _id: 56f1683eb950949e40a57b2c } ]
+[0mGET /getHighScores [36m304 [0m3.888 ms - -[0m
+POST addscore route
+{ Username: 'STEPH', Score: 1 }
+{ _id: 56f16c27b950949e40a57b52, Score: 1, Username: 'STEPH' }
+1
+{ _id: 56f16c27b950949e40a57b52,
+  Score: 1,
+  Username: 'STEPH',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.090 ms - 2[0m
+POST addscore route
+{ Username: 'STEPH', Score: 29 }
+{ _id: 56f16c58b950949e40a57b53, Score: 29, Username: 'STEPH' }
+29
+{ _id: 56f16c58b950949e40a57b53,
+  Score: 29,
+  Username: 'STEPH',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m1.888 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 29, Username: 'STEPH', _id: 56f16c58b950949e40a57b53 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 } ]
+[0mGET /getHighScores [32m200 [0m4.524 ms - 654[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 29, Username: 'STEPH', _id: 56f16c58b950949e40a57b53 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 } ]
+[0mGET /getHighScores [36m304 [0m3.906 ms - -[0m
+[0mGET / [36m304 [0m1.075 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.334 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.208 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.229 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m0.190 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m0.198 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.180 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.211 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.234 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.217 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.373 ms - -[0m
+[0mGET /javascripts/app/views/authenticateView.html [36m304 [0m0.350 ms - -[0m
+POST addscore route
+{ Username: 'TYLERH', Score: 15 }
+{ _id: 56f16c76b950949e40a57b54, Score: 15, Username: 'TYLERH' }
+15
+{ _id: 56f16c76b950949e40a57b54,
+  Score: 15,
+  Username: 'TYLERH',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.070 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 29, Username: 'STEPH', _id: 56f16c58b950949e40a57b53 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 } ]
+[0mGET /getHighScores [32m200 [0m3.661 ms - 654[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 29, Username: 'STEPH', _id: 56f16c58b950949e40a57b53 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 } ]
+[0mGET /getHighScores [36m304 [0m4.564 ms - -[0m
+POST adduser route
+{ Username: 'HI', Password: 'HI' }
+POST adduser route
+{ Username: 'HI', Password: 'HI' }
+null
+{ _id: 56f16cc6b950949e40a57b55, Password: 'HI', Username: 'HI' }
+HI
+null
+{ _id: 56f16cc6b950949e40a57b56, Password: 'HI', Username: 'HI' }
+HI
+{ _id: 56f16cc6b950949e40a57b56,
+  Password: 'HI',
+  Username: 'HI',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m3.176 ms - 2[0m
+{ _id: 56f16cc6b950949e40a57b55,
+  Password: 'HI',
+  Username: 'HI',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m6.412 ms - 2[0m
+[0mGET /javascripts/app/views/gameView.html [32m200 [0m0.533 ms - 259[0m
+POST addscore route
+{ Username: 'HI', Score: 1 }
+{ _id: 56f16cceb950949e40a57b57, Score: 1, Username: 'HI' }
+1
+{ _id: 56f16cceb950949e40a57b57,
+  Score: 1,
+  Username: 'HI',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m1.957 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [32m200 [0m0.550 ms - 569[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 29, Username: 'STEPH', _id: 56f16c58b950949e40a57b53 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 } ]
+[0mGET /getHighScores [32m200 [0m4.122 ms - 654[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 29, Username: 'STEPH', _id: 56f16c58b950949e40a57b53 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 } ]
+[0mGET /getHighScores [36m304 [0m4.090 ms - -[0m
+POST addscore route
+{ Username: 'HI', Score: 1 }
+{ _id: 56f16cd2b950949e40a57b58, Score: 1, Username: 'HI' }
+1
+{ _id: 56f16cd2b950949e40a57b58,
+  Score: 1,
+  Username: 'HI',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m1.994 ms - 2[0m
+POST addscore route
+{ Username: 'HI', Score: 1 }
+{ _id: 56f16cd9b950949e40a57b59, Score: 1, Username: 'HI' }
+1
+{ _id: 56f16cd9b950949e40a57b59,
+  Score: 1,
+  Username: 'HI',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m1.935 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 29, Username: 'STEPH', _id: 56f16c58b950949e40a57b53 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 } ]
+[0mGET /getHighScores [36m304 [0m3.840 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 29, Username: 'STEPH', _id: 56f16c58b950949e40a57b53 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 } ]
+[0mGET /getHighScores [36m304 [0m3.317 ms - -[0m
+[0mGET / [36m304 [0m0.309 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.369 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.219 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.231 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m0.224 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m0.176 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.164 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.867 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.172 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.189 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.323 ms - -[0m
+[0mGET /javascripts/app/views/highscoresView.html [36m304 [0m0.344 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 29, Username: 'STEPH', _id: 56f16c58b950949e40a57b53 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 } ]
+[0mGET /getHighScores [36m304 [0m3.731 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 29, Username: 'STEPH', _id: 56f16c58b950949e40a57b53 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 } ]
+[0mGET /getHighScores [36m304 [0m3.858 ms - -[0m
+[0mGET /javascripts/app/views/gameView.html [36m304 [0m0.395 ms - -[0m
+POST addscore route
+{ Username: 'Guest', Score: 1 }
+{ _id: 56f16ce4b950949e40a57b5a, Score: 1, Username: 'Guest' }
+1
+{ _id: 56f16ce4b950949e40a57b5a,
+  Score: 1,
+  Username: 'Guest',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m1.963 ms - 2[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 29, Username: 'STEPH', _id: 56f16c58b950949e40a57b53 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 } ]
+[0mGET /getHighScores [36m304 [0m4.562 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 29, Username: 'STEPH', _id: 56f16c58b950949e40a57b53 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 },
+  { Score: 26, Username: 'JOE', _id: 56f16705b950949e40a57b17 } ]
+[0mGET /getHighScores [36m304 [0m3.759 ms - -[0m
+POST addscore route
+{ Username: 'Guest', Score: 1 }
+{ _id: 56f16ce9b950949e40a57b5b, Score: 1, Username: 'Guest' }
+1
+{ _id: 56f16ce9b950949e40a57b5b,
+  Score: 1,
+  Username: 'Guest',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.008 ms - 2[0m
