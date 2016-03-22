@@ -16,11 +16,15 @@
 		    	$(".loginTab").removeClass("activeTab");
 		    	$(this).addClass("activeTab");
 		    	if ($(this).attr("id") == "createTab") {
+		    		$("#InputName3").val("");
+		        	$("#InputPassword3").val("");
 		    		$scope.$apply(function(){
 		    			$scope.showSignIn = false;
 						$scope.showCreate = true;
 					});
 		    	} else {
+		    		$("#InputName1").val("");
+		        	$("#InputPassword1").val("");
 		    		$scope.$apply(function(){
 		    			$scope.showSignIn = true;
 						$scope.showCreate = false;
@@ -63,10 +67,13 @@
 						$(".errorMsg").show();
 					});
 
-				} else if (theUsername == "") {
-					$(".missingUsername").show();
-				} else if (thePassword == "") {
-					$(".missingPassword").show();
+				} else {
+					if (theUsername == "") {
+						$(".missingUsername").show();
+					}
+					if (thePassword == "") {
+						$(".missingPassword").show();
+					}
 				}
 
 			});
@@ -99,10 +106,13 @@
 						$(".errorMsg").show();
 					});
 
-				} else if (theUsername == "") {
-					$(".missingUsername").show();
-				} else if (thePassword == "") {
-					$(".missingPassword").show();
+				} else {
+					if (theUsername == "") {
+						$(".missingUsername").show();
+					}
+					if (thePassword == "") {
+						$(".missingPassword").show();
+					}
 				}
 
 			});
