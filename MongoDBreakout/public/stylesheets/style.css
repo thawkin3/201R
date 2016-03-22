@@ -19,6 +19,10 @@ a:hover {
 	text-decoration: none;
 }
 
+p {
+	margin-bottom: 10px;
+}
+
 
 /* AUTHENTICATION */
 #tabs {
@@ -42,7 +46,7 @@ a:hover {
 	background: #337AB7;
 }
 
-.errorMsg {
+.errorMsg, .missingUsername, .missingPassword {
 	display: none;
 }
 
