@@ -16,8 +16,8 @@
 		    	$(".loginTab").removeClass("activeTab");
 		    	$(this).addClass("activeTab");
 		    	if ($(this).attr("id") == "createTab") {
-		    		$("#InputName3").val("");
-		        	$("#InputPassword3").val("");
+		    		$("#inputName3").val("");
+		        	$("#inputPassword3").val("");
 		    		$scope.$apply(function(){
 		    			$scope.showSignIn = false;
 						$scope.showCreate = true;
@@ -33,6 +33,7 @@
 		    });
 
 		    $("input").on("keyup", function(){
+		    	$("#createSubmit").removeClass("btn-danger");
 		    	$("#signInSubmit").removeClass("btn-danger");
 		    	$(".errorMsg").hide();
 		    	$(".missingUsername").hide();
