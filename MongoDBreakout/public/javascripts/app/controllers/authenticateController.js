@@ -32,7 +32,7 @@
 		    	}
 		    });
 
-		    $("input").on("keyup", function(){
+		    $("input").on("keydown", function(){
 		    	$("#createSubmit").removeClass("btn-danger");
 		    	$("#signInSubmit").removeClass("btn-danger");
 		    	$(".errorMsg").hide();
