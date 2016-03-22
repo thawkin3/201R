@@ -26,7 +26,7 @@
 
 		    $("input").on("keyup", function(){
 		    	$(".errorMsg").hide();
-		    }
+		    });
 
 		    $("#createForm").submit(function(e){
 		        var theUsername = $("#InputName1").val().toUpperCase();
