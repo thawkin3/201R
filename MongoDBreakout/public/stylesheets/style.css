@@ -42,6 +42,10 @@ a:hover {
 	background: #337AB7;
 }
 
+.errorMsg {
+	display: none;
+}
+
 @media (min-width: 992px) {
 	.container {
 	    width: 70%;
