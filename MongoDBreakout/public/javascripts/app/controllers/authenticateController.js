@@ -8,6 +8,7 @@
 		$(document).ready(function(){
 
 		    $(".loginTab").click(function(){
+		    	$(".errorMsg").hide();
 		    	$(".loginTab").removeClass("activeTab");
 		    	$(this).addClass("activeTab");
 		    	if ($(this).attr("id") == "createTab") {
@@ -22,6 +23,10 @@
 					});
 		    	}
 		    });
+
+		    $("input").on("keyup", function(){
+		    	$(".errorMsg").hide();
+		    }
 
 		    $("#createForm").submit(function(e){
 		        var theUsername = $("#InputName1").val().toUpperCase();
@@ -47,6 +52,7 @@
 				})
 				.fail(function(){
 					$("#createSubmit").addClass("btn-danger");
+					$(".errorMsg").show();
 				});
 
 			});
@@ -74,6 +80,7 @@
 				})
 				.fail(function(){
 					$("#signInSubmit").addClass("btn-danger");
+					$(".errorMsg").show();
 				});
 
 			});
