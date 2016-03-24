@@ -3,8 +3,6 @@ angular.module('comment', [])
 	'$scope', '$http',
   	function($scope, $http){
 	    
-	    $scope.test = 'Hello world!';
-	    
 	    $scope.comments = [
 			// { title: 'Comment 1', upvotes: 5 },
 			// { title: 'Comment 2', upvotes: 6 },
@@ -48,6 +46,8 @@ angular.module('comment', [])
 				comment.upvotes += 1;
 			});
 		};
+
+		$scope.getAll();
 
 	}
 ]);

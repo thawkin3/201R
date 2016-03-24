@@ -21,15 +21,11 @@
 					<button type="submit">Add Comment</button>
 				</form>
 
-				<div>
-					{{test}}
-				</div>
-
 				<div ng-repeat="comment in comments | orderBy: '-upvotes'">
 					<span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(comment)"></span>
 					{{comment.title}} - upvotes: {{comment.upvotes}}
 				</div>
-				
+
 			</div>
 		</div>
 
