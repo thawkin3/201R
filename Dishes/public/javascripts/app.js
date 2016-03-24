@@ -9,7 +9,7 @@ angular.module('dish', [])
     		if($scope.formContent === '') { return; }
 			console.log("In addComment with "+$scope.formContent);
 			$scope.create({
-				title: $scope.formContent,
+				name: $scope.formContent,
 				upvotes: 0,
 			});
 			$scope.formContent = '';
