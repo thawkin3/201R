@@ -4199,3 +4199,16 @@ In high score route
   { Score: 29, Username: 'STEPH', _id: 56f16c58b950949e40a57b53 },
   { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 } ]
 [0mGET /getHighScores [36m304 [0m3.680 ms - -[0m
+[0mGET / [32m200 [0m0.574 ms - 1270[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.826 ms - 1339[0m
+[0mGET /javascripts/angular-route.js [32m200 [0m0.311 ms - 36921[0m
+[0mGET /javascripts/app/app.js [32m200 [0m0.454 ms - 625[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m0.447 ms - 97362[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m0.938 ms - 121260[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m0.451 ms - 3853[0m
+[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m0.463 ms - 11815[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m0.460 ms - 580[0m
+[0mGET /javascripts/angular.js [32m200 [0m0.411 ms - 1065760[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.533 ms - 51916[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.468 ms - 3072[0m
+[0mGET /favicon.ico [33m404 [0m1.202 ms - 1875[0m
