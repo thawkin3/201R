@@ -4,7 +4,7 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var Dish = mongoose.model('Dish');
 
-/* GET comments */
+/* GET dishes */
 router.get('/dishes', function(req, res, next) {
   Dish.find(function(err, dishes){
     if(err){ return next(err); }
@@ -12,7 +12,7 @@ router.get('/dishes', function(req, res, next) {
   });
 });
 
-/* POST a comment */
+/* POST a dish */
 router.post('/dishes', function(req, res, next) {
   var dish = new Dish(req.body);
   dish.save(function(err, dish){
@@ -32,12 +32,12 @@ router.param('dish', function(req, res, next, id) {
   });
 });
 
-/* GET a single comment */
+/* GET a single dish */
 router.get('/dishes/:dish', function(req, res) {
   res.json(req.dish);
 });
 
-/* PUT an upvote on a comment */
+/* PUT an upvote on a dish */
 router.put('/dishes/:dish/upvote', function(req, res, next) {
   req.dish.upvote(function(err, dish){
     if (err) { return next(err); }

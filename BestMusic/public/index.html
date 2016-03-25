@@ -1,0 +1,38 @@
+<html>
+
+	<head>
+		<title>Best Music</title>
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+		<script src="javascripts/app.js"></script>
+	</head>
+
+	<body ng-app="song" ng-controller="MainCtrl">
+	
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				
+				<div class="page-header"> 
+					<h1>Best Music</h1>
+				</div>
+
+				<form ng-submit="addSong()" style = "margin-top30px;">
+					Song Title: <input type="text" ng-model="title"></input><br/>
+					Artist: <input type="text" ng-model="artist"></input><br/>
+					Album: <input type="text" ng-model="album"></input><br/>
+					Genre: <input type="text" ng-model="genre"></input><br/>
+					Album Artwork URL: <input type="text" ng-model="art"></input><br/>
+					<button type="submit">Add Song</button>
+				</form>
+
+				<div ng-repeat="song in songs | orderBy: ['genre', '-upvotes']">
+					<span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(song)"></span>
+					"{{song.title}}" by {{song.artist}} as heard on <i>{{song.album}}</i> ({{song.genre}}) <img ng-src='{{song.art}}' height=50 /> - upvotes: {{song.upvotes}}
+				</div>
+
+			</div>
+		</div>
+
+	</body>
+
+</html>

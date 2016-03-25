@@ -7,7 +7,7 @@ angular.module('dish', [])
 
 	    $scope.addDish = function() {
     		if($scope.name === '' || $scope.type === '') { return; }
-			console.log("In addComment with " + $scope.name + " and " + $scope.type);
+			console.log("In addDish with " + $scope.name + " and " + $scope.type);
 			$scope.create({
 				name: $scope.name,
 				type: $scope.type,
