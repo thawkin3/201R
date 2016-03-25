@@ -6,17 +6,19 @@ angular.module('dish', [])
 	    $scope.dishes = [];
 
 	    $scope.addDish = function() {
-    		if($scope.formContent === '') { return; }
-			console.log("In addComment with "+$scope.formContent);
+    		if($scope.name === '' || $scope.type === '') { return; }
+			console.log("In addComment with " + $scope.name + " and " + $scope.type);
 			$scope.create({
-				name: $scope.formContent,
+				name: $scope.name,
+				type: $scope.type,
 				upvotes: 0,
 			});
-			$scope.formContent = '';
+			$scope.name = '';
+			$scope.type = '';
     	};
 
-    	$scope.incrementUpvotes = function(comment) {
-    		$scope.upvote(comment);
+    	$scope.incrementUpvotes = function(dish) {
+    		$scope.upvote(dish);
     	};
 
     	$scope.getAll = function() {
