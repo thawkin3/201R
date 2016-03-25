@@ -22,9 +22,9 @@
 					<button type="submit">Add Dish</button>
 				</form>
 
-				<div ng-repeat="dish in dishes | orderBy: '-upvotes'">
+				<div ng-repeat="dish in dishes | orderBy: ['-upvotes', 'type']">
 					<span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(dish)"></span>
-					{{dish.name}} - upvotes: {{dish.upvotes}}
+					{{dish.name}} - {{dish.type}} -  upvotes: {{dish.upvotes}}
 				</div>
 
 			</div>
