@@ -4212,3 +4212,126 @@ In high score route
 [0mGET /stylesheets/zig.ttf [32m200 [0m0.533 ms - 51916[0m
 [0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.468 ms - 3072[0m
 [0mGET /favicon.ico [33m404 [0m1.202 ms - 1875[0m
+[0mGET / [32m200 [0m3.440 ms - 1270[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.296 ms - 1339[0m
+[0mGET /javascripts/app/app.js [32m200 [0m0.668 ms - 625[0m
+[0mGET /javascripts/angular-route.js [32m200 [0m0.797 ms - 36921[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m0.564 ms - 121260[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [32m200 [0m0.459 ms - 3853[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m0.656 ms - 97362[0m
+[0mGET /javascripts/app/controllers/gameController.js [32m200 [0m1.033 ms - 11815[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [32m200 [0m0.339 ms - 580[0m
+[0mGET /javascripts/angular.js [32m200 [0m0.833 ms - 1065760[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.588 ms - 51916[0m
+[0mGET /javascripts/app/views/authenticateView.html [32m200 [0m0.517 ms - 3072[0m
+[0mGET /favicon.ico [33m404 [0m1.132 ms - 1875[0m
+POST adduser route
+{ Username: 'ME', Password: 'ME' }
+POST adduser route
+{ Username: 'ME', Password: 'ME' }
+null
+{ _id: 56f6b052b950949e40a57b74, Password: 'ME', Username: 'ME' }
+ME
+{ _id: 56f6b052b950949e40a57b74,
+  Password: 'ME',
+  Username: 'ME',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m12.327 ms - 2[0m
+null
+{ _id: 56f6b052b950949e40a57b75, Password: 'ME', Username: 'ME' }
+ME
+{ _id: 56f6b052b950949e40a57b75,
+  Password: 'ME',
+  Username: 'ME',
+  __v: 0 }
+[0mPOST /adduser [32m200 [0m15.114 ms - 2[0m
+[0mGET /javascripts/app/views/gameView.html [32m200 [0m1.259 ms - 259[0m
+POST addscore route
+{ Username: 'ME', Score: 1 }
+{ _id: 56f6b058b950949e40a57b76, Score: 1, Username: 'ME' }
+1
+{ _id: 56f6b058b950949e40a57b76,
+  Score: 1,
+  Username: 'ME',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m3.665 ms - 2[0m
+POST addscore route
+{ Username: 'ME', Score: 1 }
+{ _id: 56f6b058b950949e40a57b77, Score: 1, Username: 'ME' }
+1
+{ _id: 56f6b058b950949e40a57b77,
+  Score: 1,
+  Username: 'ME',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m1.755 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [32m200 [0m1.106 ms - 569[0m
+In high score route
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 34, Username: 'BATMAN', _id: 56f176e0b950949e40a57b72 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 29, Username: 'STEPH', _id: 56f16c58b950949e40a57b53 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 } ]
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 34, Username: 'BATMAN', _id: 56f176e0b950949e40a57b72 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 29, Username: 'STEPH', _id: 56f16c58b950949e40a57b53 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 } ]
+[0mGET /getHighScores [32m200 [0m7.226 ms - 657[0m
+[0mGET /getHighScores [32m200 [0m8.500 ms - 657[0m
+[0mGET / [36m304 [0m0.374 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.616 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.532 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.606 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m0.546 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m0.590 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.179 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.214 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.225 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.187 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.337 ms - -[0m
+[0mGET /javascripts/app/views/gameView.html [36m304 [0m0.333 ms - -[0m
+POST addscore route
+{ Username: 'Guest', Score: 11 }
+{ _id: 56f6b089b950949e40a57b78, Score: 11, Username: 'Guest' }
+11
+{ _id: 56f6b089b950949e40a57b78,
+  Score: 11,
+  Username: 'Guest',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.776 ms - 2[0m
+[0mGET /javascripts/app/views/highscoresView.html [36m304 [0m0.297 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 34, Username: 'BATMAN', _id: 56f176e0b950949e40a57b72 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 29, Username: 'STEPH', _id: 56f16c58b950949e40a57b53 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 } ]
+[0mGET /getHighScores [36m304 [0m3.577 ms - -[0m
+In high score route
+[ { Score: 144, Username: 'Guest', _id: 56ee3835202f106315dc82c2 },
+  { Score: 81, Username: 'TYLERH', _id: 56ef7e810606af7d33f98762 },
+  { Score: 80, Username: 'Guest', _id: 56ef5a25af9d840027034418 },
+  { Score: 52, Username: 'TYLERH', _id: 56ef7ddc0606af7d33f98761 },
+  { Score: 49, Username: 'TYLERH', _id: 56f164b7b950949e40a57b03 },
+  { Score: 34, Username: 'BATMAN', _id: 56f176e0b950949e40a57b72 },
+  { Score: 32, Username: 'TYLERH', _id: 56ef7d6f0606af7d33f98760 },
+  { Score: 30, Username: 'Guest', _id: 56f1647cb950949e40a57b02 },
+  { Score: 29, Username: 'STEPH', _id: 56f16c58b950949e40a57b53 },
+  { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 } ]
+[0mGET /getHighScores [36m304 [0m3.871 ms - -[0m
