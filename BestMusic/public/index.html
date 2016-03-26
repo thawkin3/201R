@@ -80,7 +80,7 @@
 	                    <th>Album Art</th>
 	                </tr>
 	                <tr ng-repeat="song in songs | orderBy: ['genre', '-upvotes', 'artist', 'album', 'title']">
-	                    <td>{{ song.upvotes }}</td>
+	                    <td><span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(song)"></span>  {{ song.upvotes }}</td>
 	                    <td>{{ song.title }}</td>
 	                    <td>{{ song.artist }}</td>
 	                    <td>{{ song.album }}</td>

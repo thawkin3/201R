@@ -7,10 +7,18 @@ a {
 	color: #00B7FF;
 }
 
-.oneSong {
-	display: block;
-	padding: 10px 20px;
-	margin-bottom: 10px;
-	border-radius: 10px;
-	background: #ccc;
+td, th {
+    padding: 10px 20px;
+    width: 150px;
+}
+
+table thead tr {
+	background-color: #ddd;
+}
+
+table tbody tr:nth-child(odd) {
+	background-color: #f1f1f1;
+}
+table tbody tr:nth-child(even) {
+	background-color: #ddd;
 }
