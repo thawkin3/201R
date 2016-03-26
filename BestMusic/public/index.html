@@ -61,12 +61,33 @@
 					</div>
 				</form>
 
+				<!--
 				<div ng-repeat="song in songs | orderBy: ['genre', '-upvotes', 'artist', 'album', 'title']">
 					<div class="oneSong">
 						<span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(song)"></span>
 					<b>"{{song.title}}"</b> by {{song.artist}} as heard on <i>{{song.album}}</i> ({{song.genre}}) <img ng-src='{{song.art}}' height=50 /> - upvotes: {{song.upvotes}}
 					</div>
 				</div>
+				-->
+
+				<table>
+	                <tr>
+	                	<th>Upvotes</th>
+	                    <th>Title</th>
+	                    <th>Artist</th>
+	                    <th>Album</th>
+	                    <th>Genre</th>
+	                    <th>Album Art</th>
+	                </tr>
+	                <tr ng-repeat="song in songs | orderBy: ['genre', '-upvotes', 'artist', 'album', 'title']">
+	                    <td>{{ song.upvotes }}</td>
+	                    <td>{{ song.title }}</td>
+	                    <td>{{ song.artist }}</td>
+	                    <td>{{ song.album }}</td>
+	                    <td>{{ song.genre }}</td>
+	                    <td><img ng-src='{{song.art}}' height=50 /></td>
+	                </tr>
+            	</table>
 
 			</div>
 		</div>
