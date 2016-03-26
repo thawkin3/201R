@@ -4335,3 +4335,15 @@ In high score route
   { Score: 29, Username: 'STEPH', _id: 56f16c58b950949e40a57b53 },
   { Score: 28, Username: 'Guest', _id: 56ef6e873b2501902fcfe450 } ]
 [0mGET /getHighScores [36m304 [0m3.871 ms - -[0m
+[0mGET / [36m304 [0m1.083 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.350 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.232 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.220 ms - -[0m
+[0mGET /javascripts/angular.js [36m304 [0m0.196 ms - -[0m
+[0mGET /javascripts/angular-route.js [36m304 [0m0.191 ms - -[0m
+[0mGET /javascripts/app/app.js [36m304 [0m0.254 ms - -[0m
+[0mGET /javascripts/app/controllers/authenticateController.js [36m304 [0m0.204 ms - -[0m
+[0mGET /javascripts/app/controllers/gameController.js [36m304 [0m0.224 ms - -[0m
+[0mGET /javascripts/app/controllers/highscoresController.js [36m304 [0m0.216 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.324 ms - -[0m
+[0mGET /javascripts/app/views/authenticateView.html [36m304 [0m1.810 ms - -[0m
