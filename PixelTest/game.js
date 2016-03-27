@@ -101,7 +101,7 @@ function onClientDisconnect() {
 	this.broadcast.emit("remove player", {id: this.id});
 
 	// Broadcast removed player to connected socket clients
-	// this.broadcast.emit("remove ball", {id: this.id});
+	this.broadcast.emit("remove ball", {id: this.id});
 };
 
 // New player has joined

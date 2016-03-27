@@ -109,7 +109,7 @@ var setEventHandlers = function() {
 	// socket.on("move ball", onMoveBall);
 
 	// Ball removed message received
-	// socket.on("remove ball", onRemoveBall);
+	socket.on("remove ball", onRemoveBall);
 
 };
 
