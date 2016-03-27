@@ -61,6 +61,10 @@ p {
 
 
 /* GAME */
+#gameDiv {
+	margin-top: -30px;
+}
+
 #theGameCanvas {
 	height: 500px;
 	width: 410px;
@@ -71,7 +75,8 @@ p {
 
 h1 {
 	letter-spacing: 12px;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
+	margin-top: 0px;
 }
 
 #yourScore {
