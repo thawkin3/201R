@@ -106,7 +106,7 @@ var setEventHandlers = function() {
 	socket.on("new ball", onNewBall);
 
 	// Ball move message received
-	// socket.on("move ball", onMoveBall);
+	socket.on("move ball", onMoveBall);
 
 	// Ball removed message received
 	socket.on("remove ball", onRemoveBall);

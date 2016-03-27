@@ -76,7 +76,7 @@ function onSocketConnection(client) {
 	client.on("new ball", onNewBall);
 
 	// Listen for move ball message
-	// client.on("move ball", onMoveBall);
+	client.on("move ball", onMoveBall);
 };
 
 // Socket client has disconnected
