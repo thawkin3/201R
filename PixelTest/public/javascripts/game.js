@@ -59,7 +59,7 @@ function init() {
 	localPlayer = new Player(startX, startY, startSize, startColor);	// TESTING!
 
 	// Initialize the local ball
-	localBall = new Ball(ballX, ballY);
+	ball = new Ball(ballX, ballY);
 
 	// Initialize socket connection
 	socket = io.connect("http://54.200.192.157", {port: 3005, transports: ["websocket"]});
