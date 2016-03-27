@@ -34,8 +34,6 @@ function init() {
 	// Create the red ball
 	var ballX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
 	var ballY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
-	// ball = new Ball(ballX, ballY);
-	// console.log(ball);
 
 	// Maximize the canvas
 	//canvas.width = window.innerWidth;
@@ -59,7 +57,7 @@ function init() {
 	localPlayer = new Player(startX, startY, startSize, startColor);	// TESTING!
 
 	// Initialize the local ball
-	ball = new Ball(ballX, ballY);
+	localBall = new Ball(ballX, ballY);
 
 	// Initialize socket connection
 	socket = io.connect("http://54.200.192.157", {port: 3005, transports: ["websocket"]});
@@ -146,7 +144,7 @@ function onSocketConnected() {
 	socket.emit("new player", { x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
 
 	// Send local ball data to the game server
-	socket.emit("new ball", { x: ball.getX(), y: ball.getY(), dx: ball.getDX(), dy: ball.getDY(), color: ball.getColor() });
+	socket.emit("new ball", { x: localBall.getX(), y: localBall.getY(), dx: localBall.getDX(), dy: localBall.getDY(), color: localBall.getColor() });
 };
 
 // Socket disconnected
