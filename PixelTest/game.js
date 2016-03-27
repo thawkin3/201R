@@ -4,7 +4,7 @@
 var util = require("util");					// Utility resources (logging, object inspection, etc)
 var io = require("socket.io");				// Socket.IO
 var Player = require("./Player").Player;	// Player class
-// var Ball = require("./Ball").Ball;			// Ball class
+var Ball = require("./Ball").Ball;			// Ball class
 
 
 /**************************************************
@@ -214,7 +214,7 @@ function playerById(id) {
 	return false;
 };
 
-/*
+
 // Find ball by ID
 function ballById(id) {
 	console.log(balls);
@@ -226,7 +226,7 @@ function ballById(id) {
 	
 	return false;
 };
-*/
+
 
 
 /**************************************************

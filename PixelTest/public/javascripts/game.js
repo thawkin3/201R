@@ -313,7 +313,7 @@ function playerById(id) {
 	return false;
 };
 
-/*
+
 // Find ball by ID
 function ballById(id) {
 	for (var i = 0; i < remoteBalls.length; i++) {
@@ -323,7 +323,7 @@ function ballById(id) {
 	
 	return false;
 };
-*/
+
 
 // Sort order of players by size
 function sortPlayers(a, b) {
