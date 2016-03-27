@@ -292,7 +292,7 @@ function draw() {
 
 	// TESTING!
 	// Put the local and the remote balls together
-	var allBalls = remoteBalls.concat(ball);
+	var allBalls = remoteBalls.concat(localBall);
 
 	// Draw all the balls
 	for (var i = 0; i < allBalls.length; i++) {
