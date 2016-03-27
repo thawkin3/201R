@@ -1,8 +1,11 @@
+/* FONT */
 @font-face {
     font-family: zig;
     src: url('zig.ttf');
 }
 
+
+/* GENERAL */
 body {
   padding: 10px;
   font-family: zig, "Lucida Grande", Helvetica, Arial, sans-serif;

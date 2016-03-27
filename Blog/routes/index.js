@@ -4,6 +4,17 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var Comment = mongoose.model('Comment');
 
+/* Helper Param */
+router.param('comment', function(req, res, next, id) {
+  var query = Comment.findById(id);
+  query.exec(function (err, comment){
+    if (err) { return next(err); }
+    if (!comment) { return next(new Error("can't find comment")); }
+    req.comment = comment;
+    return next();
+  });
+});
+
 /* GET comments */
 router.get('/comments', function(req, res, next) {
   Comment.find(function(err, comments){
@@ -21,16 +32,7 @@ router.post('/comments', function(req, res, next) {
   });
 });
 
-/* Helper Param */
-router.param('comment', function(req, res, next, id) {
-  var query = Comment.findById(id);
-  query.exec(function (err, comment){
-    if (err) { return next(err); }
-    if (!comment) { return next(new Error("can't find comment")); }
-    req.comment = comment;
-    return next();
-  });
-});
+
 
 /* GET a single comment */
 router.get('/comments/:comment', function(req, res) {
