@@ -73,7 +73,7 @@ function onSocketConnection(client) {
 	client.on("move player", onMovePlayer);
 
 	// Listen for new ball message
-	// client.on("new ball", onNewBall);
+	client.on("new ball", onNewBall);
 
 	// Listen for move ball message
 	// client.on("move ball", onMoveBall);

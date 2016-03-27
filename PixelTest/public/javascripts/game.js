@@ -102,7 +102,7 @@ var setEventHandlers = function() {
 	socket.on("remove player", onRemovePlayer);
 
 	// New ball message received
-	// socket.on("new ball", onNewBall);
+	socket.on("new ball", onNewBall);
 
 	// Ball move message received
 	// socket.on("move ball", onMoveBall);
@@ -291,12 +291,12 @@ function draw() {
 
 	// TESTING!
 	// Put the local and the remote balls together
-	// var allBalls = remoteBalls.concat(ball);
+	var allBalls = remoteBalls.concat(ball);
 
 	// Draw all the balls
-	// for (var i = 0; i < allBalls.length; i++) {
-	// 	allBalls[i].draw(ctx);
-	// };
+	for (var i = 0; i < allBalls.length; i++) {
+		allBalls[i].draw(ctx);
+	};
 };
 
 
