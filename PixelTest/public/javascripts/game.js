@@ -32,8 +32,8 @@ function init() {
 
 	// TESTING!
 	// Create the red ball
-	// var ballX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
-	// var ballY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
+	var ballX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
+	var ballY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
 	// ball = new Ball(ballX, ballY);
 	// console.log(ball);
 
@@ -57,6 +57,9 @@ function init() {
 
 	// Initialize the local player
 	localPlayer = new Player(startX, startY, startSize, startColor);	// TESTING!
+
+	// Initialize the local ball
+	localBall = new Ball(ballX, ballY);
 
 	// Initialize socket connection
 	socket = io.connect("http://54.200.192.157", {port: 3005, transports: ["websocket"]});

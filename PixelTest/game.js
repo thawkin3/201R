@@ -164,13 +164,6 @@ function onNewBall(data) {
 	// Broadcast new ball to connected socket clients
 	this.broadcast.emit("new ball", { id: newBall.id, x: newBall.getX(), y: newBall.getY(), dx: newBall.getDX(), dy: newBall.getDY() });
 
-	// Send existing balls to the new ball
-	var i, existingBall;
-	for (i = 0; i < balls.length; i++) {
-		existingBall = balls[i];
-		this.emit("new ball", { id: existingBall.id, x: existingBall.getX(), y: existingBall.getY(), dx: existingBall.getDX(), dy: existingBall.getDY() });
-	};
-
 	// TEST
 	console.log("new Ball:" + newBall);
 		
@@ -179,6 +172,15 @@ function onNewBall(data) {
 
 	// TEST
 	console.log(balls);
+
+	// Send existing balls to the new ball
+	var i, existingBall;
+	for (i = 0; i < balls.length; i++) {
+		existingBall = balls[i];
+		this.emit("new ball", { id: existingBall.id, x: existingBall.getX(), y: existingBall.getY(), dx: existingBall.getDX(), dy: existingBall.getDY() });
+	};
+
+	
 };
 
 // Ball has moved
