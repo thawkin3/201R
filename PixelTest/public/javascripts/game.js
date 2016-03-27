@@ -259,9 +259,9 @@ function update() {
 	};
 	// TESTING!
 	// need to emit an event here that the ball is moving. maybe?
-	// if (ball.update()) {
-	// 	socket.emit("move ball", { x: ball.getX(), y: ball.getY(), dx: ball.getDX(), dy: ball.getDY(), color: ball.getColor() });
-	// }
+	if (ball.update()) {
+		socket.emit("move ball", { x: ball.getX(), y: ball.getY(), dx: ball.getDX(), dy: ball.getDY(), color: ball.getColor() });
+	}
 };
 
 
