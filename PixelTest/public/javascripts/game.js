@@ -200,7 +200,7 @@ function onRemovePlayer(data) {
 
 };
 
-/*
+
 // New ball
 function onNewBall(data) {
 	console.log("New ball connected: " + data.id);
@@ -232,7 +232,7 @@ function onRemoveBall(data) {
 	remoteBalls.splice(remoteBalls.indexOf(removeBall), 1);
 
 };
-*/
+
 
 
 /**************************************************

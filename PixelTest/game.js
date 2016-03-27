@@ -152,7 +152,7 @@ function onMovePlayer(data) {
 	this.broadcast.emit("move player", { id: movePlayer.id, x: movePlayer.getX(), y: movePlayer.getY(), size: movePlayer.getSize(), color: movePlayer.getColor() });
 };
 
-/*
+
 // New ball has joined
 function onNewBall(data) {
 	// Create a new ball
@@ -190,15 +190,15 @@ function onMoveBall(data) {
 	console.log("moveBall: " + JSON.stringify(moveBall));
 
 	// Update ball position
-	//moveBall.setX(data.x);
-	//moveBall.setY(data.y);
-	//moveBall.setDX(data.dx);	// Updates the speed that is shown to the other players
-	//moveBall.setDY(data.dy);	// Updates the speed that is shown to the other players
+	moveBall.setX(data.x);
+	moveBall.setY(data.y);
+	moveBall.setDX(data.dx);	// Updates the speed that is shown to the other players
+	moveBall.setDY(data.dy);	// Updates the speed that is shown to the other players
 
 	// Broadcast updated position to connected socket clients
 	this.broadcast.emit("move ball", { id: moveBall.id, x: moveBall.getX(), y: moveBall.getY(), dx: moveBall.getDX(), dy: moveBall.getDY() });
 };
-*/
+
 
 
 /**************************************************
