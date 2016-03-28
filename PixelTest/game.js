@@ -180,6 +180,7 @@ function onNewBall(data) {
 	balls.push(newBall);
 
 	// TEST
+	console.log("balls array on next line:");
 	console.log(balls);
 	
 
@@ -223,7 +224,7 @@ function playerById(id) {
 // Find ball by ID
 function ballById(id) {
 	console.log(balls);
-	console.log(balls.length);
+	console.log("balls array length: " + balls.length);
 	for (var i = 0; i < balls.length; i++) {
 		if (balls[i].id == id)
 			return balls[i];

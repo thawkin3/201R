@@ -262,9 +262,9 @@ function update() {
 	// ERROR IN THE TERMINAL SHOWS THAT THE BALLS ARRAY IS EMPTY AND THAT MOVEBALL IS FALSE
 	// FIX THAT AND YOU SHOULD BE GOOD
 	// need to emit an event here that the ball is moving. maybe?
-	// if (localBall.update()) {
-	// 	socket.emit("move ball", { x: localBall.getX(), y: localBall.getY(), dx: localBall.getDX(), dy: localBall.getDY(), color: localBall.getColor() });
-	// }
+	if (localBall.update()) {
+		socket.emit("move ball", { x: localBall.getX(), y: localBall.getY(), dx: localBall.getDX(), dy: localBall.getDY(), color: localBall.getColor() });
+	}
 };
 
 
