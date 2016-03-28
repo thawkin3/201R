@@ -58,6 +58,8 @@ var Ball = function(startX, startY) {
 
 	// Update ball position
 	var update = function() {
+		setTimeout(function(){
+
 		// Previous position
 		var prevX = x;
 		var prevY = y;
@@ -75,6 +77,8 @@ var Ball = function(startX, startY) {
 	    if ((y + radius > canvas.height) || (y - radius < 0)) { 
 	    	dy = -dy; 
 	    }
+
+	}, 3000);
 
 		return true;
 	};

@@ -263,9 +263,9 @@ function update() {
 	// FIX THAT AND YOU SHOULD BE GOOD
 	// need to emit an event here that the ball is moving. maybe?
 	// this if statement is always true
-	// if (localBall.update()) {
-	// 	socket.emit("move ball", { x: localBall.getX(), y: localBall.getY(), dx: localBall.getDX(), dy: localBall.getDY(), color: localBall.getColor() });
-	// }
+	if (localBall.update()) {
+		socket.emit("move ball", { x: localBall.getX(), y: localBall.getY(), dx: localBall.getDX(), dy: localBall.getDY(), color: localBall.getColor() });
+	}
 };
 
 
