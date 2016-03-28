@@ -231,7 +231,7 @@ function playerById(id) {
 function ballById(id) {
 	console.log(balls);
 	console.log("balls array length: " + balls.length);
-	for (var i = 0; i < balls.length + 20; i++) {
+	for (var i = 0; i < balls.length; i++) {
 		if (balls[i].id == id)
 			return balls[i];
 	};
