@@ -195,6 +195,12 @@ function onMoveBall(data) {
 	console.log("ball data: " + JSON.stringify(data));
 	console.log("moveBall: " + JSON.stringify(moveBall));
 
+	// Ball not found
+	if (!moveBall) {
+		util.log("Ball not found: " + data.id);
+		return;
+	};
+
 	// Update ball position
 	moveBall.setX(data.x);
 	moveBall.setY(data.y);
@@ -226,7 +232,7 @@ function ballById(id) {
 	console.log(balls);
 	console.log("balls array length: " + balls.length);
 	for (var i = 0; i < balls.length + 20; i++) {
-		if (balls[i].id && balls[i].id == id)
+		if (balls[i].id == id)
 			return balls[i];
 	};
 	
