@@ -174,14 +174,14 @@ function onNewBall(data) {
 	};
 
 	// TEST
-	console.log("new Ball:" + newBall);
+	// console.log("new Ball:" + newBall);
 		
 	// Add new ball to the balls array
 	balls.push(newBall);
 
 	// TEST
-	console.log("balls array on next line:");
-	console.log(balls);
+	// console.log("balls array on next line:");
+	// console.log(balls);
 	
 
 	
@@ -190,10 +190,10 @@ function onNewBall(data) {
 // Ball has moved
 function onMoveBall(data) {
 	// Find ball in array
-	console.log(this.id);
+	// console.log(this.id);
 	var moveBall = ballById(this.id);
-	console.log("ball data: " + JSON.stringify(data));
-	console.log("moveBall: " + JSON.stringify(moveBall));
+	// console.log("ball data: " + JSON.stringify(data));
+	// console.log("moveBall: " + JSON.stringify(moveBall));
 
 	// Ball not found
 	if (!moveBall) {
@@ -229,8 +229,8 @@ function playerById(id) {
 
 // Find ball by ID
 function ballById(id) {
-	console.log(balls);
-	console.log("balls array length: " + balls.length);
+	// console.log(balls);
+	// console.log("balls array length: " + balls.length);
 	for (var i = 0; i < balls.length; i++) {
 		if (balls[i].id == id)
 			return balls[i];
