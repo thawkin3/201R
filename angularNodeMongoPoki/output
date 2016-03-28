@@ -1,0 +1,30 @@
+nohup: ignoring input
+Connection established to mongodb://localhost:27017/pokemonDB
+Inserted NaN documents into the "pokemon" collection. The documents inserted with "_id" are: { result: { ok: 1, n: 6 },
+  ops: 
+   [ { name: 'Pikachu',
+       avatarUrl: 'http://rs795.pbsrc.com/albums/yy232/PixKaruumi/Pokemon%20Pixels/Pikachu_Icon__free__by_Aminako.gif~c200',
+       _id: 56f8374c11f0d32406ecb1cd },
+     { name: 'Charmander',
+       avatarUrl: 'http://24.media.tumblr.com/tumblr_ma0tijLFPg1rfjowdo1_500.gif',
+       _id: 56f8374c11f0d32406ecb1ce },
+     { name: 'Mew',
+       avatarUrl: 'http://media3.giphy.com/media/J5JrPT8r1xGda/giphy.gif',
+       _id: 56f8374c11f0d32406ecb1cf },
+     { name: 'Cubone',
+       avatarUrl: 'http://rs1169.pbsrc.com/albums/r511/nthndo/tumblr_ljsx6dPMNm1qii50go1_400.gif~c200',
+       _id: 56f8374c11f0d32406ecb1d0 },
+     { name: 'Cleffa',
+       avatarUrl: 'http://media1.giphy.com/media/pTh2K2xTJ1nag/giphy.gif',
+       _id: 56f8374c11f0d32406ecb1d1 },
+     { name: 'Gengar',
+       avatarUrl: 'https://s-media-cache-ak0.pinimg.com/originals/7e/3b/67/7e3b67c53469cc4302035be70a7f2d60.gif',
+       _id: 56f8374c11f0d32406ecb1d2 } ],
+  insertedCount: 6,
+  insertedIds: 
+   [ 56f8374c11f0d32406ecb1cd,
+     56f8374c11f0d32406ecb1ce,
+     56f8374c11f0d32406ecb1cf,
+     56f8374c11f0d32406ecb1d0,
+     56f8374c11f0d32406ecb1d1,
+     56f8374c11f0d32406ecb1d2 ] }

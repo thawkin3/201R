@@ -74,3 +74,10 @@ In the GET route
     Name: 'Silly Rabbit',
     _id: 56e9a9896265a42b4b5205c7 } ]
 [0mGET /comments [36m304 [0m2.372 ms - -[0m
+[0mGET / [36m304 [0m1.380 ms - -[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.236 ms - 702[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.355 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m50.191 ms - 1898[0m
+[0mGET / [36m304 [0m0.415 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.813 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.750 ms - -[0m
