@@ -10,7 +10,8 @@ var canvas,			// Canvas DOM element
 
 var colors = ["green", "blue", "yellow", "pink", "limegreen", "orange", "purple", "coral", "darkkhaki", "gold", "palevioletred"];
 
-var food;
+var localFood;
+var remoteFoods;
 var localBall;
 var remoteBalls;
 
@@ -21,19 +22,6 @@ function init() {
 	// Declare the canvas and rendering context
 	canvas = document.getElementById("gameCanvas");
 	ctx = canvas.getContext("2d");
-
-	// TESTING!
-	// Generate some food, but don't draw it until later
-	// for (var i = 0; i < 10; i++) {
-	// 	var foodX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
-	// 	var foodY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
-	// 	food.push({ "foodX": foodX, "foodY": foodY });
-	// }
-
-	// TESTING!
-	// Create the red ball
-	var ballX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
-	var ballY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
 
 	// Maximize the canvas
 	//canvas.width = window.innerWidth;
@@ -54,10 +42,25 @@ function init() {
 	var startColor = colors[Math.floor( Math.random() * colors.length )];
 
 	// Initialize the local player
-	localPlayer = new Player(startX, startY, startSize, startColor);	// TESTING!
+	localPlayer = new Player(startX, startY, startSize, startColor);
+
+	// Create the red ball
+	var ballX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
+	var ballY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
 
 	// Initialize the local ball
 	localBall = new Ball(ballX, ballY);
+
+	// TESTING!
+	// Generate some food, but don't draw it until later
+	// for (var i = 0; i < 10; i++) {
+		var foodX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
+		var foodY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
+		// foods.push({ "foodX": foodX, "foodY": foodY });
+	// }
+
+	// Initialize the local food
+	localFood = new Food(foodX, foodY);
 
 	// Initialize socket connection
 	socket = io.connect("http://54.200.192.157", {port: 3005, transports: ["websocket"]});
@@ -68,7 +71,8 @@ function init() {
 	// Initialize the remote balls array
 	remoteBalls = [];
 
-	// Initialize the food array
+	// Initialize the remote foods array
+	remoteFoods = [];
 
 	// Start listening for events
 	setEventHandlers();
@@ -113,6 +117,9 @@ var setEventHandlers = function() {
 	// Ball removed message received
 	socket.on("remove ball", onRemoveBall);
 
+	// New food message received
+	socket.on("new food", onNewFood);
+
 };
 
 // Keyboard key down
@@ -147,6 +154,10 @@ function onSocketConnected() {
 
 	// Send local ball data to the game server
 	socket.emit("new ball", { x: localBall.getX(), y: localBall.getY(), dx: localBall.getDX(), dy: localBall.getDY(), color: localBall.getColor() });
+
+	// Send local food data to the game server
+	socket.emit("new food", { x: localFood.getX(), y: localFood.getY(), color: localFood.getColor() });
+
 };
 
 // Socket disconnected
@@ -208,11 +219,11 @@ function onRemovePlayer(data) {
 function onNewBall(data) {
 	console.log("New ball connected: " + data.id);
 
-	// Initialize the new player
-	var newBall = new Ball(data.x, data.y, data.dx, data.dy);	// TESTING!
+	// Initialize the new ball
+	var newBall = new Ball(data.x, data.y, data.dx, data.dy);
 	newBall.id = data.id;
 
-	// Add new player to the remote players array
+	// Add new ball to the remote balls array
 	remoteBalls.push(newBall);
 };
 
@@ -220,7 +231,7 @@ function onNewBall(data) {
 function onMoveBall(data) {
 	var moveBall = ballById(data.id);
 
-	// Update player position
+	// Update ball position
 	moveBall.setX(data.x);
 	moveBall.setY(data.y);
 	moveBall.setDX(data.dx);
@@ -234,6 +245,18 @@ function onRemoveBall(data) {
 	// Remove ball from array
 	remoteBalls.splice(remoteBalls.indexOf(removeBall), 1);
 
+};
+
+// New food
+function onNewFood(data) {
+	console.log("New food connected: " + data.id);
+
+	// Initialize the new food
+	var newFood = new Food(data.x, data.y);
+	newFood.id = data.id;
+
+	// Add new player to the remote foods array
+	remoteFoods.push(newFood);
 };
 
 
@@ -289,14 +312,6 @@ function draw() {
 		allPlayers[i].draw(ctx);
 	};
 
-	// TESTING!
-	// Draw some food
-	// for (var i = 0; i < food.length; i++) {
-	// 	ctx.fillStyle = "#000";
-	// 	ctx.fillRect(food[i].foodX, food[i].foodY, 5, 5);
-	// }
-
-	// TESTING!
 	// Put the local and the remote balls together
 	var allBalls = remoteBalls.concat(localBall);
 
@@ -304,6 +319,14 @@ function draw() {
 	for (var i = 0; i < allBalls.length; i++) {
 		allBalls[i].draw(ctx);
 	};
+
+	// Put the local and the remote foods together
+	var allFoods = remoteFoods.concat(localFood);
+
+	// Draw some food
+	for (var i = 0; i < remoteFoods.length; i++) {
+		allFoods[i].draw(ctx);
+	}
 };
 
 
@@ -326,6 +349,16 @@ function ballById(id) {
 	for (var i = 0; i < remoteBalls.length; i++) {
 		if (remoteBalls[i].id == id)
 			return remoteBalls[i];
+	};
+	
+	return false;
+};
+
+// Find food by ID
+function foodById(id) {
+	for (var i = 0; i < remoteFoods.length; i++) {
+		if (remoteFoods[i].id == id)
+			return remoteFoods[i];
 	};
 	
 	return false;

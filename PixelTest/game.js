@@ -77,7 +77,7 @@ function onSocketConnection(client) {
 	client.on("move ball", onMoveBall);
 
 	// Listen for new food message
-	// client.on("new food", onNewFood);
+	client.on("new food", onNewFood);
 };
 
 // Socket client has disconnected
@@ -176,26 +176,15 @@ function onNewBall(data) {
 	// Broadcast new ball to connected socket clients
 	this.broadcast.emit("new ball", { id: newBall.id, x: newBall.getX(), y: newBall.getY(), dx: newBall.getDX(), dy: newBall.getDY() });
 
-
-
 	// Send existing balls to the new ball
 	var i, existingBall;
 	for (i = 0; i < balls.length; i++) {
 		existingBall = balls[i];
 		this.emit("new ball", { id: existingBall.id, x: existingBall.getX(), y: existingBall.getY(), dx: existingBall.getDX(), dy: existingBall.getDY() });
 	};
-
-	// TEST
-	// console.log("new Ball:" + newBall);
 		
 	// Add new ball to the balls array
 	balls.push(newBall);
-
-	// TEST
-	// console.log("balls array on next line:");
-	// console.log(balls);
-	
-
 	
 };
 
@@ -223,6 +212,29 @@ function onMoveBall(data) {
 	this.broadcast.emit("move ball", { id: moveBall.id, x: moveBall.getX(), y: moveBall.getY(), dx: moveBall.getDX(), dy: moveBall.getDY() });
 };
 
+// New food has joined
+function onNewFood(data) {
+	// Create a new food
+	var newFood = new Food(data.x, data.y);	// TESTING!
+	newFood.id = this.id;
+
+	console.log("inside onNewFood in game.js server script");
+
+	// Broadcast new food to connected socket clients
+	this.broadcast.emit("new food", { id: newFood.id, x: newFood.getX(), y: newFood.getY() });
+
+	// Send existing foods to the new food
+	var i, existingFood;
+	for (i = 0; i < foods.length; i++) {
+		existingFood = foods[i];
+		this.emit("new food", { id: existingFood.id, x: existingFood.getX(), y: existingFood.getY() });
+	};
+		
+	// Add new food to the foods array
+	foods.push(newFood);
+	
+};
+
 
 
 /**************************************************
@@ -246,6 +258,16 @@ function ballById(id) {
 	for (var i = 0; i < balls.length; i++) {
 		if (balls[i].id == id)
 			return balls[i];
+	};
+	
+	return false;
+};
+
+// Find food by ID
+function foodById(id) {
+	for (var i = 0; i < foods.length; i++) {
+		if (foods[i].id == id)
+			return foods[i];
 	};
 	
 	return false;
