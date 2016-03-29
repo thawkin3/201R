@@ -77,7 +77,7 @@ function onSocketConnection(client) {
 	client.on("move ball", onMoveBall);
 
 	// Listen for new food message
-	client.on("new food", onNewFood);
+	// client.on("new food", onNewFood);
 };
 
 // Socket client has disconnected
