@@ -176,7 +176,7 @@ function onNewBall(data) {
 	// Broadcast new ball to connected socket clients
 	this.broadcast.emit("new ball", { id: newBall.id, x: newBall.getX(), y: newBall.getY(), dx: newBall.getDX(), dy: newBall.getDY() });
 
-	// Send existing balls to the new ball
+	// Send existing balls to the new player
 	var i, existingBall;
 	for (i = 0; i < balls.length; i++) {
 		existingBall = balls[i];
@@ -223,7 +223,7 @@ function onNewFood(data) {
 	// Broadcast new food to connected socket clients
 	this.broadcast.emit("new food", { id: newFood.id, x: newFood.getX(), y: newFood.getY() });
 
-	// Send existing foods to the new food
+	// Send existing foods to the new player
 	var i, existingFood;
 	for (i = 0; i < foods.length; i++) {
 		existingFood = foods[i];
@@ -232,6 +232,9 @@ function onNewFood(data) {
 		
 	// Add new food to the foods array
 	foods.push(newFood);
+
+	// TESTING
+	console.log(foods);
 	
 };
 

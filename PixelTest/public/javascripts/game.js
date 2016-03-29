@@ -155,8 +155,10 @@ function onSocketConnected() {
 	// Send local ball data to the game server
 	socket.emit("new ball", { x: localBall.getX(), y: localBall.getY(), dx: localBall.getDX(), dy: localBall.getDY(), color: localBall.getColor() });
 
+	setInterval(function() {
 	// Send local food data to the game server
 	socket.emit("new food", { x: localFood.getX(), y: localFood.getY(), color: localFood.getColor() });
+	}, 5000);
 
 };
 
