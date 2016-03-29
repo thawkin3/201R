@@ -10,8 +10,8 @@ var canvas,			// Canvas DOM element
 
 var colors = ["green", "blue", "yellow", "pink", "limegreen", "orange", "purple", "coral", "darkkhaki", "gold", "palevioletred"];
 
-var food = [];
-var ball;
+var food;
+var localBall;
 var remoteBalls;
 
 /**************************************************
@@ -65,8 +65,10 @@ function init() {
 	// Initialize remote players array
 	remotePlayers = [];
 
-	// Initialize the rmeote balls array
+	// Initialize the remote balls array
 	remoteBalls = [];
+
+	// Initialize the food array
 
 	// Start listening for events
 	setEventHandlers();

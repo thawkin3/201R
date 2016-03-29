@@ -5,7 +5,7 @@ var util = require("util");					// Utility resources (logging, object inspection
 var io = require("socket.io");				// Socket.IO
 var Player = require("./Player").Player;	// Player class
 var Ball = require("./Ball").Ball;			// Ball class
-
+var Food = require("./Food").Food;			// Food class
 
 /**************************************************
 ** GAME VARIABLES
@@ -13,6 +13,7 @@ var Ball = require("./Ball").Ball;			// Ball class
 var socket;		// Socket controller
 var players;	// Array of connected players
 var balls;		// Array of connected balls
+var foods;		// Array of food
 
 // Array of colors for players
 var colors = ["green", "blue", "yellow", "pink", "limegreen", "orange", "purple", "coral", "darkkhaki", "gold", "palevioletred"];
@@ -28,11 +29,8 @@ function init() {
 	// Create an empty array to store balls
 	balls = [];
 
-	// TESTING!
-	// Create the red ball
-	// var ballX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
-	// var ballY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
-	// ball = new Ball(ballX, ballY);
+	// Create an empty array to store the food
+	foods = [];
 
 	// Set up Socket.IO to listen on port 8000
 	socket = io.listen(3005);
@@ -77,6 +75,9 @@ function onSocketConnection(client) {
 
 	// Listen for move ball message
 	client.on("move ball", onMoveBall);
+
+	// Listen for new food message
+	client.on("new food", onNewFood);
 };
 
 // Socket client has disconnected
@@ -99,6 +100,17 @@ function onClientDisconnect() {
 
 	// Broadcast removed player to connected socket clients
 	this.broadcast.emit("remove player", {id: this.id});
+
+	var removeBall = ballById(this.id);
+
+	// Player not found
+	if (!removeBall) {
+		util.log("Ball not found: " + this.id);
+		return;
+	};
+
+	// Remove player from players array
+	balls.splice(balls.indexOf(removeBall), 1);
 
 	// Broadcast removed player to connected socket clients
 	this.broadcast.emit("remove ball", {id: this.id});
