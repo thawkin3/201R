@@ -324,7 +324,7 @@ function draw() {
 	var allFoods = remoteFoods.concat(localFood);
 
 	// Draw some food
-	for (var i = 0; i < remoteFoods.length; i++) {
+	for (var i = 0; i < allFoods.length; i++) {
 		allFoods[i].draw(ctx);
 	}
 };
