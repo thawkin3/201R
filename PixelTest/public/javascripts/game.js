@@ -161,6 +161,7 @@ function onSocketConnected() {
 		foodX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
 		foodY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
 		localFood = new Food(foodX, foodY);
+		remoteFoods.push(newFood);
 	}, 5000);
 
 };
