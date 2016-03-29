@@ -157,7 +157,10 @@ function onSocketConnected() {
 
 	setInterval(function() {
 	// Send local food data to the game server
-	socket.emit("new food", { x: localFood.getX(), y: localFood.getY(), color: localFood.getColor() });
+		socket.emit("new food", { x: localFood.getX(), y: localFood.getY(), color: localFood.getColor() });
+		foodX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
+		foodY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
+		localFood = new Food(foodX, foodY);
 	}, 5000);
 
 };
