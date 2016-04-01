@@ -1,0 +1,9 @@
+nohup: ignoring input
+[0mGET / [32m200 [0m8.566 ms - 740[0m
+[0mGET /javascripts/script.js [32m200 [0m2.536 ms - 530[0m
+[0mGET /favicon.ico [33m404 [0m357.562 ms - 1265[0m
+[0mGET / [32m200 [0m0.920 ms - 740[0m
+[0mGET /javascripts/script.js [32m200 [0m0.522 ms - 530[0m
+[0mGET /favicon.ico [33m404 [0m42.874 ms - 1265[0m
+[0mGET / [36m304 [0m1.655 ms - -[0m
+[0mGET /javascripts/script.js [36m304 [0m0.309 ms - -[0m

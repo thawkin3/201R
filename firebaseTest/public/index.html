@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+  <script src="javascripts/script.js"></script>
+</head>
+
+<body>
+
+<div ng-controller="chatController">
+<form novalidate class="simple-form">
+  Name: <input type="text" ng-model="user.name" /><br />
+  Chat: <input type="text" ng-model="user.chat" /><br />
+  <input type="submit" ng-click="update(user)" value="Save" />
+</form>
+<ul>
+<li ng-repeat='line in chats'>
+{{line.from}} - {{line.body}}
+</li>
+</ul>
+</div>
+
+</body>
+</html>
