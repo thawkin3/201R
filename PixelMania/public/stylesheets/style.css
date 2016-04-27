@@ -1,0 +1,82 @@
+/* FONTS */
+@font-face {
+    font-family: zig;
+    src: url('zig.ttf');
+}
+
+
+/* GENERAL */
+body {
+	overflow: hidden;
+	background: limegreen;
+    font-family: zig, Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+    font-size: 36px;
+}
+
+
+/* LOGIN */
+.form-control {
+    text-align: center;
+}
+
+
+/* GAME */
+canvas {
+    display: block;
+    margin: auto;
+    border: 5px solid #000;
+    background: #ccc;
+}
+
+#quit {
+  float: right;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.ball {
+  background: red;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  left: 20px;
+}
+
+#yourColor {
+  height: 20px;
+  width: 20px;
+  background: #FFF;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.message {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+
+/* HIGH SCORES */
+#highScoresTable {
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#highScoresTable th {
+    font-size: 18px;
+}
+
+#highScoresTable th, #highScoresTable td {
+    padding: 2px 20px;
+    text-align: center;
+}
