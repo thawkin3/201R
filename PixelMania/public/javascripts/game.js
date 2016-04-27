@@ -26,8 +26,11 @@ var timeDiff;										// Will be endTime minus startTime
 var username = $.cookie("username") || "GUEST";		// To send to the people you eat
 
 $(document).ready(function(){
+	
+	// Updates the message at the bottom of your screen with who you are
 	$("#msgReplace").html("<h3 class='message'>" + username + "</h3>");
 
+	// If you quit the game, mark that you've exited
 	$("#quit").click(function(){
 		gameEnd = true;
 	});
@@ -45,6 +48,8 @@ function init() {
 	// Maximize the canvas
 	//canvas.width = window.innerWidth;
 	//canvas.height = window.innerHeight;
+	
+	// Set the canvas width
 	canvas.width = 1000;
 	canvas.height = 500;
 
@@ -210,15 +215,16 @@ function onMovePlayer(data) {
 // Remove player
 function onRemovePlayer(data) {
 	var removePlayer = playerById(data.id);
+	
 	// Player not found, must be you
 	if (!removePlayer) {
-		document.getElementById("messageBoard").innerHTML = "<h3 class='message'>You have been eaten by: " + data.username + "</h3>";
+		// Write at the bottom of your screen that you've died
 		// It must be you, since we don't have local IDs
+		document.getElementById("messageBoard").innerHTML = "<h3 class='message'>You have been eaten by: " + data.username + "</h3>";
 		gameEnd = true;
 		return;
 	};
 	
-
 	// Add the color back into the array of possible colors
 	colors.push(data.color);
 
@@ -342,27 +348,35 @@ function update() {
 		socket.emit("move ball", { x: localBall.getX(), y: localBall.getY(), dx: localBall.getDX(), dy: localBall.getDY(), color: localBall.getColor() });
 	}
 
-	// GET PLAYER POSITIONS FOR BELOW FUNCTIONS
+	// Get player positions for functions below
 	var playerX = localPlayer.getX();
 	var playerY = localPlayer.getY();
 	var playerSize = localPlayer.getSize();
 
-
 	// Update player size when hit by a ball
-
 	if (allBalls) {
 		var strikingDistance = (playerSize / 2) + 5; //5 is the ball size
 		for (i=0; i<allBalls.length; i++) {
+			
+			// Get player and ball positions
 			ballX = allBalls[i].getX();
 			ballY = allBalls[i].getY();
 			var x = Math.abs(playerX-ballX);
 			var y = Math.abs(playerY-ballY);
-			//use pythagorean thm to find
+			
+			// Use pythagorean thm to find the distance between player and ball
 			var hypot = Math.sqrt(( x * x ) + ( y * y ));
-			//check to see if they have collided
+			
+			// Check to see if they have collided
 			if ((hypot <= strikingDistance) && (!invincible)) {
+				
+				// Cut your size in half
 				localPlayer.setSize(playerSize/2);
+				
+				// Send a message to the server that your size has changed
 				socket.emit("move player", { x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
+				
+				// Make yourself temporarily invincible from being immediately hit by another ball
 				invincible = true;
 				setTimeout(function() {
 					invincible = false;
@@ -370,48 +384,68 @@ function update() {
 			}
 		}
 	}
-	//Be able to eat another player
+
+	// Eating another player
 	if (remotePlayers) {
 		for (i=0; i<remotePlayers.length; i++) {
+			
+			// Get player positions and sizes
 			otherPlayerX = remotePlayers[i].getX();
 			otherPlayerY = remotePlayers[i].getY();
 			otherPlayerSize = remotePlayers[i].getSize();
 			var x = Math.abs(playerX-otherPlayerX);
 			var y = Math.abs(playerY-otherPlayerY);
 			var strikingDistance = 10;
-			//use pythagorean thm to find
+			
+			// Use pythagorean theorem to find the distance between players
 			var hypot = Math.sqrt(( x * x ) + ( y * y ));
-			//check to see if they have overlapped
+			
+			// Check to see if they have overlapped
 			if ((playerSize > otherPlayerSize) && (hypot + otherPlayerSize/4 < playerSize/2)) {
 				localPlayer.setSize(otherPlayerSize/4 + playerSize);
+				
+				// Put a limit on how big a player can get
 				if (localPlayer.getSize() >= 300) {
 					localPlayer.setSize(300);
 				}
+				
+				// Send a message to the server that you've grown
 				socket.emit("move player", { x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
+				
+				// Send a message to the server that the other player has been eaten, and remove that player from the array
 				socket.emit("remove player", {id: remotePlayers[i].id, username: username });
 				remotePlayers.splice(i,1);
 			}
 		}
 	}
-	//Be able to eat food and grow
+
+	// Eating food and growing
 	if (allFoods) {
 		var strikingDistance = (playerSize / 2) + 2.5; //2.5 is the food size
 		for (i=0; i<allFoods.length; i++) {
+			
+			// Get food and player positions
 			foodX = allFoods[i].getX();
 			foodY = allFoods[i].getY();
 			var x = Math.abs(playerX-foodX);
 			var y = Math.abs(playerY-foodY);
-			//use pythagorean thm to find
+			
+			// Use pythagorean theorem to find the distance between player and food
 			var hypot = Math.sqrt(( x * x ) + ( y * y ));
-			//check to see if they have collided
+			
+			// Check to see if they have collided
 			if (hypot <= strikingDistance) {
 					localPlayer.setSize(2 + playerSize);
+					
+					// Put a limit on how big a player can get
 					if (localPlayer.getSize() >= 300) {
 						localPlayer.setSize(300);
 					}
-					//update the size of the player
+
+					// Send a message to the server to update the size of the player
 					socket.emit("move player", { x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
-					//remove the food from other screens
+					
+					// Send a message to the server to remove the food from other screens
 					socket.emit("remove food", { number: allFoods[i].number });
 					allFoods.splice(i,1);
 			}
