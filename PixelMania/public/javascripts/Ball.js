@@ -4,8 +4,8 @@
 var Ball = function(startX, startY) {
 	var x = startX;
 	var y = startY;
-	var dx = Math.floor(Math.random() * 5);
-	var dy = Math.floor(Math.random() * 5);
+	var dx = Math.floor(Math.random() * 4) + 1;
+	var dy = Math.floor(Math.random() * 4) + 1;
 	var radius = 10;
 	var color = "red";
 	var id;
