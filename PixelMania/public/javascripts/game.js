@@ -72,8 +72,8 @@ function init() {
 	localBall = new Ball(ballX, ballY);
 
 	// Initialize socket connection
-	// socket = io.connect("http://54.200.192.157", {port: 3005, transports: ["websocket"]}); // TYLERS SOCKET
-	socket = io.connect("http://52.34.95.112", {port: 3005, transports: ["websocket"]}); //MATTS SOCKET
+	socket = io.connect("http://54.200.192.157", {port: 3005, transports: ["websocket"]}); // TYLER'S SOCKET
+	// socket = io.connect("http://52.34.95.112", {port: 3005, transports: ["websocket"]}); //MATT'S SOCKET
 	// socket = io.connect("http://localhost", {port: 3005, transports: ["websocket"]});
 
 	// Initialize remote players array
