@@ -3,15 +3,15 @@ var app = angular.module('MongoDBreakout', ['ngRoute']);
 app.config(function ($routeProvider){
 	$routeProvider
 		.when('/', {
-			controller: 'authenticateController',
+			// controller: 'authenticateController',
 			templateUrl:'javascripts/app/views/authenticateView.html'
 		})
 		.when('/game', {
-			controller: 'gameController',
+			// controller: 'gameController',
 			templateUrl:'javascripts/app/views/gameView.html'
 		})
 		.when('/highscores', {
-			controller: 'highscoresController',
+			// controller: 'highscoresController',
 			templateUrl:'javascripts/app/views/highscoresView.html'
 		})
 		.otherwise({ 

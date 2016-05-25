@@ -5,25 +5,11 @@
 		// variables for game play
 		var gameEnd = false;
 		var gameWin = false;
-		var initialTimer = true;
-
-		var setToFalse = $timeout(function(){
-			initialTimer = false;
-		}, 4650);
-
-		var setToTrue = $timeout(function(){
-			initialTimer = true;
-		}, 5100);
 
 		// variables for the ball
 		var ball_size = 10;
 		var ball_x = 220;
 		var ball_y = 220;
-		var ball_prev_y = 220;
-		var ball_prev_prev_y = 220;
-		var ball_y_tracker = [];
-		// var ball_x = 340;
-		// var ball_y = 440;
 		var ball_dx = 3;
 		var ball_dy = 3;
 
@@ -37,7 +23,6 @@
 		var right = false;
 		var hitReset = true;
 		var theCount = 0;
-		$scope.numBounce = 0;
 
 		// variables for the bricks
 		$scope.brickArray = [];
@@ -65,18 +50,14 @@
 			return ((brick.t - ball_y > 10 || brick.t - ball_y < -15) || (ball_x - brick.l < 0 || ball_x - brick.l > 40));
 		}
 
-		
 		// Submit your score
 		var submitScore = function(){
-			
-			$timeout.cancel(setToFalse);
-			$timeout.cancel(setToTrue);
-
 			var scoreObj = { "Username": $rootScope.user, "Score": $scope.score };
-	        console.log(scoreObj);
+	        // console.log(scoreObj);
 	        var JSONscoreObj = JSON.stringify(scoreObj);
-	        console.log(JSONscoreObj);
+	        // console.log(JSONscoreObj);
 			var scoreUrl = "addscore";
+			
 			$.ajax({
 	  			url: scoreUrl,
 	  			type: "POST",
@@ -85,18 +66,17 @@
 	  			success: function(data,textStatus) {
 	      			$timeout(function(){	
 	      				console.log("done");
-	      				//alert("score submitted!");
 	      			}, 10);
 	  			}
 			})
 			.fail(function(){});
-			// go to the highscores view
+			
+			// go to the highscores view after 2 seconds
 			$timeout(function() {
 				$location.url("/highscores");
-			}, 40);
+			}, 2000);
 		};
 		
-
 		// keep score
 		$scope.scoreHelper = 0;
 		$scope.score = 0;
@@ -106,46 +86,15 @@
 		var ctx = canvas.getContext("2d");
 
 		// Locator function in a loop
-		$scope.mainLoop = function() {
-		
-			// ball_y_tracker.push(ball_y);
-			// ball_y_tracker.push(ball_prev_y);
-			console.log("ball_y: " + ball_y);
-			// console.log("ball_prev_y: " + ball_prev_y);
-
-			// console.log("ball_prev_prev_y: " + ball_prev_prev_y);
-			// if (ball_y > 1000 && ball_prev_y > 1000 && ball_prev_prev_y > 1000) {
-			// if (ball_y_tracker[ball_y_tracker.length - 1] > 1000 && ball_y_tracker[ball_y_tracker.length - 2] > 1000 && ball_y_tracker[ball_y_tracker.length - 3] > 1000) {
-			
-
-			// TESTING
-			// var pixels = ctx.getImageData(ball_x - 5, 490, 10, 1).data;
-			// for (var i = 0; i < pixels.length; i += 4) {
-			// 	console.log(pixels[i]);
-			// 	if (pixels[i] == 241) {
-			// 		console.log(ball_y + (ball_size/2));
-			//     	console.log("dy: " + ball_dy);
-			//     	console.log("x: " + ball_x);
-			//     	console.log("game over");
-			//     	gameEnd = true;
-			// 	}
-			// }	
-			// END TEST
-
-			// draw our canvas here
-			$scope.draw();
-			$scope.update();
-			
+		$scope.mainLoop = function() {			
 			// logic for the game to end or not
 			if (!gameEnd) {
+				// draw our canvas here
+				$scope.draw();
+				$scope.update();
 				// Recursively call our loop
 				window.requestAnimationFrame($scope.mainLoop);
 			} else {
-				// end the game
-				ball_dy = 0;
-			    ball_dx = 0;
-			    ball_y = 220;
-			    ball_x = 220;
 				// set the text that displays on the canvas
 				if (gameWin) {
 					ctx.font="20px zig";
@@ -161,12 +110,6 @@
 
 		// Update ball position
 		$scope.update = function() {
-			
-
-			// ball_prev_prev_y = ball_prev_y;
-			ball_prev_y = ball_y;
-			
-
 			// Move the paddle, left key takes priority over right
 			if (left && paddle_x > 0 + paddle_width/2) {
 				paddle_x -= paddle_dx;
@@ -176,9 +119,6 @@
 
 			// If the ball has hit the paddle, bounce it.
 		    if (ctx.getImageData(ball_x, ball_y + 1 + ball_size/2, 1, 1).data[0] == 242) {
-		    	$scope.numBounce++;
-		    	console.log($scope.numBounce);
-		    	console.log(ctx.getImageData(ball_x, ball_y + (ball_size/2), 1, 1).data[0]);
 		    	ball_dy = -ball_dy;
 		    	if (left) {
 		    		if (ball_dx < 0) {
@@ -310,7 +250,7 @@
 		    if (!gameEnd) {
 		    	ball_x += ball_dx;
 		    	ball_y += ball_dy;
-		    }
+		    } 
 
 		    // If the ball has hit the left or right side, bounce it.
 		    if ((ball_x + (ball_size/2) >= canvas.width) || (ball_x - (ball_size/2) <= 0)) {
@@ -322,41 +262,9 @@
 		    	ball_dy = -ball_dy; 
 		    }
 
-		    if (ball_y >= canvas.height - 10 && ball_y < canvas.height && initialTimer) {
-				// console.log(ball_y_tracker);
-				console.log("game over");
+		    if (ball_y >= canvas.height - 10 && ball_y < canvas.height) {
 			    gameEnd = true;
-			    ball_dy = 0;
-			    ball_dx = 0;
 			}
-
-		    // If the ball has hit the bottom, bounce it.
-		    // if (ball_y + (ball_size/2) >= canvas.height) { 
-		    // 	ball_dy = -ball_dy; 
-		    // 	console.log("hit bottom!");
-		    // }
-
-		    // If the ball has hit the canvas's bottom wall, game over.
-		    // if (ctx.getImageData(ball_x, ball_y + 5 + ball_size/2, 1, 1).data[0] == 119) {
-		    // if (ball_y + (ball_size/2) >= canvas.height) {
-				// var pixels = ctx.getImageData(0, 490, canvas.width, 1).data;
-				// var pixels = ctx.getImageData(ball_x - 5, 490, 10, 1).data;
-				// for (var i = 0; i < pixels.length; i += 4) {
-				// 	console.log(pixels[i]);
-				// 	if (pixels[i] == 241) {
-				// 		console.log(ball_y + (ball_size/2));
-				//     	console.log("dy: " + ball_dy);
-				//     	console.log("x: " + ball_x);
-				//     	console.log("game over");
-				//     	gameEnd = true;
-				// 	}
-				// }		    
-		    	
-		  //   }
-
-		    // TESTING
-		    
-			// END TEST
 
 			return true;
 		};
@@ -414,7 +322,7 @@
 		};
 
 		// Start the game
-		 $scope.mainLoop();
+		$scope.mainLoop();
 
 	};
 
