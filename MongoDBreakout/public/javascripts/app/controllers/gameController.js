@@ -252,14 +252,22 @@
 		    	ball_y += ball_dy;
 		    } 
 
-		    // If the ball has hit the left or right side, bounce it.
-		    if ((ball_x + (ball_size/2) >= canvas.width) || (ball_x - (ball_size/2) <= 0)) {
+		    // If the ball has hit the right side, bounce it.
+		    if (ball_x + (ball_size/2) >= canvas.width) {
 		    	ball_dx = -ball_dx;
+		    	ball_x -= 2;
+		    }
+
+		    // If the ball has hit the left side, bounce it.
+		    if (ball_x - (ball_size/2) <= 0) {
+		    	ball_dx = -ball_dx;
+		    	ball_x += 2;
 		    }
 
 		    // If the ball has hit the top, bounce it.
 		    if (ball_y - (ball_size/2) <= 0) { 
-		    	ball_dy = -ball_dy; 
+		    	ball_dy = -ball_dy;
+		    	ball_y += 2;
 		    }
 
 		    if (ball_y >= canvas.height - 10 && ball_y < canvas.height) {
