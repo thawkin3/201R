@@ -1,0 +1,3720 @@
+nohup: ignoring input
+   [36minfo  -[39m socket.io started
+   [36minfo  -[39m socket.io started
+{ gameInit: [Function: init] }
+Connected
+[0mGET / [36m304 [0m7.116 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m3.197 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m2.707 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.307 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.615 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.485 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.294 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.322 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.212 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.301 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.297 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.223 ms - -[0m
+[0mGET /javascripts/game.js [32m200 [0m2.271 ms - 14394[0m
+   [36minfo  -[39m handshake authorized 2369679931528567469
+27 Apr 03:13:17 - New player has connected: 2369679931528567469
+27 Apr 03:13:17 - Ball not found: undefined
+27 Apr 03:13:17 - Ball not found: undefined
+27 Apr 03:13:17 - Ball not found: undefined
+27 Apr 03:13:17 - Ball not found: undefined
+27 Apr 03:13:17 - Ball not found: undefined
+27 Apr 03:13:17 - Ball not found: undefined
+27 Apr 03:13:17 - Ball not found: undefined
+27 Apr 03:13:17 - Ball not found: undefined
+27 Apr 03:13:17 - Ball not found: undefined
+27 Apr 03:13:17 - Ball not found: undefined
+27 Apr 03:13:17 - Ball not found: undefined
+27 Apr 03:13:17 - Ball not found: undefined
+27 Apr 03:13:17 - Ball not found: undefined
+27 Apr 03:13:17 - Ball not found: undefined
+27 Apr 03:13:17 - Ball not found: undefined
+27 Apr 03:13:17 - Ball not found: undefined
+   [36minfo  -[39m transport end
+27 Apr 05:17:10 - Player has disconnected: 2369679931528567469
+   [36minfo  -[39m handshake authorized 467363105698058232
+27 Apr 06:07:59 - New player has connected: 467363105698058232
+   [36minfo  -[39m transport end
+27 Apr 06:10:55 - Player has disconnected: 467363105698058232
+   [36minfo  -[39m handshake authorized 1937887822342286958
+27 Apr 07:02:28 - New player has connected: 1937887822342286958
+   [36minfo  -[39m transport end
+27 Apr 07:03:03 - Player has disconnected: 1937887822342286958
+   [36minfo  -[39m handshake authorized 20377604081715841164
+27 Apr 08:08:18 - New player has connected: 20377604081715841164
+   [36minfo  -[39m transport end
+27 Apr 08:08:53 - Player has disconnected: 20377604081715841164
+   [36minfo  -[39m handshake authorized 292110644458422760
+27 Apr 09:02:22 - New player has connected: 292110644458422760
+   [36minfo  -[39m transport end
+27 Apr 09:02:57 - Player has disconnected: 292110644458422760
+   [36minfo  -[39m handshake authorized 9710182931248231858
+27 Apr 10:08:26 - New player has connected: 9710182931248231858
+   [36minfo  -[39m transport end
+27 Apr 10:09:42 - Player has disconnected: 9710182931248231858
+   [36minfo  -[39m handshake authorized 10683282981904312981
+27 Apr 11:02:57 - New player has connected: 10683282981904312981
+   [36minfo  -[39m transport end
+27 Apr 11:03:32 - Player has disconnected: 10683282981904312981
+   [36minfo  -[39m handshake authorized 744279815101975063
+27 Apr 11:57:00 - New player has connected: 744279815101975063
+   [36minfo  -[39m transport end
+27 Apr 11:57:35 - Player has disconnected: 744279815101975063
+   [36minfo  -[39m handshake authorized 2013580238740479805
+27 Apr 12:51:03 - New player has connected: 2013580238740479805
+   [36minfo  -[39m transport end
+27 Apr 12:51:38 - Player has disconnected: 2013580238740479805
+   [36minfo  -[39m handshake authorized 172576098925642743
+27 Apr 13:43:00 - New player has connected: 172576098925642743
+   [36minfo  -[39m transport end
+27 Apr 13:43:35 - Player has disconnected: 172576098925642743
+   [36minfo  -[39m handshake authorized 6811213651294793396
+28 Apr 01:30:10 - New player has connected: 6811213651294793396
+   [36minfo  -[39m transport end
+28 Apr 02:27:29 - Player has disconnected: 6811213651294793396
+   [36minfo  -[39m handshake authorized 930285617428542127
+28 Apr 03:43:43 - New player has connected: 930285617428542127
+   [36minfo  -[39m transport end
+28 Apr 04:20:13 - Player has disconnected: 930285617428542127
+   [36minfo  -[39m handshake authorized 10144836381805187426
+28 Apr 04:20:18 - New player has connected: 10144836381805187426
+   [36minfo  -[39m transport end
+28 Apr 05:38:05 - Player has disconnected: 10144836381805187426
+   [36minfo  -[39m handshake authorized 18573092511456509340
+28 Apr 05:38:41 - New player has connected: 18573092511456509340
+   [36minfo  -[39m transport end
+28 Apr 05:39:36 - Player has disconnected: 18573092511456509340
+   [36minfo  -[39m handshake authorized 1650223496718700172
+28 Apr 06:33:05 - New player has connected: 1650223496718700172
+   [36minfo  -[39m transport end
+28 Apr 06:35:41 - Player has disconnected: 1650223496718700172
+   [36minfo  -[39m handshake authorized 14651723101094029236
+28 Apr 07:27:25 - New player has connected: 14651723101094029236
+   [36minfo  -[39m transport end
+28 Apr 07:28:00 - Player has disconnected: 14651723101094029236
+   [36minfo  -[39m handshake authorized 3357637721510355871
+28 Apr 08:21:26 - New player has connected: 3357637721510355871
+   [36minfo  -[39m transport end
+28 Apr 08:22:01 - Player has disconnected: 3357637721510355871
+   [36minfo  -[39m handshake authorized 1791786024460800897
+28 Apr 09:15:28 - New player has connected: 1791786024460800897
+   [36minfo  -[39m transport end
+28 Apr 09:16:03 - Player has disconnected: 1791786024460800897
+   [36minfo  -[39m handshake authorized 2017808857433234268
+28 Apr 10:09:33 - New player has connected: 2017808857433234268
+   [36minfo  -[39m transport end
+28 Apr 10:10:08 - Player has disconnected: 2017808857433234268
+   [36minfo  -[39m handshake authorized 273474071163331005
+28 Apr 11:03:35 - New player has connected: 273474071163331005
+   [36minfo  -[39m transport end
+28 Apr 11:04:10 - Player has disconnected: 273474071163331005
+   [36minfo  -[39m handshake authorized 2093950349449592480
+28 Apr 11:57:36 - New player has connected: 2093950349449592480
+   [36minfo  -[39m transport end
+28 Apr 11:58:31 - Player has disconnected: 2093950349449592480
+   [36minfo  -[39m handshake authorized 140705277096616065
+28 Apr 12:52:02 - New player has connected: 140705277096616065
+   [36minfo  -[39m transport end
+28 Apr 12:52:37 - Player has disconnected: 140705277096616065
+   [36minfo  -[39m handshake authorized 10389238961412714716
+28 Apr 13:42:12 - New player has connected: 10389238961412714716
+   [36minfo  -[39m transport end
+28 Apr 13:42:47 - Player has disconnected: 10389238961412714716
+   [36minfo  -[39m handshake authorized 95340308697640001
+29 Apr 00:25:02 - New player has connected: 95340308697640001
+   [36minfo  -[39m transport end
+29 Apr 01:31:07 - Player has disconnected: 95340308697640001
+   [36minfo  -[39m handshake authorized 13834578581423699061
+29 Apr 01:31:12 - New player has connected: 13834578581423699061
+   [36minfo  -[39m transport end
+29 Apr 02:18:04 - Player has disconnected: 13834578581423699061
+   [36minfo  -[39m handshake authorized 19528145582013853707
+29 Apr 02:18:13 - New player has connected: 19528145582013853707
+   [36minfo  -[39m transport end
+29 Apr 02:42:18 - Player has disconnected: 19528145582013853707
+   [36minfo  -[39m handshake authorized 11599074771846664597
+29 Apr 02:48:19 - New player has connected: 11599074771846664597
+   [36minfo  -[39m transport end
+29 Apr 02:48:54 - Player has disconnected: 11599074771846664597
+   [36minfo  -[39m handshake authorized 667508711306529734
+   [36minfo  -[39m handshake authorized 104667039718821849
+29 Apr 02:49:05 - New player has connected: 104667039718821849
+   [36minfo  -[39m transport end
+29 Apr 03:17:11 - Player has disconnected: 104667039718821849
+   [36minfo  -[39m handshake authorized 11672945861739869171
+29 Apr 03:17:22 - New player has connected: 11672945861739869171
+   [36minfo  -[39m transport end
+29 Apr 03:39:06 - Player has disconnected: 11672945861739869171
+   [36minfo  -[39m handshake authorized 1717384366216081894
+29 Apr 04:17:39 - New player has connected: 1717384366216081894
+   [36minfo  -[39m transport end
+29 Apr 04:19:35 - Player has disconnected: 1717384366216081894
+   [36minfo  -[39m handshake authorized 20191174441064613163
+29 Apr 05:11:55 - New player has connected: 20191174441064613163
+   [36minfo  -[39m transport end
+29 Apr 05:12:30 - Player has disconnected: 20191174441064613163
+   [36minfo  -[39m handshake authorized 4127995041337014988
+29 Apr 06:11:12 - New player has connected: 4127995041337014988
+   [36minfo  -[39m transport end
+29 Apr 06:12:07 - Player has disconnected: 4127995041337014988
+   [36minfo  -[39m handshake authorized 678642254597427653
+29 Apr 07:05:33 - New player has connected: 678642254597427653
+   [36minfo  -[39m transport end
+29 Apr 07:06:08 - Player has disconnected: 678642254597427653
+   [36minfo  -[39m handshake authorized 1310396566353098320
+29 Apr 07:59:35 - New player has connected: 1310396566353098320
+   [36minfo  -[39m transport end
+29 Apr 08:00:10 - Player has disconnected: 1310396566353098320
+   [36minfo  -[39m handshake authorized 7440303121526760297
+29 Apr 08:53:40 - New player has connected: 7440303121526760297
+   [36minfo  -[39m transport end
+29 Apr 08:54:15 - Player has disconnected: 7440303121526760297
+   [36minfo  -[39m handshake authorized 6538876191817104051
+29 Apr 09:47:44 - New player has connected: 6538876191817104051
+   [36minfo  -[39m transport end
+29 Apr 09:48:19 - Player has disconnected: 6538876191817104051
+   [36minfo  -[39m handshake authorized 2029776781914906217
+29 Apr 10:41:45 - New player has connected: 2029776781914906217
+   [36minfo  -[39m transport end
+29 Apr 10:42:40 - Player has disconnected: 2029776781914906217
+   [36minfo  -[39m handshake authorized 20734937132139611121
+29 Apr 11:36:07 - New player has connected: 20734937132139611121
+   [36minfo  -[39m transport end
+29 Apr 11:36:42 - Player has disconnected: 20734937132139611121
+   [36minfo  -[39m handshake authorized 329752519396563181
+29 Apr 12:30:09 - New player has connected: 329752519396563181
+   [36minfo  -[39m transport end
+29 Apr 12:30:44 - Player has disconnected: 329752519396563181
+   [36minfo  -[39m handshake authorized 21046930591754479560
+29 Apr 13:24:12 - New player has connected: 21046930591754479560
+   [36minfo  -[39m transport end
+29 Apr 13:24:47 - Player has disconnected: 21046930591754479560
+   [36minfo  -[39m handshake authorized 17113527251832461590
+30 Apr 06:14:14 - New player has connected: 17113527251832461590
+   [36minfo  -[39m transport end
+30 Apr 06:53:27 - Player has disconnected: 17113527251832461590
+   [36minfo  -[39m handshake authorized 19222685532127608189
+30 Apr 18:33:25 - New player has connected: 19222685532127608189
+   [36minfo  -[39m transport end
+30 Apr 19:20:39 - Player has disconnected: 19222685532127608189
+   [36minfo  -[39m handshake authorized 3953865481435591761
+30 Apr 19:25:19 - New player has connected: 3953865481435591761
+   [36minfo  -[39m transport end
+30 Apr 20:26:40 - Player has disconnected: 3953865481435591761
+   [36minfo  -[39m handshake authorized 7119788231327970587
+30 Apr 21:50:45 - New player has connected: 7119788231327970587
+   [36minfo  -[39m transport end
+30 Apr 22:59:31 - Player has disconnected: 7119788231327970587
+   [36minfo  -[39m handshake authorized 40755041115484490
+1 May 20:54:12 - New player has connected: 40755041115484490
+   [36minfo  -[39m transport end
+1 May 20:54:47 - Player has disconnected: 40755041115484490
+   [36minfo  -[39m handshake authorized 294426177332304035
+1 May 21:04:35 - New player has connected: 294426177332304035
+   [36minfo  -[39m transport end
+1 May 21:55:51 - Player has disconnected: 294426177332304035
+   [36minfo  -[39m handshake authorized 922087800900408872
+1 May 21:56:01 - New player has connected: 922087800900408872
+   [36minfo  -[39m transport end
+1 May 22:27:09 - Player has disconnected: 922087800900408872
+   [36minfo  -[39m handshake authorized 11420875481842248343
+2 May 04:41:36 - New player has connected: 11420875481842248343
+   [36minfo  -[39m transport end
+2 May 04:50:35 - Player has disconnected: 11420875481842248343
+   [36minfo  -[39m handshake authorized 5800247031110124260
+2 May 05:21:58 - New player has connected: 5800247031110124260
+   [36minfo  -[39m transport end
+2 May 05:23:53 - Player has disconnected: 5800247031110124260
+   [36minfo  -[39m handshake authorized 698911607109876311
+2 May 06:15:59 - New player has connected: 698911607109876311
+   [36minfo  -[39m transport end
+2 May 06:16:54 - Player has disconnected: 698911607109876311
+   [36minfo  -[39m handshake authorized 7366430361008885686
+2 May 07:10:20 - New player has connected: 7366430361008885686
+   [36minfo  -[39m transport end
+2 May 07:10:55 - Player has disconnected: 7366430361008885686
+   [36minfo  -[39m handshake authorized 3404620241604114464
+2 May 08:16:21 - New player has connected: 3404620241604114464
+   [36minfo  -[39m transport end
+2 May 08:17:16 - Player has disconnected: 3404620241604114464
+   [36minfo  -[39m handshake authorized 2111000438663196674
+2 May 09:10:30 - New player has connected: 2111000438663196674
+   [36minfo  -[39m transport end
+2 May 09:11:05 - Player has disconnected: 2111000438663196674
+   [36minfo  -[39m handshake authorized 7095139341375124796
+2 May 10:16:31 - New player has connected: 7095139341375124796
+   [36minfo  -[39m transport end
+2 May 10:17:27 - Player has disconnected: 7095139341375124796
+   [36minfo  -[39m handshake authorized 170888977285669131
+2 May 11:10:42 - New player has connected: 170888977285669131
+   [36minfo  -[39m transport end
+2 May 11:11:17 - Player has disconnected: 170888977285669131
+   [36minfo  -[39m handshake authorized 13773585541026999640
+2 May 12:04:47 - New player has connected: 13773585541026999640
+   [36minfo  -[39m transport end
+2 May 12:05:22 - Player has disconnected: 13773585541026999640
+   [36minfo  -[39m handshake authorized 783404151396834960
+2 May 12:58:48 - New player has connected: 783404151396834960
+   [36minfo  -[39m transport end
+2 May 12:59:43 - Player has disconnected: 783404151396834960
+   [36minfo  -[39m handshake authorized 3229837552043675089
+2 May 13:41:34 - New player has connected: 3229837552043675089
+   [36minfo  -[39m transport end
+2 May 13:42:09 - Player has disconnected: 3229837552043675089
+   [36minfo  -[39m handshake authorized 1985321174698957120
+3 May 03:22:46 - New player has connected: 1985321174698957120
+   [36minfo  -[39m transport end
+3 May 05:05:22 - Player has disconnected: 1985321174698957120
+   [36minfo  -[39m handshake authorized 437632427352396450
+3 May 05:58:51 - New player has connected: 437632427352396450
+   [36minfo  -[39m transport end
+3 May 06:01:27 - Player has disconnected: 437632427352396450
+   [36minfo  -[39m handshake authorized 107398966459043379
+3 May 06:53:05 - New player has connected: 107398966459043379
+   [36minfo  -[39m transport end
+3 May 06:53:40 - Player has disconnected: 107398966459043379
+   [36minfo  -[39m handshake authorized 13350357931257502219
+3 May 07:47:09 - New player has connected: 13350357931257502219
+   [36minfo  -[39m transport end
+3 May 07:47:45 - Player has disconnected: 13350357931257502219
+   [36minfo  -[39m handshake authorized 20595472432082539008
+3 May 23:28:09 - New player has connected: 20595472432082539008
+   [36minfo  -[39m transport end
+3 May 23:39:49 - Player has disconnected: 20595472432082539008
+   [36minfo  -[39m handshake authorized 117583373381411059
+4 May 01:30:22 - New player has connected: 117583373381411059
+   [36minfo  -[39m transport end
+4 May 01:31:38 - Player has disconnected: 117583373381411059
+   [36minfo  -[39m handshake authorized 239356697534657464
+4 May 05:07:24 - New player has connected: 239356697534657464
+   [36minfo  -[39m transport end
+4 May 06:01:00 - Player has disconnected: 239356697534657464
+   [36minfo  -[39m handshake authorized 19890519111775633704
+4 May 06:51:57 - New player has connected: 19890519111775633704
+   [36minfo  -[39m transport end
+4 May 06:54:33 - Player has disconnected: 19890519111775633704
+   [36minfo  -[39m handshake authorized 14805892421668773933
+4 May 07:46:19 - New player has connected: 14805892421668773933
+   [36minfo  -[39m transport end
+4 May 07:46:54 - Player has disconnected: 14805892421668773933
+   [36minfo  -[39m handshake authorized 1312226882342388829
+4 May 08:40:21 - New player has connected: 1312226882342388829
+   [36minfo  -[39m transport end
+4 May 08:40:56 - Player has disconnected: 1312226882342388829
+   [36minfo  -[39m handshake authorized 5710816291353781257
+4 May 09:34:24 - New player has connected: 5710816291353781257
+   [36minfo  -[39m transport end
+4 May 09:35:19 - Player has disconnected: 5710816291353781257
+   [36minfo  -[39m handshake authorized 1652556047797053758
+4 May 10:28:45 - New player has connected: 1652556047797053758
+   [36minfo  -[39m transport end
+4 May 10:29:20 - Player has disconnected: 1652556047797053758
+   [36minfo  -[39m handshake authorized 936858424608856040
+4 May 11:22:47 - New player has connected: 936858424608856040
+   [36minfo  -[39m transport end
+4 May 11:23:22 - Player has disconnected: 936858424608856040
+   [36minfo  -[39m handshake authorized 13735910902089356677
+4 May 12:16:49 - New player has connected: 13735910902089356677
+   [36minfo  -[39m transport end
+4 May 12:17:24 - Player has disconnected: 13735910902089356677
+   [36minfo  -[39m handshake authorized 2130423621766400409
+4 May 13:10:51 - New player has connected: 2130423621766400409
+   [36minfo  -[39m transport end
+4 May 13:11:26 - Player has disconnected: 2130423621766400409
+   [36minfo  -[39m handshake authorized 3485172402087959265
+4 May 13:41:00 - New player has connected: 3485172402087959265
+   [36minfo  -[39m transport end
+4 May 13:41:35 - Player has disconnected: 3485172402087959265
+   [36minfo  -[39m handshake authorized 8602048361537414650
+4 May 23:36:52 - New player has connected: 8602048361537414650
+   [36minfo  -[39m socket error Error: read ECONNRESET
+    at exports._errnoException (util.js:856:11)
+    at TCP.onread (net.js:544:26)
+   [36minfo  -[39m handshake authorized 20265808351997997837
+4 May 23:44:35 - New player has connected: 20265808351997997837
+   [36minfo  -[39m transport end
+4 May 23:44:59 - Player has disconnected: 8602048361537414650
+   [36minfo  -[39m transport end
+5 May 00:30:35 - Player has disconnected: 20265808351997997837
+   [36minfo  -[39m handshake authorized 1042654201210897414
+5 May 01:11:27 - New player has connected: 1042654201210897414
+   [36minfo  -[39m transport end
+5 May 02:05:46 - Player has disconnected: 1042654201210897414
+   [36minfo  -[39m handshake authorized 1967263192785251046
+   [36minfo  -[39m handshake authorized 1809486302552658394
+5 May 02:59:18 - New player has connected: 1809486302552658394
+   [36minfo  -[39m transport end
+5 May 03:26:02 - Player has disconnected: 1809486302552658394
+   [36minfo  -[39m handshake authorized 1484440785855316080
+5 May 04:33:23 - New player has connected: 1484440785855316080
+   [36minfo  -[39m transport end
+5 May 04:39:00 - Player has disconnected: 1484440785855316080
+   [36minfo  -[39m handshake authorized 90375808147394289
+5 May 05:28:04 - New player has connected: 90375808147394289
+   [36minfo  -[39m transport end
+5 May 05:52:50 - Player has disconnected: 90375808147394289
+   [36minfo  -[39m handshake authorized 18083338171276255153
+5 May 06:27:06 - New player has connected: 18083338171276255153
+   [36minfo  -[39m transport end
+5 May 06:27:41 - Player has disconnected: 18083338171276255153
+   [36minfo  -[39m handshake authorized 1688444685149654343
+5 May 07:31:12 - New player has connected: 1688444685149654343
+   [36minfo  -[39m transport end
+5 May 07:31:47 - Player has disconnected: 1688444685149654343
+   [36minfo  -[39m handshake authorized 107771757975618984
+5 May 08:25:16 - New player has connected: 107771757975618984
+   [36minfo  -[39m transport end
+5 May 08:26:11 - Player has disconnected: 107771757975618984
+   [36minfo  -[39m handshake authorized 11653861671703557056
+5 May 09:19:39 - New player has connected: 11653861671703557056
+   [36minfo  -[39m transport end
+5 May 09:20:14 - Player has disconnected: 11653861671703557056
+   [36minfo  -[39m handshake authorized 2057773267249433477
+5 May 10:25:42 - New player has connected: 2057773267249433477
+   [36minfo  -[39m transport end
+5 May 10:26:17 - Player has disconnected: 2057773267249433477
+   [36minfo  -[39m handshake authorized 1836550869198024937
+5 May 11:19:46 - New player has connected: 1836550869198024937
+   [36minfo  -[39m transport end
+5 May 11:20:21 - Player has disconnected: 1836550869198024937
+   [36minfo  -[39m handshake authorized 1659080493657539968
+5 May 12:13:53 - New player has connected: 1659080493657539968
+   [36minfo  -[39m transport end
+5 May 12:14:28 - Player has disconnected: 1659080493657539968
+   [36minfo  -[39m handshake authorized 6928163522071098245
+5 May 13:19:57 - New player has connected: 6928163522071098245
+   [36minfo  -[39m transport end
+5 May 13:20:52 - Player has disconnected: 6928163522071098245
+   [36minfo  -[39m handshake authorized 14471789371793674999
+5 May 13:57:28 - New player has connected: 14471789371793674999
+   [36minfo  -[39m transport end
+5 May 13:58:03 - Player has disconnected: 14471789371793674999
+[0mGET / [32m200 [0m7.029 ms - 1426[0m
+[0mGET /stylesheets/reset.css [32m200 [0m2.145 ms - 1153[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.600 ms - 1086[0m
+[0mGET /javascripts/socket.io.js [32m200 [0m0.497 ms - 53933[0m
+[0mGET /javascripts/requestAnimationFrame.js [32m200 [0m1.021 ms - 465[0m
+[0mGET /javascripts/jquery.cookie.js [32m200 [0m0.621 ms - 3121[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m0.767 ms - 121260[0m
+[0mGET /javascripts/Keys.js [32m200 [0m0.531 ms - 1078[0m
+[0mGET /javascripts/Player.js [32m200 [0m1.057 ms - 2383[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m1.042 ms - 97362[0m
+[0mGET /javascripts/Ball.js [32m200 [0m0.420 ms - 2106[0m
+[0mGET /javascripts/Food.js [32m200 [0m0.341 ms - 997[0m
+[0mGET /javascripts/game.js [32m200 [0m0.416 ms - 14394[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.401 ms - 51916[0m
+   [36minfo  -[39m handshake authorized 3939803361707408001
+[0mGET /favicon.ico [33m404 [0m379.656 ms - 1930[0m
+5 May 18:01:33 - New player has connected: 3939803361707408001
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+5 May 18:01:33 - Ball not found: undefined
+[0mGET / [32m206 [0m2.621 ms - 1426[0m
+[0mGET / [33m416 [0m46.125 ms - 556[0m
+[0mGET / [32m200 [0m1.767 ms - 1426[0m
+[0mGET /stylesheets/reset.css [32m200 [0m1.837 ms - 1153[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.041 ms - 1086[0m
+[0mGET /javascripts/requestAnimationFrame.js [32m200 [0m1.811 ms - 465[0m
+[0mGET /javascripts/socket.io.js [32m200 [0m1.871 ms - 53933[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m1.894 ms - 121260[0m
+[0mGET /javascripts/jquery.cookie.js [32m200 [0m0.667 ms - 3121[0m
+[0mGET /javascripts/Keys.js [32m200 [0m2.188 ms - 1078[0m
+[0mGET /javascripts/Player.js [32m200 [0m0.541 ms - 2383[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m4.706 ms - 97362[0m
+[0mGET /javascripts/Ball.js [32m200 [0m0.487 ms - 2106[0m
+[0mGET /javascripts/Food.js [32m200 [0m0.385 ms - 997[0m
+[0mGET /javascripts/game.js [32m200 [0m0.354 ms - 14394[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.794 ms - 51916[0m
+   [36minfo  -[39m handshake authorized 17414001531030520715
+5 May 18:03:38 - New player has connected: 17414001531030520715
+[0mGET /favicon.ico [33m404 [0m36.158 ms - 1930[0m
+5 May 18:03:38 - Ball not found: undefined
+Removing a player: 17414001531030520715
+5 May 18:03:55 - Player not found: 17414001531030520715
+5 May 18:03:55 - Player not found: 17414001531030520715
+5 May 18:03:55 - Player not found: 17414001531030520715
+POST addscore route
+{ Username: 'GUEST', Score: 341 }
+{ _id: 572b8b0bc5ff7224035cb895, Score: 341, Username: 'GUEST' }
+341
+{ _id: 572b8b0bc5ff7224035cb895,
+  Score: 341,
+  Username: 'GUEST',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m41.865 ms - 2[0m
+   [36minfo  -[39m transport end
+5 May 18:03:56 - Player has disconnected: 17414001531030520715
+5 May 18:03:56 - Player not found: 17414001531030520715
+[0mGET /highscores [32m200 [0m2.522 ms - 881[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.036 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m2.210 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m2.005 ms - -[0m
+[0mGET /javascripts/highscores.js [32m200 [0m2.655 ms - 391[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.219 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.192 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.306 ms - -[0m
+In high score route
+[ { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 741, Username: 'GUEST', _id: 56fc5aad214437ed3499230e },
+  { Score: 661, Username: 'MATT', _id: 56fc5a92214437ed3499230d },
+  { Score: 641, Username: 'MATT', _id: 56fc5acf214437ed34992310 },
+  { Score: 341, Username: 'GUEST', _id: 572b8b0bc5ff7224035cb895 },
+  { Score: 100, Username: 'MATT', _id: 56fc5ac1214437ed3499230f },
+  { Score: 50, Username: 'Tyler', _id: 56fc4f987aeca776c2815610 },
+  { Score: 35, Username: 'Tyler', _id: 56fc4f967aeca776c281560f } ]
+[0mGET /gethighscores [32m200 [0m20.404 ms - 660[0m
+[0mGET / [36m304 [0m0.688 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m1.126 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m1.010 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m1.595 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m1.542 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.488 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.447 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.305 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.187 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.193 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.186 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.214 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.190 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.252 ms - -[0m
+   [36minfo  -[39m handshake authorized 3914963161371282155
+5 May 18:04:01 - New player has connected: 3914963161371282155
+5 May 18:04:01 - Ball not found: undefined
+5 May 18:04:01 - Ball not found: undefined
+5 May 18:04:01 - Ball not found: undefined
+5 May 18:04:01 - Ball not found: undefined
+5 May 18:04:01 - Ball not found: undefined
+5 May 18:04:01 - Ball not found: undefined
+5 May 18:04:01 - Ball not found: undefined
+5 May 18:04:01 - Ball not found: undefined
+5 May 18:04:01 - Ball not found: undefined
+   [36minfo  -[39m transport end
+5 May 18:04:03 - Player has disconnected: 3939803361707408001
+[0mGET /login [32m200 [0m0.929 ms - 1754[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.953 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.807 ms - -[0m
+[0mGET /javascripts/login.js [32m200 [0m0.924 ms - 271[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.236 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.317 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.222 ms - -[0m
+   [36minfo  -[39m transport end
+5 May 18:04:07 - Player has disconnected: 3914963161371282155
+[0mGET /login [32m200 [0m0.704 ms - 1754[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.001 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.760 ms - -[0m
+[0mGET /javascripts/login.js [32m200 [0m1.839 ms - 271[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.530 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.427 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.233 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.290 ms - -[0m
+[0mGET / [36m304 [0m1.325 ms - -[0m
+[0mGET / [36m304 [0m0.624 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.726 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.577 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.244 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.251 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m1.066 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.981 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.540 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.481 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.532 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.454 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.496 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.430 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.442 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.392 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.226 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.217 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.648 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.213 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.335 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m7.070 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m2.050 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.717 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.468 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.417 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.337 ms - -[0m
+   [36minfo  -[39m handshake authorized 20960100111134323288
+   [36minfo  -[39m handshake authorized 4861801331719998699
+5 May 18:04:12 - New player has connected: 20960100111134323288
+5 May 18:04:12 - New player has connected: 4861801331719998699
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+5 May 18:04:12 - Ball not found: undefined
+Removing a player: 20960100111134323288
+5 May 18:04:54 - Player not found: 20960100111134323288
+5 May 18:04:54 - Player not found: 20960100111134323288
+5 May 18:04:54 - Player not found: 20960100111134323288
+POST addscore route
+{ Username: 'TYLER', Score: 1180 }
+{ _id: 572b8b46c5ff7224035cb896, Score: 1180, Username: 'TYLER' }
+1180
+{ _id: 572b8b46c5ff7224035cb896,
+  Score: 1180,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m3.885 ms - 2[0m
+   [36minfo  -[39m transport end
+5 May 18:04:55 - Player has disconnected: 20960100111134323288
+5 May 18:04:55 - Player not found: 20960100111134323288
+[0mGET /highscores [32m200 [0m0.791 ms - 881[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.227 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.539 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.198 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m1.235 ms - -[0m
+[0mGET /javascripts/highscores.js [32m200 [0m2.756 ms - 391[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.495 ms - -[0m
+In high score route
+[ { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 741, Username: 'GUEST', _id: 56fc5aad214437ed3499230e },
+  { Score: 661, Username: 'MATT', _id: 56fc5a92214437ed3499230d },
+  { Score: 641, Username: 'MATT', _id: 56fc5acf214437ed34992310 },
+  { Score: 341, Username: 'GUEST', _id: 572b8b0bc5ff7224035cb895 },
+  { Score: 100, Username: 'MATT', _id: 56fc5ac1214437ed3499230f },
+  { Score: 50, Username: 'Tyler', _id: 56fc4f987aeca776c2815610 } ]
+[0mGET /gethighscores [32m200 [0m5.488 ms - 662[0m
+[0mGET / [36m304 [0m0.385 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.667 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.581 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.265 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.505 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.398 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.247 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m1.322 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m1.168 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m1.042 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.244 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.556 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.903 ms - -[0m
+   [36minfo  -[39m handshake authorized 189027702747554214
+5 May 18:04:59 - New player has connected: 189027702747554214
+5 May 18:04:59 - Ball not found: undefined
+5 May 18:04:59 - Ball not found: undefined
+5 May 18:04:59 - Ball not found: undefined
+5 May 18:04:59 - Ball not found: undefined
+5 May 18:04:59 - Ball not found: undefined
+5 May 18:04:59 - Ball not found: undefined
+5 May 18:04:59 - Ball not found: undefined
+5 May 18:04:59 - Ball not found: undefined
+Removing a player: 20960100111134323288
+5 May 18:05:08 - player not found to remove: 20960100111134323288
+[0mGET / [32m200 [0m0.474 ms - 1426[0m
+[0mGET /stylesheets/reset.css [32m200 [0m1.244 ms - 1153[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.328 ms - 1086[0m
+[0mGET /javascripts/socket.io.js [32m200 [0m0.381 ms - 53933[0m
+[0mGET /javascripts/requestAnimationFrame.js [32m200 [0m0.967 ms - 465[0m
+[0mGET /javascripts/jquery.cookie.js [32m200 [0m0.354 ms - 3121[0m
+[0mGET /javascripts/Keys.js [32m200 [0m0.343 ms - 1078[0m
+[0mGET /javascripts/Player.js [32m200 [0m1.143 ms - 2383[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m0.707 ms - 97362[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m1.274 ms - 121260[0m
+[0mGET /javascripts/Ball.js [32m200 [0m0.395 ms - 2106[0m
+[0mGET /javascripts/Food.js [32m200 [0m3.135 ms - 997[0m
+[0mGET /javascripts/game.js [32m200 [0m0.341 ms - 14394[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m1.572 ms - 51916[0m
+   [36minfo  -[39m handshake authorized 8509894121040207228
+[0mGET /favicon.ico [33m404 [0m20.273 ms - 1930[0m
+5 May 18:06:13 - New player has connected: 8509894121040207228
+5 May 18:06:13 - Ball not found: undefined
+5 May 18:06:13 - Ball not found: undefined
+5 May 18:06:13 - Ball not found: undefined
+5 May 18:06:13 - Ball not found: undefined
+5 May 18:06:13 - Ball not found: undefined
+5 May 18:06:13 - Ball not found: undefined
+5 May 18:06:13 - Ball not found: undefined
+5 May 18:06:13 - Ball not found: undefined
+5 May 18:06:13 - Ball not found: undefined
+5 May 18:06:13 - Ball not found: undefined
+5 May 18:06:13 - Ball not found: undefined
+5 May 18:06:13 - Ball not found: undefined
+5 May 18:06:13 - Ball not found: undefined
+Removing a player: 8509894121040207228
+POST addscore route
+{ Username: 'GUEST', Score: 73 }
+{ _id: 572b8b9cc5ff7224035cb897, Score: 73, Username: 'GUEST' }
+73
+{ _id: 572b8b9cc5ff7224035cb897,
+  Score: 73,
+  Username: 'GUEST',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.046 ms - 2[0m
+   [36minfo  -[39m transport end
+5 May 18:06:21 - Player has disconnected: 8509894121040207228
+5 May 18:06:21 - Player not found: 8509894121040207228
+[0mGET /highscores [32m200 [0m0.840 ms - 881[0m
+[0mGET /stylesheets/reset.css [36m304 [0m1.615 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m1.514 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.389 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m1.355 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.448 ms - -[0m
+[0mGET /javascripts/highscores.js [32m200 [0m0.589 ms - 391[0m
+In high score route
+[ { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 741, Username: 'GUEST', _id: 56fc5aad214437ed3499230e },
+  { Score: 661, Username: 'MATT', _id: 56fc5a92214437ed3499230d },
+  { Score: 641, Username: 'MATT', _id: 56fc5acf214437ed34992310 },
+  { Score: 341, Username: 'GUEST', _id: 572b8b0bc5ff7224035cb895 },
+  { Score: 100, Username: 'MATT', _id: 56fc5ac1214437ed3499230f },
+  { Score: 73, Username: 'GUEST', _id: 572b8b9cc5ff7224035cb897 } ]
+[0mGET /gethighscores [32m200 [0m4.459 ms - 662[0m
+Removing a player: 189027702747554214
+[0mGET / [36m304 [0m0.355 ms - -[0m
+POST addscore route
+{ Username: 'TYLER', Score: 2162 }
+{ _id: 572b8b9fc5ff7224035cb898, Score: 2162, Username: 'TYLER' }
+2162
+{ _id: 572b8b9fc5ff7224035cb898,
+  Score: 2162,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m1.945 ms - 2[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.542 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.421 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.474 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.361 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.422 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.370 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.232 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.174 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.172 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.689 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.587 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m1.402 ms - -[0m
+   [36minfo  -[39m handshake authorized 658656327867216588
+5 May 18:06:24 - New player has connected: 658656327867216588
+5 May 18:06:24 - Ball not found: undefined
+5 May 18:06:24 - Ball not found: undefined
+5 May 18:06:24 - Ball not found: undefined
+5 May 18:06:24 - Ball not found: undefined
+5 May 18:06:24 - Ball not found: undefined
+5 May 18:06:24 - Ball not found: undefined
+5 May 18:06:24 - Ball not found: undefined
+5 May 18:06:24 - Ball not found: undefined
+5 May 18:06:24 - Ball not found: undefined
+   [36minfo  -[39m transport end
+5 May 18:06:24 - Player has disconnected: 189027702747554214
+5 May 18:06:24 - Player not found: 189027702747554214
+[0mGET /highscores [36m304 [0m0.553 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.307 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.515 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.436 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.206 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.217 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.225 ms - -[0m
+In high score route
+[ { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 741, Username: 'GUEST', _id: 56fc5aad214437ed3499230e },
+  { Score: 661, Username: 'MATT', _id: 56fc5a92214437ed3499230d },
+  { Score: 641, Username: 'MATT', _id: 56fc5acf214437ed34992310 },
+  { Score: 341, Username: 'GUEST', _id: 572b8b0bc5ff7224035cb895 },
+  { Score: 100, Username: 'MATT', _id: 56fc5ac1214437ed3499230f } ]
+[0mGET /gethighscores [32m200 [0m4.567 ms - 664[0m
+Removing a player: 658656327867216588
+POST addscore route
+{ Username: 'GUEST', Score: 15 }
+{ _id: 572b8ba1c5ff7224035cb899, Score: 15, Username: 'GUEST' }
+15
+{ _id: 572b8ba1c5ff7224035cb899,
+  Score: 15,
+  Username: 'GUEST',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m3.862 ms - 2[0m
+   [36minfo  -[39m transport end
+5 May 18:06:26 - Player has disconnected: 658656327867216588
+5 May 18:06:26 - Player not found: 658656327867216588
+[0mGET /highscores [36m304 [0m1.762 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.574 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.508 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.953 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.895 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.849 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.815 ms - -[0m
+In high score route
+[ { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 741, Username: 'GUEST', _id: 56fc5aad214437ed3499230e },
+  { Score: 661, Username: 'MATT', _id: 56fc5a92214437ed3499230d },
+  { Score: 641, Username: 'MATT', _id: 56fc5acf214437ed34992310 },
+  { Score: 341, Username: 'GUEST', _id: 572b8b0bc5ff7224035cb895 },
+  { Score: 100, Username: 'MATT', _id: 56fc5ac1214437ed3499230f } ]
+[0mGET /gethighscores [32m200 [0m7.160 ms - 664[0m
+[0mGET / [36m304 [0m0.295 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.587 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.512 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.745 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.693 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.634 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.279 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.784 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.196 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.422 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.363 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.412 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.370 ms - -[0m
+   [36minfo  -[39m handshake authorized 1192834692353100395
+5 May 18:06:28 - New player has connected: 1192834692353100395
+5 May 18:06:28 - Ball not found: undefined
+5 May 18:06:28 - Ball not found: undefined
+5 May 18:06:28 - Ball not found: undefined
+5 May 18:06:28 - Ball not found: undefined
+5 May 18:06:28 - Ball not found: undefined
+5 May 18:06:28 - Ball not found: undefined
+5 May 18:06:28 - Ball not found: undefined
+5 May 18:06:28 - Ball not found: undefined
+5 May 18:06:28 - Ball not found: undefined
+5 May 18:06:28 - Ball not found: undefined
+   [36minfo  -[39m transport end
+5 May 18:06:32 - Player has disconnected: 4861801331719998699
+[0mGET / [36m304 [0m0.381 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.758 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.873 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.785 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.206 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.523 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.428 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.694 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.633 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.570 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m1.706 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m1.875 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.345 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.193 ms - -[0m
+   [36minfo  -[39m handshake authorized 1870783948732258480
+5 May 18:06:33 - New player has connected: 1870783948732258480
+[0mGET / [36m304 [0m0.260 ms - -[0m
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+[0mGET /javascripts/socket.io.js [36m304 [0m0.630 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.529 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.204 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.222 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.483 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.379 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.222 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.242 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.213 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.222 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.424 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.410 ms - -[0m
+   [36minfo  -[39m handshake authorized 18470670891065637771
+5 May 18:06:33 - New player has connected: 18470670891065637771
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+5 May 18:06:33 - Ball not found: undefined
+Removing a player: 18470670891065637771
+5 May 18:07:04 - Player not found: 18470670891065637771
+5 May 18:07:04 - Player not found: 18470670891065637771
+5 May 18:07:04 - Player not found: 18470670891065637771
+POST addscore route
+{ Username: 'TYLER', Score: 862 }
+{ _id: 572b8bc8c5ff7224035cb89a, Score: 862, Username: 'TYLER' }
+862
+{ _id: 572b8bc8c5ff7224035cb89a,
+  Score: 862,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m1.957 ms - 2[0m
+   [36minfo  -[39m transport end
+5 May 18:07:05 - Player has disconnected: 18470670891065637771
+5 May 18:07:05 - Player not found: 18470670891065637771
+[0mGET /highscores [36m304 [0m0.696 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m1.209 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m1.025 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.910 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.214 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.487 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.399 ms - -[0m
+In high score route
+[ { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 862, Username: 'TYLER', _id: 572b8bc8c5ff7224035cb89a },
+  { Score: 741, Username: 'GUEST', _id: 56fc5aad214437ed3499230e },
+  { Score: 661, Username: 'MATT', _id: 56fc5a92214437ed3499230d },
+  { Score: 641, Username: 'MATT', _id: 56fc5acf214437ed34992310 },
+  { Score: 341, Username: 'GUEST', _id: 572b8b0bc5ff7224035cb895 } ]
+[0mGET /gethighscores [32m200 [0m4.805 ms - 665[0m
+[0mGET / [36m304 [0m0.349 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.303 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.515 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.441 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.350 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.178 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.211 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.213 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.337 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.263 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.432 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.398 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.204 ms - -[0m
+   [36minfo  -[39m handshake authorized 1323454896484144346
+5 May 18:07:10 - New player has connected: 1323454896484144346
+5 May 18:07:10 - Ball not found: undefined
+5 May 18:07:10 - Ball not found: undefined
+5 May 18:07:10 - Ball not found: undefined
+5 May 18:07:10 - Ball not found: undefined
+5 May 18:07:10 - Ball not found: undefined
+5 May 18:07:10 - Ball not found: undefined
+5 May 18:07:10 - Ball not found: undefined
+5 May 18:07:10 - Ball not found: undefined
+Removing a player: 1870783948732258480
+POST addscore route
+{ Username: 'MICKEY', Score: 2063 }
+{ _id: 572b8c01c5ff7224035cb89b,
+  Score: 2063,
+  Username: 'MICKEY' }
+2063
+{ _id: 572b8c01c5ff7224035cb89b,
+  Score: 2063,
+  Username: 'MICKEY',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.329 ms - 2[0m
+   [36minfo  -[39m transport end
+5 May 18:08:02 - Player has disconnected: 1870783948732258480
+5 May 18:08:02 - Player not found: 1870783948732258480
+[0mGET /highscores [36m304 [0m1.501 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.276 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.757 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.666 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.566 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.444 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.383 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.341 ms - -[0m
+In high score route
+[ { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 862, Username: 'TYLER', _id: 572b8bc8c5ff7224035cb89a },
+  { Score: 741, Username: 'GUEST', _id: 56fc5aad214437ed3499230e },
+  { Score: 661, Username: 'MATT', _id: 56fc5a92214437ed3499230d },
+  { Score: 641, Username: 'MATT', _id: 56fc5acf214437ed34992310 } ]
+[0mGET /gethighscores [32m200 [0m3.938 ms - 667[0m
+Removing a player: 1192834692353100395
+5 May 18:08:11 - Player not found: 1192834692353100395
+5 May 18:08:11 - Player not found: 1192834692353100395
+5 May 18:08:11 - Player not found: 1192834692353100395
+5 May 18:08:11 - Player not found: 1192834692353100395
+POST addscore route
+{ Username: 'GUEST', Score: 1029 }
+{ _id: 572b8c0bc5ff7224035cb89c, Score: 1029, Username: 'GUEST' }
+1029
+{ _id: 572b8c0bc5ff7224035cb89c,
+  Score: 1029,
+  Username: 'GUEST',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.377 ms - 2[0m
+   [36minfo  -[39m transport end
+5 May 18:08:12 - Player has disconnected: 1192834692353100395
+5 May 18:08:12 - Player not found: 1192834692353100395
+[0mGET /highscores [36m304 [0m0.800 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.542 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.473 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.717 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.608 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.562 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.179 ms - -[0m
+In high score route
+[ { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c },
+  { Score: 862, Username: 'TYLER', _id: 572b8bc8c5ff7224035cb89a },
+  { Score: 741, Username: 'GUEST', _id: 56fc5aad214437ed3499230e },
+  { Score: 661, Username: 'MATT', _id: 56fc5a92214437ed3499230d } ]
+[0mGET /gethighscores [32m200 [0m3.380 ms - 669[0m
+   [36minfo  -[39m transport end
+5 May 18:08:15 - Player has disconnected: 1323454896484144346
+[0mGET / [36m304 [0m0.336 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.535 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.488 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.243 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m1.328 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.293 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.672 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.214 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.207 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.624 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.561 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.522 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.277 ms - -[0m
+   [36minfo  -[39m handshake authorized 1779325985887162867
+5 May 18:08:33 - New player has connected: 1779325985887162867
+5 May 18:08:33 - Ball not found: undefined
+5 May 18:08:33 - Ball not found: undefined
+5 May 18:08:33 - Ball not found: undefined
+5 May 18:08:33 - Ball not found: undefined
+5 May 18:08:33 - Ball not found: undefined
+5 May 18:08:33 - Ball not found: undefined
+5 May 18:08:33 - Ball not found: undefined
+5 May 18:08:33 - Ball not found: undefined
+5 May 18:08:33 - Ball not found: undefined
+5 May 18:08:33 - Ball not found: undefined
+5 May 18:08:33 - Ball not found: undefined
+5 May 18:08:33 - Ball not found: undefined
+5 May 18:08:33 - Ball not found: undefined
+[0mGET /login [32m206 [0m1.680 ms - 1754[0m
+[0mGET /login [33m416 [0m31.870 ms - 565[0m
+[0mGET / [36m304 [0m0.651 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.347 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.245 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m3.774 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m1.616 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.916 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.844 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.248 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.235 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.204 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.227 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.261 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.213 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.220 ms - -[0m
+   [36minfo  -[39m handshake authorized 209041798691532783
+5 May 18:11:08 - New player has connected: 209041798691532783
+5 May 18:11:08 - Ball not found: undefined
+5 May 18:11:08 - Ball not found: undefined
+5 May 18:11:08 - Ball not found: undefined
+5 May 18:11:08 - Ball not found: undefined
+5 May 18:11:08 - Ball not found: undefined
+5 May 18:11:08 - Ball not found: undefined
+5 May 18:11:08 - Ball not found: undefined
+5 May 18:11:08 - Ball not found: undefined
+5 May 18:11:08 - Ball not found: undefined
+5 May 18:11:08 - Ball not found: undefined
+5 May 18:11:08 - Ball not found: undefined
+Removing a player: 209041798691532783
+5 May 18:11:09 - Player not found: 209041798691532783
+5 May 18:11:09 - Player not found: 209041798691532783
+5 May 18:11:09 - Player not found: 209041798691532783
+POST addscore route
+{ Username: 'TYLER', Score: 15 }
+{ _id: 572b8cbdc5ff7224035cb89d, Score: 15, Username: 'TYLER' }
+15
+{ _id: 572b8cbdc5ff7224035cb89d,
+  Score: 15,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m5.336 ms - 2[0m
+   [36minfo  -[39m transport end
+5 May 18:11:10 - Player has disconnected: 209041798691532783
+5 May 18:11:10 - Player not found: 209041798691532783
+[0mGET /highscores [36m304 [0m0.537 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.362 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.215 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.496 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.451 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.559 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.452 ms - -[0m
+In high score route
+[ { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c },
+  { Score: 862, Username: 'TYLER', _id: 572b8bc8c5ff7224035cb89a },
+  { Score: 741, Username: 'GUEST', _id: 56fc5aad214437ed3499230e },
+  { Score: 661, Username: 'MATT', _id: 56fc5a92214437ed3499230d } ]
+[0mGET /gethighscores [32m200 [0m4.363 ms - 669[0m
+[0mGET /login [32m200 [0m0.681 ms - 1754[0m
+[0mGET /stylesheets/reset.css [36m304 [0m1.063 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.979 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.949 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.870 ms - -[0m
+[0mGET /javascripts/login.js [32m200 [0m0.303 ms - 271[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.218 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.257 ms - -[0m
+[0mGET /login [32m200 [0m0.676 ms - 1754[0m
+[0mGET /stylesheets/style.css [32m200 [0m4.753 ms - 1086[0m
+[0mGET /stylesheets/reset.css [32m200 [0m4.710 ms - 1153[0m
+[0mGET /javascripts/jquery.cookie.js [32m200 [0m0.358 ms - 3121[0m
+[0mGET /javascripts/login.js [32m200 [0m0.313 ms - 271[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m4.868 ms - 121260[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m1.169 ms - 97362[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.583 ms - 51916[0m
+[0mGET / [32m200 [0m0.587 ms - 1426[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.291 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.210 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.224 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.366 ms - -[0m
+[0mGET /javascripts/socket.io.js [32m200 [0m1.028 ms - 53933[0m
+[0mGET /javascripts/requestAnimationFrame.js [32m200 [0m1.256 ms - 465[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.457 ms - -[0m
+[0mGET /javascripts/Keys.js [32m200 [0m0.764 ms - 1078[0m
+[0mGET /javascripts/Player.js [32m200 [0m0.595 ms - 2383[0m
+[0mGET /javascripts/Ball.js [32m200 [0m0.428 ms - 2106[0m
+[0mGET /javascripts/Food.js [32m200 [0m0.415 ms - 997[0m
+[0mGET /javascripts/game.js [32m200 [0m0.694 ms - 14394[0m
+   [36minfo  -[39m handshake authorized 16774246181971613517
+5 May 18:15:40 - New player has connected: 16774246181971613517
+5 May 18:15:40 - Ball not found: undefined
+5 May 18:15:40 - Ball not found: undefined
+5 May 18:15:40 - Ball not found: undefined
+5 May 18:15:40 - Ball not found: undefined
+5 May 18:15:40 - Ball not found: undefined
+5 May 18:15:40 - Ball not found: undefined
+5 May 18:15:40 - Ball not found: undefined
+5 May 18:15:40 - Ball not found: undefined
+5 May 18:15:40 - Ball not found: undefined
+5 May 18:15:40 - Ball not found: undefined
+5 May 18:15:40 - Ball not found: undefined
+5 May 18:15:40 - Ball not found: undefined
+5 May 18:15:40 - Ball not found: undefined
+Removing a player: 16774246181971613517
+5 May 18:16:37 - Player not found: 16774246181971613517
+5 May 18:16:37 - Player not found: 16774246181971613517
+5 May 18:16:37 - Player not found: 16774246181971613517
+POST addscore route
+{ Username: 'TYLER', Score: 972 }
+{ _id: 572b8e05c5ff7224035cb89e, Score: 972, Username: 'TYLER' }
+972
+{ _id: 572b8e05c5ff7224035cb89e,
+  Score: 972,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.285 ms - 2[0m
+   [36minfo  -[39m transport end
+5 May 18:16:38 - Player has disconnected: 16774246181971613517
+5 May 18:16:38 - Player not found: 16774246181971613517
+[0mGET /highscores [32m200 [0m0.697 ms - 881[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.375 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.485 ms - -[0m
+[0mGET /javascripts/highscores.js [32m200 [0m0.627 ms - 391[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.544 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.445 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.228 ms - -[0m
+In high score route
+[ { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c },
+  { Score: 972, Username: 'TYLER', _id: 572b8e05c5ff7224035cb89e },
+  { Score: 862, Username: 'TYLER', _id: 572b8bc8c5ff7224035cb89a },
+  { Score: 741, Username: 'GUEST', _id: 56fc5aad214437ed3499230e } ]
+[0mGET /gethighscores [32m200 [0m6.850 ms - 670[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.379 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.262 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.201 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css.map [33m404 [0m9.719 ms - 1930[0m
+[0mGET /login [36m304 [0m0.557 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.265 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.609 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.476 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.474 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.411 ms - -[0m
+[0mGET /javascripts/login.js [36m304 [0m0.216 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.291 ms - -[0m
+[0mGET / [36m304 [0m0.345 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.850 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.793 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.775 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.438 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.407 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.183 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m2.080 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.406 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.766 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.739 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.709 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.783 ms - -[0m
+   [36minfo  -[39m handshake authorized 173411614228697300
+5 May 18:31:09 - New player has connected: 173411614228697300
+5 May 18:31:09 - Ball not found: undefined
+5 May 18:31:09 - Ball not found: undefined
+5 May 18:31:09 - Ball not found: undefined
+5 May 18:31:09 - Ball not found: undefined
+5 May 18:31:09 - Ball not found: undefined
+5 May 18:31:09 - Ball not found: undefined
+5 May 18:31:09 - Ball not found: undefined
+5 May 18:31:09 - Ball not found: undefined
+5 May 18:31:09 - Ball not found: undefined
+5 May 18:31:09 - Ball not found: undefined
+Removing a player: 173411614228697300
+POST addscore route
+{ Username: 'TYLER', Score: 70 }
+{ _id: 572b9174c5ff7224035cb89f, Score: 70, Username: 'TYLER' }
+70
+{ _id: 572b9174c5ff7224035cb89f,
+  Score: 70,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.962 ms - 2[0m
+   [36minfo  -[39m transport end
+5 May 18:31:17 - Player has disconnected: 173411614228697300
+5 May 18:31:17 - Player not found: 173411614228697300
+[0mGET /highscores [36m304 [0m0.950 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m1.677 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m1.610 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.558 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m1.467 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m1.306 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.360 ms - -[0m
+In high score route
+[ { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c },
+  { Score: 972, Username: 'TYLER', _id: 572b8e05c5ff7224035cb89e },
+  { Score: 862, Username: 'TYLER', _id: 572b8bc8c5ff7224035cb89a },
+  { Score: 741, Username: 'GUEST', _id: 56fc5aad214437ed3499230e } ]
+[0mGET /gethighscores [36m304 [0m4.380 ms - -[0m
+[0mGET / [36m304 [0m0.403 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.133 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m1.024 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.969 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.907 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.220 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.208 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.270 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.916 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.899 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.868 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.823 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.207 ms - -[0m
+   [36minfo  -[39m handshake authorized 2016082637272545586
+5 May 18:31:29 - New player has connected: 2016082637272545586
+5 May 18:31:29 - Ball not found: undefined
+5 May 18:31:29 - Ball not found: undefined
+5 May 18:31:29 - Ball not found: undefined
+5 May 18:31:29 - Ball not found: undefined
+5 May 18:31:29 - Ball not found: undefined
+5 May 18:31:29 - Ball not found: undefined
+5 May 18:31:29 - Ball not found: undefined
+5 May 18:31:29 - Ball not found: undefined
+5 May 18:31:29 - Ball not found: undefined
+5 May 18:31:29 - Ball not found: undefined
+[0mGET / [36m304 [0m0.331 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.454 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m1.074 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.195 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.506 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.457 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.202 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m12.517 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m2.012 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m1.982 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m1.934 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m1.922 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m1.636 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.314 ms - -[0m
+Removing a player: 2016082637272545586
+   [36minfo  -[39m handshake authorized 101233659177432643
+POST addscore route
+{ Username: 'TYLER', Score: 47 }
+{ _id: 572b9186c5ff7224035cb8a0, Score: 47, Username: 'TYLER' }
+47
+{ _id: 572b9186c5ff7224035cb8a0,
+  Score: 47,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m6.782 ms - 2[0m
+5 May 18:31:34 - New player has connected: 101233659177432643
+5 May 18:31:34 - Ball not found: undefined
+5 May 18:31:34 - Ball not found: undefined
+5 May 18:31:34 - Ball not found: undefined
+5 May 18:31:34 - Ball not found: undefined
+5 May 18:31:34 - Ball not found: undefined
+5 May 18:31:34 - Ball not found: undefined
+5 May 18:31:34 - Ball not found: undefined
+5 May 18:31:34 - Ball not found: undefined
+5 May 18:31:34 - Ball not found: undefined
+   [36minfo  -[39m transport end
+5 May 18:31:35 - Player has disconnected: 2016082637272545586
+5 May 18:31:35 - Player not found: 2016082637272545586
+[0mGET /highscores [36m304 [0m0.550 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.522 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.438 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.405 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.396 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.213 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.212 ms - -[0m
+In high score route
+[ { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c },
+  { Score: 972, Username: 'TYLER', _id: 572b8e05c5ff7224035cb89e },
+  { Score: 862, Username: 'TYLER', _id: 572b8bc8c5ff7224035cb89a },
+  { Score: 741, Username: 'GUEST', _id: 56fc5aad214437ed3499230e } ]
+[0mGET /gethighscores [36m304 [0m9.260 ms - -[0m
+[0mGET / [36m304 [0m0.306 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.653 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.552 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.912 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.867 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.685 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.201 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.838 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.823 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.728 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.480 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.399 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.281 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.205 ms - -[0m
+   [36minfo  -[39m handshake authorized 843130489801057876
+5 May 18:31:37 - New player has connected: 843130489801057876
+5 May 18:31:37 - Ball not found: undefined
+5 May 18:31:37 - Ball not found: undefined
+5 May 18:31:37 - Ball not found: undefined
+5 May 18:31:37 - Ball not found: undefined
+5 May 18:31:37 - Ball not found: undefined
+5 May 18:31:37 - Ball not found: undefined
+5 May 18:31:37 - Ball not found: undefined
+5 May 18:31:37 - Ball not found: undefined
+5 May 18:31:37 - Ball not found: undefined
+[0mGET / [36m304 [0m0.572 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.371 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.871 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.749 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.648 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m5.033 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.302 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.298 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.800 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.795 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.787 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.195 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.231 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.362 ms - -[0m
+   [36minfo  -[39m handshake authorized 11165857851910716034
+5 May 18:31:39 - New player has connected: 11165857851910716034
+5 May 18:31:39 - Ball not found: undefined
+5 May 18:31:39 - Ball not found: undefined
+5 May 18:31:39 - Ball not found: undefined
+5 May 18:31:39 - Ball not found: undefined
+5 May 18:31:39 - Ball not found: undefined
+5 May 18:31:39 - Ball not found: undefined
+5 May 18:31:39 - Ball not found: undefined
+Removing a player: 101233659177432643
+POST addscore route
+{ Username: 'TYLER', Score: 63 }
+{ _id: 572b918cc5ff7224035cb8a1, Score: 63, Username: 'TYLER' }
+63
+{ _id: 572b918cc5ff7224035cb8a1,
+  Score: 63,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m3.829 ms - 2[0m
+   [36minfo  -[39m transport end
+5 May 18:31:41 - Player has disconnected: 101233659177432643
+5 May 18:31:41 - Player not found: 101233659177432643
+[0mGET /highscores [36m304 [0m0.485 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.865 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.798 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.725 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.591 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.515 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.262 ms - -[0m
+In high score route
+[ { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c },
+  { Score: 972, Username: 'TYLER', _id: 572b8e05c5ff7224035cb89e },
+  { Score: 862, Username: 'TYLER', _id: 572b8bc8c5ff7224035cb89a },
+  { Score: 741, Username: 'GUEST', _id: 56fc5aad214437ed3499230e } ]
+[0mGET /gethighscores [36m304 [0m5.168 ms - -[0m
+[0mGET / [36m304 [0m0.336 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.845 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.521 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.591 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.450 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.565 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.265 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m1.290 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m1.400 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m1.313 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m1.173 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m1.089 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.290 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.225 ms - -[0m
+   [36minfo  -[39m handshake authorized 18110030911413063297
+5 May 18:31:43 - New player has connected: 18110030911413063297
+5 May 18:31:43 - Ball not found: undefined
+5 May 18:31:43 - Ball not found: undefined
+5 May 18:31:43 - Ball not found: undefined
+5 May 18:31:43 - Ball not found: undefined
+5 May 18:31:43 - Ball not found: undefined
+5 May 18:31:43 - Ball not found: undefined
+5 May 18:31:43 - Ball not found: undefined
+5 May 18:31:43 - Ball not found: undefined
+Removing a player: 11165857851910716034
+POST addscore route
+{ Username: 'TYLER', Score: 136 }
+{ _id: 572b9196c5ff7224035cb8a2, Score: 136, Username: 'TYLER' }
+136
+{ _id: 572b9196c5ff7224035cb8a2,
+  Score: 136,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m4.461 ms - 2[0m
+   [36minfo  -[39m transport end
+5 May 18:31:51 - Player has disconnected: 11165857851910716034
+5 May 18:31:51 - Player not found: 11165857851910716034
+[0mGET /highscores [36m304 [0m0.897 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.847 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.795 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.669 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.501 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.380 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.174 ms - -[0m
+In high score route
+[ { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c },
+  { Score: 972, Username: 'TYLER', _id: 572b8e05c5ff7224035cb89e },
+  { Score: 862, Username: 'TYLER', _id: 572b8bc8c5ff7224035cb89a },
+  { Score: 741, Username: 'GUEST', _id: 56fc5aad214437ed3499230e } ]
+[0mGET /gethighscores [36m304 [0m5.495 ms - -[0m
+   [36minfo  -[39m transport end
+5 May 18:31:52 - Player has disconnected: 18110030911413063297
+Removing a player: 843130489801057876
+POST addscore route
+{ Username: 'TYLER', Score: 78 }
+{ _id: 572b9198c5ff7224035cb8a3, Score: 78, Username: 'TYLER' }
+78
+{ _id: 572b9198c5ff7224035cb8a3,
+  Score: 78,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.242 ms - 2[0m
+   [36minfo  -[39m transport end
+5 May 18:31:53 - Player has disconnected: 843130489801057876
+5 May 18:31:53 - Player not found: 843130489801057876
+[0mGET /highscores [36m304 [0m0.496 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.704 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.699 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.676 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.442 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.389 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.180 ms - -[0m
+[0mGET / [36m304 [0m0.351 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.239 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m1.151 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m1.716 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m1.699 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m1.650 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.180 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m1.199 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m1.082 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m1.021 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.994 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.977 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.195 ms - -[0m
+   [36minfo  -[39m handshake authorized 16219942771918879509
+5 May 18:31:55 - New player has connected: 16219942771918879509
+5 May 18:31:55 - Ball not found: undefined
+5 May 18:31:55 - Ball not found: undefined
+5 May 18:31:55 - Ball not found: undefined
+5 May 18:31:55 - Ball not found: undefined
+5 May 18:31:55 - Ball not found: undefined
+5 May 18:31:55 - Ball not found: undefined
+5 May 18:31:55 - Ball not found: undefined
+5 May 18:31:55 - Ball not found: undefined
+5 May 18:31:55 - Ball not found: undefined
+Removing a player: 16219942771918879509
+5 May 18:32:01 - Player not found: 16219942771918879509
+5 May 18:32:01 - Player not found: 16219942771918879509
+5 May 18:32:01 - Player not found: 16219942771918879509
+POST addscore route
+{ Username: 'TYLER', Score: 57 }
+{ _id: 572b91a1c5ff7224035cb8a4, Score: 57, Username: 'TYLER' }
+57
+{ _id: 572b91a1c5ff7224035cb8a4,
+  Score: 57,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.347 ms - 2[0m
+   [36minfo  -[39m transport end
+5 May 18:32:02 - Player has disconnected: 16219942771918879509
+5 May 18:32:02 - Player not found: 16219942771918879509
+[0mGET /highscores [36m304 [0m1.355 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.442 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.441 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.671 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.622 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m1.485 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.225 ms - -[0m
+In high score route
+[ { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c },
+  { Score: 972, Username: 'TYLER', _id: 572b8e05c5ff7224035cb89e },
+  { Score: 862, Username: 'TYLER', _id: 572b8bc8c5ff7224035cb89a },
+  { Score: 741, Username: 'GUEST', _id: 56fc5aad214437ed3499230e } ]
+[0mGET /gethighscores [36m304 [0m3.313 ms - -[0m
+[0mGET / [36m304 [0m0.478 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.768 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.653 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.565 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.420 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.370 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.865 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.250 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.730 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.676 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.636 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.184 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.226 ms - -[0m
+   [36minfo  -[39m handshake authorized 13163303722146976745
+5 May 18:32:57 - New player has connected: 13163303722146976745
+5 May 18:32:57 - Ball not found: undefined
+5 May 18:32:57 - Ball not found: undefined
+5 May 18:32:57 - Ball not found: undefined
+5 May 18:32:57 - Ball not found: undefined
+5 May 18:32:57 - Ball not found: undefined
+5 May 18:32:57 - Ball not found: undefined
+5 May 18:32:57 - Ball not found: undefined
+5 May 18:32:57 - Ball not found: undefined
+5 May 18:32:57 - Ball not found: undefined
+   [36minfo  -[39m transport end
+5 May 18:32:57 - Player has disconnected: 13163303722146976745
+POST addscore route
+{ Username: 'GUEST', Score: 516594 }
+{ _id: 572b92dbc5ff7224035cb8a5,
+  Score: 516594,
+  Username: 'GUEST' }
+516594
+{ _id: 572b92dbc5ff7224035cb8a5,
+  Score: 516594,
+  Username: 'GUEST',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m4.371 ms - 2[0m
+   [36minfo  -[39m transport end
+5 May 18:37:16 - Player has disconnected: 1779325985887162867
+[0mGET /highscores [36m304 [0m0.679 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.322 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.573 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.512 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.755 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.698 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.638 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c },
+  { Score: 972, Username: 'TYLER', _id: 572b8e05c5ff7224035cb89e },
+  { Score: 862, Username: 'TYLER', _id: 572b8bc8c5ff7224035cb89a } ]
+[0mGET /gethighscores [32m200 [0m5.500 ms - 673[0m
+[0mGET / [36m304 [0m0.375 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.723 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.669 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.648 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.199 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.176 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.221 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.947 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.863 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.807 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.779 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.183 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.214 ms - -[0m
+   [36minfo  -[39m handshake authorized 673058737845700368
+5 May 18:37:46 - New player has connected: 673058737845700368
+5 May 18:37:46 - Ball not found: undefined
+5 May 18:37:46 - Ball not found: undefined
+5 May 18:37:46 - Ball not found: undefined
+5 May 18:37:46 - Ball not found: undefined
+5 May 18:37:46 - Ball not found: undefined
+5 May 18:37:46 - Ball not found: undefined
+5 May 18:37:46 - Ball not found: undefined
+5 May 18:37:46 - Ball not found: undefined
+5 May 18:37:46 - Ball not found: undefined
+5 May 18:37:46 - Ball not found: undefined
+5 May 18:37:46 - Ball not found: undefined
+   [36minfo  -[39m transport end
+5 May 18:38:43 - Player has disconnected: 673058737845700368
+   [36minfo  -[39m handshake authorized 5285119111451326840
+5 May 23:37:20 - New player has connected: 5285119111451326840
+   [36minfo  -[39m transport end
+5 May 23:47:19 - Player has disconnected: 5285119111451326840
+   [36minfo  -[39m handshake authorized 14149456641796551882
+6 May 00:22:18 - New player has connected: 14149456641796551882
+   [36minfo  -[39m transport end
+6 May 00:25:54 - Player has disconnected: 14149456641796551882
+   [36minfo  -[39m handshake authorized 3459142101618720951
+6 May 02:10:54 - New player has connected: 3459142101618720951
+   [36minfo  -[39m transport end
+6 May 02:39:00 - Player has disconnected: 3459142101618720951
+   [36minfo  -[39m handshake authorized 15854498151612038031
+6 May 05:12:05 - New player has connected: 15854498151612038031
+   [36minfo  -[39m transport end
+6 May 05:25:24 - Player has disconnected: 15854498151612038031
+   [36minfo  -[39m handshake authorized 4900313711921363771
+6 May 05:58:00 - New player has connected: 4900313711921363771
+   [36minfo  -[39m transport end
+6 May 06:00:35 - Player has disconnected: 4900313711921363771
+   [36minfo  -[39m handshake authorized 864194136368659755
+6 May 06:52:06 - New player has connected: 864194136368659755
+   [36minfo  -[39m transport end
+6 May 06:52:41 - Player has disconnected: 864194136368659755
+   [36minfo  -[39m handshake authorized 1863916075466101456
+6 May 07:46:07 - New player has connected: 1863916075466101456
+   [36minfo  -[39m transport end
+6 May 07:46:42 - Player has disconnected: 1863916075466101456
+   [36minfo  -[39m handshake authorized 1996699751585554199
+6 May 08:40:10 - New player has connected: 1996699751585554199
+   [36minfo  -[39m transport end
+6 May 08:41:05 - Player has disconnected: 1996699751585554199
+   [36minfo  -[39m handshake authorized 2044020898125812113
+6 May 09:34:31 - New player has connected: 2044020898125812113
+   [36minfo  -[39m transport end
+6 May 09:35:06 - Player has disconnected: 2044020898125812113
+   [36minfo  -[39m handshake authorized 568901269386365995
+6 May 10:28:34 - New player has connected: 568901269386365995
+   [36minfo  -[39m transport end
+6 May 10:29:09 - Player has disconnected: 568901269386365995
+   [36minfo  -[39m handshake authorized 2005800150589611942
+6 May 11:22:36 - New player has connected: 2005800150589611942
+   [36minfo  -[39m transport end
+6 May 11:23:11 - Player has disconnected: 2005800150589611942
+   [36minfo  -[39m handshake authorized 18102818911395053839
+6 May 12:16:39 - New player has connected: 18102818911395053839
+   [36minfo  -[39m transport end
+6 May 12:17:14 - Player has disconnected: 18102818911395053839
+   [36minfo  -[39m handshake authorized 26189088611264832
+6 May 13:10:40 - New player has connected: 26189088611264832
+   [36minfo  -[39m transport end
+6 May 13:11:35 - Player has disconnected: 26189088611264832
+   [36minfo  -[39m handshake authorized 2047703441224826088
+6 May 13:43:54 - New player has connected: 2047703441224826088
+   [36minfo  -[39m transport end
+6 May 13:44:29 - Player has disconnected: 2047703441224826088
+   [36minfo  -[39m handshake authorized 2032881211356570513
+7 May 04:58:00 - New player has connected: 2032881211356570513
+   [36minfo  -[39m transport end
+7 May 05:34:01 - Player has disconnected: 2032881211356570513
+   [36minfo  -[39m handshake authorized 118859574991847652
+7 May 23:14:32 - New player has connected: 118859574991847652
+   [36minfo  -[39m transport end
+7 May 23:20:50 - Player has disconnected: 118859574991847652
+   [36minfo  -[39m handshake authorized 1701137027332402688
+7 May 23:20:55 - New player has connected: 1701137027332402688
+   [36minfo  -[39m transport end
+8 May 00:01:08 - Player has disconnected: 1701137027332402688
+   [36minfo  -[39m handshake authorized 1513439532928704497
+8 May 00:05:06 - New player has connected: 1513439532928704497
+   [36minfo  -[39m transport end
+8 May 00:52:22 - Player has disconnected: 1513439532928704497
+   [36minfo  -[39m handshake authorized 1598451647240243356
+8 May 00:52:30 - New player has connected: 1598451647240243356
+   [36minfo  -[39m transport end
+8 May 01:05:50 - Player has disconnected: 1598451647240243356
+   [36minfo  -[39m handshake authorized 1441005744810910940
+8 May 02:33:30 - New player has connected: 1441005744810910940
+   [36minfo  -[39m transport end
+8 May 02:53:33 - Player has disconnected: 1441005744810910940
+   [36minfo  -[39m handshake authorized 468403620216866158
+8 May 05:02:59 - New player has connected: 468403620216866158
+   [36minfo  -[39m transport end
+8 May 05:03:34 - Player has disconnected: 468403620216866158
+   [36minfo  -[39m handshake authorized 9829480002026997183
+   [36minfo  -[39m handshake authorized 2593774771676130646
+8 May 05:03:49 - New player has connected: 2593774771676130646
+   [36minfo  -[39m transport end
+8 May 05:05:05 - Player has disconnected: 2593774771676130646
+   [36minfo  -[39m handshake authorized 8623676552102666067
+8 May 05:57:23 - New player has connected: 8623676552102666067
+   [36minfo  -[39m transport end
+8 May 05:57:58 - Player has disconnected: 8623676552102666067
+   [36minfo  -[39m handshake authorized 6314114591600431622
+8 May 06:51:27 - New player has connected: 6314114591600431622
+   [36minfo  -[39m transport end
+8 May 06:52:02 - Player has disconnected: 6314114591600431622
+   [36minfo  -[39m handshake authorized 1852890971435562611
+8 May 07:45:29 - New player has connected: 1852890971435562611
+   [36minfo  -[39m transport end
+8 May 07:46:24 - Player has disconnected: 1852890971435562611
+   [36minfo  -[39m handshake authorized 1491406119512035706
+8 May 08:39:51 - New player has connected: 1491406119512035706
+   [36minfo  -[39m transport end
+8 May 08:40:26 - Player has disconnected: 1491406119512035706
+   [36minfo  -[39m handshake authorized 1655868536588733781
+8 May 09:33:53 - New player has connected: 1655868536588733781
+   [36minfo  -[39m transport end
+8 May 09:34:28 - Player has disconnected: 1655868536588733781
+   [36minfo  -[39m handshake authorized 6353847721418948957
+8 May 10:33:16 - New player has connected: 6353847721418948957
+   [36minfo  -[39m transport end
+8 May 10:33:51 - Player has disconnected: 6353847721418948957
+   [36minfo  -[39m handshake authorized 1143981116389834928
+8 May 11:27:17 - New player has connected: 1143981116389834928
+   [36minfo  -[39m transport end
+8 May 11:27:52 - Player has disconnected: 1143981116389834928
+   [36minfo  -[39m handshake authorized 2378730672032031451
+8 May 12:21:20 - New player has connected: 2378730672032031451
+   [36minfo  -[39m transport end
+8 May 12:22:15 - Player has disconnected: 2378730672032031451
+   [36minfo  -[39m handshake authorized 7858011391368451935
+8 May 13:15:42 - New player has connected: 7858011391368451935
+   [36minfo  -[39m transport end
+8 May 13:16:17 - Player has disconnected: 7858011391368451935
+   [36minfo  -[39m handshake authorized 1358993181970348291
+8 May 14:09:45 - New player has connected: 1358993181970348291
+   [36minfo  -[39m transport end
+8 May 14:10:20 - Player has disconnected: 1358993181970348291
+   [36minfo  -[39m handshake authorized 166200071176786032
+8 May 15:03:46 - New player has connected: 166200071176786032
+   [36minfo  -[39m transport end
+8 May 15:04:21 - Player has disconnected: 166200071176786032
+   [36minfo  -[39m handshake authorized 2358957131203891034
+8 May 15:57:49 - New player has connected: 2358957131203891034
+   [36minfo  -[39m transport end
+8 May 15:58:24 - Player has disconnected: 2358957131203891034
+   [36minfo  -[39m handshake authorized 336951791688538982
+8 May 16:51:51 - New player has connected: 336951791688538982
+   [36minfo  -[39m transport end
+8 May 16:52:26 - Player has disconnected: 336951791688538982
+   [36minfo  -[39m handshake authorized 16289062491318830044
+8 May 17:51:13 - New player has connected: 16289062491318830044
+   [36minfo  -[39m transport end
+8 May 17:52:08 - Player has disconnected: 16289062491318830044
+   [36minfo  -[39m handshake authorized 3961294431224270703
+8 May 18:45:36 - New player has connected: 3961294431224270703
+   [36minfo  -[39m transport end
+8 May 18:46:11 - Player has disconnected: 3961294431224270703
+   [36minfo  -[39m handshake authorized 1807706513765547213
+8 May 19:39:38 - New player has connected: 1807706513765547213
+   [36minfo  -[39m transport end
+8 May 19:40:13 - Player has disconnected: 1807706513765547213
+   [36minfo  -[39m handshake authorized 1579667151777980658
+8 May 20:33:39 - New player has connected: 1579667151777980658
+   [36minfo  -[39m transport end
+8 May 20:34:14 - Player has disconnected: 1579667151777980658
+   [36minfo  -[39m handshake authorized 2129134326376544503
+8 May 21:27:42 - New player has connected: 2129134326376544503
+   [36minfo  -[39m transport end
+8 May 21:28:37 - Player has disconnected: 2129134326376544503
+   [36minfo  -[39m handshake authorized 9223053501338729969
+8 May 22:22:04 - New player has connected: 9223053501338729969
+   [36minfo  -[39m transport end
+8 May 22:22:39 - Player has disconnected: 9223053501338729969
+   [36minfo  -[39m handshake authorized 442886820101665729
+8 May 23:16:07 - New player has connected: 442886820101665729
+   [36minfo  -[39m transport end
+8 May 23:16:42 - Player has disconnected: 442886820101665729
+   [36minfo  -[39m handshake authorized 1450918333627410247
+9 May 00:10:09 - New player has connected: 1450918333627410247
+   [36minfo  -[39m transport end
+9 May 00:10:44 - Player has disconnected: 1450918333627410247
+   [36minfo  -[39m handshake authorized 1798644168350122756
+9 May 01:04:11 - New player has connected: 1798644168350122756
+   [36minfo  -[39m transport end
+9 May 01:04:46 - Player has disconnected: 1798644168350122756
+   [36minfo  -[39m handshake authorized 549361897840920139
+9 May 01:58:12 - New player has connected: 549361897840920139
+   [36minfo  -[39m transport end
+9 May 01:58:47 - Player has disconnected: 549361897840920139
+   [36minfo  -[39m handshake authorized 1109209678265249756
+9 May 02:52:14 - New player has connected: 1109209678265249756
+   [36minfo  -[39m transport end
+9 May 02:53:10 - Player has disconnected: 1109209678265249756
+   [36minfo  -[39m handshake authorized 18961976411427056393
+9 May 03:46:37 - New player has connected: 18961976411427056393
+   [36minfo  -[39m transport end
+9 May 03:47:12 - Player has disconnected: 18961976411427056393
+   [36minfo  -[39m handshake authorized 3945409862102913439
+9 May 04:40:40 - New player has connected: 3945409862102913439
+   [36minfo  -[39m transport end
+9 May 04:41:15 - Player has disconnected: 3945409862102913439
+   [36minfo  -[39m handshake authorized 1535030812478106060
+9 May 05:34:41 - New player has connected: 1535030812478106060
+   [36minfo  -[39m transport end
+9 May 05:35:16 - Player has disconnected: 1535030812478106060
+   [36minfo  -[39m handshake authorized 11534839791741308886
+9 May 06:28:43 - New player has connected: 11534839791741308886
+   [36minfo  -[39m transport end
+9 May 06:29:18 - Player has disconnected: 11534839791741308886
+   [36minfo  -[39m handshake authorized 268727097419904616
+9 May 07:22:44 - New player has connected: 268727097419904616
+   [36minfo  -[39m transport end
+9 May 07:23:19 - Player has disconnected: 268727097419904616
+   [36minfo  -[39m handshake authorized 891293942534028619
+9 May 08:16:47 - New player has connected: 891293942534028619
+   [36minfo  -[39m transport end
+9 May 08:17:22 - Player has disconnected: 891293942534028619
+   [36minfo  -[39m handshake authorized 19177839301046053666
+9 May 09:10:49 - New player has connected: 19177839301046053666
+   [36minfo  -[39m transport end
+9 May 09:11:44 - Player has disconnected: 19177839301046053666
+   [36minfo  -[39m handshake authorized 9215885601632389307
+9 May 10:05:12 - New player has connected: 9215885601632389307
+   [36minfo  -[39m transport end
+9 May 10:05:47 - Player has disconnected: 9215885601632389307
+   [36minfo  -[39m handshake authorized 1461272910250573555
+9 May 10:59:15 - New player has connected: 1461272910250573555
+   [36minfo  -[39m transport end
+9 May 10:59:50 - Player has disconnected: 1461272910250573555
+   [36minfo  -[39m handshake authorized 16479318361911324473
+9 May 11:53:17 - New player has connected: 16479318361911324473
+   [36minfo  -[39m transport end
+9 May 11:54:12 - Player has disconnected: 16479318361911324473
+   [36minfo  -[39m handshake authorized 1474332328516963967
+9 May 12:47:25 - New player has connected: 1474332328516963967
+   [36minfo  -[39m transport end
+9 May 12:48:20 - Player has disconnected: 1474332328516963967
+   [36minfo  -[39m handshake authorized 75546829386977130
+9 May 13:41:31 - New player has connected: 75546829386977130
+   [36minfo  -[39m transport end
+9 May 13:42:06 - Player has disconnected: 75546829386977130
+   [36minfo  -[39m handshake authorized 7788911421853520405
+10 May 05:57:18 - New player has connected: 7788911421853520405
+   [36minfo  -[39m transport end
+10 May 06:21:02 - Player has disconnected: 7788911421853520405
+   [36minfo  -[39m handshake authorized 814216932351333196
+10 May 06:39:08 - New player has connected: 814216932351333196
+   [36minfo  -[39m transport end
+10 May 07:02:56 - Player has disconnected: 814216932351333196
+   [36minfo  -[39m handshake authorized 1338231797544103478
+10 May 23:57:35 - New player has connected: 1338231797544103478
+   [36minfo  -[39m transport end
+10 May 23:59:31 - Player has disconnected: 1338231797544103478
+   [36minfo  -[39m handshake authorized 17860881021173175398
+11 May 00:25:27 - New player has connected: 17860881021173175398
+   [36minfo  -[39m transport end
+11 May 00:56:15 - Player has disconnected: 17860881021173175398
+   [36minfo  -[39m handshake authorized 572245961896500767
+11 May 01:49:28 - New player has connected: 572245961896500767
+   [36minfo  -[39m transport end
+11 May 02:18:56 - Player has disconnected: 572245961896500767
+   [36minfo  -[39m handshake authorized 1679802111355314492
+11 May 02:49:12 - New player has connected: 1679802111355314492
+   [36minfo  -[39m transport end
+11 May 02:49:47 - Player has disconnected: 1679802111355314492
+   [36minfo  -[39m handshake authorized 1878701547996161456
+11 May 03:52:55 - New player has connected: 1878701547996161456
+   [36minfo  -[39m transport end
+11 May 03:53:30 - Player has disconnected: 1878701547996161456
+   [36minfo  -[39m handshake authorized 269016269509023982
+11 May 04:46:59 - New player has connected: 269016269509023982
+   [36minfo  -[39m transport end
+11 May 04:47:34 - Player has disconnected: 269016269509023982
+   [36minfo  -[39m handshake authorized 10281318541531777662
+11 May 04:57:25 - New player has connected: 10281318541531777662
+   [36minfo  -[39m transport end
+11 May 05:24:09 - Player has disconnected: 10281318541531777662
+   [36minfo  -[39m handshake authorized 1759555757719905252
+11 May 05:26:45 - New player has connected: 1759555757719905252
+   [36minfo  -[39m transport end
+11 May 05:27:20 - Player has disconnected: 1759555757719905252
+   [36minfo  -[39m handshake authorized 1408860254783824265
+11 May 06:20:51 - New player has connected: 1408860254783824265
+   [36minfo  -[39m transport end
+11 May 06:23:07 - Player has disconnected: 1408860254783824265
+   [36minfo  -[39m handshake authorized 2996191611097548008
+11 May 06:26:21 - New player has connected: 2996191611097548008
+   [36minfo  -[39m transport end
+11 May 06:27:16 - Player has disconnected: 2996191611097548008
+   [36minfo  -[39m handshake authorized 8503402461172558571
+11 May 07:27:22 - New player has connected: 8503402461172558571
+   [36minfo  -[39m transport end
+11 May 07:28:17 - Player has disconnected: 8503402461172558571
+   [36minfo  -[39m handshake authorized 21335136871230523760
+11 May 08:21:31 - New player has connected: 21335136871230523760
+   [36minfo  -[39m transport end
+11 May 08:22:06 - Player has disconnected: 21335136871230523760
+   [36minfo  -[39m handshake authorized 15094963731749443059
+11 May 09:15:34 - New player has connected: 15094963731749443059
+   [36minfo  -[39m transport end
+11 May 09:16:09 - Player has disconnected: 15094963731749443059
+   [36minfo  -[39m handshake authorized 14844276391166651588
+11 May 10:09:35 - New player has connected: 14844276391166651588
+   [36minfo  -[39m transport end
+11 May 10:10:10 - Player has disconnected: 14844276391166651588
+   [36minfo  -[39m handshake authorized 1833445335831186285
+11 May 11:03:40 - New player has connected: 1833445335831186285
+   [36minfo  -[39m transport end
+11 May 11:04:15 - Player has disconnected: 1833445335831186285
+   [36minfo  -[39m handshake authorized 15608855701978689920
+11 May 11:57:42 - New player has connected: 15608855701978689920
+   [36minfo  -[39m transport end
+11 May 11:58:17 - Player has disconnected: 15608855701978689920
+   [36minfo  -[39m handshake authorized 1764394673389276351
+11 May 12:51:45 - New player has connected: 1764394673389276351
+   [36minfo  -[39m transport end
+11 May 12:52:40 - Player has disconnected: 1764394673389276351
+   [36minfo  -[39m handshake authorized 18992145991746748468
+11 May 13:46:54 - New player has connected: 18992145991746748468
+   [36minfo  -[39m transport end
+11 May 13:47:29 - Player has disconnected: 18992145991746748468
+[0mGET /login [32m200 [0m3.498 ms - 1754[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.961 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.976 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.932 ms - -[0m
+[0mGET /javascripts/login.js [32m200 [0m1.938 ms - 271[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.208 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.201 ms - -[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.503 ms - 51916[0m
+[0mGET /favicon.ico [33m404 [0m13.330 ms - 1930[0m
+[0mGET / [32m200 [0m0.574 ms - 1426[0m
+[0mGET /stylesheets/reset.css [36m304 [0m1.094 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.107 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m1.048 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [32m200 [0m2.209 ms - 465[0m
+[0mGET /javascripts/socket.io.js [32m200 [0m2.379 ms - 53933[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.237 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.548 ms - -[0m
+[0mGET /javascripts/Player.js [32m200 [0m1.278 ms - 2383[0m
+[0mGET /javascripts/Keys.js [32m200 [0m1.273 ms - 1078[0m
+[0mGET /javascripts/Ball.js [32m200 [0m0.359 ms - 2106[0m
+[0mGET /javascripts/Food.js [32m200 [0m0.360 ms - 997[0m
+[0mGET /javascripts/game.js [32m200 [0m0.361 ms - 14394[0m
+   [36minfo  -[39m handshake authorized 8651834011370457728
+11 May 22:07:23 - New player has connected: 8651834011370457728
+11 May 22:07:23 - Ball not found: undefined
+11 May 22:07:23 - Ball not found: undefined
+11 May 22:07:23 - Ball not found: undefined
+11 May 22:07:23 - Ball not found: undefined
+11 May 22:07:23 - Ball not found: undefined
+11 May 22:07:23 - Ball not found: undefined
+11 May 22:07:23 - Ball not found: undefined
+11 May 22:07:23 - Ball not found: undefined
+11 May 22:07:23 - Ball not found: undefined
+11 May 22:07:23 - Ball not found: undefined
+11 May 22:07:23 - Ball not found: undefined
+11 May 22:07:23 - Ball not found: undefined
+POST addscore route
+{ Username: 'BERT', Score: 980 }
+{ _id: 5733b393c5ff7224035cb8a6, Score: 980, Username: 'BERT' }
+980
+{ _id: 5733b393c5ff7224035cb8a6,
+  Score: 980,
+  Username: 'BERT',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.626 ms - 2[0m
+   [36minfo  -[39m transport end
+11 May 22:35:00 - Player has disconnected: 8651834011370457728
+[0mGET /highscores [32m200 [0m0.684 ms - 881[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.342 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.281 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.560 ms - -[0m
+[0mGET /javascripts/highscores.js [32m200 [0m0.623 ms - 391[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.209 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.262 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c },
+  { Score: 980, Username: 'BERT', _id: 5733b393c5ff7224035cb8a6 },
+  { Score: 972, Username: 'TYLER', _id: 572b8e05c5ff7224035cb89e } ]
+[0mGET /gethighscores [32m200 [0m3.760 ms - 672[0m
+   [36minfo  -[39m handshake authorized 2087994371683004254
+12 May 05:37:55 - New player has connected: 2087994371683004254
+   [36minfo  -[39m transport end
+12 May 05:54:38 - Player has disconnected: 2087994371683004254
+[0mGET / [32m200 [0m0.647 ms - 1426[0m
+[0mGET /stylesheets/reset.css [32m200 [0m0.528 ms - 1153[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.544 ms - 1086[0m
+[0mGET /javascripts/requestAnimationFrame.js [32m200 [0m0.704 ms - 465[0m
+[0mGET /javascripts/socket.io.js [32m200 [0m0.780 ms - 53933[0m
+[0mGET /javascripts/jquery.cookie.js [32m200 [0m0.476 ms - 3121[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m0.365 ms - 121260[0m
+[0mGET /javascripts/Keys.js [32m200 [0m0.470 ms - 1078[0m
+[0mGET /javascripts/Player.js [32m200 [0m0.357 ms - 2383[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m0.358 ms - 97362[0m
+[0mGET /javascripts/Ball.js [32m200 [0m0.371 ms - 2106[0m
+[0mGET /javascripts/Food.js [32m200 [0m0.327 ms - 997[0m
+[0mGET /javascripts/game.js [32m200 [0m0.360 ms - 14394[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.532 ms - 51916[0m
+   [36minfo  -[39m handshake authorized 2000995260512979248
+[0mGET /favicon.ico [33m404 [0m15.510 ms - 1930[0m
+20 May 15:39:06 - New player has connected: 2000995260512979248
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+20 May 15:39:06 - Ball not found: undefined
+   [36minfo  -[39m transport end
+20 May 15:39:26 - Player has disconnected: 2000995260512979248
+[0mGET /login [32m200 [0m1.494 ms - 1754[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.313 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.006 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m4.769 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m4.674 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m4.656 ms - -[0m
+[0mGET /javascripts/login.js [32m200 [0m0.400 ms - 271[0m
+[0mGET / [36m304 [0m0.794 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.327 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.525 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.203 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.492 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.429 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.219 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.218 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.293 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.301 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.730 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.686 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.687 ms - -[0m
+   [36minfo  -[39m handshake authorized 727762289886036175
+20 May 16:10:20 - New player has connected: 727762289886036175
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+20 May 16:10:21 - Ball not found: undefined
+[0mGET /login [32m200 [0m0.651 ms - 1754[0m
+[0mGET /stylesheets/reset.css [32m200 [0m0.510 ms - 1153[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m0.339 ms - 121260[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.470 ms - 1086[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m0.358 ms - 97362[0m
+[0mGET /javascripts/jquery.cookie.js [32m200 [0m1.174 ms - 3121[0m
+[0mGET /javascripts/login.js [32m200 [0m0.327 ms - 271[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.461 ms - 51916[0m
+[0mGET /favicon.ico [33m404 [0m10.785 ms - 1930[0m
+[0mGET / [32m200 [0m0.498 ms - 1426[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.329 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.216 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.214 ms - -[0m
+[0mGET /javascripts/socket.io.js [32m200 [0m0.377 ms - 53933[0m
+[0mGET /javascripts/requestAnimationFrame.js [32m200 [0m0.365 ms - 465[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.246 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.310 ms - -[0m
+[0mGET /javascripts/Keys.js [32m200 [0m0.410 ms - 1078[0m
+[0mGET /javascripts/Player.js [32m200 [0m0.339 ms - 2383[0m
+[0mGET /javascripts/Ball.js [32m200 [0m0.452 ms - 2106[0m
+[0mGET /javascripts/Food.js [32m200 [0m0.509 ms - 997[0m
+[0mGET /javascripts/game.js [32m200 [0m1.100 ms - 14394[0m
+   [36minfo  -[39m handshake authorized 677300781523345538
+20 May 16:14:01 - New player has connected: 677300781523345538
+20 May 16:14:01 - Ball not found: undefined
+20 May 16:14:01 - Ball not found: undefined
+20 May 16:14:01 - Ball not found: undefined
+20 May 16:14:01 - Ball not found: undefined
+   [36minfo  -[39m transport end
+20 May 16:14:06 - Player has disconnected: 677300781523345538
+[0mGET / [36m304 [0m0.316 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.363 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.259 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.528 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.411 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.209 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.211 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.335 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.233 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.445 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.409 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.246 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.209 ms - -[0m
+   [36minfo  -[39m handshake authorized 1494231045506494939
+20 May 16:14:38 - New player has connected: 1494231045506494939
+20 May 16:14:38 - Ball not found: undefined
+20 May 16:14:38 - Ball not found: undefined
+20 May 16:14:38 - Ball not found: undefined
+Removing a player: 1494231045506494939
+20 May 16:15:01 - Player not found: 1494231045506494939
+20 May 16:15:01 - Player not found: 1494231045506494939
+20 May 16:15:01 - Player not found: 1494231045506494939
+20 May 16:15:01 - Player not found: 1494231045506494939
+20 May 16:15:01 - Player not found: 1494231045506494939
+20 May 16:15:01 - Player not found: 1494231045506494939
+POST addscore route
+{ Username: 'MOM', Score: 385 }
+{ _id: 573f3805c5ff7224035cb8a7, Score: 385, Username: 'MOM' }
+385
+{ _id: 573f3805c5ff7224035cb8a7,
+  Score: 385,
+  Username: 'MOM',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.899 ms - 2[0m
+   [36minfo  -[39m transport end
+20 May 16:15:02 - Player has disconnected: 1494231045506494939
+20 May 16:15:02 - Player not found: 1494231045506494939
+[0mGET /highscores [32m200 [0m0.799 ms - 881[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.312 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.485 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.401 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.351 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.213 ms - -[0m
+[0mGET /javascripts/highscores.js [32m200 [0m2.279 ms - 391[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c },
+  { Score: 980, Username: 'BERT', _id: 5733b393c5ff7224035cb8a6 },
+  { Score: 972, Username: 'TYLER', _id: 572b8e05c5ff7224035cb89e } ]
+[0mGET /gethighscores [32m200 [0m4.330 ms - 672[0m
+[0mGET / [36m304 [0m0.310 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.312 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.248 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.494 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.476 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.452 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.420 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m1.565 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m1.417 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m1.348 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m1.307 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m1.248 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m1.193 ms - -[0m
+   [36minfo  -[39m handshake authorized 2660769871643388068
+20 May 16:15:13 - New player has connected: 2660769871643388068
+20 May 16:15:13 - Ball not found: undefined
+20 May 16:15:13 - Ball not found: undefined
+20 May 16:15:13 - Ball not found: undefined
+20 May 16:15:13 - Ball not found: undefined
+Removing a player: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+20 May 16:15:49 - Player not found: 2660769871643388068
+POST addscore route
+{ Username: 'MOM', Score: 658 }
+{ _id: 573f3835c5ff7224035cb8a8, Score: 658, Username: 'MOM' }
+658
+{ _id: 573f3835c5ff7224035cb8a8,
+  Score: 658,
+  Username: 'MOM',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m1.983 ms - 2[0m
+20 May 16:15:49 - Player not found: 2660769871643388068
+   [36minfo  -[39m transport end
+20 May 16:15:50 - Player has disconnected: 2660769871643388068
+20 May 16:15:50 - Player not found: 2660769871643388068
+[0mGET /highscores [36m304 [0m1.050 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.539 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.509 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.191 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.238 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.499 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.398 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c },
+  { Score: 980, Username: 'BERT', _id: 5733b393c5ff7224035cb8a6 },
+  { Score: 972, Username: 'TYLER', _id: 572b8e05c5ff7224035cb89e } ]
+[0mGET /gethighscores [36m304 [0m4.332 ms - -[0m
+[0mGET / [36m304 [0m0.309 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.618 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.533 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.199 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.524 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.432 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.217 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.581 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.496 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.222 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.461 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.412 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.231 ms - -[0m
+   [36minfo  -[39m handshake authorized 374415939821648229
+20 May 16:16:00 - New player has connected: 374415939821648229
+20 May 16:16:01 - Ball not found: undefined
+20 May 16:16:01 - Ball not found: undefined
+20 May 16:16:01 - Ball not found: undefined
+20 May 16:16:01 - Ball not found: undefined
+Removing a player: 374415939821648229
+20 May 16:17:58 - Player not found: 374415939821648229
+20 May 16:17:58 - Player not found: 374415939821648229
+20 May 16:17:58 - Player not found: 374415939821648229
+20 May 16:17:58 - Player not found: 374415939821648229
+20 May 16:17:58 - Player not found: 374415939821648229
+POST addscore route
+{ Username: 'MOM', Score: 4717 }
+{ _id: 573f38b6c5ff7224035cb8a9, Score: 4717, Username: 'MOM' }
+4717
+{ _id: 573f38b6c5ff7224035cb8a9,
+  Score: 4717,
+  Username: 'MOM',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.039 ms - 2[0m
+   [36minfo  -[39m transport end
+20 May 16:17:59 - Player has disconnected: 374415939821648229
+20 May 16:17:59 - Player not found: 374415939821648229
+[0mGET /highscores [36m304 [0m0.473 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.328 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.228 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.532 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.457 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.479 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.392 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c },
+  { Score: 980, Username: 'BERT', _id: 5733b393c5ff7224035cb8a6 } ]
+[0mGET /gethighscores [32m200 [0m3.545 ms - 671[0m
+[0mGET / [36m304 [0m0.338 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.332 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.230 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.254 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.653 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.616 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.571 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.340 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.195 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.312 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.676 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.627 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.559 ms - -[0m
+   [36minfo  -[39m handshake authorized 9976827281999508533
+20 May 16:18:06 - New player has connected: 9976827281999508533
+20 May 16:18:06 - Ball not found: undefined
+20 May 16:18:06 - Ball not found: undefined
+20 May 16:18:06 - Ball not found: undefined
+20 May 16:18:06 - Ball not found: undefined
+20 May 16:18:06 - Ball not found: undefined
+Removing a player: 9976827281999508533
+20 May 16:18:09 - Player not found: 9976827281999508533
+20 May 16:18:09 - Player not found: 9976827281999508533
+20 May 16:18:09 - Player not found: 9976827281999508533
+20 May 16:18:09 - Player not found: 9976827281999508533
+20 May 16:18:09 - Player not found: 9976827281999508533
+20 May 16:18:09 - Player not found: 9976827281999508533
+POST addscore route
+{ Username: 'MOM', Score: 32 }
+{ _id: 573f38c1c5ff7224035cb8aa, Score: 32, Username: 'MOM' }
+32
+{ _id: 573f38c1c5ff7224035cb8aa,
+  Score: 32,
+  Username: 'MOM',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.770 ms - 2[0m
+   [36minfo  -[39m transport end
+20 May 16:18:10 - Player has disconnected: 9976827281999508533
+20 May 16:18:10 - Player not found: 9976827281999508533
+[0mGET /highscores [36m304 [0m0.473 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.311 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.257 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.208 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.451 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.428 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.202 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c },
+  { Score: 980, Username: 'BERT', _id: 5733b393c5ff7224035cb8a6 } ]
+[0mGET /gethighscores [36m304 [0m3.723 ms - -[0m
+[0mGET / [36m304 [0m0.349 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.321 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.238 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m3.412 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.225 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.235 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.211 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.322 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.211 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.240 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.255 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.216 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.202 ms - -[0m
+   [36minfo  -[39m handshake authorized 3240885561066496213
+20 May 16:18:14 - New player has connected: 3240885561066496213
+20 May 16:18:14 - Ball not found: undefined
+20 May 16:18:14 - Ball not found: undefined
+20 May 16:18:14 - Ball not found: undefined
+20 May 16:18:14 - Ball not found: undefined
+20 May 16:18:14 - Ball not found: undefined
+20 May 16:18:14 - Ball not found: undefined
+Removing a player: 3240885561066496213
+20 May 16:18:21 - Player not found: 3240885561066496213
+20 May 16:18:21 - Player not found: 3240885561066496213
+20 May 16:18:21 - Player not found: 3240885561066496213
+20 May 16:18:21 - Player not found: 3240885561066496213
+20 May 16:18:21 - Player not found: 3240885561066496213
+POST addscore route
+{ Username: 'MOM', Score: 75 }
+{ _id: 573f38cdc5ff7224035cb8ab, Score: 75, Username: 'MOM' }
+75
+{ _id: 573f38cdc5ff7224035cb8ab,
+  Score: 75,
+  Username: 'MOM',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.277 ms - 2[0m
+   [36minfo  -[39m transport end
+20 May 16:18:22 - Player has disconnected: 3240885561066496213
+20 May 16:18:22 - Player not found: 3240885561066496213
+[0mGET /highscores [36m304 [0m0.494 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.335 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.203 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.216 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.203 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.343 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.220 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c },
+  { Score: 980, Username: 'BERT', _id: 5733b393c5ff7224035cb8a6 } ]
+[0mGET /gethighscores [36m304 [0m4.725 ms - -[0m
+[0mGET / [36m304 [0m0.309 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.344 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.238 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.203 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.188 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.436 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.382 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.315 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.295 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.353 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.251 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.545 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.522 ms - -[0m
+   [36minfo  -[39m handshake authorized 18613472842020880439
+20 May 16:18:27 - New player has connected: 18613472842020880439
+20 May 16:18:28 - Ball not found: undefined
+20 May 16:18:28 - Ball not found: undefined
+20 May 16:18:28 - Ball not found: undefined
+20 May 16:18:28 - Ball not found: undefined
+20 May 16:18:28 - Ball not found: undefined
+Removing a player: 18613472842020880439
+20 May 16:19:56 - Player not found: 18613472842020880439
+20 May 16:19:56 - Player not found: 18613472842020880439
+20 May 16:19:56 - Player not found: 18613472842020880439
+20 May 16:19:56 - Player not found: 18613472842020880439
+20 May 16:19:56 - Player not found: 18613472842020880439
+POST addscore route
+{ Username: 'MOM', Score: 4465 }
+{ _id: 573f392cc5ff7224035cb8ac, Score: 4465, Username: 'MOM' }
+4465
+{ _id: 573f392cc5ff7224035cb8ac,
+  Score: 4465,
+  Username: 'MOM',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.557 ms - 2[0m
+   [36minfo  -[39m transport end
+20 May 16:19:57 - Player has disconnected: 18613472842020880439
+20 May 16:19:57 - Player not found: 18613472842020880439
+[0mGET /highscores [36m304 [0m0.460 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.292 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.221 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.466 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.387 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.453 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.375 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 4465, Username: 'MOM', _id: 573f392cc5ff7224035cb8ac },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c } ]
+[0mGET /gethighscores [32m200 [0m3.171 ms - 671[0m
+[0mGET / [36m304 [0m0.352 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.335 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.227 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.443 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.390 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.245 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.231 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.339 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.232 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.209 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.191 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.224 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.216 ms - -[0m
+   [36minfo  -[39m handshake authorized 618177939167250529
+20 May 16:20:04 - New player has connected: 618177939167250529
+20 May 16:20:04 - Ball not found: undefined
+20 May 16:20:04 - Ball not found: undefined
+20 May 16:20:04 - Ball not found: undefined
+20 May 16:20:04 - Ball not found: undefined
+20 May 16:20:04 - Ball not found: undefined
+Removing a player: 618177939167250529
+POST addscore route
+{ Username: 'MOM', Score: 14 }
+{ _id: 573f3935c5ff7224035cb8ad, Score: 14, Username: 'MOM' }
+14
+{ _id: 573f3935c5ff7224035cb8ad,
+  Score: 14,
+  Username: 'MOM',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.230 ms - 2[0m
+   [36minfo  -[39m transport end
+20 May 16:20:06 - Player has disconnected: 618177939167250529
+20 May 16:20:06 - Player not found: 618177939167250529
+[0mGET /highscores [36m304 [0m0.496 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m1.485 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m1.408 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m1.372 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.301 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m1.251 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m1.193 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 4465, Username: 'MOM', _id: 573f392cc5ff7224035cb8ac },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c } ]
+[0mGET /gethighscores [36m304 [0m4.150 ms - -[0m
+[0mGET / [36m304 [0m0.281 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.313 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.220 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.200 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.241 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.192 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.205 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.371 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.235 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.202 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.215 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.229 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.213 ms - -[0m
+   [36minfo  -[39m handshake authorized 2136207631434334578
+20 May 16:20:10 - New player has connected: 2136207631434334578
+20 May 16:20:10 - Ball not found: undefined
+20 May 16:20:10 - Ball not found: undefined
+20 May 16:20:10 - Ball not found: undefined
+20 May 16:20:10 - Ball not found: undefined
+   [36minfo  -[39m transport end
+20 May 16:20:15 - Player has disconnected: 727762289886036175
+[0mGET / [36m304 [0m0.423 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.844 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.776 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.730 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.782 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.654 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.585 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.793 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.715 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.705 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m2.798 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m2.696 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.605 ms - -[0m
+   [36minfo  -[39m handshake authorized 556318633741848195
+20 May 16:21:44 - New player has connected: 556318633741848195
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+20 May 16:21:44 - Ball not found: undefined
+[0mGET / [36m304 [0m0.455 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.279 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m1.089 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m1.036 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.974 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.920 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.878 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.302 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.179 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.908 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.910 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.903 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.882 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.389 ms - -[0m
+   [36minfo  -[39m handshake authorized 430142678557653807
+20 May 16:22:01 - New player has connected: 430142678557653807
+20 May 16:22:01 - Ball not found: undefined
+20 May 16:22:01 - Ball not found: undefined
+20 May 16:22:01 - Ball not found: undefined
+20 May 16:22:01 - Ball not found: undefined
+20 May 16:22:01 - Ball not found: undefined
+20 May 16:22:01 - Ball not found: undefined
+20 May 16:22:01 - Ball not found: undefined
+20 May 16:22:01 - Ball not found: undefined
+20 May 16:22:01 - Ball not found: undefined
+20 May 16:22:01 - Ball not found: undefined
+20 May 16:22:01 - Ball not found: undefined
+20 May 16:22:01 - Ball not found: undefined
+20 May 16:22:01 - Ball not found: undefined
+20 May 16:22:01 - Ball not found: undefined
+20 May 16:22:01 - Ball not found: undefined
+20 May 16:22:01 - Ball not found: undefined
+20 May 16:22:01 - Ball not found: undefined
+20 May 16:22:01 - Ball not found: undefined
+20 May 16:22:01 - Ball not found: undefined
+20 May 16:22:01 - Ball not found: undefined
+[0mGET / [36m304 [0m0.300 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.273 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m1.174 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m1.104 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m1.060 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.998 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.923 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.306 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.208 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.623 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.570 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.522 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.196 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.301 ms - -[0m
+   [36minfo  -[39m handshake authorized 17648112511706322327
+20 May 16:22:03 - New player has connected: 17648112511706322327
+20 May 16:22:03 - Ball not found: undefined
+20 May 16:22:03 - Ball not found: undefined
+20 May 16:22:03 - Ball not found: undefined
+20 May 16:22:03 - Ball not found: undefined
+20 May 16:22:03 - Ball not found: undefined
+20 May 16:22:03 - Ball not found: undefined
+20 May 16:22:03 - Ball not found: undefined
+20 May 16:22:03 - Ball not found: undefined
+20 May 16:22:03 - Ball not found: undefined
+20 May 16:22:03 - Ball not found: undefined
+20 May 16:22:03 - Ball not found: undefined
+20 May 16:22:03 - Ball not found: undefined
+20 May 16:22:03 - Ball not found: undefined
+20 May 16:22:03 - Ball not found: undefined
+20 May 16:22:03 - Ball not found: undefined
+20 May 16:22:03 - Ball not found: undefined
+20 May 16:22:03 - Ball not found: undefined
+[0mGET / [36m304 [0m0.341 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m1.538 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m1.438 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.357 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m1.286 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m1.245 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m1.163 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.337 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.199 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.862 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.804 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.778 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.739 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.344 ms - -[0m
+   [36minfo  -[39m handshake authorized 1885202469631776728
+20 May 16:22:05 - New player has connected: 1885202469631776728
+20 May 16:22:05 - Ball not found: undefined
+20 May 16:22:05 - Ball not found: undefined
+20 May 16:22:05 - Ball not found: undefined
+20 May 16:22:05 - Ball not found: undefined
+20 May 16:22:05 - Ball not found: undefined
+20 May 16:22:05 - Ball not found: undefined
+20 May 16:22:05 - Ball not found: undefined
+20 May 16:22:05 - Ball not found: undefined
+20 May 16:22:05 - Ball not found: undefined
+20 May 16:22:05 - Ball not found: undefined
+20 May 16:22:05 - Ball not found: undefined
+20 May 16:22:05 - Ball not found: undefined
+20 May 16:22:05 - Ball not found: undefined
+20 May 16:22:05 - Ball not found: undefined
+20 May 16:22:05 - Ball not found: undefined
+20 May 16:22:05 - Ball not found: undefined
+20 May 16:22:05 - Ball not found: undefined
+Removing a player: 1885202469631776728
+POST addscore route
+{ Username: 'TYLER', Score: 9 }
+{ _id: 573f39aec5ff7224035cb8ae, Score: 9, Username: 'TYLER' }
+9
+{ _id: 573f39aec5ff7224035cb8ae,
+  Score: 9,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.011 ms - 2[0m
+Removing a player: 17648112511706322327
+   [36minfo  -[39m transport end
+20 May 16:22:07 - Player has disconnected: 1885202469631776728
+20 May 16:22:07 - Player not found: 1885202469631776728
+[0mGET /highscores [32m200 [0m0.660 ms - 881[0m
+POST addscore route
+{ Username: 'TYLER', Score: 47 }
+{ _id: 573f39afc5ff7224035cb8af, Score: 47, Username: 'TYLER' }
+47
+{ _id: 573f39afc5ff7224035cb8af,
+  Score: 47,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.055 ms - 2[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.487 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.491 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.409 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.365 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.192 ms - -[0m
+[0mGET /javascripts/highscores.js [32m200 [0m0.378 ms - 391[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 4465, Username: 'MOM', _id: 573f392cc5ff7224035cb8ac },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c } ]
+[0mGET /gethighscores [32m200 [0m3.082 ms - 671[0m
+   [36minfo  -[39m transport end
+20 May 16:22:08 - Player has disconnected: 17648112511706322327
+20 May 16:22:08 - Player not found: 17648112511706322327
+[0mGET /highscores [36m304 [0m0.477 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.978 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.690 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.590 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.734 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m1.171 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m1.085 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 4465, Username: 'MOM', _id: 573f392cc5ff7224035cb8ac },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c } ]
+[0mGET /gethighscores [36m304 [0m10.883 ms - -[0m
+[0mGET / [36m304 [0m0.327 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.527 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.459 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m1.012 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.938 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.909 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.715 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m1.101 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.665 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.604 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.603 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.583 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m1.139 ms - -[0m
+   [36minfo  -[39m handshake authorized 14091523421863799253
+20 May 16:22:16 - New player has connected: 14091523421863799253
+20 May 16:22:16 - Ball not found: undefined
+20 May 16:22:16 - Ball not found: undefined
+20 May 16:22:16 - Ball not found: undefined
+20 May 16:22:16 - Ball not found: undefined
+20 May 16:22:16 - Ball not found: undefined
+20 May 16:22:16 - Ball not found: undefined
+20 May 16:22:16 - Ball not found: undefined
+20 May 16:22:16 - Ball not found: undefined
+20 May 16:22:16 - Ball not found: undefined
+20 May 16:22:16 - Ball not found: undefined
+20 May 16:22:16 - Ball not found: undefined
+20 May 16:22:16 - Ball not found: undefined
+20 May 16:22:16 - Ball not found: undefined
+20 May 16:22:16 - Ball not found: undefined
+20 May 16:22:16 - Ball not found: undefined
+20 May 16:22:16 - Ball not found: undefined
+20 May 16:22:16 - Ball not found: undefined
+20 May 16:22:16 - Ball not found: undefined
+20 May 16:22:16 - Ball not found: undefined
+Removing a player: 14091523421863799253
+POST addscore route
+{ Username: 'TYLER', Score: 26 }
+{ _id: 573f39bbc5ff7224035cb8b0, Score: 26, Username: 'TYLER' }
+26
+{ _id: 573f39bbc5ff7224035cb8b0,
+  Score: 26,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m1.967 ms - 2[0m
+   [36minfo  -[39m transport end
+20 May 16:22:20 - Player has disconnected: 14091523421863799253
+20 May 16:22:20 - Player not found: 14091523421863799253
+[0mGET /highscores [36m304 [0m0.659 ms - -[0m
+Removing a player: 430142678557653807
+[0mGET /stylesheets/style.css [36m304 [0m1.149 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.739 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.715 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.442 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.375 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.205 ms - -[0m
+POST addscore route
+{ Username: 'TYLER', Score: 193 }
+{ _id: 573f39bcc5ff7224035cb8b1, Score: 193, Username: 'TYLER' }
+193
+{ _id: 573f39bcc5ff7224035cb8b1,
+  Score: 193,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m1.921 ms - 2[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 4465, Username: 'MOM', _id: 573f392cc5ff7224035cb8ac },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c } ]
+[0mGET /gethighscores [36m304 [0m14.271 ms - -[0m
+   [36minfo  -[39m transport end
+20 May 16:22:21 - Player has disconnected: 430142678557653807
+20 May 16:22:21 - Player not found: 430142678557653807
+[0mGET /highscores [36m304 [0m0.471 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.704 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.632 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.596 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.380 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.612 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.410 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 4465, Username: 'MOM', _id: 573f392cc5ff7224035cb8ac },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c } ]
+[0mGET /gethighscores [36m304 [0m3.939 ms - -[0m
+[0mGET / [36m304 [0m0.302 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.323 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.214 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m1.071 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.015 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.941 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.720 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.291 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.192 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.211 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.616 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.324 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.195 ms - -[0m
+   [36minfo  -[39m handshake authorized 19788175701413527705
+20 May 16:22:23 - New player has connected: 19788175701413527705
+20 May 16:22:23 - Ball not found: undefined
+20 May 16:22:23 - Ball not found: undefined
+20 May 16:22:23 - Ball not found: undefined
+20 May 16:22:23 - Ball not found: undefined
+20 May 16:22:23 - Ball not found: undefined
+20 May 16:22:23 - Ball not found: undefined
+20 May 16:22:23 - Ball not found: undefined
+20 May 16:22:23 - Ball not found: undefined
+20 May 16:22:23 - Ball not found: undefined
+20 May 16:22:23 - Ball not found: undefined
+20 May 16:22:23 - Ball not found: undefined
+20 May 16:22:23 - Ball not found: undefined
+20 May 16:22:23 - Ball not found: undefined
+20 May 16:22:23 - Ball not found: undefined
+20 May 16:22:23 - Ball not found: undefined
+20 May 16:22:23 - Ball not found: undefined
+20 May 16:22:23 - Ball not found: undefined
+20 May 16:22:23 - Ball not found: undefined
+[0mGET / [36m304 [0m0.306 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.540 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.483 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m3.053 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m3.030 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m2.829 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.730 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.516 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.439 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.206 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.983 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.581 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.582 ms - -[0m
+   [36minfo  -[39m handshake authorized 10217105711622889037
+20 May 16:22:27 - New player has connected: 10217105711622889037
+20 May 16:22:27 - Ball not found: undefined
+20 May 16:22:27 - Ball not found: undefined
+20 May 16:22:27 - Ball not found: undefined
+20 May 16:22:27 - Ball not found: undefined
+20 May 16:22:27 - Ball not found: undefined
+20 May 16:22:27 - Ball not found: undefined
+20 May 16:22:27 - Ball not found: undefined
+20 May 16:22:27 - Ball not found: undefined
+20 May 16:22:27 - Ball not found: undefined
+20 May 16:22:27 - Ball not found: undefined
+20 May 16:22:27 - Ball not found: undefined
+20 May 16:22:27 - Ball not found: undefined
+20 May 16:22:27 - Ball not found: undefined
+20 May 16:22:27 - Ball not found: undefined
+20 May 16:22:27 - Ball not found: undefined
+20 May 16:22:27 - Ball not found: undefined
+20 May 16:22:27 - Ball not found: undefined
+20 May 16:22:27 - Ball not found: undefined
+20 May 16:22:27 - Ball not found: undefined
+20 May 16:22:27 - Ball not found: undefined
+[0mGET / [32m200 [0m0.921 ms - 1426[0m
+[0mGET /stylesheets/reset.css [32m200 [0m1.132 ms - 1153[0m
+[0mGET /javascripts/socket.io.js [32m200 [0m0.834 ms - 53933[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.076 ms - 1086[0m
+[0mGET /javascripts/requestAnimationFrame.js [32m200 [0m1.080 ms - 465[0m
+[0mGET /javascripts/jquery.cookie.js [32m200 [0m0.443 ms - 3121[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m0.458 ms - 121260[0m
+[0mGET /javascripts/Keys.js [32m200 [0m2.023 ms - 1078[0m
+[0mGET /javascripts/Player.js [32m200 [0m0.430 ms - 2383[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m0.335 ms - 97362[0m
+[0mGET /javascripts/Ball.js [32m200 [0m1.061 ms - 2106[0m
+[0mGET /javascripts/Food.js [32m200 [0m0.581 ms - 997[0m
+[0mGET /javascripts/game.js [32m200 [0m0.961 ms - 14394[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m0.374 ms - 51916[0m
+   [36minfo  -[39m handshake authorized 800703301814798698
+20 May 16:22:32 - New player has connected: 800703301814798698
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+20 May 16:22:32 - Ball not found: undefined
+[0mGET / [36m304 [0m0.639 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.544 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.460 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m1.361 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.365 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.818 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.850 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m2.205 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m2.055 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m2.043 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m1.964 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m1.113 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.281 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m1.305 ms - -[0m
+   [36minfo  -[39m handshake authorized 681378702201647758
+20 May 16:22:35 - New player has connected: 681378702201647758
+20 May 16:22:35 - Ball not found: undefined
+20 May 16:22:35 - Ball not found: undefined
+20 May 16:22:35 - Ball not found: undefined
+20 May 16:22:35 - Ball not found: undefined
+20 May 16:22:35 - Ball not found: undefined
+20 May 16:22:35 - Ball not found: undefined
+20 May 16:22:35 - Ball not found: undefined
+20 May 16:22:35 - Ball not found: undefined
+20 May 16:22:35 - Ball not found: undefined
+20 May 16:22:35 - Ball not found: undefined
+20 May 16:22:35 - Ball not found: undefined
+20 May 16:22:35 - Ball not found: undefined
+20 May 16:22:35 - Ball not found: undefined
+20 May 16:22:35 - Ball not found: undefined
+[0mGET / [36m304 [0m0.690 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m1.470 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m1.118 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m1.050 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.726 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.662 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.443 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.783 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.709 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m1.282 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m1.277 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m1.270 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m1.250 ms - -[0m
+[0mGET /stylesheets/zig.ttf [36m304 [0m0.278 ms - -[0m
+   [36minfo  -[39m handshake authorized 581712463911448359
+Removing a player: 10217105711622889037
+POST addscore route
+{ Username: 'TYLER', Score: 121 }
+{ _id: 573f39cfc5ff7224035cb8b2, Score: 121, Username: 'TYLER' }
+121
+{ _id: 573f39cfc5ff7224035cb8b2,
+  Score: 121,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m7.042 ms - 2[0m
+20 May 16:22:39 - New player has connected: 581712463911448359
+20 May 16:22:39 - Ball not found: undefined
+20 May 16:22:39 - Ball not found: undefined
+20 May 16:22:39 - Ball not found: undefined
+20 May 16:22:39 - Ball not found: undefined
+20 May 16:22:39 - Ball not found: undefined
+20 May 16:22:39 - Ball not found: undefined
+20 May 16:22:39 - Ball not found: undefined
+20 May 16:22:39 - Ball not found: undefined
+20 May 16:22:39 - Ball not found: undefined
+20 May 16:22:39 - Ball not found: undefined
+20 May 16:22:39 - Ball not found: undefined
+   [36minfo  -[39m transport end
+20 May 16:22:40 - Player has disconnected: 10217105711622889037
+20 May 16:22:40 - Player not found: 10217105711622889037
+[0mGET /highscores [36m304 [0m0.562 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.440 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m1.356 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m1.314 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m1.288 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m1.247 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m1.201 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 4465, Username: 'MOM', _id: 573f392cc5ff7224035cb8ac },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c } ]
+[0mGET /gethighscores [36m304 [0m4.673 ms - -[0m
+Removing a player: 556318633741848195
+Removing a player: 19788175701413527705
+POST addscore route
+{ Username: 'TYLER', Score: 215 }
+{ _id: 573f39d4c5ff7224035cb8b3, Score: 215, Username: 'TYLER' }
+215
+{ _id: 573f39d4c5ff7224035cb8b3,
+  Score: 215,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.073 ms - 2[0m
+   [36minfo  -[39m transport end
+20 May 16:22:45 - Player has disconnected: 19788175701413527705
+20 May 16:22:45 - Player not found: 19788175701413527705
+[0mGET /highscores [36m304 [0m0.534 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m1.368 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m1.306 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m1.410 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m1.341 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m1.298 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.256 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 4465, Username: 'MOM', _id: 573f392cc5ff7224035cb8ac },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c } ]
+[0mGET /gethighscores [36m304 [0m5.178 ms - -[0m
+20 May 16:22:59 - Food not found: 1292
+Removing a player: 681378702201647758
+POST addscore route
+{ Username: 'GUEST', Score: 151 }
+{ _id: 573f39e9c5ff7224035cb8b4, Score: 151, Username: 'GUEST' }
+151
+{ _id: 573f39e9c5ff7224035cb8b4,
+  Score: 151,
+  Username: 'GUEST',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m1.995 ms - 2[0m
+   [36minfo  -[39m transport end
+20 May 16:23:06 - Player has disconnected: 681378702201647758
+20 May 16:23:06 - Player not found: 681378702201647758
+[0mGET /highscores [32m200 [0m0.887 ms - 881[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.720 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.680 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.657 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m1.056 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m1.110 ms - -[0m
+[0mGET /javascripts/highscores.js [32m200 [0m1.509 ms - 391[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 4465, Username: 'MOM', _id: 573f392cc5ff7224035cb8ac },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c } ]
+[0mGET /gethighscores [32m200 [0m3.304 ms - 671[0m
+Removing a player: 800703301814798698
+POST addscore route
+{ Username: 'GUEST', Score: 408 }
+{ _id: 573f39f1c5ff7224035cb8b5, Score: 408, Username: 'GUEST' }
+408
+{ _id: 573f39f1c5ff7224035cb8b5,
+  Score: 408,
+  Username: 'GUEST',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.280 ms - 2[0m
+   [36minfo  -[39m transport end
+20 May 16:23:14 - Player has disconnected: 800703301814798698
+20 May 16:23:14 - Player not found: 800703301814798698
+[0mGET /highscores [36m304 [0m0.684 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.762 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.602 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.576 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.515 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.406 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.336 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 4465, Username: 'MOM', _id: 573f392cc5ff7224035cb8ac },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 },
+  { Score: 1029, Username: 'GUEST', _id: 572b8c0bc5ff7224035cb89c } ]
+[0mGET /gethighscores [36m304 [0m3.358 ms - -[0m
+Removing a player: 2136207631434334578
+20 May 16:23:33 - Player not found: 2136207631434334578
+20 May 16:23:33 - Player not found: 2136207631434334578
+20 May 16:23:33 - Player not found: 2136207631434334578
+20 May 16:23:33 - Player not found: 2136207631434334578
+20 May 16:23:33 - Player not found: 2136207631434334578
+20 May 16:23:33 - Player not found: 2136207631434334578
+20 May 16:23:33 - Player not found: 2136207631434334578
+20 May 16:23:33 - Player not found: 2136207631434334578
+20 May 16:23:33 - Player not found: 2136207631434334578
+20 May 16:23:33 - Player not found: 2136207631434334578
+20 May 16:23:33 - Player not found: 2136207631434334578
+20 May 16:23:33 - Player not found: 2136207631434334578
+20 May 16:23:33 - Player not found: 2136207631434334578
+20 May 16:23:33 - Player not found: 2136207631434334578
+20 May 16:23:33 - Player not found: 2136207631434334578
+20 May 16:23:33 - Player not found: 2136207631434334578
+20 May 16:23:33 - Player not found: 2136207631434334578
+POST addscore route
+{ Username: 'MOM', Score: 5676 }
+{ _id: 573f3a06c5ff7224035cb8b6, Score: 5676, Username: 'MOM' }
+5676
+{ _id: 573f3a06c5ff7224035cb8b6,
+  Score: 5676,
+  Username: 'MOM',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m1.980 ms - 2[0m
+   [36minfo  -[39m transport end
+20 May 16:23:34 - Player has disconnected: 2136207631434334578
+20 May 16:23:34 - Player not found: 2136207631434334578
+[0mGET /highscores [36m304 [0m0.522 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.308 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.304 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.449 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.386 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.418 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.361 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 5676, Username: 'MOM', _id: 573f3a06c5ff7224035cb8b6 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 4465, Username: 'MOM', _id: 573f392cc5ff7224035cb8ac },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 },
+  { Score: 1180, Username: 'TYLER', _id: 572b8b46c5ff7224035cb896 } ]
+[0mGET /gethighscores [32m200 [0m4.156 ms - 669[0m
+[0mGET / [36m304 [0m0.334 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.300 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.210 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.217 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.213 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.436 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.386 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.207 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.188 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.195 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.212 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.392 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.380 ms - -[0m
+   [36minfo  -[39m transport end
+20 May 16:23:41 - Player has disconnected: 581712463911448359
+   [36minfo  -[39m handshake authorized 1999302304946718080
+20 May 16:23:41 - New player has connected: 1999302304946718080
+20 May 16:23:42 - Ball not found: undefined
+20 May 16:23:42 - Ball not found: undefined
+20 May 16:23:42 - Ball not found: undefined
+20 May 16:23:42 - Ball not found: undefined
+20 May 16:23:42 - Ball not found: undefined
+POST addscore route
+{ Username: 'TYLER', Score: 2897 }
+{ _id: 573f3a1bc5ff7224035cb8b7, Score: 2897, Username: 'TYLER' }
+2897
+{ _id: 573f3a1bc5ff7224035cb8b7,
+  Score: 2897,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m2.115 ms - 2[0m
+   [36minfo  -[39m transport end
+20 May 16:23:56 - Player has disconnected: 556318633741848195
+20 May 16:23:56 - Player not found: 556318633741848195
+[0mGET /highscores [36m304 [0m0.496 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.759 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.718 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.667 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.685 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.591 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.544 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 5676, Username: 'MOM', _id: 573f3a06c5ff7224035cb8b6 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 4465, Username: 'MOM', _id: 573f392cc5ff7224035cb8ac },
+  { Score: 2897, Username: 'TYLER', _id: 573f3a1bc5ff7224035cb8b7 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 } ]
+[0mGET /gethighscores [32m200 [0m4.312 ms - 669[0m
+[0mGET / [36m304 [0m0.299 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.351 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.892 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.825 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.820 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.823 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.208 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.324 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.786 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.757 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.742 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.743 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.225 ms - -[0m
+   [36minfo  -[39m handshake authorized 584330024489431873
+20 May 16:23:59 - New player has connected: 584330024489431873
+20 May 16:23:59 - Ball not found: undefined
+20 May 16:23:59 - Ball not found: undefined
+20 May 16:23:59 - Ball not found: undefined
+20 May 16:23:59 - Ball not found: undefined
+20 May 16:23:59 - Ball not found: undefined
+20 May 16:23:59 - Ball not found: undefined
+20 May 16:23:59 - Ball not found: undefined
+20 May 16:23:59 - Ball not found: undefined
+20 May 16:23:59 - Ball not found: undefined
+20 May 16:23:59 - Ball not found: undefined
+20 May 16:23:59 - Ball not found: undefined
+20 May 16:23:59 - Ball not found: undefined
+20 May 16:23:59 - Ball not found: undefined
+20 May 16:23:59 - Ball not found: undefined
+20 May 16:23:59 - Ball not found: undefined
+20 May 16:23:59 - Ball not found: undefined
+20 May 16:23:59 - Ball not found: undefined
+20 May 16:23:59 - Ball not found: undefined
+20 May 16:23:59 - Ball not found: undefined
+Removing a player: 584330024489431873
+POST addscore route
+{ Username: 'TYLER', Score: 212 }
+{ _id: 573f3a2ac5ff7224035cb8b8, Score: 212, Username: 'TYLER' }
+212
+{ _id: 573f3a2ac5ff7224035cb8b8,
+  Score: 212,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m1.908 ms - 2[0m
+   [36minfo  -[39m transport end
+20 May 16:24:11 - Player has disconnected: 584330024489431873
+20 May 16:24:11 - Player not found: 584330024489431873
+[0mGET /highscores [36m304 [0m0.463 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.542 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.487 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.868 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.818 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.788 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.747 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 5676, Username: 'MOM', _id: 573f3a06c5ff7224035cb8b6 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 4465, Username: 'MOM', _id: 573f392cc5ff7224035cb8ac },
+  { Score: 2897, Username: 'TYLER', _id: 573f3a1bc5ff7224035cb8b7 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b },
+  { Score: 1432, Username: 'TYLER', _id: 57201f8e0e4bd26f02ed60d3 } ]
+[0mGET /gethighscores [36m304 [0m4.759 ms - -[0m
+[0mGET / [36m304 [0m0.379 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.341 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m1.334 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m1.256 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.330 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m1.204 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m1.115 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.363 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.218 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m1.056 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m1.008 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.957 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.797 ms - -[0m
+   [36minfo  -[39m handshake authorized 630682551213029065
+20 May 16:24:31 - New player has connected: 630682551213029065
+20 May 16:24:31 - Ball not found: undefined
+20 May 16:24:31 - Ball not found: undefined
+20 May 16:24:31 - Ball not found: undefined
+20 May 16:24:31 - Ball not found: undefined
+20 May 16:24:31 - Ball not found: undefined
+20 May 16:24:31 - Ball not found: undefined
+20 May 16:24:31 - Ball not found: undefined
+20 May 16:24:31 - Ball not found: undefined
+20 May 16:24:31 - Ball not found: undefined
+20 May 16:24:31 - Ball not found: undefined
+20 May 16:24:31 - Ball not found: undefined
+20 May 16:24:31 - Ball not found: undefined
+20 May 16:24:31 - Ball not found: undefined
+20 May 16:24:31 - Ball not found: undefined
+20 May 16:24:31 - Ball not found: undefined
+20 May 16:24:31 - Ball not found: undefined
+20 May 16:24:31 - Ball not found: undefined
+20 May 16:24:31 - Ball not found: undefined
+Removing a player: 1999302304946718080
+20 May 16:25:09 - Player not found: 1999302304946718080
+20 May 16:25:09 - Player not found: 1999302304946718080
+20 May 16:25:09 - Player not found: 1999302304946718080
+20 May 16:25:09 - Player not found: 1999302304946718080
+20 May 16:25:09 - Player not found: 1999302304946718080
+20 May 16:25:09 - Player not found: 1999302304946718080
+20 May 16:25:09 - Player not found: 1999302304946718080
+20 May 16:25:09 - Player not found: 1999302304946718080
+20 May 16:25:09 - Player not found: 1999302304946718080
+20 May 16:25:09 - Player not found: 1999302304946718080
+POST addscore route
+{ Username: 'MOM', Score: 2529 }
+{ _id: 573f3a65c5ff7224035cb8b9, Score: 2529, Username: 'MOM' }
+2529
+{ _id: 573f3a65c5ff7224035cb8b9,
+  Score: 2529,
+  Username: 'MOM',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m4.115 ms - 2[0m
+   [36minfo  -[39m transport end
+20 May 16:25:10 - Player has disconnected: 1999302304946718080
+20 May 16:25:10 - Player not found: 1999302304946718080
+[0mGET /highscores [36m304 [0m0.661 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.386 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.230 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.458 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.414 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.481 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.377 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 5676, Username: 'MOM', _id: 573f3a06c5ff7224035cb8b6 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 4465, Username: 'MOM', _id: 573f392cc5ff7224035cb8ac },
+  { Score: 2897, Username: 'TYLER', _id: 573f3a1bc5ff7224035cb8b7 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2529, Username: 'MOM', _id: 573f3a65c5ff7224035cb8b9 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b } ]
+[0mGET /gethighscores [32m200 [0m8.725 ms - 667[0m
+[0mGET / [36m304 [0m0.395 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.349 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.252 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.232 ms - -[0m
+[0mGET /javascripts/socket.io.js [36m304 [0m0.220 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [36m304 [0m0.424 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.315 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.407 ms - -[0m
+[0mGET /javascripts/Player.js [36m304 [0m0.846 ms - -[0m
+[0mGET /javascripts/Ball.js [36m304 [0m0.794 ms - -[0m
+[0mGET /javascripts/Keys.js [36m304 [0m0.724 ms - -[0m
+[0mGET /javascripts/Food.js [36m304 [0m0.452 ms - -[0m
+[0mGET /javascripts/game.js [36m304 [0m0.210 ms - -[0m
+   [36minfo  -[39m handshake authorized 15875708541121576535
+20 May 16:25:46 - New player has connected: 15875708541121576535
+20 May 16:25:46 - Ball not found: undefined
+20 May 16:25:46 - Ball not found: undefined
+20 May 16:25:46 - Ball not found: undefined
+20 May 16:25:46 - Ball not found: undefined
+20 May 16:25:46 - Ball not found: undefined
+Removing a player: 15875708541121576535
+POST addscore route
+{ Username: 'MOM', Score: 24 }
+{ _id: 573f3a8bc5ff7224035cb8ba, Score: 24, Username: 'MOM' }
+24
+{ _id: 573f3a8bc5ff7224035cb8ba,
+  Score: 24,
+  Username: 'MOM',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m3.813 ms - 2[0m
+   [36minfo  -[39m transport end
+20 May 16:25:48 - Player has disconnected: 15875708541121576535
+20 May 16:25:48 - Player not found: 15875708541121576535
+[0mGET /highscores [36m304 [0m1.048 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.360 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.303 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.218 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.603 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.467 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.435 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 5676, Username: 'MOM', _id: 573f3a06c5ff7224035cb8b6 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 4465, Username: 'MOM', _id: 573f392cc5ff7224035cb8ac },
+  { Score: 2897, Username: 'TYLER', _id: 573f3a1bc5ff7224035cb8b7 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2529, Username: 'MOM', _id: 573f3a65c5ff7224035cb8b9 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 },
+  { Score: 2063,
+    Username: 'MICKEY',
+    _id: 572b8c01c5ff7224035cb89b } ]
+[0mGET /gethighscores [36m304 [0m4.183 ms - -[0m
+POST addscore route
+{ Username: 'TYLER', Score: 9399 }
+{ _id: 573f3a9ac5ff7224035cb8bb, Score: 9399, Username: 'TYLER' }
+9399
+{ _id: 573f3a9ac5ff7224035cb8bb,
+  Score: 9399,
+  Username: 'TYLER',
+  __v: 0 }
+[0mPOST /addscore [32m200 [0m3.971 ms - 2[0m
+   [36minfo  -[39m transport end
+20 May 16:26:03 - Player has disconnected: 630682551213029065
+[0mGET /highscores [36m304 [0m0.729 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.388 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.682 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.600 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.557 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.216 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.251 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 9399, Username: 'TYLER', _id: 573f3a9ac5ff7224035cb8bb },
+  { Score: 5676, Username: 'MOM', _id: 573f3a06c5ff7224035cb8b6 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 4465, Username: 'MOM', _id: 573f392cc5ff7224035cb8ac },
+  { Score: 2897, Username: 'TYLER', _id: 573f3a1bc5ff7224035cb8b7 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2529, Username: 'MOM', _id: 573f3a65c5ff7224035cb8b9 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 } ]
+[0mGET /gethighscores [32m200 [0m4.817 ms - 666[0m
+[0mGET /highscores [36m304 [0m1.497 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.311 ms - -[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.299 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.426 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.361 ms - -[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m0.198 ms - -[0m
+[0mGET /javascripts/highscores.js [36m304 [0m0.221 ms - -[0m
+In high score route
+[ { Score: 516594,
+    Username: 'GUEST',
+    _id: 572b92dbc5ff7224035cb8a5 },
+  { Score: 19798,
+    Username: 'TYLER',
+    _id: 57201fc80e4bd26f02ed60d4 },
+  { Score: 9399, Username: 'TYLER', _id: 573f3a9ac5ff7224035cb8bb },
+  { Score: 5676, Username: 'MOM', _id: 573f3a06c5ff7224035cb8b6 },
+  { Score: 4717, Username: 'MOM', _id: 573f38b6c5ff7224035cb8a9 },
+  { Score: 4465, Username: 'MOM', _id: 573f392cc5ff7224035cb8ac },
+  { Score: 2897, Username: 'TYLER', _id: 573f3a1bc5ff7224035cb8b7 },
+  { Score: 2853, Username: 'TYLER', _id: 56fc5ae1214437ed34992311 },
+  { Score: 2529, Username: 'MOM', _id: 573f3a65c5ff7224035cb8b9 },
+  { Score: 2162, Username: 'TYLER', _id: 572b8b9fc5ff7224035cb898 } ]
+[0mGET /gethighscores [32m200 [0m4.423 ms - 666[0m
+[0mGET / [32m200 [0m1.144 ms - 1426[0m
+[0mGET /favicon.ico [33m404 [0m12.397 ms - 1930[0m
+[0mGET / [32m200 [0m0.592 ms - 1426[0m
+[0mGET /favicon.ico [33m404 [0m8.565 ms - 1930[0m
+[0mGET / [32m200 [0m1.746 ms - 1426[0m
+[0mGET /favicon.ico [33m404 [0m10.644 ms - 1930[0m
+[0mGET / [32m200 [0m0.586 ms - 1426[0m
+[0mGET /favicon.ico [33m404 [0m17.861 ms - 1930[0m
+[0mGET / [32m200 [0m0.539 ms - 1426[0m
+[0mGET /favicon.ico [33m404 [0m10.737 ms - 1930[0m
