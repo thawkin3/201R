@@ -83,6 +83,11 @@ h1 {
 	font-size: 30px;
 }
 
+#game span {
+	color: #ccc;
+	cursor: pointer;
+}
+
 
 /* HIGH SCORES */
 #highScoresTable {

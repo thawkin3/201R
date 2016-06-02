@@ -85,11 +85,20 @@
 		var canvas = document.getElementById("gameCanvas");
 		var ctx = canvas.getContext("2d");
 
+		// $scope.goToScores = function() {
+		// 	console.log("going to high scores 1");
+		// 	gameEnd = true;
+		// 	$timeout(function() {
+		// 		$location.url("/highscores");
+		// 	}, 100);
+		// }
+
 		// Locator function in a loop
 		$scope.mainLoop = function() {			
 			// logic for the game to end or not
 			if (!gameEnd) {
 				// draw our canvas here
+				// console.log(ball_y);
 				$scope.draw();
 				$scope.update();
 				// Recursively call our loop
