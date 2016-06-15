@@ -3729,3 +3729,61 @@ In high score route
 [0mGET /favicon.ico [33m404 [0m8.128 ms - 1930[0m
 [0mGET / [32m200 [0m0.597 ms - 1426[0m
 [0mGET /favicon.ico [33m404 [0m11.574 ms - 1930[0m
+[0mGET / [32m200 [0m0.505 ms - 1426[0m
+[0mGET /favicon.ico [33m404 [0m11.522 ms - 1930[0m
+[0mGET / [32m200 [0m0.518 ms - 1426[0m
+[0mGET /favicon.ico [33m404 [0m6.931 ms - 1930[0m
+[0mGET / [32m200 [0m0.548 ms - 1426[0m
+[0mGET /favicon.ico [33m404 [0m9.828 ms - 1930[0m
+[0mGET / [32m200 [0m0.629 ms - 1426[0m
+[0mGET /favicon.ico [33m404 [0m8.571 ms - 1930[0m
+[0mGET /login [32m200 [0m1.497 ms - 1754[0m
+[0mGET /stylesheets/reset.css [32m200 [0m1.097 ms - 1153[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.674 ms - 1086[0m
+[0mGET /javascripts/jquery.cookie.js [32m200 [0m2.065 ms - 3121[0m
+[0mGET /javascripts/login.js [32m200 [0m1.487 ms - 271[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m2.909 ms - 121260[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m2.674 ms - 97362[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m1.596 ms - 51916[0m
+[0mGET /favicon.ico [33m404 [0m7.339 ms - 1930[0m
+[0mGET / [32m200 [0m0.563 ms - 1426[0m
+[0mGET /stylesheets/bootstrap.min.css [36m304 [0m0.832 ms - -[0m
+[0mGET /stylesheets/reset.css [36m304 [0m0.810 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.767 ms - -[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [36m304 [0m0.576 ms - -[0m
+[0mGET /javascripts/requestAnimationFrame.js [32m200 [0m1.903 ms - 465[0m
+[0mGET /javascripts/socket.io.js [32m200 [0m2.128 ms - 53933[0m
+[0mGET /javascripts/jquery.cookie.js [36m304 [0m1.666 ms - -[0m
+[0mGET /javascripts/Keys.js [32m200 [0m1.991 ms - 1078[0m
+[0mGET /javascripts/Ball.js [32m200 [0m2.354 ms - 2106[0m
+[0mGET /javascripts/Player.js [32m200 [0m2.830 ms - 2383[0m
+[0mGET /javascripts/Food.js [32m200 [0m1.019 ms - 997[0m
+[0mGET /javascripts/game.js [32m200 [0m1.304 ms - 14394[0m
+   [36minfo  -[39m handshake authorized 3759595791170027748
+8 Jun 21:04:27 - New player has connected: 3759595791170027748
+8 Jun 21:04:27 - Ball not found: undefined
+8 Jun 21:04:27 - Ball not found: undefined
+8 Jun 21:04:27 - Ball not found: undefined
+8 Jun 21:04:27 - Ball not found: undefined
+8 Jun 21:04:28 - Ball not found: undefined
+8 Jun 21:04:28 - Ball not found: undefined
+8 Jun 21:04:28 - Ball not found: undefined
+8 Jun 21:04:28 - Ball not found: undefined
+8 Jun 21:04:28 - Ball not found: undefined
+8 Jun 21:04:28 - Ball not found: undefined
+8 Jun 21:04:28 - Ball not found: undefined
+8 Jun 21:04:28 - Ball not found: undefined
+   [36minfo  -[39m transport end
+8 Jun 21:05:43 - Player has disconnected: 3759595791170027748
+[0mGET / [32m200 [0m0.529 ms - 1426[0m
+[0mGET /favicon.ico [33m404 [0m6.373 ms - 1930[0m
+[0mGET / [32m200 [0m0.597 ms - 1426[0m
+[0mGET /favicon.ico [33m404 [0m6.809 ms - 1930[0m
+[0mGET / [32m200 [0m0.537 ms - 1426[0m
+[0mGET /favicon.ico [33m404 [0m9.368 ms - 1930[0m
+[0mGET / [32m200 [0m3.448 ms - 1426[0m
+[0mGET /favicon.ico [33m404 [0m6.605 ms - 1930[0m
+[0mGET / [32m200 [0m0.581 ms - 1426[0m
+[0mGET /favicon.ico [33m404 [0m5.427 ms - 1930[0m
+[0mGET / [32m200 [0m0.547 ms - 1426[0m
+[0mGET /favicon.ico [33m404 [0m5.397 ms - 1930[0m
