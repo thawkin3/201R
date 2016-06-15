@@ -33,7 +33,7 @@ router.get('/:url', function(req, res, next) {
   // });
 
 	Url.findOne({ originalURL: url }, function(err, foundURL) {
-	    if (error) return next(error);
+	    if (err) return next(err);
 		if (foundURL == null) {
 		  	var newURL = new Url({ originalURL: url, newURL: "localhost:3000/itWorked" }); //[3]
 		    console.log(newURL);
