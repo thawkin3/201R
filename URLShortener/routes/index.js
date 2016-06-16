@@ -13,7 +13,7 @@ mongoose.connect('mongodb://localhost/urlDB'); // Connects to a mongo database c
 
 var urlSchema = mongoose.Schema({ // Defines the Url Schema for this database
   originalURL: String,
-  lookupNUmber: Number
+  lookupNumber: Number
 });
 
 var Url = mongoose.model('Url', urlSchema); // Makes an object from that schema as a model
@@ -42,22 +42,22 @@ router.get('/new/:url', function(req, res, next) {
 			var chooseANumber;
 
 			// Look for the highest number in the database, and add 1 to that number
-			Url.findOne({}).sort('-lookupNUmber').exec(function(err, foundNumber) {
+			Url.findOne({}).sort('-lookupNumber').exec(function(err, foundNumber) {
 				if (foundNumber == null) {
 					chooseANumber = 1;
 				} else {
-					chooseANumber = foundNumber.lookupNUmber + 1;
+					chooseANumber = foundNumber.lookupNumber + 1;
 				}
 
 				// Make your new record
 			  	var jsonRecord = {
 			  		originalURL: theParamUrl,
-			  		lookupNUmber: chooseANumber
+			  		lookupNumber: chooseANumber
 			  	};
 			  	console.log("jsonRecord is: ");
 			  	console.log(jsonRecord);
 
-			  	var newURL = new Url(jsonRecord, false); //[3]
+			  	var newURL = new Url(jsonRecord); //[3]
 			  	console.log("newURL is: ");
 			    console.log(newURL);
 			  	
@@ -78,7 +78,7 @@ router.get('/new/:url', function(req, res, next) {
 			console.log("found the URL");
 			var jsonRecord = {
 		  		originalURL: foundURL.originalURL,
-		  		lookupNUmber: foundURL.lookupNUmber
+		  		lookupNumber: foundURL.lookupNumber
 		  	};
 		  	console.log("jsonRecord is: ");
 		  	console.log(jsonRecord);
@@ -96,10 +96,13 @@ router.get('/lookup/:lookupNumber', function(req, res, next) {
 	Url.findOne({ lookupNumber: theParamNumber }, function(err, foundNumber) {
 	    if (err) return err;
 
+	    // If you find it, redirect to that stored address
 	    if (foundNumber != null) {
 			console.log("inside the findOne method, and here's the search results:");
 			console.log(foundNumber);
-			res.redirect(foundNumber.newURL);
+			res.redirect(foundNumber.originalURL);
+		
+		// Otherwise, show an error message
 		} else {
 			var jsonRecord = {
 		  		result: "lookup number does not exist in database"
