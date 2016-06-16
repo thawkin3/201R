@@ -44,17 +44,14 @@ router.get('/:url', function(req, res, next) {
 		  	var newURL = new Url(jsonRecord, false); //[3]
 		  	console.log("newURL is: ");
 		    console.log(newURL);
-
-			res.status(200).json(jsonRecord);
-
 		  	
-		  // 	newURL.save(true, function(err, savedURL) { //[4]
-		  //   	console.log("inside the save method");
-		  //   	if (err) return console.error(err);
-		  // 		console.log("savedURL is: ");
-		  //   	console.log(savedURL);
-				// res.status(200).json(jsonRecord);
-		  // 	});
+		  	newURL.save(function(err, savedURL) { //[4]
+		    	console.log("inside the save method");
+		    	if (err) return console.error(err);
+		  		console.log("savedURL is: ");
+		    	console.log(savedURL);
+				res.status(200).json(jsonRecord);
+		  	});
 		} else {
 			console.log("found the URL");
 			res.status(200).json(foundURL);
