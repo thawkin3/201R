@@ -100,7 +100,8 @@ router.get('/lookup/:lookupNumber', function(req, res, next) {
 	    if (foundNumber != null) {
 			console.log("inside the findOne method, and here's the search results:");
 			console.log(foundNumber);
-			res.redirect(foundNumber.originalURL);
+			// res.redirect(foundNumber.originalURL);
+			res.redirect(302, 'http://google.com');
 		
 		// Otherwise, show an error message
 		} else {
