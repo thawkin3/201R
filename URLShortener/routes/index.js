@@ -25,7 +25,7 @@ db.once('open', function() { // Lets us know when we're connected
 });
 
 /* GET page to enter a new URL */
-router.get('new/:url', function(req, res, next) {
+router.get('/new/:url', function(req, res, next) {
   	var theParamUrl = req.params.url;
   	console.log("inside the route, and here's the url: " + theParamUrl);
 
@@ -89,7 +89,7 @@ router.get('new/:url', function(req, res, next) {
 });
 
 /* GET page to redirect to a saved URL */
-router.get('lookup/:lookupNumber', function(req, res, next) {
+router.get('/lookup/:lookupNumber', function(req, res, next) {
   	var theParamNumber = req.params.lookupNumber;
 
   	// Try to find the lookup number in your database
