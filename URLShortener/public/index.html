@@ -9,9 +9,17 @@
     <body>
         <h1>URL Shortener Microservice</h1>
 
-        <p>Enter a new URL after the last "/" in the address bar.</p>
-        <p>For example, add "http://google.com" to the end.</p>
-        <p>This will return a shortened URL for you that will redirect to the address you entered.</p>
-        <p>Then take that shortened URL and paste it into your browser to see the redirect in action!</p>
+        <h3>Instructions</h3>
+        <p>Add a "/new/" in the address bar, followed by the complete address of an actual website.</p>
+        <p>For example, add "/new/http://google.com" to the end of this page's URL and hit the enter key.</p>
+        <p>This will return a lookup number that is associated with the web address you entered.</p>
+        <p>Take that number and paste it at the end of this page's URL along with "/go/" at the end.</p>
+        <p>For example, add "/go/7" into your address bar and hit enter to see the redirect in action!</p>
+
+        <h3>Example URLs</h3>
+        <p>Adding a new URL: <span class="currentAddress"></span>/new/http://google.com</p>
+        <p>Using the shortened URL: <span class="currentAddress"></span>/go/7</p>
+
+        <script src="javascripts/script.js" type="text/javascript"></script>
     </body>
 <hmtl>

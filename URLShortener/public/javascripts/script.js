@@ -1,0 +1,1 @@
+document.getElementsByClassName("currentAddress").innerHTML(window.location.href);
