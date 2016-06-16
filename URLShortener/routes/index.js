@@ -29,6 +29,10 @@ router.get('/new/:url(*)', function(req, res, next) {
   	var theParamUrl = req.params.url;
   	// console.log("inside the route, and here's the url: " + theParamUrl);
 
+  	if (theParamUrl == "") {
+  		res.status(200).send("Please enter a URL after 'new/'");
+  	}
+
   	// Try to find the URL in your database
 	Url.findOne({ originalURL: theParamUrl }, function(err, foundURL) {
 	    if (err) return err;
@@ -92,6 +96,10 @@ router.get('/new/:url(*)', function(req, res, next) {
 router.get('/go/:lookupNumber', function(req, res, next) {
   	var theParamNumber = req.params.lookupNumber;
 
+  	if (theParamNumber == "") {
+  		res.status(200).send("Please enter a number after 'go/'");
+  	}
+
   	// Try to find the lookup number in your database
 	Url.findOne({ lookupNumber: theParamNumber }, function(err, foundNumber) {
 	    if (err) return err;
@@ -115,6 +123,11 @@ router.get('/go/:lookupNumber', function(req, res, next) {
 		}
 	});
 
+});
+
+/* GET home page from all other possible requests. */
+router.get('/*', function(req, res, next) {
+  res.sendFile('index.html', { root:  'public' });
 });
 
 module.exports = router;
