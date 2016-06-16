@@ -34,10 +34,10 @@ router.get('/:url', function(req, res, next) {
 		if (foundURL == null) {
 		  	var newURL = new Url({ originalURL: url, newURL: "localhost:3000/itWorked" }); //[3]
 		    console.log(newURL);
-		  	newURL.save(true, function(err, savedUser) { //[4]
+		  	newURL.save(true, function(err, savedURL) { //[4]
 		    	if (err) return console.error(err);
-		    	console.log(savedUser);
-		    	res.sendStatus(200);
+		    	console.log(savedURL);
+				res.status(200).send("{originalURL: " + url + ", newURL: " + 'localhost:3000/itWorked' + "}");
 		  	});
 		} else {
 			console.log("found the URL");
