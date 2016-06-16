@@ -25,7 +25,7 @@ db.once('open', function() { // Lets us know when we're connected
 });
 
 /* GET page to enter a new URL */
-router.get('/new/:url', function(req, res, next) {
+router.get('/new/:url*', function(req, res, next) {
   	var theParamUrl = req.params.url;
   	console.log("inside the route, and here's the url: " + theParamUrl);
 
