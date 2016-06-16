@@ -130,9 +130,4 @@ router.get('/go/:lookupNumber(*)', function(req, res, next) {
 
 });
 
-/* GET home page from all other possible requests. */
-router.get('*', function(req, res, next) {
-  res.redirect(301, '/');
-});
-
 module.exports = router;
