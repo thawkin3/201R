@@ -31,65 +31,68 @@ router.get('/new/:url(*)', function(req, res, next) {
 
   	if (theParamUrl == "") {
   		res.status(200).send("Please enter a URL after 'new/'");
-  	}
+  	} else {
 
-  	// Try to find the URL in your database
-	Url.findOne({ originalURL: theParamUrl }, function(err, foundURL) {
-	    if (err) return err;
-		// console.log("inside the findOne method, and here's the search results:");
-		// console.log(foundURL);
-		
-		// If it wasn't found, then this is a new URL
-		if (foundURL == null) {
-		  	
-			// We'll need to make a new entry and assign it a new number
-			var chooseANumber;
+	  	// Try to find the URL in your database
+		Url.findOne({ originalURL: theParamUrl }, function(err, foundURL) {
+		    if (err) return err;
+			// console.log("inside the findOne method, and here's the search results:");
+			// console.log(foundURL);
+			
+			// If it wasn't found, then this is a new URL
+			if (foundURL == null) {
+			  	
+				// We'll need to make a new entry and assign it a new number
+				var chooseANumber;
 
-			// Look for the highest number in the database, and add 1 to that number
-			Url.findOne({}).sort('-lookupNumber').exec(function(err, foundNumber) {
-				if (foundNumber == null || isNaN(foundNumber)) {
-					chooseANumber = 1;
-				} else {
-					chooseANumber = foundNumber.lookupNumber + 1;
-				}
+				// Look for the highest number in the database, and add 1 to that number
+				Url.findOne({}).sort('-lookupNumber').exec(function(err, foundNumber) {
+					if (foundNumber == null || isNaN(foundNumber)) {
+						chooseANumber = 1;
+					} else {
+						chooseANumber = foundNumber.lookupNumber + 1;
+					}
 
-				// Make your new record
-			  	var jsonRecord = {
-			  		originalURL: theParamUrl,
-			  		lookupNumber: chooseANumber
+					// Make your new record
+				  	var jsonRecord = {
+				  		originalURL: theParamUrl,
+				  		lookupNumber: chooseANumber
+				  	};
+				  	// console.log("jsonRecord is: ");
+				  	// console.log(jsonRecord);
+
+				  	var newURL = new Url(jsonRecord); //[3]
+				  	// console.log("newURL is: ");
+				    // console.log(newURL);
+				  	
+				  	// Save the record
+				  	newURL.save(function(err, savedURL) { //[4]
+				    	// console.log("inside the save method");
+				    	if (err) return console.error(err);
+				  		// console.log("savedURL is: ");
+				    	// console.log(savedURL);
+						res.status(200).json(jsonRecord);
+				  	});
+
+				});
+
+			  	
+			} else {
+				// Remind the user what the lookup number is
+				console.log("found the URL");
+				var jsonRecord = {
+			  		originalURL: foundURL.originalURL,
+			  		lookupNumber: foundURL.lookupNumber
 			  	};
 			  	// console.log("jsonRecord is: ");
 			  	// console.log(jsonRecord);
+			  	res.status(200).json(jsonRecord);
+				
+			}
+		});
 
-			  	var newURL = new Url(jsonRecord); //[3]
-			  	// console.log("newURL is: ");
-			    // console.log(newURL);
-			  	
-			  	// Save the record
-			  	newURL.save(function(err, savedURL) { //[4]
-			    	// console.log("inside the save method");
-			    	if (err) return console.error(err);
-			  		// console.log("savedURL is: ");
-			    	// console.log(savedURL);
-					res.status(200).json(jsonRecord);
-			  	});
+	}
 
-			});
-
-		  	
-		} else {
-			// Remind the user what the lookup number is
-			console.log("found the URL");
-			var jsonRecord = {
-		  		originalURL: foundURL.originalURL,
-		  		lookupNumber: foundURL.lookupNumber
-		  	};
-		  	// console.log("jsonRecord is: ");
-		  	// console.log(jsonRecord);
-		  	res.status(200).json(jsonRecord);
-			
-		}
-	});
 });
 
 /* GET page to redirect to a saved URL */
@@ -98,36 +101,38 @@ router.get('/go/:lookupNumber', function(req, res, next) {
 
   	if (theParamNumber == "") {
   		res.status(200).send("Please enter a number after 'go/'");
-  	}
+  	} else {
 
-  	// Try to find the lookup number in your database
-	Url.findOne({ lookupNumber: theParamNumber }, function(err, foundNumber) {
-	    if (err) return err;
+	  	// Try to find the lookup number in your database
+		Url.findOne({ lookupNumber: theParamNumber }, function(err, foundNumber) {
+		    if (err) return err;
 
-	    // If you find it, redirect to that stored address
-	    if (foundNumber != null) {
-			// console.log("inside the findOne method, and here's the search results:");
-			// console.log(foundNumber);
-			res.redirect(foundNumber.originalURL);
-			// TESTING
-			// res.redirect(302, 'http://google.com');
-		
-		// Otherwise, show an error message
-		} else {
-			var jsonRecord = {
-		  		result: "lookup number does not exist in database"
-		  	};
-		  	console.log("jsonRecord is: ");
-		  	console.log(jsonRecord);
-		  	res.status(200).json(jsonRecord);
-		}
-	});
+		    // If you find it, redirect to that stored address
+		    if (foundNumber != null) {
+				// console.log("inside the findOne method, and here's the search results:");
+				// console.log(foundNumber);
+				res.redirect(foundNumber.originalURL);
+				// TESTING
+				// res.redirect(302, 'http://google.com');
+			
+			// Otherwise, show an error message
+			} else {
+				var jsonRecord = {
+			  		result: "lookup number does not exist in database"
+			  	};
+			  	console.log("jsonRecord is: ");
+			  	console.log(jsonRecord);
+			  	res.status(200).json(jsonRecord);
+			}
+		});
+
+	}
 
 });
 
 /* GET home page from all other possible requests. */
 router.get('*', function(req, res, next) {
-  res.sendFile('index.html', { root:  'public' });
+  res.redirect(301, /index.html);
 });
 
 module.exports = router;
