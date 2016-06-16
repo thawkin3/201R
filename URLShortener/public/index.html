@@ -9,16 +9,19 @@
     <body>
         <h1>URL Shortener Microservice</h1>
 
+        <h3>Description</h3>
+        <p>This microservice allows you to input a URL and outputs a lookup number to be used with a shortened URL. This new URL will redirect to the original URL you entered. This microservice is similar to what bit.ly or TinyURL offer.</p>
+
         <h3>Instructions</h3>
-        <p>Add a "/new/" in the address bar, followed by the complete address of an actual website.</p>
+        <p>Add "/new/" in the address bar, followed by the complete address of an actual website.</p>
         <p>For example, add "/new/http://google.com" to the end of this page's URL and hit the enter key.</p>
         <p>This will return a lookup number that is associated with the web address you entered.</p>
         <p>Take that number and paste it at the end of this page's URL along with "/go/" at the end.</p>
         <p>For example, add "/go/7" into your address bar and hit enter to see the redirect in action!</p>
 
         <h3>Example URLs</h3>
-        <p>Adding a new URL: <span class="currentAddress"></span>/new/http://google.com</p>
-        <p>Using the shortened URL: <span class="currentAddress"></span>/go/7</p>
+        <p><strong>Adding a new URL:</strong> <span class="currentAddress"></span>new/http://google.com</p>
+        <p><strong>Using the shortened URL:</strong> <span class="currentAddress"></span>go/7</p>
 
         <script src="javascripts/script.js" type="text/javascript"></script>
     </body>
