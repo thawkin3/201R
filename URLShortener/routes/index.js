@@ -96,7 +96,7 @@ router.get('/new/:url(*)', function(req, res, next) {
 });
 
 /* GET page to redirect to a saved URL */
-router.get('/go/:lookupNumber', function(req, res, next) {
+router.get('/go/:lookupNumber(*)', function(req, res, next) {
   	var theParamNumber = req.params.lookupNumber;
 
   	if (theParamNumber == "") {
@@ -131,7 +131,7 @@ router.get('/go/:lookupNumber', function(req, res, next) {
 });
 
 /* GET home page from all other possible requests. */
-router.get('*', function(req, res, next) {
+router.get(/^((^go)||(^new))/, function(req, res, next) {
   res.redirect(301, '/');
 });
 
