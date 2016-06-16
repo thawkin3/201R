@@ -27,23 +27,21 @@ db.once('open', function() { //Lets us know when we're connected
 /* GET page with URL parameter */
 router.get('/:url', function(req, res, next) {
   var url = req.params.url;
-  // findUserByUsername(username, function(error, user) {
-    // if (error) return next(error);
-    // return res.status(200).send(url);
-  // });
 
 	Url.findOne({ originalURL: url }, function(err, foundURL) {
 	    if (err) return next(err);
+		console.log(foundURL);
 		if (foundURL == null) {
 		  	var newURL = new Url({ originalURL: url, newURL: "localhost:3000/itWorked" }); //[3]
 		    console.log(newURL);
-		  	newURL.save(true, function(err, post) { //[4]
+		  	newURL.save(true, function(err, savedUser) { //[4]
 		    	if (err) return console.error(err);
-		    	console.log("found the URL");
+		    	console.log(savedUser);
 		    	res.sendStatus(200);
 		  	});
 		} else {
-			res.status(200).send({originalURL: url, newURL: 'thisIsTheNewUrl'});
+			console.log("found the URL");
+			res.status(200).send("{originalURL: " + url + ", newURL: " + 'thisIsTheNewUrl' + "}");
 		}
 	});
 });
