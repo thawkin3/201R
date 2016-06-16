@@ -47,7 +47,7 @@ router.get('/new/:url(*)', function(req, res, next) {
 
 				// Look for the highest number in the database, and add 1 to that number
 				Url.findOne({}).sort('-lookupNumber').exec(function(err, foundNumber) {
-					if (foundNumber == null || isNaN(foundNumber)) {
+					if (foundNumber == null || isNaN(foundNumber.lookupNumber)) {
 						chooseANumber = 1;
 					} else {
 						chooseANumber = foundNumber.lookupNumber + 1;
@@ -69,8 +69,8 @@ router.get('/new/:url(*)', function(req, res, next) {
 				  	newURL.save(function(err, savedURL) { //[4]
 				    	// console.log("inside the save method");
 				    	if (err) return console.error(err);
-				  		// console.log("savedURL is: ");
-				    	// console.log(savedURL);
+				  		console.log("saved record is: ");
+				    	console.log(savedURL);
 						res.status(200).json(jsonRecord);
 				  	});
 
@@ -96,7 +96,7 @@ router.get('/new/:url(*)', function(req, res, next) {
 });
 
 /* GET page to redirect to a saved URL */
-router.get('/go/:lookupNumber(*)', function(req, res, next) {
+router.get('/go/:lookupNumber', function(req, res, next) {
   	var theParamNumber = req.params.lookupNumber;
 
   	if (theParamNumber == "") {
@@ -120,8 +120,8 @@ router.get('/go/:lookupNumber(*)', function(req, res, next) {
 				var jsonRecord = {
 			  		result: "lookup number does not exist in database"
 			  	};
-			  	console.log("jsonRecord is: ");
-			  	console.log(jsonRecord);
+			  	// console.log("jsonRecord is: ");
+			  	// console.log(jsonRecord);
 			  	res.status(200).json(jsonRecord);
 			}
 		});
