@@ -26,27 +26,29 @@ db.once('open', function() { //Lets us know when we're connected
 
 /* GET page with URL parameter */
 router.get('/:url', function(req, res, next) {
-  	var url = req.params.url;
-  	console.log("inside the route, and here's the url: " + url);
+  	var theParamUrl = req.params.url;
+  	console.log("inside the route, and here's the url: " + theParamUrl);
 
-	Url.findOne({ originalURL: url }, function(err, foundURL) {
-	    if (err) return next(err);
+	Url.findOne({ originalURL: theParamUrl }, function(err, foundURL) {
+	    if (err) return err;
 		console.log("inside the findOne method, and here's the search results:");
 		console.log(foundURL);
 		if (foundURL == null) {
 		  	var jsonRecord = {
-		  		originalURL: url,
+		  		originalURL: theParamUrl,
 		  		newURL: "localhost:3000/itWorked"
 		  	};
 		  	console.log("jsonRecord is: ");
 		  	console.log(jsonRecord);
 
 		  	var newURL = new Url(jsonRecord); //[3]
+		  	console.log("newURL is: ");
 		    console.log(newURL);
 		  	
 		  	newURL.save(true, function(err, savedURL) { //[4]
 		    	console.log("inside the save method");
 		    	if (err) return console.error(err);
+		  		console.log("savedURL is: ");
 		    	console.log(savedURL);
 				res.status(200).json(jsonRecord);
 		  	});
