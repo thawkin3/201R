@@ -126,7 +126,7 @@ router.get('/go/:lookupNumber', function(req, res, next) {
 });
 
 /* GET home page from all other possible requests. */
-router.get('/*', function(req, res, next) {
+router.get('*', function(req, res, next) {
   res.sendFile('index.html', { root:  'public' });
 });
 
