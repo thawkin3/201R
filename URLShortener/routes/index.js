@@ -41,7 +41,7 @@ router.get('/:url', function(req, res, next) {
 		  	console.log("jsonRecord is: ");
 		  	console.log(jsonRecord);
 
-		  	var newURL = new Url(jsonRecord); //[3]
+		  	var newURL = new Url(jsonRecord, false); //[3]
 		  	console.log("newURL is: ");
 		    console.log(newURL);
 		  	
