@@ -1,0 +1,33 @@
+nohup: ignoring input
+Connected
+[0mGET / [36m304 [0m7.379 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m4.472 ms - -[0m
+[0mGET /javascripts/script.js [36m304 [0m0.814 ms - -[0m
+saved record is: 
+{ _id: 576351e3b79371f4382c3fab,
+  lookupNumber: 8,
+  originalURL: 'https://www.pinterest.com',
+  __v: 0 }
+[0mGET /new/https://www.pinterest.com [32m200 [0m41.092 ms - 60[0m
+[0mGET /go/8 [36m302 [0m6.233 ms - 94[0m
+[0mGET /go/7 [36m302 [0m2.662 ms - 78[0m
+found the URL
+[0mGET /new/https://www.pinterest.com [36m304 [0m2.126 ms - -[0m
+found the URL
+[0mGET /new/https://www.pinterest.com [36m304 [0m2.218 ms - -[0m
+[0mGET /go/3 [36m302 [0m1.763 ms - 78[0m
+[0mGET / [32m200 [0m2.903 ms - 1520[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.591 ms - 208[0m
+[0mGET /javascripts/script.js [32m200 [0m0.889 ms - 160[0m
+[0mGET /favicon.ico [33m404 [0m9.501 ms - 1843[0m
+[0mGET /go/7 [36m302 [0m1.706 ms - 78[0m
+found the URL
+[0mGET /new/http://google.com [32m200 [0m1.911 ms - 52[0m
+[0mGET / [32m206 [0m1.368 ms - 1520[0m
+[0mGET / [32m200 [0m0.580 ms - 1520[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.105 ms - 208[0m
+[0mGET /javascripts/script.js [32m200 [0m0.561 ms - 160[0m
+[0mGET /favicon.ico [33m404 [0m1.962 ms - 1843[0m
+found the URL
+[0mGET /new/http://google.com [32m200 [0m2.117 ms - 52[0m
+[0mGET /go/7 [36m302 [0m2.354 ms - 78[0m

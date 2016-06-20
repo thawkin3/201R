@@ -10,3 +10,10 @@ nohup: ignoring input
 [0mGET /javascripts/script.js [32m200 [0m1.019 ms - 664[0m
 [0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m1.982 ms - 97362[0m
 [0mGET /favicon.ico [33m404 [0m14.082 ms - 1116[0m
+[0mGET / [32m200 [0m19.282 ms - 1342[0m
+[0mGET /stylesheets/style.css [32m200 [0m3.416 ms - 200[0m
+[0mGET /javascripts/script.js [32m200 [0m11.966 ms - 664[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m8.189 ms - 97362[0m
+[0mGET /favicon.ico [33m404 [0m11.018 ms - 1116[0m
+{ unix: 705715200000, normal: 'Wed May 13 1992' }
+[0mGET /gettime?q=5/13/1992 [32m200 [0m13.620 ms - 48[0m
