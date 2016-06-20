@@ -64,7 +64,7 @@ router.get('/search/:keywords(*)', function(req, res, next) {
 router.get('/history/', function(req, res, next) {
 
   	// Look for the last 10 searches in the history
-  	Url.find({}).sort('-date').limit(10).exec(function(err, data) {
+  	Imagesearch.find({}).sort('-date').limit(10).exec(function(err, data) {
 	    if (err) return console.error(err);
   		res.status(200).json(data);
   	});
