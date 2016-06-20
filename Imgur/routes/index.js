@@ -67,9 +67,8 @@ router.get('/search/:keywords(*)', function(req, res, next) {
 			maxRedirects: 10
 		}, function(err, response, body) {
 	    	if (err) return console.error(err);
-			console.log(response);
 			console.log(body);
-			res.status(200).json(jsonRecord);
+			res.status(200).json(body);
 		});
 
 	}
@@ -77,7 +76,7 @@ router.get('/search/:keywords(*)', function(req, res, next) {
 });
 
 /* GET page to show search history */
-router.get('/history/', function(req, res, next) {
+router.get('/history', function(req, res, next) {
 
   	// Look for the last 10 searches in the history
   	Imagesearch.find({}).sort('-date').limit(10).exec(function(err, data) {
