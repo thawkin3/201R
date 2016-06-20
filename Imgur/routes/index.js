@@ -1,5 +1,8 @@
 var express = require('express');
 var router = express.Router();
+var request = require("request");
+
+var auth = "Client-ID f57ed78a7dcf14c";
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -54,7 +57,20 @@ router.get('/search/:keywords(*)', function(req, res, next) {
 	  	});
 
 	  	// Query the Imgur API and return the search results
-
+		request({
+			uri: "https://api.imgur.com/3/gallery/search/viral/1?q=" + theKeywords,
+			method: "GET",
+			headers: {
+        		Authorization: auth
+      		},
+			timeout: 10000,
+			followRedirect: true,
+			maxRedirects: 10
+		}, function(err, response, body) {
+	    	if (err) return console.error(err);
+			console.log(response);
+			console.log(body);
+		});
 
 	}
 
@@ -68,9 +84,9 @@ router.get('/history/', function(req, res, next) {
 	    if (err) return console.error(err);
   		var jsonResult = {};
   		for (var i = 0; i < data.length; i++) {
-  			jsonResult["\"" + i + "\""] = {};
-  			jsonResult["\"" + i + "\""].keywords = data[i].keywords;
-  			jsonResult["\"" + i + "\""].date = data[i].date;
+  			jsonResult[i] = {};
+  			jsonResult[i].keywords = data[i].keywords;
+  			jsonResult[i].date = data[i].date;
   		}
   		res.status(200).json(jsonResult);
   	});
