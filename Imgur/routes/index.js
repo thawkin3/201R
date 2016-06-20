@@ -53,7 +53,6 @@ router.get('/search/:keywords(*)', function(req, res, next) {
 	    	if (err) return console.error(err);
 	  		console.log("saved record is: ");
 	    	console.log(data);
-			res.status(200).json(jsonRecord);
 	  	});
 
 	  	// Query the Imgur API and return the search results
@@ -70,6 +69,7 @@ router.get('/search/:keywords(*)', function(req, res, next) {
 	    	if (err) return console.error(err);
 			console.log(response);
 			console.log(body);
+			res.status(200).json(jsonRecord);
 		});
 
 	}
