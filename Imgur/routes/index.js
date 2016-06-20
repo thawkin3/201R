@@ -66,7 +66,13 @@ router.get('/history/', function(req, res, next) {
   	// Look for the last 10 searches in the history
   	Imagesearch.find({}).sort('-date').limit(10).exec(function(err, data) {
 	    if (err) return console.error(err);
-  		res.status(200).json(data);
+  		var jsonResult = {};
+  		for (var i = 0; i < data.length; i++) {
+  			jsonResult["\"" + i + "\""] = {};
+  			jsonResult["\"" + i + "\""].keywords = data[i].keywords;
+  			jsonResult["\"" + i + "\""].date = data[i].date;
+  		}
+  		res.status(200).json(jsonResult);
   	});
 
 });
