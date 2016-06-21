@@ -28,8 +28,12 @@ db.once('open', function() { // Lets us know when we're connected
 });
 
 /* GET page to run a new image search */
-router.get('/search/:keywords(*)', function(req, res, next) {
+router.get('/search/:keywords', function(req, res, next) {
   	var theKeywords = req.params.keywords;
+  	var theOffset = req.query.offset;
+  	if (typeof parseInt(theOffset) != 'number') {
+  		theOffset = 1;
+  	}
 
   	if (theKeywords == "") {
   		res.status(200).send("Please enter keyword(s) after 'search/'");
@@ -57,7 +61,7 @@ router.get('/search/:keywords(*)', function(req, res, next) {
 
 	  	// Query the Imgur API and return the search results
 		request({
-			uri: "https://api.imgur.com/3/gallery/search/viral/1?q=" + theKeywords,
+			uri: "https://api.imgur.com/3/gallery/search/viral/" + theOffset + "?q=" + theKeywords,
 			method: "GET",
 			headers: {
         		Authorization: auth
