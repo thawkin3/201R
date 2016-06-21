@@ -71,7 +71,11 @@ router.get('/search/:keywords', function(req, res, next) {
 			maxRedirects: 10
 		}, function(err, response, body) {
 	    	if (err) return console.error(err);
-			console.log(body);
+			// console.log(body);
+			console.log("test with quote link:");
+			console.log(data[0]["link"]);
+			console.log("test with dot notation:");
+			console.log(data[0].link);
 			res.status(200).json(body);
 		});
 
