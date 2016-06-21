@@ -31,8 +31,8 @@ db.once('open', function() { // Lets us know when we're connected
 router.get('/search/:keywords', function(req, res, next) {
   	var theKeywords = req.params.keywords;
   	var theOffset = req.query.offset;
-  	if (typeof parseInt(theOffset) != 'number') {
-  		theOffset = 1;
+  	if (isNaN(parseInt(theOffset)) || parseInt(theOffset) < 0) {
+  		theOffset = 0;
   	}
 
   	if (theKeywords == "") {
