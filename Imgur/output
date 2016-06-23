@@ -1,0 +1,12 @@
+nohup: ignoring input
+Connected
+[0mGET / [32m200 [0m8.285 ms - 1300[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.548 ms - 208[0m
+[0mGET /javascripts/script.js [32m200 [0m1.014 ms - 160[0m
+saved record is: 
+{ __v: 0,
+  keywords: 'cats',
+  date: Wed Jun 22 2016 18:14:15 GMT+0000 (UTC),
+  _id: 576ad577209f2c1c66d6e0bd }
+[0mGET /search/cats [32m200 [0m674.487 ms - 30063[0m
+[0mGET /history [32m200 [0m16.525 ms - 584[0m
