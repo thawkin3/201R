@@ -3788,3 +3788,27 @@ In high score route
 [0mGET / [32m200 [0m0.547 ms - 1426[0m
 [0mGET /favicon.ico [33m404 [0m5.397 ms - 1930[0m
 [0mGET /favicon.ico [33m404 [0m8.171 ms - 1930[0m
+[0mGET / [32m200 [0m19.083 ms - 1426[0m
+[0mGET /stylesheets/reset.css [32m200 [0m2.754 ms - 1153[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.267 ms - 1086[0m
+[0mGET /javascripts/requestAnimationFrame.js [32m200 [0m2.410 ms - 465[0m
+[0mGET /javascripts/socket.io.js [32m200 [0m3.346 ms - 53933[0m
+[0mGET /javascripts/jquery.cookie.js [32m200 [0m0.903 ms - 3121[0m
+[0mGET /stylesheets/bootstrap.min.css [32m200 [0m3.147 ms - 121260[0m
+[0mGET /javascripts/Keys.js [32m200 [0m1.673 ms - 1078[0m
+[0mGET /javascripts/jquery-1.12.0.min.js [32m200 [0m2.523 ms - 97362[0m
+[0mGET /javascripts/Player.js [32m200 [0m2.234 ms - 2383[0m
+[0mGET /javascripts/Ball.js [32m200 [0m0.879 ms - 2106[0m
+[0mGET /javascripts/Food.js [32m200 [0m1.713 ms - 997[0m
+[0mGET /javascripts/game.js [32m200 [0m1.230 ms - 14394[0m
+[0mGET /stylesheets/zig.ttf [32m200 [0m2.753 ms - 51916[0m
+   [36minfo  -[39m handshake authorized 8135705091185904057
+4 Jul 00:48:02 - New player has connected: 8135705091185904057
+4 Jul 00:48:02 - Ball not found: undefined
+4 Jul 00:48:02 - Ball not found: undefined
+4 Jul 00:48:02 - Ball not found: undefined
+4 Jul 00:48:02 - Ball not found: undefined
+4 Jul 00:48:02 - Ball not found: undefined
+4 Jul 00:48:02 - Ball not found: undefined
+   [36minfo  -[39m transport end
+4 Jul 00:48:55 - Player has disconnected: 8135705091185904057
