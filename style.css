@@ -1,6 +1,6 @@
 html, body {
   background-color: #cccdce;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   color: #000;
   margin: 0;
   padding: 0;
@@ -24,7 +24,7 @@ h3, h4 {
 }
 
 p {
-  margin: 0px;
+  margin: 0px 20px;
 }
 
 
@@ -114,29 +114,15 @@ p {
 
 /* About */
 #about p {
-  text-align: center;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 
 /* Skills */
 #skills p {
-  margin: 20px 0px;
-}
-
-#skills p span {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-#skills .row {
-  max-width: 500px;
-  margin: auto;
   text-align: left;
-}
-
-#skills #softRow {
-  max-width: 200px;
+  margin-bottom: 20px;
 }
 
 #skills h4 {
@@ -174,12 +160,6 @@ p {
 @media (max-width: 992px) {
   .col-md-4 {
     width: 32.95%;
-  }
-}
-
-@media (max-width: 792px) {
-  #about p {
-    padding: 0px 20px;
   }
 }
 
