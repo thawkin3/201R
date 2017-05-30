@@ -18,7 +18,7 @@ router.get('/getwords',function(req, res, next) {
 		"nouns": []
 	};
 	
-	fs.readFile(__dirname + '/texts/adverbs.txt', function(err, data) {
+	fs.readFile(__dirname + '/../public/texts/adverbs.txt', function(err, data) {
         
         if (err) throw err;
 
@@ -37,7 +37,7 @@ router.get('/getwords',function(req, res, next) {
 
     });
 
-    fs.readFile(__dirname + '/texts/verbs.txt', function(err, data) {
+    fs.readFile(__dirname + '/../public/texts/verbs.txt', function(err, data) {
         
         if (err) throw err;
 
@@ -56,7 +56,7 @@ router.get('/getwords',function(req, res, next) {
 
     });
 
-    fs.readFile(__dirname + '/texts/adjectives.txt', function(err, data) {
+    fs.readFile(__dirname + '/../public/texts/adjectives.txt', function(err, data) {
         
         if (err) throw err;
 
@@ -75,7 +75,7 @@ router.get('/getwords',function(req, res, next) {
 
     });
 
-    fs.readFile(__dirname + '/texts/nouns.txt', function(err, data) {
+    fs.readFile(__dirname + '/../public/texts/nouns.txt', function(err, data) {
         
         if (err) throw err;
 
