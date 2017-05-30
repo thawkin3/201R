@@ -20,6 +20,7 @@ app.config(function ($routeProvider){
 });
 
 app.run(function($rootScope) {
+	$rootScope.themeSong = true;
     $rootScope.currentScore = 0;
     $rootScope.highscore = 0;
     $rootScope.scores = [0, 0, 0, 0, 0];

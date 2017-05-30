@@ -98,7 +98,7 @@
 			// Theme Song!
 			if($rootScope.themeSong) {
 				$("#playTheme").html("Pause Theme Song");
-				if (document.getElementById("theme").currentTime > 140) {
+				if (document.getElementById("theme").currentTime > 140 || document.getElementById("theme").currentTime == 0) {
 					document.getElementById("theme").currentTime = 0;
 					document.getElementById("theme").play();
 				}
