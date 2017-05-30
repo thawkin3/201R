@@ -50,12 +50,16 @@ p {
 
 
 /* Navigation */
+.nav {
+  background: #AAA;
+  margin-bottom: 20px;
+}
+
 .nav ul {
-  margin: 0 0 30px;
+  margin: 0;
   text-align: center;
   list-style: none;
-  padding: 20px 0;
-  height: 50px;
+  padding: 30px 0px 0px 0px;
 }
 
 .nav li {
@@ -94,14 +98,26 @@ p {
 }
 
 
+/* Web Applications */
+#applications p {
+  text-align: center;
+}
+
+
 /* Website Designs */
 #webDesign p {
   text-align: center;
 }
 
 
-/* Web Applications */
-#applications p {
+/* Data Visualizations */
+#dataVisualizations p {
+  text-align: center;
+}
+
+
+/* Microservices */
+#microservices p {
   text-align: center;
 }
 
@@ -192,9 +208,6 @@ p {
 }
 
 @media (max-width: 320px) {
-  .nav ul {
-    height: 160px;
-  }
   .nav li {
     display: block;
     padding: 5px 0px;
