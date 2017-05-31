@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dot Chaser</title>
+
+  <style>
+
+    body {
+      font-family: Verdana;
+      font-size: small;
+      text-align: center;
+    }
+
+    canvas {
+      cursor: crosshair;
+      border: 1px solid black;
+      margin-bottom: 60px;
+    }
+
+    div {
+      margin: 15px 0px;
+    }
+
+    h1, h2, p {
+      text-align: center;
+    }
+
+    span {
+      text-align: center;
+    }
+
+    #win {
+      visibility: hidden;
+    }
+
+    button {
+      padding: 4px 10px;
+    }
+
+  </style>
+
+  <script>
+
+    // These are the details that represent an individual ball.
+    function Ball(x, y, dx, dy, radius) {
+      this.x = x;
+      this.y = y;
+      this.dx = dx;
+      this.dy = dy;
+      this.radius = radius;
+      this.strokeColor = "red";
+      this.fillColor = "red";
+    }
+
+    // This is an array that will hold all the balls on the canvas
+    var balls = [];
+    // This is a variable that checks if you've won the game or not.
+    var winner = 0;
+
+    // Initialize the two main variables for the canvas element.
+    var canvas, context;
+
+    // Initialize the timer
+    var sec, timer;
+
+    // When the page finishes loading, assign values to my two variables.
+    window.onload = function() {
+      canvas = document.getElementById("canvas");
+      context = canvas.getContext("2d");
+
+      // When I click on the canvas, perform the canvasClick function.
+      canvas.onmousemove = canvasClick;
+
+      // Redraw the canvas every 20 milliseconds (50 fps) to animate the game.
+      setTimeout(drawFrame, 20);
+
+      sec = 0;
+      timer = setInterval(function(){
+          document.getElementById("timer").innerHTML = parseInt(document.getElementById("timer").innerHTML) + 1;
+      }, 1000);
+    };
+
+    // Create 10 balls.
+    for (var i = 0; i < 10; i++) {
+      
+      // Assign either a positive or negative direction for both x and y.
+      var dir_x = Math.random();
+      var dir_y = Math.random();
+
+      if (dir_x > 0.5) {
+        dir_x = -1;
+      } else {
+        dir_x = 1;
+      };
+
+      if (dir_y > 0.5) {
+        dir_y = -1;
+      } else {
+        dir_y = 1;
+      };
+
+      // Randomly assign where the balls are, how fast they're moving, and in what direction.
+      var ball_x = Math.floor(Math.random()*600);
+      var ball_y = Math.floor(Math.random()*400);
+      var ball_dx = dir_x*(Math.floor(Math.random()*4+1));
+      var ball_dy = dir_y*(Math.floor(Math.random()*4+2));
+
+      // If the placement for x is too big or small, try again.
+      while ((ball_x > 580) || (ball_x < 20)) {
+        ball_x = Math.floor(Math.random()*600);
+      }
+
+      // If the placement for y is too big or small, try again.
+      while ((ball_y > 380) || (ball_y < 20)) {
+        ball_y = Math.floor(Math.random()*400);
+      }
+
+      // Use all the info above to make a new ball and add it my array.
+      var ball = new Ball(ball_x, ball_y, ball_dx, ball_dy, 15);
+      balls.push(ball);
+
+    }
+
+    // This is the main loop for the game that's run every 20ms
+    function drawFrame() {
+
+      // Clear the canvas so that we don't get trails behind the balls
+      context.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Go through all the balls
+      for(var i = 0; i < balls.length; i++) {
+        // Move each ball to its new position
+        var ball = balls[i];
+        ball.x += ball.dx;
+        ball.y += ball.dy;
+
+        // If the ball has hit the side, bounce it and change its color
+        if ((ball.x + ball.radius > canvas.width) || (ball.x - ball.radius < 0)) {
+          ball.dx = -ball.dx;
+          
+          if (ball.fillColor == "red") {
+            ball.fillColor = "blue";
+          } else {
+            ball.fillColor = "red";
+          }
+        }
+
+        // If the ball has hit the bottom, bounce it and change its color
+        if ((ball.y + ball.radius > canvas.height) || (ball.y - ball.radius < 0)) { 
+          ball.dy = -ball.dy; 
+
+          if (ball.fillColor == "red") {
+            ball.fillColor = "blue";
+          } else {
+            ball.fillColor = "red";
+          }
+        }
+        
+        // Fill the array based on the ball color
+    			if (ball.fillColor == "blue") {
+    				winner += 1;
+    			} 
+        
+        // Draw the ball
+        context.beginPath();                                              // Starts a new shape
+        context.fillStyle = ball.fillColor;                               // Sets the fill color
+        context.arc(ball.x, ball.y, ball.radius, 0, Math.PI*2);           // Draws a full 2 pi arc (circle)
+        context.lineWidth = 1;                                            // Small line width.
+        context.fill();                                                   // Fills the circle with the specified fill color
+        context.stroke();                                                 // Actually draws the circle on the canvas now
+      }
+
+      // Check if you've won.
+    		if (winner == 10) {
+    			document.getElementById("win").style.visibility = "visible";
+    			clearInterval(timer);
+    		} else {
+    			
+    			// Reset the counter
+    			winner = 0;
+    			
+    			// Draw the next frame in 20 milliseconds
+    			// This is recursive and calls itself over and over
+    			setTimeout(drawFrame, 20);
+    		};
+    }
+
+    // Our function to be run every time the canvas is clicked
+    function canvasClick(e) {
+      // Get the canvas click coordinates.
+      var clickX = e.pageX - canvas.offsetLeft;
+      var clickY = e.pageY - canvas.offsetTop;
+
+      // Look for the clicked ball
+      for (var i in balls) {
+        var ball = balls[i];
+        // Check if the click is within the left and right bounds of the ball
+        if ((clickX > (ball.x-ball.radius)) && (clickX < (ball.x+ball.radius))) {
+          // Check if the click is within the top and bottom bounds of the ball
+          if ((clickY > (ball.y-ball.radius)) && (clickY < (ball.y+ball.radius))) {
+            // Change the clicked ball's color to blue
+            ball.fillColor = "blue";
+            return;
+          }
+        }
+      }
+    }
+
+  </script>
+
+</head>
+
+<body>
+  <h1>Make all the dots blue to win!</h1>
+  <p>Dots will change color if they hit the wall<br/>or if you hover over them with your cursor.</p>
+  <h1 id="win">You win!</h1>
+  <p><span>Your time: </span><span id="timer">0</span></p>
+  <canvas id="canvas" width="600" height="400"></canvas>
+  <br/>
+</body>
+
+</html>
