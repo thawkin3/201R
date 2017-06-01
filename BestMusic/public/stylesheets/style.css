@@ -7,9 +7,13 @@ a {
 	color: #00B7FF;
 }
 
+table {
+	margin: 60px auto;
+}
+
 td, th {
     padding: 10px 20px;
-    width: 150px;
+    max-width: 150px;
 }
 
 table thead tr {
