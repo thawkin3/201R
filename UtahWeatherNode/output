@@ -1,0 +1,68 @@
+nohup: ignoring input
+[0mGET / [32m200 [0m13.630 ms - 867[0m
+[0mGET /style.css [32m200 [0m3.341 ms - 692[0m
+[0mGET /script.js [32m200 [0m1.601 ms - 2608[0m
+[0mGET /bg.jpg [32m200 [0m2.490 ms - 505273[0m
+[0mGET /favicon.ico [33m404 [0m16.052 ms - 1156[0m
+In getcity route
+/^P/
+Panguitch
+Paradise
+Paragonah
+Park City
+Park Valley
+Parowan
+Payson
+Peoa
+Pine Valley
+Pleasant Grove
+Plymouth
+Portage
+Price
+Providence
+Provo
+[ { city: 'Panguitch' },
+  { city: 'Paradise' },
+  { city: 'Paragonah' },
+  { city: 'Park City' },
+  { city: 'Park Valley' },
+  { city: 'Parowan' },
+  { city: 'Payson' },
+  { city: 'Peoa' },
+  { city: 'Pine Valley' },
+  { city: 'Pleasant Grove' },
+  { city: 'Plymouth' },
+  { city: 'Portage' },
+  { city: 'Price' },
+  { city: 'Providence' },
+  { city: 'Provo' } ]
+[0mGET /getcity?q=P [32m200 [0m10.715 ms - 304[0m
+In getcity route
+/^Pr/
+Price
+Providence
+Provo
+[ { city: 'Price' }, { city: 'Providence' }, { city: 'Provo' } ]
+[0mGET /getcity?q=Pr [32m200 [0m2.412 ms - 57[0m
+In getcity route
+/^Pro/
+Providence
+Provo
+[ { city: 'Providence' }, { city: 'Provo' } ]
+[0mGET /getcity?q=Pro [32m200 [0m1.038 ms - 40[0m
+In getcity route
+/^Prov/
+Providence
+Provo
+[ { city: 'Providence' }, { city: 'Provo' } ]
+[0mGET /getcity?q=Prov [32m200 [0m1.017 ms - 40[0m
+In getcity route
+/^Provo/
+Provo
+[ { city: 'Provo' } ]
+[0mGET /getcity?q=Provo [32m200 [0m2.199 ms - 18[0m
+[0mGET / [32m200 [0m45.052 ms - 867[0m
+[0mGET /style.css [32m200 [0m2.241 ms - 692[0m
+[0mGET /script.js [32m200 [0m11.015 ms - 2608[0m
+[0mGET /bg.jpg [32m200 [0m2.414 ms - 505273[0m
+[0mGET /favicon.ico [33m404 [0m28.273 ms - 1156[0m
