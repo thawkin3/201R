@@ -76,7 +76,7 @@
 			                </tr>
 			            </thead>
 			            <tbody>
-			                <tr ng-repeat="song in songs | orderBy: ['genre', '-upvotes', 'artist', 'album', 'title']">
+			                <tr ng-repeat="song in songs | orderBy: ['-upvotes', 'genre', 'artist', 'album', 'title']">
 			                    <td><span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(song)"></span>  {{ song.upvotes }}</td>
 			                    <td>{{ song.title }}</td>
 			                    <td>{{ song.artist }}</td>
