@@ -26,3 +26,11 @@ table tbody tr:nth-child(odd) {
 table tbody tr:nth-child(even) {
 	background-color: #ddd;
 }
+
+.container {
+	max-width: 100% !important;
+}
+
+.glyphicon.glyphicon-thumbs-up {
+	cursor: pointer;
+}
