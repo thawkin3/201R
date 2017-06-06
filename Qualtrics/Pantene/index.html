@@ -3,15 +3,14 @@
 	<head>
 		<title>Pantene Demo Site</title>
 		<script>
-			var uniqueID = "";
 			var queryString = window.location.search.replace("?", "").split("&");
 			for (var i = 0; i < queryString.length; i++) {
 				if (queryString[i].split("=")[0] == "RN_LK") {
-					uniqueID = queryString[i].split("=")[1];
+					var uniqueID = queryString[i].split("=")[1];
+					document.cookie = "RN_LK=" + uniqueID;
 					break;
 				}
 			}
-			document.cookie = "RN_LK=" + uniqueID;
 		</script>
 	</head>
 	<body>
