@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Pantene Demo Site</title>
+		<script>
+			var uniqueID = "";
+			var queryString = window.location.search.replace("?", "").split("&");
+			for (var i = 0; i < queryString.length; i++) {
+				if (queryString[i].split("=")[0] == "RN_LK") {
+					uniqueID = queryString[i].split("=")[1];
+					break;
+				}
+			}
+			document.cookie = "RN_LK=" + uniqueID;
+		</script>
+	</head>
+	<body>
+		<h1>Pantene Demo Site - Home Page</h1>
+		<p>On this page, a short JavaScript snippet is run to set a cookie for the participant ID.</p>
+	</body>
+</html>
