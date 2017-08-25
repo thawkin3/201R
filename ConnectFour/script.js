@@ -199,11 +199,26 @@ $(document).ready(function () {
 	
 	// Reset game
 	$("#reset").on("click", function () {
-		$(".droppedP1, .droppedP2").animate({top: "+=500px"}, 2000);
-		setTimeout(function () {
+		$(".droppedP1, .droppedP2").animate({top: "+=500px"}, 2000, function () {
 			$(".droppedP1, .droppedP2").hide();
 			location.reload();
-		}, 2000);
+
+			// board = [
+			// 		["o","o","o","o","o","o","o"],
+			// 		["o","o","o","o","o","o","o"],
+			// 		["o","o","o","o","o","o","o"],
+			// 		["o","o","o","o","o","o","o"],
+			// 		["o","o","o","o","o","o","o"],
+			// 		["o","o","o","o","o","o","o"]
+			// ];
+			// $(".piece").removeClass("droppedP1 droppedP2");
+			// $(".piece").css({
+			// 		top: "0px",
+			// 		display: "block"
+			// 	});
+			// $("#blackWin, #redWin").hide();
+			// $("#start").show();
+		});
 	});
 	
 });
