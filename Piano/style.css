@@ -1,0 +1,148 @@
+* {
+			box-sizing: border-box;
+		}
+		body {
+			padding: 20px;
+			font-family: Montserrat, Helvetica, Arial, sans-serif;
+			background: #fff;
+			text-align: center;
+		}
+		h1 {
+			text-align: center;
+			text-transform: uppercase;
+			color: #3a3a3a;
+		}
+		#pianoContainer {
+			display: block;
+			margin: 20px auto;
+			position: relative;
+			width: 750px;
+			max-width: 100%;
+		}
+		#piano {
+			width: 750px;
+			max-width: 100%;
+			position: relative;
+		    z-index: 1;
+		}
+		.white, .whiteKey {
+		    height: 115px;
+		    width: 50px;
+		    position: absolute;
+		    bottom: 11px;
+		    border-radius: 10px;
+		    font-size: 30px;
+		    text-align: center;
+		}
+		.white {
+			padding-top: 10px;
+			display: none;
+			z-index: 3;
+			opacity: 0.6;
+		}
+		.whiteKey {
+		    padding-top: 45px;
+		    z-index: 2;
+		    background-color: #27ec6d;
+		}
+		.black, .blackKey {
+		    height: 115px;
+		    width: 33px;
+		    position: absolute;
+		    top: 160px;
+		    border-radius: 10px;
+		    font-size: 24px;
+		    text-align: center;
+		}
+		.black {
+			padding-top: 10px;
+			display: none;
+			z-index: 3;
+			opacity: 0.6;
+		}
+		.blackKey {
+		    padding-top: 70px;
+		    z-index: 2;
+		    background-color: #27ec6d;
+		}
+		.press { 
+		    background-color: #ffc0cb;
+		}
+
+		#C, #CKey {
+		    left: 26px;
+		}
+		#D, #DKey {
+		    left: 89px;
+		}
+		#E, #EKey {
+		    left: 151px;
+		}
+		#F, #FKey {
+		    left: 214px;
+		}
+		#G, #GKey {
+		    left: 275px;
+		}
+		#A, #AKey {
+		    left: 337px;
+		}
+		#B, #BKey {
+		    left: 400px;
+		}
+		#CUpper, #CUpperKey {
+		    left: 462px;
+		}
+		#DUpper, #DUpperKey {
+		    left: 525px;
+		}
+		#EUpper, #EUpperKey {
+		    left: 586px;
+		}
+		#FUpper, #FUpperKey {
+		    left: 649px;
+		}
+		#CSharp, #CSharpKey {
+		    left: 60px;
+		}
+		#DSharp, #DSharpKey {
+		    left: 138px;
+		}
+		#FSharp, #FSharpKey {
+		    left: 244px;
+		}
+		#GSharp, #GSharpKey {
+		    left: 315px;
+		}
+		#ASharp, #ASharpKey {
+		    left: 386px;
+		}
+		#CSharpUpper, #CSharpUpperKey {
+		    left: 493px;
+		}
+		#DSharpUpper, #DSharpUpperKey {
+		    left: 572px;
+		}
+		#FSharpUpper, #FSharpUpperKey {
+		    left: 678px;
+		}
+
+		#resizeplz {
+		    display: none;
+		    position: relative;
+		    background-color: #ffc0cb;
+		    font-size: 24px;
+		    text-align: center;
+		    z-index: 4;
+		    border-bottom-right-radius: 10px;
+		    border-bottom-left-radius: 10px;
+		}
+
+		@media screen and (max-width: 800px){
+		    #everything {
+		        display: none;
+		    }
+			#resizeplz {
+			    display: block;
+			}
+		}

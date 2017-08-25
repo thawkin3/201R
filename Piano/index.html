@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Piano</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    	<link href="style.css" rel="stylesheet" type="text/css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+		<script src="script.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h1>Keyboard Piano</h1>
+		
+		<div id="pianoContainer">
+			<img id="piano" src="Images/piano.png" />
+
+			<div id="everything">
+				<div id="C" class="white">C</div>
+				<div id="D" class="white">D</div>
+				<div id="E" class="white">E</div>
+				<div id="F" class="white">F</div>
+				<div id="G" class="white">G</div>
+				<div id="A" class="white">A</div>
+				<div id="B" class="white">B</div>
+				<div id="CUpper" class="white">C</div>
+				<div id="DUpper" class="white">D</div>
+				<div id="EUpper" class="white">E</div>
+				<div id="FUpper" class="white">F</div>
+
+				<div id="CSharp" class="black">C#</br>Db</div>
+				<div id="DSharp" class="black">D#</br>Eb</div>
+				<div id="FSharp" class="black">F#</br>Gb</div>
+				<div id="GSharp" class="black">G#</br>Ab</div>
+				<div id="ASharp" class="black">A#</br>Bb</div>
+				<div id="CSharpUpper" class="black">C#</br>Db</div>
+				<div id="DSharpUpper" class="black">D#</br>Eb</div>
+				<div id="FSharpUpper" class="black">F#</br>Gb</div>
+
+				<div id="CKey" class="whiteKey">A</div>
+				<div id="DKey" class="whiteKey">S</div>
+				<div id="EKey" class="whiteKey">D</div>
+				<div id="FKey" class="whiteKey">F</div>
+				<div id="GKey" class="whiteKey">G</div>
+				<div id="AKey" class="whiteKey">H</div>
+				<div id="BKey" class="whiteKey">J</div>
+				<div id="CUpperKey" class="whiteKey">K</div>
+				<div id="DUpperKey" class="whiteKey">L</div>
+				<div id="EUpperKey" class="whiteKey">;</div>
+				<div id="FUpperKey" class="whiteKey">'</div>
+
+				<div id="CSharpKey" class="blackKey">W</div>
+				<div id="DSharpKey" class="blackKey">E</div>
+				<div id="FSharpKey" class="blackKey">T</div>
+				<div id="GSharpKey" class="blackKey">Y</div>
+				<div id="ASharpKey" class="blackKey">U</div>
+				<div id="CSharpUpperKey" class="blackKey">O</div>
+				<div id="DSharpUpperKey" class="blackKey">P</div>
+				<div id="FSharpUpperKey" class="blackKey">]</div>
+			</div>
+		</div>
+
+		<div id="resizeplz">Please resize your window width to be at least 800px wide</div>
+
+		<audio id="CSound"> <source src="Audio/NotesC.wav" type="audio/wav" /> </audio>
+		<audio id="C#Sound"> <source src="Audio/NotesC%23.wav" type="audio/wav" /> </audio>
+		<audio id="DSound"> <source src="Audio/NotesD.wav" type="audio/wav" /> </audio>
+		<audio id="D#Sound"> <source src="Audio/NotesD%23.wav" type="audio/wav" /> </audio>
+		<audio id="ESound"> <source src="Audio/NotesE.wav" type="audio/wav" /> </audio>
+		<audio id="FSound"> <source src="Audio/NotesF.wav" type="audio/wav" /> </audio>
+		<audio id="F#Sound"> <source src="Audio/NotesF%23.wav" type="audio/wav" /> </audio>
+		<audio id="GSound"> <source src="Audio/NotesG.wav" type="audio/wav" /> </audio>
+		<audio id="G#Sound"> <source src="Audio/NotesG%23.wav" type="audio/wav" /> </audio>
+		<audio id="ASound"> <source src="Audio/NotesA.wav" type="audio/wav" /> </audio>
+		<audio id="A#Sound"> <source src="Audio/NotesA%23.wav" type="audio/wav" /> </audio>
+		<audio id="BSound"> <source src="Audio/NotesB.wav" type="audio/wav" /> </audio>
+		<audio id="CUpperSound"> <source src="Audio/NotesUpperC.wav" type="audio/wav" /> </audio>
+		<audio id="C#UpperSound"> <source src="Audio/NotesUpperC%23.wav" type="audio/wav" /> </audio>
+		<audio id="DUpperSound"> <source src="Audio/NotesUpperD.wav" type="audio/wav" /> </audio>
+		<audio id="D#UpperSound"> <source src="Audio/NotesUpperD%23.wav" type="audio/wav" /> </audio>
+		<audio id="EUpperSound"> <source src="Audio/NotesUpperE.wav" type="audio/wav" /> </audio>
+		<audio id="FUpperSound"> <source src="Audio/NotesUpperF.wav" type="audio/wav" /> </audio>
+		<audio id="F#UpperSound"> <source src="Audio/NotesUpperF%23.wav" type="audio/wav" /> </audio>
+	</body>
+</html>
