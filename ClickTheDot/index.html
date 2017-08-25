@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Click the Dot</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+		<style>
+		body {
+			padding: 20px;
+			font-family: Montserrat, Helvetica, Arial, sans-serif;
+			background: #a4d9f3;
+			text-align: center;
+		}
+		h1 {
+			text-align: center;
+			text-transform: uppercase;
+			color: #3a3a3a;
+		}
+		#theButton {
+			height: 30px;
+			width: 30px;
+			background: #f00;
+			border-radius: 15px;
+			position: absolute;
+			top: 185px;
+			left: 48%;
+		}
+		#gameContainer {
+			margin: 20px auto;
+			height: 400px;
+			width: 700px;
+			max-width: 100%;
+			border: solid 1px #3a3a3a;
+			border-radius: 6px;
+			position: relative;
+			text-transform: uppercase;
+			background: #fff;
+		}
+		#win {
+			line-height: 400px;
+			text-align: center;
+			margin: 0;
+			font-size: 50px;
+			display: none;
+			color: #3a3a3a;
+		}
+		#playAgain {
+			margin: auto;
+			padding: 10px 20px;
+			cursor: pointer;
+			text-align: center;
+			display: none;
+			background: #3a3a3a;
+			color: #fff;
+			border-radius: 4px;
+		}
+		</style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	</head>
+	<body>
+		<h1>Click the red dot</h1>
+		<div id="gameContainer">
+			<div id="theButton"></div>
+			<p id="win">You Win!</p>
+		</div>
+		<p id="playAgain">Play again</p>
+		<script>
+		$(document).ready(function () {
+
+			$("#theButton").on("mouseover", move);
+			$("#theButton").on("click", clickedDot);
+			$("#playAgain").on("click", playAgain);
+			$(window).on("resize", move);
+			
+			function move () {
+				var theTop = Math.floor(Math.random() * ($("#gameContainer").height() - 60));
+				var theLeft = Math.floor(Math.random() * ($("#gameContainer").width() - 60));
+				$("#theButton").css({
+					top: theTop + "px",
+					left: theLeft + "px"
+				});
+			}
+
+			function clickedDot () {
+				$("#win").css("display", "block");
+				$("#playAgain").css("display", "inline-block");
+				$("#theButton").css("display", "none");
+			}
+
+			function playAgain () {
+				$("#win, #playAgain").css("display", "none");
+				move();
+				$("#theButton").css("display", "block");
+			}
+
+		});
+		</script>
+	</body>
+</html>
