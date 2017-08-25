@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Canvas Animation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+		<style>
+		body {
+			padding: 20px;
+			font-family: Montserrat, Helvetica, Arial, sans-serif;
+			background: #fff;
+			text-align: center;
+		}
+		h1 {
+			text-align: center;
+			text-transform: uppercase;
+			color: #3a3a3a;
+		}
+		#canvas {
+			display: block;
+			margin: 20px auto;
+			height: 400px;
+			width: 600px;
+			max-width: 100%;
+			border: solid 1px #3a3a3a;
+			border-radius: 6px;
+			position: relative;
+			text-transform: uppercase;
+			background: #fff;
+		}
+		</style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	</head>
+	<body>
+		<h1>Canvas Animation</h1>
+		<canvas id="canvas" width="600" height="400"></canvas>
+		<script>
+		$(document).ready(function () {
+
+			// These are the details that represent an individual ball.
+			function Ball(x, y, dx, dy, radius) {
+				this.x = x;
+				this.y = y;
+				this.dx = dx;
+				this.dy = dy;
+				this.radius = radius;
+				this.strokeColor = "#9EE6F0";
+				this.fillColor = "#9EE6F0";
+			}
+			
+			// This is an array that will hold all the balls on the canvas
+			var balls = [];
+			
+			// Initialize the two main variables for the canvas element.
+			var canvas = document.getElementById("canvas");
+			var context = canvas.getContext("2d");
+			
+			// Redraw the canvas every 20 milliseconds (50 fps) to animate the game.
+			setTimeout(drawFrame, 20);
+			
+			// Create 10 balls.
+			for (var i = 0; i < 10; i++) {
+				
+				// Assign either a positive or negative direction for both x and y.
+				var dir_x = Math.random();
+				var dir_y = Math.random();
+				
+				if (dir_x > 0.5) {
+					dir_x = -1;
+				} else {
+					dir_x = 1;
+				};
+				
+				if (dir_y > 0.5) {
+					dir_y = -1;
+				} else {
+					dir_y = 1;
+				};
+				
+				// Randomly assign where the balls are, how fast they're moving, and in what direction.
+				var ball_x = Math.floor(Math.random()*600);
+				var ball_y = Math.floor(Math.random()*400);
+				var ball_dx = dir_x*(Math.floor(Math.random()*5));
+				var ball_dy = dir_y*(Math.floor(Math.random()*5));
+				
+				// If the placement for x is too big or small, try again.
+				while ((ball_x > 580) || (ball_x < 20)) {
+					var ball_x = Math.floor(Math.random()*600);
+				}
+				
+				// If the placement for y is too big or small, try again.
+				while ((ball_y > 380) || (ball_y < 20)) {
+					var ball_y = Math.floor(Math.random()*400);
+				}
+				
+				// Use all the info above to make a new ball and add it my array.
+				var ball = new Ball(ball_x, ball_y, ball_dx, ball_dy, 15);
+				balls.push(ball);
+			}
+			
+			// This is the main loop for the game that's run every 20ms.
+			function drawFrame() {
+				// Go through all the balls.
+				for(var i = 0; i < balls.length; i++) {
+					// Move each ball to its new position.
+					var ball = balls[i];
+					ball.x += ball.dx;
+					ball.y += ball.dy;
+					
+					// If the ball has hit the side, bounce it.
+					if ((ball.x + ball.radius > canvas.width) || (ball.x - ball.radius < 0)) {
+						ball.dx = -ball.dx;
+						
+						if (ball.fillColor == "#9EE6F0") {
+							ball.fillColor = "#EFC5CF";
+						} else if (ball.fillColor == "#EFC5CF") {
+							ball.fillColor = "#D7D9CB";
+						} else {
+							ball.fillColor = "#9EE6F0";
+						}
+					}
+					
+					// If the ball has hit the bottom, bounce it.
+					if ((ball.y + ball.radius > canvas.height) || (ball.y - ball.radius < 0)) { 
+						ball.dy = -ball.dy; 
+						
+						if (ball.fillColor == "#9EE6F0") {
+							ball.fillColor = "#EFC5CF";
+						} else if (ball.fillColor == "#EFC5CF") {
+							ball.fillColor = "#D7D9CB";
+						} else {
+							ball.fillColor = "#9EE6F0";
+						}
+					}
+					
+					// Draw the ball.
+					context.beginPath();
+					context.fillStyle = ball.fillColor;
+					context.arc(ball.x, ball.y, ball.radius, 0, Math.PI*2);
+					context.lineWidth = 1;
+					context.fill();
+					context.stroke(); 
+				}
+				
+				// Draw the next frame in 20 milliseconds.
+				setTimeout(drawFrame, 20);
+			}
+
+			drawFrame();
+			
+		});
+		</script>
+	</body>
+</html>
