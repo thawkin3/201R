@@ -24,6 +24,13 @@ h1 {
 	background-repeat: none;
 	border-radius: 10px;
 	cursor: url('Images/Crosshair_red_lens.cur'), auto;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 #x {
@@ -82,6 +89,21 @@ h1 {
     padding: 10px;
     display: none;
 }
+#playAgain {
+    width: 300px;
+    position: absolute;
+    background-color: #ffc0cb;
+    z-index: 3;
+    font-size: 40px;
+    font-family: Impact, Charcoal, sans-serif;
+    border-radius: 10px;
+    text-align: center;
+    top: 250px;
+    left: 235px;
+    padding: 10px;
+    display: none;
+    cursor: pointer;
+}
 
 .duck {
     position: absolute;
@@ -124,7 +146,7 @@ h1 {
 }
 
 #duck6, #dead6 {
-    top: 100px;
+    top: 500px;
     left: 900px;
 }
 
