@@ -1,493 +1,819 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Tyler Hawkins</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link href='//fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <link href='style.css' rel='stylesheet' type='text/css'>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="script.js"></script>
-  </head>
-  
-  <body>
-    
-    <div class="header" id="home">
-      <h1 id="myName">TYLER HAWKINS</h1>
-      <p>thawkin3@byu.net</p>
-      <p>404.940.1358</p>
-    </div>
+    <head>
+        <!-- Metadata -->
+        <title>Tyler Hawkins - Web Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="UTF-8">
+        <meta name="description" content="Tyler Hawkins is an expert UI Developer specializing in React and AngularJS with the MEAN/MERN stack. Check out some of his side projects here!">
+        <meta name="keywords" content="web portfolio, hire me, web developer, UI developer, software engineer, React, AngularJS, MEAN, MERN, JavaScript, HTML5, CSS3">
+        <meta name="author" content="Tyler Hawkins">
+        <!-- Google+ -->
+        <meta itemprop="name" content="Tyler Hawkins - Web Portfolio">
+        <meta itemprop="description" content="Tyler Hawkins is an expert UI Developer specializing in React and AngularJS with the MEAN/MERN stack. Check out some of his side projects here!">
+        <meta itemprop="image" content="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com/201R/Images/Profile.jpeg">
+        <!-- Twitter -->
+        <meta name="twitter:title" content="Tyler Hawkins - Web Portfolio">
+        <meta name="twitter:description" content="Tyler Hawkins is an expert UI Developer specializing in React and AngularJS with the MEAN/MERN stack. Check out some of his side projects here!">
+        <meta name="twitter:image:src" content="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com/201R/Images/Profile.jpeg">
+        <!-- Open Graph data -->
+        <meta property="og:title" content="Tyler Hawkins - Web Portfolio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com/201R/" />
+        <meta property="og:image" content="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com/201R/Images/Profile.jpeg" />
+        <meta property="og:description" content="Tyler Hawkins is an expert UI Developer specializing in React and AngularJS with the MEAN/MERN stack. Check out some of his side projects here!" />
+        <meta property="og:site_name" content="Tyler Hawkins - Web Portfolio" />
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,700,900">
+        <link rel="stylesheet" type="text/css" href="styles/animate.css" >
+        <link rel="stylesheet" type="text/css" href="styles/style.css" >
+        <!-- JavaScript -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="scripts/wow.min.js"></script>
+        <script src="scripts/script.js"></script>
+    </head>
 
-    <div class="nav">
-      <div class="container">
-        <ul class="first-list">
-          <li><a href="#applications">WEB APPLICATIONS</a></li>
-          <li><a href="#webDesign">WEBSITE DESIGNS</a></li>
-          <li><a href="#microservices">MICROSERVICES</a></li>
-          <li><a href="#dataVisualizations">DATA VISUALIZATIONS</a></li>
-          <li><a href="#games">GAMES</a></li>
-        </ul>
-        <ul class="second-list">
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#work">WORK EXPERIENCE</a></li>
-        </ul>
-      </div>
-    </div>
+    <body>
+        <header class="header" id="home">
+            <h1 id="myName">TYLER HAWKINS</h1>
+            <p>thawkin3@byu.net</p>
+            <p>404.940.1358</p>
+        </header>
 
-    <div class="container" id="applications">
+        <nav class="nav">
+            <div class="container">
+                <ul class="first-list">
+                    <li><a href="#applications">WEB APPLICATIONS</a></li>
+                    <li><a href="#webDesign">WEBSITE DESIGNS</a></li>
+                    <li><a href="#microservices">MICROSERVICES</a></li>
+                    <li><a href="#dataVisualizations">DATA VISUALIZATIONS</a></li>
+                    <li><a href="#games">GAMES</a></li>
+                </ul>
+                <ul class="second-list">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#work">WORK EXPERIENCE</a></li>
+                </ul>
+            </div>
+        </nav>
 
-      <h3>WEB APPLICATIONS</h3>
+        <main>
+            <section class="container" id="applications">
+                <h3>WEB APPLICATIONS</h3>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Totes Votes</p>
+                            <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3012/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/TotesVotes.png" alt="Totes Votes" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Full stack voting app complete with authentication and CRUD API.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> MongoDB, Express, AngularJS, Node.js, C3.js</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Crossy Block</p>
+                            <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3011/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/CrossyBlock.png" alt="Crossy Block" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">HTML5 Frogger-like game.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> MongoDB, Express, AngularJS, Node.js, Canvas element, requestAnimationFrame</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Venue Finder</p>
+                            <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3016/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/VenueFinder.png" alt="Venue Finder" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">App similar to Yelp to help you find great places for entertainment in any geographic location.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> MongoDB, Express, AngularJS, Node.js, Yelp API</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">MongoDBreakout</p>
+                            <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3002/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/MongoDBreakout.png" alt="MongoDBreakout" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Knock-off Breakout game.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> MongoDB, Express, AngularJS, Node.js, Canvas element, requestAnimationFrame</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Chat Sockets</p>
+                            <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3017/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/ChatSockets.png" alt="Chat Sockets" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">WebRTC app that creates a simple chatroom. Complete with a Giphy integration.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> MongoDB, Express, AngularJS, Node.js, Socket.io, Giphy API</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Qrappy Bird</p>
+                            <a href="QrappyBird/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/QrappyBird.png" alt="Qrappy Bird" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Everyone's favorite Flappy Bird knock-off, complete with a theme song.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> MongoDB, Express, AngularJS, Node.js, requestAnimationFrame</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Pixel Mania</p>
+                            <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3004/login" target="_blank"><img class="img-responsive" src="Images/Thumbnails/PixelMania.png" alt="Pixel Mania" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Multiplayer game (WebRTC) similar to agar.io</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> MongoDB, Express, AngularJS, Node.js, Socket.io, Canvas element, requestAnimationFrame</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Corporate BS Generator</p>
+                            <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3009/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/CorporateBSGenerator.png" alt="Corporate BS Generator" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Parody app for helping you communicate with your boss.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> Express, Node.js, jQuery</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Comment Board</p>
+                            <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3010/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/CommentBoard.png" alt="Comment Board" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Post a comment and your name to contribute to the discussion.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> MongoDB, Express, Node.js, jQuery</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Markdown Previewer</p>
+                            <a href="/markdownPreviewer/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/MarkdownPreviewer.png" alt="Markdown Previewer" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">App that allows you to write marked up content and see the output side by side.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> React.js, Marked library</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Free Code Camp Leaderboard</p>
+                            <a href="/freeCodeCampLeaderboard/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/FreeCodeCampLeaderboard.png" alt="Free Code Camp Leaderboard" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Sortable/filterable table pulling in data from a webservice.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> React.js, FreeCodeCamp API</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Recipe Box</p>
+                            <a href="/recipeBox/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/RecipeBox.png" alt="Recipe Box" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">App for storing your favorite recipes. CRUD API.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> React.js, React Router, Local Storage</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Conway's Game of Life</p>
+                            <a href="/gameOfLife/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/GameOfLife.png" alt="Conway's Game of Life" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Interactive Conway's Game of Life simulation.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> React.js</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Dungeon Crawler</p>
+                            <a href="/dungeonCrawler/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/DungeonCrawler.png" alt="Dungeon Crawler" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Battle enemies, find weapons, eat food, defeat the boss.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> React.js</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Quote Generator</p>
+                            <a href="QuoteGenerator/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/QuoteGenerator.png" alt="Quote Generator" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Simple demo for reading JSON from a file via an AJAX request.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> XMLHttpRequest, JSON</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Utah Weather</p>
+                            <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3015/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/UtahWeather.png" alt="Utah Weather" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Simple demo for text suggestions, reading JSON from a file, and using a weather API service.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> Express, Node.js, Weather API</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">The Movie Database</p>
+                            <a href="Movies/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Movies.png" alt="The Movie Database" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Find a good movie to watch with this simple API demo with a sortable/filterable table.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> jQuery, Movie Database API</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Wikipedia Search Engine</p>
+                            <a href="Wikipedia/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Wikipedia.png" alt="Wikipedia Search Engine" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Search for top Wikipedia articles or find a random article.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> jQuery, Wikipedia API, CSS3 Keyframe Animation</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Best Music</p>
+                            <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3006/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/BestMusic.png" alt="Best Music" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Upload your favorite songs and then vote on them.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> MongoDB, Express, AngularJS, Node.js</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Current Local Weather</p>
+                            <a href="Weather/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Weather.png" alt="Current Local Weather" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Uses your location and a weather API to find the current weather for your location.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> Geolocation, Weather API</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Twitch TV Streamers</p>
+                            <a href="TwitchTV/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/TwitchTV.png" alt="Twitch TV" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Simple app that uses the TwitchTV API to show which of your favorite streamers are online and which are offline.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> jQuery, TwitchTV API</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">JavaScript Calculator</p>
+                            <a href="JSCalculator/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/JSCalculator.png" alt="JavaScript Calculator" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Calculator UI capable of doing some simple math.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> Vanilla JavaScript</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Pomodoro Timer</p>
+                            <a href="PomodoroTimer/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/PomodoroTimer.png" alt="Pomodoro Timer" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Timer UI to help keep you more productive.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> Vanilla JavaScript</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Pokedex</p>
+                            <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3003/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Pokedex.png" alt="Pokedex" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Gotch catch 'em all. Keep track of your Pokemon here by adding an image and a name.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> MongoDB, Express, AngularJS, Node.js, C3.js</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Camper News</p>
+                            <a href="CamperNews/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/CamperNews.png" alt="Camper News" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">News feed delivered to you via the FreeCodeCamp API.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> jQuery, FreeCodeCamp API</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Firebase Chatroom</p>
+                            <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3007/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/FirebaseChat.png" alt="Firebase Chatroom" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">WebRTC Chatroom built with a Firebase database from Google.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> AngularJS, Firebase</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
 
-      <div class="row">
-        <div class="col-md-4">
-          <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3012/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/TotesVotes.png" alt="Totes Votes" /></a>
-          <p>Totes Votes</p>
-        </div>
-        <div class="col-md-4">
-          <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3011/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/CrossyBlock.png" alt="Crossy Block" /></a>
-          <p>Crossy Block</p>
-        </div>
-        <div class="col-md-4">
-          <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3016/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/VenueFinder.png" alt="Venue Finder" /></a>
-          <p>Venue Finder</p>
-        </div>
-      </div>
+            <div class="separator">
+                <a href="#applications"><img src="Images/up.png" alt="Up Arrow" /></a>
+                <a href="#home"><img src="Images/home.png" alt="Home" /></a>
+                <a href="#microservices"><img src="Images/down.png" alt="Down Arrow" /></a>
+            </div>
 
-      <div class="row">
-        <div class="col-md-4">
-          <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3002/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/MongoDBreakout.png" alt="MongoDBreakout" /></a>
-          <p>MongoDBreakout</p>
-        </div>
-        <div class="col-md-4">
-          <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3017/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/ChatSockets.png" alt="Chat Sockets" /></a>
-          <p>Chat Sockets</p>
-        </div>
-        <div class="col-md-4">
-          <a href="QrappyBird/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/QrappyBird.png" alt="Qrappy Bird" /></a>
-          <p>Qrappy Bird</p>
-        </div>
-      </div>
+            <section class="container" id="webDesign">
+                <h3>WEBSITE DESIGNS</h3>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Adoptly</p>
+                            <a href="Adoptly/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Adoptly.png" alt="Adoptly" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Website design concept.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> HTML, CSS, Bootstrap</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Armando Perez</p>
+                            <a href="Armando/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Armando.png" alt="Armando" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Website design concept.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> HTML, CSS, Bootstrap</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Bass</p>
+                            <a href="Bass/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Bass.png" alt="Bass" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Website design concept.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> HTML, CSS, Bootstrap</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">BestBite</p>
+                            <a href="BestBite/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/BestBite.png" alt="BestBite" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Website design concept.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> HTML, CSS, Bootstrap</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Bolt Network</p>
+                            <a href="BoltNetwork/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/BoltNetwork.png" alt="Bolt Network" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Website design concept.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> HTML, CSS, Bootstrap</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Broadway</p>
+                            <a href="Broadway/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Broadway.png" alt="Broadway" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Website design concept.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> HTML, CSS, Bootstrap</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Excursion</p>
+                            <a href="Excursion/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Excursion.png" alt="Excursion" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Website design concept.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> HTML, CSS, Bootstrap</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Headlines</p>
+                            <a href="Headlines/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Headlines.png" alt="Headlines" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Website design concept.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> HTML, CSS, Bootstrap</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Innovation Cloud</p>
+                            <a href="InnovationCloud/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/InnovationCloud.png" alt="Innovation Cloud" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Website design concept.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> HTML, CSS, Bootstrap</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Junction</p>
+                            <a href="Junction/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Junction.png" alt="Junction" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Website design concept.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> HTML, CSS, Bootstrap</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">MOVE</p>
+                            <a href="MOVE/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/MOVE.png" alt="MOVE" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Website design concept.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> HTML, CSS, Bootstrap</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">NewsRoom</p>
+                            <a href="Newsroom/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Newsroom.png" alt="Newsroom" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Website design concept.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> HTML, CSS, Bootstrap</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Pocketbook</p>
+                            <a href="Pocketbook/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Pocketbook.png" alt="Pocketbook" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Website design concept.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> HTML, CSS, Bootstrap</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Red Eye Photography</p>
+                            <a href="RedEyePhotography/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/RedEyePhotography.png" alt="Red Eye Photography" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Website design concept.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> HTML, CSS, Bootstrap</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Shutterbugg</p>
+                            <a href="Shutterbugg/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Shutterbugg.png" alt="Shutterbugg" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Website design concept.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> HTML, CSS, Bootstrap</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
 
-      <div class="row">
-        <div class="col-md-4">
-          <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3004/login" target="_blank"><img class="img-responsive" src="Images/Thumbnails/PixelMania.png" alt="Pixel Mania" /></a>
-          <p>Pixel Mania</p>
-        </div>
-        <div class="col-md-4">
-          <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3009/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/CorporateBSGenerator.png" alt="Corporate BS Generator" /></a>
-          <p>Corporate BS Generator</p>
-        </div>
-        <div class="col-md-4">
-          <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3010/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/CommentBoard.png" alt="Comment Board" /></a>
-          <p>Comment Board</p>
-        </div>
-      </div>
+            <div class="separator">
+                <a href="#webDesign"><img src="Images/up.png" alt="Up Arrow" /></a>
+                <a href="#home"><img src="Images/home.png" alt="Home" /></a>
+                <a href="#dataVisualizations"><img src="Images/down.png" alt="Down Arrow" /></a>
+            </div>
 
-      <div class="row">
-        <div class="col-md-4">
-          <a href="/markdownPreviewer/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/MarkdownPreviewer.png" alt="Markdown Previewer" /></a>
-          <p>Markdown Previewer</p>
-        </div>
-        <div class="col-md-4">
-          <a href="/freeCodeCampLeaderboard/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/FreeCodeCampLeaderboard.png" alt="Free Code Camp Leaderboard" /></a>
-          <p>Free Code Camp Leaderboard</p>
-        </div>
-        <div class="col-md-4">
-          <a href="/recipeBox/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/RecipeBox.png" alt="Recipe Box" /></a>
-          <p>Recipe Box</p>
-        </div>
-      </div>
+            <section class="container" id="microservices">
+                <h3>MICROSERVICES</h3>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Timestamp Microservice</p>
+                            <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3500/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/TimeStampMicroservice.png" alt="Timestamp Microservice" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Provide a date in any format and get a UNIX timestamp and normalized date back.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> Express, Node.js</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Request Header Parser Microservice</p>
+                            <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3501/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/RequestHeaderParserMicroservice.png" alt="Request Header Parser Microservice" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Shows some basic request header data like your IP address, language, and user agent.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> Express, Node.js</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">URL Shortener Microservice</p>
+                            <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3502/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/URLShortenerMicroservice.png" alt="URL Shortener Microservice" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Microservice similar to bit.ly or tinyURL. Enter a URL and get back a shortened URL which points to your original URL.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> MongoDB, Express, Node.js</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Imgur Search Engine</p>
+                            <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3503/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/ImgurSearchEngine.png" alt="Imgur Search Engine" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Search API built off of Imgur's search API.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> MongoDB, Express, Node.js, Imgur API</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">File Upload Metadata Microservice</p>
+                            <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3504/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/FileUploadMetadataMicroservice.png" alt="File Upload Metadata Microservice" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Upload a file and see its metadata.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> MongoDB, Express, Node.js</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
 
-      <div class="row">
-        <div class="col-md-4">
-          <a href="/gameOfLife/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/GameOfLife.png" alt="Conway's Game of Life" /></a>
-          <p>Conway's Game of Life</p>
-        </div>
-        <div class="col-md-4">
-          <a href="/dungeonCrawler/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/DungeonCrawler.png" alt="Dungeon Crawler" /></a>
-          <p>Dungeon Crawler</p>
-        </div>
-        <div class="col-md-4">
-          <a href="QuoteGenerator/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/QuoteGenerator.png" alt="Quote Generator" /></a>
-          <p>Quote Generator</p>
-        </div>
-      </div>
+            <div class="separator">
+                <a href="#microservices"><img src="Images/up.png" alt="Up Arrow" /></a>
+                <a href="#home"><img src="Images/home.png" alt="Home" /></a>
+                <a href="#games"><img src="Images/down.png" alt="Down Arrow" /></a>
+            </div>
+            
+            <section class="container" id="dataVisualizations">
+                <h3>DATA VISUALIZATIONS</h3>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Bar Chart of GDP</p>
+                            <a href="../D3/bar-chart-gdp/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/BarChartGDP.png" alt="Bar Chart of GDP" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Bar Chart of GDP from the USA.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> D3.js</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Scatterplot of Doping</p>
+                            <a href="../D3/scatterplot-doping/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/ScatterplotDoping.png" alt="Scatterplot of Doping" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Scatterplot of Doping in professional bicycling.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> D3.js</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Heat Map of Global Temperature</p>
+                            <a href="../D3/heat-map-global-temp/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/HeatMapGlobalTemp.png" alt="Heat Map of Global Temperature" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Heat Map of Global Temperature from 1753 to 2015.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> D3.js</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Force Directed Graph of Countries</p>
+                            <a href="../D3/force-directed-graph-countries/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/ForceDirectedGraphCountries.png" alt="Force Directed Graph of Countries" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Force Directed Graph of State Contiguity. See which countries are neighbors. Drag a node on the map to see the data move.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> D3.js</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">World Map of Meteorites</p>
+                            <a href="../D3/world-map-meteorites/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/WorldMapMeteorites.png" alt="World Map of Meteorites" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">World Map of Meteorite Landings. Zoom in, click and drag.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> D3.js</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
 
-      <div class="row">
-        <div class="col-md-4">
-          <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3015/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/UtahWeather.png" alt="Utah Weather" /></a>
-          <p>Utah Weather</p>
-        </div>
-        <div class="col-md-4">
-          <a href="Movies/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Movies.png" alt="The Movie Database" /></a>
-          <p>The Movie Database</p>
-        </div>
-        <div class="col-md-4">
-          <a href="Wikipedia/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Wikipedia.png" alt="Wikipedia Search Engine" /></a>
-          <p>Wikipedia Search Engine</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3006/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/BestMusic.png" alt="Best Music" /></a>
-          <p>Best Music</p>
-        </div>
-        <div class="col-md-4">
-          <a href="Weather/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Weather.png" alt="Current Local Weather" /></a>
-          <p>Current Local Weather</p>
-        </div>
-        <div class="col-md-4">
-          <a href="TwitchTV/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/TwitchTV.png" alt="Twitch TV" /></a>
-          <p>Twitch TV Streamers</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <a href="JSCalculator/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/JSCalculator.png" alt="JavaScript Calculator" /></a>
-          <p>JavaScript Calculator</p>
-        </div>
-        <div class="col-md-4">
-          <a href="PomodoroTimer/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/PomodoroTimer.png" alt="Pomodoro Timer" /></a>
-          <p>Pomodoro Timer</p>
-        </div>
-        <div class="col-md-4">
-          <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3003/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Pokedex.png" alt="Pokedex" /></a>
-          <p>Pokedex</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <a href="CamperNews/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/CamperNews.png" alt="Camper News" /></a>
-          <p>Camper News</p>
-        </div>
-        <div class="col-md-4">
-          <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3007/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/FirebaseChat.png" alt="Firebase Chatroom" /></a>
-          <p>Firebase Chatroom</p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="separator">
-      <a href="#applications"><img src="Images/up.png" alt="Up Arrow" /></a>
-      <a href="#home"><img src="Images/home.png" alt="Home" /></a>
-      <a href="#microservices"><img src="Images/down.png" alt="Down Arrow" /></a>
-    </div>
-
-    <div class="container" id="webDesign">
-
-      <h3>WEBSITE DESIGNS</h3>
-
-      <div class="row">
-        <div class="col-md-4">
-          <a href="Adoptly/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Adoptly.png" alt="Adoptly" /></a>
-          <p>Adoptly</p>
-        </div>
-        <div class="col-md-4">
-          <a href="Armando/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Armando.png" alt="Armando" /></a>
-          <p>Armando Perez</p>
-        </div>
-        <div class="col-md-4">
-          <a href="Bass/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Bass.png" alt="Bass" /></a>
-          <p>Bass</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <a href="BestBite/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/BestBite.png" alt="BestBite" /></a>
-          <p>BestBite</p>
-        </div>
-        <div class="col-md-4">
-          <a href="BoltNetwork/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/BoltNetwork.png" alt="Bolt Network" /></a>
-          <p>Bolt Network</p>
-        </div>
-        <div class="col-md-4">
-          <a href="Broadway/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Broadway.png" alt="Broadway" /></a>
-          <p>Broadway</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <a href="Excursion/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Excursion.png" alt="Excursion" /></a>
-          <p>Excursion</p>
-        </div>
-        <div class="col-md-4">
-          <a href="Headlines/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Headlines.png" alt="Headlines" /></a>
-          <p>Headlines</p>
-        </div>
-        <div class="col-md-4">
-          <a href="InnovationCloud/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/InnovationCloud.png" alt="Innovation Cloud" /></a>
-          <p>Innovation Cloud</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <a href="Junction/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Junction.png" alt="Junction" /></a>
-          <p>Junction</p>
-        </div>
-        <div class="col-md-4">
-          <a href="MOVE/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/MOVE.png" alt="MOVE" /></a>
-          <p>MOVE</p>
-        </div>
-        <div class="col-md-4">
-          <a href="Newsroom/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Newsroom.png" alt="Newsroom" /></a>
-          <p>NewsRoom</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <a href="Pocketbook/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Pocketbook.png" alt="Pocketbook" /></a>
-          <p>Pocketbook</p>
-        </div>
-        <div class="col-md-4">
-          <a href="RedEyePhotography/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/RedEyePhotography.png" alt="Red Eye Photography" /></a>
-          <p>Red Eye Photography</p>
-        </div>
-        <div class="col-md-4">
-          <a href="Shutterbugg/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Shutterbugg.png" alt="Shutterbugg" /></a>
-          <p>Shutterbugg</p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="separator">
-      <a href="#webDesign"><img src="Images/up.png" alt="Up Arrow" /></a>
-      <a href="#home"><img src="Images/home.png" alt="Home" /></a>
-      <a href="#dataVisualizations"><img src="Images/down.png" alt="Down Arrow" /></a>
-    </div>
-
-    <div class="container" id="microservices">
-
-      <h3>MICROSERVICES</h3>
-
-      <div class="row">
-        <div class="col-md-4">
-          <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3500/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/TimeStampMicroservice.png" alt="Timestamp Microservice" /></a>
-          <p>Timestamp Microservice</p>
-        </div>
-        <div class="col-md-4">
-          <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3501/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/RequestHeaderParserMicroservice.png" alt="Request Header Parser Microservice" /></a>
-          <p>Request Header Parser Microservice</p>
-        </div>
-        <div class="col-md-4">
-          <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3502/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/URLShortenerMicroservice.png" alt="URL Shortener Microservice" /></a>
-          <p>URL Shortener Microservice</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3503/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/ImgurSearchEngine.png" alt="Imgur Search Engine" /></a>
-          <p>Imgur Search Engine</p>
-        </div>
-        <div class="col-md-4">
-          <a href="http://ec2-54-200-192-157.us-west-2.compute.amazonaws.com:3504/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/FileUploadMetadataMicroservice.png" alt="File Upload Metadata Microservice" /></a>
-          <p>File Upload Metadata Microservice</p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="separator">
-      <a href="#microservices"><img src="Images/up.png" alt="Up Arrow" /></a>
-      <a href="#home"><img src="Images/home.png" alt="Home" /></a>
-      <a href="#games"><img src="Images/down.png" alt="Down Arrow" /></a>
-    </div>
-
-    <div class="container" id="dataVisualizations">
-
-      <h3>DATA VISUALIZATIONS</h3>
-
-      <div class="row">
-        <div class="col-md-4">
-          <a href="../D3/bar-chart-gdp/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/BarChartGDP.png" alt="Bar Chart of GDP" /></a>
-          <p>Bar Chart of GDP</p>
-        </div>
-        <div class="col-md-4">
-          <a href="../D3/scatterplot-doping/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/ScatterplotDoping.png" alt="Scatterplot of Doping" /></a>
-          <p>Scatterplot of Doping</p>
-        </div>
-        <div class="col-md-4">
-          <a href="../D3/heat-map-global-temp/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/HeatMapGlobalTemp.png" alt="Heat Map of Global Temperature" /></a>
-          <p>Heat Map of Global Temperature</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <a href="../D3/force-directed-graph-countries/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/ForceDirectedGraphCountries.png" alt="Force Directed Graph of Countries" /></a>
-          <p>Force Directed Graph of Countries</p>
-        </div>
-        <div class="col-md-4">
-          <a href="../D3/world-map-meteorites/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/WorldMapMeteorites.png" alt="World Map of Meteorites" /></a>
-          <p>World Map of Meteorites</p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="separator">
-      <a href="#dataVisualizations"><img src="Images/up.png" alt="Up Arrow" /></a>
-      <a href="#home"><img src="Images/home.png" alt="Home" /></a>
-      <a href="#about"><img src="Images/down.png" alt="Down Arrow" /></a>
-    </div>
-
-    <div class="container" id="games">
-
-      <h3>GAMES</h3>
-
-      <div class="row">
-        <div class="col-md-4">
-          <a href="DuckHunt/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/DuckHunt.png" alt="Duck Hunt" /></a>
-          <p>Duck Hunt</p>
-        </div>
-        <div class="col-md-4">
-          <a href="TicTacToe/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/TicTacToe.png" alt="Tic-Tac-Toe" /></a>
-          <p>Tic-Tac-Toe</p>
-        </div>
-        <div class="col-md-4">
-          <a href="https://survey.qualtrics.com/jfe3/form/SV_bCb70NimhKVGTQx" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Mario.png" alt="Super Mario" /></a>
-          <p>Super Mario</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <a href="Piano/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Piano.png" alt="Piano" /></a>
-          <p>Piano</p>
-        </div>
-        <div class="col-md-4">
-          <a href="CanvasAnimation/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Canvas.png" alt="Canvas Animation" /></a>
-          <p>Canvas Animation</p>
-        </div>
-        <div class="col-md-4">
-          <a href="ConnectFour/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Connect4.png" alt="Connect Four" /></a>
-          <p>Connect Four</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <a href="DotChaser/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/DotChaser.png" alt="Dot Chaser" /></a>
-          <p>Dot Chaser</p>
-        </div>
-        <div class="col-md-4">
-          <a href="https://social.az1.qualtrics.com/SE/?SID=SV_eM22ltCMYQg2WB7" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Dino.png" alt="Dinosaur Park Survey" /></a>
-          <p>Dinosaur Park Survey</p>
-        </div>
-        <div class="col-md-4">
-          <a href="Squarexploder/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Squarexploder.png" alt="Squarexploder" /></a>
-          <p>Squarexploder</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <a href="Simon/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Simon.png" alt="Simon Says" /></a>
-          <p>Simon Says</p>
-        </div>
-        <div class="col-md-4">
-          <a href="GrowingBubbles/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/GrowingBubbles.png" alt="Growing Bubbles" /></a>
-          <p>Growing Bubbles</p>
-        </div>
-        <div class="col-md-4">
-          <a href="ClickTheDot/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/RedDot.png" alt="Click the Dot" /></a>
-          <p>Click the Dot</p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="separator">
-      <a href="#games"><img src="Images/up.png" alt="Up Arrow" /></a>
-      <a href="#home"><img src="Images/home.png" alt="Home" /></a>
-      <a href="#skills"><img src="Images/down.png" alt="Down Arrow" /></a>
-    </div>
-
-    <div class="container" id="about">
-      <h3>ABOUT</h3>
-      <div class="row">
-      <p>I have a bachelor's degree in Statistics with a minor in Psychology from Brigham Young University. Mid-way through my undergraduate studies, I took an interest in web development and began teaching myself through online courses such as Udemy, Pluralsight, Codecademy, Khan Academy, HackerRank, and FreeCodeCamp. I took a few computer science classes at BYU as well to learn the MEAN stack and excelled at those. I began building web applications in my free time to gain experience and then landed a development job at Qualtrics on their engineering services team. After a few years at Qualtrics, I took a UI Developer role at Younique where I'm continuning to grow my knowledge and expertise on many modern web frameworks.</p>
-      <p>My hobbies include snowboarding, biking, skydiving, fire juggling, reading, playing drums and keyboard, and spending time with my beautiful wife and daughter.</p>
-      </div>
-    </div>
-
-    <div class="separator">
-      <a href="#about"><img src="Images/up.png" alt="Up Arrow" /></a>
-      <a href="#home"><img src="Images/home.png" alt="Home" /></a>
-      <a href="#work"><img src="Images/down.png" alt="Down Arrow" /></a>
-    </div>
-
-    <div class="container" id="skills">
-      
-      <h3>SKILLS</h3>
-
-      <h4 id="hard">HARD SKILLS</h4>
-
-      <div class="row">
-        <p>I'm most fluent in the MEAN stack (MongoDB, Express, AngularJS, Node.js) and love to develop full stack applications. I also have experience working with PHP and MySQL backends to create RESTful API services. When not working with AngularJS on the frontend, I'm well-versed in vanilla JavaScript, jQuery, jQuery UI, and React.js.</p>
-      </div>
-
-      <h4 id="soft">SOFT SKILLS</h4>
-
-      <div class="row" id="softRow">
-        <p>I'm a driven, self-motivated, lifelong learner. I'm always reading something new or watching online courses to further expand my skillset. I'm dependable, a great communicator with both technical and non-technical people, can meet and beat project timelines, and am a team player.</p>
-      </div>
-
-    </div>
-
-    <div class="separator">
-      <a href="#skills"><img src="Images/up.png" alt="Up Arrow" /></a>
-      <a href="#home"><img src="Images/home.png" alt="Home" /></a>
-    </div>
-
-    <div class="container" id="work">
-
-      <h3>WORK EXPERIENCE</h3>
-
-      <div class="row">
-        <p>UI DEVELOPER</p>
-        <p>Younique</p>
-        <p>September 2017 - present</p>
-      </div>
-
-      <div class="row">
-        <p>FRONT END DEVELOPER - ENGINEERING SERVICES</p>
-        <p>Qualtrics</p>
-        <p>October 2015 - September 2017</p>
-      </div>
-
-      <div class="row">
-        <p>WEB DESIGNER - DESIGN TEAM</p>
-        <p>Qualtrics</p>
-        <p>June 2015 - October 2015</p>
-      </div>
-
-      <div class="row">
-        <p>PRODUCT SPECIALIST - TECHNICAL SUPPORT</p>
-        <p>Qualtrics</p>
-        <p>April 2014 - June 2015</p>
-      </div>
-    </div>
-
-    <div class="separator">
-    </div>    
-
-    <div class="container">
-        <div class="footer">
-          <p>Hand-coded by Tyler Hawkins</p>
-          <p>&copy; 2016-2017</p>
-        </div>
-    </div>
-
-  </body>
+            <div class="separator">
+                <a href="#dataVisualizations"><img src="Images/up.png" alt="Up Arrow" /></a>
+                <a href="#home"><img src="Images/home.png" alt="Home" /></a>
+                <a href="#about"><img src="Images/down.png" alt="Down Arrow" /></a>
+            </div>
+            
+            <section class="container" id="games">
+                <h3>GAMES</h3>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Duck Hunt</p>
+                            <a href="DuckHunt/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/DuckHunt.png" alt="Duck Hunt" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Classic NES Duck Hunt for your browser.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> jQuery</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Tic-Tac-Toe</p>
+                            <a href="TicTacToe/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/TicTacToe.png" alt="Tic-Tac-Toe" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Three in a row. Good luck ever beating the computer.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> jQuery</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Super Mario</p>
+                            <a href="https://survey.qualtrics.com/jfe3/form/SV_bCb70NimhKVGTQx" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Mario.png" alt="Super Mario" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">A simple Mario demo game built into a Qualtrics survey.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> jQuery, Qualtrics</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Piano</p>
+                            <a href="Piano/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Piano.png" alt="Piano" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Turns your boring computer keyboard into an exciting piano keyboard.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> jQuery, HTML5 audio</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Canvas Animation</p>
+                            <a href="CanvasAnimation/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Canvas.png" alt="Canvas Animation" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Showcases a simple animation using an HTML5 canvas. Keep watching until all the whitepace is covered.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> Vanilla JavaScript, Canvas element</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Connect Four</p>
+                            <a href="ConnectFour/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Connect4.png" alt="Connect Four" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Grab a friend to play and then get four in a row to win.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> jQuery</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Dot Chaser</p>
+                            <a href="DotChaser/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/DotChaser.png" alt="Dot Chaser" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Make all the dots blue to win. It's harder than it looks.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> Vanilla JavaScript, Canvas element</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Dinosaur Park Survey</p>
+                            <a href="https://social.az1.qualtrics.com/SE/?SID=SV_eM22ltCMYQg2WB7" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Dino.png" alt="Dinosaur Park Survey" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Qualtrics survey feeding off the hype around the latest Jurassic Park movie.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> HTML, CSS</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Squarexploder</p>
+                            <a href="Squarexploder/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Squarexploder.png" alt="Squarexploder" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Psychology experiment to compare task speed in matching objects with various colors and letters.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> jQuery, jQueryUI drag and drop</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Simon Says</p>
+                            <a href="Simon/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/Simon.png" alt="Simon Says" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Test your memory and click the colors in the right order.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> jQuery, HTML5 audio</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Growing Bubbles</p>
+                            <a href="GrowingBubbles/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/GrowingBubbles.png" alt="Growing Bubbles" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Clear the bubbles of the correct color from the screen. How many rounds can you last?</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> jQuery, jQuery animations, Soundcloud</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <article class="tile wow fadeInUp" data-wow-duration="0.3s">
+                            <p class="projectName">Click the Dot</p>
+                            <a href="ClickTheDot/" target="_blank"><img class="img-responsive" src="Images/Thumbnails/RedDot.png" alt="Click the Dot" /></a>
+                            <div class="projectNotes">
+                                <p class="projectDescription">Just try and catch the dot. It will frustrate humans and cats alike to no end.</p>
+                                <p class="projectBuiltWith"><b>Built with:</b> Vanilla JavaScript</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="separator">
+                <a href="#games"><img src="Images/up.png" alt="Up Arrow" /></a>
+                <a href="#home"><img src="Images/home.png" alt="Home" /></a>
+                <a href="#skills"><img src="Images/down.png" alt="Down Arrow" /></a>
+            </div>
+            
+            <section class="container" id="about">
+                <h3>ABOUT</h3>
+                <div class="row">
+                    <p>I'm a self-taught UI Developer with a passion for learning and creating. I have a bachelor's degree in Statistics with a minor in Psychology from Brigham Young University, but mid-way through my undergraduate studies, I took an interest in web development and began teaching myself through online courses such as Udemy, Pluralsight, Codecademy, Khan Academy, HackerRank, and FreeCodeCamp. I took a few computer science classes at BYU as well to learn the MEAN stack and excelled at those. I began building web applications in my free time to gain experience and then landed a development job at Qualtrics on their Engineering Services team. After a few years at Qualtrics, I took a UI Developer role at Younique where I'm working with React.js to expand our component library, refactor/improve our website, and establish best practices in UI development for the rest of the company.</p>
+                    <p>My hobbies include snowboarding, biking, skydiving, fire juggling, reading, playing drums and keyboard, and spending time with my beautiful wife and daughter.</p>
+                </div>
+            </section>
+            
+            <div class="separator">
+                <a href="#about"><img src="Images/up.png" alt="Up Arrow" /></a>
+                <a href="#home"><img src="Images/home.png" alt="Home" /></a>
+                <a href="#work"><img src="Images/down.png" alt="Down Arrow" /></a>
+            </div>
+            
+            <section class="container" id="skills">
+                <h3>SKILLS</h3>
+                <h4 id="hard">HARD SKILLS</h4>
+                <div class="row">
+                    <p>I'm most fluent in the MEAN/MERN stack (MongoDB, Express, AngularJS, React.js, Node.js) and love to develop full stack applications. I also have experience working with PHP and MySQL back-ends to create RESTful API services. I prefer to work with the latest and greatest front-end JavaScript frameworks, but I'm also well-versed in vanilla JavaScript and jQuery.</p>
+                </div>
+                <h4 id="soft">SOFT SKILLS</h4>
+                <div class="row" id="softRow">
+                    <p>I'm a driven, self-motivated, lifelong learner. I'm always reading something new or watching online courses to further expand my skillset. I'm dependable, a great communicator with both technical and non-technical people, can meet and beat project timelines, and am a team player.</p>
+                </div>
+            </section>
+            
+            <div class="separator">
+                <a href="#skills"><img src="Images/up.png" alt="Up Arrow" /></a>
+                <a href="#home"><img src="Images/home.png" alt="Home" /></a>
+            </div>
+            
+            <section class="container" id="work">
+                <h3>WORK EXPERIENCE</h3>
+                <div class="row">
+                    <p><b>UI DEVELOPER</b></p>
+                    <p>Younique</p>
+                    <p>September 2017 - present</p>
+                </div>
+                <div class="row">
+                    <p><b>FRONT END DEVELOPER - ENGINEERING SERVICES</b></p>
+                    <p>Qualtrics</p>
+                    <p>October 2015 - September 2017</p>
+                </div>
+                <div class="row">
+                    <p><b>WEB DESIGNER - DESIGN TEAM</b></p>
+                    <p>Qualtrics</p>
+                    <p>June 2015 - October 2015</p>
+                </div>
+                <div class="row">
+                    <p><b>PRODUCT SPECIALIST - TECHNICAL SUPPORT</b></p>
+                    <p>Qualtrics</p>
+                    <p>April 2014 - June 2015</p>
+                </div>
+            </section>
+            
+            <div class="separator">
+            </div>
+        </main>
+        
+        <footer class="container">
+            <div class="footer">
+                <p>Hand-coded by Tyler Hawkins</p>
+                <p>&copy; 2014-2018</p>
+            </div>
+        </footer>
+    </body>
 </html>

@@ -1,0 +1,195 @@
+html,
+body {
+    background-color: #cccdce;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+article,
+header,
+nav,
+main,
+section,
+footer {
+    display: block;
+}
+
+.row {
+    margin-top: 30px;
+}
+
+.container {
+    margin-bottom: 30px;
+    max-width: 960px;
+}
+
+h3,
+h4 {
+    text-align: center;
+}
+
+p {
+    margin: 0px 20px;
+}
+
+
+/* Header */
+
+header {
+    background-color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 30px 10px;
+}
+
+header h1 {
+    color: #31363d;
+    font-size: 32px;
+    margin: 0;
+}
+
+
+/* Navigation */
+
+nav {
+    background: #aaa;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    margin: 0;
+    text-align: center;
+    list-style: none;
+    padding: 30px 0px 0px 0px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+    color: #fff;
+    padding: 0px 10px;
+}
+
+nav li a:hover {
+    color: #31363d;
+    text-decoration: none;
+}
+
+/* Tile */
+
+.tile {
+    border: 1px solid #000;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: #fff;
+    box-shadow: #555 3px 3px 20px 1px;
+    height: 386px;
+    margin-bottom: 30px;
+}
+
+.tile .projectName {
+    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tile .img-responsive {
+    width: 100%;
+}
+
+.tile .projectNotes {
+    border-top: 1px solid #000;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+}
+
+.tile .projectDescription {
+    margin: 0 0 10px 0;
+}
+
+.tile .projectBuiltWith {
+    margin: 0;
+}
+
+
+/* Separator */
+
+.separator {
+    background: #aaa;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.separator img {
+    padding: 5px;
+    width: 30px;
+    margin: 10px 15px;
+}
+
+
+/* About */
+
+#about p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+/* Skills */
+
+#skills p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#skills h4 {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+
+/* Work Experience */
+
+#work .row {
+    text-align: center;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: right;
+    text-transform: uppercase;
+    margin: 20px 0px 10px 0px;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+    .col-xs-6 {
+        display: block;
+        width: 100%;
+    }
+    .tile {
+        height: auto;
+    }
+}
+
+@media (max-width: 320px) {
+    .nav li {
+        display: block;
+        padding: 5px 0px;
+    }
+}
