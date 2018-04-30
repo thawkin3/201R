@@ -25,9 +25,9 @@ footer {
     max-width: 960px;
 }
 
-.img-responsive {
+/*.img-responsive {
     border-radius: 10px;
-}
+}*/
 
 h3,
 h4 {
@@ -94,6 +94,40 @@ p {
     transition: color 1s;
 }
 
+/* Tile */
+.tile {
+    border: 1px solid #000;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: #fff;
+    box-shadow: #555 3px 3px 20px 1px;
+    height: 386px;
+}
+
+.tile .projectName {
+    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tile .projectNotes {
+    border-top: 1px solid #000;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+}
+
+.tile .projectDescription {
+    margin: 0 0 10px 0;
+}
+
+.tile .projectBuiltWith {
+    margin: 0;
+}
+
 
 /* Separator */
 
@@ -114,37 +148,37 @@ p {
 
 /* Web Applications */
 
-#applications p {
+/*#applications p {
     text-align: center;
-}
+}*/
 
 
 /* Website Designs */
 
-#webDesign p {
+/*#webDesign p {
     text-align: center;
-}
+}*/
 
 
 /* Data Visualizations */
 
-#dataVisualizations p {
+/*#dataVisualizations p {
     text-align: center;
-}
+}*/
 
 
 /* Microservices */
 
-#microservices p {
+/*#microservices p {
     text-align: center;
 }
-
+*/
 
 /* Games */
 
-#games p {
+/*#games p {
     text-align: center;
-}
+}*/
 
 
 /* About */
