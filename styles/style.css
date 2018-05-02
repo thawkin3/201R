@@ -88,8 +88,9 @@ nav li a:hover {
     border: 1px solid rgba(0, 0, 0, 0.3);
     background: #fff;
     box-shadow: #555 3px 3px 20px 1px;
-    height: 386px;
+    height: 420px;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .tile .projectName {
@@ -118,7 +119,15 @@ nav li a:hover {
 }
 
 .tile .projectBuiltWith {
+    margin: 0 0 10px 0;
+}
+
+.tile .projectRepo {
     margin: 0;
+}
+
+.tile .projectRepo a:hover {
+    text-decoration: none;
 }
 
 
@@ -176,6 +185,18 @@ footer {
 
 
 /* Media Queries */
+
+@media screen and (max-width: 991px) {
+    .tile {
+        height: 388px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .tile {
+        height: 436px;
+    }
+}
 
 @media screen and (max-width: 480px) {
     .col-xs-6 {
