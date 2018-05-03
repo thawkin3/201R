@@ -25,6 +25,10 @@ footer {
     max-width: 960px;
 }
 
+.container-fluid {
+    margin-bottom: 30px;
+}
+
 h3,
 h4 {
     text-align: center;
@@ -58,6 +62,79 @@ nav {
     margin-bottom: 20px;
 }
 
+.navbar-nav {
+    float: none;
+}
+
+.navbar-collapse {
+    border: none;
+}
+
+.navbar-collapse.in,
+.navbar-collapse.collapsing {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 100;
+    background: #aaa;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: #555 0px 10px 10px 0px;
+}
+
+.navbar-brand {
+    margin: 0;
+    display: none;
+}
+
+.navbar-toggle {
+    background-color: #000;
+}
+
+.navbar-toggle .icon-bar {
+    background: #fff;
+}
+
+.icon-bar {
+    transition: all 0.3s;
+}
+
+.navbar-toggle[aria-expanded='true'] .top-bar {
+    -webkit-transform: rotate(45deg) translate(2px, -2px);
+    -ms-transform: rotate(45deg) translate(2px, -2px);
+    transform: rotate(45deg) translate(2px, -2px);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggle[aria-expanded='true'] .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggle[aria-expanded='true'] .bottom-bar {
+    -webkit-transform: rotate(-45deg) translate(2px, 2px);
+    -ms-transform: rotate(-45deg) translate(2px, 2px);
+    transform: rotate(-45deg) translate(2px, 2px);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggle.collapsed .top-bar {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+
+.navbar-toggle.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggle.collapsed .bottom-bar {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+
 nav ul {
     margin: 0;
     text-align: center;
@@ -76,9 +153,11 @@ nav li a {
     padding: 0px 10px;
 }
 
-nav li a:hover {
+nav li a:hover,
+nav li a:focus {
     color: #31363d;
     text-decoration: none;
+    outline: 0;
 }
 
 /* Tile */
@@ -196,6 +275,23 @@ footer {
     .tile {
         height: 436px;
     }
+    .navbar .container-fluid {
+        margin-bottom: 0;
+    }
+    .navbar-brand {
+        display: block;
+    }
+    .navbar-nav {
+        margin: 7.5px 5px;
+    }
+    .navbar-nav ul {
+        text-align: right;
+        padding: 0;
+    }
+    .navbar-nav ul li {
+        display: block;
+        padding: 5px 0;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -205,12 +301,5 @@ footer {
     }
     .tile {
         height: auto;
-    }
-}
-
-@media (max-width: 320px) {
-    .nav li {
-        display: block;
-        padding: 5px 0px;
     }
 }
