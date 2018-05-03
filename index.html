@@ -25,14 +25,15 @@
         <meta property="og:description" content="Tyler Hawkins is an expert UI Developer specializing in React and AngularJS with the MEAN/MERN stack. Check out some of his side projects here!" />
         <meta property="og:site_name" content="Tyler Hawkins - Web Portfolio" />
         <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,700,900">
         <link rel="stylesheet" type="text/css" href="styles/animate.css" >
         <link rel="stylesheet" type="text/css" href="styles/style.css" >
         <!-- JavaScript -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="scripts/wow.min.js"></script>
-        <script src="scripts/script.js"></script>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="scripts/wow.min.js"></script>
+        <script type="text/javascript" src="scripts/script.js"></script>
     </head>
 
     <body>
@@ -42,20 +43,31 @@
             <p>404.940.1358</p>
         </header>
 
-        <nav class="nav">
-            <div class="container">
-                <ul class="first-list">
-                    <li><a href="#applications">WEB APPLICATIONS</a></li>
-                    <li><a href="#webDesign">WEBSITE DESIGNS</a></li>
-                    <li><a href="#microservices">MICROSERVICES</a></li>
-                    <li><a href="#dataVisualizations">DATA VISUALIZATIONS</a></li>
-                    <li><a href="#games">GAMES</a></li>
-                </ul>
-                <ul class="second-list">
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#work">WORK EXPERIENCE</a></li>
-                </ul>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>                        
+                    </button>
+                    <p class="navbar-brand pull-right">Menu</p>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <div class="nav navbar-nav">
+                        <ul class="first-list">
+                            <li><a href="#applications">WEB APPLICATIONS</a></li>
+                            <li><a href="#webDesign">WEBSITE DESIGNS</a></li>
+                            <li><a href="#microservices">MICROSERVICES</a></li>
+                            <li><a href="#dataVisualizations">DATA VISUALIZATIONS</a></li>
+                            <li><a href="#games">GAMES</a></li>
+                        </ul>
+                        <ul class="second-list">
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#skills">SKILLS</a></li>
+                            <li><a href="#work">WORK EXPERIENCE</a></li>
+                        </ul>
+                    </div>
             </div>
         </nav>
 
