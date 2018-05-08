@@ -5,7 +5,7 @@ var Food = function(x, y, number) {
 	var x = x;
 	var y = y;
 	var size = 5;
-	var color = "#000";
+	var color = '#000';
 	var number = number;
 	
 	// Getters and setters
@@ -59,5 +59,5 @@ var Food = function(x, y, number) {
 };
 
 // Export the Food class so you can use it in
-// other files by using require("Food").Food
+// other files by using require('Food').Food
 exports.Food = Food;

@@ -7,7 +7,7 @@ var Ball = function(startX, startY) {
 	var dx = 2;
 	var dy = 2;
 	var radius = 10;
-	var color = "red";
+	var color = 'red';
 	var id;
 
 	// Getters and setters
@@ -72,5 +72,5 @@ var Ball = function(startX, startY) {
 };
 
 // Export the Ball class so you can use it in
-// other files by using require("Ball").Ball
+// other files by using require('Ball').Ball
 exports.Ball = Ball;

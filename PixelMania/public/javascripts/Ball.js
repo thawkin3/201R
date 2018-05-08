@@ -7,7 +7,7 @@ var Ball = function(startX, startY) {
 	var dx = Math.floor(Math.random() * 4) + 1;
 	var dy = Math.floor(Math.random() * 4) + 1;
 	var radius = 10;
-	var color = "red";
+	var color = 'red';
 	var id;
 	
 	// Getters and setters
@@ -81,12 +81,12 @@ var Ball = function(startX, startY) {
 
 	// Draw ball
 	var draw = function(ctx) {
-		ctx.beginPath();  // Starts a new shape.
-	    ctx.fillStyle = this.getColor();  // Sets the fill color.
-	    ctx.arc(x, y, radius, 0, Math.PI*2);  // Draws a full 2 pi arc (circle).
-	    ctx.lineWidth = 1;  // Small line width.
-	    ctx.fill();  // Fills the circle with the specified fill color.
-	    ctx.stroke();  // Actually draws the circle on the canvas now.
+		ctx.beginPath();  							// Starts a new shape.
+	    ctx.fillStyle = this.getColor();  			// Sets the fill color.
+	    ctx.arc(x, y, radius, 0, Math.PI*2);  		// Draws a full 2 pi arc (circle).
+	    ctx.lineWidth = 1;  						// Small line width.
+	    ctx.fill();  								// Fills the circle with the specified fill color.
+	    ctx.stroke();  								// Actually draws the circle on the canvas now.
 	};
 
 	// Define which variables and methods can be accessed

@@ -5,7 +5,6 @@ $(document).ready(function(){
 		$.cookie("username", username);
 		$("#username").val("");
 		window.location.pathname = "/";
-		console.log($.cookie("username"));
 	});
 
 });

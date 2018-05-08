@@ -54,27 +54,15 @@ var Player = function(startX, startY, startSize, startColor) {
 		// Up key takes priority over down
 		if (keys.up && y > 0 + size/2) {
 			y -= moveAmount;
-			// if (size < 300) {
-			// 	size += 1;		// Updates the size that is shown on your own screen
-			// }
 		} else if (keys.down && y < canvas.height - size/2) {
 			y += moveAmount;
-			// if (size < 300) {
-			// 	size += 1;		// Updates the size that is shown on your own screen
-			// }		
 		};
 
 		// Left key takes priority over right
 		if (keys.left && x > 0 + size/2) {
 			x -= moveAmount;
-			// if (size < 300) {
-			// 	size += 1;		// Updates the size that is shown on your own screen
-			// }
 		} else if (keys.right && x < canvas.width - size/2) {
 			x += moveAmount;
-			// if (size < 300) {
-			// 	size += 1;		// Updates the size that is shown on your own screen
-			// }
 		};
 
 		return (prevX != x || prevY != y) ? true : false;
@@ -82,12 +70,12 @@ var Player = function(startX, startY, startSize, startColor) {
 
 	// Draw player
 	var draw = function(ctx) {
-		ctx.beginPath();  // Starts a new shape.
-	    ctx.fillStyle = color;  // Sets the fill color.
-	    ctx.arc(x, y, size/2, 0, Math.PI*2);  // Draws a full 2 pi arc (circle).
-	    ctx.lineWidth = 1;  // Small line width.
-	    ctx.fill();  // Fills the circle with the specified fill color.
-	    ctx.stroke();  // Actually draws the circle on the canvas now.
+		ctx.beginPath();  							// Starts a new shape.
+	    ctx.fillStyle = color;  					// Sets the fill color.
+	    ctx.arc(x, y, size/2, 0, Math.PI*2);  		// Draws a full 2 pi arc (circle).
+	    ctx.lineWidth = 1;  						// Small line width.
+	    ctx.fill();  								// Fills the circle with the specified fill color.
+	    ctx.stroke();  								// Actually draws the circle on the canvas now.
 	};
 
 	// Define which variables and methods can be accessed

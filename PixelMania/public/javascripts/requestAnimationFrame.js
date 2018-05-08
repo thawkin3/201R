@@ -5,7 +5,7 @@ window.requestAnimFrame = (function(){
           window.mozRequestAnimationFrame    || 
           window.oRequestAnimationFrame      || 
           window.msRequestAnimationFrame     || 
-          function(/* function */ callback, /* DOM Element */ element){
+          function(callback, element){
             window.setTimeout(callback, 1000 / 60);
           };
 })();

@@ -5,7 +5,7 @@ var Food = function(x, y, number) {
 	var x = x;
 	var y = y;
 	var size = 5;
-	var color = "#000";
+	var color = '#000';
 	var number = number;
 	
 	// Getters and setters
