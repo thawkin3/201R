@@ -17,6 +17,8 @@ var balls;				// Array of connected balls
 var foods;				// Array of food
 var numUsers;			// Gets current count of users in the game
 var interval;			// Used as the interval to create food
+var ballMotionInterval;	// Used as the interval to move the balls
+var moveBalls;			// Function move the balls
 // Array of colors for players
 var colors = [
 	'green',
@@ -103,6 +105,21 @@ function init() {
 	// Call the pushFood function to set the food creation in motion
 	pushFood();
 
+	// Set up the loop for server side ball motion
+	moveBalls  = function() {
+		if (Object.keys(players).length <= 0) {
+			clearInterval(ballMotionInterval);
+		}
+
+		if (balls && Object.keys(balls).length) {
+			for (key in balls) {
+				balls[key].update();
+				socket.sockets.emit('move ball', { id: balls[key].getId(), x: balls[key].getX(), y: balls[key].getY() });
+			}
+		}
+	}
+
+	ballMotionInterval = setInterval(moveBalls, 16);
 };
 
 
@@ -159,6 +176,9 @@ function onSocketConnection(client) {
 
 	// Tell the food creator that there is another person in the game
 	numUsers++;
+
+	// Re-set up the ball interval if this is the first player
+	ballMotionInterval = setInterval(moveBalls, 16);
 
 	// ADD EVENT LISTENERS
 
@@ -292,8 +312,8 @@ function createBalls(numberOfBallsToCreate) {
 	for (var i = 0; i < numberOfBallsToCreate; i++) {
 		var ballX = Math.floor( Math.random() * (1000 - 40) + 5 );
 		var ballY = Math.floor( Math.random() * (500 - 40) + 5 );
-		var ballDx = Math.floor(Math.random() * 4) + 1;
-		var ballDy = Math.floor(Math.random() * 4) + 1;
+		var ballDx = Math.floor(Math.random() * 3) + 1;
+		var ballDy = Math.floor(Math.random() * 3) + 1;
 		var ballId = generateRandomString();
 		ballCollection[ballId] = new Ball(ballX, ballY, ballDx, ballDy, ballId);
 	}

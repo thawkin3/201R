@@ -61,6 +61,29 @@ var Ball = function(startX, startY, startDx, startDy, id) {
 		dy = newDY;
 	};
 
+	// Update ball position
+	var update = function() {
+		// Previous position
+		var prevX = x;
+		var prevY = y;
+
+		// Move the ball to its new position.
+	    x += dx;
+	    y += dy;
+
+	    // If the ball has hit the side, bounce it.
+	    if ((x + radius > 1000) || (x - radius < 0)) {
+	    	dx = -dx;
+	    }
+
+	    // If the ball has hit the bottom, bounce it.
+	    if ((y + radius > 500) || (y - radius < 0)) { 
+	    	dy = -dy; 
+	    }
+
+		return true;
+	};
+
 	// Define which variables and methods can be accessed
 	return {
 		getX: getX,
@@ -73,6 +96,7 @@ var Ball = function(startX, startY, startDx, startDy, id) {
 		setY: setY,
 		setDX: setDX,
 		setDY: setDY,
+		update: update,
 	};
 };
 
