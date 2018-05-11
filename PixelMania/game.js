@@ -165,13 +165,13 @@ function onSocketConnection(client) {
 	// Send the existing food data to the new player
 	for (key in foods) {
 		var existingFood = foods[key];
-		this.emit('new food', { x: existingFood.getX(), y: existingFood.getY(), id: existingFood.getId() });
+		this.emit('new food', { id: existingFood.getId(), x: existingFood.getX(), y: existingFood.getY() });
 	}
 
 	// Send the existing balls data to the new player
 	for (key in balls) {
 		var existingBall = balls[key];
-		this.emit('new ball', { id: existingBall.getId(), x: existingBall.getX(), y: existingBall.getY(), dx: existingBall.getDX(), dy: existingBall.getDY() });
+		this.emit('new ball', { id: existingBall.getId(), x: existingBall.getX(), y: existingBall.getY() });
 	};
 
 	// Tell the food creator that there is another person in the game
@@ -188,9 +188,6 @@ function onSocketConnection(client) {
 	// Listen for move player message
 	client.on('move player', onMovePlayer);
 
-	// Listen for move ball message
-	client.on('move ball', onMoveBall);
-
 	// Listen for remove food message
 	client.on('remove food', onRemoveFood);
 
@@ -205,7 +202,7 @@ function onClientDisconnect() {
 
 	// Player not found
 	if (!playerToRemove) {
-		util.log('Player not found to disconnect: ' + this.id);
+		util.log('Player to disconnect not found: ' + this.id);
 		return;
 	}
 
@@ -216,7 +213,7 @@ function onClientDisconnect() {
 	delete players[this.id];
 
 	// Broadcast removed player to connected socket clients
-	this.broadcast.emit('remove player', {id: this.id});
+	this.broadcast.emit('remove player', { id: this.id });
 
 	// Tell the food creator that there is one less person in the game
 	numUsers--;
@@ -225,42 +222,21 @@ function onClientDisconnect() {
 // Player has moved
 function onMovePlayer(data) {
 	// Find player in array
-	var movePlayer = playerById(this.id);
+	var playerToMove = playerById(this.id);
 
 	// Player not found
-	if (!movePlayer) {
-		util.log('Player not found to move: ' + this.id);
+	if (!playerToMove) {
+		util.log('Player to move not found: ' + this.id);
 		return;
 	};
 
 	// Update player position
-	movePlayer.setX(data.x);
-	movePlayer.setY(data.y);
-	movePlayer.setSize(data.size);	// Updates the size that is shown to the other players
+	playerToMove.setX(data.x);
+	playerToMove.setY(data.y);
+	playerToMove.setSize(data.size);	// Updates the size that is shown to the other players
 
 	// Broadcast updated position to connected socket clients
-	this.broadcast.emit('move player', { id: movePlayer.getId(), x: movePlayer.getX(), y: movePlayer.getY(), size: movePlayer.getSize(), color: movePlayer.getColor() });
-};
-
-// Ball has moved
-function onMoveBall(data) {
-	// Find ball in array
-	var moveBall = ballById(this.id);
-
-	// Ball not found
-	if (!moveBall) {
-		util.log('Ball not found to move: ' + data.id);
-		return;
-	};
-
-	// Update ball position
-	moveBall.setX(data.x);
-	moveBall.setY(data.y);
-	moveBall.setDX(data.dx);	// Updates the speed that is shown to the other players
-	moveBall.setDY(data.dy);	// Updates the speed that is shown to the other players
-
-	// Broadcast updated position to connected socket clients
-	this.broadcast.emit('move ball', { id: moveBall.getId(), x: moveBall.getX(), y: moveBall.getY(), dx: moveBall.getDX(), dy: moveBall.getDY() });
+	this.broadcast.emit('move player', { id: playerToMove.getId(), x: playerToMove.getX(), y: playerToMove.getY(), size: playerToMove.getSize(), color: playerToMove.getColor() });
 };
 
 // Food has been eaten 
@@ -269,7 +245,7 @@ function onRemoveFood(data) {
 	
 	// Food not found
 	if (!foodToRemove) {
-		util.log('Food not found to remove: ' + data.id);
+		util.log('Food to remove not found: ' + data.id);
 		return;
 	};
 
@@ -287,7 +263,7 @@ function onRemovePlayer(data) {
 	
 	// Player not found
 	if (!playerToRemove) {
-		util.log('Player not found to remove: ' + data.id);
+		util.log('Player to remove not found: ' + data.id);
 		return;
 	};
 
