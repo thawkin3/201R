@@ -17,6 +17,7 @@ var startTime = new Date().getTime();				// Time player joined the game
 var endTime;										// Will be time when player lost the game
 var timeDiff;										// Will be endTime minus startTime
 var username;										// To send to the people you eat
+var yourColor;										// Your player color
 
 $(document).ready(function(){
 	// Get username and redirect to login page if no username is found
@@ -134,12 +135,20 @@ function onSocketConnected() {
 // Socket disconnected (you've disconnected)
 function onSocketDisconnect() {
 	console.log('You have disconnected from the socket server');
+	var playerToRemove = playerById(clientId);
+	// Remove player from array
+	delete playerToRemove;
 };
 
 // New player (someone else has joined the game)
 function onNewPlayer(data) {
 	console.log('New player connected: ' + data.id);
 	players[data.id] = new Player(data.x, data.y, data.size, data.color, data.id);
+	if (data.id === clientId) {
+		yourColor = data.color;
+		$('#yourColor').css('background', yourColor);
+	}
+	console.log(players);
 };
 
 // Move player (someone else has moved)
@@ -173,7 +182,7 @@ function onRemovePlayer(data) {
 	document.getElementById('messageBoard').innerHTML = '<h3 class="message">You ate: ' + data.username + '</h3>';
 
 	// Remove player from array
-	delete pplayerToRemove;
+	delete playerToRemove;
 
 };
 

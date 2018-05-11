@@ -18,7 +18,28 @@ var foods;				// Array of food
 var numUsers;			// Gets current count of users in the game
 var interval;			// Used as the interval to create food
 // Array of colors for players
-var colors = ['green', 'blue', 'yellow', 'pink', 'limegreen', 'orange', 'purple', 'coral', 'darkkhaki', 'gold', 'palevioletred'];
+var colors = [
+	'green',
+	'blue',
+	'yellow',
+	'pink',
+	'limegreen',
+	'orange',
+	'purple',
+	'coral',
+	'darkkhaki',
+	'gold',
+	'palevioletred',
+	'aqua',
+	'brown',
+	'cadetblue',
+	'cornflowerblue',
+	'darkmagenta',
+	'deeppink',
+	'plum',
+	'springgreen',
+	'slategrey',
+];
 
 
 /**************************************************
@@ -106,7 +127,7 @@ function onSocketConnection(client) {
 
 	// Create a start size and color
 	var startSize = 10;
-	var startColor = colors.splice(Math.floor(Math.random() * colors.length, 1))[0] || 'blue';
+	var startColor = colors.splice(Math.floor(Math.random() * colors.length), 1)[0] || 'blue';
 
 	// Initialize the new player
 	players[client.id] = new Player(startX, startY, startSize, startColor, client.id);
@@ -172,7 +193,7 @@ function onClientDisconnect() {
 	colors.push(playerToRemove.getColor());
 
 	// Remove player from players array
-	delete playerToRemove;
+	delete players[this.id];
 
 	// Broadcast removed player to connected socket clients
 	this.broadcast.emit('remove player', {id: this.id});
@@ -198,7 +219,7 @@ function onMovePlayer(data) {
 	movePlayer.setSize(data.size);	// Updates the size that is shown to the other players
 
 	// Broadcast updated position to connected socket clients
-	this.broadcast.emit('move player', { id: movePlayer.id, x: movePlayer.getX(), y: movePlayer.getY(), size: movePlayer.getSize(), color: movePlayer.getColor() });
+	this.broadcast.emit('move player', { id: movePlayer.getId(), x: movePlayer.getX(), y: movePlayer.getY(), size: movePlayer.getSize(), color: movePlayer.getColor() });
 };
 
 // Ball has moved
@@ -219,7 +240,7 @@ function onMoveBall(data) {
 	moveBall.setDY(data.dy);	// Updates the speed that is shown to the other players
 
 	// Broadcast updated position to connected socket clients
-	this.broadcast.emit('move ball', { id: moveBall.id, x: moveBall.getX(), y: moveBall.getY(), dx: moveBall.getDX(), dy: moveBall.getDY() });
+	this.broadcast.emit('move ball', { id: moveBall.getId(), x: moveBall.getX(), y: moveBall.getY(), dx: moveBall.getDX(), dy: moveBall.getDY() });
 };
 
 // Food has been eaten 
@@ -233,7 +254,7 @@ function onRemoveFood(data) {
 	};
 
 	// Remove food from foods array
-	delete foodToRemove;
+	delete foods[data.id];
 
 	// Broadcast removed food to connected socket clients
 	this.broadcast.emit('remove food', { id: data.id });
@@ -254,7 +275,7 @@ function onRemovePlayer(data) {
 	colors.push(playerToRemove.getColor());
 
 	// Remove player from players array
-	delete playerToRemove;
+	delete players[data.id];
 
 	// Broadcast removed player to connected socket clients
 	this.broadcast.emit('remove player', { id: data.id, username: data.username });
