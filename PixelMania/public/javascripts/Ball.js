@@ -1,11 +1,9 @@
 /**************************************************
 ** RED BALL CLASS
 **************************************************/
-var Ball = function(startX, startY, startDx, startDy, id) {
+var Ball = function(startX, startY, id) {
 	var x = startX;
 	var y = startY;
-	var dx = startDx;
-	var dy = startDy;
 	var radius = 10;
 	var color = 'red';
 	var id = id;
@@ -19,16 +17,6 @@ var Ball = function(startX, startY, startDx, startDy, id) {
 	// gets ball Y position
 	var getY = function() {
 		return y;
-	};
-
-	// gets ball X speed
-	var getDX = function() {
-		return dx;
-	};
-
-	// gets ball Y speed
-	var getDY = function() {
-		return dy;
 	};
 
 	// gets ball color
@@ -51,39 +39,6 @@ var Ball = function(startX, startY, startDx, startDy, id) {
 		y = newY;
 	};
 
-	// sets ball X speed
-	var setDX = function(newDX) {
-		dx = newDX;
-	};
-
-	// sets ball Y speed
-	var setDY = function(newDY) {
-		dy = newDY;
-	};
-
-	// Update ball position
-	var update = function() {
-		// Previous position
-		var prevX = x;
-		var prevY = y;
-
-		// Move the ball to its new position.
-	    x += dx;
-	    y += dy;
-
-	    // If the ball has hit the side, bounce it.
-	    if ((x + radius > canvas.width) || (x - radius < 0)) {
-	    	dx = -dx;
-	    }
-
-	    // If the ball has hit the bottom, bounce it.
-	    if ((y + radius > canvas.height) || (y - radius < 0)) { 
-	    	dy = -dy; 
-	    }
-
-		return true;
-	};
-
 	// Draw ball
 	var draw = function(ctx) {
 		ctx.beginPath();  							// Starts a new shape.
@@ -98,15 +53,10 @@ var Ball = function(startX, startY, startDx, startDy, id) {
 	return {
 		getX: getX,
 		getY: getY,
-		getDX: getDX,
-		getDY: getDY,
 		getColor: getColor,
 		getId: getId,
 		setX: setX,
 		setY: setY,
-		setDX: setDX,
-		setDY: setDY,
-		update: update,
 		draw: draw
 	}
 };

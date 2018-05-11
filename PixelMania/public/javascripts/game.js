@@ -98,7 +98,7 @@ var setEventHandlers = function() {
 	// Player removed message received (someone else has left the game)
 	socket.on('remove player', onRemovePlayer);
 
-	// New ball message received
+	// New ball message received (a ball has been added, which is entirely kept track on the server)
 	socket.on('new ball', onNewBall);
 
 	// Ball move message received (a ball has moved, which is entirely kept track on the server)
@@ -135,20 +135,19 @@ function onSocketConnected() {
 // Socket disconnected (you've disconnected)
 function onSocketDisconnect() {
 	console.log('You have disconnected from the socket server');
-	var playerToRemove = playerById(clientId);
-	// Remove player from array
-	delete playerToRemove;
+	// Remove player from your own object of players
+	delete players[clientId];
 };
 
-// New player (someone else has joined the game)
+// New player (someone has joined the game, could be you or another player)
 function onNewPlayer(data) {
 	console.log('New player connected: ' + data.id);
+	// Add player to your own object of players
 	players[data.id] = new Player(data.x, data.y, data.size, data.color, data.id);
 	if (data.id === clientId) {
 		yourColor = data.color;
 		$('#yourColor').css('background', yourColor);
 	}
-	console.log(players);
 };
 
 // Move player (someone else has moved)
@@ -157,14 +156,14 @@ function onMovePlayer(data) {
 
 	// Player not found
 	if (!playerToMove) {
-		console.log('Player not found: ' + data.id);
+		console.log('Player to move not found: ' + data.id);
 		return;
 	};
 
-	// Update player position
+	// Update player position that is saved in your own object of players
 	playerToMove.setX(data.x);
 	playerToMove.setY(data.y);
-	playerToMove.setSize(data.size);	// Updates the size that is shown to the other players
+	playerToMove.setSize(data.size);
 };
 
 // Remove player (someone else has left the game or you're about to leave the game)
@@ -173,37 +172,47 @@ function onRemovePlayer(data) {
 	
 	// You got eaten
 	if (data.id === clientId) {
-		// Write at the bottom of your screen that you've died
-		document.getElementById('messageBoard').innerHTML = '<h3 class="message">You have been eaten by: ' + data.username + '</h3>';
+		$('messageBoard').html('<h3 class="message">You have been eaten by: ' + data.username + '</h3>');
 		gameEnd = true;
+		delete players[data.id];
 		return;
 	};
 
-	document.getElementById('messageBoard').innerHTML = '<h3 class="message">You ate: ' + data.username + '</h3>';
+	// Player not found
+	if (!playerToRemove) {
+		console.log('Player to remove not found: ' + data.id);
+		return;
+	};
 
-	// Remove player from array
-	delete playerToRemove;
+	// Remove player from your own object of players
+	delete players[data.id];
 
 };
 
 // New ball
 function onNewBall(data) {
-	balls[data.id] = new Ball(data.x, data.y, data.dx, data.dy, data.id);
+	// Add ball to your own object of balls
+	balls[data.id] = new Ball(data.x, data.y, data.id);
 };
 
 // Move ball (a ball has moved, which is entirely kept track on the server)
 function onMoveBall(data) {
-	var moveBall = ballById(data.id);
+	var ballToMove = ballById(data.id);
 
-	// Update ball position
-	moveBall.setX(data.x);
-	moveBall.setY(data.y);
-	moveBall.setDX(data.dx);
-	moveBall.setDY(data.dy);
+	// Ball not found
+	if (!ballToMove) {
+		console.log('Ball to move not found: ' + data.id);
+		return;
+	};
+
+	// Update ball position that is saved in your own object of balls
+	ballToMove.setX(data.x);
+	ballToMove.setY(data.y);
 };
 
 // New food
 function onNewFood(data) {
+	// Add food to your own object of foods
 	foods[data.id] = new Food(data.x, data.y, data.id);
 };
 
@@ -213,12 +222,12 @@ function onRemoveFood(data) {
 
 	// Food not found
 	if (!foodToRemove) {
-		console.log('Food not found: ' + data.id);
+		console.log('Food to remove not found: ' + data.id);
 		return;
 	};
 
 	// Remove food from array
-	delete foodToRemove;
+	delete foods[data.id];
 };
 
 
