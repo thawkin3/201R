@@ -32,11 +32,17 @@ h1 {
 
 /* GAME */
 
+#gameContainer {
+    display: none;
+}
+
 canvas {
     display: block;
     margin: auto;
     border: 5px solid #000;
     background: #ccc;
+    width: 1000px;
+    height: 500px;
 }
 
 #quit {

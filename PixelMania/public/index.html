@@ -3,23 +3,23 @@
 	<head>
 		<title>Pixel Mania</title>
 		<meta charset="utf-8">
-		<link type="text/css" rel="stylesheet" href="stylesheets/reset.css">
-		<link type="text/css" rel="stylesheet" href="stylesheets/bootstrap.min.css">
-		<link type="text/css" rel="stylesheet" href="stylesheets/style.css">
+		<link type="text/css" rel="stylesheet" href="stylesheets/reset.css" />
+		<link type="text/css" rel="stylesheet" href="stylesheets/bootstrap.min.css" />
+		<link type="text/css" rel="stylesheet" href="stylesheets/style.css" />
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 	</head>
 	
 	<body>
 		<h1>Pixel Mania</h1>
-		<canvas id="gameCanvas" height=500 width=1000></canvas>
-		<div id="messageBoard">
-			<h3 class="message">You are:</h3>
-			<span id="yourColor"></span>
-			<h3 class="message" id="msgReplace"></h3>
-			<input id="quit" class="btn btn-danger btn-lg" type="submit" value="Quit" />
+		<div id="gameContainer">
+			<canvas id="gameCanvas" height=500 width=1000></canvas>
+			<div id="messageBoard">
+				<h3 class="message">You are:</h3>
+				<span id="yourColor"></span>
+				<h3 class="message" id="msgReplace"></h3>
+				<input id="quit" class="btn btn-danger btn-lg" type="submit" value="Quit" />
+			</div>
 		</div>
-		
-
 		<script type="text/javascript" src="javascripts/socket.io.js"></script>
 		<script type="text/javascript" src="javascripts/requestAnimationFrame.js"></script>
 		<script type="text/javascript" src="javascripts/jquery-1.12.0.min.js"></script>
@@ -29,10 +29,5 @@
 		<script type="text/javascript" src="javascripts/Ball.js"></script>
 		<script type="text/javascript" src="javascripts/Food.js"></script>
 		<script type="text/javascript" src="javascripts/game.js"></script>
-		<script>
-			// Initialize the game
-			init();
-			animate();
-		</script>
 	</body>
 </html>

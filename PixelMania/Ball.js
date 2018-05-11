@@ -1,14 +1,14 @@
 /**************************************************
 ** RED BALL CLASS
 **************************************************/
-var Ball = function(startX, startY) {
+var Ball = function(startX, startY, startDx, startDy, id) {
 	var x = startX;
 	var y = startY;
-	var dx = 2;
-	var dy = 2;
+	var dx = startDx;
+	var dy = startDy;
 	var radius = 10;
 	var color = 'red';
-	var id;
+	var id = id;
 
 	// Getters and setters
 	// gets ball X position
@@ -34,6 +34,11 @@ var Ball = function(startX, startY) {
 	// gets ball color
 	var getColor = function() {
 		return color;
+	}
+
+	// gets ball id
+	var getId = function() {
+		return id;
 	}
 
 	// sets ball X position
@@ -63,12 +68,12 @@ var Ball = function(startX, startY) {
 		getDX: getDX,
 		getDY: getDY,
 		getColor: getColor,
+		getId: getId,
 		setX: setX,
 		setY: setY,
 		setDX: setDX,
 		setDY: setDY,
-		id: id
-	}
+	};
 };
 
 // Export the Ball class so you can use it in

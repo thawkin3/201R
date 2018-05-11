@@ -4,37 +4,40 @@
 var canvas,			// Canvas DOM element
 	ctx,			// Canvas rendering context
 	keys,			// Keyboard input
-	localPlayer,	// Local player
-	remotePlayers,	// Remote players
-	socket;			// Socket connection
+	socket,			// Socket connection
+	clientId;		// Your player ID
 
-var colors = ['green', 'blue', 'yellow', 'pink', 'orange', 'purple', 'coral', 'darkkhaki', 'gold', 'palevioletred'];
-
-var localFood;
-var remoteFoods;
-var localBall;
-var remoteBalls;
-var allBalls;
-var allFoods;
-var allPlayers;
+var balls;
+var foods;
+var players;
 var invincible = false;
 
 var gameEnd = false;								// If this is true, the game is over
 var startTime = new Date().getTime();				// Time player joined the game
 var endTime;										// Will be time when player lost the game
 var timeDiff;										// Will be endTime minus startTime
-var username = $.cookie('username') || 'GUEST';		// To send to the people you eat
+var username;										// To send to the people you eat
 
 $(document).ready(function(){
-	
-	// Updates the message at the bottom of your screen with who you are
-	$('#msgReplace').html('<h3 class="message">' + username + '</h3>');
+	// Get username and redirect to login page if no username is found
+	username = $.cookie('username');
+	if (!username) {
+		window.location.pathname = '/login';
+	} else {
+		// Updates the message at the bottom of your screen with who you are
+		$('#msgReplace').html('<h3 class="message">' + username + '</h3>');
 
-	// If you quit the game, mark that you've exited
-	$('#quit').click(function(){
-		gameEnd = true;
-	});
+		// Show the game page now
+		$('#gameContainer').show();
 
+		// If you quit the game, mark that you've exited
+		$('#quit').on('click', function() {
+			gameEnd = true;
+		});
+
+		// Initialize the game
+		init();
+	}
 });
 
 /**************************************************
@@ -45,53 +48,28 @@ function init() {
 	canvas = document.getElementById('gameCanvas');
 	ctx = canvas.getContext('2d');
 
-	// Maximize the canvas
-	//canvas.width = window.innerWidth;
-	//canvas.height = window.innerHeight;
-	
-	// Set the canvas width
-	canvas.width = 1000;
-	canvas.height = 500;
-
 	// Initialize keyboard controls
 	keys = new Keys();
 
-	// Calculate a random start position for the local player
-	// and make sure it's not outside of the canvas bounds
-	var startX = Math.floor( Math.random() * (canvas.width - 20) + 5 );
-	var startY = Math.floor( Math.random() * (canvas.height - 20) + 5 );
-
-	// Create a start size and color
-	var startSize = 10;
-	var startColor = colors[Math.floor( Math.random() * colors.length )];
-	document.getElementById('yourColor').style.background = startColor;
-
-	// Initialize the local player
-	localPlayer = new Player(startX, startY, startSize, startColor);
-
-	// Create the red ball
-	var ballX = Math.floor( Math.random() * (canvas.width - 40) + 5 );
-	var ballY = Math.floor( Math.random() * (canvas.height - 40) + 5 );
-
-	// Initialize the local ball
-	localBall = new Ball(ballX, ballY);
-
 	// Initialize socket connection
-	socket = io.connect('http://54.200.192.157', {port: 3005, transports: ['websocket']}); // TYLER'S SOCKET
+	// socket = io.connect('http://54.200.192.157', {port: 3005, transports: ['websocket']}); // TYLER'S SOCKET
 	// socket = io.connect('http://52.34.95.112', {port: 3005, transports: ['websocket']}); //MATT'S SOCKET
-	// socket = io.connect('http://localhost', {port: 3005, transports: ['websocket']});
+	socket = io.connect('http://localhost', {port: 3005, transports: ['websocket']}); // LOCALHOST
 
-	// Initialize remote players array
-	remotePlayers = [];
+	// Initialize remote players object
+	players = {};
 
 	// Initialize the remote balls array
-	remoteBalls = [];
+	balls = {};
 
-	// Initialize the remote foods array
-	allFoods = [];
+	// Initialize the remote foods object
+	foods = {};
 
 	// Start listening for events
 	setEventHandlers();
+
+	// Set the game loop in motion
+	animate();
 };
 
 
@@ -104,148 +82,107 @@ var setEventHandlers = function() {
 	window.addEventListener('keydown', onKeydown, false);
 	window.addEventListener('keyup', onKeyup, false);
 
-	/*
-	// Window resize
-	window.addEventListener('resize', onResize, false);
-	*/
-
-	// Socket connection successful
+	// Socket connection successful (you've connected)
 	socket.on('connect', onSocketConnected);
 
-	// Socket disconnection
+	// Socket disconnection (you've disconnected)
 	socket.on('disconnect', onSocketDisconnect);
 
-	// New player message received
+	// New player message received (someone else has joined the game)
 	socket.on('new player', onNewPlayer);
 
-	// Player move message received
+	// Player move message received (someone else has moved)
 	socket.on('move player', onMovePlayer);
 
-	// Player removed message received
+	// Player removed message received (someone else has left the game)
 	socket.on('remove player', onRemovePlayer);
 
 	// New ball message received
 	socket.on('new ball', onNewBall);
 
-	// Ball move message received
+	// Ball move message received (a ball has moved, which is entirely kept track on the server)
 	socket.on('move ball', onMoveBall);
 
-	// Ball removed message received
-	socket.on('remove ball', onRemoveBall);
-
-	// New food message received
+	// New food message received (a new piece of food has been generated by the server)
 	socket.on('new food', onNewFood);
 
-	// Food removed message received
+	// Food removed message received (a piece of food has been eaten by another player)
 	socket.on('remove food', onRemoveFood);
 
 };
 
 // Keyboard key down
 function onKeydown(e) {
-	if (localPlayer) {
+	if (!gameEnd) {
 		keys.onKeyDown(e);
 	};
 };
 
 // Keyboard key up
 function onKeyup(e) {
-	if (localPlayer) {
+	if (!gameEnd) {
 		keys.onKeyUp(e);
 	};
 };
 
-/*
-// Browser window resize
-function onResize(e) {
-	// Maximise the canvas
-	canvas.width = window.innerWidth;
-	canvas.height = window.innerHeight;
-};
-*/
-
-// Socket connected
+// Socket connected (you've connected)
 function onSocketConnected() {
-	console.log('Connected to socket server');
-
-	// Send local player data to the game server
-	socket.emit('new player', { x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
-
-	// Send local ball data to the game server
-	socket.emit('new ball', { x: localBall.getX(), y: localBall.getY(), dx: localBall.getDX(), dy: localBall.getDY(), color: localBall.getColor() });
-
+	console.log('You have connected to the socket server. Here is your clientId: ' + this.socket.sessionid);
+	clientId = this.socket.sessionid;
 };
 
-// Socket disconnected
+// Socket disconnected (you've disconnected)
 function onSocketDisconnect() {
-	console.log('Disconnected from socket server');
+	console.log('You have disconnected from the socket server');
 };
 
-// New player
+// New player (someone else has joined the game)
 function onNewPlayer(data) {
 	console.log('New player connected: ' + data.id);
-
-	// Initialize the new player
-	var newPlayer = new Player(data.x, data.y, data.size, data.color);	// TESTING!
-	newPlayer.id = data.id;
-
-	// Add new player to the remote players array
-	remotePlayers.push(newPlayer);
-
-	// Remove the color from the colors array
-	colors.splice(colors.indexOf(data.color), 1);
+	players[data.id] = new Player(data.x, data.y, data.size, data.color, data.id);
 };
 
-// Move player
+// Move player (someone else has moved)
 function onMovePlayer(data) {
-	var movePlayer = playerById(data.id);
+	var playerToMove = playerById(data.id);
 
 	// Player not found
-	if (!movePlayer) {
+	if (!playerToMove) {
 		console.log('Player not found: ' + data.id);
 		return;
 	};
 
 	// Update player position
-	movePlayer.setX(data.x);
-	movePlayer.setY(data.y);
-	movePlayer.setSize(data.size);	// Updates the size that is shown to the other players
+	playerToMove.setX(data.x);
+	playerToMove.setY(data.y);
+	playerToMove.setSize(data.size);	// Updates the size that is shown to the other players
 };
 
-// Remove player
+// Remove player (someone else has left the game or you're about to leave the game)
 function onRemovePlayer(data) {
-	var removePlayer = playerById(data.id);
+	var playerToRemove = playerById(data.id);
 	
-	// Player not found, must be you
-	if (!removePlayer) {
+	// You got eaten
+	if (data.id === clientId) {
 		// Write at the bottom of your screen that you've died
-		// It must be you, since we don't have local IDs
 		document.getElementById('messageBoard').innerHTML = '<h3 class="message">You have been eaten by: ' + data.username + '</h3>';
 		gameEnd = true;
 		return;
 	};
-	
-	// Add the color back into the array of possible colors
-	colors.push(data.color);
+
+	document.getElementById('messageBoard').innerHTML = '<h3 class="message">You ate: ' + data.username + '</h3>';
 
 	// Remove player from array
-	remotePlayers.splice(remotePlayers.indexOf(removePlayer), 1);
+	delete pplayerToRemove;
 
 };
 
 // New ball
 function onNewBall(data) {
-	console.log('New ball connected: ' + data.id);
-
-	// Initialize the new ball
-	var newBall = new Ball(data.x, data.y, data.dx, data.dy);
-	newBall.id = data.id;
-
-	// Add new ball to the remote balls array
-	remoteBalls.push(newBall);
+	balls[data.id] = new Ball(data.x, data.y, data.dx, data.dy, data.id);
 };
 
-// Move ball
+// Move ball (a ball has moved, which is entirely kept track on the server)
 function onMoveBall(data) {
 	var moveBall = ballById(data.id);
 
@@ -256,38 +193,23 @@ function onMoveBall(data) {
 	moveBall.setDY(data.dy);
 };
 
-// Remove ball
-function onRemoveBall(data) {
-	var removeBall = ballById(data.id);
-
-	// Remove ball from array
-	remoteBalls.splice(remoteBalls.indexOf(removeBall), 1);
-
-};
-
 // New food
 function onNewFood(data) {
-
-	// Initialize the new food
-	var newFood = new Food(data.x, data.y, data.number);
-
-	// Add new player to the remote foods array
-	allFoods.push(newFood);
+	foods[data.id] = new Food(data.x, data.y, data.id);
 };
 
 // Remove food
 function onRemoveFood(data) {
-	var removeFood = foodById(data.number);
+	var foodToRemove = foodById(data.id);
 
 	// Food not found
-	if (!removeFood) {
-		console.log('Food not found: ' + data.number);
+	if (!foodToRemove) {
+		console.log('Food not found: ' + data.id);
 		return;
 	};
 
 	// Remove food from array
-	allFoods.splice(allFoods.indexOf(removeFood), 1);
-
+	delete foodToRemove;
 };
 
 
@@ -308,7 +230,7 @@ function animate() {
 	} else {
 		endTime = new Date().getTime();
 		timeDiff = (endTime - startTime) / 1000;
-		var score = Math.round(timeDiff * Number(localPlayer.getSize()));
+		var score = Math.round(timeDiff * Number(players[clientId].getSize()));
 		var scoreObj = { Username: username, Score: score };
         var jsonScoreObj = JSON.stringify(scoreObj);
 		var scoreUrl = 'addscore';
@@ -317,11 +239,11 @@ function animate() {
   			type: 'POST',
   			data: jsonScoreObj,
   			contentType: 'application/json; charset=utf-8',
-  			success: function(data,textStatus) {
-      			console.log('done');
-  			}
 		})
-		.fail(function(){
+		.done(function() {
+			console.log('done');
+		})
+		.fail(function() {
 			console.log('failed...');
 		});
 
@@ -338,103 +260,105 @@ function animate() {
 **************************************************/
 function update() {
 	// Update local player and check for change
-	if (localPlayer.update(keys)) {
-		// Send local player data to the game server
-		socket.emit('move player', { x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
-	}
-
-	// Send local ball data to the game server
-	if (localBall.update()) {
-		socket.emit('move ball', { x: localBall.getX(), y: localBall.getY(), dx: localBall.getDX(), dy: localBall.getDY(), color: localBall.getColor() });
-	}
-
-	// Get player positions for functions below
-	var playerX = localPlayer.getX();
-	var playerY = localPlayer.getY();
-	var playerSize = localPlayer.getSize();
-
-	// Update player size when hit by a ball
-	if (allBalls && allBalls.length) {
-		var strikingDistance = (playerSize / 2) + 5; //5 is the ball size
-		for (var i = 0; i < allBalls.length; i++) {
-			
-			// Get player and ball positions
-			var ballX = allBalls[i].getX();
-			var ballY = allBalls[i].getY();
-			var x = Math.abs(playerX-ballX);
-			var y = Math.abs(playerY-ballY);
-			
-			// Use pythagorean thm to find the distance between player and ball
-			var hypot = Math.sqrt(( x * x ) + ( y * y ));
-			
-			// Check to see if they have collided
-			if (hypot <= strikingDistance && !invincible) {
-				
-				// Cut your size in half
-				localPlayer.setSize(playerSize/2);
-				
-				// Send a message to the server that your size has changed
-				socket.emit('move player', { x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
-				
-				// Make yourself temporarily invincible from being immediately hit by another ball
-				invincible = true;
-				setTimeout(function() {
-					invincible = false;
-				}, 1500);
-			}
+	var localPlayer = playerById(clientId);
+	if (localPlayer) {
+		if (localPlayer.update(keys)) {
+			// Send local player data to the game server
+			socket.emit('move player', { id: localPlayer.getId(), x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
 		}
-	}
 
-	// Eating another player
-	if (remotePlayers && remotePlayers.length) {
-		for (var i = 0; i < remotePlayers.length; i++) {
-			
-			// Get player positions and sizes
-			var otherPlayerX = remotePlayers[i].getX();
-			var otherPlayerY = remotePlayers[i].getY();
-			var otherPlayerSize = remotePlayers[i].getSize();
-			var x = Math.abs(playerX-otherPlayerX);
-			var y = Math.abs(playerY-otherPlayerY);
-			var strikingDistance = 10;
-			
-			// Use pythagorean theorem to find the distance between players
-			var hypot = Math.sqrt(( x * x ) + ( y * y ));
-			
-			// Check to see if they have overlapped
-			if (playerSize > otherPlayerSize && hypot + otherPlayerSize/4 < playerSize/2) {
-				localPlayer.setSize(otherPlayerSize/4 + playerSize);
+		// Get player positions for functions below
+		var playerX = localPlayer.getX();
+		var playerY = localPlayer.getY();
+		var playerSize = localPlayer.getSize();
+
+		// Update player size when hit by a ball
+		if (balls && Object.keys(balls).length) {
+			var strikingDistance = (playerSize / 2) + 5; // 10 is the ball radius, so we'll give you a little more room to escape and say 5
+			for (key in balls) {
+				// Get player and ball positions
+				var ballX = balls[key].getX();
+				var ballY = balls[key].getY();
+				var x = Math.abs(playerX-ballX);
+				var y = Math.abs(playerY-ballY);
 				
-				// Put a limit on how big a player can get
-				if (localPlayer.getSize() >= 300) {
-					localPlayer.setSize(300);
+				// Use pythagorean thm to find the distance between player and ball
+				var hypot = Math.sqrt(( x * x ) + ( y * y ));
+				
+				// Check to see if they have collided
+				if (hypot <= strikingDistance && !invincible) {
+					
+					// Cut your size in half
+					localPlayer.setSize(playerSize/2);
+
+					// Put a limit on how small a player can get
+						if (localPlayer.getSize() <= 5) {
+							localPlayer.setSize(5);
+						}
+					
+					// Send a message to the server that your size has changed
+					socket.emit('move player', { id: localPlayer.getId(), x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
+					
+					// Make yourself temporarily invincible from being immediately hit by another ball
+					invincible = true;
+					setTimeout(function() {
+						invincible = false;
+					}, 1500);
 				}
-				
-				// Send a message to the server that you've grown
-				socket.emit('move player', { x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
-				
-				// Send a message to the server that the other player has been eaten, and remove that player from the array
-				socket.emit('remove player', {id: remotePlayers[i].id, username: username });
-				remotePlayers.splice(i, 1);
 			}
 		}
-	}
 
-	// Eating food and growing
-	if (allFoods && allFoods.length) {
-		var strikingDistance = (playerSize / 2) + 2.5; // 2.5 is the food size
-		for (var i = 0; i < allFoods.length; i++) {
-			
-			// Get food and player positions
-			var foodX = allFoods[i].getX();
-			var foodY = allFoods[i].getY();
-			var x = Math.abs(playerX-foodX);
-			var y = Math.abs(playerY-foodY);
-			
-			// Use pythagorean theorem to find the distance between player and food
-			var hypot = Math.sqrt(( x * x ) + ( y * y ));
-			
-			// Check to see if they have collided
-			if (hypot <= strikingDistance) {
+		// Eating another player
+		if (players && Object.keys(players).length) {
+			for (key in players) {
+				if (players[key] !== localPlayer) {
+					// Get player positions and sizes
+					var otherPlayerX = players[key].getX();
+					var otherPlayerY = players[key].getY();
+					var otherPlayerSize = players[key].getSize();
+					var x = Math.abs(playerX-otherPlayerX);
+					var y = Math.abs(playerY-otherPlayerY);
+					var strikingDistance = 10;
+					
+					// Use pythagorean theorem to find the distance between players
+					var hypot = Math.sqrt(( x * x ) + ( y * y ));
+					
+					// Check to see if they have overlapped
+					if (playerSize > otherPlayerSize && hypot + otherPlayerSize/4 < playerSize/2) {
+						localPlayer.setSize(otherPlayerSize/4 + playerSize);
+						
+						// Put a limit on how big a player can get
+						if (localPlayer.getSize() >= 300) {
+							localPlayer.setSize(300);
+						}
+						
+						// Send a message to the server that you've grown
+						socket.emit('move player', { id: localPlayer.getId(), x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
+						
+						// Send a message to the server that the other player has been eaten, and remove that player from the array
+						socket.emit('remove player', { id: key, username: username });
+						delete players[key];
+					}
+				}
+			}
+		}
+
+		// Eating food and growing
+		if (foods && Object.keys(foods).length) {
+			var strikingDistance = (playerSize / 2) + 2.5; // 2.5 is the food radius
+			for (key in foods) {
+				
+				// Get food and player positions
+				var foodX = foods[key].getX();
+				var foodY = foods[key].getY();
+				var x = Math.abs(playerX-foodX);
+				var y = Math.abs(playerY-foodY);
+				
+				// Use pythagorean theorem to find the distance between player and food
+				var hypot = Math.sqrt(( x * x ) + ( y * y ));
+				
+				// Check to see if they have collided
+				if (hypot <= strikingDistance) {
 					localPlayer.setSize(2 + playerSize);
 					
 					// Put a limit on how big a player can get
@@ -443,15 +367,15 @@ function update() {
 					}
 
 					// Send a message to the server to update the size of the player
-					socket.emit('move player', { x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
+					socket.emit('move player', { id: localPlayer.getId(), x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
 					
 					// Send a message to the server to remove the food from other screens
-					socket.emit('remove food', { number: allFoods[i].number });
-					allFoods.splice(i, 1);
+					socket.emit('remove food', { id: key });
+					delete foods[key];
+				}
 			}
 		}
 	}
-
 };
 
 
@@ -463,27 +387,22 @@ function draw() {
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
 	// Draw some food
-	for (var i = 0; i < allFoods.length; i++) {
-		allFoods[i].draw(ctx);
+	for (key in foods) {
+		foods[key].draw(ctx);
 	}
-	// Put the local and the remote players together
-	allPlayers = remotePlayers.concat(localPlayer);
 
 	// Sort order of all players by size
-	allPlayers = allPlayers.sort(sortPlayers);
+	sortedPlayersArray = Object.keys(players).sort(sortPlayers);
 
 	// Draw all the players
-	for (var i = 0; i < allPlayers.length; i++) {
-		allPlayers[i].draw(ctx);
-	};
-
-	// Put the local and the remote balls together
-	allBalls = remoteBalls.concat(localBall);
+	for (var i = 0; i < sortedPlayersArray.length; i++) {
+		players[sortedPlayersArray[i]].draw(ctx);
+	}
 
 	// Draw all the balls
-	for (var i = 0; i < allBalls.length; i++) {
-		allBalls[i].draw(ctx);
-	};
+	for (key in balls) {
+		balls[key].draw(ctx);
+	}
 };
 
 
@@ -492,37 +411,21 @@ function draw() {
 **************************************************/
 // Find player by ID
 function playerById(id) {
-	for (var i = 0; i < remotePlayers.length; i++) {
-		if (remotePlayers[i].id == id)
-			return remotePlayers[i];
-	};
-
-	return false;
+	return players[id];
 };
-
 
 // Find ball by ID
 function ballById(id) {
-	for (var i = 0; i < remoteBalls.length; i++) {
-		if (remoteBalls[i].id == id)
-			return remoteBalls[i];
-	};
-
-	return false;
+	return balls[id];
 };
 
 // Find food by ID
-function foodById(number) {
-	for (var i = 0; i < allFoods.length; i++) {
-		if (allFoods[i].number == number)
-			return allFoods[i];
-	};
-
-	return false;
+function foodById(id) {
+	return foods[id];
 };
 
 
 // Sort order of players by size
 function sortPlayers(a, b) {
-	return a.getSize() - b.getSize();
+	return players[a].getSize() - players[b].getSize();
 }

@@ -15,7 +15,6 @@ var socket;				// Socket controller
 var players;			// Array of connected players
 var balls;				// Array of connected balls
 var foods;				// Array of food
-var number;				// Food id counter
 var numUsers;			// Gets current count of users in the game
 var interval;			// Used as the interval to create food
 // Array of colors for players
@@ -26,15 +25,14 @@ var colors = ['green', 'blue', 'yellow', 'pink', 'limegreen', 'orange', 'purple'
 ** GAME INITIALIZATION
 **************************************************/
 function init() {
-	// Create an empty array to store players
-	players = [];
+	// Create an empty object to store players
+	players = {};
 
-	// Create an empty array to store balls
-	balls = [];
+	// Create an empty object to store balls and then add three balls to it
+	balls = createBalls(3);
 
-	// Create an empty array to store the food
-	foods = [];
-	number = 1;
+	// Create an empty object to store the food
+	foods = {};
 
 	// Set up Socket.IO to listen on port 3005
 	socket = io.listen(3005);
@@ -57,19 +55,18 @@ function init() {
 	// Start creating food
 	var pushFood = function() {
 		// Check if there are more users; if so, change interval to produce more food
-		if (foods.length <= 30) {
+		if (Object.keys(foods).length <= 30) {
 			var foodX = Math.floor(Math.random() * (1000 - 20) + 5);
 			var foodY = Math.floor(Math.random() * (500 - 20) + 5);
 			
 			// Initialize the server food
-			var food = new Food(foodX, foodY, number);
+			var foodId = generateRandomString();
+			var food = new Food(foodX, foodY, foodId);
 			
-			// Increment the number variable to avoid duplicate IDs
-			number++;
-			foods.push(food);
+			foods[foodId] = food;
 
 			// Send this new food message to all the players
-			socket.sockets.emit('new food', { x: food.getX(), y: food.getY(), color: food.getColor(), number: food.number });
+			socket.sockets.emit('new food', { x: food.getX(), y: food.getY(), id: food.getId() });
 		}
 
 		// Call this function, which will create a recursive loop with pushFood()
@@ -96,21 +93,59 @@ var setEventHandlers = function() {
 	socket.sockets.on('connection', onSocketConnection);
 };
 
-// New socket connection
+// New socket connection (a new player has joined and connected to the server)
 function onSocketConnection(client) {
 	util.log('New player has connected: ' + client.id);
+
+	// CREATE THE NEW PLAYER
+
+	// Calculate a random start position for the new player
+	// and make sure it's not outside of the canvas bounds
+	var startX = Math.floor( Math.random() * (1000 - 20) + 5 );
+	var startY = Math.floor( Math.random() * (500 - 20) + 5 );
+
+	// Create a start size and color
+	var startSize = 10;
+	var startColor = colors.splice(Math.floor(Math.random() * colors.length, 1))[0] || 'blue';
+
+	// Initialize the new player
+	players[client.id] = new Player(startX, startY, startSize, startColor, client.id);
+
+	// SEND DATA TO THAT PLAYER AND TO ALL THE OTHER PLAYERS
+
+	// Send the new player data to all the players
+	socket.sockets.emit('new player', { id: players[client.id].getId(), x: players[client.id].getX(), y: players[client.id].getY(), size: players[client.id].getSize(), color: players[client.id].getColor() });
+
+	// Send the existing players data to the new player
+	for (key in players) {
+		var existingPlayer = players[key];
+		if (existingPlayer.getId() !== client.id) {
+			this.emit('new player', { id: existingPlayer.getId(), x: existingPlayer.getX(), y: existingPlayer.getY(), size: existingPlayer.getSize(), color: existingPlayer.getColor() });
+		}
+	}
+
+	// Send the existing food data to the new player
+	for (key in foods) {
+		var existingFood = foods[key];
+		this.emit('new food', { x: existingFood.getX(), y: existingFood.getY(), id: existingFood.getId() });
+	}
+
+	// Send the existing balls data to the new player
+	for (key in balls) {
+		var existingBall = balls[key];
+		this.emit('new ball', { id: existingBall.getId(), x: existingBall.getX(), y: existingBall.getY(), dx: existingBall.getDX(), dy: existingBall.getDY() });
+	};
+
+	// Tell the food creator that there is another person in the game
+	numUsers++;
+
+	// ADD EVENT LISTENERS
 
 	// Listen for client disconnected
 	client.on('disconnect', onClientDisconnect);
 
-	// Listen for new player message
-	client.on('new player', onNewPlayer);
-
 	// Listen for move player message
 	client.on('move player', onMovePlayer);
-
-	// Listen for new ball message
-	client.on('new ball', onNewBall);
 
 	// Listen for move ball message
 	client.on('move ball', onMoveBall);
@@ -125,75 +160,25 @@ function onSocketConnection(client) {
 // Socket client has disconnected
 function onClientDisconnect() {
 	util.log('Player has disconnected: ' + this.id);
-
-	var removePlayer = playerById(this.id);
+	var playerToRemove = playerById(this.id);
 
 	// Player not found
-	if (!removePlayer) {
-		util.log('Player not found: ' + this.id);
-		// return;
-	} else {
-		// Add the color back into the array of possible colors
-		colors.push(this.color);
+	if (!playerToRemove) {
+		util.log('Player not found to disconnect: ' + this.id);
+		return;
+	}
 
-		// Remove player from players array
-		players.splice(players.indexOf(removePlayer), 1);
+	// Add the color back into the array of possible colors
+	colors.push(playerToRemove.getColor());
 
-		// Broadcast removed player to connected socket clients
-		this.broadcast.emit('remove player', {id: this.id});
+	// Remove player from players array
+	delete playerToRemove;
 
-	};
-
-	var removeBall = ballById(this.id);
-
-	// Ball not found
-	if (!removeBall) {
-		util.log('Ball not found: ' + this.id);
-		// return;
-	} else {
-		// Remove ball from balls array
-		balls.splice(balls.indexOf(removeBall), 1);
-
-		// Broadcast removed ball to connected socket clients
-		this.broadcast.emit('remove ball', {id: this.id});
-	};
+	// Broadcast removed player to connected socket clients
+	this.broadcast.emit('remove player', {id: this.id});
 
 	// Tell the food creator that there is one less person in the game
 	numUsers--;
-};
-
-// New player has joined
-function onNewPlayer(data) {
-
-	// Create a new player
-	var newPlayer = new Player(data.x, data.y, data.size, data.color);
-	newPlayer.id = this.id;
-
-	// Broadcast new player to connected socket clients
-	this.broadcast.emit('new player', { id: newPlayer.id, x: newPlayer.getX(), y: newPlayer.getY(), size: newPlayer.getSize(), color: newPlayer.getColor() });
-
-	// Send existing players to the new player
-	var i, existingPlayer;
-	for (i = 0; i < players.length; i++) {
-		existingPlayer = players[i];
-		this.emit('new player', { id: existingPlayer.id, x: existingPlayer.getX(), y: existingPlayer.getY(), size: existingPlayer.getSize(), color: existingPlayer.getColor() });
-	};
-
-	// Send existing food to the new player
-	var existingFood;
-	for (var i = 0; i < foods.length; i++) {
-		existingFood = foods[i];
-		this.emit('new food', { x: existingFood.getX(), y: existingFood.getY(), number: existingFood.number });
-	};
-
-	// Add new player to the players array
-	players.push(newPlayer);
-
-	// Remove the color from the colors array
-	colors.splice(colors.indexOf(data.color), 1);
-
-	// Tell the food creator that there is another person in the game
-	numUsers++;
 };
 
 // Player has moved
@@ -203,7 +188,7 @@ function onMovePlayer(data) {
 
 	// Player not found
 	if (!movePlayer) {
-		util.log('Player not found: ' + this.id);
+		util.log('Player not found to move: ' + this.id);
 		return;
 	};
 
@@ -216,27 +201,6 @@ function onMovePlayer(data) {
 	this.broadcast.emit('move player', { id: movePlayer.id, x: movePlayer.getX(), y: movePlayer.getY(), size: movePlayer.getSize(), color: movePlayer.getColor() });
 };
 
-// New ball has joined
-function onNewBall(data) {
-	// Create a new ball
-	var newBall = new Ball(data.x, data.y);
-	newBall.id = this.id;
-
-	// Broadcast new ball to connected socket clients
-	this.broadcast.emit('new ball', { id: newBall.id, x: newBall.getX(), y: newBall.getY(), dx: newBall.getDX(), dy: newBall.getDY() });
-
-	// Send existing balls to the new player
-	var i, existingBall;
-	for (i = 0; i < balls.length; i++) {
-		existingBall = balls[i];
-		this.emit('new ball', { id: existingBall.id, x: existingBall.getX(), y: existingBall.getY(), dx: existingBall.getDX(), dy: existingBall.getDY() });
-	};
-		
-	// Add new ball to the balls array
-	balls.push(newBall);
-	
-};
-
 // Ball has moved
 function onMoveBall(data) {
 	// Find ball in array
@@ -244,7 +208,7 @@ function onMoveBall(data) {
 
 	// Ball not found
 	if (!moveBall) {
-		util.log('Ball not found: ' + data.id);
+		util.log('Ball not found to move: ' + data.id);
 		return;
 	};
 
@@ -260,75 +224,80 @@ function onMoveBall(data) {
 
 // Food has been eaten 
 function onRemoveFood(data) {
-	var removeFood = foodById(data.number);
+	var foodToRemove = foodById(data.id);
 	
 	// Food not found
-	if (!removeFood) {
-		util.log('Food not found: ' + data.number);
+	if (!foodToRemove) {
+		util.log('Food not found to remove: ' + data.id);
 		return;
 	};
 
 	// Remove food from foods array
-	foods.splice(foods.indexOf(removeFood), 1);
+	delete foodToRemove;
 
 	// Broadcast removed food to connected socket clients
-	this.broadcast.emit('remove food', {number: data.number});
+	this.broadcast.emit('remove food', { id: data.id });
 
 };
 
 // A player has been eaten :( || :)
 function onRemovePlayer(data) {
-	console.log('Removing a player: ' + data.id);
-	
-	var removePlayer = playerById(data.id);
+	var playerToRemove = playerById(data.id);
 	
 	// Player not found
-	if (!removePlayer) {
-		util.log('player not found to remove: ' + data.id);
+	if (!playerToRemove) {
+		util.log('Player not found to remove: ' + data.id);
 		return;
 	};
 
+	// Add the color back into the array of possible colors
+	colors.push(playerToRemove.getColor());
+
 	// Remove player from players array
-	players.splice(players.indexOf(removePlayer), 1);
+	delete playerToRemove;
 
 	// Broadcast removed player to connected socket clients
-	this.broadcast.emit('remove player', {id: data.id, username: data.username});
+	this.broadcast.emit('remove player', { id: data.id, username: data.username });
 
 };
+
 
 /**************************************************
 ** GAME HELPER FUNCTIONS
 **************************************************/
+// Create one or more balls
+function createBalls(numberOfBallsToCreate) {
+	var ballCollection = {};
+	for (var i = 0; i < numberOfBallsToCreate; i++) {
+		var ballX = Math.floor( Math.random() * (1000 - 40) + 5 );
+		var ballY = Math.floor( Math.random() * (500 - 40) + 5 );
+		var ballDx = Math.floor(Math.random() * 4) + 1;
+		var ballDy = Math.floor(Math.random() * 4) + 1;
+		var ballId = generateRandomString();
+		ballCollection[ballId] = new Ball(ballX, ballY, ballDx, ballDy, ballId);
+	}
+	return ballCollection;
+}
+
+// Generate random string
+function generateRandomString() {
+	return (Math.random()*999999999999).toFixed();
+}
+
 // Find player by ID
 function playerById(id) {
-	for (var i = 0; i < players.length; i++) {
-		if (players[i].id == id)
-			return players[i];
-	};
-	
-	return false;
+	return players[id];
 };
 
 // Find ball by ID
 function ballById(id) {
-	for (var i = 0; i < balls.length; i++) {
-		if (balls[i].id == id)
-			return balls[i];
-	};
-	
-	return false;
+	return balls[id];
 };
 
 // Find food by ID
-function foodById(number) {
-	for (var i = 0; i < foods.length; i++) {
-		if (foods[i].number == number)
-			return foods[i];
-	};
-	
-	return false;
+function foodById(id) {
+	return foods[id];
 };
-
 
 
 /**************************************************

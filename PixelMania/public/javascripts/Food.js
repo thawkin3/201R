@@ -1,12 +1,12 @@
 /**************************************************
 ** FOOD CLASS
 **************************************************/
-var Food = function(x, y, number) {
+var Food = function(x, y, id) {
 	var x = x;
 	var y = y;
 	var size = 5;
 	var color = '#000';
-	var number = number;
+	var id = id;
 	
 	// Getters and setters
 	// gets food X position
@@ -29,15 +29,10 @@ var Food = function(x, y, number) {
 		return color;
 	}
 
-	// sets food X position
-	var setX = function(newX) {
-		x = newX;
-	};
-
-	// sets food Y position
-	var setY = function(newY) {
-		y = newY;
-	};
+	// gets food id
+	var getId = function() {
+		return id;
+	}
 
 	// Draw food
 	var draw = function(ctx) {
@@ -51,9 +46,7 @@ var Food = function(x, y, number) {
 		getY: getY,
 		getSize: getSize,
 		getColor: getColor,
-		setX: setX,
-		setY: setY,
+		getId: getId,
 		draw: draw,
-		number: number
-	}
+	};
 };
