@@ -112,10 +112,12 @@ function init() {
 		}
 
 		if (balls && Object.keys(balls).length) {
+			var updatedBallsData = {};
 			for (key in balls) {
 				balls[key].update();
-				socket.sockets.emit('move ball', { id: balls[key].getId(), x: balls[key].getX(), y: balls[key].getY() });
+				updatedBallsData[key] = { id: balls[key].getId(), x: balls[key].getX(), y: balls[key].getY() };
 			}
+			socket.sockets.emit('move all balls', updatedBallsData);
 		}
 	}
 
