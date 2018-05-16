@@ -26,7 +26,7 @@ $(document).ready(function(){
 		window.location.pathname = '/login';
 	} else {
 		// Updates the message at the bottom of your screen with who you are
-		$('#msgReplace').html('<h3 class="message">' + username + '</h3>');
+		$('#yourUsername').text(username);
 
 		// Show the game page now
 		$('#gameContainer').show();
@@ -53,9 +53,9 @@ function init() {
 	keys = new Keys();
 
 	// Initialize socket connection
-	// socket = io.connect('http://54.200.192.157', {port: 3005, transports: ['websocket']}); // TYLER'S SOCKET
-	// socket = io.connect('http://52.34.95.112', {port: 3005, transports: ['websocket']}); //MATT'S SOCKET
-	socket = io.connect('http://localhost', {port: 3005, transports: ['websocket']}); // LOCALHOST
+	// socket = io.connect('http://54.200.192.157', {port: 3005, transports: ['websocket'], query: 'username=' + username }); // TYLER'S SOCKET
+	// socket = io.connect('http://52.34.95.112', {port: 3005, transports: ['websocket'], query: 'username=' + username }); //MATT'S SOCKET
+	socket = io.connect('http://localhost', { port: 3005, transports: ['websocket'], query: 'username=' + username }); // LOCALHOST
 
 	// Initialize remote players object
 	players = {};
@@ -143,10 +143,15 @@ function onSocketDisconnect() {
 function onNewPlayer(data) {
 	console.log('New player connected: ' + data.id);
 	// Add player to your own object of players
-	players[data.id] = new Player(data.x, data.y, data.size, data.color, data.id);
-	if (data.id === clientId) {
+	players[data.id] = new Player(data.x, data.y, data.size, data.color, data.id, data.username);
+	if (data.id === clientId && data.newPlayer) {
 		yourColor = data.color;
 		$('#yourColor').css('background', yourColor);
+		// Add an event message for yourself only that you've joined the game
+		$('#eventMessage').text('You have joined the game!');
+	} else if (data.username && data.newPlayer) {
+		// Add an event message for yourself only that another player has joined the game
+		$('#eventMessage').text(data.username + ' has joined the game!');
 	}
 };
 
@@ -164,25 +169,36 @@ function onMovePlayer(data) {
 	playerToMove.setX(data.x);
 	playerToMove.setY(data.y);
 	playerToMove.setSize(data.size);
+
+	if (data.hitByBall) {
+		// Add an event message for yourself only that another player was hit by a ball
+		$('#eventMessage').text(data.username + ' was halved in size!');
+	}
 };
 
 // Remove player (someone else has left the game or you're about to leave the game)
 function onRemovePlayer(data) {
 	var playerToRemove = playerById(data.id);
-	
-	// You got eaten
-	if (data.id === clientId) {
-		$('messageBoard').html('<h3 class="message">You have been eaten by: ' + data.username + '</h3>');
-		gameEnd = true;
-		delete players[data.id];
-		return;
-	};
 
 	// Player not found
 	if (!playerToRemove) {
 		console.log('Player to remove not found: ' + data.id);
 		return;
 	};
+
+	// You got eaten
+	if (data.id === clientId) {
+		// Add an event message for yourself only that you were eaten by another player
+		$('#eventMessage').text('You have been eaten by ' + data.eaterUsername + '.');
+		gameEnd = true;
+		return;
+	} else if (data.eatenUsername && data.eaterUsername) {
+		// Add an event message for yourself only that a player has eaten another player
+		$('#eventMessage').text(data.eatenUsername + ' has been eaten by: ' + data.eaterUsername + '!');
+	} else if (data.username) {
+		// Add an event message for yourself only that a player has left the game (navigated away from the page or clicked the Quit button)
+		$('#eventMessage').text(data.username + ' has left the game.');
+	}
 
 	// Remove player from your own object of players
 	delete players[data.id];
@@ -261,10 +277,10 @@ function animate() {
   			contentType: 'application/json; charset=utf-8',
 		})
 		.done(function() {
-			console.log('done');
+			// do nothing
 		})
 		.fail(function() {
-			console.log('failed...');
+			// do nothing
 		});
 
 		// go to the highscores view
@@ -317,13 +333,16 @@ function update() {
 						}
 					
 					// Send a message to the server that your size has changed
-					socket.emit('move player', { id: localPlayer.getId(), x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
+					socket.emit('move player', { id: localPlayer.getId(), x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor(), username: localPlayer.getUsername(), hitByBall: true });
 					
 					// Make yourself temporarily invincible from being immediately hit by another ball
 					invincible = true;
 					setTimeout(function() {
 						invincible = false;
 					}, 1500);
+
+					// Add an event message for yourself only that you were hit by a ball
+					$('#eventMessage').text('You were halved in size!');
 				}
 			}
 		}
@@ -336,6 +355,7 @@ function update() {
 					var otherPlayerX = players[key].getX();
 					var otherPlayerY = players[key].getY();
 					var otherPlayerSize = players[key].getSize();
+					var otherPlayerUsername = players[key].getUsername();
 					var x = Math.abs(playerX-otherPlayerX);
 					var y = Math.abs(playerY-otherPlayerY);
 					var strikingDistance = 10;
@@ -351,12 +371,15 @@ function update() {
 						if (localPlayer.getSize() >= 300) {
 							localPlayer.setSize(300);
 						}
+
+						// Add an event message for yourself only that you ate another player
+						$('#eventMessage').text('You ate ' + otherPlayerUsername + '!');
 						
 						// Send a message to the server that you've grown
 						socket.emit('move player', { id: localPlayer.getId(), x: localPlayer.getX(), y: localPlayer.getY(), size: localPlayer.getSize(), color: localPlayer.getColor() });
 						
 						// Send a message to the server that the other player has been eaten, and remove that player from the array
-						socket.emit('remove player', { id: key, username: username });
+						socket.emit('remove player', { id: key, eatenUsername: otherPlayerUsername, eaterUsername: username });
 						delete players[key];
 					}
 				}

@@ -9,9 +9,9 @@
 /* GENERAL */
 
 body {
-    overflow: hidden;
+    overflow: scroll;
     background: #92f592;
-    font-family: charybdiszzz, monospace;
+    font-family: charybdis, monospace;
     text-align: center;
     padding: 20px;
 }
@@ -28,8 +28,21 @@ p,
     font-size: 18px;
 }
 
+.mainContainer {
+    width: 1000px;
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+}
+
 
 /* LOGIN */
+
+#formContainer {
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+}
 
 #loginForm {
     margin: 40px auto;
@@ -57,10 +70,9 @@ canvas {
 }
 
 #quit {
-    display: inline-block;
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: 15px;
+    right: 0;
 }
 
 .ball {
@@ -76,17 +88,36 @@ canvas {
 #yourColor {
     height: 20px;
     width: 20px;
-    background: #FFF;
+    background: #fff;
     display: inline-block;
     border: 1px solid #000;
     border-radius: 50%;
     position: relative;
     top: 3px;
+    margin: auto 6px;
+}
+
+#messageBoard {
+    margin-bottom: 60px;
 }
 
 .message {
-    display: inline-block;
     margin-top: 10px;
+}
+
+.halfWidth {
+    display: inline-block;
+    width: 45%;
+}
+
+.halfWidth.left {
+    text-align: left;
+    float: left;
+}
+
+.halfWidth.right {
+    text-align: right;
+    float: right;
 }
 
 

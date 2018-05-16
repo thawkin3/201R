@@ -1,9 +1,8 @@
 $(document).ready(function(){
-	
 	$.ajax({
-			url: '/gethighscores',
-			type: 'GET',
-			contentType: 'application/json; charset=utf-8',
+		url: '/gethighscores',
+		type: 'GET',
+		contentType: 'application/json; charset=utf-8',
 	})
 		.done(function(data, textStatus) {
 			var html = '';
@@ -16,5 +15,4 @@ $(document).ready(function(){
 			$('#highScoresTable tbody').empty();
 			$('#highScoresTable').after('<p>Sorry, there was an error fetching high scores.</p>');
 		});
-
 });

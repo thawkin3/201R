@@ -16,7 +16,7 @@ var Score = mongoose.model('Score', scoreSchema); //Makes an object from that sc
 var db = mongoose.connection; //Saves the connection as a variable to use
 db.on('error', console.error.bind(console, 'connection error:')); //Checks for connection errors
 db.once('open', function() { //Lets us know when we're connected
-  console.log('Connected');
+  console.log('Connected to database');
 });
 
 /* GET game page. */
@@ -36,31 +36,23 @@ router.get('/highscores', function(req, res, next) {
 
 /* POST a score */
 router.post('/addscore', function(req, res, next) {
-  console.log("POST addscore route"); //[1]
-  console.log(req.body); //[2]
-
-  var newScore = new Score(req.body); //[3]
-  console.log(newScore);
-  console.log(req.body.Score);
-  
-  newScore.save(true, function(err, post) { //[4]
-    if (err) return console.error(err);
-    console.log(post);
+  var newScore = new Score(req.body);
+  newScore.save(true, function(err, post) {
+    if (err) {
+      return console.error(err);
+    }
     res.sendStatus(200);
   });
 });
 
 /* GET high scores */
 router.get('/gethighscores', function(req,res,next) {
-	console.log("In high score route");
 	var query = Score.find().limit(10).select({Username:1,Score:1}).sort({Score:-1});
 	query.exec(function(err,scores) {
-			if (err) return console.error(err); //If there's an error, print it out
-			else {
-			    console.log(scores); //Otherwise console log the scores you found
-			    res.json(scores); //Then send them
+			if (err) {
+        return console.error(err);
 			}
-
+			res.json(scores);
 	});
 });
 
