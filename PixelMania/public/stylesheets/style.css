@@ -1,82 +1,146 @@
 /* FONTS */
+
 @font-face {
-    font-family: zig;
-    src: url('zig.ttf');
+    font-family: charybdis;
+    src: url('charybdis.ttf');
 }
 
 
 /* GENERAL */
+
 body {
-	overflow: hidden;
-	background: limegreen;
-    font-family: zig, Arial, sans-serif;
+    overflow: scroll;
+    background: #92f592;
+    font-family: charybdis, monospace;
     text-align: center;
     padding: 20px;
 }
 
 h1 {
     text-align: center;
-    margin: 20px;
-    font-size: 36px;
+    margin: 10px 20px;
+    font-size: 64px;
+}
+
+p,
+.btn,
+.form-control {
+    font-size: 18px;
+}
+
+.mainContainer {
+    width: 1000px;
+    max-width: 100%;
+    margin: auto;
+    position: relative;
 }
 
 
 /* LOGIN */
+
+#formContainer {
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+}
+
+#loginForm {
+    margin: 40px auto;
+}
+
 .form-control {
     text-align: center;
+    height: 38px;
 }
 
 
 /* GAME */
+
+#gameContainer {
+    display: none;
+}
+
 canvas {
     display: block;
     margin: auto;
-    border: 5px solid #000;
-    background: #ccc;
+    border: 2px solid #000;
+    background: #ececec;
+    width: 1000px;
+    height: 500px;
 }
 
 #quit {
-  float: right;
-  margin-top: 20px;
-  display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 0;
 }
 
 .ball {
-  background: red;
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  text-align: center;
-  top: 20px;
-  left: 20px;
+    background: red;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    left: 20px;
 }
 
 #yourColor {
-  height: 20px;
-  width: 20px;
-  background: #FFF;
-  display: inline-block;
-  border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 50%;
+    position: relative;
+    top: 3px;
+    margin: auto 6px;
+}
+
+#messageBoard {
+    margin-bottom: 60px;
 }
 
 .message {
-  display: inline-block;
-  margin-top: 10px;
+    margin-top: 10px;
+}
+
+.halfWidth {
+    display: inline-block;
+    width: 45%;
+}
+
+.halfWidth.left {
+    text-align: left;
+    float: left;
+}
+
+.halfWidth.right {
+    text-align: right;
+    float: right;
 }
 
 
 /* HIGH SCORES */
+
 #highScoresTable {
-    margin: auto;
-    margin-top: 50px;
+    margin: 20px auto;
     text-align: center;
 }
 
 #highScoresTable th {
-    font-size: 18px;
-}
-
-#highScoresTable th, #highScoresTable td {
+    font-size: 24px;
     padding: 2px 20px;
     text-align: center;
+}
+
+#highScoresTable td {
+    font-size: 20px;
+    padding: 2px 20px;
+    text-align: center;
+}
+
+#again {
+    font-size: 50px;
+    text-decoration: none;
 }

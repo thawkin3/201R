@@ -1,50 +1,35 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-  <head>
-    <title>Pixel Mania</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="stylesheets/reset.css">
-    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <script type="text/javascript" src="javascripts/jquery-1.12.0.min.js"></script>
-    <script type="text/javascript" src="javascripts/jquery.cookie.js"></script>
-    <script type="text/javascript" src="javascripts/login.js"></script>
-  </head>
-  
-  <body>
-    <h1>Pixel Mania</h1>  
-
-    <div>
-        
-        <div class="container formContainer">
-          <div class="row">
-              <div class="container instructionsContainer">
-                <br />
-                Instructions
-                <br /><br />
-                You are a little colored dot and your only goal is to eat and survive. If you hit one of the bouncing red balls, you will be halved in size. If you hit someone who is smaller than you, then you eat them. If you hit someone larger, then you get eaten.
-                <br /><br />
-                Use the arrow keys to move.
-                <br /><br />
-                Enjoy!
-                <br /><br />
-              </div>
-              <form id="loginForm" class="form-inline" role="form" action="javascript:void(0);">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="username" placeholder="Username" autofocus>
+    <head>
+        <title>Pixel Mania</title>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="stylesheets/reset.css" />
+        <link type="text/css" rel="stylesheet" href="stylesheets/bootstrap.min.css" />
+        <link type="text/css" rel="stylesheet" href="stylesheets/style.css" />
+        <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico" />
+        <script type="text/javascript" src="javascripts/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="javascripts/jquery.cookie.js"></script>
+        <script type="text/javascript" src="javascripts/login.js"></script>
+    </head>
+    <body>
+        <h1>Pixel Mania</h1>
+        <div class="container" id="formContainer">
+            <div class="row">
+                <div class="instructionsContainer">
+                    <h2>Instructions</h2>
+                    <p>You are a little colored dot and your only goal is to eat and survive. If you hit one of the bouncing red balls, you will be halved in size. If you hit someone who is smaller than you, then you eat them. If you hit someone larger than you, then you get eaten.</p>
+                    <p>Use the arrow keys to move.</p>
+                    <p>Enjoy!</p>
                 </div>
-                <div class="form-group">
-                  <button type="submit" id="loginSubmit" class="btn btn-primary">Play</button>
-                </div>
-              </form>
-          </div>
-
+                <form id="loginForm" class="form-inline" role="form" action="javascript:void(0);">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="username" placeholder="Username" autofocus maxlength="20">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="loginSubmit" class="btn btn-primary">Play</button>
+                    </div>
+                </form>
+            </div>
         </div>
-
-    </div>
-  </body>
-
+    </body>
 </html>
