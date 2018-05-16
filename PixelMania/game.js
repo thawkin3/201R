@@ -90,19 +90,19 @@ function init() {
 
         // Call this function, which will create a recursive loop with pushFood()
         addFood();
-    }
+    };
     
     // Function to loop through to dynamically update the time interval
     var addFood = function() {
         interval = 2000 / (players ? Object.keys(players).length : 1);
         setTimeout(pushFood, interval);
-    }
+    };
     
     // Call the pushFood function to set the food creation in motion
     pushFood();
 
     // Set up the loop for server side ball motion
-    moveBalls  = function() {
+    moveBalls = function() {
         if (Object.keys(players).length <= 0) {
             clearInterval(ballMotionInterval);
         }
@@ -115,10 +115,10 @@ function init() {
             }
             socket.sockets.emit('move all balls', updatedBallsData);
         }
-    }
+    };
 
     ballMotionInterval = setInterval(moveBalls, 16);
-};
+}
 
 
 /**************************************************
@@ -191,7 +191,7 @@ function onSocketConnection(client) {
 
     // Listen for remove player message
     client.on('remove player', onRemovePlayer);
-};
+}
 
 // Socket client has disconnected
 function onClientDisconnect() {
@@ -207,12 +207,12 @@ function onClientDisconnect() {
     // Add the color back into the array of possible colors
     colors.push(playerToRemove.getColor());
 
-    // Remove player from players array
-    delete players[this.id];
-
     // Broadcast removed player to connected socket clients
     this.broadcast.emit('remove player', { id: this.id, username: playerToRemove.getUsername() });
-};
+
+    // Remove player from players array
+    delete players[this.id];
+}
 
 // Player has moved
 function onMovePlayer(data) {
@@ -236,7 +236,7 @@ function onMovePlayer(data) {
     } else {
         this.broadcast.emit('move player', { id: playerToMove.getId(), x: playerToMove.getX(), y: playerToMove.getY(), size: playerToMove.getSize(), color: playerToMove.getColor() });
     }
-};
+}
 
 // Food has been eaten 
 function onRemoveFood(data) {
@@ -248,13 +248,12 @@ function onRemoveFood(data) {
         return;
     };
 
-    // Remove food from foods array
-    delete foods[data.id];
-
     // Broadcast removed food to connected socket clients
     this.broadcast.emit('remove food', { id: data.id });
 
-};
+    // Remove food from foods array
+    delete foods[data.id];
+}
 
 // A player has been eaten :( || :)
 function onRemovePlayer(data) {
@@ -269,13 +268,12 @@ function onRemovePlayer(data) {
     // Add the color back into the array of possible colors
     colors.push(playerToRemove.getColor());
 
-    // Remove player from players array
-    delete players[data.id];
-
     // Broadcast removed player to connected socket clients
     this.broadcast.emit('remove player', { id: data.id, eatenUsername: data.eatenUsername, eaterUsername: data.eaterUsername });
 
-};
+    // Remove player from players array
+    delete players[data.id];
+}
 
 
 /**************************************************
@@ -304,17 +302,17 @@ function generateRandomString() {
 // Find player by ID
 function playerById(id) {
     return players[id];
-};
+}
 
 // Find ball by ID
 function ballById(id) {
     return balls[id];
-};
+}
 
 // Find food by ID
 function foodById(id) {
     return foods[id];
-};
+}
 
 
 /**************************************************

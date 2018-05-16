@@ -241,7 +241,7 @@ function onRemoveFood(data) {
         return;
     };
 
-    // Remove food from array
+    // Remove food from your own object of foods
     delete foods[data.id];
 }
 
@@ -377,6 +377,8 @@ function update() {
                         
                         // Send a message to the server that the other player has been eaten, and remove that player from the array
                         socket.emit('remove player', { id: key, eatenUsername: otherPlayerUsername, eaterUsername: username });
+                        
+                        // Remove player from your own object of players
                         delete players[key];
                     }
                 }
@@ -411,6 +413,8 @@ function update() {
                     
                     // Send a message to the server to remove the food from other screens
                     socket.emit('remove food', { id: key });
+
+                    // Remove food from your own object of foods
                     delete foods[key];
                 }
             }
