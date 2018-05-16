@@ -266,7 +266,7 @@ function animate() {
         var score = Math.round(timeDiff * Number(players[clientId].getSize()));
         var scoreObj = { Username: username, Score: score };
         var jsonScoreObj = JSON.stringify(scoreObj);
-        var scoreUrl = 'addscore';
+        var scoreUrl = '/addscore';
         $.ajax({
             url: scoreUrl,
             type: 'POST',

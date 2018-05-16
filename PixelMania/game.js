@@ -94,7 +94,7 @@ function init() {
     
     // Function to loop through to dynamically update the time interval
     var addFood = function() {
-        interval = 2000 / (players ? Object.keys(players).length : 1);
+        interval = 2000 / ((players && Object.keys(players).length) ? Object.keys(players).length : 1);
         setTimeout(pushFood, interval);
     };
     
