@@ -1,7 +1,5 @@
 (function() {
-
 	var gameController = function ($scope, $routeParams, $rootScope, $location, $timeout) {
-
 		// variables for game play
 		var gameEnd = false;
 		var gameWin = false;
@@ -52,27 +50,21 @@
 
 		// Submit your score
 		var submitScore = function(){
-			var scoreObj = { "Username": $rootScope.user, "Score": $scope.score };
+			var scoreObj = { Username: $rootScope.user, Score: $scope.score };
 	        var JSONscoreObj = JSON.stringify(scoreObj);
-			var scoreUrl = "addscore";
+			var scoreUrl = 'addscore';
 			
 			$.ajax({
 	  			url: scoreUrl,
-	  			type: "POST",
+	  			type: 'POST',
 	  			data: JSONscoreObj,
-	  			contentType: "application/json; charset=utf-8",
-	  			success: function(data,textStatus) {
-	      			$timeout(function(){	
-	      				console.log("done");
-	      			}, 10);
-	  			}
+	  			contentType: 'application/json; charset=utf-8',
 			})
-			.fail(function(){});
-			
-			// go to the highscores view after 2 seconds
-			$timeout(function() {
-				$location.url("/highscores");
-			}, 2000);
+			.always(function() {
+                $timeout(function() {
+                    $location.url('/highscores');
+                }, 2000);
+            });
 		};
 		
 		// keep score
@@ -80,8 +72,8 @@
 		$scope.score = 0;
 
 		// set up the canvas
-		var canvas = document.getElementById("gameCanvas");
-		var ctx = canvas.getContext("2d");
+		var canvas = document.getElementById('gameCanvas');
+		var ctx = canvas.getContext('2d');
 
 		// Locator function in a loop
 		$scope.mainLoop = function() {			
@@ -95,11 +87,11 @@
 			} else {
 				// set the text that displays on the canvas
 				if (gameWin) {
-					ctx.font="20px zig";
-					ctx.fillText("YOU WIN",145,200);
+					ctx.font='20px zig';
+					ctx.fillText('YOU WIN', 145, 200);
 				} else {
-					ctx.font="20px zig";
-					ctx.fillText("GAME OVER",130,280);
+					ctx.font='20px zig';
+					ctx.fillText('GAME OVER', 130, 280);
 				}
 				// set our new score into the database
 				submitScore();
@@ -285,23 +277,23 @@
 		// Draw everything
 		$scope.draw = function() {
 			// Clear the canvas
-			ctx.fillStyle = "#050505";
+			ctx.fillStyle = '#050505';
 			ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 			// Draw the paddle
-			ctx.fillStyle = "#f2f2f2";
+			ctx.fillStyle = '#f2f2f2';
 			ctx.fillRect(paddle_x - paddle_width/2, paddle_y - paddle_height/2, paddle_width, paddle_height);
 
 			// Draw the paddle top line to use for hit detection
-			ctx.fillStyle = "#f3f3f3";
+			ctx.fillStyle = '#f3f3f3';
 			ctx.fillRect(paddle_x - paddle_width/2, paddle_y - paddle_height/2, paddle_width, 1);
 
 			// Draw the ball
-			ctx.fillStyle = "#f1f1f1";
+			ctx.fillStyle = '#f1f1f1';
 			ctx.fillRect(ball_x - ball_size/2, ball_y - ball_size/2, ball_size, ball_size);
 
 			// Draw the bricks
-			ctx.fillStyle = "#f1f1f1";
+			ctx.fillStyle = '#f1f1f1';
 			for (var i = 0; i < $scope.brickArray.length; i++) {
 				ctx.fillRect($scope.brickArray[i].l, $scope.brickArray[i].t, $scope.brickArray[i].w, $scope.brickArray[i].h);
 			}
@@ -335,12 +327,10 @@
 
 		// Start the game
 		$scope.mainLoop();
-
 	};
 
 	gameController.$inject = ['$scope', '$routeParams', '$rootScope', '$location', '$timeout'];
 
 	angular.module('MongoDBreakout')
 	    .controller('gameController', gameController);
-
 }());
