@@ -210,7 +210,7 @@ $(document).ready(function(){
         board = [
                     ['u','u','u'],
                     ['u','u','u'],
-                    ['u','u','u']
+                    ['u','u','u'],
                 ];
         playerMoves = [];
         compMoves = [];
@@ -336,14 +336,14 @@ $(document).ready(function(){
                     if (board[1][1] === pieceComp) {        // if computer's first move was in the center
                         var possibleMoves = [0, 2, 6, 8];
                         compCell = possibleMoves[Math.floor(Math.random() * 4)];
-                        while (!$('#cell' + compCell).html()) {
+                        while ($('#cell' + compCell).html()) {
                             compCell = possibleMoves[Math.floor(Math.random() * 4)];
                         }
                     } else {                            // otherwise, it was in a corner
                         if (board[0][0] === piecePlayer) {
                             var possibleMoves = [2, 6, 8];
                             compCell = possibleMoves[Math.floor(Math.random() * 3)];
-                            while (!$('#cell' + compCell).html()) {
+                            while ($('#cell' + compCell).html()) {
                                 compCell = possibleMoves[Math.floor(Math.random() * 3)];
                             }
                         } else if (board[0][1] === piecePlayer) {
@@ -351,7 +351,7 @@ $(document).ready(function(){
                         } else if (board[0][2] === piecePlayer) {
                             var possibleMoves = [0, 6, 8];
                             compCell = possibleMoves[Math.floor(Math.random() * 3)];
-                            while (!$('#cell' + compCell).html()) {
+                            while ($('#cell' + compCell).html()) {
                                 compCell = possibleMoves[Math.floor(Math.random() * 3)];
                             }
                         } else if (board[1][0] === piecePlayer) {
@@ -359,7 +359,7 @@ $(document).ready(function(){
                         } else if (board[1][1] === piecePlayer) {
                             var possibleMoves = [0, 2, 6, 8];
                             compCell = possibleMoves[Math.floor(Math.random() * 4)];
-                            while (!$('#cell' + compCell).html()) {
+                            while ($('#cell' + compCell).html()) {
                                 compCell = possibleMoves[Math.floor(Math.random() * 4)];
                             }
                         } else if (board[1][2] === piecePlayer) {
@@ -367,7 +367,7 @@ $(document).ready(function(){
                         } else if (board[2][0] === piecePlayer) {
                             var possibleMoves = [0, 2, 8];
                             compCell = possibleMoves[Math.floor(Math.random() * 3)];
-                            while (!$('#cell' + compCell).html()) {
+                            while ($('#cell' + compCell).html()) {
                                 compCell = possibleMoves[Math.floor(Math.random() * 3)];
                             }
                         } else if (board[2][1] === piecePlayer) {
@@ -375,7 +375,7 @@ $(document).ready(function(){
                         } else if (board[2][2] === piecePlayer) {
                             var possibleMoves = [0, 2, 6];
                             compCell = possibleMoves[Math.floor(Math.random() * 3)];
-                            while (!$('#cell' + compCell).html()) {
+                            while ($('#cell' + compCell).html()) {
                                 compCell = possibleMoves[Math.floor(Math.random() * 3)];
                             }
                         }
@@ -391,7 +391,7 @@ $(document).ready(function(){
                             if (compCell === null) {
                                 var possibleMoves = [0, 2, 6, 8];
                                 compCell = possibleMoves[Math.floor(Math.random() * 4)];
-                                while (!$('#cell' + compCell).html()) {
+                                while ($('#cell' + compCell).html()) {
                                     compCell = possibleMoves[Math.floor(Math.random() * 4)];
                                 }
                             }
@@ -408,7 +408,7 @@ $(document).ready(function(){
                             if (compCell === null) {
                                 var possibleMoves = [0, 2, 6, 8];
                                 compCell = possibleMoves[Math.floor(Math.random() * 4)];
-                                while (!$('#cell' + compCell).html()) {
+                                while ($('#cell' + compCell).html()) {
                                     compCell = possibleMoves[Math.floor(Math.random() * 4)];
                                 }
                             }
