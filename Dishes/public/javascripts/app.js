@@ -7,7 +7,6 @@ angular.module('dish', [])
 
 	    $scope.addDish = function() {
     		if($scope.name === '' || $scope.type === '') { return; }
-			console.log("In addDish with " + $scope.name + " and " + $scope.type);
 			$scope.create({
 				name: $scope.name,
 				type: $scope.type,
@@ -36,7 +35,6 @@ angular.module('dish', [])
 		$scope.upvote = function(dish) {
 			return $http.put('/dishes/' + dish._id + '/upvote')
 			.success(function(data){
-				console.log("upvote worked");
 				dish.upvotes += 1;
 			});
 		};

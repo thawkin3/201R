@@ -123,11 +123,11 @@ $(document).ready(function(){
 										storedAnswer += lastNum;
 										break;
 
-									default: console.log("blah");
+									default: // do nothing
 								}
 								break;
 
-							default: console.log("blah");
+							default: // do nothing
 						}
 
 						if (storedAnswer.toString().indexOf(".") == -1) {
@@ -146,7 +146,7 @@ $(document).ready(function(){
 					beginMathOp = false;
 					break;
 
-				default: console.log("blah");
+				default: // do nothing
 			}
 		}
 	});

@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/gettime',function(req, res, next) {
 
-	theQuery = req.query.q;
+	var theQuery = req.query.q;
 
 	var jsonResult = {
     	unix: null,
@@ -29,8 +29,6 @@ router.get('/gettime',function(req, res, next) {
 			jsonResult.normal = null;
 		}
 	}
-
-    console.log(jsonResult);
 
     res.status(200).json(jsonResult);
 

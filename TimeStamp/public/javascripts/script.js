@@ -1,5 +1,3 @@
-console.log("script.js loaded");
-
 $(document).ready(function(){
 
 	$("#dateForm").submit(function(){
@@ -15,11 +13,8 @@ $(document).ready(function(){
 	    	}
 	    })
 	    .done(function() { 
-	    	console.log('getJSON request succeeded!'); 
 	    })
 	    .fail(function(jqXHR, textStatus, errorThrown) { 
-	    	console.log('getJSON request failed!' + textStatus); 
-	    	console.log("incoming " + jqXHR.responseText);
 	    });
 
 	});

@@ -18,7 +18,6 @@ angular.module('song', [])
     		if ($scope.art === '') {
     			$scope.art = "genericArtwork.jpg";
     		}
-			console.log("In addSong with " + $scope.title + " by " + $scope.artist + " on album " + $scope.album);
 			$scope.create({
 				title: $scope.title,
 				artist: $scope.artist,
@@ -53,7 +52,6 @@ angular.module('song', [])
 		$scope.upvote = function(song) {
 			return $http.put('/songs/' + song._id + '/upvote')
 			.success(function(data){
-				console.log("upvote worked");
 				song.upvotes += 1;
 			});
 		};

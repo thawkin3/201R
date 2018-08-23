@@ -21,13 +21,12 @@ var Url = mongoose.model('Url', urlSchema); // Makes an object from that schema 
 var db = mongoose.connection; // Saves the connection as a variable to use
 db.on('error', console.error.bind(console, 'connection error:')); // Checks for connection errors
 db.once('open', function() { // Lets us know when we're connected
-  console.log('Connected');
+  console.log('Connected to database');
 });
 
 /* GET page to enter a new URL */
 router.get('/new/:url(*)', function(req, res, next) {
   	var theParamUrl = req.params.url;
-  	// console.log("inside the route, and here's the url: " + theParamUrl);
 
   	if (theParamUrl == "") {
   		res.status(200).send("Please enter a URL after 'new/'");
@@ -36,9 +35,7 @@ router.get('/new/:url(*)', function(req, res, next) {
 	  	// Try to find the URL in your database
 		Url.findOne({ originalURL: theParamUrl }, function(err, foundURL) {
 		    if (err) return err;
-			// console.log("inside the findOne method, and here's the search results:");
-			// console.log(foundURL);
-			
+
 			// If it wasn't found, then this is a new URL
 			if (foundURL == null) {
 			  	
@@ -58,19 +55,12 @@ router.get('/new/:url(*)', function(req, res, next) {
 				  		originalURL: theParamUrl,
 				  		lookupNumber: chooseANumber
 				  	};
-				  	// console.log("jsonRecord is: ");
-				  	// console.log(jsonRecord);
 
 				  	var newURL = new Url(jsonRecord); //[3]
-				  	// console.log("newURL is: ");
-				    // console.log(newURL);
-				  	
+
 				  	// Save the record
 				  	newURL.save(function(err, savedURL) { //[4]
-				    	// console.log("inside the save method");
 				    	if (err) return console.error(err);
-				  		console.log("saved record is: ");
-				    	console.log(savedURL);
 						res.status(200).json(jsonRecord);
 				  	});
 
@@ -79,13 +69,10 @@ router.get('/new/:url(*)', function(req, res, next) {
 			  	
 			} else {
 				// Remind the user what the lookup number is
-				console.log("found the URL");
 				var jsonRecord = {
 			  		originalURL: foundURL.originalURL,
 			  		lookupNumber: foundURL.lookupNumber
 			  	};
-			  	// console.log("jsonRecord is: ");
-			  	// console.log(jsonRecord);
 			  	res.status(200).json(jsonRecord);
 				
 			}
@@ -109,19 +96,13 @@ router.get('/go/:lookupNumber', function(req, res, next) {
 
 		    // If you find it, redirect to that stored address
 		    if (foundNumber != null) {
-				// console.log("inside the findOne method, and here's the search results:");
-				// console.log(foundNumber);
 				res.redirect(foundNumber.originalURL);
-				// TESTING
-				// res.redirect(302, 'http://google.com');
-			
+
 			// Otherwise, show an error message
 			} else {
 				var jsonRecord = {
 			  		result: "lookup number does not exist in database"
 			  	};
-			  	// console.log("jsonRecord is: ");
-			  	// console.log(jsonRecord);
 			  	res.status(200).json(jsonRecord);
 			}
 		});

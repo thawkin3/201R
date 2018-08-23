@@ -10,7 +10,6 @@ $(document).ready(function(){
 	var bgCounter = 0;
 
 	$("#searchForm").submit(function(){
-		console.log(bgCounter);
 		$("body").css("background", bgArray[bgCounter]);
 		$("body").css("backgroundAttachment", "fixed")
 		if (bgCounter < bgArray.length - 1) {

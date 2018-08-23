@@ -24,7 +24,7 @@ var Imagesearch = mongoose.model('Imagesearch', imagesearchSchema); // Makes an 
 var db = mongoose.connection; // Saves the connection as a variable to use
 db.on('error', console.error.bind(console, 'connection error:')); // Checks for connection errors
 db.once('open', function() { // Lets us know when we're connected
-  console.log('Connected');
+  console.log('Connected to database');
 });
 
 /* GET page to run a new image search */
@@ -44,19 +44,12 @@ router.get('/search/:keywords', function(req, res, next) {
 	  		keywords: theKeywords,
 	  		date: new Date()
 	  	};
-	  	// console.log("jsonRecord is: ");
-	  	// console.log(jsonRecord);
 
 	  	var newSearch = new Imagesearch(jsonRecord); //[3]
-	  	// console.log("newSearch is: ");
-	    // console.log(newSearch);
-	  	
+
 	  	// Save the record
 	  	newSearch.save(function(err, data) { //[4]
-	    	// console.log("inside the save method");
 	    	if (err) return console.error(err);
-	  		console.log("saved record is: ");
-	    	console.log(data);
 	  	});
 
 	  	// Query the Imgur API and return the search results
@@ -71,8 +64,6 @@ router.get('/search/:keywords', function(req, res, next) {
 			maxRedirects: 10
 		}, function(err, response, body) {
 	    	if (err) return console.error(err);
-			// console.log(JSON.parse(body));
-			// console.log(JSON.parse(body).data[0].link);
 			res.status(200).json(JSON.parse(body));
 		});
 

@@ -55,7 +55,6 @@ router.post('/getuser', function(req, res, next) {
     User.findOne({
         Username: req.body.Username
     }, function(err, user) {
-        console.log(user);
         if (user !== null) {
             if (user.Password == req.body.Password) {
                 res.sendStatus(200);

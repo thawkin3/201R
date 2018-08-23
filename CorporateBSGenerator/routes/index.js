@@ -9,8 +9,6 @@ router.get('/', function(req, res, next) {
 
 /* REST service to generate some BS */
 router.get('/getwords',function(req, res, next) {
-	console.log("In getwords route");
-
 	var jsonResult = {
 		"adverbs": [],
 		"verbs": [],
@@ -31,7 +29,6 @@ router.get('/getwords',function(req, res, next) {
         }
 
         if (jsonResult.adverbs.length == 4 && jsonResult.verbs.length == 4 && jsonResult.adjectives.length == 4 && jsonResult.nouns.length == 4) {
-        	console.log(jsonResult);
         	res.status(200).json(jsonResult);
         }
 
@@ -50,7 +47,6 @@ router.get('/getwords',function(req, res, next) {
         }
 
         if (jsonResult.adverbs.length == 4 && jsonResult.verbs.length == 4 && jsonResult.adjectives.length == 4 && jsonResult.nouns.length == 4) {
-        	console.log(jsonResult);
         	res.status(200).json(jsonResult);
         }
 
@@ -69,7 +65,6 @@ router.get('/getwords',function(req, res, next) {
         }
 
         if (jsonResult.adverbs.length == 4 && jsonResult.verbs.length == 4 && jsonResult.adjectives.length == 4 && jsonResult.nouns.length == 4) {
-        	console.log(jsonResult);
         	res.status(200).json(jsonResult);
         }
 
@@ -88,7 +83,6 @@ router.get('/getwords',function(req, res, next) {
         }
 
         if (jsonResult.adverbs.length == 4 && jsonResult.verbs.length == 4 && jsonResult.adjectives.length == 4 && jsonResult.nouns.length == 4) {
-        	console.log(jsonResult);
         	res.status(200).json(jsonResult);
         }
 

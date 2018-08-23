@@ -22,17 +22,12 @@ $(document).ready(function(){
 	    	$("#txtHint").html(everything);
 	    })
 	    .done(function() { 
-	    	console.log('getJSON request succeeded!'); 
 	    })
 	    .fail(function(jqXHR, textStatus, errorThrown) { 
-	    	console.log('getJSON request failed!' + textStatus); 
-	    	console.log("incoming " + jqXHR.responseText);
 	    })
 	    .always(function() { 
-	    	console.log('getJSON request ended!');
 	    })
 	    .complete(function() { 
-	    	console.log("complete"); 
 		});
 
     });
@@ -60,8 +55,7 @@ $(document).ready(function(){
 		var myurl= "https://api.wunderground.com/api/2fbe9dd598f2cfba/geolookup/conditions/q/UT/";
 		myurl += value;
 		myurl += ".json";
-		console.log(myurl);
-		
+
 		$.ajax({
 		  	url : myurl,
 		  	dataType : "jsonp",
