@@ -27,7 +27,7 @@ h1 {
 	margin: auto;
 }
 
-#gridTop, #redWin, #blackWin, #start {
+#gridTop, #redWin, #blackWin, #quitEarly, #start {
 	height: 70px;
 	width: 490px;
 	background-color: #ffc0cb;
@@ -42,7 +42,7 @@ h1 {
 	cursor: pointer;
 }
 
-#redWin, #blackWin, #start {
+#redWin, #blackWin, #quitEarly, #start {
 	display: none;
 	position: absolute;
 	z-index: 20;
