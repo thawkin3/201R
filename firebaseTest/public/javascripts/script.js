@@ -6,7 +6,6 @@ myApp.controller("chatController", ["$scope", "$firebaseArray",
         $scope.chats = $firebaseArray(ref);
         $scope.update = function(user) { 
             var newmessage = {from:user.name || "anonymous",body:user.chat};
-            console.log(newmessage);
             $scope.chats.$add(newmessage);
             user.chat = ""; 
         } 

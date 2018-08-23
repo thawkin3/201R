@@ -19,8 +19,7 @@ function runAJAX(theResource) {
 	$("#container").html("");
 	$.getJSON("http://api.themoviedb.org/3/movie/" + theResource + "?api_key=905e94f60d94ae753e3aa1126d23d0f2").done(function(data) {
 		movieArr = [];
-		console.log(data);
-		
+
 		for (var i = 0; i < data.results.length; i++) {
 			var title = data.results[i].title;
 			var rating = data.results[i].vote_average;
@@ -135,7 +134,6 @@ $(document).on("click", "th", function(){
 			}
 		}
 		sortBy = $(this).attr("id");
-		console.log(sortBy);
 		movieArr = movieArr.sort(movieSort);
 		$("table tbody").html("");
 		for (var i = 0; i < movieArr.length; i++) {

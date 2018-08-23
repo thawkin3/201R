@@ -42,7 +42,6 @@ $(document).ready(function(){
 				});
 			}
 		}).fail(function(){
-			console.log("failed!");
 			logo = "unknown.png";
 			display_name = element;
 			status = "Account Closed";

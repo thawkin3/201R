@@ -22,7 +22,6 @@ angular.module('comment', [])
     $scope.upvote = function(comment) {
       return $http.put('/comments/' + comment._id + '/upvote')
         .success(function(data){
-          console.log("upvote worked");
           comment.upvotes = data.upvotes;
         });
     };

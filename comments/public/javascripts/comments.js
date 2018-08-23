@@ -33,7 +33,6 @@ $(document).ready(function(){
 
     $("#getThem").click(function() {
         $.getJSON('comments', function(data) {
-            console.log(data);
             $("#comments").html("");
             for(var comment in data) {
               var com = data[comment];

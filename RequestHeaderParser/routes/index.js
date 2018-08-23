@@ -4,11 +4,6 @@ var http = require('http');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  // res.render('index', { title: 'Express' });
-    console.log("on the home page");
-    console.log(req.connection);
-    console.log(req.connection.remoteAddress);
-    console.log(req.socket.remoteAddress);
     var jsonResult = {
     	ip: null,
     	language: null,
@@ -16,7 +11,7 @@ router.get('/', function(req, res, next) {
     }
 
     jsonResult.ip = req.connection.remoteAddress || req.socket.remoteAddress;
-    ipArray = jsonResult.ip.split(":");
+    var ipArray = jsonResult.ip.split(":");
     jsonResult.ip = ipArray[ipArray.length - 1];
 
     jsonResult.language = req.headers["accept-language"];
