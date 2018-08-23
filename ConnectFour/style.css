@@ -1,178 +1,178 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 body {
-	padding: 20px;
-	font-family: Montserrat, Helvetica, Arial, sans-serif;
-	background: #fff;
-	text-align: center;
+    padding: 20px;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    background: #fff;
+    text-align: center;
 }
 h1 {
-	text-align: center;
-	text-transform: uppercase;
-	color: #3a3a3a;
-	display: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3a3a3a;
+    display: none;
 }
 
 #gameContainer {
-	position: relative;
-	margin: 30px auto;
-	text-align: center;
-	overflow: hidden;
-	width: 490px;
+    position: relative;
+    margin: 30px auto;
+    text-align: center;
+    overflow: hidden;
+    width: 490px;
 }
 
 #connect4Logo {
-	display: block;
-	margin: auto;
+    display: block;
+    margin: auto;
 }
 
 #gridTop, #redWin, #blackWin, #quitEarly, #start {
-	height: 70px;
-	width: 490px;
-	background-color: #ffc0cb;
-	margin: 0px auto 10px;
-	text-align: center;
-	font-size: 40px;
-	position: relative;
-	border-radius: 10px;
+    height: 70px;
+    width: 490px;
+    background-color: #ffc0cb;
+    margin: 0px auto 10px;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    border-radius: 10px;
 }
 
 #gridTop {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 #redWin, #blackWin, #quitEarly, #start {
-	display: none;
-	position: absolute;
-	z-index: 20;
-	line-height: 70px;
-	height: 70px;
-	margin: auto;
-	margin-bottom: 0px;
+    display: none;
+    position: absolute;
+    z-index: 20;
+    line-height: 70px;
+    height: 70px;
+    margin: auto;
+    margin-bottom: 0px;
 }
 
 #start {
-	display: block;
-	cursor: pointer;
+    display: block;
+    cursor: pointer;
 }
 
 #grid {
-	height: 420px;
-	width: 490px;
-	background-color: rgb(240, 240, 90);
-	border-radius: 10px 10px 0px 0px;
-	margin: auto;
+    height: 420px;
+    width: 490px;
+    background-color: rgb(240, 240, 90);
+    border-radius: 10px 10px 0px 0px;
+    margin: auto;
 }
 
 #gridBottom {
-	width: 490px;
-	height: 20px;
-	margin: auto;
-	background-color: rgb(62, 62, 234);
-	border-radius: 0px 0px 10px 10px;
-	z-index: 20;
-	position: relative;
+    width: 490px;
+    height: 20px;
+    margin: auto;
+    background-color: rgb(62, 62, 234);
+    border-radius: 0px 0px 10px 10px;
+    z-index: 20;
+    position: relative;
 }
 
 #reset {
-	margin: auto;
-	height: 30px;
-	width: 100px;
-	font-family: sans-serif;
-	font-size: 20px;
-	background-color: rgb(62, 62, 234);
-	text-align: center;
-	color: #fff;
-	border-radius: 0px 0px 10px 10px;
-	z-index: 20;
-	position: relative;
-	cursor: pointer;
+    margin: auto;
+    height: 30px;
+    width: 100px;
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: rgb(62, 62, 234);
+    text-align: center;
+    color: #fff;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 20;
+    position: relative;
+    cursor: pointer;
 }
 
 .space {
-	background-color: #fff;
-	height: 60px;
-	width: 60px;
-	z-index: 2;
-	float: left;
-	border-radius: 30px;
-	margin: 5px;
+    background-color: #fff;
+    height: 60px;
+    width: 60px;
+    z-index: 2;
+    float: left;
+    border-radius: 30px;
+    margin: 5px;
 }
 
 .piece {
-	background-color: #f00;
-	height: 60px;
-	width: 60px;
-	z-index: 3;
-	position: absolute;
-	border-radius: 30px;
-	margin: 5px;
-	top: 0px;  
+    background-color: #f00;
+    height: 60px;
+    width: 60px;
+    z-index: 3;
+    position: absolute;
+    border-radius: 30px;
+    margin: 5px;
+    top: 0px;  
 }
 
 .droppedP1 {
-	background-color: #f00 !important;
-	cursor: default !important;
+    background-color: #f00 !important;
+    cursor: default !important;
 }
 
 .droppedP2 {
-	background-color: #000 !important;
-	cursor: default !important;
+    background-color: #000 !important;
+    cursor: default !important;
 }
 
 .p2 {
-	background-color: #000;
+    background-color: #000;
 }
 
 .c1 {
-	left: 0px;
+    left: 0px;
 }
 
 .c2 {
-	left: 70px;
+    left: 70px;
 }
 
 .c3 {
-	left: 140px;
+    left: 140px;
 }
 
 .c4 {
-	left: 210px;
+    left: 210px;
 }
 
 .c5 {
-	left: 280px;
+    left: 280px;
 }
 
 .c6 {
-	left: 350px;
+    left: 350px;
 }
 
 .c7 {
-	left: 420px;
+    left: 420px;
 }
 
 #c50, #c51, #c52, #c53, #c54, #c55, #c56 {
-	z-index: 10;
+    z-index: 10;
 }
 
 #c40, #c41, #c42, #c43, #c44, #c45, #c46 {
-	z-index: 9;
+    z-index: 9;
 }
 
 #c30, #c31, #c32, #c33, #c34, #c35, #c36 {
-	z-index: 8;
+    z-index: 8;
 }
 
 #c20, #c21, #c22, #c23, #c24, #c25, #c26 {
-	z-index: 7;
+    z-index: 7;
 }
 
 #c10, #c11, #c12, #c13, #c14, #c15, #c16 {
-	z-index: 6;
+    z-index: 6;
 }
 
 #c00, #c01, #c02, #c03, #c04, #c05, #c06 {
-	z-index: 5;
+    z-index: 5;
 }
