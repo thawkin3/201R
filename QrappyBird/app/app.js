@@ -4,18 +4,18 @@ app.config(function ($routeProvider){
 	$routeProvider
 		.when('/', {
 			controller: 'gameController',
-			templateUrl:'app/views/gameView.html'
+			templateUrl: 'app/views/gameView.html',
 		})
 		.when('/score', {
 			controller: 'scoreController',
-			templateUrl:'app/views/scoreView.html'
+			templateUrl: 'app/views/scoreView.html',
 		})
 		.when('/highscores', {
 			controller: 'highscoresController',
-			templateUrl:'app/views/highscoresView.html'
+			templateUrl: 'app/views/highscoresView.html',
 		})
 		.otherwise({ 
-			redirectTo: '/' 
+			redirectTo: '/',
 		});
 });
 
@@ -24,4 +24,4 @@ app.run(function($rootScope) {
     $rootScope.currentScore = 0;
     $rootScope.highscore = 0;
     $rootScope.scores = [0, 0, 0, 0, 0];
-})
+});
