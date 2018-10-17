@@ -8,14 +8,14 @@ $(document).ready(function () {
 	});
 
 	// Wow animations
-	var wow = new WOW({
-		boxClass: 'wow',
-		animateClass: 'animated',
-		offset: 0,
-		mobile: false,
-		live: false
-	});
-	wow.init();
+	// var wow = new WOW({
+	// 	boxClass: 'wow',
+	// 	animateClass: 'animated',
+	// 	offset: 0,
+	// 	mobile: false,
+	// 	live: false
+	// });
+	// wow.init();
 
 	// Navbar collapse fix for mobile navbar when link is clicked
 	$('.navbar-nav li a').on('click', function(event) {
