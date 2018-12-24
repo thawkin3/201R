@@ -1,3 +1,18 @@
+/***************************************************
+[TABLE OF CONTENTS]
+* General
+* Header
+* Navigation
+* Tile
+* Separator
+* About
+* Skills
+* Work Experience
+* Footer
+* Media Queries
+**************************************************/
+
+/* General */
 html,
 body {
     background-color: #cccdce;
@@ -40,7 +55,6 @@ p {
 
 
 /* Header */
-
 header {
     background-color: #fff;
     text-align: center;
@@ -56,7 +70,6 @@ header h1 {
 
 
 /* Navigation */
-
 nav {
     background: #aaa;
     margin-bottom: 20px;
@@ -161,7 +174,6 @@ nav li a:focus {
 }
 
 /* Tile */
-
 .tile {
     border: 1px solid #000;
     border: 1px solid rgba(0, 0, 0, 0.3);
@@ -212,7 +224,6 @@ nav li a:focus {
 
 
 /* Separator */
-
 .separator {
     background: #aaa;
     height: 50px;
@@ -228,7 +239,6 @@ nav li a:focus {
 
 
 /* About */
-
 #about p {
     text-align: left;
     margin-bottom: 20px;
@@ -236,7 +246,6 @@ nav li a:focus {
 
 
 /* Skills */
-
 #skills p {
     text-align: left;
     margin-bottom: 20px;
@@ -249,14 +258,12 @@ nav li a:focus {
 
 
 /* Work Experience */
-
 #work .row {
     text-align: center;
 }
 
 
 /* Footer */
-
 footer {
     text-align: right;
     text-transform: uppercase;
@@ -265,7 +272,6 @@ footer {
 
 
 /* Media Queries */
-
 @media screen and (max-width: 991px) {
     .tile {
         height: 388px;
