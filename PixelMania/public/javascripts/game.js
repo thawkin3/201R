@@ -53,8 +53,7 @@ function init() {
     keys = new Keys();
 
     // Initialize socket connection
-    socket = io.connect('http://54.200.192.157', {port: 3005, transports: ['websocket'], query: 'username=' + username }); // TYLER'S SOCKET
-    // socket = io.connect('http://52.34.95.112', {port: 3005, transports: ['websocket'], query: 'username=' + username }); //MATT'S SOCKET
+    socket = io.connect('http://tylerhawkins.info', {port: 3005, transports: ['websocket'], query: 'username=' + username }); // TYLER'S SOCKET
     // socket = io.connect('http://localhost', { port: 3005, transports: ['websocket'], query: 'username=' + username }); // LOCALHOST
 
     // Initialize remote players object
