@@ -44,8 +44,16 @@ footer {
     margin-bottom: 30px;
 }
 
-h3,
-h4 {
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h2,
+h3 {
     text-align: center;
 }
 
@@ -191,6 +199,8 @@ nav li a:focus {
     margin: 0;
     text-align: center;
     font-weight: bold;
+    font-size: 14px;
+    line-height: inherit;
 }
 
 .tile .img-responsive {
@@ -251,8 +261,15 @@ nav li a:focus {
     margin-bottom: 20px;
 }
 
-#skills h4 {
+#skills h3 {
     margin-top: 30px;
+    font-weight: bold;
+}
+
+.job-title {
+    margin: 0;
+    font-size: 14px;
+    line-height: inherit;
     font-weight: bold;
 }
 
