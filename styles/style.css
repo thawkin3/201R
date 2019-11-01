@@ -184,7 +184,7 @@ nav li a:focus {
 /* Tile */
 .tile {
     border: 1px solid #000;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     background: #fff;
     box-shadow: #555 3px 3px 20px 1px;
     height: 420px;
