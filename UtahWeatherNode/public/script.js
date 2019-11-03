@@ -1,9 +1,9 @@
 $(document).ready(function () {
+	var strArr;
 
 	$("#cityfield").keyup(function () {
-        
-        var str = $('#cityfield').val();
-        if (str != "") {
+		var str = $('#cityfield').val();
+		if (str != "") {
 			str = str.toLowerCase().trim();
 			strArr = str.split(" ");
 			for (var i = 0; i < strArr.length; i++) {
@@ -12,28 +12,23 @@ $(document).ready(function () {
 			str = strArr.join(" ");
 		}
 
-        $.getJSON("../getcity?q="+str, function(data) {
-	    	var everything;
-	    	everything = "<ul>";
-	    	$.each(data, function(i, item) {
-	      		everything += "<li> "+data[i].city;
-	    	});
-	    	everything += "</ul>";
-	    	$("#txtHint").html(everything);
-	    })
-	    .done(function() { 
-	    })
-	    .fail(function(jqXHR, textStatus, errorThrown) { 
-	    })
-	    .always(function() { 
-	    })
-	    .complete(function() { 
-		});
+		$.getJSON("../getcity?q=" + str, function (data) {
+			var everything;
+			everything = "<ul>";
+			$.each(data, function (i, item) {
+				everything += "<li> " + data[i].city;
+			});
+			everything += "</ul>";
+			$("#txtHint").html(everything);
+		})
+			.done(function () {})
+			.fail(function (jqXHR, textStatus, errorThrown) {})
+			.always(function () {})
+			.complete(function () {});
+	});
 
-    });
-
-    $("#searchForm").submit(function (e) {
-		
+	$("#searchForm").submit(function (e) {
+		e.preventDefault();
 		var value = $("#cityfield").val();
 		value = value.toLowerCase().trim();
 		if (value != "") {
@@ -43,7 +38,6 @@ $(document).ready(function () {
 			}
 			value = valArr.join(" ");
 			$("#dispcity").text(value);
-			e.preventDefault();
 			var theList = $("#txthint li");
 			for (var i = 0; i < theList.length; i++) {
 				if (theList[i].innerHTML.trim() != value) {
@@ -53,29 +47,44 @@ $(document).ready(function () {
 				}
 			}
 
-			var myurl= "https://api.wunderground.com/api/2fbe9dd598f2cfba/geolookup/conditions/q/UT/";
-			myurl += value;
-			myurl += ".json";
+			// Wunderground API is now deprecated and is no longer free
+			// var myurl = "https://api.wunderground.com/api/2fbe9dd598f2cfba/geolookup/conditions/q/UT/";
+			// myurl += value;
+			// myurl += ".json";
 
-			$.ajax({
-			  	url : myurl,
-			  	dataType : "jsonp",
-			  	success : function(data) {
-			    	var location = data['location']['city'];
-			    	var temp_string = data['current_observation']['temperature_string'];
-			    	var current_weather = data['current_observation']['weather'];
-			    	var icon = data['current_observation']['icon_url'];
-			    	everything = "<ul>";
-			    	everything += "<li>Location: " + location;
-			    	everything += "<li>Temperature: " + temp_string;
-			    	everything += "<li>Weather: " + current_weather;
-			    	everything += "</ul>";
-			    	everything += "<img src='" + icon + "'/>";
-			    	$("#weather").html(everything);
-		  		}
-			});
+			// $.ajax({
+			//   url: myurl,
+			//   dataType: "jsonp",
+			//   success: function (data) {
+			//     var location = data['location']['city'];
+			//     var temp_string = data['current_observation']['temperature_string'];
+			//     var current_weather = data['current_observation']['weather'];
+			//     var icon = data['current_observation']['icon_url'];
+			//     var everything = "<ul>";
+			//     everything += "<li>Location: " + location;
+			//     everything += "<li>Temperature: " + temp_string;
+			//     everything += "<li>Weather: " + current_weather;
+			//     everything += "</ul>";
+			//     everything += "<img src='" + icon + "'/>";
+			//     $("#weather").html(everything);
+			//   }
+			// });
+
+			// Switching to the Open Weather Map API now since the previous API is deprecated
+			$.get('//api.openweathermap.org/data/2.5/weather?q=' + value + '&APPID=09806e8d424ef386111adfd1514da718&units=imperial')
+				.done(function (data) {
+					var everything = "<ul>";
+					everything += "<li>Location: " + data.name;
+					everything += "<li>Temperature: " + data.main.temp + "&deg; F";
+					everything += "<li>Weather: " + data.weather[0]["description"];
+					everything += "</ul>";
+					everything += "<img src='//openweathermap.org/img/w/" + data.weather[0].icon + ".png'>";
+					$("#weather").html(everything);
+				})
+				.fail(function () {
+					$("#weather").text("No weather data found");
+				});
 		}
-
 	});
 
 	$(document).on("click", "li", function () {
@@ -85,5 +94,4 @@ $(document).ready(function () {
 		$("#button").focus();
 		$("#searchForm").submit();
 	});
-
 });

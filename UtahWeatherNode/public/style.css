@@ -12,7 +12,8 @@ body::after {
   left: 0;
   bottom: 0;
   right: 0;
-  position: absolute;
+	position: fixed;
+	overflow: scroll;
   z-index: -1;   
 }
 
@@ -52,7 +53,7 @@ p#instructions {
 
 li {
 	list-style: none;
-    text-indent: -40px;
+	text-indent: -40px;
 }
 
 #txthint li {
@@ -61,6 +62,6 @@ li {
 
 #dispcity {
 	text-align: center;
-    height: 20px;
-    width: 260px;
+	height: 20px;
+	width: 260px;
 }
