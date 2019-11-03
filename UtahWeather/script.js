@@ -70,11 +70,11 @@ $(document).ready(function () {
     // Switching to the Open Weather Map API now since the previous API is deprecated
 			$.get('//api.openweathermap.org/data/2.5/weather?q=' + value + '&APPID=09806e8d424ef386111adfd1514da718&units=imperial')
       .done(function (data) {
-        var everything = "<ul>";
-        everything += "<li>Location: " + data.name;
-        everything += "<li>Temperature: " + data.main.temp + "&deg; F";
-        everything += "<li>Weather: " + data.weather[0]["description"];
-        everything += "</ul>";
+        var everything = "<div>";
+        everything += "<div>Location: " + data.name + "</div>";
+        everything += "<div>Temperature: " + data.main.temp + "&deg; F</div>";
+        everything += "<div>Weather: " + data.weather[0]["description"] + "</div>";
+        everything += "</div>";
         everything += "<img src='//openweathermap.org/img/w/" + data.weather[0].icon + ".png'>";
         $("#weather").html(everything);
       })
