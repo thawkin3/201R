@@ -4,17 +4,19 @@
 		<title>Current Local Weather</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<link rel="stylesheet" type="text/css" href="style.css" />
-		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="script.js"></script>
 	</head>
 
 	<body>
 		<h1>Current Local Weather</h1>
-		<h2 id="city"></h2>
-		<p id="temp"></p>
-		<p id="icon"></p>
-		<p id="weather"></p>
-
+		<p id="loading">Loading...</p>
+		<div id="results">
+			<h2 id="city"></h2>
+			<p id="temp"></p>
+			<p id="icon"></p>
+			<p id="weather"></p>
+		</div>
 	</body>
 </html>
