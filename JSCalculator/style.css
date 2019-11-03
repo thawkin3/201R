@@ -1,23 +1,12 @@
 body {
 	text-align: center;
 	font-family: "Montserrat";
-	background-color: silver;
-	background-image: linear-gradient(335deg, #b00 23px, transparent 23px),
-	linear-gradient(155deg, #d00 23px, transparent 23px),
-	linear-gradient(335deg, #b00 23px, transparent 23px),
-	linear-gradient(155deg, #d00 23px, transparent 23px);
-	background-size: 58px 58px;	
-	background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+	padding: 20px;
+	margin: 0;
 }
 
 h1 {
-	display: block;
-    background: blue;
-    margin-left: -20px;
-    margin-right: -20px;
-    margin-top: -10px;
-    padding-bottom: 32px;
-    padding-top: 20px;
+	margin: 0;
 }
 
 table {
@@ -26,8 +15,8 @@ table {
 
 button {
 	height: 30px;
-    width: 40px;
-    border-radius: 5px;
+	width: 40px;
+	border-radius: 5px;
 }
 
 button[name="plus"] {
@@ -41,8 +30,8 @@ button[name="plus"] {
 	border-radius: 5px;
 	box-shadow: 1px 1px #666;
 	font-size: 26px;
-    text-align: right;
-    padding-right: 4px;
+	text-align: right;
+	padding-right: 4px;
 }
 
 #calcHead {
@@ -51,11 +40,11 @@ button[name="plus"] {
 
 #calc {
 	background: #1BAEBD;
-    display: inline-block;
-    height: 212px;
-    width: 190px;
-    padding-top: 7px;
-    border-radius: 5px;
-    box-shadow: 2px 2px #666;
-    margin-top: 30px;
+	display: inline-block;
+	height: 212px;
+	width: 190px;
+	padding-top: 7px;
+	border-radius: 5px;
+	box-shadow: 2px 2px #666;
+	margin-top: 30px;
 }
