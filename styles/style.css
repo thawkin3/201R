@@ -112,7 +112,7 @@ header h1 {
 
 /* Navigation */
 nav {
-    background: #aaa;
+    background: #666;
     margin-bottom: 20px;
 }
 
@@ -130,17 +130,18 @@ nav {
     top: 50px;
     right: 0;
     z-index: 100;
-    background: #aaa;
+    background: #666;
     display: block;
     width: 100%;
     margin: 0;
     padding: 0;
-    box-shadow: #555 0 10px 10px 0;
+    box-shadow: #444 0 10px 10px 0;
 }
 
 .navbar-brand {
     margin: 0;
     display: none;
+    color: #fff;
 }
 
 .navbar-toggle {
