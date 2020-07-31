@@ -22,6 +22,10 @@ body {
     padding: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 article,
 header,
 nav,
@@ -58,7 +62,7 @@ h3 {
 }
 
 p {
-    margin: 0px 20px;
+    margin: 0 20px;
 }
 
 
@@ -89,6 +93,15 @@ header h1 {
 
 .social-media-link {
     margin: 0 15px;
+    padding-bottom: 15px;
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+    color: #31363d;
+    text-decoration: none;
+    outline: 0;
+    border-bottom: 2px solid #31363d;
 }
 
 .social-media-icon {
@@ -122,7 +135,7 @@ nav {
     width: 100%;
     margin: 0;
     padding: 0;
-    box-shadow: #555 0px 10px 10px 0px;
+    box-shadow: #555 0 10px 10px 0;
 }
 
 .navbar-brand {
@@ -180,7 +193,7 @@ nav ul {
     margin: 0;
     text-align: center;
     list-style: none;
-    padding: 30px 0px 0px 0px;
+    padding: 30px 0 0 0;
 }
 
 nav li {
@@ -188,17 +201,19 @@ nav li {
 }
 
 nav li a {
-    -webkit-transition: color 0.5s;
-    transition: color 0.5s;
+    -webkit-transition: text-decoration 0.5s;
+    transition: text-decoration 0.5s;
     color: #fff;
-    padding: 0px 10px;
+    margin: 0 10px;
+    padding-bottom: 4px;
 }
 
 nav li a:hover,
 nav li a:focus {
-    color: #31363d;
+    color: #fff;
     text-decoration: none;
     outline: 0;
+    border-bottom: 2px solid #fff;
 }
 
 
@@ -248,9 +263,17 @@ nav li a:focus {
     margin: 0;
 }
 
+.tile .projectRepo a {
+    color: #337ab7;
+    padding-bottom: 4px;
+}
+
 .tile .projectRepo a:hover,
 .tile .projectRepo a:focus {
+    color: #337ab7;
     text-decoration: none;
+    outline: 0;
+    border-bottom: 2px solid #337ab7;
 }
 
 
@@ -262,10 +285,24 @@ nav li a:focus {
     text-align: center;
 }
 
-.separator img {
-    padding: 5px;
-    width: 30px;
-    margin: 10px 15px;
+.scroll-link {
+    color: #000;
+    padding-bottom: 4px;
+    margin: 15px;
+    display: inline-block;
+}
+
+.scroll-link:hover,
+.scroll-link:focus {
+    color: #000;
+    text-decoration: none;
+    outline: 0;
+    border-bottom: 2px solid #000;
+}
+
+.separator .scroll-link img {
+    width: 20px;
+    height: 20px;
 }
 
 
@@ -305,7 +342,7 @@ nav li a:focus {
 footer {
     text-align: right;
     text-transform: uppercase;
-    margin: 20px 0px 10px 0px;
+    margin: 20px 0 10px 0;
 }
 
 
