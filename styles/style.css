@@ -67,13 +67,33 @@ header {
     background-color: #fff;
     text-align: center;
     margin: 0;
-    padding: 30px 10px;
+    padding: 20px 10px 30px 10px;
 }
 
 header h1 {
     color: #31363d;
     font-size: 32px;
     margin: 0;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 20px 20px 20px;
+}
+
+.social-media {
+    margin: 20px 0 0 0;
+}
+
+.social-media-link {
+    margin: 0 15px;
+}
+
+.social-media-icon {
+    width: 32px;
+    height: 32px;
 }
 
 
@@ -180,6 +200,7 @@ nav li a:focus {
     text-decoration: none;
     outline: 0;
 }
+
 
 /* Tile */
 .tile {
@@ -296,6 +317,11 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+    .profile-pic {
+        height: 100px;
+        width: 100px;
+        margin: 0 10px 10px 10px;
+    }
     .tile {
         height: 436px;
     }
