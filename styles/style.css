@@ -383,6 +383,9 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    .social-media-link {
+        margin: 0 12px;
+    }
     .col-xs-6 {
         display: block;
         width: 100%;
