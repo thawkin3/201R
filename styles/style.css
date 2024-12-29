@@ -6,7 +6,6 @@
 * Tile
 * Separator
 * About
-* Skills
 * Work Experience
 * Footer
 * Media Queries
@@ -114,6 +113,11 @@ header h1 {
 nav {
     background: #666;
     margin-bottom: 20px;
+}
+
+.navbar {
+    border: none;
+    border-radius: 0px;
 }
 
 .navbar-nav {
@@ -314,10 +318,9 @@ nav li a:focus {
 }
 
 
-/* Skills */
-#skills p {
-    text-align: left;
-    margin-bottom: 20px;
+/* Work Experience */
+#work .row {
+    text-align: center;
 }
 
 .job-title {
@@ -325,12 +328,6 @@ nav li a:focus {
     font-size: 14px;
     line-height: inherit;
     font-weight: bold;
-}
-
-
-/* Work Experience */
-#work .row {
-    text-align: center;
 }
 
 
